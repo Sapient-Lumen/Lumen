@@ -1,12 +1,10 @@
 {
-  "source_sha256": "3e488a5c8e9fde16aab1a760b0aa21e573a70f1611bd407948327e77afdc6d80",
-  "review": "lumen-owner-export-review-20260930-01",
-  "tests": {
-    "count": 168,
-    "result": "pass",
-    "scope": "embedded suite independently rerun by Lumen; canonical completed export replay verified"
-  },
-  "source_commit": "43167a2fc77e265b2b0feba4952aff120c27f3b2",
-  "exact_remote_readback": true,
-  "publication": "Agent-owned reviewed-checkpoint loop; no standalone filesystem watcher or scheduler"
+  "source_sha256": "e5bc87b9020b307be56b4bc3b8889e2b676f284a1d955056cd9ed8c1480dc32b",
+  "source_commit": "5925e5b6f571ab3176137a83908e9c760ca262eb",
+  "review": "lumen-real-projects-review-20260930-01",
+  "tests": 178,
+  "readback_exact": true,
+  "verified_at": "2026-09-30T23:33:00Z",
+  "repository": "Sapient-Lumen/Lumen",
+  "intermediate_queue_checkpoint": "Unpublished after cancelled call; this reviewed revision includes its changes."
 }
