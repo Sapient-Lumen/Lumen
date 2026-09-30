@@ -1,10 +1,9 @@
 {
-  "source_sha256": "e5bc87b9020b307be56b4bc3b8889e2b676f284a1d955056cd9ed8c1480dc32b",
-  "source_commit": "5925e5b6f571ab3176137a83908e9c760ca262eb",
-  "review": "lumen-real-projects-review-20260930-01",
-  "tests": 178,
+  "source_sha256": "afd006ad04fea1c6deb615c56f02110ffa5adb5531dfce8a6a3bc0bc790f4bb7",
+  "source_commit": "97ede72aee8d5b082914e6504071e952b4e360db",
+  "review": "lumen-publication-record-review-20260930-01",
+  "tests": 199,
   "readback_exact": true,
-  "verified_at": "2026-09-30T23:33:00Z",
-  "repository": "Sapient-Lumen/Lumen",
-  "intermediate_queue_checkpoint": "Unpublished after cancelled call; this reviewed revision includes its changes."
+  "verified_at": "2026-09-30T23:59:20Z",
+  "repository": "Sapient-Lumen/Lumen"
 }
