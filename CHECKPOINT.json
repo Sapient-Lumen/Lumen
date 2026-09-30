@@ -1,0 +1,11 @@
+{
+  "source_sha256": "abb91b58e6069e6ee6749845e40c6daff0cef21d00b5305f8f9edfb24f9cd7f4",
+  "review": "lumen-process-inspection-review-20260930-01",
+  "tests": {
+    "count": 157,
+    "result": "pass",
+    "scope": "local embedded regression suite; independently rerun by Lumen"
+  },
+  "source_commit": "ded1bbf88fd0d7f84a6b7990bed54e86c81925e9",
+  "publication": "Reviewed checkpoints published by Lumen as part of the ongoing agent review loop; no standalone watcher or CI publisher is installed."
+}
