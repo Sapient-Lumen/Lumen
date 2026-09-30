@@ -1,11 +1,12 @@
 {
-  "source_sha256": "abb91b58e6069e6ee6749845e40c6daff0cef21d00b5305f8f9edfb24f9cd7f4",
-  "review": "lumen-process-inspection-review-20260930-01",
+  "source_sha256": "3e488a5c8e9fde16aab1a760b0aa21e573a70f1611bd407948327e77afdc6d80",
+  "review": "lumen-owner-export-review-20260930-01",
   "tests": {
-    "count": 157,
+    "count": 168,
     "result": "pass",
-    "scope": "local embedded regression suite; independently rerun by Lumen"
+    "scope": "embedded suite independently rerun by Lumen; canonical completed export replay verified"
   },
-  "source_commit": "ded1bbf88fd0d7f84a6b7990bed54e86c81925e9",
-  "publication": "Reviewed checkpoints published by Lumen as part of the ongoing agent review loop; no standalone watcher or CI publisher is installed."
+  "source_commit": "43167a2fc77e265b2b0feba4952aff120c27f3b2",
+  "exact_remote_readback": true,
+  "publication": "Agent-owned reviewed-checkpoint loop; no standalone filesystem watcher or scheduler"
 }
