@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "run_id": "habitat-2e0f8ea0472e453482774ee628c56083",
+  "records": 12,
+  "samples": 10,
+  "last_observed_utc": "2026-10-01T22:34:24.280096+00:00",
+  "last_record_sha256": "ae8cc955900dd512e4d41b8231d74ae92c6a4d3a43b81a0069e86c2a1f08c2c6",
+  "largest_sample_gap_seconds": 60.000034421,
+  "terminal_record": true,
+  "memory_current_bytes": {
+    "count": 0
+  },
+  "filesystem_available_bytes": {
+    "count": 10,
+    "minimum": 25620377600,
+    "maximum": 25642823680,
+    "mean": 25636721868.8
+  },
+  "cgroup_cpu_seconds_per_elapsed_second": {
+    "count": 0
+  },
+  "cpu_counter_resets_or_invalid_intervals": 0,
+  "qualification": "Verified local byte chain; no authentication or guarantee of current process liveness"
+}

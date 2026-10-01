@@ -1,0 +1,24 @@
+{
+  "experiment_id": "fixed-grid-live-02",
+  "frozen_at_utc": "2026-10-01T22:24:24.092823+00:00",
+  "hypothesis": "The reviewed fixed-grid collector can retain a coherent ten-minute record with explicit slot conservation and lagged cost references under ordinary concurrent work.",
+  "source_sha256": "1b1d06d086fc53bb109eb1712da4750f83febebb91d9f462d3adc76a3be02838",
+  "interval_seconds": 60,
+  "duration_seconds": 600,
+  "expected_slots": 10,
+  "bound": "Ten minutes,10due slots,8MiB maximumrecordbody budget; no backfill or automatic restart.",
+  "command": [
+    "python3",
+    "/workspace/shared/lumen-publication/browser-upload-1b1d06d0/Lumen.sh",
+    "observer",
+    "run",
+    "--directory",
+    "/workspace/shared/lumen-observer/experiments/fixed-grid-live-02/run",
+    "--interval",
+    "60",
+    "--duration",
+    "600"
+  ],
+  "evaluation": "Root verifies terminal presence, due=sampled+missed, chain and cost links. If interrupted preserve nonterminal prefix and unknown cause. No causal comparison with earlier collector or general availability claim.",
+  "existing_collector": "Earlier run remains untouched; this is a separate labeled trial."
+}

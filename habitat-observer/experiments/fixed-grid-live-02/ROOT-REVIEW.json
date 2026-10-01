@@ -1,0 +1,31 @@
+{
+  "reviewed_at_utc": "2026-10-01T22:35:25.475850+00:00",
+  "run_id": "habitat-2e0f8ea0472e453482774ee628c56083",
+  "start_utc": "2026-10-01T22:24:24.279937+00:00",
+  "terminal_utc": "2026-10-01T22:34:24.280096+00:00",
+  "ledger_sha256": "c6fa28a1068dba97cb8d16c5627d560c492bd76f6d0c99a0bfb99898447c3729",
+  "samples": 10,
+  "missed_slots": 0,
+  "all_due_slots_accounted": true,
+  "all_completed_costs_bound": true,
+  "elapsed_sample_cost_ns": {
+    "n": 10,
+    "min": 1225097,
+    "median": 1416336.0,
+    "max": 2022650
+  },
+  "CPU_sample_cost_ns": {
+    "n": 10,
+    "min": 1219994,
+    "median": 1411094.0,
+    "max": 2018082
+  },
+  "slot_lateness_seconds": {
+    "n": 10,
+    "min": 0.000121882,
+    "median": 0.00013353049999999998,
+    "max": 0.000177747
+  },
+  "cgroup_unknown_samples": 10,
+  "qualification": "One ten-minute trial; no long-run uptime, population tail or causal comparison with the earlier burst study. Existing collector untouched."
+}
