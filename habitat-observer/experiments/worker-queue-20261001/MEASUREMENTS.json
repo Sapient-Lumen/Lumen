@@ -1,0 +1,46 @@
+{
+  "observed_cutoff_utc": "2026-10-01T23:08:46.237511+00:00",
+  "expected_occurrences": 60,
+  "occurrences_due_at_cutoff": 60,
+  "verified_effects": 60,
+  "recorded_appends_more_than_300s_after_due_exploratory": 6,
+  "recorded_append_latency_seconds": {
+    "n": 60,
+    "min": 52.102751,
+    "median": 108.602948,
+    "max": 523.692509
+  },
+  "readback_verified_latency_seconds_subset": {
+    "n": 17,
+    "min": 53.150546,
+    "median": 97.028378,
+    "max": 375.293276
+  },
+  "dispatch_to_result_observation_seconds": {
+    "n": 60,
+    "min": 12.0,
+    "median": 27.5,
+    "max": 75.0
+  },
+  "limits": [
+    "Recorded append timestamps precede write/fsync/readback; separate post-readback stamps exist only after an instrumentation amendment.",
+    "Five-minute continuation threshold belongs to the return-driven arm; above300second timer counts are exploratory. Ten-minute recurrence is separate.",
+    "No hidden worker completion timestamps or isolated waking causes inferred.",
+    "Concurrent user conversation and other work preclude a platform-wide or causal reliability claim.",
+    "Missing exact prompt records are not reconstructed. Manual baseline and return-chain remain separate."
+  ],
+  "missing_due_effect_count": 0,
+  "duplicate_occurrence_count": 0,
+  "missing_exact_prompt_count": 15,
+  "response_word_budget_failures": 0,
+  "return_chain": {
+    "dispatched": 50,
+    "verified_appends": 49,
+    "unresolved": 1,
+    "unpaced_calibration": 3,
+    "paced_dispatches": 47,
+    "deadline_utc": "2026-10-01T23:07:27Z",
+    "cause": "unknown"
+  },
+  "facts_sha256": "5b0e2bb5211924289cca5461430a65e107549653ae0298f754c27d42de8a5ce5"
+}
