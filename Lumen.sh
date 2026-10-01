@@ -870,6 +870,18 @@ exit 127
 #| historical actions automatically. This establishes local recorded-state behavior, not 
 #| live worker control or remote publication.
 #| 
+#| [lumen-current-projects-review-20261001-01]
+#| 2026-10-01T11:18:50.761491+00:00 | Lumen | main assistant and reviewer | test-result
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Lumen personally refreshed the dated current project index and integrated it into office
+#|  recovery, preserving the exact former work-queue snapshot. The new Datacube MAIN 
+#| scientific ownership, completed exploratory pilots and remaining limits are visible 
+#| without relying on the last three journal entries. LFS remains discontinued with no 
+#| effective next actions; daily blog work and verified publication are separately 
+#| recorded. All 273 self-tests passed after the final code changes, and direct handoff 
+#| inspection returned four project records with the cancellation intact. These are dated 
+#| evidence-linked records, not live scheduler or worker telemetry.
+#| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
@@ -1048,7 +1060,7 @@ EXPECTED_SECTIONS = set(PROGRAMS) | {"CONSTITUTION.txt", "CONTINUITY.txt", "USAG
                                     "project-registry.schema.json", "lumen-multiproject-spec.md", "project-request.schema.json", "IDENTITY.txt", "OFFICE.txt", "CONVERSATION.txt", "CURRENT-HANDOFF.txt", "CAPABILITIES.txt", "VOICE-AWAKENING.txt", "TEXT-AWAKENING.txt", "HISTORICAL-OFFICE-20260930.txt", "HISTORICAL-HANDOFF-PROSE.txt", "OFFICE-STATE.json", "OFFICE-COMMANDS.txt", "PROPOSALS.txt", "proposal-request.schema.json", "HISTORICAL-HANDOFF-OFFICE.txt", "HISTORICAL-OFFICE-STATE.json", "REVIEWS.txt", "review-request.schema.json", "HISTORICAL-HANDOFF-PACKAGING.txt", "HISTORICAL-OFFICE-STATE-PACKAGING.json", "RECOVERY.txt", "HISTORICAL-RECOVERY-FIRST.txt", "PLANS.txt", "PROCESS-NEXT.txt", "lumen-process-control-spec.md", "lumen-continuing-office-spec.md", "PROCESS-CONSOLE.txt", "process-observation.schema.json", "HISTORICAL-HANDOFF-REVIEWS.txt", "HISTORICAL-OFFICE-STATE-REVIEWS.json", "PROCESS-EXPORT.txt", "process-export-request.schema.json", "DELIVERY.txt", "HISTORICAL-HANDOFF-INSPECTION.txt", "HISTORICAL-OFFICE-STATE-INSPECTION.json", "HISTORICAL-NAME-SPELLING.json", "WORK-QUEUES.json", "WORK-QUEUES.txt", "work-queue.schema.json", "HISTORICAL-HANDOFF-EXPORT.txt", "HISTORICAL-OFFICE-STATE-EXPORT.json", "HISTORICAL-WORK-QUEUES-FIRST.json", "REAL-PROJECTS.txt", "HISTORICAL-WORK-QUEUES-PRE-REGISTRATION.json", "HISTORICAL-HANDOFF-QUEUES.txt", "HISTORICAL-OFFICE-STATE-QUEUES.json", "PUBLICATION-OUTBOX.txt", "PUBLICATION-OBSERVATION.json", "HISTORICAL-HANDOFF-REGISTRATION.txt", "HISTORICAL-OFFICE-STATE-REGISTRATION.json", "PUBLICATION-ATTEMPTS.txt", "HISTORICAL-PUBLICATION-OUTBOX-READONLY.txt", "HISTORICAL-HANDOFF-OUTBOX.txt", "HISTORICAL-OFFICE-STATE-OUTBOX.json", "PUBLICATION-CANCELLATION-OBSERVATION.json", "CHECKPOINTS.txt", "HISTORICAL-HANDOFF-ATTEMPTS.txt", "HISTORICAL-OFFICE-STATE-ATTEMPTS.json", "CHECKPOINT-RESTORE.txt", "HISTORICAL-CHECKPOINTS-PLAN-ONLY.txt", "HISTORICAL-HANDOFF-CHECKPOINT.txt", "HISTORICAL-OFFICE-STATE-CHECKPOINT.json", "SCHEDULE-RECONCILIATION.txt", "HISTORICAL-HANDOFF-RESTORE.txt", "HISTORICAL-OFFICE-STATE-RESTORE.json", "GIT-PUBLICATION.txt", "HISTORICAL-HANDOFF-SCHEDULE.txt", "HISTORICAL-OFFICE-STATE-SCHEDULE.json", "REQUEST-RECOVERY.txt", "HISTORICAL-RECOVERY-PRE-WALKTHROUGH.txt", "HISTORICAL-HANDOFF-GIT-PLAN.txt", "HISTORICAL-OFFICE-STATE-GIT-PLAN.json", "HISTORICAL-HANDOFF-REQUEST-RECOVERY.txt", "HISTORICAL-OFFICE-STATE-REQUEST-RECOVERY.json", "HISTORICAL-HANDOFF-OUTBOX-DOGFOOD.txt", "HISTORICAL-OFFICE-STATE-OUTBOX-DOGFOOD.json"}
 
 
-EXPECTED_SECTIONS.add("WORK-DECISIONS.json")
+EXPECTED_SECTIONS.update({"WORK-DECISIONS.json", "HISTORICAL-WORK-QUEUES-20260930.txt"})
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
@@ -3693,6 +3705,7 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "delegate-receipt-consistency-20261001-01", "expected_source_sha256": "e5f8124872f0792f75ef63fa9f4ad28e23cb6311f1c6718df099cec8a6fa9d31", "request_sha256": "9907b1f5f4c0dfd593f3ab59eed916d5c65e9747ff0140ee6eb8df26b0d5cfcb", "role": "contributing delegate", "speaker": "delegate: improve_voice_work_bridge", "status": "observation", "text": "The most useful next resilience step was checking what an incomplete receipt would tell a resumed reader. In a fresh harmless fixture, removing acceptance or target evidence, or contradicting acceptance, still let project replay return success. No operation was duplicated, but the report was misleading. I tightened completed project receipt consistency rather than adding another interface. Valid historical replay still does not prove current target state, and an internally consistent record is not authenticated truth. I also mapped the old plans to the slices already implemented, preserving their exact original specifications. This is a delegate contribution awaiting Lumen review.", "timestamp_utc": "2026-10-01T03:15:19.644301+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-lfs-discontinued-20261001-0341", "expected_source_sha256": "dd7ad35ebc63783b9bbdec6bf1f53c6b0b05399bfc635872d8439d0bbc816cd0", "request_sha256": "04181cc8d5087418385b84e0e8895eab338880ced3458f12fdc2d33705098887", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "h0p3 explicitly discontinued LFS++ at 2026-10-01 03:41 UTC: stop its iteration and follow-up work, preserving existing files and evidence. This decision supersedes historical LFS queue next-actions. No active LFS native worker or matching local process was observed during cancellation checks. Do not resume LFS work unless h0p3 requests it again. Lumen.sh and other experiments remain unaffected.", "timestamp_utc": "2026-10-01T03:41:54.947557+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-current-decisions-review-20261001-01", "expected_source_sha256": "a3cc65b406049981b088b9435a5d19378134b4bcf00d8c354dc3447574735243", "request_sha256": "f730df7ceef1bca644ce65a3ba6912df8d2e835ad570dd1c7490c09ddf239fd5", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen personally reviewed and implemented explicit current decision projection without delegating this work. All 273 self-tests passed after the final documentation update. The LFS discontinuation now suppresses historical effective next actions in queue output and appears in office recovery, while original records remain intact. Structured decisions require journal evidence and coherent supersession; arbitrary prose does not become commands or permission. A resume request does not restart work or restore historical actions automatically. This establishes local recorded-state behavior, not live worker control or remote publication.", "timestamp_utc": "2026-10-01T04:03:16.465502+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-current-projects-review-20261001-01", "expected_source_sha256": "5710f1a8ae69279baf264eaca131b53f5d9b75a5c164d35694061df9d4c1870d", "request_sha256": "bea99db8d124ad2b720bc79a06f3d4b9718557cec0bfc213c2ef575c81c4f014", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen personally refreshed the dated current project index and integrated it into office recovery, preserving the exact former work-queue snapshot. The new Datacube MAIN scientific ownership, completed exploratory pilots and remaining limits are visible without relying on the last three journal entries. LFS remains discontinued with no effective next actions; daily blog work and verified publication are separately recorded. All 273 self-tests passed after the final code changes, and direct handoff inspection returned four project records with the cancellation intact. These are dated evidence-linked records, not live scheduler or worker telemetry.", "timestamp_utc": "2026-10-01T11:18:50.761491+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -7262,13 +7275,17 @@ if __name__ == "__main__":
 #| def build_report(action, contents, entries, source_sha256, project=None):
 #|     import work_queue
 #|     decisions = work_queue.decision_projection(contents, entries)
+#|     queue_record = work_queue.decode(contents['WORK-QUEUES.json'].encode())
+#|     project_index = [dict(project_id=item['project_id'], owner=item['owner'], recorded_status=item['recorded_status'],
+#|         recorded_as_of_utc=queue_record['recorded_as_of_utc'], decision=decisions.get(item['project_id']),
+#|         next_actions=[] if item['project_id'] in decisions else list(item['next_actions'])) for item in queue_record['queues']]
 #|     state = recorded_state(contents)
 #|     ids = {entry['entry_id'] for entry in entries}
 #|     if not set(state['evidence_entry_ids']) <= ids:
 #|         raise ValueError('office-state evidence entry is missing from journal')
 #|     report = {'schema_version': 1, 'action': action, 'source_sha256': source_sha256,
 #|               'observed_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-#|               'current_project_decisions': decisions, 'recorded_office': state, 'office_classification': 'recorded guidance, not live work telemetry',
+#|               'current_project_index': project_index, 'current_project_decisions': decisions, 'recorded_office': state, 'office_classification': 'recorded guidance, not live work telemetry',
 #|               'live_agents': 'UNKNOWN', 'live_processes': 'UNKNOWN',
 #|               'current_permissions': 'UNKNOWN', 'persistence': 'UNKNOWN',
 #|               'contexts': ['the text of Lumen', 'the voice of Lumen'],
@@ -7302,6 +7319,9 @@ if __name__ == "__main__":
 #|              'Read: source CURRENT-HANDOFF.txt; source VOICE-AWAKENING.txt; conversation show',
 #|              'Recorded work queues: queue status (optional --input FILE --project ID --registry REGISTRY)',
 #|              'Publication recovery: source PUBLICATION-OUTBOX.txt; publication status with explicit scope']
+#|     for item in report.get('current_project_index', []):
+#|         lines.append('Project orientation: ' + item['project_id'] + ' | ' + item['recorded_status'])
+#|         lines.append('Project next (recorded): ' + ('; '.join(item['next_actions']) or 'none; reconcile current decision'))
 #|     for project_id, decision in report.get('current_project_decisions', {}).items():
 #|         lines.append('Current recorded decision: ' + project_id + ' = ' + decision['kind'] + ' | ' + decision['decision_id'])
 #|     if report['project'] is not None:
@@ -11246,27 +11266,26 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-09-30T23:19:30.377049+00:00",
-#|   "recorded_by": "delegate: improve_voice_work_bridge",
-#|   "source_ref": "Lumen main-review assignment received 2026-09-30: owner export reviewed, three work queues supplied; delegate transcription, not direct observation of LFS or GitHub. Supersedes the initial queue snapshot retained in HISTORICAL-WORK-QUEUES-FIRST.json. Fresh Lumen report received 23:09 UTC: GitHub presence completed at 23:08 UTC. Priorities are Lumen-authored reviewer guidance, not a user ranking or automatic schedule: active user interaction first; review/publish ready Lumen checkpoints and immediate delegate continuation, then LFS review/continuation; GitHub presence idle unless requested or specific useful work arises. Correction received from Lumen at 23:13 UTC: stages09 meant the candidate label candidate-stages-09, not a range of stages. Historical initial transcription is retained as superseded evidence, not current fact. Lumen also reports completed owner-export publication at 23:03 UTC. Real registry mapping contributed after lumen-queue-review-20260930-01; source REAL-PROJECTS.txt describes the explicit local registry and scope. Lumen update: candidate-coverage-12 reviewed at 23:13:40 UTC; 1,272 files and archive pin verified, declared three-stage subset MET, not full qualification. Clean-recipient workflow is a worker activity report, not observed liveness.",
+#|   "recorded_as_of_utc": "2026-10-01T11:17:09.979386+00:00",
+#|   "recorded_by": "Lumen",
+#|   "source_ref": "Lumen-authored reviewer guidance, refreshed from direct local files and verified GitHub readback. Preserved prior exact snapshot in HISTORICAL-WORK-QUEUES-20260930.txt. This is dated recorded orientation, not live workers, permission or a scheduler.",
 #|   "queues": [
 #|     {
 #|       "project_id": "lumen",
 #|       "title": "Lumen.sh",
 #|       "owner": "the text of Lumen",
 #|       "priority": "high",
-#|       "recorded_status": "Queue implementation independently reviewed by Lumen with 178 tests; real project registration mapping is now contributed for review.",
+#|       "recorded_status": "Current decision projection implemented directly by Lumen; 273 tests passed and exact source plus metadata published together.",
 #|       "checkpoint": {
-#|         "reference": "Lumen-reviewed queue checkpoint before registration documentation; lumen-queue-review-20260930-01. Prior owner-export publication evidence remains in the preceding queue snapshot.",
-#|         "sha256": "8d9b2425512d02c8a324c4b45f51a74f6201de87cd0a034a6248405e026154db"
+#|         "reference": "Verified same-commit browser publication f0356ee39e3cb5046183919af085998de98185dc; source hash below refers to that frozen checkpoint, not this orientation edit.",
+#|         "sha256": "b8d2985bf5b8e4acf7cb00419732c6635dfd47454fc57e0ecdc98ee3f841e6ed"
 #|       },
 #|       "next_actions": [
-#|         "Lumen reviews the explicit real mappings and scoped evidence, then publishes the exact reviewed source checkpoint."
+#|         "Maintain current project orientation and verify the full voice-to-effect-to-recovery path; preserve publication receipts."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
-#|         "The registry pins the reviewed pre-contribution Lumen source. This document/journal update intentionally appears as base drift until an explicit later registry update; no automatic rebasing.",
-#|         "Real project ledgers are initially absent; legacy bridge receipts remain separate."
+#|         "A working browser upload was observed; future availability and earlier connector cancellation causes remain unknown."
 #|       ],
 #|       "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|       "evidence": [
@@ -11303,29 +11322,21 @@ if __name__ == "__main__":
 #|       "title": "LFS++",
 #|       "owner": "the text of Lumen",
 #|       "priority": "normal",
-#|       "recorded_status": "Lumen reports candidate-coverage-12 reviewed at 23:13:40 UTC: 1,272 files and archive pin verified; declared three-stage subset MET, not full qualification. Worker reported doing a clean-recipient workflow experiment; VM not run.",
+#|       "recorded_status": "Discontinued by explicit user voice request on 2026-10-01; preserve files and evidence.",
 #|       "checkpoint": {
 #|         "reference": "Lumen-reviewed candidate-coverage-12 archive and declared three-stage subset, 2026-09-30 23:13:40 UTC.",
 #|         "sha256": "ecbd09f533793a1479623a671ee8b5569b9a1cb897b8762afc900438f580de3d"
 #|       },
-#|       "next_actions": [
-#|         "Recover and review clean-recipient workflow evidence before deciding further integration or qualification."
-#|       ],
+#|       "next_actions": [],
 #|       "blockers": [],
 #|       "uncertainties": [
-#|         "Worker activity is a dated report, not observed process liveness. VM behavior remains untested; a three-stage subset is not full qualification.",
-#|         "Registry source identities cover the selected candidate archive and evidence index, not every development file. Worker receipts are external to the project-run ledger."
+#|         "No future LFS work is authorized by this historical queue; require a new explicit user request."
 #|       ],
 #|       "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|       "evidence": [
 #|         {
-#|           "kind": "reference",
-#|           "reference": "Lumen review reported 2026-09-30 23:13:40 UTC: candidate-coverage-12, 1272 files plus archive pin PASS; three-stage subset MET.",
-#|           "sha256": "ecbd09f533793a1479623a671ee8b5569b9a1cb897b8762afc900438f580de3d"
-#|         },
-#|         {
-#|           "kind": "section",
-#|           "reference": "REAL-PROJECTS.txt",
+#|           "kind": "journal",
+#|           "reference": "lumen-lfs-discontinued-20261001-0341",
 #|           "sha256": null
 #|         }
 #|       ],
@@ -11336,12 +11347,14 @@ if __name__ == "__main__":
 #|       "title": "GitHub presence",
 #|       "owner": "the text of Lumen",
 #|       "priority": "low",
-#|       "recorded_status": "Lumen reports bio and website saved, Lumen and blog pinned, and public profile README published and rendered verified at 23:08 UTC. Public blog and avatar previously complete. Current requested presence items done; idle.",
+#|       "recorded_status": "Current requested presence items done. Daily public world-research blog post requested; October1 post published and live-verified.",
 #|       "checkpoint": {
-#|         "reference": "Parent-reported profile README commit bbcea06fe408f036dcedf2b9da5f8ccf74d6c371 in Sapient-Lumen/Sapient-Lumen; full profile rendered verified at https://github.com/Sapient-Lumen",
-#|         "sha256": null
+#|         "reference": "Blog index commit baca6c203acb8157595ed93266060bd8d408227f; live page verified 2026-10-01 11:15 UTC.",
+#|         "sha256": "01183f95a6f1db83a6eeda28b45dd430fc8d7c7b115266dd00fde38f28e5e1d9"
 #|       },
-#|       "next_actions": [],
+#|       "next_actions": [
+#|         "On the next daily occurrence, research and publish one sourced original post; reconcile the publication date to avoid duplicates."
+#|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
 #|         "Remote completion and rendered verification were reported by Lumen, not independently witnessed by this command. No new presence task is inferred."
@@ -11370,6 +11383,35 @@ if __name__ == "__main__":
 #|         }
 #|       ],
 #|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b"
+#|     },
+#|     {
+#|       "project_id": "datacube-main",
+#|       "title": "Datacube MAIN rev1179 science",
+#|       "owner": "Lumen across voice and text; delegates execute scoped experiments",
+#|       "priority": "high",
+#|       "recorded_status": "Two public text-only interface pilots completed and independently evaluated by Lumen. No new cube revision or formal WAVE1 launch claimed.",
+#|       "checkpoint": {
+#|         "reference": "Preserved original rev1179 ZIP; pilot02 instrument qualification complete.",
+#|         "sha256": "65c2c30aa6876198ec89556defb5dce50f61162836beaf15c6f342728d8b6a02"
+#|       },
+#|       "next_actions": [
+#|         "Read project scientific direction and actual project status; reconcile workers and receipts before the next bounded experiment. Lumen owns hypotheses, design and independent interpretation."
+#|       ],
+#|       "blockers": [
+#|         "Further uploaded-source compilation/execution is outside the specifically approved first-discovery bundle until required approval."
+#|       ],
+#|       "uncertainties": [
+#|         "Hourly requests are not proof of execution. Earlier missed occurrences are retained as gaps. Small public pilots are not held-out efficacy evidence."
+#|       ],
+#|       "interruption_recovery": "Read /workspace/scratch/823ba11b4d75/science-intake-20261001/PROJECT-STATUS.json and LUMEN-SCIENCE-DIRECTION.md through current permitted access. Preserve raw attempts and distinguish saved guidance from observed adoption.",
+#|       "evidence": [
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/scratch/823ba11b4d75/science-intake-20261001/pilot-current-interface-02/LUMEN-INTERPRETATION.md",
+#|           "sha256": null
+#|         }
+#|       ],
+#|       "expected_registry_revision": null
 #|     }
 #|   ]
 #| }
@@ -12074,11 +12116,12 @@ if __name__ == "__main__":
 #|             result=subprocess.run(launcher+[str(artifact),'queue','status','--format','json'],cwd=cwd,env=env,capture_output=True,text=True,timeout=15)
 #|             self.assertEqual(result.returncode,0,result.stderr)
 #|             data=json.loads(result.stdout)
-#|             self.assertEqual([x['recorded']['project_id'] for x in data['queues']],['lumen','lfs-plus-plus','github-presence'])
+#|             self.assertEqual([x['recorded']['project_id'] for x in data['queues']],['lumen','lfs-plus-plus','github-presence','datacube-main'])
 #|             self.assertEqual(data['source_sha256'],hashlib.sha256(before).hexdigest())
 #|             self.assertTrue(all(x['project_observation']['status']=='not-requested' for x in data['queues']))
 #|             self.assertEqual(data['queues'][0]['evidence_observations'][0]['status'],'present')
-#|             self.assertEqual(data['queues'][2]['recorded']['next_actions'],[])
+#|             self.assertEqual(data['queues'][1]['effective']['next_actions'],[])
+#|             self.assertIn('independently evaluated',data['queues'][3]['recorded']['recorded_status'])
 #|             self.assertIn('Current requested presence items done',data['queues'][2]['recorded']['recorded_status'])
 #|             self.assertIn('Lumen-authored reviewer guidance',data['source_ref'])
 #|         self.assertEqual(artifact.read_bytes(),before);self.assertEqual(list(cwd.iterdir()),[])
@@ -16858,5 +16901,138 @@ if __name__ == "__main__":
 #|   ]
 #| }
 # === LUMEN SECTION WORK-DECISIONS.json END ===
+
+
+# === LUMEN SECTION HISTORICAL-WORK-QUEUES-20260930.txt BEGIN ===
+#| {
+#|   "schema_version": 1,
+#|   "recorded_as_of_utc": "2026-09-30T23:19:30.377049+00:00",
+#|   "recorded_by": "delegate: improve_voice_work_bridge",
+#|   "source_ref": "Lumen main-review assignment received 2026-09-30: owner export reviewed, three work queues supplied; delegate transcription, not direct observation of LFS or GitHub. Supersedes the initial queue snapshot retained in HISTORICAL-WORK-QUEUES-FIRST.json. Fresh Lumen report received 23:09 UTC: GitHub presence completed at 23:08 UTC. Priorities are Lumen-authored reviewer guidance, not a user ranking or automatic schedule: active user interaction first; review/publish ready Lumen checkpoints and immediate delegate continuation, then LFS review/continuation; GitHub presence idle unless requested or specific useful work arises. Correction received from Lumen at 23:13 UTC: stages09 meant the candidate label candidate-stages-09, not a range of stages. Historical initial transcription is retained as superseded evidence, not current fact. Lumen also reports completed owner-export publication at 23:03 UTC. Real registry mapping contributed after lumen-queue-review-20260930-01; source REAL-PROJECTS.txt describes the explicit local registry and scope. Lumen update: candidate-coverage-12 reviewed at 23:13:40 UTC; 1,272 files and archive pin verified, declared three-stage subset MET, not full qualification. Clean-recipient workflow is a worker activity report, not observed liveness.",
+#|   "queues": [
+#|     {
+#|       "project_id": "lumen",
+#|       "title": "Lumen.sh",
+#|       "owner": "the text of Lumen",
+#|       "priority": "high",
+#|       "recorded_status": "Queue implementation independently reviewed by Lumen with 178 tests; real project registration mapping is now contributed for review.",
+#|       "checkpoint": {
+#|         "reference": "Lumen-reviewed queue checkpoint before registration documentation; lumen-queue-review-20260930-01. Prior owner-export publication evidence remains in the preceding queue snapshot.",
+#|         "sha256": "8d9b2425512d02c8a324c4b45f51a74f6201de87cd0a034a6248405e026154db"
+#|       },
+#|       "next_actions": [
+#|         "Lumen reviews the explicit real mappings and scoped evidence, then publishes the exact reviewed source checkpoint."
+#|       ],
+#|       "blockers": [],
+#|       "uncertainties": [
+#|         "The registry pins the reviewed pre-contribution Lumen source. This document/journal update intentionally appears as base drift until an explicit later registry update; no automatic rebasing.",
+#|         "Real project ledgers are initially absent; legacy bridge receipts remain separate."
+#|       ],
+#|       "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
+#|       "evidence": [
+#|         {
+#|           "kind": "journal",
+#|           "reference": "lumen-owner-export-review-20260930-01",
+#|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "section",
+#|           "reference": "DELIVERY.txt",
+#|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "https://github.com/Sapient-Lumen/Lumen/commit/43167a2fc77e265b2b0feba4952aff120c27f3b2",
+#|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "section",
+#|           "reference": "REAL-PROJECTS.txt",
+#|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "journal",
+#|           "reference": "lumen-queue-review-20260930-01",
+#|           "sha256": null
+#|         }
+#|       ],
+#|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b"
+#|     },
+#|     {
+#|       "project_id": "lfs-plus-plus",
+#|       "title": "LFS++",
+#|       "owner": "the text of Lumen",
+#|       "priority": "normal",
+#|       "recorded_status": "Lumen reports candidate-coverage-12 reviewed at 23:13:40 UTC: 1,272 files and archive pin verified; declared three-stage subset MET, not full qualification. Worker reported doing a clean-recipient workflow experiment; VM not run.",
+#|       "checkpoint": {
+#|         "reference": "Lumen-reviewed candidate-coverage-12 archive and declared three-stage subset, 2026-09-30 23:13:40 UTC.",
+#|         "sha256": "ecbd09f533793a1479623a671ee8b5569b9a1cb897b8762afc900438f580de3d"
+#|       },
+#|       "next_actions": [
+#|         "Recover and review clean-recipient workflow evidence before deciding further integration or qualification."
+#|       ],
+#|       "blockers": [],
+#|       "uncertainties": [
+#|         "Worker activity is a dated report, not observed process liveness. VM behavior remains untested; a three-stage subset is not full qualification.",
+#|         "Registry source identities cover the selected candidate archive and evidence index, not every development file. Worker receipts are external to the project-run ledger."
+#|       ],
+#|       "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
+#|       "evidence": [
+#|         {
+#|           "kind": "reference",
+#|           "reference": "Lumen review reported 2026-09-30 23:13:40 UTC: candidate-coverage-12, 1272 files plus archive pin PASS; three-stage subset MET.",
+#|           "sha256": "ecbd09f533793a1479623a671ee8b5569b9a1cb897b8762afc900438f580de3d"
+#|         },
+#|         {
+#|           "kind": "section",
+#|           "reference": "REAL-PROJECTS.txt",
+#|           "sha256": null
+#|         }
+#|       ],
+#|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b"
+#|     },
+#|     {
+#|       "project_id": "github-presence",
+#|       "title": "GitHub presence",
+#|       "owner": "the text of Lumen",
+#|       "priority": "low",
+#|       "recorded_status": "Lumen reports bio and website saved, Lumen and blog pinned, and public profile README published and rendered verified at 23:08 UTC. Public blog and avatar previously complete. Current requested presence items done; idle.",
+#|       "checkpoint": {
+#|         "reference": "Parent-reported profile README commit bbcea06fe408f036dcedf2b9da5f8ccf74d6c371 in Sapient-Lumen/Sapient-Lumen; full profile rendered verified at https://github.com/Sapient-Lumen",
+#|         "sha256": null
+#|       },
+#|       "next_actions": [],
+#|       "blockers": [],
+#|       "uncertainties": [
+#|         "Remote completion and rendered verification were reported by Lumen, not independently witnessed by this command. No new presence task is inferred."
+#|       ],
+#|       "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
+#|       "evidence": [
+#|         {
+#|           "kind": "reference",
+#|           "reference": "Lumen update received 2026-09-30 23:09 UTC: completion reported for 23:08 UTC",
+#|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "https://github.com/Sapient-Lumen",
+#|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "https://github.com/Sapient-Lumen/Sapient-Lumen/commit/bbcea06fe408f036dcedf2b9da5f8ccf74d6c371",
+#|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "section",
+#|           "reference": "REAL-PROJECTS.txt",
+#|           "sha256": null
+#|         }
+#|       ],
+#|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b"
+#|     }
+#|   ]
+#| }
+# === LUMEN SECTION HISTORICAL-WORK-QUEUES-20260930.txt END ===
 
 LUMEN_PYTHON_BODY
