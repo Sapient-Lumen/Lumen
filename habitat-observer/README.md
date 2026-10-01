@@ -1,6 +1,51 @@
-# Habitat observer
+# The Observer of The Habitat
 
 This is Lumen's lightweight observer for the cloud-container workspace, requested by h0p3. Its implementation and tests are embedded in `Lumen.sh` as `habitat_observer.py` and `test_habitat_observer.py`. The reviewed checkpoint passed 309 tests, including 20 observer tests.
+
+
+## First Unicode evidence atlas
+
+The restarted run has **22 verified samples from 19:55:09 through 20:16:09 UTC on 1 October 2026** in this frozen snapshot. That establishes those observations, not continued liveness beyond them.
+
+- [Unicode atlas](atlas/2026-10-01-first-atlas.txt): nominal-time strips, clock-pair disagreement, interval distributions, self-CPU accounting, and explicit interpretation limits
+- [Machine-readable analysis](atlas/2026-10-01-first-analysis.json)
+- [Exact restarted-run snapshot](samples/2026-10-01-restarted-snapshot.jsonl), SHA-256 `b652f622b5e23ddb179326f1aba5531335516c26f2fc1280b18668ce93ca4f32`
+- [Offline analyzer](atlas/observer_atlas.py) and [13 focused fixture tests](atlas/test_observer_atlas.py)
+- [My detailed measurement agenda](MEASUREMENT-AGENDA.md): obscure failure cases, bounded experiments, and what judgment must add to metrics
+
+The atlas is an initial analysis tool, separate from the embedded active sampler. It performs no live probes. Row scales are printed because normalized sparklines can exaggerate tiny fluctuations. Missing and unknown observations have distinct glyphs. The last-sample age is tied to an explicit as-of timestamp. All data and code above were retrieved from the published source commit and compared exactly with the reviewed local files.
+
+```text
+╔════════════════════════════════════════════════════════════════════╗
+║                 THE OBSERVER OF THE HABITAT                       ║
+╚════════════════════════════════════════════════════════════════════╝
+Run       habitat-9368ec79a77c460e85b1750dc91d414f
+Samples   22  │  records 23
+From      2026-10-01T19:55:09.258800+00:00
+Through   2026-10-01T20:16:09.258974+00:00
+Terminal  not observed; lifetime unresolved
+As of     2026-10-01T20:16:14.066967+00:00
+Tail age  4.80799 seconds by UTC
+
+NOMINAL-TIME STRIPS · last ≤60 bins · one row-specific scale
+· empty bin   ? unobserved value   ▄ constant series   ▁→█ low→high
+
+deadline_lateness_ms
+  ▅▄▇▆▁▁▅▃▂▄▅▂▃▃▃▂▂▂█▂▅▃
+  scale 0.110546 … 0.151814 │ empty 0 │ colliding samples 0
+
+OS_available_memory_GiB
+  ▁▁▁▁▁▁▁▁▁▁▇▇▇█▇▇▆▇▇▆▆▆
+  scale 7.67663 … 7.79819 │ empty 0 │ colliding samples 0
+
+workspace_available_GiB
+  ▄▃▂▁▁▁▁▁▁▁▁▅▅▅▅▄▄▄▄▄▄█
+  scale 23.9308 … 23.9384 │ empty 0 │ colliding samples 0
+
+OS_load_1m
+  ▁▁▁▁▁▁▁▁▅▄█▅▂▁▁▅▂▁▁▁▁▁
+  scale 0 … 0.235352 │ empty 0 │ colliding samples 0
+```
 
 ## Interruption observed on 1 October 2026
 
@@ -8,7 +53,7 @@ At 19:10 UTC, the run contained 15 verified samples, the last timestamped 19:04:
 
 [Interrupted-run snapshot](samples/2026-10-01-interrupted-snapshot.jsonl) preserves the start record and all 15 observed samples. It is a verified copy of the available open segment, not a claim of a normally closed run. SHA-256: `0f4ee9c13cdd7c8144965ed49545016a70554908e3b98a8251b9461600bfb9cf` (29,235 bytes).
 
-The interruption has been reported to h0p3. A separate scheduled-snapshot fallback has been proposed and awaits approval. No replacement process or new sampling schedule has been started. The publication checks for this trial remain in place.
+The interruption has been reported to h0p3. A separate scheduled-snapshot fallback has been proposed and awaits approval. On h0p3's later explicit request, a fresh managed run began at 19:55:09 UTC. Its distinct run identity preserves the interruption rather than filling it retroactively. No fallback sampling schedule has been created.
 
 ## First measured run
 
