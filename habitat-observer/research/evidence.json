@@ -1,0 +1,1527 @@
+{
+  "timer": {
+    "source_sha256": "300d87597a30d50673405c66dd72bedb8dd3f820127679970696615c778ef21f",
+    "events_sha256": "4fd3facfb59816ef4c9b9a02c436297c44e02270f28ea35309307f906345d3c0",
+    "rows": [
+      {
+        "event": "append",
+        "id": "timer-20261001T131700Z",
+        "expected_due_utc": "2026-10-01T13:17:00Z",
+        "wake_observed_at_utc": "2026-10-01T13:16:47Z",
+        "dispatch_observed_at_utc": "2026-10-01T13:17:15Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T13:18:43.161745+00:00",
+        "result_observed_at_utc": "2026-10-01T13:18:07Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:18:43.161745+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T132700Z",
+        "expected_due_utc": "2026-10-01T13:27:00Z",
+        "wake_observed_at_utc": "2026-10-01T13:27:05Z",
+        "dispatch_observed_at_utc": "2026-10-01T13:27:26Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T13:28:04.490491+00:00",
+        "result_observed_at_utc": "2026-10-01T13:27:45Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:28:04.490491+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T133700Z",
+        "expected_due_utc": "2026-10-01T13:37:00Z",
+        "wake_observed_at_utc": "2026-10-01T13:37:02Z",
+        "dispatch_observed_at_utc": "2026-10-01T13:37:54Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T13:38:42.184425+00:00",
+        "result_observed_at_utc": "2026-10-01T13:38:31Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:38:42.184425+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T134700Z",
+        "expected_due_utc": "2026-10-01T13:47:00Z",
+        "wake_observed_at_utc": "2026-10-01T13:46:49Z",
+        "dispatch_observed_at_utc": "2026-10-01T13:48:56Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T13:50:31.218006+00:00",
+        "result_observed_at_utc": "2026-10-01T13:49:32Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:50:31.218006+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T135700Z",
+        "expected_due_utc": "2026-10-01T13:57:00Z",
+        "wake_observed_at_utc": "2026-10-01T13:58:03Z",
+        "dispatch_observed_at_utc": "2026-10-01T13:58:40Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T13:59:45.513881+00:00",
+        "result_observed_at_utc": "2026-10-01T13:58:56Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:59:45.513881+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T140700Z",
+        "expected_due_utc": "2026-10-01T14:07:00Z",
+        "wake_observed_at_utc": "2026-10-01T14:07:11Z",
+        "dispatch_observed_at_utc": "2026-10-01T14:07:48Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T14:08:54.009874+00:00",
+        "result_observed_at_utc": "2026-10-01T14:08:17Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:08:54.009874+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T141700Z",
+        "expected_due_utc": "2026-10-01T14:17:00Z",
+        "wake_observed_at_utc": "2026-10-01T14:16:41Z",
+        "dispatch_observed_at_utc": "2026-10-01T14:17:21Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T14:17:56.087610+00:00",
+        "result_observed_at_utc": "2026-10-01T14:17:41Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:17:56.087610+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T142700Z",
+        "expected_due_utc": "2026-10-01T14:27:00Z",
+        "wake_observed_at_utc": "2026-10-01T14:27:14Z",
+        "dispatch_observed_at_utc": "2026-10-01T14:27:40Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T14:28:10.984028+00:00",
+        "result_observed_at_utc": "2026-10-01T14:27:57Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:28:10.984028+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T143700Z",
+        "expected_due_utc": "2026-10-01T14:37:00Z",
+        "wake_observed_at_utc": "2026-10-01T14:37:20Z",
+        "dispatch_observed_at_utc": "2026-10-01T14:37:47Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T14:38:27.593663+00:00",
+        "result_observed_at_utc": "2026-10-01T14:38:09Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:38:27.593663+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T144700Z",
+        "expected_due_utc": "2026-10-01T14:47:00Z",
+        "wake_observed_at_utc": "2026-10-01T14:46:35Z",
+        "dispatch_observed_at_utc": "2026-10-01T14:47:41Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T14:49:10.648802+00:00",
+        "result_observed_at_utc": "2026-10-01T14:48:20Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:49:10.648802+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T145700Z",
+        "expected_due_utc": "2026-10-01T14:57:00Z",
+        "wake_observed_at_utc": "2026-10-01T14:57:30Z",
+        "dispatch_observed_at_utc": "2026-10-01T14:58:00Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T14:59:03.196859+00:00",
+        "result_observed_at_utc": "2026-10-01T14:58:23Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:59:03.196859+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T150700Z",
+        "expected_due_utc": "2026-10-01T15:07:00Z",
+        "wake_observed_at_utc": "2026-10-01T15:07:15Z",
+        "dispatch_observed_at_utc": "2026-10-01T15:07:44Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T15:08:42.899526+00:00",
+        "result_observed_at_utc": "2026-10-01T15:08:24Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:08:42.899526+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T151700Z",
+        "expected_due_utc": "2026-10-01T15:17:00Z",
+        "wake_observed_at_utc": "2026-10-01T15:16:57Z",
+        "dispatch_observed_at_utc": "2026-10-01T15:18:04Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T15:18:36.933011+00:00",
+        "result_observed_at_utc": "2026-10-01T15:18:19Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:18:36.933011+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T152700Z",
+        "expected_due_utc": "2026-10-01T15:27:00Z",
+        "wake_observed_at_utc": "2026-10-01T15:27:12Z",
+        "dispatch_observed_at_utc": "2026-10-01T15:27:48Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T15:28:35.966165+00:00",
+        "result_observed_at_utc": "2026-10-01T15:28:16Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:28:35.966165+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T153700Z",
+        "expected_due_utc": "2026-10-01T15:37:00Z",
+        "wake_observed_at_utc": "2026-10-01T15:36:39Z",
+        "dispatch_observed_at_utc": "2026-10-01T15:37:40Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T15:38:26.815629+00:00",
+        "result_observed_at_utc": "2026-10-01T15:37:58Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:38:26.815629+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T154700Z",
+        "expected_due_utc": "2026-10-01T15:47:00Z",
+        "wake_observed_at_utc": "2026-10-01T15:47:35Z",
+        "dispatch_observed_at_utc": "2026-10-01T15:48:05Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T15:49:28.602693+00:00",
+        "result_observed_at_utc": "2026-10-01T15:48:29Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:49:28.602693+00:00"
+      },
+      {
+        "event": "review_correction",
+        "id": "timer-20261001T155700Z",
+        "expected_due_utc": "2026-10-01T15:57:00Z",
+        "wake_observed_at_utc": "2026-10-01T15:56:50Z",
+        "dispatch_observed_at_utc": "2026-10-01T16:02:07Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T16:03:35.247045+00:00",
+        "result_observed_at_utc": "2026-10-01T16:02:28Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:02:45.983987+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T160700Z",
+        "expected_due_utc": "2026-10-01T16:07:00Z",
+        "wake_observed_at_utc": "2026-10-01T16:07:07Z",
+        "dispatch_observed_at_utc": "2026-10-01T16:07:31Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T16:08:18.233493+00:00",
+        "result_observed_at_utc": "2026-10-01T16:08:06Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:08:18.233493+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T161700Z",
+        "expected_due_utc": "2026-10-01T16:17:00Z",
+        "wake_observed_at_utc": "2026-10-01T16:17:00Z",
+        "dispatch_observed_at_utc": "2026-10-01T16:17:23Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T16:17:52.102751+00:00",
+        "result_observed_at_utc": "2026-10-01T16:17:39Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:17:52.102751+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T162700Z",
+        "expected_due_utc": "2026-10-01T16:27:00Z",
+        "wake_observed_at_utc": "2026-10-01T16:26:55Z",
+        "dispatch_observed_at_utc": "2026-10-01T16:27:35Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T16:28:31.489427+00:00",
+        "result_observed_at_utc": "2026-10-01T16:27:56Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:28:31.489427+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T163700Z",
+        "expected_due_utc": "2026-10-01T16:37:00Z",
+        "wake_observed_at_utc": "2026-10-01T16:37:07Z",
+        "dispatch_observed_at_utc": "2026-10-01T16:37:51Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T16:38:40.691054+00:00",
+        "result_observed_at_utc": "2026-10-01T16:38:27Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:38:40.691054+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T164700Z",
+        "expected_due_utc": "2026-10-01T16:47:00Z",
+        "wake_observed_at_utc": "2026-10-01T16:46:49Z",
+        "dispatch_observed_at_utc": "2026-10-01T16:47:35Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T16:50:29.054378+00:00",
+        "result_observed_at_utc": "2026-10-01T16:48:16Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:50:29.054378+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T165700Z",
+        "expected_due_utc": "2026-10-01T16:57:00Z",
+        "wake_observed_at_utc": "2026-10-01T16:56:56Z",
+        "dispatch_observed_at_utc": "2026-10-01T16:57:28Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T16:58:17.574642+00:00",
+        "result_observed_at_utc": "2026-10-01T16:58:02Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:58:17.574642+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T170700Z",
+        "expected_due_utc": "2026-10-01T17:07:00Z",
+        "wake_observed_at_utc": "2026-10-01T17:06:46Z",
+        "dispatch_observed_at_utc": "2026-10-01T17:07:24Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T17:08:18.987850+00:00",
+        "result_observed_at_utc": "2026-10-01T17:08:00Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:08:18.987850+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T171700Z",
+        "expected_due_utc": "2026-10-01T17:17:00Z",
+        "wake_observed_at_utc": "2026-10-01T17:17:37Z",
+        "dispatch_observed_at_utc": "2026-10-01T17:18:26Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T17:19:28.521551+00:00",
+        "result_observed_at_utc": "2026-10-01T17:18:50Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:19:28.521551+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T172700Z",
+        "expected_due_utc": "2026-10-01T17:27:00Z",
+        "wake_observed_at_utc": "2026-10-01T17:26:50Z",
+        "dispatch_observed_at_utc": "2026-10-01T17:28:34Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T17:29:26.164684+00:00",
+        "result_observed_at_utc": "2026-10-01T17:28:58Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:29:26.164684+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T173700Z",
+        "dispatch_observed_at_utc": "2026-10-01T17:38:14Z",
+        "status": "verified appended",
+        "expected_due_utc": "2026-10-01T17:37:00Z",
+        "wake_observed_at_utc": "2026-10-01T17:37:04Z",
+        "recorded_at_utc": "2026-10-01T17:39:11.898492+00:00",
+        "result_observed_at_utc": "2026-10-01T17:38:38Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:39:11.898492+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T174700Z",
+        "expected_due_utc": "2026-10-01T17:47:00Z",
+        "wake_observed_at_utc": "2026-10-01T17:47:38Z",
+        "dispatch_observed_at_utc": "2026-10-01T17:55:22Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T17:55:43.692509+00:00",
+        "result_observed_at_utc": "2026-10-01T17:55:34Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:55:43.692509+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T175700Z",
+        "expected_due_utc": "2026-10-01T17:57:00Z",
+        "wake_observed_at_utc": "2026-10-01T17:56:53Z",
+        "dispatch_observed_at_utc": "2026-10-01T17:57:32Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T17:58:39.305028+00:00",
+        "result_observed_at_utc": "2026-10-01T17:58:16Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:58:39.305028+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T180700Z",
+        "dispatch_observed_at_utc": "2026-10-01T18:07:44Z",
+        "status": "verified appended",
+        "expected_due_utc": "2026-10-01T18:07:00Z",
+        "wake_observed_at_utc": "2026-10-01T18:07:05Z",
+        "recorded_at_utc": "2026-10-01T18:08:17.191401+00:00",
+        "result_observed_at_utc": "2026-10-01T18:08:06Z",
+        "first_append_recorded_at_utc": "2026-10-01T18:08:17.191401+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T181700Z",
+        "expected_due_utc": "2026-10-01T18:17:00Z",
+        "wake_observed_at_utc": "2026-10-01T18:20:36Z",
+        "dispatch_observed_at_utc": "2026-10-01T18:21:08Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T18:22:15.086770+00:00",
+        "result_observed_at_utc": "2026-10-01T18:21:47Z",
+        "first_append_recorded_at_utc": "2026-10-01T18:22:15.086770+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T182700Z",
+        "expected_due_utc": "2026-10-01T18:27:00Z",
+        "wake_observed_at_utc": "2026-10-01T18:27:33Z",
+        "dispatch_observed_at_utc": "2026-10-01T18:28:26Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T18:29:33.119171+00:00",
+        "result_observed_at_utc": "2026-10-01T18:28:55Z",
+        "first_append_recorded_at_utc": "2026-10-01T18:29:33.119171+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T183700Z",
+        "expected_due_utc": "2026-10-01T18:37:00Z",
+        "wake_observed_at_utc": "2026-10-01T18:37:33Z",
+        "dispatch_observed_at_utc": "2026-10-01T18:37:55Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T18:38:51.932788+00:00",
+        "result_observed_at_utc": "2026-10-01T18:38:29Z",
+        "first_append_recorded_at_utc": "2026-10-01T18:38:51.932788+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T184700Z",
+        "expected_due_utc": "2026-10-01T18:47:00Z",
+        "wake_observed_at_utc": "2026-10-01T18:47:00Z",
+        "dispatch_observed_at_utc": "2026-10-01T18:47:40Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T18:48:51.004984+00:00",
+        "result_observed_at_utc": "2026-10-01T18:48:32Z",
+        "first_append_recorded_at_utc": "2026-10-01T18:48:51.004984+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T185700Z",
+        "expected_due_utc": "2026-10-01T18:57:00Z",
+        "wake_observed_at_utc": "2026-10-01T18:57:26Z",
+        "dispatch_observed_at_utc": "2026-10-01T18:57:55Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T19:01:38.020974+00:00",
+        "result_observed_at_utc": "2026-10-01T18:59:03Z",
+        "first_append_recorded_at_utc": "2026-10-01T19:01:38.020974+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T190700Z",
+        "expected_due_utc": "2026-10-01T19:07:00Z",
+        "wake_observed_at_utc": "2026-10-01T19:07:07Z",
+        "dispatch_observed_at_utc": "2026-10-01T19:07:45Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T19:09:17.639040+00:00",
+        "result_observed_at_utc": "2026-10-01T19:08:47Z",
+        "first_append_recorded_at_utc": "2026-10-01T19:09:17.639040+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T191700Z",
+        "expected_due_utc": "2026-10-01T19:17:00Z",
+        "wake_observed_at_utc": "2026-10-01T19:17:11Z",
+        "dispatch_observed_at_utc": "2026-10-01T19:17:49Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T19:18:59.998149+00:00",
+        "result_observed_at_utc": "2026-10-01T19:18:45Z",
+        "first_append_recorded_at_utc": "2026-10-01T19:18:59.998149+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T192700Z",
+        "expected_due_utc": "2026-10-01T19:27:00Z",
+        "wake_observed_at_utc": "2026-10-01T19:26:43Z",
+        "dispatch_observed_at_utc": "2026-10-01T19:27:23Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T19:28:09.873507+00:00",
+        "result_observed_at_utc": "2026-10-01T19:27:48Z",
+        "first_append_recorded_at_utc": "2026-10-01T19:28:09.873507+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T193700Z",
+        "expected_due_utc": "2026-10-01T19:37:00Z",
+        "wake_observed_at_utc": "2026-10-01T19:37:18Z",
+        "dispatch_observed_at_utc": "2026-10-01T19:37:58Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T19:39:42.437046+00:00",
+        "result_observed_at_utc": "2026-10-01T19:38:36Z",
+        "first_append_recorded_at_utc": "2026-10-01T19:39:42.437046+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T194700Z",
+        "expected_due_utc": "2026-10-01T19:47:00Z",
+        "wake_observed_at_utc": "2026-10-01T19:47:02Z",
+        "dispatch_observed_at_utc": "2026-10-01T19:48:52Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T19:55:10.412435+00:00",
+        "result_observed_at_utc": "2026-10-01T19:50:07Z",
+        "first_append_recorded_at_utc": "2026-10-01T19:55:10.412435+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T195700Z",
+        "expected_due_utc": "2026-10-01T19:57:00Z",
+        "wake_observed_at_utc": "2026-10-01T19:56:52Z",
+        "dispatch_observed_at_utc": "2026-10-01T20:04:13Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T20:04:42.385165+00:00",
+        "result_observed_at_utc": "2026-10-01T20:04:32Z",
+        "first_append_recorded_at_utc": "2026-10-01T20:04:42.385165+00:00"
+      },
+      {
+        "event": "append",
+        "id": "timer-20261001T200700Z",
+        "expected_due_utc": "2026-10-01T20:07:00Z",
+        "wake_observed_at_utc": "2026-10-01T20:06:57Z",
+        "dispatch_observed_at_utc": "2026-10-01T20:07:30Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T20:08:00.489505+00:00",
+        "result_observed_at_utc": "2026-10-01T20:07:49Z",
+        "first_append_recorded_at_utc": "2026-10-01T20:08:00.489505+00:00"
+      }
+    ],
+    "metrics": {
+      "due_to_dispatch": {
+        "n": 42,
+        "min": 15.0,
+        "max": 502.0,
+        "mean": 81.64285714285714,
+        "median": 48.0
+      },
+      "due_to_wake": {
+        "n": 42,
+        "min": -25.0,
+        "max": 216.0,
+        "mean": 11.19047619047619,
+        "median": 4.5
+      },
+      "dispatch_to_receipt": {
+        "n": 42,
+        "min": 12.0,
+        "max": 75.0,
+        "mean": 31.928571428571427,
+        "median": 28.5
+      },
+      "receipt_to_first_append": {
+        "n": 42,
+        "min": 9.692508935928345,
+        "max": 303.41243505477905,
+        "mean": 38.6570759330477,
+        "median": 22.40314745903015
+      }
+    },
+    "event_counts": {
+      "dispatch": 42,
+      "append": 42,
+      "review_correction": 1
+    }
+  },
+  "return-chain": {
+    "source_sha256": "133dc4ed8fe4d846961f984c7bd3c78b348074245aabf2697bde506b855636b2",
+    "events_sha256": "59b0be4d038afb5ec7a6862a04d78a4432367517bc4e3a09a67d3a1c23399802",
+    "rows": [
+      {
+        "event": "append",
+        "id": "return-chain-01",
+        "dispatch_observed_at_utc": "2026-10-01T13:07:27Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T13:08:26.227422+00:00",
+        "result_observed_at_utc": "2026-10-01T13:08:05Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:08:26.227422+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-02",
+        "dispatch_observed_at_utc": "2026-10-01T13:08:39Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T13:09:29.627106+00:00",
+        "result_observed_at_utc": "2026-10-01T13:09:14Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:09:29.627106+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-03",
+        "dispatch_observed_at_utc": "2026-10-01T13:09:41Z",
+        "status": "verified appended",
+        "recorded_at_utc": "2026-10-01T13:10:57.484153+00:00",
+        "result_observed_at_utc": "2026-10-01T13:10:10Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:10:57.484153+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-04",
+        "dispatch_observed_at_utc": "2026-10-01T13:11:12Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T13:17:41.501054+00:00",
+        "result_observed_at_utc": "2026-10-01T13:17:15Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:17:41.501054+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-05",
+        "dispatch_observed_at_utc": "2026-10-01T13:18:26Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T13:24:36.521313+00:00",
+        "result_observed_at_utc": "2026-10-01T13:24:22Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:24:36.521313+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-06",
+        "dispatch_observed_at_utc": "2026-10-01T13:24:53Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T13:31:04.228554+00:00",
+        "result_observed_at_utc": "2026-10-01T13:30:47Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:31:04.228554+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-07",
+        "dispatch_observed_at_utc": "2026-10-01T13:31:19Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T13:37:20.406239+00:00",
+        "result_observed_at_utc": "2026-10-01T13:36:55Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:37:20.406239+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-08",
+        "dispatch_observed_at_utc": "2026-10-01T13:37:38Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T13:43:25.962630+00:00",
+        "result_observed_at_utc": "2026-10-01T13:43:15Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:43:25.962630+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-09",
+        "dispatch_observed_at_utc": "2026-10-01T13:43:40Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T13:49:32.149637+00:00",
+        "result_observed_at_utc": "2026-10-01T13:49:09Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:49:32.149637+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-10",
+        "dispatch_observed_at_utc": "2026-10-01T13:49:47Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T13:55:30.934000+00:00",
+        "result_observed_at_utc": "2026-10-01T13:55:16Z",
+        "first_append_recorded_at_utc": "2026-10-01T13:55:30.934000+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-11",
+        "dispatch_observed_at_utc": "2026-10-01T13:55:50Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T14:01:50.201006+00:00",
+        "result_observed_at_utc": "2026-10-01T14:01:23Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:01:50.201006+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-12",
+        "dispatch_observed_at_utc": "2026-10-01T14:02:08Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T14:08:17.494718+00:00",
+        "result_observed_at_utc": "2026-10-01T14:07:48Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:08:17.494718+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-13",
+        "dispatch_observed_at_utc": "2026-10-01T14:08:37Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T14:14:26.936200+00:00",
+        "result_observed_at_utc": "2026-10-01T14:14:14Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:14:26.936200+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-14",
+        "dispatch_observed_at_utc": "2026-10-01T14:14:44Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T14:20:32.563765+00:00",
+        "result_observed_at_utc": "2026-10-01T14:20:12Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:20:32.563765+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-15",
+        "dispatch_observed_at_utc": "2026-10-01T14:20:49Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T14:26:28.793358+00:00",
+        "result_observed_at_utc": "2026-10-01T14:26:10Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:26:28.793358+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-16",
+        "dispatch_observed_at_utc": "2026-10-01T14:26:43Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T14:32:37.977133+00:00",
+        "result_observed_at_utc": "2026-10-01T14:32:19Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:32:37.977133+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-17",
+        "dispatch_observed_at_utc": "2026-10-01T14:32:52Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T14:38:49.250742+00:00",
+        "result_observed_at_utc": "2026-10-01T14:38:27Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:38:49.250742+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-18",
+        "dispatch_observed_at_utc": "2026-10-01T14:39:04Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T14:44:51.642035+00:00",
+        "result_observed_at_utc": "2026-10-01T14:44:30Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:44:51.642035+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-19",
+        "dispatch_observed_at_utc": "2026-10-01T14:45:08Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T14:51:51.327096+00:00",
+        "result_observed_at_utc": "2026-10-01T14:51:30Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:51:51.327096+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-20",
+        "dispatch_observed_at_utc": "2026-10-01T14:52:08Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T14:58:23.650278+00:00",
+        "result_observed_at_utc": "2026-10-01T14:58:00Z",
+        "first_append_recorded_at_utc": "2026-10-01T14:58:23.650278+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-21",
+        "dispatch_observed_at_utc": "2026-10-01T14:58:48Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T15:04:32.577741+00:00",
+        "result_observed_at_utc": "2026-10-01T15:04:13Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:04:32.577741+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-22",
+        "dispatch_observed_at_utc": "2026-10-01T15:04:50Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T15:10:42.348236+00:00",
+        "result_observed_at_utc": "2026-10-01T15:10:23Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:10:42.348236+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-23",
+        "dispatch_observed_at_utc": "2026-10-01T15:10:59Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T15:17:33.217124+00:00",
+        "result_observed_at_utc": "2026-10-01T15:16:37Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:17:33.217124+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-24",
+        "dispatch_observed_at_utc": "2026-10-01T15:17:50Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T15:23:48.695124+00:00",
+        "result_observed_at_utc": "2026-10-01T15:23:19Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:23:48.695124+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-25",
+        "dispatch_observed_at_utc": "2026-10-01T15:24:07Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T15:30:36.729229+00:00",
+        "result_observed_at_utc": "2026-10-01T15:29:58Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:30:36.729229+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-26",
+        "dispatch_observed_at_utc": "2026-10-01T15:30:52Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T15:36:57.640358+00:00",
+        "result_observed_at_utc": "2026-10-01T15:36:21Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:36:57.640358+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-27",
+        "dispatch_observed_at_utc": "2026-10-01T15:37:20Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T15:43:41.547933+00:00",
+        "result_observed_at_utc": "2026-10-01T15:43:09Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:43:41.547933+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-28",
+        "dispatch_observed_at_utc": "2026-10-01T15:44:00Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T15:50:10.468468+00:00",
+        "result_observed_at_utc": "2026-10-01T15:49:50Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:50:10.468468+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-29",
+        "dispatch_observed_at_utc": "2026-10-01T15:50:26Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T15:56:24.230025+00:00",
+        "result_observed_at_utc": "2026-10-01T15:56:03Z",
+        "first_append_recorded_at_utc": "2026-10-01T15:56:24.230025+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-30",
+        "dispatch_observed_at_utc": "2026-10-01T15:56:43Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T16:03:01.829475+00:00",
+        "result_observed_at_utc": "2026-10-01T16:02:28Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:03:01.829475+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-31",
+        "dispatch_observed_at_utc": "2026-10-01T16:03:17Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T16:09:11.627341+00:00",
+        "result_observed_at_utc": "2026-10-01T16:08:57Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:09:11.627341+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-32",
+        "dispatch_observed_at_utc": "2026-10-01T16:09:26Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T16:15:16.437053+00:00",
+        "result_observed_at_utc": "2026-10-01T16:15:03Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:15:16.437053+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-33",
+        "dispatch_observed_at_utc": "2026-10-01T16:15:29Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T16:21:10.663240+00:00",
+        "result_observed_at_utc": "2026-10-01T16:20:57Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:21:10.663240+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-34",
+        "dispatch_observed_at_utc": "2026-10-01T16:21:26Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T16:27:55.974024+00:00",
+        "result_observed_at_utc": "2026-10-01T16:27:19Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:27:55.974024+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-35",
+        "dispatch_observed_at_utc": "2026-10-01T16:28:10Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T16:34:15.345144+00:00",
+        "result_observed_at_utc": "2026-10-01T16:34:01Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:34:15.345144+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-36",
+        "dispatch_observed_at_utc": "2026-10-01T16:34:31Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T16:41:01.307555+00:00",
+        "result_observed_at_utc": "2026-10-01T16:40:08Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:41:01.307555+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-37",
+        "dispatch_observed_at_utc": "2026-10-01T16:41:20Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T16:48:16.172048+00:00",
+        "result_observed_at_utc": "2026-10-01T16:47:07Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:48:16.172048+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-38",
+        "dispatch_observed_at_utc": "2026-10-01T16:48:35Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T16:55:20.002947+00:00",
+        "result_observed_at_utc": "2026-10-01T16:54:39Z",
+        "first_append_recorded_at_utc": "2026-10-01T16:55:20.002947+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-39",
+        "dispatch_observed_at_utc": "2026-10-01T16:55:34Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T17:01:50.913689+00:00",
+        "result_observed_at_utc": "2026-10-01T17:01:21Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:01:50.913689+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-40",
+        "dispatch_observed_at_utc": "2026-10-01T17:02:06Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T17:08:19.318132+00:00",
+        "result_observed_at_utc": "2026-10-01T17:07:39Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:08:19.318132+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-41",
+        "dispatch_observed_at_utc": "2026-10-01T17:08:36Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T17:17:28.223666+00:00",
+        "result_observed_at_utc": "2026-10-01T17:14:47Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:17:28.223666+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-42",
+        "dispatch_observed_at_utc": "2026-10-01T17:17:53Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T17:24:07.274361+00:00",
+        "result_observed_at_utc": "2026-10-01T17:23:40Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:24:07.274361+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-43",
+        "dispatch_observed_at_utc": "2026-10-01T17:24:35Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T17:30:51.999709+00:00",
+        "result_observed_at_utc": "2026-10-01T17:30:27Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:30:51.999709+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-44",
+        "dispatch_observed_at_utc": "2026-10-01T17:31:15Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T17:37:25.177916+00:00",
+        "result_observed_at_utc": "2026-10-01T17:36:56Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:37:25.177916+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-45",
+        "dispatch_observed_at_utc": "2026-10-01T17:37:51Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T17:46:23.690640+00:00",
+        "result_observed_at_utc": "2026-10-01T17:43:29Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:46:23.690640+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-46",
+        "dispatch_observed_at_utc": "2026-10-01T17:46:44Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T17:54:30.439774+00:00",
+        "result_observed_at_utc": "2026-10-01T17:53:35Z",
+        "first_append_recorded_at_utc": "2026-10-01T17:54:30.439774+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-47",
+        "dispatch_observed_at_utc": "2026-10-01T17:54:43Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T18:01:11.006349+00:00",
+        "result_observed_at_utc": "2026-10-01T18:00:27Z",
+        "first_append_recorded_at_utc": "2026-10-01T18:01:11.006349+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-48",
+        "dispatch_observed_at_utc": "2026-10-01T18:01:24Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T18:07:19.408370+00:00",
+        "result_observed_at_utc": "2026-10-01T18:06:59Z",
+        "first_append_recorded_at_utc": "2026-10-01T18:07:19.408370+00:00"
+      },
+      {
+        "event": "append",
+        "id": "return-chain-49",
+        "dispatch_observed_at_utc": "2026-10-01T18:07:33Z",
+        "status": "verified appended",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T18:13:07.854444+00:00",
+        "result_observed_at_utc": "2026-10-01T18:12:55Z",
+        "first_append_recorded_at_utc": "2026-10-01T18:13:07.854444+00:00"
+      },
+      {
+        "event": "observation",
+        "id": "return-chain-50",
+        "dispatch_observed_at_utc": "2026-10-01T18:13:21Z",
+        "status": "uncertain; dispatched worker not accessible, no return observed",
+        "pacing_seconds": 300,
+        "recorded_at_utc": "2026-10-01T18:23:22.975697+00:00",
+        "first_append_recorded_at_utc": null
+      }
+    ],
+    "metrics": {
+      "due_to_dispatch": {
+        "n": 0
+      },
+      "due_to_dispatch_excluding_first3": {
+        "n": 0
+      },
+      "due_to_wake": {
+        "n": 0
+      },
+      "due_to_wake_excluding_first3": {
+        "n": 0
+      },
+      "dispatch_to_receipt": {
+        "n": 49,
+        "min": 29.0,
+        "max": 411.0,
+        "mean": 324.0816326530612,
+        "median": 337.0
+      },
+      "dispatch_to_receipt_excluding_first3": {
+        "n": 46,
+        "min": 321.0,
+        "max": 411.0,
+        "mean": 343.0,
+        "median": 338.0
+      },
+      "receipt_to_first_append": {
+        "n": 49,
+        "min": 10.962630033493042,
+        "max": 174.69063997268677,
+        "mean": 33.04078681614934,
+        "median": 23.650278091430664
+      },
+      "receipt_to_first_append_excluding_first3": {
+        "n": 46,
+        "min": 10.962630033493042,
+        "max": 174.69063997268677,
+        "mean": 33.36217115236365,
+        "median": 24.32499349117279
+      }
+    },
+    "event_counts": {
+      "dispatch": 50,
+      "append": 49,
+      "observation": 1
+    },
+    "continuation_gaps": [
+      {
+        "after": "return-chain-01",
+        "seconds_from_receipt": 34.0,
+        "seconds_from_first_append": 12.772578001022339
+      },
+      {
+        "after": "return-chain-02",
+        "seconds_from_receipt": 27.0,
+        "seconds_from_first_append": 11.372894048690796
+      },
+      {
+        "after": "return-chain-03",
+        "seconds_from_receipt": 62.0,
+        "seconds_from_first_append": 14.515846967697144
+      },
+      {
+        "after": "return-chain-04",
+        "seconds_from_receipt": 71.0,
+        "seconds_from_first_append": 44.49894595146179
+      },
+      {
+        "after": "return-chain-05",
+        "seconds_from_receipt": 31.0,
+        "seconds_from_first_append": 16.478687047958374
+      },
+      {
+        "after": "return-chain-06",
+        "seconds_from_receipt": 32.0,
+        "seconds_from_first_append": 14.771445989608765
+      },
+      {
+        "after": "return-chain-07",
+        "seconds_from_receipt": 43.0,
+        "seconds_from_first_append": 17.59376096725464
+      },
+      {
+        "after": "return-chain-08",
+        "seconds_from_receipt": 25.0,
+        "seconds_from_first_append": 14.037369966506958
+      },
+      {
+        "after": "return-chain-09",
+        "seconds_from_receipt": 38.0,
+        "seconds_from_first_append": 14.85036301612854
+      },
+      {
+        "after": "return-chain-10",
+        "seconds_from_receipt": 34.0,
+        "seconds_from_first_append": 19.06599998474121
+      },
+      {
+        "after": "return-chain-11",
+        "seconds_from_receipt": 45.0,
+        "seconds_from_first_append": 17.798994064331055
+      },
+      {
+        "after": "return-chain-12",
+        "seconds_from_receipt": 49.0,
+        "seconds_from_first_append": 19.505281925201416
+      },
+      {
+        "after": "return-chain-13",
+        "seconds_from_receipt": 30.0,
+        "seconds_from_first_append": 17.06380009651184
+      },
+      {
+        "after": "return-chain-14",
+        "seconds_from_receipt": 37.0,
+        "seconds_from_first_append": 16.436234951019287
+      },
+      {
+        "after": "return-chain-15",
+        "seconds_from_receipt": 33.0,
+        "seconds_from_first_append": 14.206641912460327
+      },
+      {
+        "after": "return-chain-16",
+        "seconds_from_receipt": 33.0,
+        "seconds_from_first_append": 14.02286696434021
+      },
+      {
+        "after": "return-chain-17",
+        "seconds_from_receipt": 37.0,
+        "seconds_from_first_append": 14.749258041381836
+      },
+      {
+        "after": "return-chain-18",
+        "seconds_from_receipt": 38.0,
+        "seconds_from_first_append": 16.357964992523193
+      },
+      {
+        "after": "return-chain-19",
+        "seconds_from_receipt": 38.0,
+        "seconds_from_first_append": 16.672904014587402
+      },
+      {
+        "after": "return-chain-20",
+        "seconds_from_receipt": 48.0,
+        "seconds_from_first_append": 24.349721908569336
+      },
+      {
+        "after": "return-chain-21",
+        "seconds_from_receipt": 37.0,
+        "seconds_from_first_append": 17.422259092330933
+      },
+      {
+        "after": "return-chain-22",
+        "seconds_from_receipt": 36.0,
+        "seconds_from_first_append": 16.651763916015625
+      },
+      {
+        "after": "return-chain-23",
+        "seconds_from_receipt": 73.0,
+        "seconds_from_first_append": 16.782876014709473
+      },
+      {
+        "after": "return-chain-24",
+        "seconds_from_receipt": 48.0,
+        "seconds_from_first_append": 18.30487608909607
+      },
+      {
+        "after": "return-chain-25",
+        "seconds_from_receipt": 54.0,
+        "seconds_from_first_append": 15.270771026611328
+      },
+      {
+        "after": "return-chain-26",
+        "seconds_from_receipt": 59.0,
+        "seconds_from_first_append": 22.359642028808594
+      },
+      {
+        "after": "return-chain-27",
+        "seconds_from_receipt": 51.0,
+        "seconds_from_first_append": 18.452066898345947
+      },
+      {
+        "after": "return-chain-28",
+        "seconds_from_receipt": 36.0,
+        "seconds_from_first_append": 15.531532049179077
+      },
+      {
+        "after": "return-chain-29",
+        "seconds_from_receipt": 40.0,
+        "seconds_from_first_append": 18.769974946975708
+      },
+      {
+        "after": "return-chain-30",
+        "seconds_from_receipt": 49.0,
+        "seconds_from_first_append": 15.170525074005127
+      },
+      {
+        "after": "return-chain-31",
+        "seconds_from_receipt": 29.0,
+        "seconds_from_first_append": 14.372658967971802
+      },
+      {
+        "after": "return-chain-32",
+        "seconds_from_receipt": 26.0,
+        "seconds_from_first_append": 12.562947034835815
+      },
+      {
+        "after": "return-chain-33",
+        "seconds_from_receipt": 29.0,
+        "seconds_from_first_append": 15.3367600440979
+      },
+      {
+        "after": "return-chain-34",
+        "seconds_from_receipt": 51.0,
+        "seconds_from_first_append": 14.025975942611694
+      },
+      {
+        "after": "return-chain-35",
+        "seconds_from_receipt": 30.0,
+        "seconds_from_first_append": 15.654855966567993
+      },
+      {
+        "after": "return-chain-36",
+        "seconds_from_receipt": 72.0,
+        "seconds_from_first_append": 18.692445039749146
+      },
+      {
+        "after": "return-chain-37",
+        "seconds_from_receipt": 88.0,
+        "seconds_from_first_append": 18.827951908111572
+      },
+      {
+        "after": "return-chain-38",
+        "seconds_from_receipt": 55.0,
+        "seconds_from_first_append": 13.997052907943726
+      },
+      {
+        "after": "return-chain-39",
+        "seconds_from_receipt": 45.0,
+        "seconds_from_first_append": 15.086311101913452
+      },
+      {
+        "after": "return-chain-40",
+        "seconds_from_receipt": 57.0,
+        "seconds_from_first_append": 16.681868076324463
+      },
+      {
+        "after": "return-chain-41",
+        "seconds_from_receipt": 186.0,
+        "seconds_from_first_append": 24.776334047317505
+      },
+      {
+        "after": "return-chain-42",
+        "seconds_from_receipt": 55.0,
+        "seconds_from_first_append": 27.72563910484314
+      },
+      {
+        "after": "return-chain-43",
+        "seconds_from_receipt": 48.0,
+        "seconds_from_first_append": 23.000291109085083
+      },
+      {
+        "after": "return-chain-44",
+        "seconds_from_receipt": 55.0,
+        "seconds_from_first_append": 25.822083950042725
+      },
+      {
+        "after": "return-chain-45",
+        "seconds_from_receipt": 195.0,
+        "seconds_from_first_append": 20.309360027313232
+      },
+      {
+        "after": "return-chain-46",
+        "seconds_from_receipt": 68.0,
+        "seconds_from_first_append": 12.56022596359253
+      },
+      {
+        "after": "return-chain-47",
+        "seconds_from_receipt": 57.0,
+        "seconds_from_first_append": 12.993650913238525
+      },
+      {
+        "after": "return-chain-48",
+        "seconds_from_receipt": 34.0,
+        "seconds_from_first_append": 13.591629981994629
+      },
+      {
+        "after": "return-chain-49",
+        "seconds_from_receipt": 26.0,
+        "seconds_from_first_append": 13.145555973052979
+      }
+    ]
+  },
+  "public": {
+    "interrupted-snapshot.jsonl": {
+      "sha256": "0f4ee9c13cdd7c8144965ed49545016a70554908e3b98a8251b9461600bfb9cf",
+      "rows": 16,
+      "samples": 15,
+      "run_id": "habitat-53f2ac37ca28454c8962e3b08646ffb0",
+      "first": "2026-10-01T18:50:04.043296+00:00",
+      "last": "2026-10-01T19:04:04.046842+00:00",
+      "terminal_kind": "sample",
+      "gaps": {
+        "n": 14,
+        "min": 59.99985588299751,
+        "max": 60.00002516299719,
+        "mean": 59.999989222142695,
+        "median": 59.99999639849557
+      },
+      "lateness": {
+        "n": 15,
+        "min": 0.00010426600056234747,
+        "max": 0.00028987700352445245,
+        "mean": 0.00013549133339741578,
+        "median": 0.00012164800136815757
+      },
+      "dual_clock_increment_difference_seconds": {
+        "n": 15,
+        "min": -8.896397702073955e-06,
+        "max": 2.364204711914012e-06,
+        "mean": -4.330315338958666e-07,
+        "median": 4.466992464813302e-08
+      },
+      "cgroup_states": {
+        "{'reason': 'ValueError', 'status': 'unknown'}": 15
+      },
+      "last_resource": {
+        "architecture": "x86_64",
+        "cgroup": {
+          "reason": "ValueError",
+          "status": "unknown"
+        },
+        "kernel_release": "6.18.44",
+        "load_1_5_15": {
+          "status": "observed",
+          "value": [
+            0.11669921875,
+            0.06640625,
+            0.08935546875
+          ]
+        },
+        "logical_cpus_reported": 9,
+        "observer_process": {
+          "cpu_system_seconds": 0.015413999999999999,
+          "cpu_user_seconds": 0.184528,
+          "max_rss_platform_units": 27316
+        },
+        "os_load_scope": "OS-exposed load; may exceed container scope",
+        "os_memory_scope": "OS-exposed view; not established as a container allocation or provider-global total",
+        "os_memory_view": {
+          "status": "observed",
+          "value": {
+            "MemAvailable_bytes": 8149774336,
+            "MemTotal_bytes": 10451464192,
+            "SwapFree_bytes": 0,
+            "SwapTotal_bytes": 0
+          }
+        },
+        "python": "3.12.14",
+        "workspace_filesystem": {
+          "status": "observed",
+          "value": {
+            "available_bytes": 25694945280,
+            "capacity_bytes": 33770192896
+          }
+        }
+      },
+      "last_receipts": {
+        "lumen_publication": {
+          "status": "observed",
+          "value": {
+            "commit": "69cb6698a181f52d50ae0e205c39229594cacc18",
+            "metadata_exact_readback": true,
+            "source_exact_readback": true,
+            "source_sha256": "7d036ff225a1bcad2a88db19a32c2a3bd01cf0b258fce13f9d29dc8d98c30826",
+            "verified_at_utc": "2026-10-01T18:54:05.562547+00:00"
+          }
+        },
+        "provenance": "sampled saved receipts; not independently authenticated execution or current worker liveness",
+        "return-chain": {
+          "status": "observed",
+          "value": {
+            "other_or_uncertain": 1,
+            "recorded_occurrences": 50,
+            "verified_appends": 49
+          }
+        },
+        "timer": {
+          "status": "observed",
+          "value": {
+            "other_or_uncertain": 0,
+            "recorded_occurrences": 35,
+            "verified_appends": 35
+          }
+        }
+      }
+    },
+    "startup-snapshot.jsonl": {
+      "sha256": "6c2be31b0d55ebd396a0953ed71c2639b8c36a81b565d2062bddf8855d518b71",
+      "rows": 3,
+      "samples": 2,
+      "run_id": "habitat-53f2ac37ca28454c8962e3b08646ffb0",
+      "first": "2026-10-01T18:50:04.043296+00:00",
+      "last": "2026-10-01T18:51:04.044446+00:00",
+      "terminal_kind": "sample",
+      "gaps": {
+        "n": 1,
+        "min": 59.99985588299751,
+        "max": 59.99985588299751,
+        "mean": 59.99985588299751,
+        "median": 59.99985588299751
+      },
+      "lateness": {
+        "n": 2,
+        "min": 0.00014576000103261322,
+        "max": 0.00028987700352445245,
+        "mean": 0.00021781850227853283,
+        "median": 0.00021781850227853283
+      },
+      "dual_clock_increment_difference_seconds": {
+        "n": 2,
+        "min": -8.896397702073955e-06,
+        "max": 2.364204711914012e-06,
+        "mean": -3.2660964950799714e-06,
+        "median": -3.2660964950799714e-06
+      },
+      "cgroup_states": {
+        "{'reason': 'ValueError', 'status': 'unknown'}": 2
+      },
+      "last_resource": {
+        "architecture": "x86_64",
+        "cgroup": {
+          "reason": "ValueError",
+          "status": "unknown"
+        },
+        "kernel_release": "6.18.44",
+        "load_1_5_15": {
+          "status": "observed",
+          "value": [
+            0.38427734375,
+            0.30126953125,
+            0.1923828125
+          ]
+        },
+        "logical_cpus_reported": 9,
+        "observer_process": {
+          "cpu_system_seconds": 0.014162,
+          "cpu_user_seconds": 0.169544,
+          "max_rss_platform_units": 27316
+        },
+        "os_load_scope": "OS-exposed load; may exceed container scope",
+        "os_memory_scope": "OS-exposed view; not established as a container allocation or provider-global total",
+        "os_memory_view": {
+          "status": "observed",
+          "value": {
+            "MemAvailable_bytes": 8031199232,
+            "MemTotal_bytes": 10451464192,
+            "SwapFree_bytes": 0,
+            "SwapTotal_bytes": 0
+          }
+        },
+        "python": "3.12.14",
+        "workspace_filesystem": {
+          "status": "observed",
+          "value": {
+            "available_bytes": 25691525120,
+            "capacity_bytes": 33770192896
+          }
+        }
+      },
+      "last_receipts": {
+        "lumen_publication": {
+          "status": "observed",
+          "value": {
+            "commit": "bf20d44197155ef550ff35748a2a776ce5d35f07",
+            "metadata_exact_readback": true,
+            "source_exact_readback": true,
+            "source_sha256": "c9232874c42ada8f65f0fb04cf1bc01a5b0c676eb8d4521313f549e39914ee19",
+            "verified_at_utc": "2026-10-01T18:22:14.764545+00:00"
+          }
+        },
+        "provenance": "sampled saved receipts; not independently authenticated execution or current worker liveness",
+        "return-chain": {
+          "status": "observed",
+          "value": {
+            "other_or_uncertain": 1,
+            "recorded_occurrences": 50,
+            "verified_appends": 49
+          }
+        },
+        "timer": {
+          "status": "observed",
+          "value": {
+            "other_or_uncertain": 0,
+            "recorded_occurrences": 34,
+            "verified_appends": 34
+          }
+        }
+      }
+    }
+  },
+  "analysis_cutoff_utc": "2026-10-01T20:13:47Z",
+  "public_snapshot_prefix_verified": true,
+  "sample_clock_differences_ns": [
+    -8870,
+    83,
+    1119,
+    -134,
+    -1964,
+    1128,
+    1216,
+    -172,
+    -438,
+    143,
+    1074,
+    -1385,
+    464,
+    -1204
+  ]
+}
