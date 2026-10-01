@@ -1,0 +1,29 @@
+THE OBSERVER OF THE HABITAT
+Instrument prototype • SYNTHETIC FIXTURES ONLY • no live measurements
+
+CADENCE | slot 0 to 11; 12 columns
+[●×××◔●●××◔××]
+on_time=3, late=2, missed=7, unknown=0, future=0
+● on time  ◔ late  × missed  ? unknown  · future  ◆ mixed
+
+COST DENSITY | fixed elapsed-time bins; cell darkness = count
+phase            <0.1ms  <1ms   <10ms  <100ms  <1s    >=1s   n
+resource_read    ▒2     ▓3     ░1      0      0      0     6
+  excluded, retained as states: permission_denied=1
+record_commit     0     ░1     ▒2     ░1      0     ░1     5
+Bins are [previous edge, next edge); the first includes zero. ASCII mode is available.
+Sparse tails are not estimated: p95 requires n>=20; p99 requires n>=100.
+
+CLOCK CORRESPONDENCE
+Monotonic: +1 s   Realtime: -1 s   Residual: -2 s
+A discrepancy is observable; its cause is not identified. No negative elapsed duration is emitted.
+
+LIFETIME EVIDENCE
+Recorded extent: 112 s   Endpoint: nonterminal retained prefix
+Environment birth: unobserved   Environment death: unobserved
+Statistical censoring: not established by a retained prefix alone
+No terminal record is not proof of process death. Missing samples remain missing.
+
+PROBE STATUS
+Disabled by default. Synthetic transcript only; no execution adapter.
+Same-FD readback and fsync acknowledgment do not demonstrate crash recovery.

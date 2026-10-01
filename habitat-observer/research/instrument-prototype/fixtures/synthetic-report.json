@@ -1,0 +1,349 @@
+{
+  "synthetic": true,
+  "contract": {
+    "schema": "habitat.instrument-contract.v0-prototype",
+    "run_id": "synthetic-example",
+    "code_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "clock_epoch": "fixture-epoch",
+    "origin_monotonic_ns": 0,
+    "period_ns": 10000000000,
+    "duration_ns": 120000000000,
+    "end_exclusive": true,
+    "deadline_policy": "fixed_lattice_skip_without_backfill",
+    "log_budget_bytes": 8388608,
+    "terminal_reserve_bytes": 4096,
+    "maximum_record_bytes": 32768,
+    "mode": "synthetic",
+    "active_filesystem_probe_enabled": false,
+    "clock_contract": {
+      "elapsed": "monotonic_ns within matching caller-assigned epoch only",
+      "wall": "realtime_ns used for correspondence and discrepancy diagnostics",
+      "cpu": "process_time_ns; same process; all its threads; no child CPU"
+    },
+    "scope_contract": "allowlisted scalar values; no host IDs, paths, prompts, credentials, or payload bodies",
+    "limitations": [
+      "caller must establish epoch identity",
+      "hash is integrity evidence, not authentication",
+      "run contract is separate from the recorder's segment manifest"
+    ]
+  },
+  "contract_sha256": "614589b11e694e9c93417e0367b53dd2be17de2261ef4cc8751b289480728d66",
+  "cadence": {
+    "planned_slots": 12,
+    "claimed_slots": 5,
+    "completed_slots": 5,
+    "late_claims": 2,
+    "missed_slots": 7,
+    "remaining_slots": 0,
+    "pending_sample": false,
+    "closed": true,
+    "conservation_holds": true
+  },
+  "claims": [
+    {
+      "slot": 0,
+      "deadline_ns": 0,
+      "started_ns": 0,
+      "lateness_ns": 0,
+      "missed_before": null
+    },
+    {
+      "slot": 4,
+      "deadline_ns": 40000000000,
+      "started_ns": 47000000000,
+      "lateness_ns": 7000000000,
+      "missed_before": {
+        "first_slot": 3,
+        "stop_slot_exclusive": 4,
+        "count": 1,
+        "reason": "delayed_wake"
+      }
+    },
+    {
+      "slot": 5,
+      "deadline_ns": 50000000000,
+      "started_ns": 50000000000,
+      "lateness_ns": 0,
+      "missed_before": null
+    },
+    {
+      "slot": 6,
+      "deadline_ns": 60000000000,
+      "started_ns": 60000000000,
+      "lateness_ns": 0,
+      "missed_before": null
+    },
+    {
+      "slot": 9,
+      "deadline_ns": 90000000000,
+      "started_ns": 91000000000,
+      "lateness_ns": 1000000000,
+      "missed_before": {
+        "first_slot": 7,
+        "stop_slot_exclusive": 9,
+        "count": 2,
+        "reason": "delayed_wake"
+      }
+    }
+  ],
+  "missed_spans": [
+    {
+      "first_slot": 1,
+      "stop_slot_exclusive": 3,
+      "count": 2,
+      "reason": "observer_overrun"
+    },
+    {
+      "first_slot": 3,
+      "stop_slot_exclusive": 4,
+      "count": 1,
+      "reason": "delayed_wake"
+    },
+    {
+      "first_slot": 7,
+      "stop_slot_exclusive": 9,
+      "count": 2,
+      "reason": "delayed_wake"
+    },
+    {
+      "first_slot": 10,
+      "stop_slot_exclusive": 12,
+      "count": 2,
+      "reason": "observer_overrun"
+    }
+  ],
+  "cadence_projection": {
+    "glyphs": "\u25cf\u00d7\u00d7\u00d7\u25d4\u25cf\u25cf\u00d7\u00d7\u25d4\u00d7\u00d7",
+    "bins": [
+      {
+        "first_slot": 0,
+        "stop_slot_exclusive": 1,
+        "state": "on_time",
+        "counts": {
+          "on_time": 1
+        }
+      },
+      {
+        "first_slot": 1,
+        "stop_slot_exclusive": 2,
+        "state": "missed",
+        "counts": {
+          "missed": 1
+        }
+      },
+      {
+        "first_slot": 2,
+        "stop_slot_exclusive": 3,
+        "state": "missed",
+        "counts": {
+          "missed": 1
+        }
+      },
+      {
+        "first_slot": 3,
+        "stop_slot_exclusive": 4,
+        "state": "missed",
+        "counts": {
+          "missed": 1
+        }
+      },
+      {
+        "first_slot": 4,
+        "stop_slot_exclusive": 5,
+        "state": "late",
+        "counts": {
+          "late": 1
+        }
+      },
+      {
+        "first_slot": 5,
+        "stop_slot_exclusive": 6,
+        "state": "on_time",
+        "counts": {
+          "on_time": 1
+        }
+      },
+      {
+        "first_slot": 6,
+        "stop_slot_exclusive": 7,
+        "state": "on_time",
+        "counts": {
+          "on_time": 1
+        }
+      },
+      {
+        "first_slot": 7,
+        "stop_slot_exclusive": 8,
+        "state": "missed",
+        "counts": {
+          "missed": 1
+        }
+      },
+      {
+        "first_slot": 8,
+        "stop_slot_exclusive": 9,
+        "state": "missed",
+        "counts": {
+          "missed": 1
+        }
+      },
+      {
+        "first_slot": 9,
+        "stop_slot_exclusive": 10,
+        "state": "late",
+        "counts": {
+          "late": 1
+        }
+      },
+      {
+        "first_slot": 10,
+        "stop_slot_exclusive": 11,
+        "state": "missed",
+        "counts": {
+          "missed": 1
+        }
+      },
+      {
+        "first_slot": 11,
+        "stop_slot_exclusive": 12,
+        "state": "missed",
+        "counts": {
+          "missed": 1
+        }
+      }
+    ],
+    "counts": {
+      "on_time": 3,
+      "missed": 7,
+      "late": 2
+    },
+    "total_slots": 12,
+    "columns": 12,
+    "qualification": "each column is a slot range; mixed columns retain exact counts; no gap interpolation"
+  },
+  "cost_distributions": {
+    "resource_read": {
+      "edges_ns": [
+        100000,
+        1000000,
+        10000000,
+        100000000,
+        1000000000
+      ],
+      "bin_counts": [
+        2,
+        3,
+        1,
+        0,
+        0,
+        0
+      ],
+      "observed_count": 6,
+      "scope": "synthetic_fixture",
+      "missing_by_state": {
+        "permission_denied": 1
+      },
+      "minimum_ns": 40000,
+      "maximum_ns": 1100000,
+      "p50_ns": 100000,
+      "p95_ns": null,
+      "p99_ns": null,
+      "quantile_policy": "nearest rank; p95 withheld below 20, p99 below 100; gates do not establish tail precision"
+    },
+    "record_commit": {
+      "edges_ns": [
+        100000,
+        1000000,
+        10000000,
+        100000000,
+        1000000000
+      ],
+      "bin_counts": [
+        0,
+        1,
+        2,
+        1,
+        0,
+        1
+      ],
+      "observed_count": 5,
+      "scope": "synthetic_fixture",
+      "missing_by_state": {},
+      "minimum_ns": 900000,
+      "maximum_ns": 1200000000,
+      "p50_ns": 6000000,
+      "p95_ns": null,
+      "p99_ns": null,
+      "quantile_policy": "nearest rank; p95 withheld below 20, p99 below 100; gates do not establish tail precision"
+    }
+  },
+  "clock_example": {
+    "elapsed_ns": {
+      "lower": 999999900,
+      "upper": 1000000100,
+      "midpoint_twice": 2000000000
+    },
+    "realtime_delta_ns": -1000000000,
+    "clock_residual_ns_twice": -4000000000,
+    "bracket_uncertainty_ns_twice": 200,
+    "clock_discrepancy": true,
+    "process_cpu": {
+      "state": "observed",
+      "unit": "ns",
+      "scope": "observer_process",
+      "value": 20000000
+    },
+    "cpu_per_elapsed": {
+      "state": "bounded",
+      "lower": 0.0199999980000002,
+      "upper": 0.0200000020000002
+    }
+  },
+  "lifetime": {
+    "recording_endpoint": "nonterminal_retained_prefix",
+    "terminal_reason": null,
+    "recorded_extent_ns": 112000000000,
+    "clock_epoch_matches": true,
+    "statistical_censoring_classification": "not_established",
+    "environment_birth_observed": false,
+    "environment_death_observed": false,
+    "environment_lifetime": "not_identified; recording starts after an unknown environment birth and ends without observed death",
+    "continuous_availability_proven": false,
+    "stop_record_proves_process_exit": false,
+    "qualification": "a validated local prefix is evidence of records; silence is not a death event",
+    "censoring_qualification": "a retained prefix alone establishes neither a defined observation cutoff nor a maintained observation channel or noninformative censoring"
+  },
+  "probe_default": {
+    "state": "not_scheduled",
+    "reason": "disabled",
+    "operations": []
+  },
+  "probe_transcript": {
+    "schema": "habitat.probe-transcript.v0-prototype",
+    "synthetic": true,
+    "payload_bytes": 1024,
+    "state": "complete",
+    "exact_readback": true,
+    "stage_durations_ns": {
+      "create_exclusive": 100000,
+      "write": 100000,
+      "fsync_file": 100000,
+      "readback_same_fd": 100000,
+      "close": 100000,
+      "unlink": 100000
+    },
+    "stage_outcomes": {
+      "create_exclusive": "ok",
+      "write": "ok",
+      "fsync_file": "ok",
+      "readback_same_fd": "ok",
+      "close": "ok",
+      "unlink": "ok"
+    },
+    "total_bracket_ns": 5100000,
+    "residue_possible": false,
+    "crash_durability_demonstrated": false,
+    "cleanup_authority_established": false,
+    "qualification": "same-FD readback can be served from cache; fsync return does not test recovery"
+  }
+}
