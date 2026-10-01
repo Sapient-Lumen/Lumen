@@ -1,0 +1,56 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                 THE OBSERVER OF THE HABITAT                       ║
+╚════════════════════════════════════════════════════════════════════╝
+Run       habitat-9368ec79a77c460e85b1750dc91d414f
+Samples   22  │  records 23
+From      2026-10-01T19:55:09.258800+00:00
+Through   2026-10-01T20:16:09.258974+00:00
+Terminal  not observed; lifetime unresolved
+As of     2026-10-01T20:16:14.066967+00:00
+Tail age  4.80799 seconds by UTC
+
+NOMINAL-TIME STRIPS · last ≤60 bins · one row-specific scale
+· empty bin   ? unobserved value   ▄ constant series   ▁→█ low→high
+
+deadline_lateness_ms
+  ▅▄▇▆▁▁▅▃▂▄▅▂▃▃▃▂▂▂█▂▅▃
+  scale 0.110546 … 0.151814 │ empty 0 │ colliding samples 0
+
+OS_available_memory_GiB
+  ▁▁▁▁▁▁▁▁▁▁▇▇▇█▇▇▆▇▇▆▆▆
+  scale 7.67663 … 7.79819 │ empty 0 │ colliding samples 0
+
+workspace_available_GiB
+  ▄▃▂▁▁▁▁▁▁▁▁▅▅▅▅▄▄▄▄▄▄█
+  scale 23.9308 … 23.9384 │ empty 0 │ colliding samples 0
+
+OS_load_1m
+  ▁▁▁▁▁▁▁▁▅▄█▅▂▁▁▅▂▁▁▁▁▁
+  scale 0 … 0.235352 │ empty 0 │ colliding samples 0
+
+INTERVAL DIAGNOSTICS · empirical nearest-rank summaries
+sample_interval_seconds
+  n=21  min=59.9993  median=60.0001  p95=60.0004  max=60.0006
+interval_excess_seconds
+  n=21  min=-0.000672663  median=5.336e-05  p95=0.000365521  max=0.000621303
+paired_clock_increment_difference_ms
+  n=21  min=-0.043618  median=-0.000303  p95=0.041733  max=0.045775
+declared_deadline_lateness_ms
+  n=22  min=0.110546  median=0.125852  p95=0.147359  max=0.151814
+observer_CPU_percent_of_one_logical_CPU
+  n=21  min=0.00160667  median=0.00223668  p95=0.00259999  max=0.00331837
+
+INTERPRETATION GUARDRAILS
+  A verified snapshot is evidence of observations, not current process liveness.
+  Last-sample age is an as-of UTC comparison, not proof of a dead sampler; UTC steps can distort it.
+  Record timestamps follow resource collection; declared lateness is measured before collection. These are different boundaries.
+  Absent terminal record means lifetime is unresolved; no exact failure time inferred.
+  UTC-minus-monotonic increments are clock disagreement, not absolute clock drift or synchronization accuracy.
+  Deadline lateness uses the sampler target, which resets after overruns; it can conceal missed original-grid deadlines.
+  Time bins are a visualization convention anchored at first sample; boundary jitter may cause collisions and empty bins.
+  OS-exposed memory, CPU count and load are not established container allocation or model-serving resources.
+  Self CPU is process accounting, not total observer cost; filesystem and tool overhead remain unmeasured.
+  Nearest-rank empirical p95 is descriptive; small samples and serial dependence limit inference.
+  Local hash consistency is not independently anchored authenticity.
+
+Snapshot SHA-256  b652f622b5e23ddb179326f1aba5531335516c26f2fc1280b18668ce93ca4f32
