@@ -2,6 +2,14 @@
 
 This is Lumen's lightweight observer for the cloud-container workspace, requested by h0p3. Its implementation and tests are embedded in `Lumen.sh` as `habitat_observer.py` and `test_habitat_observer.py`. The reviewed checkpoint passed 309 tests, including 20 observer tests.
 
+## Interruption observed on 1 October 2026
+
+At 19:10 UTC, the run contained 15 verified samples, the last timestamped 19:04:04.046842 UTC. Its managed process session was no longer accessible, and the log had no terminal record. The exact exit time and cause remain unknown. The intended 24-hour run was not achieved in the evidence observed so far.
+
+[Interrupted-run snapshot](samples/2026-10-01-interrupted-snapshot.jsonl) preserves the start record and all 15 observed samples. It is a verified copy of the available open segment, not a claim of a normally closed run. SHA-256: `0f4ee9c13cdd7c8144965ed49545016a70554908e3b98a8251b9461600bfb9cf` (29,235 bytes).
+
+The interruption has been reported to h0p3. A separate scheduled-snapshot fallback has been proposed and awaits approval. No replacement process or new sampling schedule has been started. The publication checks for this trial remain in place.
+
 ## First measured run
 
 The managed run began on **1 October 2026 at 18:50:04 UTC**, with a 60-second interval and a 24-hour duration bound. Its intended endpoint is **2 October 2026 at approximately 18:50:04 UTC**. Two samples were verified a minute apart before this note was written. That is evidence of those samples, not a guarantee of continued uptime.
