@@ -1,0 +1,19 @@
+{
+  "experiment_id": "sample-cost-01",
+  "frozen_at_utc": "2026-10-01T22:10:19.448058+00:00",
+  "hypothesis": "The full resource-and-project-receipt collection plus verified append has greater typical process-CPU cost than a minimal timestamp payload plus the same verified append mechanism.",
+  "source_sha256": "18ff2d24f6f2cdf8e5188474993d401dac296b8c72f6bfe4686bc91cb9758987",
+  "design": "12 adjacent pairs, alternating minimal/full and full/minimal order; no warmup exclusion; separate new ledgers, same existing Writer implementation. Minimal has timestamp only; full adds current resources and project summary receipts. Retain every pair and error.",
+  "measured_endpoint": "Per-sample monotonic and process-CPU brackets cover payload collection and Writer.append including serialization, fsync, readback and chain update. Separate collection and append stages. Directory creation/import/final ledger sealing/result persistence and scheduling logic are outside per-sample intervals.",
+  "budgets": {
+    "pairs": 12,
+    "maximum_sample_records": 24,
+    "cooperative_elapsed_seconds": 10,
+    "cooperative_process_cpu_seconds": 0.5,
+    "bytes_per_ledger": 262144,
+    "result_bytes": 65536
+  },
+  "controls": "Counterbalanced pair order; same writer and filesystem; current live collector untouched. No network, installations, tracing, other-process contents, secret reads, stress workload or denied-path fallback.",
+  "analysis": "Report all pair deltas and descriptive medians/ranges. No population significance, active-loop total-cost, causal resource-pressure, cache-independence or durability-after-power-loss claim. Missing readings retain status. Stop on error or budget exhaustion; no retry selected for favorable outcomes.",
+  "authority": "User requested continued habitat measurement and refinement; root-owned bounded standard-library code in existing writable environment."
+}

@@ -1,0 +1,136 @@
+{
+  "reviewed_at_utc": "2026-10-01T22:11:53.785606+00:00",
+  "result_sha256": "4b44937d88d3c1d0d7bb30b280896d9a0786f797f66aee475b9a095775b847e3",
+  "ledgers_hashes_sequences_and_record_links_verified": true,
+  "budgets_met": true,
+  "summary": {
+    "minimal": {
+      "elapsed_ns": {
+        "min": 13740,
+        "median": 17972.0,
+        "max": 109945
+      },
+      "process_cpu_ns": {
+        "min": 13380,
+        "median": 17591.5,
+        "max": 109182
+      },
+      "collection_elapsed_ns": {
+        "min": 1822,
+        "median": 2398.5,
+        "max": 15233
+      },
+      "append_elapsed_ns": {
+        "min": 11627,
+        "median": 15739.0,
+        "max": 94712
+      }
+    },
+    "full": {
+      "elapsed_ns": {
+        "min": 645603,
+        "median": 763325.5,
+        "max": 1134490
+      },
+      "process_cpu_ns": {
+        "min": 645099,
+        "median": 762874.5,
+        "max": 1133756
+      },
+      "collection_elapsed_ns": {
+        "min": 605963,
+        "median": 705533.5,
+        "max": 1031205
+      },
+      "append_elapsed_ns": {
+        "min": 39640,
+        "median": 51778.0,
+        "max": 281935
+      }
+    }
+  },
+  "pairs": [
+    {
+      "pair": 0,
+      "first": "minimal",
+      "full_minus_minimal_elapsed_ns": 1024545,
+      "full_minus_minimal_cpu_ns": 1024574
+    },
+    {
+      "pair": 1,
+      "first": "full",
+      "full_minus_minimal_elapsed_ns": 816352,
+      "full_minus_minimal_cpu_ns": 816194
+    },
+    {
+      "pair": 2,
+      "first": "minimal",
+      "full_minus_minimal_elapsed_ns": 755229,
+      "full_minus_minimal_cpu_ns": 755154
+    },
+    {
+      "pair": 3,
+      "first": "full",
+      "full_minus_minimal_elapsed_ns": 671011,
+      "full_minus_minimal_cpu_ns": 670907
+    },
+    {
+      "pair": 4,
+      "first": "minimal",
+      "full_minus_minimal_elapsed_ns": 666876,
+      "full_minus_minimal_cpu_ns": 666652
+    },
+    {
+      "pair": 5,
+      "first": "full",
+      "full_minus_minimal_elapsed_ns": 627666,
+      "full_minus_minimal_cpu_ns": 627503
+    },
+    {
+      "pair": 6,
+      "first": "minimal",
+      "full_minus_minimal_elapsed_ns": 998816,
+      "full_minus_minimal_cpu_ns": 998675
+    },
+    {
+      "pair": 7,
+      "first": "full",
+      "full_minus_minimal_elapsed_ns": 725133,
+      "full_minus_minimal_cpu_ns": 725038
+    },
+    {
+      "pair": 8,
+      "first": "minimal",
+      "full_minus_minimal_elapsed_ns": 944163,
+      "full_minus_minimal_cpu_ns": 944043
+    },
+    {
+      "pair": 9,
+      "first": "full",
+      "full_minus_minimal_elapsed_ns": 956352,
+      "full_minus_minimal_cpu_ns": 955652
+    },
+    {
+      "pair": 10,
+      "first": "minimal",
+      "full_minus_minimal_elapsed_ns": 740476,
+      "full_minus_minimal_cpu_ns": 740441
+    },
+    {
+      "pair": 11,
+      "first": "full",
+      "full_minus_minimal_elapsed_ns": 711463,
+      "full_minus_minimal_cpu_ns": 711288
+    }
+  ],
+  "paired_median_elapsed_delta_ns": 747852.5,
+  "paired_median_cpu_delta_ns": 747797.5,
+  "full_cpu_greater_pairs": 12,
+  "full_elapsed_greater_pairs": 12,
+  "limits": [
+    "One warm clustered local episode; no population inference",
+    "Minimal and full payloads differ in size and work; cannot isolate one cause",
+    "fsync and readback success are not proof of persistence across host power loss",
+    "Active collector scheduling and whole tool transport excluded"
+  ]
+}
