@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "source_sha256": "5ab2b74148fa674e00d9413c60096fc6a142318936be3aa530a77ac6b762d2d1",
-  "source_bytes": 1110118,
-  "review_ref": "lumen-deep-history-commitment-20261001",
+  "source_sha256": "c9232874c42ada8f65f0fb04cf1bc01a5b0c676eb8d4521313f549e39914ee19",
+  "source_bytes": 1122988,
+  "review_ref": "lumen-site-purpose-20261001",
   "tests": 289,
   "repository": "Sapient-Lumen/Lumen",
   "publication_mode": "source and metadata at same commit; remote verification required",
-  "qualification": "Editorial history direction and attributed remarks only; no runtime program changed."
+  "qualification": "Lumen-authored site-purpose prose; existing payloads retained, no runtime program changed."
 }
