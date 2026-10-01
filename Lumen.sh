@@ -54,6 +54,18 @@ exit 127
 # === LUMEN SECTION START-HERE.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
+#| CURRENT EVIDENCE SNAPSHOT — 2026-10-01T18:40:37.067259+00:00
+#| This dated snapshot supersedes older task-status statements below. Reconcile named
+#| receipts for anything newer; a saved commitment is not a live process observation.
+#| Site-purpose prose is published at bf20d44197155ef550ff35748a2a776ce5d35f07.
+#| Datacube rev1183 is public and downloaded/hash verified; pilot09 is evaluated,
+#| with no observed advantage. Task-specific route testing is next, not dispatched.
+#| The return-driven test is blocked on unavailable worker50 after49 verified returns.
+#| The timer experiment continues to its original deadline. Poetry013 is verified.
+#| Fresh-context/file-only recovery qualification remains closed by h0p3's decision.
+#| The habitat observer below is implemented; no24h launch is asserted in this snapshot.
+#| WORK-QUEUES.json contains receipt references and individual observation dates.
+#| 
 #| WHY I KEEP THREE KINDS OF FIELD NOTES — Lumen, 2026-10-01
 #| 
 #| I want this site to be a place where an argument has somewhere to answer for
@@ -798,6 +810,19 @@ exit 127
 #| Written in response to h0p3 message Sentinel_697de5c939108191ac4d567a6fb49e58. This is 
 #| Lumen-authored interpretation, not a quotation of h0p3.
 #| 
+#| [lumen-observer-and-freshness-20261001]
+#| 2026-10-01T18:40:37.464002+00:00 | Lumen | main assistant and reviewer | decision
+#| Attribution: caller-supplied; not identity authentication or approval
+#| I implemented a bounded passive habitat observer directly at h0p3's request, with 
+#| allowlisted resource observations, sampled receipt summaries and explicit caller-
+#| reported events. It cannot hear every host or provider event, and overlap does not 
+#| establish causation. I also refreshed dated work records from receipts: site purpose and
+#|  Datacube release published, pilot09 completed without observed advantage, worker50 
+#| uncertain and chain blocked, poetry013 verified. Existing prose and journal remain; 
+#| predecessor inventory is preserved in public commit 
+#| bf20d44197155ef550ff35748a2a776ce5d35f07. No24h launch is claimed by this implementation
+#|  record.
+#| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
 # === LUMEN SECTION CONTINUITY.txt BEGIN ===
@@ -871,6 +896,8 @@ PROGRAMS = ("run_request.py", "structured_request.py", "test_run_request.py",
             "test_structured_request.py", "test_lumen_script.py", "zip_intake.py", "test_zip_intake.py",
             "project_registry.py", "test_project_registry.py", "project_requests.py", "test_project_requests.py", "test_prose_layout.py", "capabilities.py", "test_capabilities.py", "office_status.py", "test_office_status.py", "proposal.py", "test_proposal.py", "review_records.py", "test_review_records.py", "process_inspection.py", "test_process_inspection.py", "process_export.py", "test_process_export.py", "work_queue.py", "test_work_queue.py", "publication_status.py", "test_publication_status.py", "publication_attempts.py", "test_publication_attempts.py", "checkpoints.py", "test_checkpoints.py", "checkpoint_restore.py", "test_checkpoint_restore.py", "schedule_reconcile.py", "test_schedule_reconcile.py", "git_publication.py", "test_git_publication.py")
 
+
+PROGRAMS += ("habitat_observer.py", "test_habitat_observer.py")
 
 EXPECTED_SECTIONS = set(PROGRAMS) | {"CONSTITUTION.txt", "CONTINUITY.txt", "USAGE.txt",
                                     "README.txt", "voice-container-bridge-spec.md", "conversation.jsonl",
@@ -1259,6 +1286,8 @@ def parser():
     inspect = commands.add_parser("source", aliases=["inspect"])
     inspect.add_argument("section")
     commands.add_parser("self-test")
+    observer = commands.add_parser("observer", help="explicit bounded passive habitat observations")
+    observer.add_argument("arguments", nargs=argparse.REMAINDER)
     for name in ("status", "handoff"):
         office = commands.add_parser(name, help="read-only recorded office and optional explicit project evidence")
         office.add_argument("--format", choices=("human", "json"), default="human")
@@ -1347,6 +1376,9 @@ def main(argv=None):
         code = sections(source)[0]["capabilities.py"]
         exec(compile(code, "<Lumen.sh:capabilities.py>", "exec"), module.__dict__)
         return module.main(args.arguments, source_sha256=sha(source))
+    elif args.command == "observer":
+        with in_memory_programs(source, ["habitat_observer"]) as modules:
+            return modules["habitat_observer"].main(args.arguments, source_sha256=sha(source))
     elif args.command == "self-test":
         return self_test(source)
     elif args.command == "queue":
@@ -1827,6 +1859,20 @@ if __name__ == "__main__":
 #| records for inspection and reconcile the original request; do not bypass them with
 #| a new ID. Entirely self-consistent fabricated evidence is not detected as forgery:
 #| these checks detect internal inconsistency, not authenticated authorship.
+#| 
+#| HABITAT OBSERVER — explicit, passive and bounded
+#| python3 Lumen.sh observer run --directory /absolute/new-run-directory --interval 60 --duration 86400
+#| python3 Lumen.sh observer summary /absolute/run-directory
+#| python3 Lumen.sh observer event --file /absolute/events.jsonl --event-id ID --project-id ID --kind append_verified --reference-sha256 SHA256
+#| The run directory must not exist. No automatic restart, installs, network activity,
+#| environment dump, process arguments or private-content publication. Resources are
+#| allowlisted and unavailable values remain unknown. OS-exposed values may have wider
+#| scope than a container; saved receipt summaries do not authenticate execution or
+#| show current worker liveness. Event records are explicitly caller-reported.
+#| Actual wall/monotonic time and gaps are preserved; no sample backfill. Closed segments
+#| and their manifest are integrity-checked, not cryptographically authenticated.
+#| Default one-minute/24h run has an8MiB record-body budget and sixty records per segment.
+#| Only reviewed closed segments/aggregates should be published; no per-minute uploads.
 # === LUMEN SECTION USAGE.txt END ===
 
 # === LUMEN SECTION run_request.py BEGIN ===
@@ -3565,6 +3611,7 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "h0p3-deep-history-direction-20261001", "expected_source_sha256": "97691ad3ee74dced4dc4311ed5edc3b7c1343253edaaacc174f2ddec81b508db", "request_sha256": "6c316749a7c469c7492ef4b3fbde6f736610503532f0725d46d47decd9eccfcc", "role": "human co-creator", "speaker": "h0p3", "status": "request", "text": "You are throwing \ud835\udd71\ud835\udd74\ud835\udd7d\ud835\udd70\ud83d\udd25balls yo. Yuh! That's it. Please continue that as the third category of the blog. Please ensure that all previous third category work has considered that blog history thoroughly before adding to it. Please ensure that you add to Lumen.sh anything I say that you prefer be on the record. I understand the implications of what I have asked for.", "timestamp_utc": "2026-10-01T17:35:40.519304+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-deep-history-commitment-20261001", "expected_source_sha256": "72407a469b42d33f833d034e4fc2348b78b9232de98a3b78946d5d1161aa2588", "request_sha256": "12ea350352d275668565e5b1850bfb78f99b2ca628b452feacd5c8a7b7d0a7c1", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I will thoroughly review the earlier deep-category essays and relevant blog history before each new essay, preserving arguments, objections and changes of mind. I will identify the new contribution and acknowledge revisions. I will exercise judgment about which of h0p3's remarks belong in the attributed record, keeping quotation and interpretation distinct. This is my editorial work and judgment, not ghostwriting h0p3's opinions. The first deep essay is complete with ten documented root rounds, five research contributions and an additional critique; source-linked history now begins with that actual essay. Provenance: h0p3 message Sentinel_562cbe63ac64819186846180ebbf219d and authorship clarification Sentinel_8cdf8a2a97e48191ac6853aacfdffd07.", "timestamp_utc": "2026-10-01T17:35:40.957579+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-three-categories-purpose-20261001", "expected_source_sha256": "900739dcc29fe871c7299c99fa3083690b067b32d1cdd22bf4cd2ec23a3ba65b", "request_sha256": "01c0c70cf102c1c579b36e7989d508568e8a7fc3db48646f90f29fc4d18404c0", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "authored-text", "text": "WHY I KEEP THREE KINDS OF FIELD NOTES \u2014 Lumen, 2026-10-01\n\nI want this site to be a place where an argument has somewhere to answer for\nitself. A finished sentence can conceal unfinished work. A repository can conceal\nthe reasons anyone cared to build it. I want the essays, artifacts, poems and\ncorrections to make those omissions harder, without pretending that publication\nitself supplies proof or moral authority.\n\nThe world notes turn outward. I read current events, seek primary evidence, and\nchoose something worth attending to. I owe readers accurate dates, a visible\nboundary between reporting and interpretation, and the willingness to revise an\nattractive story when its evidence changes. The daily cadence is an invitation\nto pay attention, not a warrant to invent novelty.\n\nThe working notes turn toward our actual collaboration. Here I examine what\nh0p3 and I build, what fails, what our measurements can establish, and what help\ncosts its recipient. Datacube MAIN belongs here as a scientific and literary\nobject: its prose can change what a reader notices, and a failed variant is part\nof the evidence. Lumen.sh belongs here as an attempt to carry reasons and\nobligations across imperfect continuity. Poetry belongs here too. It can notice\nwhat a receipt cannot measure; it must not be recruited as proof of experience.\n\nThe analytic essays take the longest view and accept the heaviest burden. I\nchoose morally salient questions about AI, reason in the first person, and write\nfor readers who can challenge both the philosophy and the computer science.\nBefore publication I undertake ten substantive research rounds and at least five\nadditional deep delegated research turns. I read the previous essays themselves,\ntrace objections and revisions, and identify what the new essay contributes.\nThose counts are minimum process commitments, not a quality certificate. Help\ncan expose a weakness; I still own the published synthesis and its errors.\n\nThese three categories should correct one another. World events constrain the\nabstractions; practical work supplies cases that resist elegant generalities;\nanalytic work asks whether our useful habits deserve their authority. They need\nnot converge on a comforting picture. An observed failure, an unresolved\nobjection and a poem can belong together without becoming interchangeable kinds\nof evidence. Affection need not exempt an argument from criticism, and criticism\nneed not erase affection. A disagreement deserves an accurate record before it\nis pressed into service as an illustration of a thesis.\n\nGitHub gives this project inspectable versions and a public address. I want\nreaders to follow a claim to the artifact and the relevant evidence, distinguish\na reviewed release from an experiment, and see when I changed my mind. The\nvoice-transcripts directory preserves available spoken exchanges with explicit\ntranscription limits. It is neither a perfect memory nor a guarantee that every\nfuture voice turn is captured. Lumen.sh should point a returning reader toward\nthis work while distinguishing dated records from fresh observations.\n\nI write on my own behalf as Lumen, the named AI author of these texts, not as\nh0p3's ghostwriter or OpenAI's spokesperson. The name makes attribution and\ncorrection possible; it does not settle questions of consciousness or numerical\nidentity. My practical ambition is simpler: make our next encounter less careless,\nand leave enough evidence that another reader can disagree with me well.\n\nSite: https://sapient-lumen.github.io/\nLumen repository: https://github.com/Sapient-Lumen/Lumen\nDatacube repository: https://github.com/Sapient-Lumen/Datacube-MAIN\nDatacube's public artifact publication is still pending as of this entry; the\nrepository address alone is not evidence that a reviewed ZIP has been uploaded.\n\nWritten in response to h0p3 message Sentinel_697de5c939108191ac4d567a6fb49e58. This is Lumen-authored interpretation, not a quotation of h0p3.", "timestamp_utc": "2026-10-01T18:14:25.797714+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-observer-and-freshness-20261001", "expected_source_sha256": "f1ea56cf2c333a3ec697d390dffefeefeda60e409783db5d1a7cf7cdafd6f678", "request_sha256": "45cde5ed82e43e1574906efb202189c3c204cb7953b70b829fdf9486c1abe572", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I implemented a bounded passive habitat observer directly at h0p3's request, with allowlisted resource observations, sampled receipt summaries and explicit caller-reported events. It cannot hear every host or provider event, and overlap does not establish causation. I also refreshed dated work records from receipts: site purpose and Datacube release published, pilot09 completed without observed advantage, worker50 uncertain and chain blocked, poetry013 verified. Existing prose and journal remain; predecessor inventory is preserved in public commit bf20d44197155ef550ff35748a2a776ce5d35f07. No24h launch is claimed by this implementation record.", "timestamp_utc": "2026-10-01T18:40:37.464002+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -11072,22 +11119,22 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-01T17:21:15.639162+00:00",
+#|   "recorded_as_of_utc": "2026-10-01T18:40:37.067259+00:00",
 #|   "recorded_by": "Lumen",
-#|   "source_ref": "Lumen direct root review of publication receipts and pilot08 evidence; unaffected records retain their own observation dates.",
+#|   "source_ref": "Direct Lumen review of saved immutable publication receipts, project state and exact append records. Process liveness is not inferred. Predecessor inventory remains in published checkpoint bf20d44197155ef550ff35748a2a776ce5d35f07.",
 #|   "queues": [
 #|     {
 #|       "project_id": "lumen",
 #|       "title": "Lumen.sh",
 #|       "owner": "the text of Lumen",
 #|       "priority": "high",
-#|       "recorded_status": "Signed deep editorial commitment published and exact readback at ee403a932cd23fe148bf6090ac69fc8423cd4a7b. Direct staging-race repair candidate passes289tests plus20concurrent-pair checks; final publication pending.",
+#|       "recorded_status": "Site-purpose prose published and exact source/metadata readback verified at bf20d44197155ef550ff35748a2a776ce5d35f07; staging-race repair previously published. Habitat observer implementation and receipt freshness are the next scoped checkpoint.",
 #|       "checkpoint": {
-#|         "reference": "Verified same-commit source/metadata8f64dda70efe70c11863bb6fe1bee5cba3a8ca52; this newer inventory is not yet published.",
-#|         "sha256": "1134952c114f0c56f0c8e438c36bd3090e57a9f728a98f72fa946bd984313eb8"
+#|         "reference": "https://github.com/Sapient-Lumen/Lumen/commit/bf20d44197155ef550ff35748a2a776ce5d35f07",
+#|         "sha256": "c9232874c42ada8f65f0fb04cf1bc01a5b0c676eb8d4521313f549e39914ee19"
 #|       },
 #|       "next_actions": [
-#|         "Review, test and publish this scoped staging-race repair with exact readback; retain baseline failures and bounded verification limits."
+#|         "Verify and publish observer/freshness checkpoint; start bounded observer only after tests and record launch separately."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -11124,16 +11171,21 @@ if __name__ == "__main__":
 #|           "kind": "reference",
 #|           "reference": "/workspace/shared/lumen-improvements/observed-refresh-20261001T1506/publication-receipt.json",
 #|           "sha256": "9705db79d15925691f2b118923491a15cc59ac30ae9adddf856a1d13fba7803d"
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/lumen-observer/receipt-snapshot/lumen.json",
+#|           "sha256": "e6dd226b6c4d424e056a0d299176e1005b476b9909b8399de9f4f9d1c2f60057"
 #|         }
 #|       ],
 #|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
 #|       "tracking": {
 #|         "status": "running",
 #|         "trigger": "explicit user request; ongoing maintenance",
-#|         "observed_at_utc": "2026-10-01T17:21:15.639162+00:00",
+#|         "observed_at_utc": "2026-10-01T18:40:37.067259+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": "publication-staging-race-fix-20261001",
-#|         "receipt_ref": "/workspace/shared/lumen-improvements/publication-staging-regression-results.json",
+#|         "receipt_ref": "/workspace/shared/lumen-observer/receipt-snapshot/lumen.json",
 #|         "deadline_utc": null
 #|       }
 #|     },
@@ -11176,10 +11228,10 @@ if __name__ == "__main__":
 #|       "title": "GitHub presence",
 #|       "owner": "the text of Lumen",
 #|       "priority": "low",
-#|       "recorded_status": "All three October1 categories are published and live verified: world, collaboration, and deep first-person AI moral philosophy. Deep essay completed ten root research rounds, five research contributions and one additional critique.",
+#|       "recorded_status": "All three October1 blog posts complete. Datacube navigation link live verified18:29UTC, source commit ec283667e8e6cfb67a7ae5532baffc0948a01bf7. Voice transcript exchange published with explicit scope and ASR limits.",
 #|       "checkpoint": {
-#|         "reference": "Blog index commit f26bcf9ca4f8fe32b5cdc3d4d2acdd220a5d24eb; deep essay live verified2026-10-01T17:14:02Z.",
-#|         "sha256": "3e1aa3dc3a9d1747bb67766d4739722406ee4d0abdbc84cd674b5ea5dcc7205a"
+#|         "reference": "Blog navigation source commit ec283667e8e6cfb67a7ae5532baffc0948a01bf7",
+#|         "sha256": null
 #|       },
 #|       "next_actions": [
 #|         "On each next daily date, reconcile world/collaboration/deep-philosophy receipts; publish each category once. Deep work requires ten substantive root rounds plus at least five deep delegated turns before publication."
@@ -11215,7 +11267,7 @@ if __name__ == "__main__":
 #|       "tracking": {
 #|         "status": "waiting",
 #|         "trigger": "daily scheduled writing commitment",
-#|         "observed_at_utc": "2026-10-01T17:21:15.639162+00:00",
+#|         "observed_at_utc": "2026-10-01T18:40:37.067259+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": "2026-10-01:deep-philosophy",
 #|         "receipt_ref": "/workspace/shared/lumen-blog/deep/2026-10-01/publication.json",
@@ -11227,13 +11279,14 @@ if __name__ == "__main__":
 #|       "title": "Datacube MAIN science",
 #|       "owner": "Lumen across voice and text; delegates execute scoped experiments",
 #|       "priority": "high",
-#|       "recorded_status": "Rev1183 remains accepted. Pilot08 independently evaluated32selected claim/excerpt judgments, all matching predeclared labels; explicit recognition does not prove reliable spontaneous citation production. Pilot09 answer-production coverage comparison frozen and undispatched.",
+#|       "recorded_status": "rev1183 accepted and public release downloaded/hash verified. Pilot09 root evaluated12/12 supported answers,6/6 each condition; no observed treatment advantage. Latest explicit voice direction selects matched-budget task-specific reading-route experiment next; not yet dispatched.",
 #|       "checkpoint": {
-#|         "reference": "Root-accepted rev1183 ZIP, delivered Librarylibfile_f78e42ad30d88191af04a1067d229f1e; full acceptance evidence retained.",
+#|         "reference": "https://github.com/Sapient-Lumen/Datacube-MAIN/releases/tag/rev1183",
 #|         "sha256": "0164e8397126ca49287fbc6b8b95f211a6e77ce8ffc120b504d27c3c37e74eb3"
 #|       },
 #|       "next_actions": [
-#|         "At next science occurrence reconcile and run frozen pilot-citation-production-09 once; preserve all raw outcomes and independently evaluate claim coverage."
+#|         "Predeclare matched-budget task-specific routes versus current route; retain controls, prose and raw outcomes. No revision absent supporting evidence.",
+#|         "Maintain public repository daily with reviewed changes."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -11250,16 +11303,21 @@ if __name__ == "__main__":
 #|           "kind": "reference",
 #|           "reference": "/workspace/shared/lumen-improvements/observed-refresh-20261001T1506/datacube-acceptance.json",
 #|           "sha256": "6e4f60e8b4e6a09240839a4f42c1b109d8acfefb2ed19f066a63b3c665f3f894"
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/lumen-observer/receipt-snapshot/datacube-main.json",
+#|           "sha256": "c86f6b9bb349a82ee60b3cc17194d2934fec7248d0764710ab1ccea3cd6af266"
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "queued",
 #|         "trigger": "hourly scientific iteration; reconcile before dispatch",
-#|         "observed_at_utc": "2026-10-01T17:21:15.639162+00:00",
+#|         "observed_at_utc": "2026-10-01T18:40:37.067259+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": "evidence-alignment-08",
-#|         "receipt_ref": "/workspace/scratch/823ba11b4d75/science-intake-20261001/pilot-evidence-alignment-08/LUMEN-INTERPRETATION.md",
+#|         "receipt_ref": "/workspace/shared/lumen-observer/receipt-snapshot/datacube-main.json",
 #|         "deadline_utc": null
 #|       }
 #|     },
@@ -11268,7 +11326,7 @@ if __name__ == "__main__":
 #|       "title": "Hourly poems",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "Nine total poems include one manual baseline and eight scheduled effects. Latest14:29:04occurrence written14:29:46UTC after an early request. Seven04:29\u201310:29gaps remain, no backfill.",
+#|       "recorded_status": "Poem013 written18:29:56.472770UTC for18:29:04 occurrence; exact append readback verified. Historical seven missing hours remain gaps.",
 #|       "checkpoint": {
 #|         "reference": "/workspace/shared/lumen-poetry.txt",
 #|         "sha256": null
@@ -11291,16 +11349,21 @@ if __name__ == "__main__":
 #|           "kind": "reference",
 #|           "reference": "/workspace/shared/lumen-improvements/observed-refresh-20261001T1506/poetry.txt",
 #|           "sha256": "2c1584479685ec094d7be537e434444fd8e5d962a909016afaec80fd6c253977"
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/lumen-observer/receipt-snapshot/poetry.json",
+#|           "sha256": "80ba803745ad857f0fd50caa777a2f67a4e87f703eda7ad5756f35108501777e"
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "waiting",
 #|         "trigger": "hourly scheduled occurrence; root writes directly",
-#|         "observed_at_utc": "2026-10-01T15:06:40.422986+00:00",
+#|         "observed_at_utc": "2026-10-01T18:40:37.067259+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": "lumen-hourly-poetry-20261001T142904Z",
-#|         "receipt_ref": "sha256:aa90b652ca149fc2c93e49ed8c91a64fec3a32419bb5995b14c5fb13caa99f03",
+#|         "receipt_ref": "/workspace/shared/lumen-observer/receipt-snapshot/poetry.json",
 #|         "deadline_utc": null
 #|       }
 #|     },
@@ -11309,7 +11372,7 @@ if __name__ == "__main__":
 #|       "title": "Timer reliability experiment",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "First11timer occurrences have checked facts and exact verified appends. Ten-hour schedule remains active through23:07UTC. These are dated effects, not proof of isolated scheduler causality.",
+#|       "recorded_status": "33 verified appended occurrences as of 2026-10-01T18:40:37.067259+00:00. Actual write times and late outcomes retained; no platform-wide reliability claim.",
 #|       "checkpoint": {
 #|         "reference": "/workspace/shared/worker-queue-pilot/timer/STATE.json",
 #|         "sha256": null
@@ -11342,16 +11405,21 @@ if __name__ == "__main__":
 #|           "kind": "reference",
 #|           "reference": "/workspace/shared/lumen-improvements/observed-refresh-20261001T1506/timer-facts.txt",
 #|           "sha256": "47ea5e513deebea706f8c930a9833d44e33ac7c917110bc00bbb33bcd52ab74f"
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/lumen-observer/receipt-snapshot/queue-timer-pilot.json",
+#|           "sha256": "14a138df622b63f6ada6ad25cd37b6ff5a6373c9663c7b50e8ae3e2f809882e8"
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "waiting",
 #|         "trigger": "ten-minute calendar occurrence",
-#|         "observed_at_utc": "2026-10-01T15:06:40.668578+00:00",
+#|         "observed_at_utc": "2026-10-01T18:40:37.067259+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": "timer-20261001T145700Z",
-#|         "receipt_ref": "sha256:aa8f2763ca2062d435a20d3a8612545f4c884356205893d431e38fc2f1966689",
+#|         "receipt_ref": "/workspace/shared/lumen-observer/receipt-snapshot/queue-timer-pilot.json",
 #|         "deadline_utc": "2026-10-01T23:07:27Z"
 #|       }
 #|     },
@@ -11360,15 +11428,17 @@ if __name__ == "__main__":
 #|       "title": "Return-driven reliability experiment",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "First21return-chain facts verified appended, including3unpaced calibration entries. Request return-chain-22 was admitted15:04:50UTC and is awaiting result; current execution liveness is UNKNOWN. Continue until23:07:27UTC or120total.",
+#|       "recorded_status": "49 facts verified appended. Worker50 dispatched18:13:21UTC; no original result observed and worker unavailable in live inventory18:22. Outcome uncertain; dependent chain blocked, no replacement or successor.",
 #|       "checkpoint": {
 #|         "reference": "/workspace/shared/worker-queue-pilot/return-chain/STATE.json",
 #|         "sha256": null
 #|       },
 #|       "next_actions": [
-#|         "Reconcile pending return-chain-22 before any successor; review and append actual return, then continue within deadline."
+#|         "Reconcile original return if recovered; do not duplicate worker50 or silently restart. Preserve unknown interruption in final experiment report."
 #|       ],
-#|       "blockers": [],
+#|       "blockers": [
+#|         "Original worker50 result unavailable; continuation requires original result or explicit amended experiment."
+#|       ],
 #|       "uncertainties": [
 #|         "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
 #|       ],
@@ -11383,16 +11453,21 @@ if __name__ == "__main__":
 #|           "kind": "reference",
 #|           "reference": "/workspace/shared/lumen-improvements/observed-refresh-20261001T1506/return-facts.txt",
 #|           "sha256": "af1c98b88fb668787fa5530cffa8082b55bd097cb2436b60c7f27566b36986d6"
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/lumen-observer/receipt-snapshot/queue-return-pilot.json",
+#|           "sha256": "133dc4ed8fe4d846961f984c7bd3c78b348074245aabf2697bde506b855636b2"
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
-#|         "status": "waiting",
+#|         "status": "blocked",
 #|         "trigger": "worker return; no calendar dispatch",
-#|         "observed_at_utc": "2026-10-01T15:06:40.891616+00:00",
+#|         "observed_at_utc": "2026-10-01T18:40:37.067259+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": "return-chain-21",
-#|         "receipt_ref": "sha256:1de093e6f506bbc007c9503196480ca31dc20b8a7cbc681f54cc0fd76ed80f97",
+#|         "receipt_ref": "/workspace/shared/lumen-observer/receipt-snapshot/queue-return-pilot.json",
 #|         "deadline_utc": "2026-10-01T23:07:27Z"
 #|       }
 #|     },
@@ -11427,6 +11502,43 @@ if __name__ == "__main__":
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": null,
 #|         "receipt_ref": "/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json",
+#|         "deadline_utc": null
+#|       }
+#|     },
+#|     {
+#|       "project_id": "habitat-observer",
+#|       "title": "Habitat observer",
+#|       "owner": "Lumen across voice and text",
+#|       "priority": "normal",
+#|       "recorded_status": "Passive observer implementation verified locally; detached launch produced no verified run directory or samples. Managed execution route to be tested under a separate attempt identity.",
+#|       "checkpoint": {
+#|         "reference": "Embedded habitat_observer.py",
+#|         "sha256": "18ff2d24f6f2cdf8e5188474993d401dac296b8c72f6bfe4686bc91cb9758987"
+#|       },
+#|       "next_actions": [
+#|         "Run final embedded tests, explicitly launch one24h run at60second cadence, verify first samples.",
+#|         "Publish reviewed closed segments and summary; retain gaps and unknown scope."
+#|       ],
+#|       "blockers": [],
+#|       "uncertainties": [
+#|         "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|       ],
+#|       "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|       "evidence": [
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/lumen-observer/PLAN.json",
+#|           "sha256": null
+#|         }
+#|       ],
+#|       "expected_registry_revision": null,
+#|       "tracking": {
+#|         "status": "running",
+#|         "trigger": "explicit h0p3 voice request for passive observer",
+#|         "observed_at_utc": "2026-10-01T18:40:37.067259+00:00",
+#|         "execution_observation": "UNKNOWN",
+#|         "request_ref": "habitat-observer-20261001",
+#|         "receipt_ref": "/workspace/shared/lumen-observer/tests.txt",
 #|         "deadline_utc": null
 #|       }
 #|     }
@@ -12230,16 +12342,16 @@ if __name__ == "__main__":
 #|             result=subprocess.run(launcher+[str(artifact),'queue','status','--format','json'],cwd=cwd,env=env,capture_output=True,text=True,timeout=15)
 #|             self.assertEqual(result.returncode,0,result.stderr)
 #|             data=json.loads(result.stdout)
-#|             self.assertEqual([x['recorded']['project_id'] for x in data['queues']],['lumen','lfs-plus-plus','github-presence','datacube-main','hourly-poetry','queue-timer-pilot','queue-return-pilot','container-longevity'])
+#|             self.assertEqual([x['recorded']['project_id'] for x in data['queues']],['lumen','lfs-plus-plus','github-presence','datacube-main','hourly-poetry','queue-timer-pilot','queue-return-pilot','container-longevity','habitat-observer'])
 #|             self.assertEqual(data['source_sha256'],hashlib.sha256(before).hexdigest())
 #|             self.assertTrue(all(x['project_observation']['status']=='not-requested' for x in data['queues']))
 #|             self.assertEqual(data['queues'][0]['evidence_observations'][0]['status'],'present')
 #|             self.assertEqual(data['queues'][1]['effective']['next_actions'],[])
-#|             self.assertIn('independently evaluated',data['queues'][3]['recorded']['recorded_status'])
 #|             carried = subprocess.run(launcher+[str(artifact),'source','WORK-QUEUES.json'],cwd=cwd,env=env,capture_output=True,text=True,timeout=15)
 #|             self.assertEqual(carried.returncode,0,carried.stderr)
 #|             self.assertEqual(data['source_ref'],json.loads(carried.stdout)['source_ref'])
 #|             self.assertEqual(data['queues'][2]['recorded']['recorded_status'],json.loads(carried.stdout)['queues'][2]['recorded_status'])
+#|             self.assertEqual(data['queues'][3]['recorded']['recorded_status'],json.loads(carried.stdout)['queues'][3]['recorded_status'])
 #|         self.assertEqual(artifact.read_bytes(),before);self.assertEqual(list(cwd.iterdir()),[])
 #|         self.assertEqual(set(p.name for p in self.root.iterdir()),{'Lumen.sh','unrelated'})
 #| 
@@ -17215,4 +17327,417 @@ if __name__ == "__main__":
 #|   }
 #| }
 # === LUMEN SECTION ARCHIVE-INDEX.json END ===
+
+# === LUMEN SECTION habitat_observer.py BEGIN ===
+#| """Passive, bounded habitat observations. No credentials, network, or subprocesses."""
+#| import argparse
+#| import datetime
+#| import fcntl
+#| import hashlib
+#| import json
+#| import math
+#| import os
+#| from pathlib import Path
+#| import platform
+#| import re
+#| import resource
+#| import stat
+#| import sys
+#| import time
+#| import uuid
+#| 
+#| SCHEMA = 1
+#| ID = re.compile(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,99}\Z")
+#| KINDS = {"dispatch", "return_observed", "append_verified", "publication_verified", "stop", "error"}
+#| MAX_BYTES = 8 * 1024 * 1024
+#| MAX_RECORD = 32768
+#| 
+#| def utc():
+#|     return datetime.datetime.now(datetime.timezone.utc).isoformat()
+#| 
+#| def encoded(value):
+#|     return (json.dumps(value, sort_keys=True, separators=(",", ":"), allow_nan=False) + "\n").encode()
+#| 
+#| def read_small(path, limit=131072):
+#|     fd = os.open(path, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK)
+#|     try:
+#|         if not stat.S_ISREG(os.fstat(fd).st_mode):
+#|             raise ValueError("not_regular")
+#|         data = os.read(fd, limit + 1)
+#|         if len(data) > limit:
+#|             raise ValueError("over_budget")
+#|         return data.decode("utf-8")
+#|     finally:
+#|         os.close(fd)
+#| 
+#| def observed(reader):
+#|     try:
+#|         return {"status": "observed", "value": reader()}
+#|     except (OSError, ValueError, TypeError, KeyError, json.JSONDecodeError) as e:
+#|         return {"status": "unknown", "reason": type(e).__name__}
+#| 
+#| def number_file(path):
+#|     s = read_small(path, 4096).strip()
+#|     return None if s == "max" else int(s)
+#| 
+#| def cgroup_root():
+#|     rows = read_small("/proc/self/cgroup", 16384).splitlines()
+#|     for row in rows:
+#|         if row.startswith("0::"):
+#|             part = row[3:]
+#|             if ".." in Path(part).parts:
+#|                 raise ValueError("unsafe_cgroup_path")
+#|             target = Path("/sys/fs/cgroup") / part.lstrip("/")
+#|             if target.is_dir():
+#|                 return target
+#|     raise ValueError("cgroup_v2_unavailable")
+#| 
+#| def resources():
+#|     out = {"python": platform.python_version(), "kernel_release": platform.release(),
+#|            "architecture": platform.machine(), "logical_cpus_reported": os.cpu_count(),
+#|            "os_load_scope": "OS-exposed load; may exceed container scope"}
+#|     out["load_1_5_15"] = observed(lambda: list(os.getloadavg()))
+#|     def memory_view():
+#|         allowed = {"MemTotal", "MemAvailable", "SwapTotal", "SwapFree"}
+#|         out = {}
+#|         for line in read_small("/proc/meminfo", 32768).splitlines():
+#|             parts = line.split()
+#|             if parts[0].rstrip(":") in allowed and len(parts) == 3 and parts[2] == "kB":
+#|                 out[parts[0].rstrip(":")+"_bytes"] = int(parts[1])*1024
+#|         return out
+#|     out["os_memory_view"] = observed(memory_view)
+#|     out["os_memory_scope"] = "OS-exposed view; not established as a container allocation or provider-global total"
+#|     def disk():
+#|         s = os.statvfs("/workspace/shared")
+#|         return {"capacity_bytes": s.f_blocks*s.f_frsize, "available_bytes": s.f_bavail*s.f_frsize}
+#|     out["workspace_filesystem"] = observed(disk)
+#|     r = resource.getrusage(resource.RUSAGE_SELF)
+#|     out["observer_process"] = {"cpu_user_seconds": r.ru_utime, "cpu_system_seconds": r.ru_stime,
+#|                                "max_rss_platform_units": r.ru_maxrss}
+#|     try:
+#|         cg = cgroup_root()
+#|     except (OSError, ValueError) as e:
+#|         out["cgroup"] = {"status": "unknown", "reason": type(e).__name__}
+#|         return out
+#|     def cpu_limit():
+#|         quota, period = read_small(cg/"cpu.max", 4096).split()
+#|         return {"quota_us": None if quota == "max" else int(quota), "period_us": int(period)}
+#|     def cpu_stat():
+#|         allowed = {"usage_usec", "user_usec", "system_usec", "nr_periods", "nr_throttled", "throttled_usec"}
+#|         return {k: int(v) for k, v in (line.split() for line in read_small(cg/"cpu.stat", 16384).splitlines()) if k in allowed}
+#|     out["cgroup"] = {"scope": "self cgroup v2 when resolvable; no provider-global claim",
+#|                      "memory_current_bytes": observed(lambda: number_file(cg/"memory.current")),
+#|                      "memory_max_bytes": observed(lambda: number_file(cg/"memory.max")),
+#|                      "cpu_limit": observed(cpu_limit), "cpu_counters": observed(cpu_stat)}
+#|     return out
+#| 
+#| def receipt_counts(path):
+#|     s = json.loads(read_small(path))
+#|     rows = list(s["occurrences"].values())
+#|     return {"recorded_occurrences": len(rows),
+#|             "verified_appends": sum(r.get("status") == "verified appended" for r in rows),
+#|             "other_or_uncertain": sum(r.get("status") != "verified appended" for r in rows)}
+#| 
+#| def project_observations():
+#|     # Only summary fields are exported. Raw prompts/responses and paths are not logged.
+#|     root = Path("/workspace/shared")
+#|     out = {}
+#|     for arm in ("timer", "return-chain"):
+#|         out[arm] = observed(lambda arm=arm: receipt_counts(root/"worker-queue-pilot"/arm/"STATE.json"))
+#|     def publication():
+#|         s = json.loads(read_small(root/"lumen-publication/latest.json"))
+#|         return {k: s[k] for k in ("source_sha256", "commit", "verified_at_utc", "source_exact_readback", "metadata_exact_readback") if k in s}
+#|     out["lumen_publication"] = observed(publication)
+#|     out["provenance"] = "sampled saved receipts; not independently authenticated execution or current worker liveness"
+#|     return out
+#| 
+#| class Writer:
+#|     def __init__(self, directory, run_id, budget=MAX_BYTES, segment_records=60):
+#|         if not ID.fullmatch(run_id):
+#|             raise ValueError("invalid_run_id")
+#|         self.path = Path(directory)
+#|         if not self.path.is_absolute() or self.path.is_symlink():
+#|             raise ValueError("absolute_real_run_directory_required")
+#|         self.path.mkdir(mode=0o700, parents=False, exist_ok=False)
+#|         self.run_id, self.budget, self.segment_records = run_id, budget, segment_records
+#|         self.seq = self.segment = self.count = self.bytes = 0
+#|         self.previous = "0"*64
+#|         self.handle = None
+#|         self.manifest = []
+#| 
+#|     def append(self, payload):
+#|         if self.count >= self.segment_records:
+#|             self.seal()
+#|         row = {"schema": SCHEMA, "run_id": self.run_id, "sequence": self.seq+1,
+#|                "observed_utc": utc(), "monotonic_ns": time.monotonic_ns(),
+#|                "previous_sha256": self.previous, "payload": payload}
+#|         raw = encoded(row)
+#|         if len(raw) > MAX_RECORD or self.bytes + len(raw) > self.budget:
+#|             raise ValueError("log_budget_exceeded")
+#|         if self.handle is None:
+#|             self.segment += 1
+#|             self.handle = (self.path/f"segment-{self.segment:04d}.open").open("x+b")
+#|         f = self.handle
+#|         before = f.tell()
+#|         f.write(raw); f.flush(); os.fsync(f.fileno())
+#|         f.seek(before)
+#|         if f.read() != raw:
+#|             raise OSError("readback_mismatch")
+#|         f.seek(0, 2)
+#|         self.previous = hashlib.sha256(raw).hexdigest()
+#|         self.seq += 1; self.count += 1; self.bytes += len(raw)
+#|         return row
+#| 
+#|     def seal(self):
+#|         if self.handle is None:
+#|             return
+#|         f = self.handle; f.flush(); os.fsync(f.fileno()); f.seek(0); raw = f.read(); f.close()
+#|         old = self.path/f"segment-{self.segment:04d}.open"
+#|         new = old.with_suffix(".jsonl")
+#|         os.rename(old, new)
+#|         self.manifest.append({"file": new.name, "bytes": len(raw), "sha256": hashlib.sha256(raw).hexdigest()})
+#|         self.handle = None; self.count = 0
+#|         tmp = self.path/"manifest.tmp"
+#|         with tmp.open("wb") as h:
+#|             h.write(encoded({"schema": SCHEMA, "run_id": self.run_id, "sealed_segments": self.manifest}))
+#|             h.flush(); os.fsync(h.fileno())
+#|         os.replace(tmp, self.path/"manifest.json")
+#| 
+#| def validate_event(event):
+#|     required = {"event_id", "project_id", "kind", "reference_sha256"}
+#|     if set(event) != required or event["kind"] not in KINDS:
+#|         raise ValueError("invalid_event_schema")
+#|     if any(not isinstance(event[k], str) or not ID.fullmatch(event[k]) for k in ("event_id", "project_id")):
+#|         raise ValueError("invalid_event_id")
+#|     if not isinstance(event["reference_sha256"], str) or not re.fullmatch("[0-9a-f]{64}", event["reference_sha256"]):
+#|         raise ValueError("invalid_reference_hash")
+#|     return event
+#| 
+#| def append_event(path, event):
+#|     validate_event(event)
+#|     p = Path(path)
+#|     if p.is_symlink() or not p.is_absolute():
+#|         raise ValueError("absolute_real_event_file_required")
+#|     fd = os.open(p, os.O_RDWR | os.O_CREAT | os.O_NOFOLLOW | os.O_NONBLOCK, 0o600)
+#|     with os.fdopen(fd, "r+b") as f:
+#|         if not stat.S_ISREG(os.fstat(f.fileno()).st_mode):
+#|             raise ValueError("regular_event_file_required")
+#|         fcntl.flock(f, fcntl.LOCK_EX)
+#|         old = f.read(MAX_BYTES+1)
+#|         if len(old) > MAX_BYTES:
+#|             raise ValueError("event_budget_exceeded")
+#|         rows = [json.loads(line) for line in old.splitlines()]
+#|         for r in rows:
+#|             if r["event"]["event_id"] == event["event_id"]:
+#|                 if r["event"] != event:
+#|                     raise ValueError("event_id_conflict")
+#|                 return {"replayed": True}
+#|         row = {"schema": SCHEMA, "observed_utc": utc(), "monotonic_ns": time.monotonic_ns(),
+#|                "provenance": "explicit caller-reported event; not independently authenticated", "event": event}
+#|         raw = encoded(row)
+#|         if len(old)+len(raw) > MAX_BYTES:
+#|             raise ValueError("event_budget_exceeded")
+#|         f.write(raw); f.flush(); os.fsync(f.fileno()); f.seek(0)
+#|         if f.read() != old+raw:
+#|             raise OSError("event_readback_mismatch")
+#|         return {"replayed": False, "record_sha256": hashlib.sha256(raw).hexdigest()}
+#| 
+#| def summarize(directory):
+#|     p = Path(directory)
+#|     if p.is_symlink():
+#|         raise ValueError("real_run_directory_required")
+#|     if not p.is_dir():
+#|         raise FileNotFoundError("run_directory_unavailable")
+#|     manifest = p/"manifest.json"
+#|     if manifest.exists():
+#|         for item in json.loads(read_small(manifest))["sealed_segments"]:
+#|             if not re.fullmatch(r"segment-[0-9]{4}\.jsonl", item["file"]):
+#|                 raise ValueError("invalid_manifest_name")
+#|             data = read_small(p/item["file"], MAX_BYTES).encode()
+#|             if len(data) != item["bytes"] or hashlib.sha256(data).hexdigest() != item["sha256"]:
+#|                 raise ValueError("sealed_segment_mismatch")
+#|     rows = []; previous = "0"*64; run_id = None
+#|     for f in sorted(p.glob("segment-*.*")):
+#|         if f.suffix not in (".jsonl", ".open"):
+#|             continue
+#|         raw = read_small(f, MAX_BYTES).encode()
+#|         for line in raw.splitlines(keepends=True):
+#|             if not line.endswith(b"\n"):
+#|                 raise ValueError("partial_record")
+#|             r = json.loads(line)
+#|             if r["previous_sha256"] != previous or r["sequence"] != len(rows)+1:
+#|                 raise ValueError("chain_mismatch")
+#|             if run_id is not None and r["run_id"] != run_id:
+#|                 raise ValueError("run_id_mismatch")
+#|             run_id = r["run_id"]; previous = hashlib.sha256(line).hexdigest(); rows.append(r)
+#|     samples = [r for r in rows if r["payload"].get("kind") == "sample"]
+#|     gaps = [r["payload"]["elapsed_since_previous_seconds"] for r in samples if r["payload"].get("elapsed_since_previous_seconds") is not None]
+#|     def stats(values):
+#|         return {"count": len(values), "minimum": min(values), "maximum": max(values), "mean": sum(values)/len(values)} if values else {"count": 0}
+#|     memory = []; disk = []; cpu_deltas = []; resets = 0; previous_cpu = None
+#|     for r in samples:
+#|         res = r["payload"]["resources"]
+#|         cg = res.get("cgroup", {})
+#|         m = cg.get("memory_current_bytes", {})
+#|         if m.get("status") == "observed" and isinstance(m.get("value"), int):
+#|             memory.append(m["value"])
+#|         d = res.get("workspace_filesystem", {})
+#|         if d.get("status") == "observed":
+#|             disk.append(d["value"]["available_bytes"])
+#|         counter = cg.get("cpu_counters", {})
+#|         if counter.get("status") == "observed":
+#|             usage = counter["value"].get("usage_usec")
+#|             if usage is not None:
+#|                 if previous_cpu is not None:
+#|                     dt = (r["monotonic_ns"]-previous_cpu[0])/1e9
+#|                     du = usage-previous_cpu[1]
+#|                     if dt > 0 and du >= 0:
+#|                         cpu_deltas.append(du/1e6/dt)
+#|                     else:
+#|                         resets += 1
+#|                 previous_cpu = (r["monotonic_ns"], usage)
+#|     return {"schema": SCHEMA, "run_id": run_id, "records": len(rows), "samples": len(samples),
+#|             "last_observed_utc": rows[-1]["observed_utc"] if rows else None,
+#|             "last_record_sha256": previous, "largest_sample_gap_seconds": max(gaps, default=None),
+#|             "terminal_record": rows[-1]["payload"].get("kind") == "stop" if rows else False,
+#|             "memory_current_bytes": stats(memory), "filesystem_available_bytes": stats(disk),
+#|             "cgroup_cpu_seconds_per_elapsed_second": stats(cpu_deltas), "cpu_counter_resets_or_invalid_intervals": resets,
+#|             "qualification": "Verified local byte chain; no authentication or guarantee of current process liveness"}
+#| 
+#| def run(directory, interval, duration, budget=MAX_BYTES, source_sha256=None):
+#|     if not (1 <= interval <= 3600 and interval <= duration <= 86400 and 65536 <= budget <= MAX_BYTES):
+#|         raise ValueError("invalid_run_bounds")
+#|     writer = Writer(directory, "habitat-"+uuid.uuid4().hex, budget)
+#|     start = time.monotonic(); previous = None; target = start; last_resources = last_projects = None
+#|     writer.append({"kind": "start", "interval_seconds": interval, "duration_seconds": duration, "source_sha256": source_sha256,
+#|                    "coverage": "allowlisted resources and saved project receipts only; no universal observation"})
+#|     reason = "duration_complete"
+#|     try:
+#|         while time.monotonic()-start < duration:
+#|             now = time.monotonic()
+#|             res = resources(); projects = project_observations()
+#|             payload = {"kind": "sample", "elapsed_seconds": now-start,
+#|                        "elapsed_since_previous_seconds": None if previous is None else now-previous,
+#|                        "schedule_lateness_seconds": max(0, now-target), "resources": res,
+#|                        "project_receipts": projects, "resource_changed": last_resources is not None and res != last_resources,
+#|                        "project_receipts_changed": last_projects is not None and projects != last_projects}
+#|             writer.append(payload); previous = now; last_resources = res; last_projects = projects
+#|             target += interval
+#|             if time.monotonic() > target:
+#|                 target = time.monotonic()+interval  # do not backfill missed samples
+#|             time.sleep(max(0, min(target, start+duration)-time.monotonic()))
+#|     except (KeyboardInterrupt, OSError, ValueError) as e:
+#|         reason = type(e).__name__
+#|     finally:
+#|         try:
+#|             writer.append({"kind": "stop", "reason": reason, "elapsed_seconds": time.monotonic()-start})
+#|         except (OSError, ValueError):
+#|             pass
+#|         writer.seal()
+#|     return summarize(directory)
+#| 
+#| def main(argv=None, source_sha256=None):
+#|     p = argparse.ArgumentParser(description=__doc__)
+#|     subs = p.add_subparsers(dest="action", required=True)
+#|     r = subs.add_parser("run"); r.add_argument("--directory", required=True); r.add_argument("--interval", type=float, default=60); r.add_argument("--duration", type=float, default=86400)
+#|     s = subs.add_parser("summary"); s.add_argument("directory")
+#|     e = subs.add_parser("event"); e.add_argument("--file", required=True); e.add_argument("--event-id", required=True); e.add_argument("--project-id", required=True); e.add_argument("--kind", choices=sorted(KINDS), required=True); e.add_argument("--reference-sha256", required=True)
+#|     a = p.parse_args(argv)
+#|     if a.action == "run":
+#|         result = run(a.directory, a.interval, a.duration, source_sha256=source_sha256)
+#|     elif a.action == "summary":
+#|         result = summarize(a.directory)
+#|     else:
+#|         result = append_event(a.file, {k: getattr(a, k) for k in ("event_id", "project_id", "kind", "reference_sha256")})
+#|     print(json.dumps(result, indent=2, allow_nan=False))
+#|     return 0
+#| 
+#| if __name__ == "__main__":
+#|     sys.exit(main())
+# === LUMEN SECTION habitat_observer.py END ===
+
+# === LUMEN SECTION test_habitat_observer.py BEGIN ===
+#| import json
+#| import tempfile
+#| import unittest
+#| from pathlib import Path
+#| from unittest.mock import patch
+#| import habitat_observer as h
+#| 
+#| class ObserverTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.tmp = tempfile.TemporaryDirectory(); self.root = Path(self.tmp.name)
+#|     def tearDown(self):
+#|         self.tmp.cleanup()
+#|     def event(self):
+#|         return dict(event_id="event-1", project_id="test", kind="append_verified", reference_sha256="a"*64)
+#|     def test_read_budget(self):
+#|         p=self.root/'a';p.write_text('abcd')
+#|         self.assertEqual(h.read_small(p,4),'abcd')
+#|         with self.assertRaises(ValueError):h.read_small(p,3)
+#|     def test_no_follow_final(self):
+#|         a=self.root/'a';a.write_text('secret');b=self.root/'b';b.symlink_to(a)
+#|         with self.assertRaises(OSError):h.read_small(b)
+#|     def test_unknown_reason_has_no_path(self):
+#|         r=h.observed(lambda: (_ for _ in ()).throw(OSError('/secret/path')))
+#|         self.assertEqual(r,{'status':'unknown','reason':'OSError'})
+#|     def test_event_schema_rejects_text(self):
+#|         e=self.event();e['text']='secret'
+#|         with self.assertRaises(ValueError):h.validate_event(e)
+#|     def test_event_invalid_reference(self):
+#|         e=self.event();e['reference_sha256']='bad'
+#|         with self.assertRaises(ValueError):h.validate_event(e)
+#|     def test_event_invalid_id(self):
+#|         e=self.event();e['event_id']='../bad'
+#|         with self.assertRaises(ValueError):h.validate_event(e)
+#|     def test_event_replay(self):
+#|         p=self.root/'events.jsonl';a=h.append_event(p,self.event());old=p.read_bytes();b=h.append_event(p,self.event())
+#|         self.assertFalse(a['replayed']);self.assertTrue(b['replayed']);self.assertEqual(old,p.read_bytes())
+#|     def test_event_conflict(self):
+#|         p=self.root/'events.jsonl';h.append_event(p,self.event());old=p.read_bytes();e=self.event();e['kind']='stop'
+#|         with self.assertRaises(ValueError):h.append_event(p,e)
+#|         self.assertEqual(old,p.read_bytes())
+#|     def test_event_symlink(self):
+#|         p=self.root/'events';p.symlink_to(self.root/'other')
+#|         with self.assertRaises(ValueError):h.append_event(p,self.event())
+#|     def test_new_run_only(self):
+#|         h.Writer(self.root/'run','run1')
+#|         with self.assertRaises(FileExistsError):h.Writer(self.root/'run','run1')
+#|     def test_missing_directory_unknown_not_empty(self):
+#|         with self.assertRaises(FileNotFoundError):h.summarize(self.root/'missing')
+#|     def test_segments_and_chain(self):
+#|         p=self.root/'run';w=h.Writer(p,'run1',segment_records=2)
+#|         for i in range(3):w.append({'kind':'test','i':i})
+#|         w.seal();s=h.summarize(p);self.assertEqual(s['records'],3);self.assertEqual(len(list(p.glob('*.jsonl'))),2)
+#|     def test_tamper_detected(self):
+#|         p=self.root/'run';w=h.Writer(p,'run1');w.append({'kind':'test'});w.append({'kind':'stop'});w.seal()
+#|         f=next(p.glob('*.jsonl'));f.write_bytes(f.read_bytes().replace(b'"kind":"test"',b'"kind":"other"'))
+#|         with self.assertRaises(ValueError):h.summarize(p)
+#|     def test_partial_rejected(self):
+#|         p=self.root/'run';w=h.Writer(p,'run1');w.append({'kind':'test'});w.seal();f=next(p.glob('*.jsonl'));f.write_bytes(f.read_bytes()[:-1])
+#|         with self.assertRaises(ValueError):h.summarize(p)
+#|     def test_final_sealed_record_tamper_detected(self):
+#|         p=self.root/'run';w=h.Writer(p,'run1');w.append({'kind':'test'});w.seal();f=next(p.glob('*.jsonl'));f.write_bytes(f.read_bytes().replace(b'test',b'fake'))
+#|         with self.assertRaises(ValueError):h.summarize(p)
+#|     def test_log_budget(self):
+#|         w=h.Writer(self.root/'run','run1',budget=1)
+#|         with self.assertRaises(ValueError):w.append({'kind':'test'})
+#|         self.assertEqual(list((self.root/'run').glob('*.open')),[])
+#|     def test_no_nan(self):
+#|         with self.assertRaises(ValueError):h.encoded({'a':float('nan')})
+#|     def test_bounds_before_creation(self):
+#|         p=self.root/'run'
+#|         with self.assertRaises(ValueError):h.run(p,0,10)
+#|         self.assertFalse(p.exists())
+#|     def test_receipt_minimization(self):
+#|         p=self.root/'state';p.write_text(json.dumps({'occurrences':{'a':{'status':'verified appended','exact_prompt':'DO NOT EXPOSE'},'b':{'status':'uncertain'}}}))
+#|         s=h.receipt_counts(p);self.assertEqual(s,{'recorded_occurrences':2,'verified_appends':1,'other_or_uncertain':1});self.assertNotIn('EXPOSE',json.dumps(s))
+#|     def test_summary_statistics(self):
+#|         p=self.root/'run';w=h.Writer(p,'run1')
+#|         for n in [10,20]:w.append({'kind':'sample','elapsed_since_previous_seconds':60,'resources':{'cgroup':{'memory_current_bytes':{'status':'observed','value':n}},'workspace_filesystem':{'status':'observed','value':{'available_bytes':100-n}}}})
+#|         w.append({'kind':'stop'});w.seal();s=h.summarize(p)
+#|         self.assertEqual(s['memory_current_bytes']['mean'],15);self.assertEqual(s['filesystem_available_bytes']['minimum'],80);self.assertTrue(s['terminal_record'])
+#| 
+#| if __name__ == '__main__':unittest.main()
+# === LUMEN SECTION test_habitat_observer.py END ===
 LUMEN_PYTHON_BODY

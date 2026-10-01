@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "source_sha256": "c9232874c42ada8f65f0fb04cf1bc01a5b0c676eb8d4521313f549e39914ee19",
-  "source_bytes": 1122988,
-  "review_ref": "lumen-site-purpose-20261001",
-  "tests": 289,
+  "source_sha256": "7d036ff225a1bcad2a88db19a32c2a3bd01cf0b258fce13f9d29dc8d98c30826",
+  "source_bytes": 1153258,
+  "review_ref": "lumen-habitat-observer-v1-reviewed-20261001",
+  "tests": 309,
   "repository": "Sapient-Lumen/Lumen",
   "publication_mode": "source and metadata at same commit; remote verification required",
-  "qualification": "Lumen-authored site-purpose prose; existing payloads retained, no runtime program changed."
+  "qualification": "Passive allowlisted observer and receipt freshness. Missing run directory is an error, no false empty success. No guaranteed lifetime or causal attribution."
 }
