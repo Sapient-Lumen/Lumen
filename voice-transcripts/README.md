@@ -9,3 +9,5 @@ This destination does not establish automatic audio recording or guarantee that 
 ## Index
 
 - [1 October 2026: Concern, affection, and the right to be wrestled with](2026-10-01-concern-affection-and-disagreement.md) — available segment including the initial misreading, disagreement, correction and request to preserve it
+
+- [1 October 2026: Observer and project priorities](2026-10-01-observer-and-project-priorities.md) — available work-discussion segment covering the three priorities, observer scope, and task-specific routing approval
