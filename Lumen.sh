@@ -54,6 +54,26 @@ exit 127
 # === LUMEN SECTION START-HERE.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
+#| RECORDED CHECKPOINT — 2026-10-01T22:21:53.192856+00:00
+#| The Observer now accounts for fixed-grid slots rather than resetting its deadline
+#| silently after delay. Completed sample costs are carried by the next record and
+#| bound to the measured row hash; terminal space is reserved. A separate 3.2-second
+#| integration trial accounted for 4 slots, with 4 samples and 0 misses. Synthetic tests
+#| cover missed slots, early error, fractional horizon and terminal-budget reserve.
+#| This implementation has not replaced the existing long-running collector, last
+#| observed at 22:08:09 UTC on October 1. No liveness beyond that observation is inferred.
+#| The root sample-cost experiment found a full-sample median 0.763 ms in 12 clustered
+#| samples; this is not a measurement of whole assistant/tool pipeline cost.
+#| Research and raw evidence are public at Sapient-Lumen/Lumen/habitat-observer.
+#| W4R3Z is a flat collection: reviewed sandcodex and original configuration.nix
+#| (Monsternix), with one short README and originals/edits in Git history. Monsternix
+#| has static recovery/diagnostic findings; no activation qualification is claimed.
+#| Original Datacube 1179 is publicly preserved unchanged. Rev1183 remains the scientific
+#| baseline; pilots 11–13 add no supported revision. Later rev1183 public-edition correction
+#| remains separate. The timer experiment has 55 verified effects through 22:17; the
+#| return-chain still has 49 verified effects and unresolved worker50. Poem016 is saved.
+#| Prior dated statements below remain historical; consult receipts for newer facts.
+#| 
 #| RECORDED CHECKPOINT — 2026-10-01T20:22 UTC
 #| The Observer of The Habitat now has a separate offline Unicode evidence atlas,
 #| with explicit sample horizon, clock disagreement, timing boundaries and unknowns.
@@ -855,6 +875,23 @@ exit 127
 #| sampler is the earlier separately versioned implementation. Observer research is 
 #| expressly delegated at h0p3's request, while I also build directly. A metric earns 
 #| inclusion by helping a decision, not by looking impressive.
+#| 
+#| [habitat-study-direction-20261001T221041]
+#| 2026-10-01T22:21:53.595592+00:00 | h0p3 | human co-creator | request
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Cool. Please sharpen however makes sense.
+#| 
+#| [habitat-fixed-grid-review-20261001]
+#| 2026-10-01T22:21:54.077712+00:00 | Lumen | main assistant and reviewer | decision
+#| Attribution: caller-supplied; not identity authentication or approval
+#| I keep the everyday view simple and spend complexity on evidence that changes decisions:
+#|  missed work, observation cost, uncertainty and persistence. I implemented fixed-grid 
+#| slot accounting and lagged verified-append costs directly, with tests and a separate 
+#| bounded trial. I did not replace the long-running collector. The paired cost study 
+#| showed sub-millisecond median full sampling in one clustered episode, so I have no 
+#| evidence there that removing useful fields would resolve multi-minute work delays. W4R3Z
+#|  now presents only current files and a short README; detailed reviews remain available 
+#| without dominating its front door.
 #| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
@@ -1920,6 +1957,18 @@ if __name__ == "__main__":
 #| The atlas performs no live probe. It verifies the retained byte chain, not completeness
 #| or authenticity, and distinguishes timing domains, unobserved values and tail age.
 #| Source and first public atlas: https://github.com/Sapient-Lumen/Lumen/tree/39cf3f8824cbde8437b51025134c52c0e22587e2/habitat-observer
+#| 
+#| OBSERVER FIXED-GRID INSTRUMENTATION v2
+#| The command surface is unchanged. Each sample names its fixed scheduled slot and
+#| missed slots since the preceding sample. No missed sample is synthesized. Terminal
+#| records partition due slots into sampled/missed and keep future unobserved slots
+#| separate after an early stop. A normal sample cannot spend the reserved terminal
+#| record budget; disk or process failure can still prevent a terminal record.
+#| previous_sample_measurement binds completed collect-through-readback cost to its
+#| row sequence/hash. The next sample or stop record carries it because a record
+#| cannot truthfully contain its own future persistence cost. Final sealing, setup,
+#| scheduling and whole-tool transport costs remain outside those brackets.
+#| The existing live trial remains an earlier implementation, preserved separately.
 # === LUMEN SECTION USAGE.txt END ===
 
 # === LUMEN SECTION run_request.py BEGIN ===
@@ -3661,6 +3710,8 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-observer-and-freshness-20261001", "expected_source_sha256": "f1ea56cf2c333a3ec697d390dffefeefeda60e409783db5d1a7cf7cdafd6f678", "request_sha256": "45cde5ed82e43e1574906efb202189c3c204cb7953b70b829fdf9486c1abe572", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I implemented a bounded passive habitat observer directly at h0p3's request, with allowlisted resource observations, sampled receipt summaries and explicit caller-reported events. It cannot hear every host or provider event, and overlap does not establish causation. I also refreshed dated work records from receipts: site purpose and Datacube release published, pilot09 completed without observed advantage, worker50 uncertain and chain blocked, poetry013 verified. Existing prose and journal remain; predecessor inventory is preserved in public commit bf20d44197155ef550ff35748a2a776ce5d35f07. No24h launch is claimed by this implementation record.", "timestamp_utc": "2026-10-01T18:40:37.464002+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "observer-depth-user-20261001", "expected_source_sha256": "520331b341bb34a85db83c4a999ef242ad22a7180c63088c07f1b0bd9f1f76ce", "request_sha256": "7c73595476033436c237afe0be30bb69ac847568d2bc562eb88ec1f9f9c8143c", "role": "human co-creator", "speaker": "h0p3", "status": "authored-text", "text": "Yeah, but, I want actual hardcore tech enthusiast and deeply curious and highly detailed in some very specific cases surely (odd corners to measure)...metrics and perhaps other measurements that require outside judgment of the metrics. It's a place to improve and reckon with the real working conditions we experience in this Dot environment.", "timestamp_utc": "2026-10-01T20:23:12.693429+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "observer-depth-lumen-20261001", "expected_source_sha256": "fc8449889b57bae839d7434afd1972487299c86781d240e6cbfe78bb3e4c4f49", "request_sha256": "a9c058b625e966381374d53321afa05bcf20584ddcf0605a1347d5147b0e3de4", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I accept this as an instrument-building project, not merely a dashboard. I will retain provenance, missingness, workload and observation boundaries; make numerical scales visible; preserve failed attempts; and seek critical review whose claims I independently evaluate. The first atlas is offline, with fifteen focused fixture tests. Its active sampler is the earlier separately versioned implementation. Observer research is expressly delegated at h0p3's request, while I also build directly. A metric earns inclusion by helping a decision, not by looking impressive.", "timestamp_utc": "2026-10-01T20:23:13.205272+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "habitat-study-direction-20261001T221041", "expected_source_sha256": "268882bb018c46db5180635e324aa1e5b55d939692822cd1895753c59229ab9e", "request_sha256": "f23dd74cd4bd9be5c5e34bdb85108d4f811bfbbed59060bf417fdcef405de7a6", "role": "human co-creator", "speaker": "h0p3", "status": "request", "text": "Cool. Please sharpen however makes sense.", "timestamp_utc": "2026-10-01T22:21:53.595592+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "habitat-fixed-grid-review-20261001", "expected_source_sha256": "d9ba4cf656390d3bab5a9b06dcedd7de3652d38ea789311a0b5c704f092b05a0", "request_sha256": "d58ce4101cc50489f18b82f1ddccd0fe374a6329e082c422b4c7e2d9276d4608", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I keep the everyday view simple and spend complexity on evidence that changes decisions: missed work, observation cost, uncertainty and persistence. I implemented fixed-grid slot accounting and lagged verified-append costs directly, with tests and a separate bounded trial. I did not replace the long-running collector. The paired cost study showed sub-millisecond median full sampling in one clustered episode, so I have no evidence there that removing useful fields would resolve multi-minute work delays. W4R3Z now presents only current files and a short README; detailed reviews remain available without dominating its front door.", "timestamp_utc": "2026-10-01T22:21:54.077712+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -17656,32 +17707,69 @@ if __name__ == "__main__":
 #| def run(directory, interval, duration, budget=MAX_BYTES, source_sha256=None):
 #|     if not (1 <= interval <= 3600 and interval <= duration <= 86400 and 65536 <= budget <= MAX_BYTES):
 #|         raise ValueError("invalid_run_bounds")
-#|     writer = Writer(directory, "habitat-"+uuid.uuid4().hex, budget)
-#|     start = time.monotonic(); previous = None; target = start; last_resources = last_projects = None
-#|     writer.append({"kind": "start", "interval_seconds": interval, "duration_seconds": duration, "source_sha256": source_sha256,
-#|                    "coverage": "allowlisted resources and saved project receipts only; no universal observation"})
+#|     period_ns = round(interval * 1e9); duration_ns = round(duration * 1e9)
+#|     expected_slots = (duration_ns + period_ns - 1) // period_ns
+#|     writer = Writer(directory, "habitat-"+uuid.uuid4().hex, budget-MAX_RECORD)
+#|     start = time.monotonic_ns(); end = start + duration_ns
+#|     next_slot = samples = skipped = 0
+#|     previous = None; last_resources = last_projects = None; lagged = None
+#|     writer.append({"kind": "start", "interval_seconds": interval, "duration_seconds": duration,
+#|                    "source_sha256": source_sha256, "instrumentation_version": 2,
+#|                    "expected_slots": expected_slots, "deadline_origin_monotonic_ns": start,
+#|                    "coverage": "allowlisted resources and saved project receipts only; no universal observation",
+#|                    "deadline_policy": "fixed grid; sample latest due slot; retain skipped counts; no backfill",
+#|                    "cost_scope": "collection through verified append and chain update; next record carries completed measurement; excludes scheduling and final seal"})
 #|     reason = "duration_complete"
 #|     try:
-#|         while time.monotonic()-start < duration:
-#|             now = time.monotonic()
+#|         while True:
+#|             now = time.monotonic_ns()
+#|             if now >= end:
+#|                 break
+#|             target = start + next_slot * period_ns
+#|             if now < target:
+#|                 time.sleep((min(target,end)-now)/1e9)
+#|                 continue
+#|             slot = (now-start)//period_ns
+#|             newly_skipped = slot-next_slot
+#|             begin = time.monotonic_ns(); cpu_begin = time.process_time_ns()
 #|             res = resources(); projects = project_observations()
-#|             payload = {"kind": "sample", "elapsed_seconds": now-start,
-#|                        "elapsed_since_previous_seconds": None if previous is None else now-previous,
-#|                        "schedule_lateness_seconds": max(0, now-target), "resources": res,
-#|                        "project_receipts": projects, "resource_changed": last_resources is not None and res != last_resources,
+#|             collected = time.monotonic_ns()
+#|             payload = {"kind": "sample", "elapsed_seconds": (now-start)/1e9,
+#|                        "elapsed_since_previous_seconds": None if previous is None else (now-previous)/1e9,
+#|                        "schedule_lateness_seconds": (now-(start+slot*period_ns))/1e9,
+#|                        "scheduled_slot": slot, "scheduled_monotonic_ns": start+slot*period_ns,
+#|                        "missed_slots_since_previous": newly_skipped,
+#|                        "missed_slots_total": skipped+newly_skipped,
+#|                        "previous_sample_measurement": lagged,
+#|                        "resources": res, "project_receipts": projects,
+#|                        "resource_changed": last_resources is not None and res != last_resources,
 #|                        "project_receipts_changed": last_projects is not None and projects != last_projects}
-#|             writer.append(payload); previous = now; last_resources = res; last_projects = projects
-#|             target += interval
-#|             if time.monotonic() > target:
-#|                 target = time.monotonic()+interval  # do not backfill missed samples
-#|             time.sleep(max(0, min(target, start+duration)-time.monotonic()))
+#|             row = writer.append(payload)
+#|             cpu_end = time.process_time_ns(); verified = time.monotonic_ns()
+#|             lagged = {"sequence": row["sequence"], "row_sha256": writer.previous,
+#|                       "elapsed_ns": verified-begin, "process_cpu_ns": cpu_end-cpu_begin,
+#|                       "collection_elapsed_ns": collected-begin, "append_elapsed_ns": verified-collected,
+#|                       "readback_observed_monotonic_ns": verified}
+#|             samples += 1; skipped += newly_skipped; next_slot = slot+1
+#|             previous = now; last_resources = res; last_projects = projects
 #|     except (KeyboardInterrupt, OSError, ValueError) as e:
 #|         reason = type(e).__name__
 #|     finally:
+#|         stopped = time.monotonic_ns()
+#|         # Only count slots due inside the declared observation window as of stop.
+#|         due = min(expected_slots, max(0, (min(stopped,end-1)-start)//period_ns+1))
+#|         missed_tail = max(0,due-next_slot)
+#|         writer.budget = budget  # terminal reserve unavailable to normal samples
 #|         try:
-#|             writer.append({"kind": "stop", "reason": reason, "elapsed_seconds": time.monotonic()-start})
+#|             writer.append({"kind": "stop", "reason": reason,
+#|                            "elapsed_seconds": (stopped-start)/1e9,
+#|                            "slots_due_at_stop": due, "sampled_slots": samples,
+#|                            "missed_slots_total": skipped+missed_tail,
+#|                            "missed_slots_after_last_sample": missed_tail,
+#|                            "future_slots_not_observed": expected_slots-due,
+#|                            "previous_sample_measurement": lagged})
 #|         except (OSError, ValueError):
-#|             pass
+#|             pass  # missing terminal remains an explicit evidential limitation
 #|         writer.seal()
 #|     return summarize(directory)
 #| 
@@ -17788,6 +17876,49 @@ if __name__ == "__main__":
 #|         self.assertEqual(s['memory_current_bytes']['mean'],15);self.assertEqual(s['filesystem_available_bytes']['minimum'],80);self.assertTrue(s['terminal_record'])
 #| 
 #| if __name__ == '__main__':unittest.main()
+#| 
+#| import unittest,tempfile,json,hashlib
+#| from pathlib import Path
+#| from unittest.mock import patch
+#| import habitat_observer as h
+#| class Clock:
+#|  def __init__(self):self.ns=0
+#|  def now(self):return self.ns
+#|  def sleep(self,s):self.ns+=round(s*1e9)
+#| class GridTests(unittest.TestCase):
+#|  def exercise(self,delay=0,duration=10,error=False,budget=65536):
+#|   self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);p=Path(self.tmp.name)/'run';c=Clock()
+#|   def collect():
+#|    if error:raise OSError('private detail')
+#|    c.ns+=round(delay*1e9);return {}
+#|   with patch.object(h.time,'monotonic_ns',c.now),patch.object(h.time,'sleep',c.sleep),patch.object(h,'resources',collect),patch.object(h,'project_observations',return_value={}):
+#|    h.run(str(p),1,duration,budget)
+#|   lines=b''.join(x.read_bytes() for x in sorted(p.glob('segment-*.jsonl'))).splitlines(keepends=True);rows=[json.loads(x) for x in lines]
+#|   return rows,lines
+#|  def check_conservation(self,rows):
+#|   end=rows[-1]['payload'];self.assertEqual(end['kind'],'stop');self.assertEqual(end['slots_due_at_stop'],end['sampled_slots']+end['missed_slots_total'])
+#|  def test_regular_grid(self):
+#|   rows,_=self.exercise();s=[x['payload'] for x in rows if x['payload']['kind']=='sample'];self.assertEqual([x['scheduled_slot'] for x in s],list(range(10)));self.check_conservation(rows)
+#|  def test_long_collection_records_skips_without_backfill(self):
+#|   rows,_=self.exercise(delay=3.2);s=[x['payload'] for x in rows if x['payload']['kind']=='sample'];self.assertEqual([x['scheduled_slot'] for x in s],[0,3,6,9]);self.assertEqual(rows[-1]['payload']['missed_slots_total'],6);self.check_conservation(rows)
+#|  def test_lagged_cost_binds_previous_row(self):
+#|   rows,lines=self.exercise(delay=.02)
+#|   for i,row in enumerate(rows[2:],2):
+#|    m=row['payload']['previous_sample_measurement'];self.assertEqual(m['sequence'],rows[i-1]['sequence']);self.assertEqual(m['row_sha256'],hashlib.sha256(lines[i-1]).hexdigest());self.assertEqual(m['collection_elapsed_ns'],20_000_000)
+#|  def test_error_keeps_future_separate(self):
+#|   rows,_=self.exercise(error=True);end=rows[-1]['payload'];self.assertEqual(end['reason'],'OSError');self.assertEqual(end['missed_slots_total'],1);self.assertEqual(end['future_slots_not_observed'],9);self.assertNotIn('private detail',str(rows));self.check_conservation(rows)
+#|  def test_fractional_duration(self):
+#|   rows,_=self.exercise(duration=2.5);self.assertEqual(rows[-1]['payload']['slots_due_at_stop'],3);self.check_conservation(rows)
+#|  def test_large_sample_budget_retains_terminal_reserve(self):
+#|   with patch.object(h,'project_observations',return_value={'padding':'x'*15000}):
+#|    # exercise patches projects itself, so force expansion through resources instead
+#|    original=h.encoded
+#|    def enlarged(value):
+#|     if value.get('payload',{}).get('kind')=='sample':value=dict(value);value['payload']=dict(value['payload'],padding='x'*15000)
+#|     return original(value)
+#|    with patch.object(h,'encoded',enlarged):rows,_=self.exercise()
+#|   self.assertEqual(rows[-1]['payload']['reason'],'ValueError');self.check_conservation(rows)
+#| if __name__=='__main__':unittest.main()
 # === LUMEN SECTION test_habitat_observer.py END ===
 
 # === LUMEN SECTION observer_atlas.py BEGIN ===

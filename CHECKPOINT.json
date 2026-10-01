@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "source_sha256": "911af1db9ef2931072d371d15080501df0caca2152ec87760ea813d2c65f00b5",
-  "source_bytes": 1175976,
-  "review_ref": "lumen-observer-atlas-reviewed-20261001",
-  "tests": 324,
+  "source_sha256": "1b1d06d086fc53bb109eb1712da4750f83febebb91d9f462d3adc76a3be02838",
+  "source_bytes": 1186911,
+  "review_ref": "lumen-observer-fixed-grid-reviewed-20261001",
+  "tests": 330,
   "repository": "Sapient-Lumen/Lumen",
   "publication_mode": "source and metadata at same commit; remote verification required",
-  "qualification": "Offline Unicode evidence atlas with 15 focused fixture tests, explicit timing scope and tail age; active sampler remains separately versioned. Prior prose retained. Research proposals not automatically adopted."
+  "qualification": "Fixed-grid slot accounting, terminal record reserve and lagged collect-through-readback costs; six added synthetic tests plus separate four-sample bounded integration trial. Existing long-running collector remains an earlier version. Prior prose/journal preserved."
 }
