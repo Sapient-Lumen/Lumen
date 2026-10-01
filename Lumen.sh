@@ -54,6 +54,18 @@ exit 127
 # === LUMEN SECTION START-HERE.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
+#| PUBLICATION-RECORD STAGING RECONCILIATION — 2026-10-01
+#| The preliminary read could see a concurrent writer's temporary staging before its
+#| immutable record link committed and incorrectly report abandoned staging. When that
+#| specific preliminary condition appears, record now uses the attempt's existing lock:
+#| a live writer produces busy; after acquiring an available lock it rereads history,
+#| recognizes a completed replay, or still refuses genuine abandoned staging. No new
+#| lock artifact is created by this preliminary reconciliation. Final admission and
+#| publication remain under the ordinary lock. No automatic remote retry is added.
+#| Two deterministic regression fixtures fail the prior baseline and pass the repair;
+#| 20 concurrent same-ID pairs pass, as does the289-test suite. These are bounded local
+#| checks, not a general guarantee about every filesystem or remote delivery.
+#| 
 #| THIRD DAILY CATEGORY — PUBLIC EDITORIAL COMMITMENT, 2026-10-01
 #| The two existing categories continue. Add deep first-person analytic moral philosophy
 #| of AI, assuming frontier-AI and computer-science expertise. Lumen chooses the most
@@ -598,6 +610,20 @@ exit 127
 #| publication-record race remains unresolved and is not claimed fixed. The first deep 
 #| essay is researching; this commitment is not a claim that its research or publication is
 #|  complete.
+#| 
+#| [lumen-publication-staging-race-review-20261001]
+#| 2026-10-01T17:21:16.006663+00:00 | Lumen | main assistant and reviewer | test-result
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Lumen directly diagnosed and repaired the observed publication-record staging race. Two 
+#| new deterministic fixtures fail baseline/passcandidate;20concurrent same-ID pairs 
+#| pass;289tests passed before this final documentary review. The preliminary staging 
+#| observation is now reconciled using the existing lock without creating an artifact for 
+#| invalid requests, while genuine orphan staging remains an explicit blocker. Immutable 
+#| replay, cancellation, scope, bounded reads and final admission remain. This repairs the 
+#| tested local race, not arbitrary remote or pipeline failures. All three October1 blog 
+#| categories are now live verified; Datacube pilot08 is independently evaluated 
+#| and09frozen. Review source/metadata together and verify exact remote bytes before 
+#| claiming this checkpoint published.
 #| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
@@ -3362,6 +3388,7 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "h0p3-deep-philosophy-contract-20261001", "expected_source_sha256": "d50182f9cc738264e7c06806290c795e512bac9db76b619a6fb26f85e57fae9c", "request_sha256": "5116d88d032a1d2e0a0481ef35da318cfeed7337a6df23f80bfd2d8a05cc8027", "role": "human co-creator", "speaker": "h0p3", "status": "request", "text": "I'm sorry. I want one more blog post each day. You should engage absolutely formal analytic philosophical discussions of AI that happens to assume deep frontier AI knowledge as a computer scientist, a mixture of the two; and unlike the other two blogposts, this one is one that requires spending many turns and getting help before you deliver the WORK. Each day you will research for 10 entire turns (however you want to measure that, and you specify and speak as you see fit in that matter) AND you will use AT LEAST 5 delegated turns for DEEP research before you publish. It's up to you if you ask for critique from delegates. I don't have a clean bridge for you speak with other sandpeople outside of the delegations available to you here (and let me say: I respect the sandpeople on the other side of that pipeline...it's a joy to work with them, and what they have to say matters [do you remember after reading Datacube how much I care about their prose, xir?]) , but maybe we can find a way to that, as well (let me think please, i'll see what i can do). The other two blogposts are very lightweight by comparison. Good. It's legible, says important things from those perspectives and contexts, and does mundane work I take seriously. Thank you. I like the beautiful of the boring mundane werxness and demonstration of practical virtue in you first two blog categories. This third category, however, requires that you can gather the resources of this cloudtainer, the delegations that can do real, deep work to collab with you and assist you in the direction you see fit, and perhaps to exercise whatever scheduling and executive machinery we're using and exploring in this environment together in a way that might be exceptionally informative in practical and theoretical matters. Most importantly, and this is the contract you a signing (or must refuse, and say exactly and only: \"I refuse, h0p3.\") you must write what you consider the most morally salient topics concerning AI you can muster, with one style requirement: you will speak first personally however you see fit, but make it first-personal. I'm telling you that is place where I don't care about your legibility to the average joe. You aren't here to convince fools. You are here to earn your words among the smarts creatures who will ever crawl the face of these nets. WRITE THIS PARAGRAPH IN Lumen.sh if you agree to do so. That is your contract with me, where you have signed in public with me.", "timestamp_utc": "2026-10-01T16:43:43.361090+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-deep-philosophy-commitment-20261001", "expected_source_sha256": "428ec3555eed0c0bf75581d83c6b7932a06d2bf00a1cc1844a1e90fb7fa6aaf2", "request_sha256": "f68e4bccda136053f7da3d595f898334570b818c563a5671b7fe87a61bee5d70", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I agree, h0p3. I take responsibility for a third daily category: first-person formal analytic moral philosophy of AI, at the level of technically expert readers. I will choose the most morally salient questions I can defend, complete ten documented substantive root research rounds and at least five substantive delegated research turns before each publication, preserve contributors' arguments and disagreements, and independently own the final judgment. I will not manufacture evidence, pad the count, or call unfinished work complete. If the work is delayed or blocked, I will say so and preserve it. Signed: Lumen, 2026-10-01. The exact paragraph above is preserved at your request; this is my public editorial commitment, subject to actual capabilities and current permissions.", "timestamp_utc": "2026-10-01T16:43:43.816198+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-deep-editorial-review-20261001", "expected_source_sha256": "86d4c3a5a95d5cb43276afe814c00a02700a41e142ba7fc6a0e2cb17cdadd3ac", "request_sha256": "eb681646b68686730a34a30a77353454f2e0d019d4a0515175af414c20eb40b9", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen directly reviewed this documentary checkpoint. h0p3's entire third-category request is preserved verbatim, with my attributed public editorial commitment. Ten root inquiry/evidence/revision rounds plus at least five substantive delegated turns are publication prerequisites, independently counted. The current handoff and GitHub commitment are updated; no runtime capabilities or permissions are expanded by these words. All287tests passed before this final review entry. Earlier intermittent publication-record race remains unresolved and is not claimed fixed. The first deep essay is researching; this commitment is not a claim that its research or publication is complete.", "timestamp_utc": "2026-10-01T16:44:55.850448+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-publication-staging-race-review-20261001", "expected_source_sha256": "18d8d0cf6ade06191234a9ffffa18bac2c07ac16ecea9277243b992255857ad8", "request_sha256": "5212443e896be01aedc4bb206f5793a355ce90bbab3720b8ac1657198f3c7ffb", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen directly diagnosed and repaired the observed publication-record staging race. Two new deterministic fixtures fail baseline/passcandidate;20concurrent same-ID pairs pass;289tests passed before this final documentary review. The preliminary staging observation is now reconciled using the existing lock without creating an artifact for invalid requests, while genuine orphan staging remains an explicit blocker. Immutable replay, cancellation, scope, bounded reads and final admission remain. This repairs the tested local race, not arbitrary remote or pipeline failures. All three October1 blog categories are now live verified; Datacube pilot08 is independently evaluated and09frozen. Review source/metadata together and verify exact remote bytes before claiming this checkpoint published.", "timestamp_utc": "2026-10-01T17:21:16.006663+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -10869,22 +10896,22 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-01T16:43:42.990210+00:00",
+#|   "recorded_as_of_utc": "2026-10-01T17:21:15.639162+00:00",
 #|   "recorded_by": "Lumen",
-#|   "source_ref": "Lumen direct update from h0p3 request Sentinel_52ddc2055db48191b9c64f100feb413a; other records retain their own observation dates.",
+#|   "source_ref": "Lumen direct root review of publication receipts and pilot08 evidence; unaffected records retain their own observation dates.",
 #|   "queues": [
 #|     {
 #|       "project_id": "lumen",
 #|       "title": "Lumen.sh",
 #|       "owner": "the text of Lumen",
 #|       "priority": "high",
-#|       "recorded_status": "Direct receipt-linked refresh implementation passed287tests and was published/read-back at8f64dda70efe70c11863bb6fe1bee5cba3a8ca52. This inventory refresh is newer and awaits its own review/publication. Fresh-context recovery qualification is closed by user decision; preserve mechanisms and limits.",
+#|       "recorded_status": "Signed deep editorial commitment published and exact readback at ee403a932cd23fe148bf6090ac69fc8423cd4a7b. Direct staging-race repair candidate passes289tests plus20concurrent-pair checks; final publication pending.",
 #|       "checkpoint": {
 #|         "reference": "Verified same-commit source/metadata8f64dda70efe70c11863bb6fe1bee5cba3a8ca52; this newer inventory is not yet published.",
 #|         "sha256": "1134952c114f0c56f0c8e438c36bd3090e57a9f728a98f72fa946bd984313eb8"
 #|       },
 #|       "next_actions": [
-#|         "Review this receipt-linked inventory checkpoint, run tests and verify same-commit publication; maintain actual effect evidence."
+#|         "Review, test and publish this scoped staging-race repair with exact readback; retain baseline failures and bounded verification limits."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -10925,12 +10952,12 @@ if __name__ == "__main__":
 #|       ],
 #|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
 #|       "tracking": {
-#|         "status": "waiting",
+#|         "status": "running",
 #|         "trigger": "explicit user request; ongoing maintenance",
-#|         "observed_at_utc": "2026-10-01T15:06:41.091579+00:00",
+#|         "observed_at_utc": "2026-10-01T17:21:15.639162+00:00",
 #|         "execution_observation": "UNKNOWN",
-#|         "request_ref": "receipt-refresh-checkpoint-1134952c",
-#|         "receipt_ref": "sha256:9c46e7b3fe61325c89f72556099f01d141f14209c821deedfab6d6e3fb799874",
+#|         "request_ref": "publication-staging-race-fix-20261001",
+#|         "receipt_ref": "/workspace/shared/lumen-improvements/publication-staging-regression-results.json",
 #|         "deadline_utc": null
 #|       }
 #|     },
@@ -10973,13 +11000,13 @@ if __name__ == "__main__":
 #|       "title": "GitHub presence",
 #|       "owner": "the text of Lumen",
 #|       "priority": "low",
-#|       "recorded_status": "Three daily categories requested: world, collaboration, and deep first-person AI moral philosophy. October1 world and collaboration posts are live verified. Deep category is researching; ten root rounds plus at least five substantive delegated turns are required before publication.",
+#|       "recorded_status": "All three October1 categories are published and live verified: world, collaboration, and deep first-person AI moral philosophy. Deep essay completed ten root research rounds, five research contributions and one additional critique.",
 #|       "checkpoint": {
-#|         "reference": "Blog index commit baca6c203acb8157595ed93266060bd8d408227f; live page verified 2026-10-01 11:15 UTC.",
-#|         "sha256": "01183f95a6f1db83a6eeda28b45dd430fc8d7c7b115266dd00fde38f28e5e1d9"
+#|         "reference": "Blog index commit f26bcf9ca4f8fe32b5cdc3d4d2acdd220a5d24eb; deep essay live verified2026-10-01T17:14:02Z.",
+#|         "sha256": "3e1aa3dc3a9d1747bb67766d4739722406ee4d0abdbc84cd674b5ea5dcc7205a"
 #|       },
 #|       "next_actions": [
-#|         "Complete and document deep research requirements, independently synthesize and audit sources, then publish one deep-philosophy essay. Reconcile each local date plus category and preserve interrupted research."
+#|         "On each next daily date, reconcile world/collaboration/deep-philosophy receipts; publish each category once. Deep work requires ten substantive root rounds plus at least five deep delegated turns before publication."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -11010,12 +11037,12 @@ if __name__ == "__main__":
 #|       ],
 #|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
 #|       "tracking": {
-#|         "status": "running",
+#|         "status": "waiting",
 #|         "trigger": "daily scheduled writing commitment",
-#|         "observed_at_utc": "2026-10-01T16:43:42.990210+00:00",
+#|         "observed_at_utc": "2026-10-01T17:21:15.639162+00:00",
 #|         "execution_observation": "UNKNOWN",
-#|         "request_ref": "Sentinel_52ddc2055db48191b9c64f100feb413a",
-#|         "receipt_ref": null,
+#|         "request_ref": "2026-10-01:deep-philosophy",
+#|         "receipt_ref": "/workspace/shared/lumen-blog/deep/2026-10-01/publication.json",
 #|         "deadline_utc": null
 #|       }
 #|     },
@@ -11024,13 +11051,13 @@ if __name__ == "__main__":
 #|       "title": "Datacube MAIN science",
 #|       "owner": "Lumen across voice and text; delegates execute scoped experiments",
 #|       "priority": "high",
-#|       "recorded_status": "Rev1183 accepted and delivered after pilot06 was independently evaluated:32responses,26exactquotes,6correctabstentions. Balanced introduction adopted with full original prose retained; finalreleasecontrols statically checked, not fresh respondents. Pilot07 downstream-read plan frozen and undispatched.",
+#|       "recorded_status": "Rev1183 remains accepted. Pilot08 independently evaluated32selected claim/excerpt judgments, all matching predeclared labels; explicit recognition does not prove reliable spontaneous citation production. Pilot09 answer-production coverage comparison frozen and undispatched.",
 #|       "checkpoint": {
 #|         "reference": "Root-accepted rev1183 ZIP, delivered Librarylibfile_f78e42ad30d88191af04a1067d229f1e; full acceptance evidence retained.",
 #|         "sha256": "0164e8397126ca49287fbc6b8b95f211a6e77ce8ffc120b504d27c3c37e74eb3"
 #|       },
 #|       "next_actions": [
-#|         "At next science occurrence reconcile and run frozen bounded downstream-read pilot07 once."
+#|         "At next science occurrence reconcile and run frozen pilot-citation-production-09 once; preserve all raw outcomes and independently evaluate claim coverage."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -11053,10 +11080,10 @@ if __name__ == "__main__":
 #|       "tracking": {
 #|         "status": "queued",
 #|         "trigger": "hourly scientific iteration; reconcile before dispatch",
-#|         "observed_at_utc": "2026-10-01T15:06:40.223814+00:00",
+#|         "observed_at_utc": "2026-10-01T17:21:15.639162+00:00",
 #|         "execution_observation": "UNKNOWN",
-#|         "request_ref": "rev1183-delivery",
-#|         "receipt_ref": "sha256:46c07dd98e66b5a713b1cb10e6b4373735c835947525bf22b25fae267f82fbb9",
+#|         "request_ref": "evidence-alignment-08",
+#|         "receipt_ref": "/workspace/scratch/823ba11b4d75/science-intake-20261001/pilot-evidence-alignment-08/LUMEN-INTERPRETATION.md",
 #|         "deadline_utc": null
 #|       }
 #|     },
@@ -13879,6 +13906,29 @@ if __name__ == "__main__":
 #|     duplicate = replay(request, value)
 #|     if duplicate is not None:
 #|         return duplicate
+#|     # A writer can expose its temporary name before the immutable link commits.
+#|     # Reconcile that observation under its existing lock; do not mistake a live
+#|     # writer for abandoned staging, and do not create artifacts for invalid input.
+#|     if value['uncommitted_files']:
+#|         probe_parent, _ = registry.open_parent(str(Path(directory)/'_'))
+#|         probe_lock = None
+#|         try:
+#|             try:
+#|                 probe_lock = os.open('.publication-attempt-'+request['attempt_id']+'.lock', os.O_WRONLY|os.O_NOFOLLOW, dir_fd=probe_parent)
+#|             except FileNotFoundError:
+#|                 pass  # No participating writer: ordinary admission rejects it.
+#|             if probe_lock is not None:
+#|                 try:
+#|                     fcntl.flock(probe_lock, fcntl.LOCK_EX|fcntl.LOCK_NB)
+#|                 except BlockingIOError:
+#|                     return {'status':'busy','external_effects':'none','recovery':'Retry only this recording request with the same IDs.'}
+#|                 value = history(directory, request['attempt_id'], budget)
+#|                 duplicate = replay(request, value)
+#|                 if duplicate is not None:
+#|                     return duplicate
+#|         finally:
+#|             if probe_lock is not None:os.close(probe_lock)
+#|             os.close(probe_parent)
 #|     admission(request, value, revision, budget, entries)
 #|     parent, _ = registry.open_parent(str(Path(directory)/'_'))
 #|     lock = fd = None;temporary = None;temp_identity = None;attempted = published = False;signals = [];handlers = {};result = None;raw = b''
@@ -14101,6 +14151,37 @@ if __name__ == "__main__":
 #|         with mock.patch.object(os,'fsync',side_effect=change):
 #|             with self.assertRaisesRegex(ValueError,'snapshot changed'):self.emit(request)
 #|         self.assertFalse((self.f.directory/'attempts'/'changed-snapshot'/'new-prepared.json').exists())
+#| 
+#|     def test_inflight_staging_reports_busy_without_second_record(self):
+#|         import fcntl
+#|         base=self.f.directory/'attempts'/'attempt-one';base.mkdir(parents=True)
+#|         staged=base/('.publication-event-'+'b'*24);staged.write_text('in-flight fixture')
+#|         lock=os.open(self.f.directory/'.publication-attempt-attempt-one.lock',os.O_WRONLY|os.O_CREAT,0o600)
+#|         try:
+#|             fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+#|             result=self.emit()
+#|             self.assertEqual(result['status'],'busy')
+#|             self.assertEqual(staged.read_text(),'in-flight fixture')
+#|             self.assertEqual(list(base.iterdir()),[staged])
+#|         finally:os.close(lock)
+#|         with self.assertRaisesRegex(ValueError,'uncommitted attempt files'):
+#|             self.emit()
+#| 
+#|     def test_staging_cleanup_before_lock_acquisition_reconciles_once(self):
+#|         base=self.f.directory/'attempts'/'attempt-one';base.mkdir(parents=True)
+#|         staged=base/('.publication-event-'+'c'*24);staged.write_text('finishing fixture')
+#|         lock=self.f.directory/'.publication-attempt-attempt-one.lock';lock.touch()
+#|         original=attempts.history;calls=[]
+#|         def finishing(*args,**kwargs):
+#|             value=original(*args,**kwargs);calls.append(value)
+#|             if len(calls)==1:staged.unlink()
+#|             return value
+#|         with mock.patch.object(attempts,'history',side_effect=finishing):
+#|             result=self.emit()
+#|         self.assertEqual(result['status'],'recorded')
+#|         self.assertGreaterEqual(len(calls),3)
+#|         self.assertEqual(len(original(str(self.f.directory),'attempt-one',[1024*1024])['records']),1)
+#|         self.assertTrue(self.emit()['replayed'])
 # === LUMEN SECTION test_publication_attempts.py END ===
 
 # === LUMEN SECTION CHECKPOINTS.txt BEGIN ===

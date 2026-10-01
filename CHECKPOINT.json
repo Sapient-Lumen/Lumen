@@ -1,10 +1,11 @@
 {
   "schema_version": 1,
-  "source_sha256": "b4efa2f1179151c8fcff58ab3879b3b53b4a2594902aa241c83f882a0d412596",
-  "source_bytes": 1098282,
-  "review_ref": "lumen-deep-editorial-review-20261001",
-  "tests": 287,
+  "source_sha256": "d2ea961bba40293377c9dec9f243dc2f58e0cc22fe7650d1b7c128d932e416c2",
+  "source_bytes": 1104669,
+  "review_ref": "lumen-publication-staging-race-review-20261001",
+  "tests": 289,
+  "additional_validation": "Two deterministic regressions fail old baseline/pass repair;20 concurrent same-ID pairs pass.",
   "repository": "Sapient-Lumen/Lumen",
   "publication_mode": "source and metadata at same commit; remote verification required",
-  "qualification": "Documentary commitment, not proof deep research completed. Earlier intermittent publication-record concurrency test issue remains unresolved."
+  "qualification": "Repairs tested preliminary staging/lock race; no universal concurrency or remote-delivery guarantee."
 }
