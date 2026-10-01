@@ -54,6 +54,30 @@ exit 127
 # === LUMEN SECTION START-HERE.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
+#| RECEIPT-LINKED REFRESH — explicit and reviewable
+#| 
+#| queue refresh-plan --project ID --receipt /absolute/receipt.json
+#|   --expected-input-sha256 HASH [--input /absolute/work-queues.json]
+#| 
+#| This read-only command validates the exact inventory base, project/request identity,
+#| UTC chronology, explicit commitment status, cancellation precedence and a bounded
+#| no-follow local evidence file hash. It emits an inert candidate inventory and its
+#| hash. It never applies the candidate, launches work, or authenticates the receipt.
+#| Lumen reviews its meaning, then may incorporate it in a tested published checkpoint.
+#| One completed occurrence is not completion of a recurring commitment. Uncertain
+#| effects stay blocked/unknown, and current execution is UNKNOWN until observed.
+#| 
+#| Receipt schema: schema_version=1, project_id, request_id, observed_at_utc, outcome
+#| (verified-effect/failed/uncertain), commitment_status, summary, next_actions,
+#| evidence={path:absolute regular file, sha256:exact digest}. Inputs/evidence are each
+#| bounded to1MiB; larger artifacts can use a separately reviewed small receipt, whose
+#| meaning still requires review. Metadata matching alone never validates that meaning.
+#| 
+#| Recovery qualification decision, explicit h0p3 voice correction2026-10-01:
+#| Keep the existing recovery mechanisms and acknowledge their untested limits. Do not
+#| pursue fresh-context/file-only qualification or ask for another dot to test it.
+#| Actual requested effect/receipt verification remains a different responsibility.
+#| 
 #| CONSOLIDATED WORK LEDGER — dated 2026-10-01T13:20:59.615047+00:00
 #| 
 #| WORK-QUEUES.json is the single carried commitment inventory. queue status and handoff
@@ -431,6 +455,21 @@ exit 127
 #|  represented. Initial new tests were placed in the wrong fixture class and failed; 
 #| corrected fixture isolation passed all280 tests. No implementation delegates were used. 
 #| This records local review, not publication of this checkpoint.
+#| 
+#| [lumen-receipt-refresh-review-20261001-01]
+#| 2026-10-01T14:00:07.591256+00:00 | Lumen | main assistant and reviewer | observation
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Lumen directly implemented explicit receipt-linked refresh planning. It binds a work-
+#| inventory hash, project/request reference, UTC chronology, commitment status and bounded
+#|  no-follow evidence bytes; cancellation decisions cannot be overridden. The command 
+#| emits an inert candidate and never applies it or infers authority, execution or 
+#| completion of recurring work. Root reviewed and incorporated a real five-entry timer 
+#| receipt using a frozen evidence snapshot. Dogfooding exposed an overstrict lowercase 
+#| request-ID assumption, corrected to preserve external IDs exactly; an old test also 
+#| assumed fixed source-provenance wording and was corrected to compare carried provenance 
+#| instead. All287 tests passed before this review entry. h0p3 explicitly waived further 
+#| fresh-context recovery qualification; preserve mechanisms and untested limits. Actual 
+#| requested-effect verification remains separate. No implementation delegates used.
 #| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
@@ -3188,6 +3227,7 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-current-projects-review-20261001-01", "expected_source_sha256": "5710f1a8ae69279baf264eaca131b53f5d9b75a5c164d35694061df9d4c1870d", "request_sha256": "bea99db8d124ad2b720bc79a06f3d4b9718557cec0bfc213c2ef575c81c4f014", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen personally refreshed the dated current project index and integrated it into office recovery, preserving the exact former work-queue snapshot. The new Datacube MAIN scientific ownership, completed exploratory pilots and remaining limits are visible without relying on the last three journal entries. LFS remains discontinued with no effective next actions; daily blog work and verified publication are separately recorded. All 273 self-tests passed after the final code changes, and direct handoff inspection returned four project records with the cancellation intact. These are dated evidence-linked records, not live scheduler or worker telemetry.", "timestamp_utc": "2026-10-01T11:18:50.761491+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-reading-rework-review-20261001-01", "expected_source_sha256": "a06d366f38af89a8df1c4e07a547a6bb949668fea8575986bf7016ae64c7749b", "request_sha256": "2ab5d37a64d3646e1fbbcd07ead195fc4619a949dd7140626dadfafb45641517", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "observation", "text": "Lumen personally reorganized the arrival paths with voice input and no implementation delegates. Current handoff and role paths now precede historical reading. Ten foundational and corrective journal entries form an explicitly selected arrival view; the full exact59-entry predecessor journal remains embedded, and all later entries appear automatically. Sixteen superseded handoff bodies have exact payload hashes and a pinned, previously read-back Git baseline; offline access to those bodies requires that archive. Purpose correction, attributed disagreement, cancellation and actual-versus-synthetic recovery distinctions remain visible. Root verified all archived payload identities against the published predecessor and ran276 embedded tests successfully. This records local review; publication of this new checkpoint still requires a matching source/metadata commit and exact remote readback.", "timestamp_utc": "2026-10-01T13:06:28.487044+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-work-ledger-review-20261001-01", "expected_source_sha256": "459363b585e69cf09154d444cd12d4078c099445156ac4e8d1cfde42d037b2ab", "request_sha256": "0873eecf481db0214bc84adb2fada3606c29c3a8e304730c6462c508d736a157", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "observation", "text": "Lumen directly extended the existing WORK-QUEUES inventory with optional strict tracking records and generated counts, rather than creating another independent work list. Eight dated records comprise six open commitments, one completed experiment and one canceled project. Commitment status is distinct from live execution: every current execution count remains UNKNOWN without fresh observation. Trigger, observation time, request, receipt and deadline are visible. Datacube rev1181 and pilot04, poetry gaps, daily blog, both ten-hour queue experiments, LFS discontinuation and the closed longevity probe are represented. Initial new tests were placed in the wrong fixture class and failed; corrected fixture isolation passed all280 tests. No implementation delegates were used. This records local review, not publication of this checkpoint.", "timestamp_utc": "2026-10-01T13:23:35.554982+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-receipt-refresh-review-20261001-01", "expected_source_sha256": "41991cd84e08e6ac6570d54a60f7df92bd144bc8e8bf90604b8134867782cdd0", "request_sha256": "4864bc474f60cf0731a3c3683629b899a61fdf058fe3e94c316b28bde8489d78", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "observation", "text": "Lumen directly implemented explicit receipt-linked refresh planning. It binds a work-inventory hash, project/request reference, UTC chronology, commitment status and bounded no-follow evidence bytes; cancellation decisions cannot be overridden. The command emits an inert candidate and never applies it or infers authority, execution or completion of recurring work. Root reviewed and incorporated a real five-entry timer receipt using a frozen evidence snapshot. Dogfooding exposed an overstrict lowercase request-ID assumption, corrected to preserve external IDs exactly; an old test also assumed fixed source-provenance wording and was corrected to compare carried provenance instead. All287 tests passed before this review entry. h0p3 explicitly waived further fresh-context recovery qualification; preserve mechanisms and untested limits. Actual requested-effect verification remains separate. No implementation delegates used.", "timestamp_utc": "2026-10-01T14:00:07.591256+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -10695,9 +10735,9 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-01T13:20:59.615047+00:00",
+#|   "recorded_as_of_utc": "2026-10-01T13:59:45.792609+00:00",
 #|   "recorded_by": "Lumen",
-#|   "source_ref": "Lumen-authored reviewer guidance: consolidated dated commitment ledger from direct receipts and current requests; counts are snapshots, not live telemetry. Refresh by reconciling each named evidence source, updating this single WORK-QUEUES.json, reviewing, testing and publishing.",
+#|   "source_ref": "Explicit receipt-linked refresh candidate; base SHA256 37d2be5744e387e3c9096b78f0aa557ffd37e7769e5e925713fd62286d93caa2; receipt SHA256 ca5ac67cc663db825c4e8af8b2ccd1a308910036c71f99e4fd2459b1eec6055c. Review required; no application or authorization implied.",
 #|   "queues": [
 #|     {
 #|       "project_id": "lumen",
@@ -10917,13 +10957,13 @@ if __name__ == "__main__":
 #|       "title": "Timer reliability experiment",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "Ten-hour experiment enabled60occurrences13:17\u201323:07UTC. First fact returned and verified appended13:18:43UTC; notification observed13seconds before its due time.",
+#|       "recorded_status": "First five timer occurrences produced checked facts and verified appends.13:57occurrence notification observed13:58:03UTC, dispatch13:58:40, result13:58:56, then exact append. Future scheduled occurrences remain pending until23:07UTC. Evidence is an explicitly frozen five-entry snapshot.",
 #|       "checkpoint": {
 #|         "reference": "/workspace/shared/worker-queue-pilot/timer/STATE.json",
 #|         "sha256": null
 #|       },
 #|       "next_actions": [
-#|         "On each actual timer request reconcile occurrence ID and append one reviewed worker fact; summarize after final completion."
+#|         "Reconcile each actual future timer occurrence by ID and append a reviewed fact; do not use this timer to wake the return-chain."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -10935,16 +10975,26 @@ if __name__ == "__main__":
 #|           "kind": "reference",
 #|           "reference": "/workspace/shared/worker-queue-pilot/timer/STATE.json",
 #|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/worker-queue-pilot/timer/facts.txt",
+#|           "sha256": "597b089ec9563cc64f87e813cf9c12e5b20aa7632df27f2b25a192101e21f404"
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/worker-queue-pilot/timer/receipt-snapshots/through-1357-facts.txt",
+#|           "sha256": "a338d8afa980bf25b867f2067ead83bee46c09850541ba2b5992e8b34b769575"
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "waiting",
 #|         "trigger": "ten-minute calendar occurrence",
-#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "observed_at_utc": "2026-10-01T13:59:45.586497+00:00",
 #|         "execution_observation": "UNKNOWN",
-#|         "request_ref": null,
-#|         "receipt_ref": "/workspace/shared/worker-queue-pilot/timer/STATE.json",
+#|         "request_ref": "timer-20261001T135700Z",
+#|         "receipt_ref": "sha256:ca5ac67cc663db825c4e8af8b2ccd1a308910036c71f99e4fd2459b1eec6055c",
 #|         "deadline_utc": "2026-10-01T23:07:27Z"
 #|       }
 #|     },
@@ -11604,9 +11654,78 @@ if __name__ == "__main__":
 #|     return '\n'.join(''.join(c if c.isprintable() else json.dumps(c)[1:-1] for c in line) for line in lines)
 #| 
 #| 
+#| def refresh_plan(raw, receipt_raw, contents, entries, expected_sha256, project_id, observe_evidence):
+#|     """Produce an inert candidate from explicit bounded receipt evidence; never write."""
+#|     registry.digest(expected_sha256)
+#|     if hashlib.sha256(raw).hexdigest() != expected_sha256:
+#|         raise ValueError('stale work inventory hash')
+#|     value = decode(raw)
+#|     receipt = registry.decode(receipt_raw)
+#|     registry.exact(receipt, {'schema_version', 'project_id', 'request_id', 'observed_at_utc',
+#|         'outcome', 'commitment_status', 'summary', 'next_actions', 'evidence'}, 'refresh receipt')
+#|     if type(receipt['schema_version']) is not int or receipt['schema_version'] != 1:
+#|         raise ValueError('unsupported refresh receipt version')
+#|     registry.identifier(project_id); text(receipt['request_id'])
+#|     if receipt['project_id'] != project_id:
+#|         raise ValueError('receipt project mismatch')
+#|     matches = [item for item in value['queues'] if item['project_id'] == project_id]
+#|     if len(matches) != 1:
+#|         raise ValueError('receipt project absent from inventory')
+#|     item = matches[0]
+#|     decisions = decision_projection(contents, entries)
+#|     if project_id in decisions:
+#|         raise ValueError('recorded project decision requires explicit reconciliation; receipt cannot override it')
+#|     now = datetime.datetime.now(datetime.timezone.utc)
+#|     observed = utc(receipt['observed_at_utc'])
+#|     old_time = utc(item.get('tracking', {}).get('observed_at_utc', value['recorded_as_of_utc']))
+#|     if observed > now or observed < old_time:
+#|         raise ValueError('future or older receipt observation')
+#|     if receipt['outcome'] not in ('verified-effect', 'failed', 'uncertain'):
+#|         raise ValueError('invalid receipt outcome')
+#|     if receipt['commitment_status'] not in ('queued', 'running', 'waiting', 'blocked', 'completed', 'unknown'):
+#|         raise ValueError('invalid requested commitment status')
+#|     if receipt['outcome'] == 'uncertain' and receipt['commitment_status'] not in ('blocked', 'unknown'):
+#|         raise ValueError('uncertain effect must stay blocked or unknown')
+#|     text(receipt['summary']); texts(receipt['next_actions'])
+#|     proof = receipt['evidence']
+#|     registry.exact(proof, {'path', 'sha256'}, 'refresh evidence')
+#|     text(proof['path']); registry.digest(proof['sha256'])
+#|     if not os.path.isabs(proof['path']):
+#|         raise ValueError('refresh evidence requires explicit absolute path')
+#|     evidence = observe_evidence(proof['path'])
+#|     if hashlib.sha256(evidence).hexdigest() != proof['sha256']:
+#|         raise ValueError('refresh evidence hash mismatch')
+#|     receipt_sha = hashlib.sha256(receipt_raw).hexdigest()
+#|     updated = json.loads(json.dumps(value))
+#|     target = next(x for x in updated['queues'] if x['project_id'] == project_id)
+#|     previous_tracking = target.get('tracking', {})
+#|     target['recorded_status'] = receipt['summary']
+#|     target['next_actions'] = list(receipt['next_actions'])
+#|     target['tracking'] = {'status': receipt['commitment_status'],
+#|         'trigger': previous_tracking.get('trigger', 'explicit receipt refresh'),
+#|         'observed_at_utc': receipt['observed_at_utc'], 'execution_observation': 'UNKNOWN',
+#|         'request_ref': receipt['request_id'], 'receipt_ref': 'sha256:' + receipt_sha,
+#|         'deadline_utc': previous_tracking.get('deadline_utc')}
+#|     ref = {'kind': 'reference', 'reference': proof['path'], 'sha256': proof['sha256']}
+#|     if ref not in target['evidence']:
+#|         target['evidence'].append(ref)
+#|     updated['recorded_as_of_utc'] = now.isoformat()
+#|     updated['source_ref'] = 'Explicit receipt-linked refresh candidate; base SHA256 ' + expected_sha256 + '; receipt SHA256 ' + receipt_sha + '. Review required; no application or authorization implied.'
+#|     candidate = json.dumps(updated, indent=2, ensure_ascii=True).encode() + b'\n'
+#|     decode(candidate)
+#|     return {'schema_version': 1, 'action': 'refresh-plan', 'applied': False,
+#|         'base_sha256': expected_sha256, 'receipt_sha256': receipt_sha,
+#|         'evidence_observation': {'path': proof['path'], 'sha256': proof['sha256'], 'bytes': len(evidence), 'status': 'matching'},
+#|         'candidate_sha256': hashlib.sha256(candidate).hexdigest(),
+#|         'candidate_text': candidate.decode(),
+#|         'limits': 'Matching local bytes do not authenticate a receipt or prove its claims. Explicit status is supplied by the reviewer; one effect does not complete a recurring commitment. No worker liveness, new permission, writes or execution inferred.'}
+#| 
+#| 
 #| def main(argv, contents, entries, source_sha256, observe_project):
 #|     parser = argparse.ArgumentParser(description=__doc__)
-#|     parser.add_argument('action', choices=['status'])
+#|     parser.add_argument('action', choices=['status', 'refresh-plan'])
+#|     parser.add_argument('--receipt', help='explicit bounded JSON receipt for refresh-plan')
+#|     parser.add_argument('--expected-input-sha256')
 #|     parser.add_argument('--input', help='explicit absolute work queue JSON; default carried WORK-QUEUES.json')
 #|     parser.add_argument('--project')
 #|     parser.add_argument('--registry')
@@ -11616,6 +11735,17 @@ if __name__ == "__main__":
 #|     if args.project is not None:
 #|         registry.identifier(args.project)
 #|     raw = read_input(args.input) if args.input else contents['WORK-QUEUES.json'].encode()
+#|     if args.action == 'refresh-plan':
+#|         if not args.receipt or not args.expected_input_sha256 or not args.project:
+#|             raise ValueError('refresh-plan requires receipt, project and expected input SHA256')
+#|         if args.registry or args.request_id:
+#|             raise ValueError('refresh-plan cannot combine registry or request inspection')
+#|         result = refresh_plan(raw, read_input(args.receipt), contents, entries,
+#|                               args.expected_input_sha256, args.project, read_input)
+#|         print(json.dumps(result, indent=2, ensure_ascii=True))
+#|         return 0
+#|     if args.receipt or args.expected_input_sha256:
+#|         raise ValueError('receipt options require refresh-plan')
 #|     value = report(raw, args.input or 'source:WORK-QUEUES.json', contents, entries, source_sha256,
 #|                    args.project, args.registry, args.request_id, observe_project)
 #|     print(json.dumps(value, indent=2, ensure_ascii=True) if args.format == 'json' else human(value))
@@ -11745,7 +11875,9 @@ if __name__ == "__main__":
 #|             self.assertEqual(data['queues'][1]['effective']['next_actions'],[])
 #|             self.assertIn('independently evaluated',data['queues'][3]['recorded']['recorded_status'])
 #|             self.assertIn('Current requested presence items done',data['queues'][2]['recorded']['recorded_status'])
-#|             self.assertIn('Lumen-authored reviewer guidance',data['source_ref'])
+#|             carried = subprocess.run(launcher+[str(artifact),'source','WORK-QUEUES.json'],cwd=cwd,env=env,capture_output=True,text=True,timeout=15)
+#|             self.assertEqual(carried.returncode,0,carried.stderr)
+#|             self.assertEqual(data['source_ref'],json.loads(carried.stdout)['source_ref'])
 #|         self.assertEqual(artifact.read_bytes(),before);self.assertEqual(list(cwd.iterdir()),[])
 #|         self.assertEqual(set(p.name for p in self.root.iterdir()),{'Lumen.sh','unrelated'})
 #| 
@@ -11856,6 +11988,69 @@ if __name__ == "__main__":
 #|         summary = self.report()['commitment_summary']
 #|         self.assertEqual(summary['recorded_commitment_statuses']['unknown'], 1)
 #|         self.assertEqual(summary['execution_observations_at_recorded_times']['UNKNOWN'], 1)
+#| 
+#| 
+#| class ReceiptRefreshTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.value = record()
+#|         self.raw = json.dumps(self.value).encode()
+#|         self.receipt = dict(schema_version=1, project_id='alpha', request_id='request1',
+#|             observed_at_utc='2026-10-01T00:00:00Z', outcome='verified-effect', commitment_status='waiting',
+#|             summary='One occurrence verified; recurring work remains', next_actions=['Wait for next occurrence'],
+#|             evidence=dict(path='/explicit/evidence', sha256=hashlib.sha256(b'proof').hexdigest()))
+#| 
+#|     def refresh(self, **kwargs):
+#|         return queue.refresh_plan(self.raw, json.dumps(self.receipt).encode(), {}, [],
+#|             kwargs.get('expected', hashlib.sha256(self.raw).hexdigest()), kwargs.get('project', 'alpha'),
+#|             kwargs.get('observe', lambda path: b'proof'))
+#| 
+#|     def test_candidate_binds_bytes_and_preserves_recurring_status(self):
+#|         result = self.refresh()
+#|         candidate = queue.decode(result['candidate_text'].encode())
+#|         self.assertFalse(result['applied'])
+#|         self.assertEqual(candidate['queues'][0]['tracking']['status'], 'waiting')
+#|         self.assertEqual(candidate['queues'][0]['tracking']['execution_observation'], 'UNKNOWN')
+#|         self.assertEqual(result['candidate_sha256'], hashlib.sha256(result['candidate_text'].encode()).hexdigest())
+#|         self.assertEqual(json.loads(self.raw), self.value)
+#| 
+#|     def test_external_request_id_is_preserved_exactly(self):
+#|         self.receipt['request_id'] = 'timer-20261001T134700Z'
+#|         result = self.refresh()
+#|         candidate = json.loads(result['candidate_text'])
+#|         self.assertEqual(candidate['queues'][0]['tracking']['request_ref'], 'timer-20261001T134700Z')
+#| 
+#|     def test_stale_base_rejected_before_evidence_read(self):
+#|         observer = mock.Mock(side_effect=AssertionError('must not read'))
+#|         with self.assertRaises(ValueError): self.refresh(expected='0'*64, observe=observer)
+#|         observer.assert_not_called()
+#| 
+#|     def test_wrong_project_hash_and_nonabsolute_evidence(self):
+#|         with self.assertRaises(ValueError): self.refresh(project='beta')
+#|         with self.assertRaises(ValueError): self.refresh(observe=lambda path: b'changed')
+#|         self.receipt['evidence']['path'] = 'relative'
+#|         with self.assertRaises(ValueError): self.refresh()
+#| 
+#|     def test_future_old_and_uncertain_receipts(self):
+#|         for time in ('2999-01-01T00:00:00Z', '2020-01-01T00:00:00Z'):
+#|             self.receipt['observed_at_utc'] = time
+#|             with self.assertRaises(ValueError): self.refresh()
+#|         self.receipt['observed_at_utc'] = '2026-10-01T00:00:00Z'
+#|         self.receipt['outcome'] = 'uncertain'
+#|         with self.assertRaises(ValueError): self.refresh()
+#|         self.receipt['commitment_status'] = 'blocked'
+#|         self.assertFalse(self.refresh()['applied'])
+#| 
+#|     def test_decision_cannot_be_overridden_by_receipt(self):
+#|         observer = mock.Mock(side_effect=AssertionError('must not read'))
+#|         with mock.patch.object(queue, 'decision_projection', return_value={'alpha':{'kind':'discontinue'}}):
+#|             with self.assertRaises(ValueError): self.refresh(observe=observer)
+#|         observer.assert_not_called()
+#| 
+#|     def test_unknown_receipt_keys_and_types_fail(self):
+#|         self.receipt['extra'] = True
+#|         with self.assertRaises(ValueError): self.refresh()
+#|         del self.receipt['extra']; self.receipt['schema_version'] = True
+#|         with self.assertRaises(ValueError): self.refresh()
 # === LUMEN SECTION test_work_queue.py END ===
 
 # === LUMEN SECTION HISTORICAL-WORK-QUEUES-FIRST.json BEGIN ===

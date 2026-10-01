@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "source_sha256": "593e0f4d91f1e5954fdb4cc360aeb7230c374ce5025b6d00adf13d81448ea761",
-  "source_bytes": 1063357,
-  "review_ref": "lumen-work-ledger-review-20261001-01",
-  "tests": 280,
+  "source_sha256": "1134952c114f0c56f0c8e438c36bd3090e57a9f728a98f72fa946bd984313eb8",
+  "source_bytes": 1077699,
+  "review_ref": "lumen-receipt-refresh-review-20261001-01",
+  "tests": 287,
   "repository": "Sapient-Lumen/Lumen",
   "publication_mode": "source and metadata at same commit; remote verification required"
 }
