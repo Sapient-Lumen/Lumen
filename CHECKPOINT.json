@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "source_sha256": "fc8886ae1863fe82fcc343e15dbe58f7963ac417ad98804afb8b3db3b717526f",
-  "source_bytes": 1047015,
-  "review_ref": "lumen-reading-rework-review-20261001-01",
-  "tests": 276,
+  "source_sha256": "593e0f4d91f1e5954fdb4cc360aeb7230c374ce5025b6d00adf13d81448ea761",
+  "source_bytes": 1063357,
+  "review_ref": "lumen-work-ledger-review-20261001-01",
+  "tests": 280,
   "repository": "Sapient-Lumen/Lumen",
   "publication_mode": "source and metadata at same commit; remote verification required"
 }

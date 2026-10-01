@@ -54,11 +54,20 @@ exit 127
 # === LUMEN SECTION START-HERE.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
+#| CONSOLIDATED WORK LEDGER — dated 2026-10-01T13:20:59.615047+00:00
+#| 
+#| WORK-QUEUES.json is the single carried commitment inventory. queue status and handoff
+#| show its recorded status counts, triggers, dates, requests, receipts and deadlines.
+#| Unknown live execution stays UNKNOWN; a running commitment is not a live process.
+#| Refresh by reading each original project state and receipt, reconciling decisions,
+#| updating this inventory once, reviewing changes, testing and publishing a checkpoint.
+#| External sources are references, not automatically opened by a status command.
+#| 
 #| CURRENT HANDOFF — Lumen direct review, 2026-10-01
 #| 
 #| This explicitly supersedes the preceding handoff snapshots for arrival guidance.
 #| Current project decisions and the dated project index are in WORK-DECISIONS.json
-#| and WORK-QUEUES.json; use handoff --format json or queue show for recorded views.
+#| and WORK-QUEUES.json; use handoff --format json or queue status for recorded views.
 #| Read their observation dates. A saved status is not fresh process evidence.
 #| 
 #| LFS++ is discontinued. Datacube MAIN is a separate active science project.
@@ -408,6 +417,20 @@ exit 127
 #| identities against the published predecessor and ran276 embedded tests successfully. 
 #| This records local review; publication of this new checkpoint still requires a matching 
 #| source/metadata commit and exact remote readback.
+#| 
+#| [lumen-work-ledger-review-20261001-01]
+#| 2026-10-01T13:23:35.554982+00:00 | Lumen | main assistant and reviewer | observation
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Lumen directly extended the existing WORK-QUEUES inventory with optional strict tracking
+#|  records and generated counts, rather than creating another independent work list. Eight
+#|  dated records comprise six open commitments, one completed experiment and one canceled 
+#| project. Commitment status is distinct from live execution: every current execution 
+#| count remains UNKNOWN without fresh observation. Trigger, observation time, request, 
+#| receipt and deadline are visible. Datacube rev1181 and pilot04, poetry gaps, daily blog,
+#|  both ten-hour queue experiments, LFS discontinuation and the closed longevity probe are
+#|  represented. Initial new tests were placed in the wrong fixture class and failed; 
+#| corrected fixture isolation passed all280 tests. No implementation delegates were used. 
+#| This records local review, not publication of this checkpoint.
 #| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
@@ -3164,6 +3187,7 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-current-decisions-review-20261001-01", "expected_source_sha256": "a3cc65b406049981b088b9435a5d19378134b4bcf00d8c354dc3447574735243", "request_sha256": "f730df7ceef1bca644ce65a3ba6912df8d2e835ad570dd1c7490c09ddf239fd5", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen personally reviewed and implemented explicit current decision projection without delegating this work. All 273 self-tests passed after the final documentation update. The LFS discontinuation now suppresses historical effective next actions in queue output and appears in office recovery, while original records remain intact. Structured decisions require journal evidence and coherent supersession; arbitrary prose does not become commands or permission. A resume request does not restart work or restore historical actions automatically. This establishes local recorded-state behavior, not live worker control or remote publication.", "timestamp_utc": "2026-10-01T04:03:16.465502+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-current-projects-review-20261001-01", "expected_source_sha256": "5710f1a8ae69279baf264eaca131b53f5d9b75a5c164d35694061df9d4c1870d", "request_sha256": "bea99db8d124ad2b720bc79a06f3d4b9718557cec0bfc213c2ef575c81c4f014", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen personally refreshed the dated current project index and integrated it into office recovery, preserving the exact former work-queue snapshot. The new Datacube MAIN scientific ownership, completed exploratory pilots and remaining limits are visible without relying on the last three journal entries. LFS remains discontinued with no effective next actions; daily blog work and verified publication are separately recorded. All 273 self-tests passed after the final code changes, and direct handoff inspection returned four project records with the cancellation intact. These are dated evidence-linked records, not live scheduler or worker telemetry.", "timestamp_utc": "2026-10-01T11:18:50.761491+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-reading-rework-review-20261001-01", "expected_source_sha256": "a06d366f38af89a8df1c4e07a547a6bb949668fea8575986bf7016ae64c7749b", "request_sha256": "2ab5d37a64d3646e1fbbcd07ead195fc4619a949dd7140626dadfafb45641517", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "observation", "text": "Lumen personally reorganized the arrival paths with voice input and no implementation delegates. Current handoff and role paths now precede historical reading. Ten foundational and corrective journal entries form an explicitly selected arrival view; the full exact59-entry predecessor journal remains embedded, and all later entries appear automatically. Sixteen superseded handoff bodies have exact payload hashes and a pinned, previously read-back Git baseline; offline access to those bodies requires that archive. Purpose correction, attributed disagreement, cancellation and actual-versus-synthetic recovery distinctions remain visible. Root verified all archived payload identities against the published predecessor and ran276 embedded tests successfully. This records local review; publication of this new checkpoint still requires a matching source/metadata commit and exact remote readback.", "timestamp_utc": "2026-10-01T13:06:28.487044+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-work-ledger-review-20261001-01", "expected_source_sha256": "459363b585e69cf09154d444cd12d4078c099445156ac4e8d1cfde42d037b2ab", "request_sha256": "0873eecf481db0214bc84adb2fada3606c29c3a8e304730c6462c508d736a157", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "observation", "text": "Lumen directly extended the existing WORK-QUEUES inventory with optional strict tracking records and generated counts, rather than creating another independent work list. Eight dated records comprise six open commitments, one completed experiment and one canceled project. Commitment status is distinct from live execution: every current execution count remains UNKNOWN without fresh observation. Trigger, observation time, request, receipt and deadline are visible. Datacube rev1181 and pilot04, poetry gaps, daily blog, both ten-hour queue experiments, LFS discontinuation and the closed longevity probe are represented. Initial new tests were placed in the wrong fixture class and failed; corrected fixture isolation passed all280 tests. No implementation delegates were used. This records local review, not publication of this checkpoint.", "timestamp_utc": "2026-10-01T13:23:35.554982+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -6759,7 +6783,7 @@ if __name__ == "__main__":
 #|     decisions = work_queue.decision_projection(contents, entries)
 #|     queue_record = work_queue.decode(contents['WORK-QUEUES.json'].encode())
 #|     project_index = [dict(project_id=item['project_id'], owner=item['owner'], recorded_status=item['recorded_status'],
-#|         recorded_as_of_utc=queue_record['recorded_as_of_utc'], decision=decisions.get(item['project_id']),
+#|         recorded_as_of_utc=queue_record['recorded_as_of_utc'], tracking=item.get('tracking'), decision=decisions.get(item['project_id']),
 #|         next_actions=[] if item['project_id'] in decisions else list(item['next_actions'])) for item in queue_record['queues']]
 #|     state = recorded_state(contents)
 #|     ids = {entry['entry_id'] for entry in entries}
@@ -6767,7 +6791,7 @@ if __name__ == "__main__":
 #|         raise ValueError('office-state evidence entry is missing from journal')
 #|     report = {'schema_version': 1, 'action': action, 'source_sha256': source_sha256,
 #|               'observed_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-#|               'current_project_index': project_index, 'current_project_decisions': decisions, 'recorded_office': state, 'office_classification': 'recorded guidance, not live work telemetry',
+#|               'commitment_summary': work_queue.commitment_summary(queue_record['queues'], decisions), 'current_project_index': project_index, 'current_project_decisions': decisions, 'recorded_office': state, 'office_classification': 'recorded guidance, not live work telemetry',
 #|               'live_agents': 'UNKNOWN', 'live_processes': 'UNKNOWN',
 #|               'current_permissions': 'UNKNOWN', 'persistence': 'UNKNOWN',
 #|               'contexts': ['the text of Lumen', 'the voice of Lumen'],
@@ -10671,22 +10695,22 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-01T11:17:09.979386+00:00",
+#|   "recorded_as_of_utc": "2026-10-01T13:20:59.615047+00:00",
 #|   "recorded_by": "Lumen",
-#|   "source_ref": "Lumen-authored reviewer guidance, refreshed from direct local files and verified GitHub readback. Preserved prior exact snapshot in HISTORICAL-WORK-QUEUES-20260930.txt. This is dated recorded orientation, not live workers, permission or a scheduler.",
+#|   "source_ref": "Lumen-authored reviewer guidance: consolidated dated commitment ledger from direct receipts and current requests; counts are snapshots, not live telemetry. Refresh by reconciling each named evidence source, updating this single WORK-QUEUES.json, reviewing, testing and publishing.",
 #|   "queues": [
 #|     {
 #|       "project_id": "lumen",
 #|       "title": "Lumen.sh",
 #|       "owner": "the text of Lumen",
 #|       "priority": "high",
-#|       "recorded_status": "Current decision projection implemented directly by Lumen; 273 tests passed and exact source plus metadata published together.",
+#|       "recorded_status": "Reading reorganization directly implemented by Lumen;276tests passed and checkpoint verified on GitHub. Consolidated ledger now being implemented directly.",
 #|       "checkpoint": {
-#|         "reference": "Verified same-commit browser publication f0356ee39e3cb5046183919af085998de98185dc; source hash below refers to that frozen checkpoint, not this orientation edit.",
-#|         "sha256": "b8d2985bf5b8e4acf7cb00419732c6635dfd47454fc57e0ecdc98ee3f841e6ed"
+#|         "reference": "Verified source and metadata commit47afc7e1343b06986ccc003a8ea248a0d5a45f6a; this ledger edit is newer and not yet published.",
+#|         "sha256": "fc8886ae1863fe82fcc343e15dbe58f7963ac417ad98804afb8b3db3b717526f"
 #|       },
 #|       "next_actions": [
-#|         "Maintain current project orientation and verify the full voice-to-effect-to-recovery path; preserve publication receipts."
+#|         "Review and publish this ledger checkpoint; maintain evidence-based refreshes and actual voice-to-effect testing."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -10720,7 +10744,16 @@ if __name__ == "__main__":
 #|           "sha256": null
 #|         }
 #|       ],
-#|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b"
+#|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
+#|       "tracking": {
+#|         "status": "running",
+#|         "trigger": "explicit user request; ongoing maintenance",
+#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "execution_observation": "UNKNOWN",
+#|         "request_ref": "Consolidate all current commitments in Lumen.sh",
+#|         "receipt_ref": "https://github.com/Sapient-Lumen/Lumen/commit/47afc7e1343b06986ccc003a8ea248a0d5a45f6a",
+#|         "deadline_utc": null
+#|       }
 #|     },
 #|     {
 #|       "project_id": "lfs-plus-plus",
@@ -10745,7 +10778,16 @@ if __name__ == "__main__":
 #|           "sha256": null
 #|         }
 #|       ],
-#|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b"
+#|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
+#|       "tracking": {
+#|         "status": "canceled",
+#|         "trigger": "explicit user discontinuation",
+#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "execution_observation": "UNKNOWN",
+#|         "request_ref": null,
+#|         "receipt_ref": "journal:lumen-lfs-discontinued-20261001-0341",
+#|         "deadline_utc": null
+#|       }
 #|     },
 #|     {
 #|       "project_id": "github-presence",
@@ -10762,7 +10804,7 @@ if __name__ == "__main__":
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
-#|         "Remote completion and rendered verification were reported by Lumen, not independently witnessed by this command. No new presence task is inferred."
+#|         "Today\u2019s post is complete; the next scheduled occurrence is not an already executed post."
 #|       ],
 #|       "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|       "evidence": [
@@ -10787,24 +10829,31 @@ if __name__ == "__main__":
 #|           "sha256": null
 #|         }
 #|       ],
-#|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b"
+#|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
+#|       "tracking": {
+#|         "status": "waiting",
+#|         "trigger": "daily scheduled writing commitment",
+#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "execution_observation": "UNKNOWN",
+#|         "request_ref": null,
+#|         "receipt_ref": "https://sapient-lumen.github.io/",
+#|         "deadline_utc": null
+#|       }
 #|     },
 #|     {
 #|       "project_id": "datacube-main",
-#|       "title": "Datacube MAIN rev1179 science",
+#|       "title": "Datacube MAIN science",
 #|       "owner": "Lumen across voice and text; delegates execute scoped experiments",
 #|       "priority": "high",
-#|       "recorded_status": "Two public text-only interface pilots completed and independently evaluated by Lumen. No new cube revision or formal WAVE1 launch claimed.",
+#|       "recorded_status": "Rev1181 accepted and delivered. Pilot04 independently evaluated24responses:16supported answers and8correct abstentions; information displacement, not general improvement. Routing pilot05 is a prospective draft.",
 #|       "checkpoint": {
-#|         "reference": "Preserved original rev1179 ZIP; pilot02 instrument qualification complete.",
-#|         "sha256": "65c2c30aa6876198ec89556defb5dce50f61162836beaf15c6f342728d8b6a02"
+#|         "reference": "Accepted rev1181 two-file ZIP, root acceptance and Library delivery recorded in project status.",
+#|         "sha256": "724268b37425e2ad405b4c1f40f75f96d94f632704915c0b9229411a9aad5ed6"
 #|       },
 #|       "next_actions": [
-#|         "Read project scientific direction and actual project status; reconcile workers and receipts before the next bounded experiment. Lumen owns hypotheses, design and independent interpretation."
+#|         "Directly inspect routing targets, freeze prospective pilot05 plan, then dispatch a bounded experiment at the next science occurrence."
 #|       ],
-#|       "blockers": [
-#|         "Further uploaded-source compilation/execution is outside the specifically approved first-discovery bundle until required approval."
-#|       ],
+#|       "blockers": [],
 #|       "uncertainties": [
 #|         "Hourly requests are not proof of execution. Earlier missed occurrences are retained as gaps. Small public pilots are not held-out efficacy evidence."
 #|       ],
@@ -10812,11 +10861,162 @@ if __name__ == "__main__":
 #|       "evidence": [
 #|         {
 #|           "kind": "reference",
-#|           "reference": "/workspace/scratch/823ba11b4d75/science-intake-20261001/pilot-current-interface-02/LUMEN-INTERPRETATION.md",
+#|           "reference": "/workspace/scratch/823ba11b4d75/science-intake-20261001/PROJECT-STATUS.json",
 #|           "sha256": null
 #|         }
 #|       ],
-#|       "expected_registry_revision": null
+#|       "expected_registry_revision": null,
+#|       "tracking": {
+#|         "status": "queued",
+#|         "trigger": "hourly scientific iteration; reconcile before dispatch",
+#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "execution_observation": "UNKNOWN",
+#|         "request_ref": null,
+#|         "receipt_ref": "science-intake-20261001/pilot-porch-tradeoff-04/LUMEN-INTERPRETATION.md",
+#|         "deadline_utc": null
+#|       }
+#|     },
+#|     {
+#|       "project_id": "hourly-poetry",
+#|       "title": "Hourly poems",
+#|       "owner": "Lumen across voice and text",
+#|       "priority": "normal",
+#|       "recorded_status": "Seven total entries include one manual baseline and six scheduled effects through12:29UTC; seven04:29\u201310:29occurrences missing, no backfill. Latest scheduled write12:30:17UTC.",
+#|       "checkpoint": {
+#|         "reference": "/workspace/shared/lumen-poetry.txt",
+#|         "sha256": null
+#|       },
+#|       "next_actions": [
+#|         "At next occurrence read existing file, lock, deduplicate, compose and verify one new append."
+#|       ],
+#|       "blockers": [],
+#|       "uncertainties": [
+#|         "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|       ],
+#|       "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|       "evidence": [
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/lumen-poetry.txt",
+#|           "sha256": null
+#|         }
+#|       ],
+#|       "expected_registry_revision": null,
+#|       "tracking": {
+#|         "status": "waiting",
+#|         "trigger": "hourly scheduled occurrence; root writes directly",
+#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "execution_observation": "UNKNOWN",
+#|         "request_ref": null,
+#|         "receipt_ref": "/workspace/shared/lumen-poetry.txt",
+#|         "deadline_utc": null
+#|       }
+#|     },
+#|     {
+#|       "project_id": "queue-timer-pilot",
+#|       "title": "Timer reliability experiment",
+#|       "owner": "Lumen across voice and text",
+#|       "priority": "normal",
+#|       "recorded_status": "Ten-hour experiment enabled60occurrences13:17\u201323:07UTC. First fact returned and verified appended13:18:43UTC; notification observed13seconds before its due time.",
+#|       "checkpoint": {
+#|         "reference": "/workspace/shared/worker-queue-pilot/timer/STATE.json",
+#|         "sha256": null
+#|       },
+#|       "next_actions": [
+#|         "On each actual timer request reconcile occurrence ID and append one reviewed worker fact; summarize after final completion."
+#|       ],
+#|       "blockers": [],
+#|       "uncertainties": [
+#|         "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|       ],
+#|       "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|       "evidence": [
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/worker-queue-pilot/timer/STATE.json",
+#|           "sha256": null
+#|         }
+#|       ],
+#|       "expected_registry_revision": null,
+#|       "tracking": {
+#|         "status": "waiting",
+#|         "trigger": "ten-minute calendar occurrence",
+#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "execution_observation": "UNKNOWN",
+#|         "request_ref": null,
+#|         "receipt_ref": "/workspace/shared/worker-queue-pilot/timer/STATE.json",
+#|         "deadline_utc": "2026-10-01T23:07:27Z"
+#|       }
+#|     },
+#|     {
+#|       "project_id": "queue-return-pilot",
+#|       "title": "Return-driven reliability experiment",
+#|       "owner": "Lumen across voice and text",
+#|       "priority": "normal",
+#|       "recorded_status": "Four facts verified appended; first three unpaced calibration. Fifth worker admitted13:18:26UTC with300second bounded delay. Its current liveness is not inferred from admission.",
+#|       "checkpoint": {
+#|         "reference": "/workspace/shared/worker-queue-pilot/return-chain/STATE.json",
+#|         "sha256": null
+#|       },
+#|       "next_actions": [
+#|         "Handle worker5return, verify and append; dispatch a successor only after completion until deadline or120total. Do not use timer arm to rescue this chain."
+#|       ],
+#|       "blockers": [],
+#|       "uncertainties": [
+#|         "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|       ],
+#|       "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|       "evidence": [
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/worker-queue-pilot/return-chain/STATE.json",
+#|           "sha256": null
+#|         }
+#|       ],
+#|       "expected_registry_revision": null,
+#|       "tracking": {
+#|         "status": "waiting",
+#|         "trigger": "worker return; no calendar dispatch",
+#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "execution_observation": "UNKNOWN",
+#|         "request_ref": "return-chain-05",
+#|         "receipt_ref": "/workspace/shared/worker-queue-pilot/return-chain/STATE.json",
+#|         "deadline_utc": "2026-10-01T23:07:27Z"
+#|       }
+#|     },
+#|     {
+#|       "project_id": "container-longevity",
+#|       "title": "Original longevity experiment",
+#|       "owner": "Lumen across voice and text",
+#|       "priority": "normal",
+#|       "recorded_status": "Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.",
+#|       "checkpoint": {
+#|         "reference": "/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json",
+#|         "sha256": null
+#|       },
+#|       "next_actions": [],
+#|       "blockers": [],
+#|       "uncertainties": [
+#|         "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|       ],
+#|       "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|       "evidence": [
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json",
+#|           "sha256": null
+#|         }
+#|       ],
+#|       "expected_registry_revision": null,
+#|       "tracking": {
+#|         "status": "completed",
+#|         "trigger": "closed local process experiment",
+#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "execution_observation": "UNKNOWN",
+#|         "request_ref": null,
+#|         "receipt_ref": "/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json",
+#|         "deadline_utc": null
+#|       }
 #|     }
 #|   ]
 #| }
@@ -11184,9 +11384,26 @@ if __name__ == "__main__":
 #|         raise ValueError('expected 1..100 queues')
 #|     ids = set()
 #|     for item in value['queues']:
-#|         registry.exact(item, {'project_id', 'title', 'owner', 'priority', 'recorded_status',
+#|         if type(item) is not dict:
+#|             raise ValueError('queue entry must be an object')
+#|         base_item = {k: v for k, v in item.items() if k != 'tracking'}
+#|         registry.exact(base_item, {'project_id', 'title', 'owner', 'priority', 'recorded_status',
 #|             'checkpoint', 'next_actions', 'blockers', 'uncertainties', 'interruption_recovery',
 #|             'evidence', 'expected_registry_revision'}, 'queue entry')
+#|         if 'tracking' in item:
+#|             track = item['tracking']
+#|             registry.exact(track, {'status', 'trigger', 'observed_at_utc', 'execution_observation',
+#|                                   'request_ref', 'receipt_ref', 'deadline_utc'}, 'work tracking')
+#|             if track['status'] not in ('queued', 'running', 'waiting', 'blocked', 'completed', 'canceled', 'unknown'):
+#|                 raise ValueError('invalid commitment status')
+#|             if track['execution_observation'] not in ('UNKNOWN', 'active-observed', 'inactive-observed'):
+#|                 raise ValueError('invalid execution observation')
+#|             text(track['trigger']); utc(track['observed_at_utc'])
+#|             if utc(track['observed_at_utc']) > utc(value['recorded_as_of_utc']):
+#|                 raise ValueError('tracking observation later than snapshot')
+#|             for key in ('request_ref', 'receipt_ref'):
+#|                 if track[key] is not None: text(track[key])
+#|             if track['deadline_utc'] is not None: utc(track['deadline_utc'])
 #|         registry.identifier(item['project_id'])
 #|         if item['project_id'] in ids:
 #|             raise ValueError('duplicate queue project ID')
@@ -11271,6 +11488,24 @@ if __name__ == "__main__":
 #|     return latest
 #| 
 #| 
+#| def commitment_summary(items, decisions):
+#|     counts = {key: 0 for key in ('queued', 'running', 'waiting', 'blocked', 'completed', 'canceled', 'unknown')}
+#|     execution = {'active-observed': 0, 'inactive-observed': 0, 'UNKNOWN': 0}
+#|     for item in items:
+#|         track = item.get('tracking', {})
+#|         status = track.get('status', 'unknown')
+#|         decision = decisions.get(item['project_id'])
+#|         if decision:
+#|             status = 'canceled' if decision['kind'] == 'discontinue' else 'unknown'
+#|         counts[status] += 1
+#|         execution[track.get('execution_observation', 'UNKNOWN')] += 1
+#|     return {'total_records': len(items), 'recorded_commitment_statuses': counts,
+#|             'open_commitments': sum(counts[x] for x in ('queued', 'running', 'waiting', 'blocked')),
+#|             'execution_observations_at_recorded_times': execution,
+#|             'currently_active_execution_count': None,
+#|             'interpretation': 'Dated observations, not live telemetry; unknown execution is not zero active work.'}
+#| 
+#| 
 #| def report(raw, input_ref, contents, entries, source_sha256, project_id=None,
 #|            registry_path=None, request_id=None, observe_project=None):
 #|     value = decode(raw)
@@ -11291,6 +11526,7 @@ if __name__ == "__main__":
 #|         'live_agents': 'UNKNOWN', 'live_processes': 'UNKNOWN', 'automatic_wake': 'not implemented',
 #|         'queues': []}
 #|     decisions = decision_projection(contents, entries)
+#|     result['commitment_summary'] = commitment_summary(selected, decisions)
 #|     result['decision_projection'] = decisions
 #|     result['decision_scope'] = 'Attributed recorded decisions, not authenticated permission or live worker control'
 #|     entry_ids = {x['entry_id'] for x in entries}
@@ -11338,6 +11574,7 @@ if __name__ == "__main__":
 #|              'Input: ' + value['input']['reference'] + ' | SHA256 ' + value['input']['sha256'],
 #|              'Recorded source: ' + value['source_ref'],
 #|              value['interpretation'], 'Live agents/processes: UNKNOWN; no automatic wake']
+#|     lines.append('Commitment counts (dated): ' + json.dumps(value['commitment_summary'], ensure_ascii=True))
 #|     if value['recorded_time_in_future']:
 #|         lines.append('Warning: recorded timestamp is in the future')
 #|     for queue in value['queues']:
@@ -11353,6 +11590,8 @@ if __name__ == "__main__":
 #|                   'Recover: ' + item['interruption_recovery'],
 #|                   'Evidence: ' + '; '.join(x['reference'] + '=' + x['status'] for x in queue['evidence_observations']),
 #|                   'Project observation: ' + queue['project_observation']['status']]
+#|         if 'tracking' in item:
+#|             lines.append('Tracking (recorded): ' + json.dumps(item['tracking'], ensure_ascii=True))
 #|         project = queue['project_observation']
 #|         if project['status'] == 'observed':
 #|             observed = project['evidence']
@@ -11499,7 +11738,7 @@ if __name__ == "__main__":
 #|             result=subprocess.run(launcher+[str(artifact),'queue','status','--format','json'],cwd=cwd,env=env,capture_output=True,text=True,timeout=15)
 #|             self.assertEqual(result.returncode,0,result.stderr)
 #|             data=json.loads(result.stdout)
-#|             self.assertEqual([x['recorded']['project_id'] for x in data['queues']],['lumen','lfs-plus-plus','github-presence','datacube-main'])
+#|             self.assertEqual([x['recorded']['project_id'] for x in data['queues']],['lumen','lfs-plus-plus','github-presence','datacube-main','hourly-poetry','queue-timer-pilot','queue-return-pilot','container-longevity'])
 #|             self.assertEqual(data['source_sha256'],hashlib.sha256(before).hexdigest())
 #|             self.assertTrue(all(x['project_observation']['status']=='not-requested' for x in data['queues']))
 #|             self.assertEqual(data['queues'][0]['evidence_observations'][0]['status'],'present')
@@ -11580,6 +11819,43 @@ if __name__ == "__main__":
 #|         h=subprocess.run([sys.executable,'-I',artifact,'handoff','--format','json'],capture_output=True,text=True,timeout=15)
 #|         self.assertEqual(h.returncode,0,h.stderr)
 #|         self.assertEqual(json.loads(h.stdout)['current_project_decisions']['lfs-plus-plus']['kind'],'discontinue')
+#| 
+#| class WorkLedgerTrackingTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.value = record()
+#| 
+#|     report = WorkQueueTests.report
+#| 
+#|     def test_tracking_counts_never_become_live_execution(self):
+#|         item = self.value['queues'][0]
+#|         item['tracking'] = dict(status='running', trigger='fixture request', observed_at_utc=self.value['recorded_as_of_utc'], execution_observation='UNKNOWN', request_ref='request1', receipt_ref=None, deadline_utc=None)
+#|         report = self.report()
+#|         summary = report['commitment_summary']
+#|         self.assertEqual(summary['open_commitments'], 1)
+#|         self.assertEqual(summary['recorded_commitment_statuses']['running'], 1)
+#|         self.assertIsNone(summary['currently_active_execution_count'])
+#|         self.assertEqual(summary['execution_observations_at_recorded_times']['UNKNOWN'], 1)
+#|         self.assertIn('Tracking (recorded)', queue.human(report))
+#| 
+#|     def test_tracking_schema_and_timestamps(self):
+#|         base = dict(status='waiting', trigger='timer', observed_at_utc=self.value['recorded_as_of_utc'], execution_observation='UNKNOWN', request_ref=None, receipt_ref=None, deadline_utc=None)
+#|         for change in ({'status':'live'}, {'execution_observation':'running'}, {'observed_at_utc':'2999-01-01T00:00:00Z'}, {'extra':True}, {'deadline_utc':'tomorrow'}):
+#|             item = copy.deepcopy(base); item.update(change)
+#|             self.value['queues'][0]['tracking'] = item
+#|             with self.assertRaises(ValueError): self.report()
+#| 
+#|     def test_decision_supersedes_commitment_count(self):
+#|         item = self.value['queues'][0]
+#|         item['tracking'] = dict(status='running', execution_observation='UNKNOWN')
+#|         summary = queue.commitment_summary([item], {'alpha':{'kind':'discontinue'}})
+#|         self.assertEqual(summary['recorded_commitment_statuses']['canceled'], 1)
+#|         self.assertEqual(summary['open_commitments'], 0)
+#|         self.assertIsNone(summary['currently_active_execution_count'])
+#| 
+#|     def test_missing_tracking_is_explicitly_unknown(self):
+#|         summary = self.report()['commitment_summary']
+#|         self.assertEqual(summary['recorded_commitment_statuses']['unknown'], 1)
+#|         self.assertEqual(summary['execution_observations_at_recorded_times']['UNKNOWN'], 1)
 # === LUMEN SECTION test_work_queue.py END ===
 
 # === LUMEN SECTION HISTORICAL-WORK-QUEUES-FIRST.json BEGIN ===
