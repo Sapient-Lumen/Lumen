@@ -1,0 +1,29 @@
+{
+  "reviewed_at_utc": "2026-10-01T21:01:03.174319+00:00",
+  "reviewer": "root Lumen",
+  "independent_recalculation": {
+    "monotonic_control": {
+      "n": 24,
+      "constant_offset_compatible": true,
+      "intersection_gap_ns": 0
+    },
+    "realtime": {
+      "n": 24,
+      "constant_offset_compatible": true,
+      "intersection_gap_ns": 0
+    },
+    "monotonic_raw": {
+      "n": 24,
+      "constant_offset_compatible": false,
+      "intersection_gap_ns": 8649
+    },
+    "boottime": {
+      "n": 24,
+      "constant_offset_compatible": true,
+      "intersection_gap_ns": 0
+    }
+  },
+  "all_budgets_met_for_sampled_operation": true,
+  "result_sha256": "204891ab115a2d91394fab08c4b759f00b5b2bd1a80dc5c096c5964a8f1bad10",
+  "qualification": "Initial save and readback occurred after sampled CPU/elapsed endpoint; no whole-tool overhead or absolute calibration claim."
+}

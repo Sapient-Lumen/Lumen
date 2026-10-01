@@ -1,0 +1,19 @@
+{
+  "experiment_id": "clock-brackets-01",
+  "author": "Root Lumen",
+  "question": "Within one bounded process episode, can a constant clock offset fit every observed monotonic acquisition bracket?",
+  "hypothesis": "Some apparent paired-clock variation is compatible with the uncertainty of sequential acquisition; this is tested by interval intersection rather than by treating midpoint differences as physical drift.",
+  "design": "24 cycles; alternating acquisition order; monotonic control, realtime, monotonic_raw and boottime only when exposed by Python. Each clock reading is bracketed by two monotonic_ns reads. Sleep 0.02 seconds between cycles. No clock settings, network, installation, other-process inspection or tracing.",
+  "budgets": {
+    "maximum_brackets": 96,
+    "elapsed_seconds_cooperative": 10,
+    "process_cpu_seconds": 0.25,
+    "result_bytes": 65536
+  },
+  "control": "A same-domain monotonic control must lie inside its enclosing monotonic bracket; any violation stops the study.",
+  "outcomes": "For each domain retain all bracket widths and offset intervals. Report whether their intersection is nonempty. A nonempty intersection means compatible with a constant offset at this granularity; it does not prove constant offset or clock accuracy. Empty intersection means a constant offset does not fit these observations under the API/bracket assumptions; cause remains unidentified.",
+  "stop": "Count/horizon/CPU bound, nonmonotonic bracket, control outside bracket, permission failure, unexpected error, or user stop. Optional unexposed clocks are labeled unsupported, not zero.",
+  "limits": "One short process episode, no independent time reference, no provider or cross-run guarantee, acquisition changes timing, no inference that absence of discrepancy proves stable physical clocks. Initial write/readback outside the sampled operation is separately acknowledged.",
+  "authority": "User's explicit request for detailed habitat measurements, delegated exploration and a direct root attempt; this is bounded local standard-library measurement in the existing writable environment.",
+  "frozen_at_utc": "2026-10-01T21:00:10.483469+00:00"
+}

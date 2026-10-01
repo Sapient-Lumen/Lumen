@@ -1,0 +1,1029 @@
+{
+  "schema": 1,
+  "experiment_id": "clock-brackets-01",
+  "written_utc": "2026-10-01T21:00:10.970478+00:00",
+  "plan_sha256": "13b14ffbda34d831ad707ed4baf12db5bb6d6ef287820c9d6b09f0df3fc9b7ef",
+  "source_sha256": "8f1b139293cb035eeba3eb88eddc031a2636d9353244291140474c4fffa1b4db",
+  "elapsed_ns": 463378126,
+  "process_cpu_ns": 1654181,
+  "reason": "count_complete",
+  "unsupported": [],
+  "errors": [],
+  "clock_metadata": {
+    "time": {
+      "implementation": "clock_gettime(CLOCK_REALTIME)",
+      "monotonic": false,
+      "adjustable": true,
+      "resolution": 1e-09
+    },
+    "monotonic": {
+      "implementation": "clock_gettime(CLOCK_MONOTONIC)",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-09
+    },
+    "process_time": {
+      "implementation": "clock_gettime(CLOCK_PROCESS_CPUTIME_ID)",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-09
+    }
+  },
+  "summary": {
+    "monotonic_control": {
+      "n": 24,
+      "constant_offset_compatible": true,
+      "intersection_lower_ns": -70,
+      "intersection_upper_ns": 90,
+      "width_min_ns": 180,
+      "width_max_ns": 1773
+    },
+    "realtime": {
+      "n": 24,
+      "constant_offset_compatible": true,
+      "intersection_lower_ns": 1790784477473822835,
+      "intersection_upper_ns": 1790784477473823116,
+      "width_min_ns": 371,
+      "width_max_ns": 3145
+    },
+    "monotonic_raw": {
+      "n": 24,
+      "constant_offset_compatible": false,
+      "intersection_lower_ns": -2190250154,
+      "intersection_upper_ns": -2190258803,
+      "width_min_ns": 451,
+      "width_max_ns": 4557
+    },
+    "boottime": {
+      "n": 24,
+      "constant_offset_compatible": true,
+      "intersection_lower_ns": -90,
+      "intersection_upper_ns": 301,
+      "width_min_ns": 410,
+      "width_max_ns": 5639
+    }
+  },
+  "records": [
+    {
+      "cycle": 0,
+      "clock": "monotonic_control",
+      "before_ns": 103933033191658,
+      "value_ns": 103933033191899,
+      "after_ns": 103933033191999,
+      "width_ns": 341,
+      "offset_lower_ns": -100,
+      "offset_upper_ns": 241
+    },
+    {
+      "cycle": 0,
+      "clock": "realtime",
+      "before_ns": 103933033194813,
+      "value_ns": 1790888410507018290,
+      "after_ns": 103933033195524,
+      "width_ns": 711,
+      "offset_lower_ns": 1790784477473822766,
+      "offset_upper_ns": 1790784477473823477
+    },
+    {
+      "cycle": 0,
+      "clock": "monotonic_raw",
+      "before_ns": 103933033197217,
+      "value_ns": 103930842948535,
+      "after_ns": 103933033198689,
+      "width_ns": 1472,
+      "offset_lower_ns": -2190250154,
+      "offset_upper_ns": -2190248682
+    },
+    {
+      "cycle": 0,
+      "clock": "boottime",
+      "before_ns": 103933033199770,
+      "value_ns": 103933033200071,
+      "after_ns": 103933033200201,
+      "width_ns": 431,
+      "offset_lower_ns": -130,
+      "offset_upper_ns": 301
+    },
+    {
+      "cycle": 1,
+      "clock": "boottime",
+      "before_ns": 103933053298868,
+      "value_ns": 103933053301022,
+      "after_ns": 103933053301552,
+      "width_ns": 2684,
+      "offset_lower_ns": -530,
+      "offset_upper_ns": 2154
+    },
+    {
+      "cycle": 1,
+      "clock": "monotonic_raw",
+      "before_ns": 103933053311427,
+      "value_ns": 103930863061766,
+      "after_ns": 103933053312138,
+      "width_ns": 711,
+      "offset_lower_ns": -2190250372,
+      "offset_upper_ns": -2190249661
+    },
+    {
+      "cycle": 1,
+      "clock": "realtime",
+      "before_ns": 103933053313641,
+      "value_ns": 1790888410527136907,
+      "after_ns": 103933053314201,
+      "width_ns": 560,
+      "offset_lower_ns": 1790784477473822706,
+      "offset_upper_ns": 1790784477473823266
+    },
+    {
+      "cycle": 1,
+      "clock": "monotonic_control",
+      "before_ns": 103933053315463,
+      "value_ns": 103933053315574,
+      "after_ns": 103933053315664,
+      "width_ns": 201,
+      "offset_lower_ns": -90,
+      "offset_upper_ns": 111
+    },
+    {
+      "cycle": 2,
+      "clock": "monotonic_control",
+      "before_ns": 103933073419239,
+      "value_ns": 103933073419829,
+      "after_ns": 103933073420160,
+      "width_ns": 921,
+      "offset_lower_ns": -331,
+      "offset_upper_ns": 590
+    },
+    {
+      "cycle": 2,
+      "clock": "realtime",
+      "before_ns": 103933073424166,
+      "value_ns": 1790888410547247503,
+      "after_ns": 103933073425218,
+      "width_ns": 1052,
+      "offset_lower_ns": 1790784477473822285,
+      "offset_upper_ns": 1790784477473823337
+    },
+    {
+      "cycle": 2,
+      "clock": "monotonic_raw",
+      "before_ns": 103933073426550,
+      "value_ns": 103930883178012,
+      "after_ns": 103933073429093,
+      "width_ns": 2543,
+      "offset_lower_ns": -2190251081,
+      "offset_upper_ns": -2190248538
+    },
+    {
+      "cycle": 2,
+      "clock": "boottime",
+      "before_ns": 103933073430486,
+      "value_ns": 103933073430916,
+      "after_ns": 103933073431006,
+      "width_ns": 520,
+      "offset_lower_ns": -90,
+      "offset_upper_ns": 430
+    },
+    {
+      "cycle": 3,
+      "clock": "boottime",
+      "before_ns": 103933093556324,
+      "value_ns": 103933093558878,
+      "after_ns": 103933093559659,
+      "width_ns": 3335,
+      "offset_lower_ns": -781,
+      "offset_upper_ns": 2554
+    },
+    {
+      "cycle": 3,
+      "clock": "monotonic_raw",
+      "before_ns": 103933093563385,
+      "value_ns": 103930903312635,
+      "after_ns": 103933093563836,
+      "width_ns": 451,
+      "offset_lower_ns": -2190251201,
+      "offset_upper_ns": -2190250750
+    },
+    {
+      "cycle": 3,
+      "clock": "realtime",
+      "before_ns": 103933093584487,
+      "value_ns": 1790888410567407843,
+      "after_ns": 103933093585008,
+      "width_ns": 521,
+      "offset_lower_ns": 1790784477473822835,
+      "offset_upper_ns": 1790784477473823356
+    },
+    {
+      "cycle": 3,
+      "clock": "monotonic_control",
+      "before_ns": 103933093586179,
+      "value_ns": 103933093586270,
+      "after_ns": 103933093586380,
+      "width_ns": 201,
+      "offset_lower_ns": -110,
+      "offset_upper_ns": 91
+    },
+    {
+      "cycle": 4,
+      "clock": "monotonic_control",
+      "before_ns": 103933113710815,
+      "value_ns": 103933113711827,
+      "after_ns": 103933113712198,
+      "width_ns": 1383,
+      "offset_lower_ns": -371,
+      "offset_upper_ns": 1012
+    },
+    {
+      "cycle": 4,
+      "clock": "realtime",
+      "before_ns": 103933113718157,
+      "value_ns": 1790888410587541513,
+      "after_ns": 103933113719158,
+      "width_ns": 1001,
+      "offset_lower_ns": 1790784477473822355,
+      "offset_upper_ns": 1790784477473823356
+    },
+    {
+      "cycle": 4,
+      "clock": "monotonic_raw",
+      "before_ns": 103933113720520,
+      "value_ns": 103930923472735,
+      "after_ns": 103933113724616,
+      "width_ns": 4096,
+      "offset_lower_ns": -2190251881,
+      "offset_upper_ns": -2190247785
+    },
+    {
+      "cycle": 4,
+      "clock": "boottime",
+      "before_ns": 103933113725688,
+      "value_ns": 103933113726539,
+      "after_ns": 103933113726679,
+      "width_ns": 991,
+      "offset_lower_ns": -140,
+      "offset_upper_ns": 851
+    },
+    {
+      "cycle": 5,
+      "clock": "boottime",
+      "before_ns": 103933133855713,
+      "value_ns": 103933133859088,
+      "after_ns": 103933133859849,
+      "width_ns": 4136,
+      "offset_lower_ns": -761,
+      "offset_upper_ns": 3375
+    },
+    {
+      "cycle": 5,
+      "clock": "monotonic_raw",
+      "before_ns": 103933133864576,
+      "value_ns": 103930943613758,
+      "after_ns": 103933133865778,
+      "width_ns": 1202,
+      "offset_lower_ns": -2190252020,
+      "offset_upper_ns": -2190250818
+    },
+    {
+      "cycle": 5,
+      "clock": "realtime",
+      "before_ns": 103933133867090,
+      "value_ns": 1790888410607690537,
+      "after_ns": 103933133868061,
+      "width_ns": 971,
+      "offset_lower_ns": 1790784477473822476,
+      "offset_upper_ns": 1790784477473823447
+    },
+    {
+      "cycle": 5,
+      "clock": "monotonic_control",
+      "before_ns": 103933133869333,
+      "value_ns": 103933133869423,
+      "after_ns": 103933133869513,
+      "width_ns": 180,
+      "offset_lower_ns": -90,
+      "offset_upper_ns": 90
+    },
+    {
+      "cycle": 6,
+      "clock": "monotonic_control",
+      "before_ns": 103933154017605,
+      "value_ns": 103933154018466,
+      "after_ns": 103933154018857,
+      "width_ns": 1252,
+      "offset_lower_ns": -391,
+      "offset_upper_ns": 861
+    },
+    {
+      "cycle": 6,
+      "clock": "realtime",
+      "before_ns": 103933154099709,
+      "value_ns": 1790888410627923286,
+      "after_ns": 103933154100650,
+      "width_ns": 941,
+      "offset_lower_ns": 1790784477473822636,
+      "offset_upper_ns": 1790784477473823577
+    },
+    {
+      "cycle": 6,
+      "clock": "monotonic_raw",
+      "before_ns": 103933154102683,
+      "value_ns": 103930963854568,
+      "after_ns": 103933154107240,
+      "width_ns": 4557,
+      "offset_lower_ns": -2190252672,
+      "offset_upper_ns": -2190248115
+    },
+    {
+      "cycle": 6,
+      "clock": "boottime",
+      "before_ns": 103933154108412,
+      "value_ns": 103933154108953,
+      "after_ns": 103933154109073,
+      "width_ns": 661,
+      "offset_lower_ns": -120,
+      "offset_upper_ns": 541
+    },
+    {
+      "cycle": 7,
+      "clock": "boottime",
+      "before_ns": 103933174236284,
+      "value_ns": 103933174240450,
+      "after_ns": 103933174241301,
+      "width_ns": 5017,
+      "offset_lower_ns": -851,
+      "offset_upper_ns": 4166
+    },
+    {
+      "cycle": 7,
+      "clock": "monotonic_raw",
+      "before_ns": 103933174245257,
+      "value_ns": 103930983992977,
+      "after_ns": 103933174245838,
+      "width_ns": 581,
+      "offset_lower_ns": -2190252861,
+      "offset_upper_ns": -2190252280
+    },
+    {
+      "cycle": 7,
+      "clock": "realtime",
+      "before_ns": 103933174247901,
+      "value_ns": 1790888410648071478,
+      "after_ns": 103933174251046,
+      "width_ns": 3145,
+      "offset_lower_ns": 1790784477473820432,
+      "offset_upper_ns": 1790784477473823577
+    },
+    {
+      "cycle": 7,
+      "clock": "monotonic_control",
+      "before_ns": 103933174253420,
+      "value_ns": 103933174253570,
+      "after_ns": 103933174253680,
+      "width_ns": 260,
+      "offset_lower_ns": -110,
+      "offset_upper_ns": 150
+    },
+    {
+      "cycle": 8,
+      "clock": "monotonic_control",
+      "before_ns": 103933194381732,
+      "value_ns": 103933194382994,
+      "after_ns": 103933194383505,
+      "width_ns": 1773,
+      "offset_lower_ns": -511,
+      "offset_upper_ns": 1262
+    },
+    {
+      "cycle": 8,
+      "clock": "realtime",
+      "before_ns": 103933194389033,
+      "value_ns": 1790888410668212179,
+      "after_ns": 103933194389404,
+      "width_ns": 371,
+      "offset_lower_ns": 1790784477473822775,
+      "offset_upper_ns": 1790784477473823146
+    },
+    {
+      "cycle": 8,
+      "clock": "monotonic_raw",
+      "before_ns": 103933194390635,
+      "value_ns": 103931004140679,
+      "after_ns": 103933194394311,
+      "width_ns": 3676,
+      "offset_lower_ns": -2190253632,
+      "offset_upper_ns": -2190249956
+    },
+    {
+      "cycle": 8,
+      "clock": "boottime",
+      "before_ns": 103933194395593,
+      "value_ns": 103933194396264,
+      "after_ns": 103933194396384,
+      "width_ns": 791,
+      "offset_lower_ns": -120,
+      "offset_upper_ns": 671
+    },
+    {
+      "cycle": 9,
+      "clock": "boottime",
+      "before_ns": 103933214512587,
+      "value_ns": 103933214517424,
+      "after_ns": 103933214518226,
+      "width_ns": 5639,
+      "offset_lower_ns": -802,
+      "offset_upper_ns": 4837
+    },
+    {
+      "cycle": 9,
+      "clock": "monotonic_raw",
+      "before_ns": 103933214522883,
+      "value_ns": 103931024270084,
+      "after_ns": 103933214523734,
+      "width_ns": 851,
+      "offset_lower_ns": -2190253650,
+      "offset_upper_ns": -2190252799
+    },
+    {
+      "cycle": 9,
+      "clock": "realtime",
+      "before_ns": 103933214524876,
+      "value_ns": 1790888410688348383,
+      "after_ns": 103933214525877,
+      "width_ns": 1001,
+      "offset_lower_ns": 1790784477473822506,
+      "offset_upper_ns": 1790784477473823507
+    },
+    {
+      "cycle": 9,
+      "clock": "monotonic_control",
+      "before_ns": 103933214526959,
+      "value_ns": 103933214527069,
+      "after_ns": 103933214527139,
+      "width_ns": 180,
+      "offset_lower_ns": -70,
+      "offset_upper_ns": 110
+    },
+    {
+      "cycle": 10,
+      "clock": "monotonic_control",
+      "before_ns": 103933234649191,
+      "value_ns": 103933234649742,
+      "after_ns": 103933234650143,
+      "width_ns": 952,
+      "offset_lower_ns": -401,
+      "offset_upper_ns": 551
+    },
+    {
+      "cycle": 10,
+      "clock": "realtime",
+      "before_ns": 103933234655341,
+      "value_ns": 1790888410708479088,
+      "after_ns": 103933234656753,
+      "width_ns": 1412,
+      "offset_lower_ns": 1790784477473822335,
+      "offset_upper_ns": 1790784477473823747
+    },
+    {
+      "cycle": 10,
+      "clock": "monotonic_raw",
+      "before_ns": 103933234670333,
+      "value_ns": 103931044419909,
+      "after_ns": 103933234674339,
+      "width_ns": 4006,
+      "offset_lower_ns": -2190254430,
+      "offset_upper_ns": -2190250424
+    },
+    {
+      "cycle": 10,
+      "clock": "boottime",
+      "before_ns": 103933234675331,
+      "value_ns": 103933234676052,
+      "after_ns": 103933234676182,
+      "width_ns": 851,
+      "offset_lower_ns": -130,
+      "offset_upper_ns": 721
+    },
+    {
+      "cycle": 11,
+      "clock": "boottime",
+      "before_ns": 103933254804575,
+      "value_ns": 103933254808742,
+      "after_ns": 103933254809363,
+      "width_ns": 4788,
+      "offset_lower_ns": -621,
+      "offset_upper_ns": 4167
+    },
+    {
+      "cycle": 11,
+      "clock": "monotonic_raw",
+      "before_ns": 103933254813329,
+      "value_ns": 103931064559460,
+      "after_ns": 103933254813980,
+      "width_ns": 651,
+      "offset_lower_ns": -2190254520,
+      "offset_upper_ns": -2190253869
+    },
+    {
+      "cycle": 11,
+      "clock": "realtime",
+      "before_ns": 103933254815372,
+      "value_ns": 1790888410728638718,
+      "after_ns": 103933254816263,
+      "width_ns": 891,
+      "offset_lower_ns": 1790784477473822455,
+      "offset_upper_ns": 1790784477473823346
+    },
+    {
+      "cycle": 11,
+      "clock": "monotonic_control",
+      "before_ns": 103933254817214,
+      "value_ns": 103933254817315,
+      "after_ns": 103933254817405,
+      "width_ns": 191,
+      "offset_lower_ns": -90,
+      "offset_upper_ns": 101
+    },
+    {
+      "cycle": 12,
+      "clock": "monotonic_control",
+      "before_ns": 103933274930544,
+      "value_ns": 103933274931155,
+      "after_ns": 103933274931375,
+      "width_ns": 831,
+      "offset_lower_ns": -220,
+      "offset_upper_ns": 611
+    },
+    {
+      "cycle": 12,
+      "clock": "realtime",
+      "before_ns": 103933274958426,
+      "value_ns": 1790888410748781542,
+      "after_ns": 103933274958836,
+      "width_ns": 410,
+      "offset_lower_ns": 1790784477473822706,
+      "offset_upper_ns": 1790784477473823116
+    },
+    {
+      "cycle": 12,
+      "clock": "monotonic_raw",
+      "before_ns": 103933274959968,
+      "value_ns": 103931084708173,
+      "after_ns": 103933274963283,
+      "width_ns": 3315,
+      "offset_lower_ns": -2190255110,
+      "offset_upper_ns": -2190251795
+    },
+    {
+      "cycle": 12,
+      "clock": "boottime",
+      "before_ns": 103933274964195,
+      "value_ns": 103933274964745,
+      "after_ns": 103933274964846,
+      "width_ns": 651,
+      "offset_lower_ns": -101,
+      "offset_upper_ns": 550
+    },
+    {
+      "cycle": 13,
+      "clock": "boottime",
+      "before_ns": 103933295074089,
+      "value_ns": 103933295077064,
+      "after_ns": 103933295077334,
+      "width_ns": 3245,
+      "offset_lower_ns": -270,
+      "offset_upper_ns": 2975
+    },
+    {
+      "cycle": 13,
+      "clock": "monotonic_raw",
+      "before_ns": 103933295083033,
+      "value_ns": 103931104828295,
+      "after_ns": 103933295083664,
+      "width_ns": 631,
+      "offset_lower_ns": -2190255369,
+      "offset_upper_ns": -2190254738
+    },
+    {
+      "cycle": 13,
+      "clock": "realtime",
+      "before_ns": 103933295084875,
+      "value_ns": 1790888410768908092,
+      "after_ns": 103933295085386,
+      "width_ns": 511,
+      "offset_lower_ns": 1790784477473822706,
+      "offset_upper_ns": 1790784477473823217
+    },
+    {
+      "cycle": 13,
+      "clock": "monotonic_control",
+      "before_ns": 103933295086368,
+      "value_ns": 103933295086468,
+      "after_ns": 103933295086548,
+      "width_ns": 180,
+      "offset_lower_ns": -80,
+      "offset_upper_ns": 100
+    },
+    {
+      "cycle": 14,
+      "clock": "monotonic_control",
+      "before_ns": 103933315198847,
+      "value_ns": 103933315199298,
+      "after_ns": 103933315199618,
+      "width_ns": 771,
+      "offset_lower_ns": -320,
+      "offset_upper_ns": 451
+    },
+    {
+      "cycle": 14,
+      "clock": "realtime",
+      "before_ns": 103933315203865,
+      "value_ns": 1790888410789027091,
+      "after_ns": 103933315204455,
+      "width_ns": 590,
+      "offset_lower_ns": 1790784477473822636,
+      "offset_upper_ns": 1790784477473823226
+    },
+    {
+      "cycle": 14,
+      "clock": "monotonic_raw",
+      "before_ns": 103933315205607,
+      "value_ns": 103931124952271,
+      "after_ns": 103933315208301,
+      "width_ns": 2694,
+      "offset_lower_ns": -2190256030,
+      "offset_upper_ns": -2190253336
+    },
+    {
+      "cycle": 14,
+      "clock": "boottime",
+      "before_ns": 103933315209243,
+      "value_ns": 103933315209563,
+      "after_ns": 103933315209653,
+      "width_ns": 410,
+      "offset_lower_ns": -90,
+      "offset_upper_ns": 320
+    },
+    {
+      "cycle": 15,
+      "clock": "boottime",
+      "before_ns": 103933335327918,
+      "value_ns": 103933335331043,
+      "after_ns": 103933335331674,
+      "width_ns": 3756,
+      "offset_lower_ns": -631,
+      "offset_upper_ns": 3125
+    },
+    {
+      "cycle": 15,
+      "clock": "monotonic_raw",
+      "before_ns": 103933335335039,
+      "value_ns": 103931145079343,
+      "after_ns": 103933335335550,
+      "width_ns": 511,
+      "offset_lower_ns": -2190256207,
+      "offset_upper_ns": -2190255696
+    },
+    {
+      "cycle": 15,
+      "clock": "realtime",
+      "before_ns": 103933335336802,
+      "value_ns": 1790888410809160048,
+      "after_ns": 103933335337222,
+      "width_ns": 420,
+      "offset_lower_ns": 1790784477473822826,
+      "offset_upper_ns": 1790784477473823246
+    },
+    {
+      "cycle": 15,
+      "clock": "monotonic_control",
+      "before_ns": 103933335338514,
+      "value_ns": 103933335338634,
+      "after_ns": 103933335338725,
+      "width_ns": 211,
+      "offset_lower_ns": -91,
+      "offset_upper_ns": 120
+    },
+    {
+      "cycle": 16,
+      "clock": "monotonic_control",
+      "before_ns": 103933355473297,
+      "value_ns": 103933355474209,
+      "after_ns": 103933355474309,
+      "width_ns": 1012,
+      "offset_lower_ns": -100,
+      "offset_upper_ns": 912
+    },
+    {
+      "cycle": 16,
+      "clock": "realtime",
+      "before_ns": 103933355491945,
+      "value_ns": 1790888410829315082,
+      "after_ns": 103933355492526,
+      "width_ns": 581,
+      "offset_lower_ns": 1790784477473822556,
+      "offset_upper_ns": 1790784477473823137
+    },
+    {
+      "cycle": 16,
+      "clock": "monotonic_raw",
+      "before_ns": 103933355493698,
+      "value_ns": 103931165239974,
+      "after_ns": 103933355496943,
+      "width_ns": 3245,
+      "offset_lower_ns": -2190256969,
+      "offset_upper_ns": -2190253724
+    },
+    {
+      "cycle": 16,
+      "clock": "boottime",
+      "before_ns": 103933355497954,
+      "value_ns": 103933355498485,
+      "after_ns": 103933355498595,
+      "width_ns": 641,
+      "offset_lower_ns": -110,
+      "offset_upper_ns": 531
+    },
+    {
+      "cycle": 17,
+      "clock": "boottime",
+      "before_ns": 103933375620065,
+      "value_ns": 103933375622799,
+      "after_ns": 103933375623310,
+      "width_ns": 3245,
+      "offset_lower_ns": -511,
+      "offset_upper_ns": 2734
+    },
+    {
+      "cycle": 17,
+      "clock": "monotonic_raw",
+      "before_ns": 103933375626805,
+      "value_ns": 103931185370391,
+      "after_ns": 103933375627446,
+      "width_ns": 641,
+      "offset_lower_ns": -2190257055,
+      "offset_upper_ns": -2190256414
+    },
+    {
+      "cycle": 17,
+      "clock": "realtime",
+      "before_ns": 103933375628758,
+      "value_ns": 1790888410849452045,
+      "after_ns": 103933375629249,
+      "width_ns": 491,
+      "offset_lower_ns": 1790784477473822796,
+      "offset_upper_ns": 1790784477473823287
+    },
+    {
+      "cycle": 17,
+      "clock": "monotonic_control",
+      "before_ns": 103933375630351,
+      "value_ns": 103933375630481,
+      "after_ns": 103933375630571,
+      "width_ns": 220,
+      "offset_lower_ns": -90,
+      "offset_upper_ns": 130
+    },
+    {
+      "cycle": 18,
+      "clock": "monotonic_control",
+      "before_ns": 103933395756961,
+      "value_ns": 103933395757582,
+      "after_ns": 103933395757903,
+      "width_ns": 942,
+      "offset_lower_ns": -321,
+      "offset_upper_ns": 621
+    },
+    {
+      "cycle": 18,
+      "clock": "realtime",
+      "before_ns": 103933395762289,
+      "value_ns": 1790888410869586017,
+      "after_ns": 103933395763341,
+      "width_ns": 1052,
+      "offset_lower_ns": 1790784477473822676,
+      "offset_upper_ns": 1790784477473823728
+    },
+    {
+      "cycle": 18,
+      "clock": "monotonic_raw",
+      "before_ns": 103933395764713,
+      "value_ns": 103931205509961,
+      "after_ns": 103933395767878,
+      "width_ns": 3165,
+      "offset_lower_ns": -2190257917,
+      "offset_upper_ns": -2190254752
+    },
+    {
+      "cycle": 18,
+      "clock": "boottime",
+      "before_ns": 103933395779776,
+      "value_ns": 103933395780307,
+      "after_ns": 103933395780427,
+      "width_ns": 651,
+      "offset_lower_ns": -120,
+      "offset_upper_ns": 531
+    },
+    {
+      "cycle": 19,
+      "clock": "boottime",
+      "before_ns": 103933415915189,
+      "value_ns": 103933415919025,
+      "after_ns": 103933415919516,
+      "width_ns": 4327,
+      "offset_lower_ns": -491,
+      "offset_upper_ns": 3836
+    },
+    {
+      "cycle": 19,
+      "clock": "monotonic_raw",
+      "before_ns": 103933415926606,
+      "value_ns": 103931225669561,
+      "after_ns": 103933415927458,
+      "width_ns": 852,
+      "offset_lower_ns": -2190257897,
+      "offset_upper_ns": -2190257045
+    },
+    {
+      "cycle": 19,
+      "clock": "realtime",
+      "before_ns": 103933415928770,
+      "value_ns": 1790888410889751886,
+      "after_ns": 103933415929280,
+      "width_ns": 510,
+      "offset_lower_ns": 1790784477473822606,
+      "offset_upper_ns": 1790784477473823116
+    },
+    {
+      "cycle": 19,
+      "clock": "monotonic_control",
+      "before_ns": 103933415930462,
+      "value_ns": 103933415930572,
+      "after_ns": 103933415930672,
+      "width_ns": 210,
+      "offset_lower_ns": -100,
+      "offset_upper_ns": 110
+    },
+    {
+      "cycle": 20,
+      "clock": "monotonic_control",
+      "before_ns": 103933436073871,
+      "value_ns": 103933436074673,
+      "after_ns": 103933436075213,
+      "width_ns": 1342,
+      "offset_lower_ns": -540,
+      "offset_upper_ns": 802
+    },
+    {
+      "cycle": 20,
+      "clock": "realtime",
+      "before_ns": 103933436080401,
+      "value_ns": 1790888410909903778,
+      "after_ns": 103933436081252,
+      "width_ns": 851,
+      "offset_lower_ns": 1790784477473822526,
+      "offset_upper_ns": 1790784477473823377
+    },
+    {
+      "cycle": 20,
+      "clock": "monotonic_raw",
+      "before_ns": 103933436082564,
+      "value_ns": 103931245828385,
+      "after_ns": 103933436086991,
+      "width_ns": 4427,
+      "offset_lower_ns": -2190258606,
+      "offset_upper_ns": -2190254179
+    },
+    {
+      "cycle": 20,
+      "clock": "boottime",
+      "before_ns": 103933436100602,
+      "value_ns": 103933436101283,
+      "after_ns": 103933436101423,
+      "width_ns": 821,
+      "offset_lower_ns": -140,
+      "offset_upper_ns": 681
+    },
+    {
+      "cycle": 21,
+      "clock": "boottime",
+      "before_ns": 103933456245209,
+      "value_ns": 103933456249405,
+      "after_ns": 103933456250076,
+      "width_ns": 4867,
+      "offset_lower_ns": -671,
+      "offset_upper_ns": 4196
+    },
+    {
+      "cycle": 21,
+      "clock": "monotonic_raw",
+      "before_ns": 103933456253942,
+      "value_ns": 103931265995957,
+      "after_ns": 103933456254683,
+      "width_ns": 741,
+      "offset_lower_ns": -2190258726,
+      "offset_upper_ns": -2190257985
+    },
+    {
+      "cycle": 21,
+      "clock": "realtime",
+      "before_ns": 103933456255915,
+      "value_ns": 1790888410930079252,
+      "after_ns": 103933456256977,
+      "width_ns": 1062,
+      "offset_lower_ns": 1790784477473822275,
+      "offset_upper_ns": 1790784477473823337
+    },
+    {
+      "cycle": 21,
+      "clock": "monotonic_control",
+      "before_ns": 103933456258018,
+      "value_ns": 103933456258119,
+      "after_ns": 103933456258219,
+      "width_ns": 201,
+      "offset_lower_ns": -100,
+      "offset_upper_ns": 101
+    },
+    {
+      "cycle": 22,
+      "clock": "monotonic_control",
+      "before_ns": 103933476396321,
+      "value_ns": 103933476396992,
+      "after_ns": 103933476397302,
+      "width_ns": 981,
+      "offset_lower_ns": -310,
+      "offset_upper_ns": 671
+    },
+    {
+      "cycle": 22,
+      "clock": "realtime",
+      "before_ns": 103933476402159,
+      "value_ns": 1790888410950225556,
+      "after_ns": 103933476402900,
+      "width_ns": 741,
+      "offset_lower_ns": 1790784477473822656,
+      "offset_upper_ns": 1790784477473823397
+    },
+    {
+      "cycle": 22,
+      "clock": "monotonic_raw",
+      "before_ns": 103933476404443,
+      "value_ns": 103931286149232,
+      "after_ns": 103933476408519,
+      "width_ns": 4076,
+      "offset_lower_ns": -2190259287,
+      "offset_upper_ns": -2190255211
+    },
+    {
+      "cycle": 22,
+      "clock": "boottime",
+      "before_ns": 103933476409681,
+      "value_ns": 103933476410552,
+      "after_ns": 103933476410682,
+      "width_ns": 1001,
+      "offset_lower_ns": -130,
+      "offset_upper_ns": 871
+    },
+    {
+      "cycle": 23,
+      "clock": "boottime",
+      "before_ns": 103933496538577,
+      "value_ns": 103933496542653,
+      "after_ns": 103933496543284,
+      "width_ns": 4707,
+      "offset_lower_ns": -631,
+      "offset_upper_ns": 4076
+    },
+    {
+      "cycle": 23,
+      "clock": "monotonic_raw",
+      "before_ns": 103933496550625,
+      "value_ns": 103931306291822,
+      "after_ns": 103933496551396,
+      "width_ns": 771,
+      "offset_lower_ns": -2190259574,
+      "offset_upper_ns": -2190258803
+    },
+    {
+      "cycle": 23,
+      "clock": "realtime",
+      "before_ns": 103933496552638,
+      "value_ns": 1790888410970375885,
+      "after_ns": 103933496553289,
+      "width_ns": 651,
+      "offset_lower_ns": 1790784477473822596,
+      "offset_upper_ns": 1790784477473823247
+    },
+    {
+      "cycle": 23,
+      "clock": "monotonic_control",
+      "before_ns": 103933496554401,
+      "value_ns": 103933496554521,
+      "after_ns": 103933496554601,
+      "width_ns": 200,
+      "offset_lower_ns": -80,
+      "offset_upper_ns": 120
+    }
+  ],
+  "qualification": "Single short local episode. Paired-clock compatibility is not external calibration or absolute accuracy."
+}
