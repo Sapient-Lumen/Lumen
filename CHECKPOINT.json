@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "source_sha256": "1134952c114f0c56f0c8e438c36bd3090e57a9f728a98f72fa946bd984313eb8",
-  "source_bytes": 1077699,
-  "review_ref": "lumen-receipt-refresh-review-20261001-01",
+  "source_sha256": "83345ec481966373b6bbd07a7382e1d95f5ffd28cf00e5f3d43f13d934cf2b82",
+  "source_bytes": 1081532,
+  "review_ref": "lumen-observed-work-refresh-20261001-1506",
   "tests": 287,
   "repository": "Sapient-Lumen/Lumen",
   "publication_mode": "source and metadata at same commit; remote verification required"

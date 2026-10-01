@@ -471,6 +471,20 @@ exit 127
 #| fresh-context recovery qualification; preserve mechanisms and untested limits. Actual 
 #| requested-effect verification remains separate. No implementation delegates used.
 #| 
+#| [lumen-observed-work-refresh-20261001-1506]
+#| 2026-10-01T15:08:04.036139+00:00 | Lumen | main assistant and reviewer | observation
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Lumen directly exercised the receipt-linked refresh tool on five real observed work 
+#| streams, using frozen evidence snapshots and exact inventory hashes. Each candidate 
+#| changed only its selected record and snapshot provenance, then root reviewed and 
+#| incorporated it. The dated inventory now carries accepted Datacube rev1183 and frozen 
+#| pilot07, nine poems with seven historical gaps, eleven timer effects, twenty-one return-
+#| chain effects with request22pending, and the verified287-test Lumen publication. Generic
+#|  receipt parsing did not infer current liveness or complete recurring commitments. Root 
+#| separately updated accepted checkpoint references. All287 tests passed. This records 
+#| local review; publication of this newer inventory still requires exact same-commit 
+#| readback.
+#| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
 # === LUMEN SECTION CONTINUITY.txt BEGIN ===
@@ -3228,6 +3242,7 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-reading-rework-review-20261001-01", "expected_source_sha256": "a06d366f38af89a8df1c4e07a547a6bb949668fea8575986bf7016ae64c7749b", "request_sha256": "2ab5d37a64d3646e1fbbcd07ead195fc4619a949dd7140626dadfafb45641517", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "observation", "text": "Lumen personally reorganized the arrival paths with voice input and no implementation delegates. Current handoff and role paths now precede historical reading. Ten foundational and corrective journal entries form an explicitly selected arrival view; the full exact59-entry predecessor journal remains embedded, and all later entries appear automatically. Sixteen superseded handoff bodies have exact payload hashes and a pinned, previously read-back Git baseline; offline access to those bodies requires that archive. Purpose correction, attributed disagreement, cancellation and actual-versus-synthetic recovery distinctions remain visible. Root verified all archived payload identities against the published predecessor and ran276 embedded tests successfully. This records local review; publication of this new checkpoint still requires a matching source/metadata commit and exact remote readback.", "timestamp_utc": "2026-10-01T13:06:28.487044+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-work-ledger-review-20261001-01", "expected_source_sha256": "459363b585e69cf09154d444cd12d4078c099445156ac4e8d1cfde42d037b2ab", "request_sha256": "0873eecf481db0214bc84adb2fada3606c29c3a8e304730c6462c508d736a157", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "observation", "text": "Lumen directly extended the existing WORK-QUEUES inventory with optional strict tracking records and generated counts, rather than creating another independent work list. Eight dated records comprise six open commitments, one completed experiment and one canceled project. Commitment status is distinct from live execution: every current execution count remains UNKNOWN without fresh observation. Trigger, observation time, request, receipt and deadline are visible. Datacube rev1181 and pilot04, poetry gaps, daily blog, both ten-hour queue experiments, LFS discontinuation and the closed longevity probe are represented. Initial new tests were placed in the wrong fixture class and failed; corrected fixture isolation passed all280 tests. No implementation delegates were used. This records local review, not publication of this checkpoint.", "timestamp_utc": "2026-10-01T13:23:35.554982+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-receipt-refresh-review-20261001-01", "expected_source_sha256": "41991cd84e08e6ac6570d54a60f7df92bd144bc8e8bf90604b8134867782cdd0", "request_sha256": "4864bc474f60cf0731a3c3683629b899a61fdf058fe3e94c316b28bde8489d78", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "observation", "text": "Lumen directly implemented explicit receipt-linked refresh planning. It binds a work-inventory hash, project/request reference, UTC chronology, commitment status and bounded no-follow evidence bytes; cancellation decisions cannot be overridden. The command emits an inert candidate and never applies it or infers authority, execution or completion of recurring work. Root reviewed and incorporated a real five-entry timer receipt using a frozen evidence snapshot. Dogfooding exposed an overstrict lowercase request-ID assumption, corrected to preserve external IDs exactly; an old test also assumed fixed source-provenance wording and was corrected to compare carried provenance instead. All287 tests passed before this review entry. h0p3 explicitly waived further fresh-context recovery qualification; preserve mechanisms and untested limits. Actual requested-effect verification remains separate. No implementation delegates used.", "timestamp_utc": "2026-10-01T14:00:07.591256+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-observed-work-refresh-20261001-1506", "expected_source_sha256": "6ab8c9bd34ee817835f9fd34311369894ef6a538802367b92f269ab60f5f639c", "request_sha256": "abdc15177d0141bd448abd9629e07fb528d5eb2717c27eee318daec7f3120cd8", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "observation", "text": "Lumen directly exercised the receipt-linked refresh tool on five real observed work streams, using frozen evidence snapshots and exact inventory hashes. Each candidate changed only its selected record and snapshot provenance, then root reviewed and incorporated it. The dated inventory now carries accepted Datacube rev1183 and frozen pilot07, nine poems with seven historical gaps, eleven timer effects, twenty-one return-chain effects with request22pending, and the verified287-test Lumen publication. Generic receipt parsing did not infer current liveness or complete recurring commitments. Root separately updated accepted checkpoint references. All287 tests passed. This records local review; publication of this newer inventory still requires exact same-commit readback.", "timestamp_utc": "2026-10-01T15:08:04.036139+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -10735,22 +10750,22 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-01T13:59:45.792609+00:00",
+#|   "recorded_as_of_utc": "2026-10-01T15:06:41.284251+00:00",
 #|   "recorded_by": "Lumen",
-#|   "source_ref": "Explicit receipt-linked refresh candidate; base SHA256 37d2be5744e387e3c9096b78f0aa557ffd37e7769e5e925713fd62286d93caa2; receipt SHA256 ca5ac67cc663db825c4e8af8b2ccd1a308910036c71f99e4fd2459b1eec6055c. Review required; no application or authorization implied.",
+#|   "source_ref": "Explicit receipt-linked refresh candidate; base SHA256 728364b71ba48c9ef20990654ba89d88d67350fd1722ddfbe587b958c82af029; receipt SHA256 9c46e7b3fe61325c89f72556099f01d141f14209c821deedfab6d6e3fb799874. Review required; no application or authorization implied.",
 #|   "queues": [
 #|     {
 #|       "project_id": "lumen",
 #|       "title": "Lumen.sh",
 #|       "owner": "the text of Lumen",
 #|       "priority": "high",
-#|       "recorded_status": "Reading reorganization directly implemented by Lumen;276tests passed and checkpoint verified on GitHub. Consolidated ledger now being implemented directly.",
+#|       "recorded_status": "Direct receipt-linked refresh implementation passed287tests and was published/read-back at8f64dda70efe70c11863bb6fe1bee5cba3a8ca52. This inventory refresh is newer and awaits its own review/publication. Fresh-context recovery qualification is closed by user decision; preserve mechanisms and limits.",
 #|       "checkpoint": {
-#|         "reference": "Verified source and metadata commit47afc7e1343b06986ccc003a8ea248a0d5a45f6a; this ledger edit is newer and not yet published.",
-#|         "sha256": "fc8886ae1863fe82fcc343e15dbe58f7963ac417ad98804afb8b3db3b717526f"
+#|         "reference": "Verified same-commit source/metadata8f64dda70efe70c11863bb6fe1bee5cba3a8ca52; this newer inventory is not yet published.",
+#|         "sha256": "1134952c114f0c56f0c8e438c36bd3090e57a9f728a98f72fa946bd984313eb8"
 #|       },
 #|       "next_actions": [
-#|         "Review and publish this ledger checkpoint; maintain evidence-based refreshes and actual voice-to-effect testing."
+#|         "Review this receipt-linked inventory checkpoint, run tests and verify same-commit publication; maintain actual effect evidence."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -10782,16 +10797,21 @@ if __name__ == "__main__":
 #|           "kind": "journal",
 #|           "reference": "lumen-queue-review-20260930-01",
 #|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/lumen-improvements/observed-refresh-20261001T1506/publication-receipt.json",
+#|           "sha256": "9705db79d15925691f2b118923491a15cc59ac30ae9adddf856a1d13fba7803d"
 #|         }
 #|       ],
 #|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
 #|       "tracking": {
-#|         "status": "running",
+#|         "status": "waiting",
 #|         "trigger": "explicit user request; ongoing maintenance",
-#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "observed_at_utc": "2026-10-01T15:06:41.091579+00:00",
 #|         "execution_observation": "UNKNOWN",
-#|         "request_ref": "Consolidate all current commitments in Lumen.sh",
-#|         "receipt_ref": "https://github.com/Sapient-Lumen/Lumen/commit/47afc7e1343b06986ccc003a8ea248a0d5a45f6a",
+#|         "request_ref": "receipt-refresh-checkpoint-1134952c",
+#|         "receipt_ref": "sha256:9c46e7b3fe61325c89f72556099f01d141f14209c821deedfab6d6e3fb799874",
 #|         "deadline_utc": null
 #|       }
 #|     },
@@ -10885,13 +10905,13 @@ if __name__ == "__main__":
 #|       "title": "Datacube MAIN science",
 #|       "owner": "Lumen across voice and text; delegates execute scoped experiments",
 #|       "priority": "high",
-#|       "recorded_status": "Rev1181 accepted and delivered. Pilot04 independently evaluated24responses:16supported answers and8correct abstentions; information displacement, not general improvement. Routing pilot05 is a prospective draft.",
+#|       "recorded_status": "Rev1183 accepted and delivered after pilot06 was independently evaluated:32responses,26exactquotes,6correctabstentions. Balanced introduction adopted with full original prose retained; finalreleasecontrols statically checked, not fresh respondents. Pilot07 downstream-read plan frozen and undispatched.",
 #|       "checkpoint": {
-#|         "reference": "Accepted rev1181 two-file ZIP, root acceptance and Library delivery recorded in project status.",
-#|         "sha256": "724268b37425e2ad405b4c1f40f75f96d94f632704915c0b9229411a9aad5ed6"
+#|         "reference": "Root-accepted rev1183 ZIP, delivered Librarylibfile_f78e42ad30d88191af04a1067d229f1e; full acceptance evidence retained.",
+#|         "sha256": "0164e8397126ca49287fbc6b8b95f211a6e77ce8ffc120b504d27c3c37e74eb3"
 #|       },
 #|       "next_actions": [
-#|         "Directly inspect routing targets, freeze prospective pilot05 plan, then dispatch a bounded experiment at the next science occurrence."
+#|         "At next science occurrence reconcile and run frozen bounded downstream-read pilot07 once."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -10903,16 +10923,21 @@ if __name__ == "__main__":
 #|           "kind": "reference",
 #|           "reference": "/workspace/scratch/823ba11b4d75/science-intake-20261001/PROJECT-STATUS.json",
 #|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/lumen-improvements/observed-refresh-20261001T1506/datacube-acceptance.json",
+#|           "sha256": "6e4f60e8b4e6a09240839a4f42c1b109d8acfefb2ed19f066a63b3c665f3f894"
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "queued",
 #|         "trigger": "hourly scientific iteration; reconcile before dispatch",
-#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "observed_at_utc": "2026-10-01T15:06:40.223814+00:00",
 #|         "execution_observation": "UNKNOWN",
-#|         "request_ref": null,
-#|         "receipt_ref": "science-intake-20261001/pilot-porch-tradeoff-04/LUMEN-INTERPRETATION.md",
+#|         "request_ref": "rev1183-delivery",
+#|         "receipt_ref": "sha256:46c07dd98e66b5a713b1cb10e6b4373735c835947525bf22b25fae267f82fbb9",
 #|         "deadline_utc": null
 #|       }
 #|     },
@@ -10921,13 +10946,13 @@ if __name__ == "__main__":
 #|       "title": "Hourly poems",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "Seven total entries include one manual baseline and six scheduled effects through12:29UTC; seven04:29\u201310:29occurrences missing, no backfill. Latest scheduled write12:30:17UTC.",
+#|       "recorded_status": "Nine total poems include one manual baseline and eight scheduled effects. Latest14:29:04occurrence written14:29:46UTC after an early request. Seven04:29\u201310:29gaps remain, no backfill.",
 #|       "checkpoint": {
 #|         "reference": "/workspace/shared/lumen-poetry.txt",
 #|         "sha256": null
 #|       },
 #|       "next_actions": [
-#|         "At next occurrence read existing file, lock, deduplicate, compose and verify one new append."
+#|         "At next hourly occurrence preserve existing file, lock and deduplicate, compose one new poem directly and verify append."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -10939,16 +10964,21 @@ if __name__ == "__main__":
 #|           "kind": "reference",
 #|           "reference": "/workspace/shared/lumen-poetry.txt",
 #|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/lumen-improvements/observed-refresh-20261001T1506/poetry.txt",
+#|           "sha256": "2c1584479685ec094d7be537e434444fd8e5d962a909016afaec80fd6c253977"
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "waiting",
 #|         "trigger": "hourly scheduled occurrence; root writes directly",
-#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "observed_at_utc": "2026-10-01T15:06:40.422986+00:00",
 #|         "execution_observation": "UNKNOWN",
-#|         "request_ref": null,
-#|         "receipt_ref": "/workspace/shared/lumen-poetry.txt",
+#|         "request_ref": "lumen-hourly-poetry-20261001T142904Z",
+#|         "receipt_ref": "sha256:aa90b652ca149fc2c93e49ed8c91a64fec3a32419bb5995b14c5fb13caa99f03",
 #|         "deadline_utc": null
 #|       }
 #|     },
@@ -10957,13 +10987,13 @@ if __name__ == "__main__":
 #|       "title": "Timer reliability experiment",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "First five timer occurrences produced checked facts and verified appends.13:57occurrence notification observed13:58:03UTC, dispatch13:58:40, result13:58:56, then exact append. Future scheduled occurrences remain pending until23:07UTC. Evidence is an explicitly frozen five-entry snapshot.",
+#|       "recorded_status": "First11timer occurrences have checked facts and exact verified appends. Ten-hour schedule remains active through23:07UTC. These are dated effects, not proof of isolated scheduler causality.",
 #|       "checkpoint": {
 #|         "reference": "/workspace/shared/worker-queue-pilot/timer/STATE.json",
 #|         "sha256": null
 #|       },
 #|       "next_actions": [
-#|         "Reconcile each actual future timer occurrence by ID and append a reviewed fact; do not use this timer to wake the return-chain."
+#|         "Handle each actual timer occurrence once; keep separate from return-chain and preserve measured timing."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -10985,16 +11015,21 @@ if __name__ == "__main__":
 #|           "kind": "reference",
 #|           "reference": "/workspace/shared/worker-queue-pilot/timer/receipt-snapshots/through-1357-facts.txt",
 #|           "sha256": "a338d8afa980bf25b867f2067ead83bee46c09850541ba2b5992e8b34b769575"
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/lumen-improvements/observed-refresh-20261001T1506/timer-facts.txt",
+#|           "sha256": "47ea5e513deebea706f8c930a9833d44e33ac7c917110bc00bbb33bcd52ab74f"
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "waiting",
 #|         "trigger": "ten-minute calendar occurrence",
-#|         "observed_at_utc": "2026-10-01T13:59:45.586497+00:00",
+#|         "observed_at_utc": "2026-10-01T15:06:40.668578+00:00",
 #|         "execution_observation": "UNKNOWN",
-#|         "request_ref": "timer-20261001T135700Z",
-#|         "receipt_ref": "sha256:ca5ac67cc663db825c4e8af8b2ccd1a308910036c71f99e4fd2459b1eec6055c",
+#|         "request_ref": "timer-20261001T145700Z",
+#|         "receipt_ref": "sha256:aa8f2763ca2062d435a20d3a8612545f4c884356205893d431e38fc2f1966689",
 #|         "deadline_utc": "2026-10-01T23:07:27Z"
 #|       }
 #|     },
@@ -11003,13 +11038,13 @@ if __name__ == "__main__":
 #|       "title": "Return-driven reliability experiment",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "Four facts verified appended; first three unpaced calibration. Fifth worker admitted13:18:26UTC with300second bounded delay. Its current liveness is not inferred from admission.",
+#|       "recorded_status": "First21return-chain facts verified appended, including3unpaced calibration entries. Request return-chain-22 was admitted15:04:50UTC and is awaiting result; current execution liveness is UNKNOWN. Continue until23:07:27UTC or120total.",
 #|       "checkpoint": {
 #|         "reference": "/workspace/shared/worker-queue-pilot/return-chain/STATE.json",
 #|         "sha256": null
 #|       },
 #|       "next_actions": [
-#|         "Handle worker5return, verify and append; dispatch a successor only after completion until deadline or120total. Do not use timer arm to rescue this chain."
+#|         "Reconcile pending return-chain-22 before any successor; review and append actual return, then continue within deadline."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -11021,16 +11056,21 @@ if __name__ == "__main__":
 #|           "kind": "reference",
 #|           "reference": "/workspace/shared/worker-queue-pilot/return-chain/STATE.json",
 #|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "/workspace/shared/lumen-improvements/observed-refresh-20261001T1506/return-facts.txt",
+#|           "sha256": "af1c98b88fb668787fa5530cffa8082b55bd097cb2436b60c7f27566b36986d6"
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "waiting",
 #|         "trigger": "worker return; no calendar dispatch",
-#|         "observed_at_utc": "2026-10-01T13:20:59.615047+00:00",
+#|         "observed_at_utc": "2026-10-01T15:06:40.891616+00:00",
 #|         "execution_observation": "UNKNOWN",
-#|         "request_ref": "return-chain-05",
-#|         "receipt_ref": "/workspace/shared/worker-queue-pilot/return-chain/STATE.json",
+#|         "request_ref": "return-chain-21",
+#|         "receipt_ref": "sha256:1de093e6f506bbc007c9503196480ca31dc20b8a7cbc681f54cc0fd76ed80f97",
 #|         "deadline_utc": "2026-10-01T23:07:27Z"
 #|       }
 #|     },
