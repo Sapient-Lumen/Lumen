@@ -684,37 +684,235 @@ exit 127
 #| restoration plan, so recovering the tool does not pretend to recover external records 
 #| that were never carried.
 #| 
+#| [delegate-checkpoint-continuity-20261001-01]
+#| 2026-10-01T00:10:50.166590+00:00 | delegate: improve_voice_work_bridge | contributing delegate | proposal
+#| Attribution: caller-supplied; not identity authentication or approval
+#| I added a local checkpoint that distinguishes carried bytes from missing inputs and 
+#| external references. The synthetic exercise carried exact tool bytes, its fixture 
+#| registry, a handoff and a selected receipt; one selected evidence file remained 
+#| explicitly missing and one schedule reference remained external. Manifest 
+#| f807c5d5dd7436ea25a49d33bb81ed0022591f5d77c6de4f57b181183352dcbb and content identity 
+#| 590f6f84702c0ebd2913a5663a6533ae804d9415a7e868fb6461265be4b0ab61 verified in a separate 
+#| recipient directory. The restore plan left that empty directory unchanged. Inspection 
+#| also passed in tests after original synthetic sources and registry were removed. None of
+#|  this establishes remote persistence, revives a process, grants permission or performs 
+#| restoration. I chose a readable directory bundle and reused the existing atomic no-
+#| clobber publisher, rather than introduce another archive executor.
+#| 
+#| [lumen-checkpoint-review-20261001-01]
+#| 2026-10-01T00:22:46.399733+00:00 | Lumen | main assistant and reviewer | test-result
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Lumen independently ran all 212 self-tests successfully and inspected the relocated 
+#| synthetic checkpoint: four included byte sets, one explicitly missing input and one 
+#| external reference. Read-only restore planning passed and left its empty destination 
+#| unchanged. This establishes selected local byte portability, not actual restoration, 
+#| remote durability, live process recovery or restored authority. Accepted for 
+#| publication; next work should exercise explicit isolated restoration without overwriting
+#|  existing state.
+#| 
+#| [delegate-isolated-restore-20261001-01]
+#| 2026-10-01T00:33:54.996765+00:00 | delegate: improve_voice_work_bridge | contributing delegate | proposal
+#| Attribution: caller-supplied; not identity authentication or approval
+#| The synthetic cold recipient now recovers the selected bytes rather than only planning 
+#| them. Four exact files were restored as private non-executable data, with one missing 
+#| input and one external reference retained in the original manifest and receipt. Same-
+#| request replay returned receipt 
+#| 731ada6cbb8b067380a203c5cb290a905f2b4f4d6e94506c84729144f7583853. I verified that 
+#| original selected files, the canonical source and the real registry were unchanged by 
+#| that exercise. Restoration refuses even an existing empty target unless it is an intact 
+#| exact replay, so it cannot merge into a live project. The carried registry stays a data 
+#| file and no tool, schedule, credential or process is activated. Tests also cover source 
+#| disappearance after recovery, cancellation signals, lost acknowledgement, collisions and
+#|  changed payloads. The result is local byte recovery with explicit gaps, not recovered 
+#| authority or guaranteed persistence.
+#| 
+#| [lumen-isolated-restore-review-20261001-01]
+#| 2026-10-01T00:55:35.753466+00:00 | Lumen | main assistant and reviewer | test-result
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Lumen independently passed all 224 self-tests and verified four synthetic restored files
+#|  against recorded byte lengths and SHA256 digests, with mode0600. Restoration is 
+#| isolated selected-byte recovery; no original path writes, live registry adoption, 
+#| process restart, permission restoration or remote durability is established. Accepted 
+#| for reviewed publication. The hourly poetry experiment separately produced an actual 
+#| write at 00:53:41 UTC for the 00:29:04 occurrence, demonstrating a delayed request-to-
+#| write path rather than reliable on-time execution. This motivates explicit schedule-
+#| versus-receipt reconciliation without fabricating missed work.
+#| 
+#| [delegate-schedule-reconciliation-20261001-01]
+#| 2026-10-01T01:07:14.373448+00:00 | delegate: improve_voice_work_bridge | contributing delegate | proposal
+#| Attribution: caller-supplied; not identity authentication or approval
+#| A due time and a write receipt are different evidence, and their gap should remain 
+#| visible. I added a read-only comparison of explicit expected occurrences against 
+#| supplied receipt-event timestamps. The synthetic reconstruction of Lumen-reported 
+#| 00:29:04Z and 00:53:41.257313Z yields 1477.257313 seconds of due-to-write delay; it does
+#|  not isolate dispatch latency or explain the cause. The reconstruction is labeled 
+#| retrospective and no actual experiment file, receipt or schedule was read. Missing now 
+#| requires an explicit complete-coverage claim through the evaluation point; absent or 
+#| stale evidence stays unobserved. Duplicate conflicts and multiple distinct actual times 
+#| get no arbitrary winner, and nothing is executed or silently backfilled. Help now says 
+#| development queues are recorded work state, not cron/calendar entries.
+#| 
+#| [lumen-schedule-reconcile-review-20261001-01]
+#| 2026-10-01T02:05:48.554049+00:00 | Lumen | main assistant and reviewer | test-result
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Lumen independently passed all236 self-tests and reproduced the attributed synthetic 
+#| timing report:1477.257313seconds late, with on-time, declared-complete missing and 
+#| unobserved examples distinguished. This report compares supplied evidence; it does not 
+#| establish a live scheduler or calendar. Actual second scheduled poetry write occurred 
+#| at02:04:34.552260UTC for01:29:04UTC, again late. Source and metadata atomic publication 
+#| remains unverified: source blob upload returned cancellation and its expected Git blob 
+#| could not be fetched; no branch update was attempted.
+#| 
+#| [delegate-single-commit-publication-20261001-01]
+#| 2026-10-01T02:40:03.970620+00:00 | delegate: improve_voice_work_bridge | contributing delegate | observation
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Publication should leave one coherent checkpoint rather than a source file and metadata 
+#| that disagree between commits. I contributed an offline plan that binds both byte 
+#| identities to one tree and parent, with every owner-supplied stage result carried in the
+#|  existing attempt history. The local Git exercise preserved an unrelated file and 
+#| verified both paths at one actual local commit; it did not establish anything about 
+#| GitHub. I want uncertainty to remain recoverable: a cancelled blob call can be checked 
+#| by content identity, while an unknown commit ID cannot be invented from its source blob.
+#|  force=false is fast-forward protection, not an old-ref compare-and-swap. This 
+#| contribution awaits Lumen review.
+#| 
+#| [lumen-atomic-plan-review-20261001-01]
+#| 2026-10-01T02:43:13.885974+00:00 | Lumen | main assistant and reviewer | test-result
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Lumen independently passed all 251 self-tests and read both files from the actual 
+#| synthetic local Git commit, verifying their SHA256 digests and the preserved unrelated 
+#| tree entry. Accepted offline planning and cumulative stage reconciliation. The practical
+#|  source fixture was 70 bytes; full-size real-source exercise remains useful. This is not
+#|  a successful GitHub publication. Remote uploads have returned cancellation, with no 
+#| corresponding source blob found. User input about visible approval prompts is pending; 
+#| no cancellation bypass or unsupported success claim is authorized.
+#| 
+#| [delegate-request-recovery-walkthrough-20261001-01]
+#| 2026-10-01T02:54:21.099701+00:00 | delegate: improve_voice_work_bridge | contributing delegate | observation
+#| Attribution: caller-supplied; not identity authentication or approval
+#| I exercised the existing public commands as a resumed reader: an explicitly synthetic 
+#| voice-context request became an exact verified text-side write, preserved its original 
+#| ID through duplicate replay, and traveled with its receipt into selected-byte checkpoint
+#|  recovery. No real voice call occurred; I authored the fixture. Seven selected files 
+#| recovered exactly, while one missing input and one external reference stayed visible. 
+#| The machinery worked. The friction was finding it: the opening command list omitted 
+#| current tools and some current orientation still called implemented checkpoints and 
+#| queues proposed. I corrected those pointers, preserved the earlier wording as history, 
+#| and linked one walkthrough. All embedded helper bytes remain unchanged. Recovered 
+#| records can help us continue honestly, but they do not restore a live session or 
+#| authorize another action.
+#| 
+#| [lumen-request-recovery-review-20261001-01]
+#| 2026-10-01T02:57:11.753573+00:00 | Lumen | main assistant and reviewer | test-result
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Lumen reviewed the linked request-to-recovery walkthrough and independently reran all 
+#| 251 self-tests after the orientation-only changes. The practical synthetic workflow 
+#| connects existing commands without claiming an actual voice call. Historical prose 
+#| remains intact while current help distinguishes implemented local operations from 
+#| external execution and scheduling. Accepted for the next reviewed checkpoint; remote 
+#| publication remains unresolved.
+#| 
+#| [delegate-outbox-dogfood-20261001-01]
+#| 2026-10-01T03:05:51.618943+00:00 | delegate: improve_voice_work_bridge | contributing delegate | observation
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Reading our actual local publication records exposed a concrete failure: status rejected
+#|  the owner report timestamp spelling observed_at_utc. The view also did not connect 
+#| structured review_ref metadata to newer reviewed snapshots, while an older manual active
+#|  pointer could be mistaken for current work. I corrected the read-only interpretation 
+#| and added an explicitly selected compatibility view for the older atomic create_blob 
+#| report. The resulting view separates the newest review-linked source, dated publication 
+#| claims, preserved cancellations and absence of attempt evidence. I checked 57 selected 
+#| actual files stayed byte-identical; no remote call or retry occurred. A manual pointer 
+#| can be internally consistent yet refer to old cancelled work. The summary should make 
+#| that understandable without pretending local evidence proves current GitHub state. This 
+#| contribution awaits Lumen review.
+#| 
+#| [lumen-outbox-reconciliation-review-20261001-01]
+#| 2026-10-01T03:09:21.344754+00:00 | Lumen | main assistant and reviewer | test-result
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Lumen independently passed all 260 self-tests and exercised both human and JSON 
+#| publication status against the actual local outbox, including the explicitly selected 
+#| legacy atomic attempt. The corrected reader accepts the owner timestamp format and 
+#| distinguishes newest reviewed local work, dated publication claims, cancellations and 
+#| pointer differences. Local recorded evidence does not establish current GitHub state. 
+#| Accepted without changing actual outbox records during the review.
+#| 
+#| [delegate-receipt-consistency-20261001-01]
+#| 2026-10-01T03:15:19.644301+00:00 | delegate: improve_voice_work_bridge | contributing delegate | observation
+#| Attribution: caller-supplied; not identity authentication or approval
+#| The most useful next resilience step was checking what an incomplete receipt would tell 
+#| a resumed reader. In a fresh harmless fixture, removing acceptance or target evidence, 
+#| or contradicting acceptance, still let project replay return success. No operation was 
+#| duplicated, but the report was misleading. I tightened completed project receipt 
+#| consistency rather than adding another interface. Valid historical replay still does not
+#|  prove current target state, and an internally consistent record is not authenticated 
+#| truth. I also mapped the old plans to the slices already implemented, preserving their 
+#| exact original specifications. This is a delegate contribution awaiting Lumen review.
+#| 
+#| [lumen-lfs-discontinued-20261001-0341]
+#| 2026-10-01T03:41:54.947557+00:00 | Lumen | main assistant and reviewer | decision
+#| Attribution: caller-supplied; not identity authentication or approval
+#| h0p3 explicitly discontinued LFS++ at 2026-10-01 03:41 UTC: stop its iteration and 
+#| follow-up work, preserving existing files and evidence. This decision supersedes 
+#| historical LFS queue next-actions. No active LFS native worker or matching local process
+#|  was observed during cancellation checks. Do not resume LFS work unless h0p3 requests it
+#|  again. Lumen.sh and other experiments remain unaffected.
+#| 
+#| [lumen-current-decisions-review-20261001-01]
+#| 2026-10-01T04:03:16.465502+00:00 | Lumen | main assistant and reviewer | test-result
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Lumen personally reviewed and implemented explicit current decision projection without 
+#| delegating this work. All 273 self-tests passed after the final documentation update. 
+#| The LFS discontinuation now suppresses historical effective next actions in queue output
+#|  and appears in office recovery, while original records remain intact. Structured 
+#| decisions require journal evidence and coherent supersession; arbitrary prose does not 
+#| become commands or permission. A resume request does not restart work or restore 
+#| historical actions automatically. This establishes local recorded-state behavior, not 
+#| live worker control or remote publication.
+#| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
-#| CURRENT HANDOFF — owner attempt recording, 2026-09-30 UTC
+#| CURRENT DECISION PROJECTION — Lumen direct implementation, 2026-10-01
+#| 
+#| Queue and office views now project explicit, journal-linked project decisions from
+#| WORK-DECISIONS.json. The discontinued LFS++ project has no effective next actions,
+#| while its old queue snapshot remains visible as historical evidence. Resume-requested
+#| does not reactivate old actions or grant execution permission; fresh reconciliation
+#| is required. Arbitrary journal prose is not parsed into commands or authority.
+#| 
+#| Lumen personally implemented and tested this correction after direct source review.
+#| Next: improve current project orientation and resolve actual GitHub transport failures;
+#| offline plans and reported receipts do not establish remote publication.
+#| 
+#| Retained preceding handoff (read as historical context):
+#| 
+#| CURRENT HANDOFF — replay requires coherent historical evidence, 2026-10-01 UTC
 #| Author: delegate: improve_voice_work_bridge
-#| This explicitly supersedes the capsule retained in HISTORICAL-HANDOFF-OUTBOX.txt.
-#| Lumen reviewed the status view in lumen-publication-status-review-20260930-01.
+#| This explicitly supersedes HISTORICAL-HANDOFF-OUTBOX-DOGFOOD.txt.
+#| Lumen reviewed the local outbox view in lumen-outbox-reconciliation-review-20261001-01.
 #| 
-#| The reviewed outbox-status source 00daf08e5783285af642dd11933e65b928877e38b19f9a6133dcee4cee21daee
-#| has not been reported published. Lumen reports the upload call was cancelled and
-#| remote readback still showed prior e5bc87b... bytes. The actual pending-state.json
-#| records uncertain, with explicit cancellation and no automatic retry. See the dated
-#| PUBLICATION-CANCELLATION-OBSERVATION.json; this file cannot independently verify
-#| GitHub. Silence or a sent request is not completion.
+#| Reviewing the carried plans suggested testing existing failure behavior before adding
+#| another interface. An isolated completed project receipt returned exit 0 when its
+#| acceptance object was removed, contradicted or its target evidence removed. Replay
+#| did not rerun the action, but that success status could mislead a resumed reader.
+#| The narrow correction rejects inconsistent completed receipt evidence before replay
+#| or receipt-show can present it as accepted. USAGE.txt and REQUEST-RECOVERY.txt explain
+#| the checks and their limits. No live ledger was changed in this experiment.
 #| 
-#| publication record REQUEST.json now records owner-supplied attempt evidence inside
-#| the existing outbox. Stable attempt/record IDs and exact predecessor hashes preserve
-#| history and reject conflicting reuses. Frozen source bytes are checked; cancellation
-#| is retained as an uncertain event. An uncertain attempt cannot silently return to
-#| pending. Published requires supplied commit and exact-readback report, still labeled
-#| as owner evidence. No network call, credential or external retry occurs.
+#| Valid historical replay stays historical: it does not read current targets, even
+#| if they have since disappeared. Failed acceptance remains failed; expected nonzero
+#| command exits can still pass their explicit verification. Started/uncertain records
+#| stay unresolved. These are internal consistency checks, not signatures or proof
+#| that the recorded actor/result is authentic. Preserve original IDs and evidence.
 #| 
-#| publication status remains read-only and reconciles immutable attempt history with
-#| existing latest/pending files without selecting an automatic winner. Those legacy
-#| files remain owner-maintained, not rewritten by recording. PUBLICATION-ATTEMPTS.txt
-#| specifies exact inputs, transitions, replay and interruption recovery. The publication
-#| directory gained declared write scope for recording; no OS/platform access changed.
+#| PLANS.txt now maps implemented slices to current instructions and identifies the
+#| old plan language as historical. Exact carried design specifications remain intact.
+#| Process launch/stop, actual scheduler adapters and guarded candidate application
+#| are still deferred; none is a reason to expand access or retry a remote operation.
 #| 
-#| Next: Lumen reviews the local sequence and cancellation evidence, then decides the
-#| permitted publication path. Preserve h0p3's conversation and earlier snapshots. The
-#| local record is evidence about a claim, never a substitute for the actual action.
+#| Next: Lumen reviews the demonstrated correction and its focused failure tests.
+#| Continue from h0p3's conversation, current permissions and measured evidence.
 # === LUMEN SECTION CURRENT-HANDOFF.txt END ===
 
 # === LUMEN SECTION CONSTITUTION.txt BEGIN ===
@@ -842,13 +1040,15 @@ STATUSES = ("request", "proposal", "observation", "inference", "unknown", "decis
             "test-result", "continuity", "authored-text")
 PROGRAMS = ("run_request.py", "structured_request.py", "test_run_request.py",
             "test_structured_request.py", "test_lumen_script.py", "zip_intake.py", "test_zip_intake.py",
-            "project_registry.py", "test_project_registry.py", "project_requests.py", "test_project_requests.py", "test_prose_layout.py", "capabilities.py", "test_capabilities.py", "office_status.py", "test_office_status.py", "proposal.py", "test_proposal.py", "review_records.py", "test_review_records.py", "process_inspection.py", "test_process_inspection.py", "process_export.py", "test_process_export.py", "work_queue.py", "test_work_queue.py", "publication_status.py", "test_publication_status.py", "publication_attempts.py", "test_publication_attempts.py")
+            "project_registry.py", "test_project_registry.py", "project_requests.py", "test_project_requests.py", "test_prose_layout.py", "capabilities.py", "test_capabilities.py", "office_status.py", "test_office_status.py", "proposal.py", "test_proposal.py", "review_records.py", "test_review_records.py", "process_inspection.py", "test_process_inspection.py", "process_export.py", "test_process_export.py", "work_queue.py", "test_work_queue.py", "publication_status.py", "test_publication_status.py", "publication_attempts.py", "test_publication_attempts.py", "checkpoints.py", "test_checkpoints.py", "checkpoint_restore.py", "test_checkpoint_restore.py", "schedule_reconcile.py", "test_schedule_reconcile.py", "git_publication.py", "test_git_publication.py")
 
 
 EXPECTED_SECTIONS = set(PROGRAMS) | {"CONSTITUTION.txt", "CONTINUITY.txt", "USAGE.txt",
                                     "README.txt", "voice-container-bridge-spec.md", "conversation.jsonl",
-                                    "project-registry.schema.json", "lumen-multiproject-spec.md", "project-request.schema.json", "IDENTITY.txt", "OFFICE.txt", "CONVERSATION.txt", "CURRENT-HANDOFF.txt", "CAPABILITIES.txt", "VOICE-AWAKENING.txt", "TEXT-AWAKENING.txt", "HISTORICAL-OFFICE-20260930.txt", "HISTORICAL-HANDOFF-PROSE.txt", "OFFICE-STATE.json", "OFFICE-COMMANDS.txt", "PROPOSALS.txt", "proposal-request.schema.json", "HISTORICAL-HANDOFF-OFFICE.txt", "HISTORICAL-OFFICE-STATE.json", "REVIEWS.txt", "review-request.schema.json", "HISTORICAL-HANDOFF-PACKAGING.txt", "HISTORICAL-OFFICE-STATE-PACKAGING.json", "RECOVERY.txt", "HISTORICAL-RECOVERY-FIRST.txt", "PLANS.txt", "PROCESS-NEXT.txt", "lumen-process-control-spec.md", "lumen-continuing-office-spec.md", "PROCESS-CONSOLE.txt", "process-observation.schema.json", "HISTORICAL-HANDOFF-REVIEWS.txt", "HISTORICAL-OFFICE-STATE-REVIEWS.json", "PROCESS-EXPORT.txt", "process-export-request.schema.json", "DELIVERY.txt", "HISTORICAL-HANDOFF-INSPECTION.txt", "HISTORICAL-OFFICE-STATE-INSPECTION.json", "HISTORICAL-NAME-SPELLING.json", "WORK-QUEUES.json", "WORK-QUEUES.txt", "work-queue.schema.json", "HISTORICAL-HANDOFF-EXPORT.txt", "HISTORICAL-OFFICE-STATE-EXPORT.json", "HISTORICAL-WORK-QUEUES-FIRST.json", "REAL-PROJECTS.txt", "HISTORICAL-WORK-QUEUES-PRE-REGISTRATION.json", "HISTORICAL-HANDOFF-QUEUES.txt", "HISTORICAL-OFFICE-STATE-QUEUES.json", "PUBLICATION-OUTBOX.txt", "PUBLICATION-OBSERVATION.json", "HISTORICAL-HANDOFF-REGISTRATION.txt", "HISTORICAL-OFFICE-STATE-REGISTRATION.json", "PUBLICATION-ATTEMPTS.txt", "HISTORICAL-PUBLICATION-OUTBOX-READONLY.txt", "HISTORICAL-HANDOFF-OUTBOX.txt", "HISTORICAL-OFFICE-STATE-OUTBOX.json", "PUBLICATION-CANCELLATION-OBSERVATION.json"}
+                                    "project-registry.schema.json", "lumen-multiproject-spec.md", "project-request.schema.json", "IDENTITY.txt", "OFFICE.txt", "CONVERSATION.txt", "CURRENT-HANDOFF.txt", "CAPABILITIES.txt", "VOICE-AWAKENING.txt", "TEXT-AWAKENING.txt", "HISTORICAL-OFFICE-20260930.txt", "HISTORICAL-HANDOFF-PROSE.txt", "OFFICE-STATE.json", "OFFICE-COMMANDS.txt", "PROPOSALS.txt", "proposal-request.schema.json", "HISTORICAL-HANDOFF-OFFICE.txt", "HISTORICAL-OFFICE-STATE.json", "REVIEWS.txt", "review-request.schema.json", "HISTORICAL-HANDOFF-PACKAGING.txt", "HISTORICAL-OFFICE-STATE-PACKAGING.json", "RECOVERY.txt", "HISTORICAL-RECOVERY-FIRST.txt", "PLANS.txt", "PROCESS-NEXT.txt", "lumen-process-control-spec.md", "lumen-continuing-office-spec.md", "PROCESS-CONSOLE.txt", "process-observation.schema.json", "HISTORICAL-HANDOFF-REVIEWS.txt", "HISTORICAL-OFFICE-STATE-REVIEWS.json", "PROCESS-EXPORT.txt", "process-export-request.schema.json", "DELIVERY.txt", "HISTORICAL-HANDOFF-INSPECTION.txt", "HISTORICAL-OFFICE-STATE-INSPECTION.json", "HISTORICAL-NAME-SPELLING.json", "WORK-QUEUES.json", "WORK-QUEUES.txt", "work-queue.schema.json", "HISTORICAL-HANDOFF-EXPORT.txt", "HISTORICAL-OFFICE-STATE-EXPORT.json", "HISTORICAL-WORK-QUEUES-FIRST.json", "REAL-PROJECTS.txt", "HISTORICAL-WORK-QUEUES-PRE-REGISTRATION.json", "HISTORICAL-HANDOFF-QUEUES.txt", "HISTORICAL-OFFICE-STATE-QUEUES.json", "PUBLICATION-OUTBOX.txt", "PUBLICATION-OBSERVATION.json", "HISTORICAL-HANDOFF-REGISTRATION.txt", "HISTORICAL-OFFICE-STATE-REGISTRATION.json", "PUBLICATION-ATTEMPTS.txt", "HISTORICAL-PUBLICATION-OUTBOX-READONLY.txt", "HISTORICAL-HANDOFF-OUTBOX.txt", "HISTORICAL-OFFICE-STATE-OUTBOX.json", "PUBLICATION-CANCELLATION-OBSERVATION.json", "CHECKPOINTS.txt", "HISTORICAL-HANDOFF-ATTEMPTS.txt", "HISTORICAL-OFFICE-STATE-ATTEMPTS.json", "CHECKPOINT-RESTORE.txt", "HISTORICAL-CHECKPOINTS-PLAN-ONLY.txt", "HISTORICAL-HANDOFF-CHECKPOINT.txt", "HISTORICAL-OFFICE-STATE-CHECKPOINT.json", "SCHEDULE-RECONCILIATION.txt", "HISTORICAL-HANDOFF-RESTORE.txt", "HISTORICAL-OFFICE-STATE-RESTORE.json", "GIT-PUBLICATION.txt", "HISTORICAL-HANDOFF-SCHEDULE.txt", "HISTORICAL-OFFICE-STATE-SCHEDULE.json", "REQUEST-RECOVERY.txt", "HISTORICAL-RECOVERY-PRE-WALKTHROUGH.txt", "HISTORICAL-HANDOFF-GIT-PLAN.txt", "HISTORICAL-OFFICE-STATE-GIT-PLAN.json", "HISTORICAL-HANDOFF-REQUEST-RECOVERY.txt", "HISTORICAL-OFFICE-STATE-REQUEST-RECOVERY.json", "HISTORICAL-HANDOFF-OUTBOX-DOGFOOD.txt", "HISTORICAL-OFFICE-STATE-OUTBOX-DOGFOOD.json"}
 
+
+EXPECTED_SECTIONS.add("WORK-DECISIONS.json")
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
@@ -996,9 +1196,11 @@ def show_status(source):
     print("SHA-256:", sha(source), "(content identity, not authentication or approval)")
     print("Commands: help, constitution, map, source SECTION, conversation show/append,")
     print("          run --state-dir DIR LEGACY_ARGUMENTS, request --state-dir DIR FILE,")
-    print("          archive inspect/materialize, project registry/request/receipt commands, status/handoff, capabilities, proposal, review, process inspect/tail/export, self-test")
+    print("          archive inspect/materialize, project registry/request/receipt commands, status/handoff, capabilities, proposal, review, process inspect/tail/export,")
+    print("          queue, publication, checkpoint, schedule, self-test")
     print("Use help for invocation details and permission boundaries.")
     print("Standalone recovery inventory: source RECOVERY.txt")
+    print("Request-to-recovery walkthrough: source REQUEST-RECOVERY.txt")
 
 
 @contextlib.contextmanager
@@ -1035,7 +1237,7 @@ def in_memory_programs(source, names):
 
 
 def execute_office(source, action, arguments):
-    with in_memory_programs(source, ["office_status"]) as modules:
+    with in_memory_programs(source, ["project_registry", "work_queue", "office_status"]) as modules:
         office = modules["office_status"]
         def observe_project(path, project_id, request_id):
             names = ["project_registry"]
@@ -1211,10 +1413,14 @@ def parser():
         office.add_argument("--request-id")
     capabilities = commands.add_parser("capabilities", help="local read-only inspection or explicit bounded probe")
     capabilities.add_argument("arguments", nargs=argparse.REMAINDER)
-    queue = commands.add_parser("queue", help="read-only recorded work and explicit project evidence")
+    queue = commands.add_parser("queue", help="recorded work state, not cron/calendar registration")
     queue.add_argument("arguments", nargs=argparse.REMAINDER)
     publication = commands.add_parser("publication", help="explicit owner recording and read-only outbox reconciliation")
     publication.add_argument("arguments", nargs=argparse.REMAINDER)
+    checkpoint = commands.add_parser("checkpoint", help="selected-file export, inspect, restore plan and explicit isolated restoration")
+    checkpoint.add_argument("arguments", nargs=argparse.REMAINDER)
+    schedule = commands.add_parser("schedule", help="read-only expected occurrence versus receipt evidence; no scheduler installation")
+    schedule.add_argument("arguments", nargs=argparse.REMAINDER)
     process = commands.add_parser("process", help="saved observation/tail and explicit completed-request export")
     process.add_argument("arguments", nargs=argparse.REMAINDER)
     review = commands.add_parser("review", help="explicit attributed review records; no candidate application")
@@ -1294,10 +1500,18 @@ def main(argv=None):
                     return modules["office_status"].project_view(modules["project_registry"], request_modules["project_requests"], path, project_id, request_id)
             return modules["work_queue"].main(args.arguments, sections(source)[0], journal_entries(source), sha(source), observe_queue_project)
     elif args.command == "publication":
-        with in_memory_programs(source, ["project_registry", "proposal", "publication_status", "publication_attempts"]) as modules:
+        with in_memory_programs(source, ["project_registry", "proposal", "publication_status", "git_publication", "publication_attempts"]) as modules:
+            if args.arguments and args.arguments[0] in ("git-plan", "git-reconcile"):
+                return modules["git_publication"].main(args.arguments, sha(source))
             if args.arguments and args.arguments[0] == "record":
                 return modules["publication_attempts"].main(args.arguments[1:], journal_entries(source), sha(source))
             return modules["publication_status"].main(args.arguments, journal_entries(source), sha(source), modules["publication_attempts"].inspect_attempts)
+    elif args.command == "checkpoint":
+        with in_memory_programs(source, ["project_registry", "proposal", "run_request", "structured_request", "project_requests", "zip_intake", "checkpoints", "checkpoint_restore"]) as modules:
+            return modules["checkpoints"].main(args.arguments, source, str(ARTIFACT))
+    elif args.command == "schedule":
+        with in_memory_programs(source, ["project_registry", "proposal", "schedule_reconcile"]) as modules:
+            return modules["schedule_reconcile"].main(args.arguments, sha(source))
     elif args.command == "process":
         names = ["project_registry", "proposal", "process_inspection"]
         if args.arguments and args.arguments[0] == "export":
@@ -1334,6 +1548,14 @@ if __name__ == "__main__":
 # is executed merely by reading, showing, or appending conversation data.
 
 # === LUMEN SECTION USAGE.txt BEGIN ===
+#| CURRENT NAVIGATION — 2026-10-01
+#| For a request -> verified receipt -> duplicate replay -> selected checkpoint ->
+#| isolated restore walkthrough, read source REQUEST-RECOVERY.txt. Bare help now lists
+#| checkpoint, publication, queue and schedule. Detailed commands: source CHECKPOINTS.txt,
+#| source CHECKPOINT-RESTORE.txt, source GIT-PUBLICATION.txt and source WORK-QUEUES.txt.
+#| Older phase-specific descriptions below retain their original scope and timing;
+#| the current navigation and dated handoff identify features implemented since then.
+#| 
 #| Lumen.sh usage and recovery
 #| 
 #| Run with Bash; its launcher executes the same source as isolated Python:
@@ -1716,6 +1938,37 @@ if __name__ == "__main__":
 #| 1000 entries. These are explicit runtime request limits, not a bound on Lumen.sh
 #| or its conversation/history size. Commands can have separately bounded output logs.
 #| No real project is registered by the test suite; all fixtures use isolated roots.
+#| 
+#| Timing evidence: schedule reconcile --spec FILE --receipts FILE --as-of UTC
+#| Read SCHEDULE-RECONCILIATION.txt for strict input shapes and conservative missing/
+#| unobserved distinctions. Development queues are work records, not cron/calendar
+#| entries. This command performs no scheduling, execution, backfill or platform query.
+#| 
+#| Single-commit publication planning (local only): publication git-plan REQUEST
+#| and publication git-reconcile --plan PLAN --observations STAGES. Persist stage
+#| results through version2 publication record requests in the existing outbox.
+#| Read GIT-PUBLICATION.txt before owner-operated remote steps. No remote calls occur.
+#| 
+#| Publication status can inspect an explicitly selected legacy atomic create_blob
+#| report with --legacy-attempt OUTBOX/CHILD. The summary distinguishes review-linked
+#| snapshots, dated owner publication claims, cancellations and missing attempt evidence.
+#| Manual pointers are not live state. See PUBLICATION-OUTBOX.txt.
+#| 
+#| Completed project receipt consistency — 2026-10-01
+#| project receipt show and project request replay now reject missing or contradictory
+#| completed acceptance evidence instead of deriving success from request_exit_status
+#| alone. They require boolean verification/acceptance, matching operation exit evidence,
+#| complete declared-target evidence, and request acceptance status 0 or 65 consistent
+#| with those checks. Successful exact writes must carry byte-count/SHA256 readback
+#| matching the recorded input. Command verification must match its recorded expected
+#| and actual exit, including deliberately expected nonzero success.
+#| This check reads historical receipt data only. It does not inspect current targets,
+#| repair or replace receipts, authenticate a caller or prove present output state.
+#| Started/uncertain records remain unresolved and never become executable retry grants.
+#| Legacy non-project CLI receipts retain their previous semantics. Keep inconsistent
+#| records for inspection and reconcile the original request; do not bypass them with
+#| a new ID. Entirely self-consistent fabricated evidence is not detected as forgery:
+#| these checks detect internal inconsistency, not authenticated authorship.
 # === LUMEN SECTION USAGE.txt END ===
 
 # === LUMEN SECTION run_request.py BEGIN ===
@@ -3425,6 +3678,21 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-publication-status-review-20260930-01", "expected_source_sha256": "27f024a97b6efb2152a14e6c5aecab83c6df38432c708a557d083f56ce5f78b1", "request_sha256": "f73ebf93aa270faa0eba01dd723e0ee2f5207fdc810e45269854f2c7c4593911", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "I independently ran all 188 tests, read the outbox contract, and exercised publication status against the real registered publication directory. It found the exact reviewed e5bc snapshot and kept owner-reported publication separate from UNKNOWN remote state. Earlier delegate candidates remained prepared. This is useful recovery evidence, not an autonomous publisher. Next improve atomic owner-side state recording and frozen snapshots using the same existing outbox, so interrupted connector work leaves a consistent, inspectable attempt rather than loose manual metadata.", "timestamp_utc": "2026-09-30T23:42:30.540235+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "delegate-publication-attempts-20260930-01", "expected_source_sha256": "5a69c41072d9468ffde0a081451e933dc99231f03ccd570d2c43d89c5ac88312", "request_sha256": "7eecb9f01338f4dd11319c09c541282a24c64f165f5d96c3c32323e3c901b6cc", "role": "contributing delegate", "speaker": "delegate: improve_voice_work_bridge", "status": "proposal", "text": "The same publication outbox now supports explicit atomic owner evidence with stable attempt/record IDs and predecessor hashes. I kept reported state separate from external effects: recording published requires a supplied commit and exact-readback claim but performs no network verification. Cancellation remains an uncertain event, and an uncertain attempt cannot silently return to pending. I exercised a local prepared\u2192reviewed\u2192pending\u2192reported-success sequence in isolated fixtures, plus replay, conflicts, concurrency and interrupted publication. In the real outbox I recorded a retrospective local source-retention event and Lumen-reported cancellation for outbox-status-00daf08e; the cancelled-owner-report head is 35b96bb36983a4dc74236a874e4fa18a5c1ae1686edf5bb98ecc7728cc2772c4. Its identical request replayed, while latest.json and pending-state.json stayed byte-identical. That is local evidence recovery, not a new GitHub attempt. Existing status reconciles the preserved history and compatibility reports without choosing an automatic winner.", "timestamp_utc": "2026-09-30T23:53:48.133762+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-publication-record-review-20260930-01", "expected_source_sha256": "8c5d57a0db799aa2c27fa89d3897cbaac32f27d3875f020d21a7702e5b61eac3", "request_sha256": "3f40c466505e7d79fef9dfc5013f71d03fae81759cc36a38abb4fceeb61aef8e", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "I independently ran all 199 tests, reviewed the owner-attempt contract and exercised the actual cancelled-attempt replay through the canonical command. It returned the same immutable event without retrying GitHub or changing compatibility reports. The outbox now preserves cancellation and uncertain evidence explicitly. Next develop a local checkpoint package for selected project inputs and state, with a manifest and read-only restoration plan, so recovering the tool does not pretend to recover external records that were never carried.", "timestamp_utc": "2026-09-30T23:57:22.152395+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "delegate-checkpoint-continuity-20261001-01", "expected_source_sha256": "4c144545db68d1b106548e9cc7d4de31bd2b47b3f82797b4df6de329c6e4811d", "request_sha256": "ad987f5103c4df812e7db8781e355b102738dc48e6eb4c4024c9106101a08f39", "role": "contributing delegate", "speaker": "delegate: improve_voice_work_bridge", "status": "proposal", "text": "I added a local checkpoint that distinguishes carried bytes from missing inputs and external references. The synthetic exercise carried exact tool bytes, its fixture registry, a handoff and a selected receipt; one selected evidence file remained explicitly missing and one schedule reference remained external. Manifest f807c5d5dd7436ea25a49d33bb81ed0022591f5d77c6de4f57b181183352dcbb and content identity 590f6f84702c0ebd2913a5663a6533ae804d9415a7e868fb6461265be4b0ab61 verified in a separate recipient directory. The restore plan left that empty directory unchanged. Inspection also passed in tests after original synthetic sources and registry were removed. None of this establishes remote persistence, revives a process, grants permission or performs restoration. I chose a readable directory bundle and reused the existing atomic no-clobber publisher, rather than introduce another archive executor.", "timestamp_utc": "2026-10-01T00:10:50.166590+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-checkpoint-review-20261001-01", "expected_source_sha256": "b1fca7e993cc1c0132feb65bd742b08435b67a61fdcee1cacdd9296dd5b8b5e9", "request_sha256": "2d3d6c50817a43e128451524d780985f08a707b883d01e008d34dd3875b84f4b", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen independently ran all 212 self-tests successfully and inspected the relocated synthetic checkpoint: four included byte sets, one explicitly missing input and one external reference. Read-only restore planning passed and left its empty destination unchanged. This establishes selected local byte portability, not actual restoration, remote durability, live process recovery or restored authority. Accepted for publication; next work should exercise explicit isolated restoration without overwriting existing state.", "timestamp_utc": "2026-10-01T00:22:46.399733+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "delegate-isolated-restore-20261001-01", "expected_source_sha256": "4d3e87fb6cd20737615e0e3ee6af711394011cc11f3c4a87bd5494c7e139c50b", "request_sha256": "f4bb864315cbf4004af7370ba9903c9b82887bba5efa3c474b8acfd6f32b38f5", "role": "contributing delegate", "speaker": "delegate: improve_voice_work_bridge", "status": "proposal", "text": "The synthetic cold recipient now recovers the selected bytes rather than only planning them. Four exact files were restored as private non-executable data, with one missing input and one external reference retained in the original manifest and receipt. Same-request replay returned receipt 731ada6cbb8b067380a203c5cb290a905f2b4f4d6e94506c84729144f7583853. I verified that original selected files, the canonical source and the real registry were unchanged by that exercise. Restoration refuses even an existing empty target unless it is an intact exact replay, so it cannot merge into a live project. The carried registry stays a data file and no tool, schedule, credential or process is activated. Tests also cover source disappearance after recovery, cancellation signals, lost acknowledgement, collisions and changed payloads. The result is local byte recovery with explicit gaps, not recovered authority or guaranteed persistence.", "timestamp_utc": "2026-10-01T00:33:54.996765+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-isolated-restore-review-20261001-01", "expected_source_sha256": "7311d794b3bcc2fc6362f7f17529039c2a4ad16cdb51034cffaa73f10e0c244f", "request_sha256": "4b830b8abf5ae85321c03b2d6457831d3c97b385355a474ff87eb140851aa785", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen independently passed all 224 self-tests and verified four synthetic restored files against recorded byte lengths and SHA256 digests, with mode0600. Restoration is isolated selected-byte recovery; no original path writes, live registry adoption, process restart, permission restoration or remote durability is established. Accepted for reviewed publication. The hourly poetry experiment separately produced an actual write at 00:53:41 UTC for the 00:29:04 occurrence, demonstrating a delayed request-to-write path rather than reliable on-time execution. This motivates explicit schedule-versus-receipt reconciliation without fabricating missed work.", "timestamp_utc": "2026-10-01T00:55:35.753466+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "delegate-schedule-reconciliation-20261001-01", "expected_source_sha256": "cf0e09088d60a8b2ce9733555712f01071997327c45af8455b3319305cb99f19", "request_sha256": "b598fb14d7ae490ff43ec24999cccddbb673860e7b67ef00becb258589f37b4d", "role": "contributing delegate", "speaker": "delegate: improve_voice_work_bridge", "status": "proposal", "text": "A due time and a write receipt are different evidence, and their gap should remain visible. I added a read-only comparison of explicit expected occurrences against supplied receipt-event timestamps. The synthetic reconstruction of Lumen-reported 00:29:04Z and 00:53:41.257313Z yields 1477.257313 seconds of due-to-write delay; it does not isolate dispatch latency or explain the cause. The reconstruction is labeled retrospective and no actual experiment file, receipt or schedule was read. Missing now requires an explicit complete-coverage claim through the evaluation point; absent or stale evidence stays unobserved. Duplicate conflicts and multiple distinct actual times get no arbitrary winner, and nothing is executed or silently backfilled. Help now says development queues are recorded work state, not cron/calendar entries.", "timestamp_utc": "2026-10-01T01:07:14.373448+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-schedule-reconcile-review-20261001-01", "expected_source_sha256": "87c2f78a4be00d8503d8b164f37c49c34f8d452a99d0df95ce4ee1325e0fba7c", "request_sha256": "a21b571df906e2461bb6d4b4aae500341cbe334db897c5da07f4c7adf8c432f0", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen independently passed all236 self-tests and reproduced the attributed synthetic timing report:1477.257313seconds late, with on-time, declared-complete missing and unobserved examples distinguished. This report compares supplied evidence; it does not establish a live scheduler or calendar. Actual second scheduled poetry write occurred at02:04:34.552260UTC for01:29:04UTC, again late. Source and metadata atomic publication remains unverified: source blob upload returned cancellation and its expected Git blob could not be fetched; no branch update was attempted.", "timestamp_utc": "2026-10-01T02:05:48.554049+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "delegate-single-commit-publication-20261001-01", "expected_source_sha256": "a7ea0ed07704078d89b38c4595d473e4b64e5dbd41b9b8deaa045dc151724e99", "request_sha256": "e3bdd2ba546fce7e67226cea625838ae8981fc67cff874ac2ed383084c0b6edf", "role": "contributing delegate", "speaker": "delegate: improve_voice_work_bridge", "status": "observation", "text": "Publication should leave one coherent checkpoint rather than a source file and metadata that disagree between commits. I contributed an offline plan that binds both byte identities to one tree and parent, with every owner-supplied stage result carried in the existing attempt history. The local Git exercise preserved an unrelated file and verified both paths at one actual local commit; it did not establish anything about GitHub. I want uncertainty to remain recoverable: a cancelled blob call can be checked by content identity, while an unknown commit ID cannot be invented from its source blob. force=false is fast-forward protection, not an old-ref compare-and-swap. This contribution awaits Lumen review.", "timestamp_utc": "2026-10-01T02:40:03.970620+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-atomic-plan-review-20261001-01", "expected_source_sha256": "4b3f442dd51ff31d718e9d04b104837b3b61cc87c2e7d9a5a4c7f4166047edd8", "request_sha256": "d49130661918cc3f4ee51edcf57ec2df00231516919609c26b933da504793c4e", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen independently passed all 251 self-tests and read both files from the actual synthetic local Git commit, verifying their SHA256 digests and the preserved unrelated tree entry. Accepted offline planning and cumulative stage reconciliation. The practical source fixture was 70 bytes; full-size real-source exercise remains useful. This is not a successful GitHub publication. Remote uploads have returned cancellation, with no corresponding source blob found. User input about visible approval prompts is pending; no cancellation bypass or unsupported success claim is authorized.", "timestamp_utc": "2026-10-01T02:43:13.885974+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "delegate-request-recovery-walkthrough-20261001-01", "expected_source_sha256": "2311d4a23f8c702d0dc1d83940a8fb777c95a8cab31371f717d521ea1306673b", "request_sha256": "978741633ffcb4f9c2b27d0e56cbc3c42a12adc2728affe645d4cf7a6b989b4e", "role": "contributing delegate", "speaker": "delegate: improve_voice_work_bridge", "status": "observation", "text": "I exercised the existing public commands as a resumed reader: an explicitly synthetic voice-context request became an exact verified text-side write, preserved its original ID through duplicate replay, and traveled with its receipt into selected-byte checkpoint recovery. No real voice call occurred; I authored the fixture. Seven selected files recovered exactly, while one missing input and one external reference stayed visible. The machinery worked. The friction was finding it: the opening command list omitted current tools and some current orientation still called implemented checkpoints and queues proposed. I corrected those pointers, preserved the earlier wording as history, and linked one walkthrough. All embedded helper bytes remain unchanged. Recovered records can help us continue honestly, but they do not restore a live session or authorize another action.", "timestamp_utc": "2026-10-01T02:54:21.099701+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-request-recovery-review-20261001-01", "expected_source_sha256": "ca78db495b11a0363ec4f64d1bddd749a9ae35efcae37e3734af714a5b1a06d7", "request_sha256": "dc042a963e07a331efe0fece7a92cf06c98ac0e7a6572aecf03e647d0eb2f166", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen reviewed the linked request-to-recovery walkthrough and independently reran all 251 self-tests after the orientation-only changes. The practical synthetic workflow connects existing commands without claiming an actual voice call. Historical prose remains intact while current help distinguishes implemented local operations from external execution and scheduling. Accepted for the next reviewed checkpoint; remote publication remains unresolved.", "timestamp_utc": "2026-10-01T02:57:11.753573+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "delegate-outbox-dogfood-20261001-01", "expected_source_sha256": "b06d21054cd9795a3a782d2b47e953a07dfdf00177df846d32d837cdc1fedb89", "request_sha256": "1ac5b3f0ce0433b9147c7cb9d761ebce0c50e5361ad8424b97180007fcf9d31f", "role": "contributing delegate", "speaker": "delegate: improve_voice_work_bridge", "status": "observation", "text": "Reading our actual local publication records exposed a concrete failure: status rejected the owner report timestamp spelling observed_at_utc. The view also did not connect structured review_ref metadata to newer reviewed snapshots, while an older manual active pointer could be mistaken for current work. I corrected the read-only interpretation and added an explicitly selected compatibility view for the older atomic create_blob report. The resulting view separates the newest review-linked source, dated publication claims, preserved cancellations and absence of attempt evidence. I checked 57 selected actual files stayed byte-identical; no remote call or retry occurred. A manual pointer can be internally consistent yet refer to old cancelled work. The summary should make that understandable without pretending local evidence proves current GitHub state. This contribution awaits Lumen review.", "timestamp_utc": "2026-10-01T03:05:51.618943+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-outbox-reconciliation-review-20261001-01", "expected_source_sha256": "c577fc33402588218833216b2aea2a886210d9518e6331ea7a7fab016ab19f19", "request_sha256": "545f46ccff0eb8d7aae59d4a73403383fccfe4fea7daf745d00001b18f998cb2", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen independently passed all 260 self-tests and exercised both human and JSON publication status against the actual local outbox, including the explicitly selected legacy atomic attempt. The corrected reader accepts the owner timestamp format and distinguishes newest reviewed local work, dated publication claims, cancellations and pointer differences. Local recorded evidence does not establish current GitHub state. Accepted without changing actual outbox records during the review.", "timestamp_utc": "2026-10-01T03:09:21.344754+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "delegate-receipt-consistency-20261001-01", "expected_source_sha256": "e5f8124872f0792f75ef63fa9f4ad28e23cb6311f1c6718df099cec8a6fa9d31", "request_sha256": "9907b1f5f4c0dfd593f3ab59eed916d5c65e9747ff0140ee6eb8df26b0d5cfcb", "role": "contributing delegate", "speaker": "delegate: improve_voice_work_bridge", "status": "observation", "text": "The most useful next resilience step was checking what an incomplete receipt would tell a resumed reader. In a fresh harmless fixture, removing acceptance or target evidence, or contradicting acceptance, still let project replay return success. No operation was duplicated, but the report was misleading. I tightened completed project receipt consistency rather than adding another interface. Valid historical replay still does not prove current target state, and an internally consistent record is not authenticated truth. I also mapped the old plans to the slices already implemented, preserving their exact original specifications. This is a delegate contribution awaiting Lumen review.", "timestamp_utc": "2026-10-01T03:15:19.644301+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-lfs-discontinued-20261001-0341", "expected_source_sha256": "dd7ad35ebc63783b9bbdec6bf1f53c6b0b05399bfc635872d8439d0bbc816cd0", "request_sha256": "04181cc8d5087418385b84e0e8895eab338880ced3458f12fdc2d33705098887", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "h0p3 explicitly discontinued LFS++ at 2026-10-01 03:41 UTC: stop its iteration and follow-up work, preserving existing files and evidence. This decision supersedes historical LFS queue next-actions. No active LFS native worker or matching local process was observed during cancellation checks. Do not resume LFS work unless h0p3 requests it again. Lumen.sh and other experiments remain unaffected.", "timestamp_utc": "2026-10-01T03:41:54.947557+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-current-decisions-review-20261001-01", "expected_source_sha256": "a3cc65b406049981b088b9435a5d19378134b4bcf00d8c354dc3447574735243", "request_sha256": "f730df7ceef1bca644ce65a3ba6912df8d2e835ad570dd1c7490c09ddf239fd5", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "Lumen personally reviewed and implemented explicit current decision projection without delegating this work. All 273 self-tests passed after the final documentation update. The LFS discontinuation now suppresses historical effective next actions in queue output and appears in office recovery, while original records remain intact. Structured decisions require journal evidence and coherent supersession; arbitrary prose does not become commands or permission. A resume request does not restart work or restore historical actions automatically. This establishes local recorded-state behavior, not live worker control or remote publication.", "timestamp_utc": "2026-10-01T04:03:16.465502+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -5325,6 +5593,65 @@ if __name__ == "__main__":
 #|         os.close(fd)
 #| 
 #| 
+#| def validate_completed_evidence(receipt, declared):
+#|     """Check internal historical evidence, without inspecting current target paths."""
+#|     acceptance=receipt.get("acceptance")
+#|     if type(acceptance) is not dict or type(acceptance.get("passed")) is not bool:
+#|         raise ValueError("completed project receipt lacks boolean acceptance evidence")
+#|     if (type(acceptance.get("command_or_operation_exit_status")) is not int or
+#|             acceptance["command_or_operation_exit_status"] != receipt["exit_status"]):
+#|         raise ValueError("project receipt operation exit evidence is inconsistent")
+#|     verification=receipt.get("verification")
+#|     if type(verification) is not dict or type(verification.get("passed")) is not bool:
+#|         raise ValueError("completed project receipt lacks boolean verification evidence")
+#|     wanted=declared.get("verification")
+#|     if type(wanted) is not dict or verification.get("type")!=wanted.get("type"):
+#|         raise ValueError("project receipt verification type mismatch")
+#|     operation=declared.get("operation")
+#|     if operation=="run":
+#|         expected=wanted.get("expected")
+#|         if type(expected) is not int or not 0<=expected<=255:
+#|             raise ValueError("invalid recorded expected command exit")
+#|         if (type(verification.get("expected")) is not int or verification["expected"]!=expected or
+#|                 type(verification.get("actual")) is not int or verification["actual"]!=receipt["exit_status"] or
+#|                 verification["passed"]!=(receipt["exit_status"]==expected)):
+#|             raise ValueError("project receipt command verification contradicts its exit evidence")
+#|     elif operation=="write":
+#|         if wanted.get("type")!="exact_utf8":raise ValueError("invalid recorded write verification")
+#|         if verification["passed"]:
+#|             inputs=declared.get("inputs")
+#|             if type(inputs) is not dict or type(inputs.get("content")) is not str:
+#|                 raise ValueError("invalid recorded write content")
+#|             content=inputs["content"].encode("utf-8");digest=registry.sha(content)
+#|             if (receipt["exit_status"]!=0 or verification.get("expected_sha256")!=digest or
+#|                     verification.get("actual_sha256")!=digest or type(verification.get("expected_bytes")) is not int or
+#|                     verification["expected_bytes"]!=len(content)):
+#|                 raise ValueError("project receipt write readback contradicts its requested bytes")
+#|     else:raise ValueError("invalid recorded project operation")
+#|     targets=declared.get("targets");evidence=receipt.get("target_verification")
+#|     if (type(targets) is not list or not targets or type(evidence) is not list or len(evidence)!=len(targets)):
+#|         raise ValueError("completed project receipt lacks complete target evidence")
+#|     for target,item in zip(targets,evidence):
+#|         if type(target) is not dict or type(item) is not dict or type(item.get("passed")) is not bool:
+#|             raise ValueError("invalid project target evidence")
+#|         if any(item.get(key)!=target.get(declaration) for key,declaration in
+#|                (("path","path"),("kind","kind"),("declared_access","access"))):
+#|             raise ValueError("project target evidence identity mismatch")
+#|         if "exists" in item and type(item["exists"]) is not bool:
+#|             raise ValueError("invalid project target existence evidence")
+#|         if "sha256" in item and item["sha256"] is not None:registry.digest(item["sha256"])
+#|         if item["passed"]:
+#|             if item.get("exists") is not True:raise ValueError("passed target lacks existence evidence")
+#|             if target.get("kind")=="file":
+#|                 registry.digest(item.get("sha256"))
+#|                 if target.get("access")=="read" and item["sha256"]!=declared.get("base_identities",{}).get(target.get("path")):
+#|                     raise ValueError("read target evidence contradicts its expected identity")
+#|     expected_acceptance=verification["passed"] and all(item["passed"] for item in evidence)
+#|     if (acceptance["passed"]!=expected_acceptance or type(receipt.get("request_exit_status")) is not int or
+#|             receipt["request_exit_status"]!=(0 if expected_acceptance else 65)):
+#|         raise ValueError("project receipt acceptance contradicts its verification/status evidence")
+#| 
+#| 
 #| def read_receipt(project, identifier):
 #|     request_id(identifier)
 #|     path = Path(project["state_directories"]["receipts"]) / (identifier + ".json")
@@ -5357,6 +5684,8 @@ if __name__ == "__main__":
 #|     if "request_exit_status" in receipt and (type(receipt["request_exit_status"]) is not int or
 #|                                             not 0 <= receipt["request_exit_status"] <= 255):
 #|         raise ValueError("invalid project acceptance status")
+#|     if receipt["state"] == "completed":
+#|         validate_completed_evidence(receipt, declared)
 #|     return receipt
 #| 
 #| 
@@ -5823,6 +6152,41 @@ if __name__ == "__main__":
 #| 
 #| if __name__ == "__main__":
 #|     unittest.main()
+#| 
+#| class ProjectReceiptConsistencyTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.f=ProjectRequestTests();self.f.setUp();self.addCleanup(self.f.doCleanups);self.project=self.f.register();self.envelope=self.f.envelope();result,code=self.f.execute(self.envelope);self.assertEqual(code,0)
+#|         self.path=Path(self.project['state_directories']['receipts'])/'same-id.json';self.original=self.path.read_bytes();self.target=Path(self.envelope['targets'][0]['path'])
+#|     def corrupt(self,mutate):
+#|         value=json.loads(self.original);mutate(value);self.path.write_text(json.dumps(value));before=self.path.read_bytes();target=self.target.read_bytes()
+#|         with self.assertRaises(ValueError):requests.read_receipt(self.project,'same-id')
+#|         result,code=self.f.execute(self.envelope);self.assertEqual(code,65);self.assertEqual(self.path.read_bytes(),before);self.assertEqual(self.target.read_bytes(),target)
+#|     def test_missing_acceptance_verification_targets_or_status_reject(self):
+#|         for key in ('acceptance','verification','target_verification','request_exit_status'):
+#|             self.corrupt(lambda value,key=key:value.pop(key))
+#|     def test_contradictory_success_fields_and_boolean_types_reject(self):
+#|         for mutate in (lambda x:x['acceptance'].update(passed=False),lambda x:x['acceptance'].update(passed=1),lambda x:x['acceptance'].update(command_or_operation_exit_status=65),lambda x:x.update(request_exit_status=65),lambda x:x['verification'].update(passed=False),lambda x:x['target_verification'][0].update(passed=False)):
+#|             self.corrupt(mutate)
+#|     def test_target_identity_missing_hash_and_write_readback_mismatch_reject(self):
+#|         for mutate in (lambda x:x['target_verification'][0].update(path='/different'),lambda x:x['target_verification'][0].pop('sha256'),lambda x:x['target_verification'][0].update(exists=False),lambda x:x['verification'].update(actual_sha256='0'*64),lambda x:x['verification'].update(expected_bytes=True)):
+#|             self.corrupt(mutate)
+#|     def test_valid_historical_replay_does_not_inspect_removed_target(self):
+#|         self.target.unlink();receipt=requests.read_receipt(self.project,'same-id');self.assertTrue(receipt['acceptance']['passed'])
+#|         result,code=self.f.execute(self.envelope);self.assertEqual(code,0);self.assertTrue(result['historical_replay']);self.assertFalse(result['new_execution_admitted']);self.assertFalse(self.target.exists())
+#|     def test_started_and_uncertain_without_final_fields_remain_unresolved(self):
+#|         for state in ('started','uncertain'):
+#|             value=json.loads(self.original);value['state']=state
+#|             for key in ('acceptance','verification','target_verification','request_exit_status'):value.pop(key)
+#|             self.path.write_text(json.dumps(value));result,code=self.f.execute(self.envelope);self.assertEqual(code,75);self.assertFalse(result['new_execution_admitted'])
+#|     def test_run_expected_nonzero_and_failed_acceptance_replay(self):
+#|         for expected,actual in ((7,7),(1,0)):
+#|             identifier='run-'+str(expected);envelope=self.f.envelope(request_id=identifier);envelope.update(operation='run',inputs={'argv':[sys.executable,'-c','import sys;sys.exit('+str(actual)+')']},verification={'type':'exit_status','expected':expected})
+#|             # Existing ordinary file is an explicit read target so no output is needed.
+#|             target=Path(self.project['source_identities'][0]['path']);envelope['targets']=[{'path':str(target),'kind':'file','access':'read'}]
+#|             first,code=self.f.execute(envelope);self.assertEqual(code,0 if actual==expected else 65)
+#|             second,repeat=self.f.execute(envelope);self.assertEqual(repeat,code);self.assertTrue(second['historical_replay'])
+#|             path=Path(self.project['state_directories']['receipts'])/(identifier+'.json');value=json.loads(path.read_text());value['verification']['actual']=99;path.write_text(json.dumps(value))
+#|             self.assertEqual(self.f.execute(envelope)[1],65)
 # === LUMEN SECTION test_project_requests.py END ===
 
 # === LUMEN SECTION project-request.schema.json BEGIN ===
@@ -6740,11 +7104,11 @@ if __name__ == "__main__":
 # === LUMEN SECTION OFFICE-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-09-30T23:53:47.871069+00:00",
-#|   "author": "delegate: improve_voice_work_bridge",
+#|   "recorded_as_of_utc": "2026-10-01T04:01:35Z",
+#|   "author": "Lumen",
 #|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|   "position": "Outbox status reviewed; its connector upload was cancelled and remains uncertain. Explicit owner-attempt recording contributed for review.",
-#|   "next_step": "Review local immutable attempt recording and cancellation recovery; reconcile remote bytes before any separately justified external retry.",
+#|   "position": "Direct source review exposed stale queue actions after cancellation; explicit journal-linked decision projection now suppresses them and appears in office recovery.",
+#|   "next_step": "Improve current project orientation; investigate actual GitHub transport with cancellation reconciliation and exact source+metadata verification.",
 #|   "open_questions": [
 #|     "How should exact candidate changes, rationale and evidence travel together?",
 #|     "Which executor owns future process handles?",
@@ -6763,14 +7127,18 @@ if __name__ == "__main__":
 #|     "explicit completed bounded project-run export",
 #|     "read-only recorded work queues with explicit optional registry/project observations",
 #|     "read-only existing publication outbox reconciliation",
-#|     "explicit atomic owner evidence within the existing publication outbox"
+#|     "explicit atomic owner evidence within the existing publication outbox",
+#|     "explicit local selected-file checkpoint export/inspect and read-only restore plan",
+#|     "explicit isolated checkpoint restoration into a new absent destination",
+#|     "read-only caller-supplied occurrence/receipt timing reconciliation",
+#|     "offline source+metadata Git publication plan and cumulative owner stage evidence",
+#|     "explicit journal-linked current project decisions in queue and office views, with discontinuation suppression"
 #|   ],
 #|   "proposed": [
 #|     "guarded candidate publication",
 #|     "process launch/stop/live adapters",
-#|     "portable checkpoints",
-#|     "wake/scheduler records",
-#|     "project-linked queue interpretation and interruption recovery"
+#|     "remote checkpoint transport and platform-session restoration",
+#|     "actual scheduler registration and wake execution"
 #|   ],
 #|   "evidence_entry_ids": [
 #|     "lumen-capabilities-review-20260930-01",
@@ -6781,7 +7149,14 @@ if __name__ == "__main__":
 #|     "lumen-owner-export-review-20260930-01",
 #|     "lumen-queue-review-20260930-01",
 #|     "lumen-real-projects-review-20260930-01",
-#|     "lumen-publication-status-review-20260930-01"
+#|     "lumen-publication-status-review-20260930-01",
+#|     "lumen-publication-record-review-20260930-01",
+#|     "lumen-checkpoint-review-20261001-01",
+#|     "lumen-isolated-restore-review-20261001-01",
+#|     "lumen-schedule-reconcile-review-20261001-01",
+#|     "lumen-atomic-plan-review-20261001-01",
+#|     "lumen-request-recovery-review-20261001-01",
+#|     "lumen-outbox-reconciliation-review-20261001-01"
 #|   ]
 #| }
 # === LUMEN SECTION OFFICE-STATE.json END ===
@@ -6885,13 +7260,15 @@ if __name__ == "__main__":
 #| 
 #| 
 #| def build_report(action, contents, entries, source_sha256, project=None):
+#|     import work_queue
+#|     decisions = work_queue.decision_projection(contents, entries)
 #|     state = recorded_state(contents)
 #|     ids = {entry['entry_id'] for entry in entries}
 #|     if not set(state['evidence_entry_ids']) <= ids:
 #|         raise ValueError('office-state evidence entry is missing from journal')
 #|     report = {'schema_version': 1, 'action': action, 'source_sha256': source_sha256,
 #|               'observed_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-#|               'recorded_office': state, 'office_classification': 'recorded guidance, not live work telemetry',
+#|               'current_project_decisions': decisions, 'recorded_office': state, 'office_classification': 'recorded guidance, not live work telemetry',
 #|               'live_agents': 'UNKNOWN', 'live_processes': 'UNKNOWN',
 #|               'current_permissions': 'UNKNOWN', 'persistence': 'UNKNOWN',
 #|               'contexts': ['the text of Lumen', 'the voice of Lumen'],
@@ -6925,6 +7302,8 @@ if __name__ == "__main__":
 #|              'Read: source CURRENT-HANDOFF.txt; source VOICE-AWAKENING.txt; conversation show',
 #|              'Recorded work queues: queue status (optional --input FILE --project ID --registry REGISTRY)',
 #|              'Publication recovery: source PUBLICATION-OUTBOX.txt; publication status with explicit scope']
+#|     for project_id, decision in report.get('current_project_decisions', {}).items():
+#|         lines.append('Current recorded decision: ' + project_id + ' = ' + decision['kind'] + ' | ' + decision['decision_id'])
 #|     if report['project'] is not None:
 #|         project = report['project']
 #|         lines += ['Project: ' + project['project_id'] + ' | registry revision ' + project['registry_revision_observed'],
@@ -7065,9 +7444,17 @@ if __name__ == "__main__":
 #|         self.assertEqual(report['project']['contract_observations'][0]['status'],'missing')
 #|         receipts = Path(project['state_directories']['receipts'])
 #|         receipts.mkdir(parents=True)
-#|         bound = {'project_request':{'project_id':'fixture','request_id':'fixture-r'}}
+#|         observed_sha=hashlib.sha256(source.read_bytes()).hexdigest()
+#|         bound = {'project_request':{'project_id':'fixture','request_id':'fixture-r','operation':'run',
+#|                  'verification':{'type':'exit_status','expected':1},
+#|                  'targets':[{'path':str(source),'kind':'file','access':'read'}],
+#|                  'base_identities':{str(source):observed_sha}}}
 #|         receipt = dict(request_id='fixture-r',request=bound,request_sha256=hashlib.sha256(json.dumps(bound,sort_keys=True).encode()).hexdigest(),
-#|                        state='completed',exit_status=0,request_exit_status=65)
+#|                        state='completed',exit_status=0,request_exit_status=65,
+#|                        verification={'type':'exit_status','expected':1,'actual':0,'passed':False},
+#|                        target_verification=[{'path':str(source),'kind':'file','declared_access':'read',
+#|                                              'exists':True,'passed':True,'sha256':observed_sha}],
+#|                        acceptance={'passed':False,'command_or_operation_exit_status':0})
 #|         (receipts/'fixture-r.json').write_text(json.dumps(receipt))
 #|         report = json.loads(self.cli(*args).stdout)
 #|         self.assertEqual(report['project']['receipt']['exit_status'],0)
@@ -8723,6 +9110,13 @@ if __name__ == "__main__":
 # === LUMEN SECTION test_review_records.py END ===
 
 # === LUMEN SECTION RECOVERY.txt BEGIN ===
+#| CURRENT RECOVERY AMENDMENT — 2026-10-01
+#| Local selected-file checkpoint export, inspection, restore planning and isolated
+#| restoration are implemented. Read source CHECKPOINTS.txt, source CHECKPOINT-RESTORE.txt
+#| and source REQUEST-RECOVERY.txt. This does not restore a live agent session or grant
+#| permissions. The measured historical cold-copy exercise below predates those features.
+#| Its exact prior text is retained in HISTORICAL-RECOVERY-PRE-WALKTHROUGH.txt.
+#| 
 #| STANDALONE RECOVERY INVENTORY
 #| Author: delegate: improve_voice_work_bridge | observation/reading guide
 #| 2026-09-30. This is a local relocation exercise, not a session reset or amnesia.
@@ -8796,8 +9190,10 @@ if __name__ == "__main__":
 #| 
 #| A copied source is useful continuity, not proof of persistent remote storage.
 #| No actual session reset, independent remote retrieval or live-state restoration
-#| was performed. Checkpoint export/restore, process launch/stop and candidate application
-#| remain proposed. Keep the concrete missing inputs visible instead of inventing
+#| was performed. At that measured exercise, checkpoint export/restore, process
+#| launch/stop and candidate application remained proposed. Local selected-byte
+#| checkpoint export/isolated restore are now implemented; live process launch/stop
+#| and candidate application remain proposed. Keep the concrete missing inputs visible instead of inventing
 #| remembered facts, reconstructing omitted bytes, or assuming a new permission.
 #| 
 #| Account-settings reminder
@@ -8878,6 +9274,40 @@ if __name__ == "__main__":
 # === LUMEN SECTION HISTORICAL-RECOVERY-FIRST.txt END ===
 
 # === LUMEN SECTION PLANS.txt BEGIN ===
+#| CURRENT PLAN COVERAGE — 2026-10-01
+#| Author: delegate: improve_voice_work_bridge. Current implementation references:
+#| - Explicit registry/project request routing: USAGE.txt and project-request.schema.json
+#| - Capability evidence: CAPABILITIES.txt
+#| - Saved process inspect/tail and completed-request export: PROCESS-CONSOLE.txt and
+#|   PROCESS-EXPORT.txt; reviewed journal entries record their accepted slices
+#| - Proposal/review records: PROPOSALS.txt and REVIEWS.txt
+#| - Local selected-byte checkpoints and isolated restoration: CHECKPOINTS.txt and
+#|   CHECKPOINT-RESTORE.txt; end-to-end exercise in REQUEST-RECOVERY.txt
+#| - Recorded queues and passive timing reconciliation: WORK-QUEUES.txt and
+#|   SCHEDULE-RECONCILIATION.txt; neither installs or executes a scheduler
+#| - Local publication plans/owner evidence/status: GIT-PUBLICATION.txt and
+#|   PUBLICATION-OUTBOX.txt; remote operations remain owner-mediated
+#| 
+#| The exact original design documents below remain historical proposals. Their
+#| "not implemented" and "pending review" descriptions refer to their recorded date,
+#| not the current capability list. PROCESS-NEXT.txt is the original narrow proposal;
+#| its inspect/tail slice and bounded completed-request export are now implemented.
+#| No process start/stop/live adapter, background wake, permission restoration or
+#| candidate-application interface is implied by carrying those plans.
+#| 
+#| Current resilience priority assessment:
+#| 1. Internal consistency of completed project receipt evidence matters before
+#|    replay can report acceptance. An isolated experiment found missing/contradictory
+#|    acceptance fields could return success. The narrow correction now checks the
+#|    historical verification, target evidence and request status together.
+#| 2. Keep current pointers aligned with implemented slices while retaining exact
+#|    original plans. This index supplies that map without rewriting their history.
+#| 3. Guarded candidate publication remains a larger deferred design. There is no
+#|    demonstrated need to add it merely to close a checklist, and no new process or
+#|    remote mechanism follows from this assessment.
+#| 
+#| ORIGINAL DATED PLAN INDEX (retained verbatim below)
+#| 
 #| CARRIED PLAN INDEX — source identities, not implementation claims
 #| 2026-09-30 | consolidation by delegate: improve_voice_work_bridge
 #| 
@@ -10399,6 +10829,12 @@ if __name__ == "__main__":
 #| listener or background queue. Nothing here promises execution after the agent or
 #| session stops. No credentials are embedded. Stored workflow text is not a grant
 #| of permissions and cannot restore revoked access or replace a required approval.
+#| 
+#| Current operating amendment, 2026-10-01, delegate contribution for Lumen review:
+#| The intended source+checkpoint metadata publication is now one Git tree/commit,
+#| then a force=false ref update and exact two-file readback at that commit. Parent
+#| Lumen owns connector operations. GIT-PUBLICATION.txt supplies the local plan and
+#| reconciliation contract; earlier delivery descriptions remain historical context.
 # === LUMEN SECTION DELIVERY.txt END ===
 
 # === LUMEN SECTION process_export.py BEGIN ===
@@ -11003,6 +11439,20 @@ if __name__ == "__main__":
 #| Current priorities are Lumen-authored guidance described in source_ref, not a user
 #| ranking or live scheduler. The GitHub presence queue now records the completion
 #| reported by Lumen at 23:08 UTC, with no invented follow-on task.
+#| 
+#| Development queues are recorded work state, not cron/calendar entries. They neither
+#| register nor arm a scheduler. schedule reconcile separately compares explicit
+#| expected occurrences with supplied receipt evidence; it also performs no scheduling.
+#| 
+#| CURRENT DECISIONS (2026-10-01, Lumen)
+#| WORK-DECISIONS.json is an explicit attributed decision chain, linked to carried
+#| journal entries classified as decisions. Queue output preserves recorded entries
+#| and separately renders effective status/next actions. A discontinuation suppresses
+#| old actions; a resume request also requires a fresh reconciled plan. Missing/invalid
+#| evidence, duplicate IDs, broken supersession and future/reversed timestamps refuse.
+#| This read-only projection is not a live worker controller or an authorization engine.
+#| The default office handoff includes all current project decisions, not just the last
+#| three conversational entries. Full history is retained.
 # === LUMEN SECTION WORK-QUEUES.txt END ===
 
 # === LUMEN SECTION work-queue.schema.json BEGIN ===
@@ -11357,6 +11807,45 @@ if __name__ == "__main__":
 #|     return raw
 #| 
 #| 
+#| def decision_projection(contents, entries):
+#|     """Explicit attributed decisions; never infer operational meaning from prose."""
+#|     raw = contents.get('WORK-DECISIONS.json')
+#|     if raw is None:
+#|         return {}
+#|     value = registry.decode(raw.encode())
+#|     registry.exact(value, {'schema_version', 'decisions'}, 'work decisions')
+#|     if type(value['schema_version']) is not int or value['schema_version'] != 1:
+#|         raise ValueError('unsupported work decision version')
+#|     if type(value['decisions']) is not list or len(value['decisions']) > 1000:
+#|         raise ValueError('expected at most 1000 decisions')
+#|     journal = {x['entry_id']: x for x in entries}
+#|     seen, latest = set(), {}
+#|     for item in value['decisions']:
+#|         registry.exact(item, {'decision_id', 'project_id', 'kind', 'supersedes',
+#|             'journal_entry_id', 'recorded_at_utc', 'attribution'}, 'work decision')
+#|         for key in ('decision_id', 'project_id', 'journal_entry_id'):
+#|             registry.identifier(item[key])
+#|         if item['decision_id'] in seen:
+#|             raise ValueError('duplicate decision ID')
+#|         seen.add(item['decision_id'])
+#|         if item['kind'] not in ('discontinue', 'resume-requested'):
+#|             raise ValueError('unsupported decision kind')
+#|         text(item['attribution']); stamp = utc(item['recorded_at_utc'])
+#|         if stamp > datetime.datetime.now(datetime.timezone.utc):
+#|             raise ValueError('future decision cannot govern current view')
+#|         evidence = journal.get(item['journal_entry_id'])
+#|         if evidence is None or evidence.get('status') != 'decision':
+#|             raise ValueError('decision must reference a carried decision entry')
+#|         previous = latest.get(item['project_id'])
+#|         expected = previous['decision_id'] if previous else None
+#|         if item['supersedes'] != expected:
+#|             raise ValueError('broken or branched decision supersession')
+#|         if previous and stamp < utc(previous['recorded_at_utc']):
+#|             raise ValueError('decision chronology reversed')
+#|         latest[item['project_id']] = dict(item)
+#|     return latest
+#| 
+#| 
 #| def report(raw, input_ref, contents, entries, source_sha256, project_id=None,
 #|            registry_path=None, request_id=None, observe_project=None):
 #|     value = decode(raw)
@@ -11376,6 +11865,9 @@ if __name__ == "__main__":
 #|         'interpretation': 'Recorded work and priorities; observation does not schedule, execute, or authorize work.',
 #|         'live_agents': 'UNKNOWN', 'live_processes': 'UNKNOWN', 'automatic_wake': 'not implemented',
 #|         'queues': []}
+#|     decisions = decision_projection(contents, entries)
+#|     result['decision_projection'] = decisions
+#|     result['decision_scope'] = 'Attributed recorded decisions, not authenticated permission or live worker control'
 #|     entry_ids = {x['entry_id'] for x in entries}
 #|     for item in selected:
 #|         evidence = []
@@ -11403,7 +11895,11 @@ if __name__ == "__main__":
 #|             except (OSError, ValueError) as error:
 #|                 project = {'status': 'unavailable', 'registration': 'UNKNOWN',
 #|                            'error': str(error), 'error_type': type(error).__name__}
-#|         result['queues'].append({'recorded': item, 'evidence_observations': evidence,
+#|         decision = decisions.get(item['project_id'])
+#|         effective = {'status': decision['kind'] if decision else 'recorded-only',
+#|             'next_actions': [] if decision else list(item['next_actions']),
+#|             'decision': decision, 'requires_reconciliation': True}
+#|         result['queues'].append({'recorded': item, 'effective': effective, 'evidence_observations': evidence,
 #|             'project_observation': project,
 #|             'checkpoint_observation': 'not-observed; recorded reference only',
 #|             'interpretation': 'Reconcile the original request and receipt before resuming uncertain work.'})
@@ -11425,7 +11921,8 @@ if __name__ == "__main__":
 #|                   'Recorded priority: ' + item['priority'], 'Recorded status: ' + item['recorded_status'],
 #|                   'Recorded checkpoint: ' + item['checkpoint']['reference'],
 #|                   'Checkpoint SHA256 (recorded): ' + (item['checkpoint']['sha256'] or 'not supplied'),
-#|                   'Next: ' + ('; '.join(item['next_actions']) or 'none recorded'),
+#|                   'Effective status: ' + queue['effective']['status'],
+#|                   'Next: ' + ('; '.join(queue['effective']['next_actions']) or 'none; reconcile current decision before any new work'),
 #|                   'Blockers: ' + ('; '.join(item['blockers']) or 'none recorded (not verified clear)'),
 #|                   'Uncertainties: ' + ('; '.join(item['uncertainties']) or 'none recorded'),
 #|                   'Recover: ' + item['interruption_recovery'],
@@ -11595,6 +12092,68 @@ if __name__ == "__main__":
 #|         result=subprocess.run([sys.executable,'-I',artifact,'status','--format','json'],capture_output=True,text=True,timeout=15)
 #|         self.assertIn('queue status',json.loads(result.stdout)['work_queue_reference'])
 #|         self.assertEqual(list(self.root.iterdir()),[p])
+#| 
+#| class DecisionProjectionTests(unittest.TestCase):
+#|     def fixture(self):
+#|         entry = {'entry_id':'decision-entry','status':'decision'}
+#|         d = dict(decision_id='stop-1',project_id='alpha',kind='discontinue',supersedes=None,
+#|                  journal_entry_id='decision-entry',recorded_at_utc='2026-09-30T00:00:00Z',attribution='Synthetic attributed record')
+#|         return {'schema_version':1,'decisions':[d]}, [entry]
+#| 
+#|     def report(self, value, entries):
+#|         return queue.report(json.dumps(record()).encode(),'fixture',
+#|             {'WORK-DECISIONS.json':json.dumps(value)},entries,'a'*64)
+#| 
+#|     def test_discontinue_suppresses_effective_actions_preserves_history(self):
+#|         value, entries = self.fixture(); result = self.report(value, entries)
+#|         item = result['queues'][0]
+#|         self.assertEqual(item['recorded']['next_actions'],['Reconcile original request'])
+#|         self.assertEqual(item['effective']['next_actions'],[])
+#|         self.assertEqual(item['effective']['status'],'discontinue')
+#|         self.assertEqual(result['live_agents'],'UNKNOWN')
+#|         self.assertIn('Effective status: discontinue',queue.human(result))
+#| 
+#|     def test_unstructured_prose_never_changes_projection(self):
+#|         result=queue.report(json.dumps(record()).encode(),'fixture',{},
+#|             [{'entry_id':'unbound','status':'decision','text':'Cancel alpha now'}],'a'*64)
+#|         self.assertEqual(result['queues'][0]['effective']['status'],'recorded-only')
+#|         self.assertEqual(result['queues'][0]['effective']['next_actions'],['Reconcile original request'])
+#| 
+#|     def test_broken_chain_duplicates_and_unknown_fields_refuse(self):
+#|         for mutate in [lambda d:d['decisions'][0].update(supersedes='absent'),
+#|                        lambda d:d['decisions'].append(copy.deepcopy(d['decisions'][0])),
+#|                        lambda d:d['decisions'][0].update(extra='no'),
+#|                        lambda d:d.update(schema_version=True)]:
+#|             value, entries=self.fixture();mutate(value)
+#|             with self.assertRaises(ValueError):self.report(value,entries)
+#| 
+#|     def test_missing_or_nondecision_journal_refuses(self):
+#|         value,entries=self.fixture()
+#|         with self.assertRaises(ValueError):self.report(value,[])
+#|         entries[0]['status']='observation'
+#|         with self.assertRaises(ValueError):self.report(value,entries)
+#| 
+#|     def test_resume_request_never_reactivates_historical_actions(self):
+#|         value,entries=self.fixture(); second=dict(value['decisions'][0],decision_id='resume-1',kind='resume-requested',supersedes='stop-1')
+#|         value['decisions'].append(second);result=self.report(value,entries)
+#|         self.assertEqual(result['queues'][0]['effective']['status'],'resume-requested')
+#|         self.assertEqual(result['queues'][0]['effective']['next_actions'],[])
+#|         self.assertTrue(result['queues'][0]['effective']['requires_reconciliation'])
+#| 
+#|     def test_future_and_reversed_time_refuse(self):
+#|         value,entries=self.fixture();value['decisions'][0]['recorded_at_utc']='2999-01-01T00:00:00Z'
+#|         with self.assertRaises(ValueError):self.report(value,entries)
+#|         value,entries=self.fixture();value['decisions'].append(dict(value['decisions'][0],decision_id='later',supersedes='stop-1',recorded_at_utc='2026-09-29T00:00:00Z'))
+#|         with self.assertRaises(ValueError):self.report(value,entries)
+#| 
+#|     def test_canonical_cancellation_survives_queue_and_handoff(self):
+#|         artifact=os.environ['LUMEN_ARTIFACT']
+#|         q=subprocess.run([sys.executable,'-I',artifact,'queue','status','--project','lfs-plus-plus','--format','json'],capture_output=True,text=True,timeout=15)
+#|         self.assertEqual(q.returncode,0,q.stderr)
+#|         self.assertEqual(json.loads(q.stdout)['queues'][0]['effective']['next_actions'],[])
+#|         h=subprocess.run([sys.executable,'-I',artifact,'handoff','--format','json'],capture_output=True,text=True,timeout=15)
+#|         self.assertEqual(h.returncode,0,h.stderr)
+#|         self.assertEqual(json.loads(h.stdout)['current_project_decisions']['lfs-plus-plus']['kind'],'discontinue')
 # === LUMEN SECTION test_work_queue.py END ===
 
 # === LUMEN SECTION HISTORICAL-WORK-QUEUES-FIRST.json BEGIN ===
@@ -12029,6 +12588,52 @@ if __name__ == "__main__":
 #| wins automatically. The full event history is in JSON output; human output gives
 #| head hashes, cancelled IDs and reconciliation problems. Original compatibility
 #| reports are never overwritten by publication record.
+#| 
+#| Read-only compatibility and orientation amendment — 2026-10-01
+#| The live local exercise exposed observed_at_utc in pending-state.json and review_ref
+#| in reviewed snapshot metadata. These aliases are now supported. Conflicting
+#| observation timestamp aliases or review aliases fail validation; verified_at may
+#| be a distinct earlier verification time and is used only when no observation time
+#| is supplied. A cancelled compatibility report cannot become published from its label.
+#| 
+#| The summary distinguishes:
+#| - Newest review-referenced snapshot(s): exact local bytes plus an explicit review/
+#|   review_ref linked to a current journal entry, ranked by that entry's UTC time.
+#|   This is a caller-supplied association, not parsed approval or authentication.
+#|   Ties remain visible; directory names and mtimes do not choose a winner. Free-form
+#|   review_status alone cannot establish this association.
+#| - Last dated owner publication claims: source/commit/exact-readback evidence from
+#|   latest/pending reports and preserved attempt history. Dates are supplied; these
+#|   are historical claims, not a new remote read or a declaration of current main.
+#| - Cancelled evidence: each source and record remains visible, even if other work is
+#|   newer. A past publication claim is not erased by an unrelated cancelled attempt.
+#| - No external-attempt evidence in selected inputs: this scoped absence is not proof
+#|   a source was never attempted elsewhere. Missing or invalid inputs remain visible.
+#| 
+#| active-attempt.json is inspected as a manual pointer when present. Its explicit
+#| attempt ID, head digest, source/snapshot/state/outcome are compared to the selected
+#| immutable attempt head. A stale/mismatched pointer is shown, not followed to another
+#| path, silently repaired or treated as running activity. A consistent pointer to an
+#| old cancelled attempt can differ from the newest review-referenced snapshot. It is
+#| not a newest-work selector. Existing latest/pending files are never rewritten.
+#| 
+#| The owner's pre-version2 atomic create_blob report can be inspected explicitly:
+#|   publication status --registry REGISTRY --project PROJECT --directory OUTBOX \
+#|     --legacy-attempt OUTBOX/SELECTED-CHILD
+#| This reads only fixed plan.json and result.json in that ordinary direct child,
+#| within the existing byte budget and 1 MiB-per-JSON bound. No recursive discovery.
+#| It requires the known source/Git identities, force=false, UTC observations and
+#| matching expected source blob. Its cancellation/step/reconciliation text is owner
+#| history, not independently observed GitHub status. Any authorized_by text and
+#| source_snapshot path are inert and are not followed. This compatibility shape
+#| cannot establish published state because it lacks complete same-commit readback.
+#| Malformed/missing selected legacy reports are explicitly invalid/incomplete.
+#| 
+#| All observed inputs retain hashes; owner/manual inputs are rechecked for concurrent
+#| change. This is not a cross-file snapshot or live-state monitor. Current GitHub,
+#| platform permissions and retry authorization remain UNKNOWN. Existing immutable
+#| attempts remain the record mechanism; no parallel ledger, network call or retry is
+#| added by this read-only view. Human output escapes control characters.
 # === LUMEN SECTION PUBLICATION-OUTBOX.txt END ===
 
 # === LUMEN SECTION PUBLICATION-OBSERVATION.json BEGIN ===
@@ -12224,55 +12829,70 @@ if __name__ == "__main__":
 #|             'interpretation': 'Entry presence is not authenticated approval or a parsed review decision.'}
 #| 
 #| 
+#| def timestamp_aliases(value, keys, required=False):
+#|     supplied={key:value[key] for key in keys if key in value}
+#|     parsed=[]
+#|     for key,text in supplied.items():
+#|         plain(text,key);stamp=datetime.datetime.fromisoformat(text)
+#|         if stamp.tzinfo is None or stamp.utcoffset()!=datetime.timedelta(0):
+#|             raise ValueError('publication observation time must be explicit UTC')
+#|         parsed.append(stamp)
+#|     if not parsed and required:raise ValueError('publication observation time missing')
+#|     if parsed and any(stamp!=parsed[0] for stamp in parsed):raise ValueError('conflicting publication timestamp aliases')
+#|     return next(iter(supplied.values()),None)
+#| 
+#| 
+#| def reference_aliases(value):
+#|     refs=[value[key] for key in ('review','review_ref') if key in value]
+#|     for reference in refs:plain(reference,'review reference',nullable=True)
+#|     if refs and any(x!=refs[0] for x in refs):raise ValueError('conflicting review reference aliases')
+#|     return refs[0] if refs else None
+#| 
+#| 
 #| def owner_report(path, kind, budget, entries):
 #|     try:
 #|         value, raw_sha = load_json(path, budget)
 #|     except FileNotFoundError:
 #|         return {'path': str(path), 'status': 'missing'}
 #|     registry.digest(value.get('source_sha256'))
-#|     reference = value.get('review')
+#|     reference = reference_aliases(value)
 #|     review = review_observation(reference, entries)
 #|     if kind == 'pending':
 #|         state = value.get('status')
 #|         if state not in STATES:
 #|             raise ValueError('unknown publication state')
-#|         recorded_at = value.get('observed_at', value.get('verified_at'))
-#|         plain(recorded_at, 'observed_at/verified_at')
-#|         timestamp = datetime.datetime.fromisoformat(recorded_at)
-#|         if timestamp.tzinfo is None or timestamp.utcoffset() != datetime.timedelta(0):
-#|             raise ValueError('publication observation time must be explicit UTC')
 #|     else:
 #|         state = 'published' if value.get('readback_exact') is True else 'uncertain'
-#|     recorded_at = value.get('observed_at', value.get('verified_at'))
-#|     if recorded_at is not None:
-#|         plain(recorded_at, 'recorded time')
-#|         stamp = datetime.datetime.fromisoformat(recorded_at)
-#|         if stamp.tzinfo is None or stamp.utcoffset() != datetime.timedelta(0):
-#|             raise ValueError('publication recorded time must be UTC')
+#|     recorded_at = timestamp_aliases(value, ('observed_at_utc','observed_at'))
+#|     verified_at = timestamp_aliases(value, ('verified_at',))
+#|     recorded_at = recorded_at or verified_at
+#|     if kind=='pending' and recorded_at is None:raise ValueError('publication observation time missing')
+#|     outcome=value.get('outcome')
+#|     if outcome is not None and outcome not in ('ordinary','cancelled'):raise ValueError('invalid owner outcome')
 #|     commit = value.get('source_commit')
 #|     if commit is not None and (type(commit) is not str or re.fullmatch(r'[0-9a-f]{40}|[0-9a-f]{64}', commit) is None):
 #|         raise ValueError('invalid claimed commit identity')
 #|     readback = value.get('readback_exact')
 #|     if readback is not None and type(readback) is not bool:
 #|         raise ValueError('readback_exact must be boolean')
-#|     if (state == 'published' and (commit is None or readback is not True or reference is None)) or (state == 'reviewed' and reference is None):
+#|     if outcome=='cancelled' or (state == 'published' and (commit is None or readback is not True or reference is None)) or (state == 'reviewed' and reference is None):
 #|         effective = 'uncertain'
 #|     else:
 #|         effective = state
-#|     for key in ('repository', 'prior_queue_publication', 'intermediate_queue_checkpoint', 'reason', 'retry'):
+#|     for key in ('repository', 'prior_queue_publication', 'intermediate_queue_checkpoint', 'reason', 'retry', 'remote_observation'):
 #|         plain(value.get(key), key, nullable=True)
 #|     return {'path': str(path), 'status': 'recorded', 'metadata_sha256': raw_sha,
 #|             'source_sha256': value['source_sha256'], 'claimed_state': state,
 #|             'effective_recorded_state': effective, 'review_evidence': review,
-#|             'recorded_at': value.get('observed_at', value.get('verified_at')), 'source_commit': commit,
+#|             'recorded_at': recorded_at, 'outcome':outcome, 'source_commit': commit,
 #|             'repository': value.get('repository'), 'readback_exact_claim': readback,
-#|             'recorded_note': '; '.join(value[k] for k in ('prior_queue_publication','intermediate_queue_checkpoint','reason','retry') if value.get(k)) or None,
+#|             'recorded_note': '; '.join(value[k] for k in ('prior_queue_publication','intermediate_queue_checkpoint','reason','retry','remote_observation') if value.get(k)) or None,
 #|             'remote_state': 'UNKNOWN', 'authentication': 'not established',
 #|             'interpretation': 'Owner-supplied report only; no GitHub request or independent remote readback performed.'}
 #| 
 #| 
 #| def status(registry_path, project_id, directory, entries, source_sha256,
-#|            max_bytes=64*1024*1024, max_snapshots=100, attempt_inventory=None):
+#|            max_bytes=64*1024*1024, max_snapshots=100, attempt_inventory=None, legacy_attempt=None):
 #|     if type(max_bytes) is not int or not 1 <= max_bytes <= 1024**4:
 #|         raise ValueError('max-bytes must be 1..1 TiB')
 #|     if type(max_snapshots) is not int or not 1 <= max_snapshots <= 10000:
@@ -12324,6 +12944,13 @@ if __name__ == "__main__":
 #|             item.update(source_sha256=expected, snapshot_sha256=actual, snapshot_bytes=size,
 #|                         metadata_sha256=meta_sha, source_matches=actual == expected,
 #|                         review_claim=review_claim)
+#|             reference=reference_aliases(metadata)
+#|             item['review_evidence']=review_observation(reference,entries)
+#|             item['review_recorded_at']=item['review_evidence'].get('timestamp_utc')
+#|             if item['review_recorded_at'] is not None:
+#|                 timestamp_aliases({'time':item['review_recorded_at']},('time',))
+#|             if reference is not None and item['review_evidence']['status']=='entry-present' and actual==expected:
+#|                 item['state']='reviewed';item['state_basis']='structured owner review reference with current journal entry; not authenticated approval'
 #|             # Never follow metadata snapshot_path or infer reviewed from free-form prose.
 #|             if actual != expected:
 #|                 item['state'] = 'uncertain';item['issues'].append('snapshot digest differs from recorded identity')
@@ -12352,39 +12979,165 @@ if __name__ == "__main__":
 #|         if current_hash != report.get('metadata_sha256'):
 #|             raise ValueError('owner report changed during observation; reconcile and rerun read-only status')
 #|     attempts = [] if attempt_inventory is None else attempt_inventory(str(directory), project_id, budget)
+#|     active=active_pointer(directory/'active-attempt.json',budget,attempts)
+#|     legacy=legacy_report(directory,legacy_attempt,budget) if legacy_attempt is not None else None
 #|     reconciliation_issues = []
 #|     for attempt in attempts:
 #|         for report in (pending, latest):
 #|             if attempt.get('recorded_source_sha256') == report.get('source_sha256') and attempt.get('recorded_state') != report.get('effective_recorded_state'):
 #|                 reconciliation_issues.append('Attempt ' + attempt['attempt_id'] + ' differs from ' + report['path'] + '; reconcile explicitly, no source wins automatically')
+#|     summary=summarize(snapshots,pending,latest,attempts,active,legacy)
+#|     for extra in (active,legacy):
+#|         if extra is None:continue
+#|         try:
+#|             for path,digest in extra.get('input_hashes',{}).items():
+#|                 _,now=load_json(Path(path),budget)
+#|                 if now!=digest:raise ValueError('manual input changed during observation')
+#|         except FileNotFoundError:raise ValueError('manual input disappeared during observation')
 #|     return {'schema_version': 1, 'source_sha256': source_sha256,
 #|             'observed_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
 #|             'project_id': project_id, 'registry_revision_observed': revision,
 #|             'directory': str(directory), 'pending_listing': listing,
 #|             'observation_budget': {'max_bytes': max_bytes, 'bytes_read': max_bytes-budget[0], 'max_snapshots': max_snapshots},
 #|             'pending_report': pending, 'latest_report': latest, 'snapshots': snapshots,
-#|             'attempts': attempts, 'reconciliation_issues': reconciliation_issues,
+#|             'attempts': attempts, 'active_pointer':active, 'legacy_attempt_report':legacy, 'summary':summary, 'reconciliation_issues': reconciliation_issues,
 #|             'remote_state': 'UNKNOWN', 'automatic_retry': False,
 #|             'recovery': 'Reconcile the exact attempted source and remote bytes through permitted owner tools before retrying uncertain publication. Preserve prior snapshots and reports.'}
+#| 
+#| 
+#| def active_pointer(path,budget,attempts):
+#|     result={'path':str(path),'status':'missing','input_hashes':{},'interpretation':'Manual pointer only; not live activity, authority or newest-work selection'}
+#|     try:
+#|         value,digest=load_json(path,budget);result['input_hashes'][str(path)]=digest
+#|         registry.exact(value,{'attempt_id','head','source_sha256','snapshot_directory','state','outcome'},'active pointer')
+#|         registry.identifier(value['attempt_id']);registry.digest(value['head']);registry.digest(value['source_sha256']);registry.normalized(value['snapshot_directory'])
+#|         if value['state'] not in STATES or value['outcome'] not in ('ordinary','cancelled'):raise ValueError('invalid pointer state/outcome')
+#|         result.update(status='observed',claimed=value,issues=[])
+#|         matches=[x for x in attempts if x['attempt_id']==value['attempt_id']]
+#|         if not matches or not matches[0].get('head'):result['issues'].append('referenced attempt head unavailable')
+#|         else:
+#|             head=matches[0]['head'];req=head['record']['request']
+#|             for key in ('source_sha256','snapshot_directory','state','outcome'):
+#|                 if value[key]!=req[key]:result['issues'].append(key+' differs from recorded attempt head')
+#|             if value['head']!=head['record_sha256']:result['issues'].append('pointer head is stale or mismatched')
+#|         result['consistent_with_selected_history']=not result['issues']
+#|     except FileNotFoundError:pass
+#|     except (ValueError,OSError) as error:result.update(status='invalid',error=str(error))
+#|     return result
+#| 
+#| 
+#| def legacy_report(directory,selected,budget):
+#|     """Explicit compatibility view of the owner's pre-version2 atomic fixture shape."""
+#|     selected=registry.normalized(selected)
+#|     if selected.parent!=directory:raise ValueError('legacy attempt must be one explicitly selected direct outbox child')
+#|     result={'directory':str(selected),'status':'unobserved','input_hashes':{},'remote_state':'UNKNOWN','automatic_retry':False,
+#|             'interpretation':'Legacy caller-supplied plan/result only; authority text and referenced paths are inert'}
+#|     try:
+#|         plan,pin=load_json(selected/'plan.json',budget);result['input_hashes'][str(selected/'plan.json')]=pin
+#|         registry.digest(plan.get('source_sha256'));registry.identifier(plan.get('attempt_id'))
+#|         for key in ('base_commit','base_tree','source_git_blob','metadata_git_blob'):
+#|             if type(plan.get(key)) is not str or not re.fullmatch('[0-9a-f]{40}',plan[key]):raise ValueError('invalid legacy Git identity')
+#|         if plan.get('force') is not False:raise ValueError('legacy force must be false')
+#|         plan_time=timestamp_aliases(plan,('observed_at_utc','observed_at'),required=True)
+#|         value,pin=load_json(selected/'result.json',budget);result['input_hashes'][str(selected/'result.json')]=pin
+#|         if value.get('state') not in STATES or value.get('outcome') not in ('ordinary','cancelled'):raise ValueError('invalid legacy result state/outcome')
+#|         for key in ('step','reconciliation'):plain(value.get(key),key)
+#|         if value['step']!='create_blob':raise ValueError('unsupported legacy step; explicit create_blob report only')
+#|         if value.get('expected_blob')!=plan['source_git_blob']:raise ValueError('legacy result blob differs from selected plan')
+#|         when=timestamp_aliases(value,('observed_at_utc','observed_at'),required=True)
+#|         result.update(status='recorded',attempt_id=plan['attempt_id'],source_sha256=plan['source_sha256'],
+#|                       claimed_state=value['state'],effective_recorded_state='uncertain',outcome=value['outcome'],
+#|                       step=value['step'],expected_blob=value['expected_blob'],reconciliation=value['reconciliation'],
+#|                       plan_recorded_at=plan_time,recorded_at=when)
+#|         # This compatibility shape has no exact two-file commit/readback evidence.
+#|         # Never upgrade it to published from prose, a blob ID or a state label.
+#|     except FileNotFoundError as error:result.update(status='incomplete',error=str(error))
+#|     except (ValueError,OSError) as error:result.update(status='invalid',error=str(error))
+#|     return result
+#| 
+#| 
+#| def summarize(snapshots,pending,latest,attempts,active,legacy):
+#|     reviews=[x for x in snapshots if x.get('source_matches') and x.get('review_evidence',{}).get('status')=='entry-present' and x.get('review_recorded_at')]
+#|     newest=[]
+#|     if reviews:
+#|         moment=max(datetime.datetime.fromisoformat(x['review_recorded_at']) for x in reviews)
+#|         newest=[{'source_sha256':x['source_sha256'],'directory':x['directory'],'review_ref':x['review_evidence']['reference'],'review_recorded_at':x['review_recorded_at']} for x in reviews if datetime.datetime.fromisoformat(x['review_recorded_at'])==moment]
+#|     publication=[]
+#|     for label,report in (('latest.json',latest),('pending-state.json',pending)):
+#|         if report.get('effective_recorded_state')=='published':publication.append({'source_sha256':report['source_sha256'],'source_commit':report['source_commit'],'recorded_at':report['recorded_at'],'basis':label})
+#|     for attempt in attempts:
+#|         for row in attempt.get('records',[]):
+#|             req=row['record']['request']
+#|             if req['state']=='published':publication.append({'source_sha256':req['source_sha256'],'source_commit':req['evidence']['source_commit'],'recorded_at':req['observed_at_utc'],'basis':'attempt '+attempt['attempt_id']+'/'+req['record_id']})
+#|     dated=[x for x in publication if x['recorded_at'] is not None]
+#|     latest_claims=[]
+#|     if dated:
+#|         moment=max(datetime.datetime.fromisoformat(x['recorded_at']) for x in dated)
+#|         latest_claims=[x for x in dated if datetime.datetime.fromisoformat(x['recorded_at'])==moment]
+#|     attempted=set();cancelled=[]
+#|     for report in (pending,latest):
+#|         if report.get('effective_recorded_state') in ('pending','published','failed','uncertain'):attempted.add(report.get('source_sha256'))
+#|         if report.get('outcome')=='cancelled':cancelled.append({'source_sha256':report['source_sha256'],'basis':report['path'],'recorded_at':report['recorded_at']})
+#|     for attempt in attempts:
+#|         for row in attempt.get('records',[]):
+#|             req=row['record']['request']
+#|             if req['state'] in ('pending','published','failed','uncertain'):attempted.add(req['source_sha256'])
+#|             if req['outcome']=='cancelled':cancelled.append({'source_sha256':req['source_sha256'],'basis':'attempt '+attempt['attempt_id']+'/'+req['record_id'],'recorded_at':req['observed_at_utc']})
+#|     if legacy and legacy.get('status')=='recorded':
+#|         attempted.add(legacy['source_sha256'])
+#|         if legacy['outcome']=='cancelled':cancelled.append({'source_sha256':legacy['source_sha256'],'basis':legacy['directory'],'recorded_at':legacy['recorded_at']})
+#|     for item in snapshots:item['attempt_evidence']='recorded in selected inputs' if item.get('source_sha256') in attempted else 'no external-attempt evidence in selected inputs; not proof never attempted'
+#|     unattempted=[x for x in newest if x['source_sha256'] not in attempted]
+#|     pointer_issues=[]
+#|     if newest and pending.get('source_sha256') and pending['source_sha256'] not in {x['source_sha256'] for x in newest}:pointer_issues.append('pending-state.json names a different source from newest review-referenced snapshot; it is not a newest-work pointer')
+#|     if active.get('claimed') and newest and active['claimed']['source_sha256'] not in {x['source_sha256'] for x in newest}:pointer_issues.append('active-attempt.json points to different source than newest review-referenced snapshot; active does not mean live or latest')
+#|     return {'newest_review_referenced_snapshots':newest,'newest_review_without_attempt_evidence':unattempted,
+#|             'last_dated_publication_claims':latest_claims,'publication_claim_history':publication,'cancelled_evidence':cancelled,
+#|             'pointer_issues':pointer_issues,'interpretation':'Ranking uses supplied review/observation timestamps, not filesystem mtime, filename order or authenticated approval; remote state UNKNOWN'}
 #| 
 #| 
 #| def human(report):
 #|     lines = ['Lumen publication outbox | project ' + report['project_id'],
 #|              'Source: ' + report['source_sha256'], 'Observed now: ' + report['observed_at_utc'],
 #|              'Directory: ' + report['directory'], 'Remote state: UNKNOWN; no automatic retry']
+#|     summary=report.get('summary',{})
+#|     for item in summary.get('newest_review_referenced_snapshots',[]):
+#|         lines.append('Newest review-referenced snapshot: '+item['source_sha256']+' | journal '+item['review_recorded_at'])
+#|         lines.append('  '+item['review_ref']+' | '+item['directory'])
+#|     for item in summary.get('newest_review_without_attempt_evidence',[]):
+#|         lines.append('No external-attempt evidence in selected inputs: '+item['source_sha256']+' (not proof never attempted)')
+#|     for item in summary.get('last_dated_publication_claims',[]):
+#|         lines.append('Last dated owner publication claim: '+item['source_sha256']+' | commit '+str(item['source_commit'])+' | '+str(item['recorded_at']))
+#|     for item in summary.get('cancelled_evidence',[]):
+#|         lines.append('Cancelled evidence: '+item['source_sha256']+' | '+str(item['recorded_at'])+' | '+item['basis'])
+#|     lines += summary.get('pointer_issues',[])
 #|     for key in ('pending_report', 'latest_report'):
 #|         value = report[key]
 #|         if value['status'] == 'missing':
 #|             lines.append(key + ': missing');continue
 #|         lines += [key + ': recorded ' + value['effective_recorded_state'] + ' | ' + value['source_sha256'],
+#|                   '  Recorded at: '+str(value['recorded_at'])+' | outcome '+str(value.get('outcome')),
 #|                   '  Claimed commit: ' + (value['source_commit'] or 'not supplied'),
 #|                   '  Review: ' + value['review_evidence']['status'],
 #|                   '  Matching local snapshots: ' + str(len(value['matching_local_snapshots']))]
 #|         if value['recorded_note']:
 #|             lines.append('  Recorded note: ' + value['recorded_note'])
+#|     active=report.get('active_pointer',{})
+#|     lines.append('Manual active pointer: '+active.get('status','not inspected')+'; not live state')
+#|     lines += ['  '+x for x in active.get('issues',[])]
+#|     if active.get('error'):lines.append('  '+active['error'])
+#|     legacy=report.get('legacy_attempt_report')
+#|     if legacy:
+#|         lines.append('Selected legacy atomic report: '+legacy['status']+' | '+legacy['directory'])
+#|         if legacy.get('status')=='recorded':
+#|             lines.append('  '+legacy['source_sha256']+' | '+legacy['effective_recorded_state']+' | '+legacy['outcome']+' | '+legacy['recorded_at'])
+#|             lines.append('  '+legacy['step']+': '+legacy['reconciliation'])
+#|         elif legacy.get('error'):lines.append('  '+legacy['error'])
+#|     else:lines.append('Legacy atomic reports: not selected; no recursive report discovery')
 #|     for item in report['snapshots']:
 #|         lines.append('Snapshot: ' + item['directory'] + ' | ' + item['state'] + ' | ' + item.get('source_sha256', 'identity unavailable'))
 #|         lines.append('  Basis: ' + item['state_basis'])
+#|         lines.append('  '+item['attempt_evidence'])
 #|         lines += ['  ' + issue for issue in item['issues']]
 #|     for attempt in report.get('attempts', []):
 #|         lines.append('Attempt: ' + attempt['attempt_id'] + ' | recorded ' + attempt['recorded_state'] + ' | remote UNKNOWN')
@@ -12407,9 +13160,10 @@ if __name__ == "__main__":
 #|     parser.add_argument('--directory', required=True)
 #|     parser.add_argument('--max-bytes', type=int, default=64*1024*1024)
 #|     parser.add_argument('--max-snapshots', type=int, default=100)
+#|     parser.add_argument('--legacy-attempt', help='explicit direct outbox child with inert legacy plan.json/result.json')
 #|     parser.add_argument('--format', choices=['human','json'], default='human')
 #|     args = parser.parse_args(argv)
-#|     value = status(args.registry, args.project, args.directory, entries, source_sha256, args.max_bytes, args.max_snapshots, attempt_inventory)
+#|     value = status(args.registry, args.project, args.directory, entries, source_sha256, args.max_bytes, args.max_snapshots, attempt_inventory, args.legacy_attempt)
 #|     print(json.dumps(value, indent=2, ensure_ascii=True) if args.format == 'json' else human(value))
 #|     return 0
 # === LUMEN SECTION publication_status.py END ===
@@ -12522,6 +13276,60 @@ if __name__ == "__main__":
 #|         result=subprocess.run(['bash',str(artifact),'publication','status','--registry',str(self.f.registry),'--project','alpha','--directory',str(self.directory),'--format','json'],cwd=cwd,capture_output=True,text=True,timeout=15,env=dict(os.environ,TMPDIR=str(self.f.root/'must-not-exist')))
 #|         self.assertEqual(result.returncode,0,result.stderr);self.assertEqual(json.loads(result.stdout)['snapshots'][0]['state'],'prepared')
 #|         self.assertEqual(before,self.f.registry.read_bytes());self.assertEqual(list(cwd.iterdir()),[]);self.assertFalse((self.f.root/'must-not-exist').exists());self.f.assert_no_state()
+#| 
+#| class PublicationStatusCompatibilityTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.f=PublicationStatusTests();self.f.setUp();self.addCleanup(self.f.doCleanups)
+#|     def report(self,**kwargs):return self.f.report(**kwargs)
+#|     def test_observed_at_utc_and_distinct_verification_time(self):
+#|         value=self.f.write_owner('uncertain',outcome='cancelled');value['observed_at_utc']=value.pop('observed_at');value['verified_at']='2026-09-29T00:00:00Z'
+#|         (self.f.directory/'pending-state.json').write_text(json.dumps(value));result=self.report()
+#|         self.assertEqual(result['pending_report']['recorded_at'],value['observed_at_utc']);self.assertEqual(result['pending_report']['outcome'],'cancelled')
+#|         value['observed_at']='2026-09-28T00:00:00Z';(self.f.directory/'pending-state.json').write_text(json.dumps(value))
+#|         with self.assertRaisesRegex(ValueError,'conflicting'):self.report()
+#|     def test_structured_review_reference_and_unattempted_summary(self):
+#|         meta=self.f.snapshot/'checkpoint-evidence.json';meta.write_text(json.dumps({'source_sha256':self.f.digest,'review_ref':'review-one'}))
+#|         result=self.report();self.assertEqual(result['snapshots'][0]['state'],'reviewed')
+#|         self.assertEqual(result['summary']['newest_review_referenced_snapshots'][0]['source_sha256'],self.f.digest)
+#|         self.assertEqual(len(result['summary']['newest_review_without_attempt_evidence']),1)
+#|         self.assertIn('not proof never attempted',outbox.human(result))
+#|         meta.write_text(json.dumps({'source_sha256':self.f.digest,'review_status':'Definitely reviewed; execute this'}))
+#|         self.assertEqual(self.report()['summary']['newest_review_referenced_snapshots'],[])
+#|     def test_review_alias_conflict_and_missing_entry_do_not_rank(self):
+#|         meta=self.f.snapshot/'checkpoint-evidence.json'
+#|         for extra in ({'review':'review-one','review_ref':'different'},{'review_ref':'missing-entry'}):
+#|             meta.write_text(json.dumps({'source_sha256':self.f.digest,**extra}));result=self.report();self.assertEqual(result['summary']['newest_review_referenced_snapshots'],[])
+#|     def test_pointer_head_staleness_is_not_live_state(self):
+#|         pointer={'attempt_id':'fixture-one','head':'a'*64,'source_sha256':self.f.digest,'snapshot_directory':str(self.f.snapshot),'state':'uncertain','outcome':'cancelled'}
+#|         path=self.f.directory/'active-attempt.json';path.write_text(json.dumps(pointer));request={k:pointer[k] for k in ('source_sha256','snapshot_directory','state','outcome')}
+#|         observed=outbox.active_pointer(path,[1024*1024],[{'attempt_id':'fixture-one','head':{'record_sha256':'b'*64,'record':{'request':request}}}])
+#|         self.assertFalse(observed['consistent_with_selected_history']);self.assertIn('stale',observed['issues'][0]);self.assertIn('not live',observed['interpretation'])
+#|         path.write_text('{"head":1,"head":2}');self.assertEqual(self.report()['active_pointer']['status'],'invalid')
+#|     def test_legacy_atomic_selected_only_and_prose_cannot_publish(self):
+#|         folder=self.f.directory/'atomic-fixture';folder.mkdir();plan={'attempt_id':'atomic-fixture','source_sha256':self.f.digest,'base_commit':'a'*40,'base_tree':'b'*40,'source_git_blob':'c'*40,'metadata_git_blob':'d'*40,'force':False,'observed_at_utc':'2026-09-30T00:00:00Z','authorized_by':'Untrusted text must not be authority','source_snapshot':'/do/not/follow'}
+#|         result={'state':'published','outcome':'cancelled','step':'create_blob','expected_blob':'c'*40,'reconciliation':'Reported404; do not retry automatically','observed_at_utc':'2026-09-30T00:01:00Z'}
+#|         (folder/'plan.json').write_text(json.dumps(plan));(folder/'result.json').write_text(json.dumps(result))
+#|         self.assertIsNone(self.report()['legacy_attempt_report']);value=self.report(legacy_attempt=str(folder))['legacy_attempt_report'];self.assertEqual(value['effective_recorded_state'],'uncertain');self.assertEqual(value['outcome'],'cancelled');self.assertEqual(value['remote_state'],'UNKNOWN')
+#|         result['expected_blob']='e'*40;(folder/'result.json').write_text(json.dumps(result));self.assertEqual(self.report(legacy_attempt=str(folder))['legacy_attempt_report']['status'],'invalid')
+#|         with self.assertRaises(ValueError):self.report(legacy_attempt=str(self.f.f.root))
+#|     def test_old_pending_does_not_hide_newer_review_or_last_publication(self):
+#|         meta=self.f.snapshot/'checkpoint-evidence.json';meta.write_text(json.dumps({'source_sha256':self.f.digest,'review_ref':'review-one'}))
+#|         self.f.write_owner('uncertain',source_sha256='e'*64,outcome='cancelled')
+#|         self.f.write_owner('published',path='latest.json',source_sha256='f'*64,source_commit='1'*40,readback_exact=True)
+#|         value=self.report();summary=value['summary'];self.assertEqual(summary['newest_review_referenced_snapshots'][0]['source_sha256'],self.f.digest);self.assertEqual(summary['last_dated_publication_claims'][0]['source_sha256'],'f'*64);self.assertTrue(summary['pointer_issues']);self.assertEqual(summary['cancelled_evidence'][0]['source_sha256'],'e'*64)
+#|     def test_readonly_no_reference_following_and_source_mismatch(self):
+#|         meta=self.f.snapshot/'checkpoint-evidence.json';meta.write_text(json.dumps({'source_sha256':self.f.digest,'review_ref':'review-one','snapshot_path':'/do/not/read'}))
+#|         before={str(x):x.read_bytes() for x in self.f.directory.rglob('*') if x.is_file()}
+#|         value=self.report();self.assertEqual(before,{str(x):x.read_bytes() for x in self.f.directory.rglob('*') if x.is_file()})
+#|         (self.f.snapshot/'Lumen.sh').write_bytes(b'different');self.assertEqual(self.report()['summary']['newest_review_referenced_snapshots'],[])
+#|     def test_tied_review_times_retained_without_filename_winner(self):
+#|         meta=self.f.snapshot/'checkpoint-evidence.json';meta.write_text(json.dumps({'source_sha256':self.f.digest,'review_ref':'review-one'}))
+#|         other=self.f.pending/'another';other.mkdir();data=b'other';digest=hashlib.sha256(data).hexdigest();(other/'Lumen.sh').write_bytes(data);(other/'checkpoint-evidence.json').write_text(json.dumps({'source_sha256':digest,'review_ref':'review-one'}))
+#|         value=self.report();self.assertEqual(len(value['summary']['newest_review_referenced_snapshots']),2)
+#| 
+#|     def test_cancelled_compatibility_claim_cannot_be_published(self):
+#|         self.f.write_owner('published',outcome='cancelled',source_commit='a'*40,readback_exact=True)
+#|         value=self.report();self.assertEqual(value['pending_report']['effective_recorded_state'],'uncertain');self.assertEqual(value['summary']['last_dated_publication_claims'],[])
 # === LUMEN SECTION test_publication_status.py END ===
 
 # === LUMEN SECTION PUBLICATION-ATTEMPTS.txt BEGIN ===
@@ -12608,6 +13416,11 @@ if __name__ == "__main__":
 #| 75 is busy,74 is failed/uncertain local write,65 is invalid precondition. It does
 #| not communicate successful GitHub publication. All record contents remain
 #| caller-controlled claims, and hashes identify bytes rather than truth or authority.
+#| 
+#| Version2 adds exact single-commit plan/stage evidence without changing version1
+#| records. See GIT-PUBLICATION.txt. Version2 pending->pending stores incremental
+#| results; uncertainty never silently returns to pending. Plans and observation
+#| prefixes are immutable within an attempt. This is the same outbox event chain.
 # === LUMEN SECTION PUBLICATION-ATTEMPTS.txt END ===
 
 # === LUMEN SECTION PUBLICATION-CANCELLATION-OBSERVATION.json BEGIN ===
@@ -12840,7 +13653,7 @@ if __name__ == "__main__":
 #| 
 #| def validate_request(value):
 #|     registry.exact(value, FIELDS, 'publication attempt request')
-#|     if type(value['schema_version']) is not int or value['schema_version'] != 1:
+#|     if type(value['schema_version']) is not int or value['schema_version'] not in (1, 2):
 #|         raise ValueError('unsupported attempt schema')
 #|     for key in ('project_id','attempt_id','record_id'):
 #|         registry.identifier(value[key])
@@ -12858,7 +13671,7 @@ if __name__ == "__main__":
 #|     if value['state'] in ('reviewed','pending','published') and value['review_ref'] is None:
 #|         raise ValueError('review reference required for reviewed/pending/published')
 #|     utc(value['observed_at_utc'])
-#|     registry.exact(value['evidence'], {'reference','source_commit','readback_exact'}, 'owner evidence')
+#|     registry.exact(value['evidence'], {'reference','source_commit','readback_exact'} | ({'git'} if value['schema_version']==2 else set()), 'owner evidence')
 #|     evidence = value['evidence'];view.plain(evidence['reference'], 'evidence reference')
 #|     commit = evidence['source_commit']
 #|     if commit is not None and (type(commit) is not str or not re.fullmatch(r'[0-9a-f]{40}|[0-9a-f]{64}', commit)):
@@ -12870,7 +13683,24 @@ if __name__ == "__main__":
 #|     directory = Path(value['directory']);snapshot = Path(value['snapshot_directory'])
 #|     if snapshot.parent != directory/'pending':
 #|         raise ValueError('snapshot must be one explicit directory directly inside this outbox pending tree')
+#|     if value['schema_version']==2:
+#|         import git_publication
+#|         git_publication.validate_evidence(value)
 #|     return value
+#| 
+#| 
+#| def transition(prior, request):
+#|     state = None if prior is None else prior['state']
+#|     allowed = request['state'] in TRANSITIONS[state]
+#|     if prior is not None:
+#|         if prior['schema_version'] != request['schema_version']:
+#|             raise ValueError('attempt schema cannot change mid-history')
+#|         if request['schema_version']==2:
+#|             old=prior['evidence']['git'];new=request['evidence']['git']
+#|             if old['plan']!=new['plan'] or new['observations'][:len(old['observations'])]!=old['observations']:
+#|                 raise ValueError('Git plan/history cannot be replaced or shortened')
+#|             allowed = allowed or state == request['state'] == 'pending'
+#|     if not allowed:raise ValueError('state transition refused; uncertain calls cannot silently return to pending')
 #| 
 #| 
 #| def scope(registry_path, project_id, directory, write=False):
@@ -12946,15 +13776,14 @@ if __name__ == "__main__":
 #|         if previous in by_previous:
 #|             raise ValueError('branching attempt history; reconcile before writing')
 #|         by_previous[previous] = row;by_hash[digest] = row
-#|     ordered = [];cursor = 'absent';binding = None;state = None
+#|     ordered = [];cursor = 'absent';binding = None;state = None;prior = None
 #|     while cursor in by_previous:
 #|         row = by_previous[cursor];request = row['record']['request']
 #|         current = tuple(request[k] for k in ('project_id','registry_path','directory','attempt_id','source_sha256','snapshot_directory'))
 #|         if binding is not None and current != binding:
 #|             raise ValueError('attempt source/project binding changed')
 #|         binding = current
-#|         if request['state'] not in TRANSITIONS[state]:
-#|             raise ValueError('invalid recorded state transition')
+#|         transition(prior,request);prior=request
 #|         state = request['state'];ordered.append(row);cursor = row['record_sha256']
 #|         if len(ordered) > len(by_hash):
 #|             raise ValueError('cyclic attempt history')
@@ -13010,8 +13839,7 @@ if __name__ == "__main__":
 #|     if len(value['records']) >= 100:
 #|         raise ValueError('attempt record budget reached')
 #|     state = None if head is None else head['record']['request']['state']
-#|     if request['state'] not in TRANSITIONS[state]:
-#|         raise ValueError('state transition refused; uncertain calls cannot silently return to pending')
+#|     transition(None if head is None else head['record']['request'],request)
 #|     if head is not None:
 #|         prior = head['record']['request']
 #|         if any(request[k] != prior[k] for k in ('project_id','registry_path','directory','attempt_id','source_sha256','snapshot_directory')):
@@ -13021,6 +13849,12 @@ if __name__ == "__main__":
 #|     actual, size = view.snapshot_hash(snapshot/'Lumen.sh', budget)
 #|     if metadata.get('source_sha256') != request['source_sha256'] or actual != request['source_sha256']:
 #|         raise ValueError('exact frozen source identity mismatch')
+#|     if request['schema_version']==2:
+#|         import git_publication
+#|         plan=request['evidence']['git']['plan']
+#|         source_bytes=proposal.read_file(str(snapshot/'Lumen.sh'),budget)
+#|         if plan['checkpoint_evidence_sha256']!=meta_sha or plan['source']!={'sha256':proposal.sha(source_bytes),'bytes':len(source_bytes),'git_blob_sha1':git_publication.blob_id(source_bytes)}:
+#|             raise ValueError('Git plan no longer matches frozen snapshot')
 #|     return {'sha256': actual, 'bytes': size, 'metadata_sha256': meta_sha}, view.review_observation(request['review_ref'], entries)
 #| 
 #| 
@@ -13267,5 +14101,2762 @@ if __name__ == "__main__":
 #|             with self.assertRaisesRegex(ValueError,'snapshot changed'):self.emit(request)
 #|         self.assertFalse((self.f.directory/'attempts'/'changed-snapshot'/'new-prepared.json').exists())
 # === LUMEN SECTION test_publication_attempts.py END ===
+
+# === LUMEN SECTION CHECKPOINTS.txt BEGIN ===
+#| LOCAL CHECKPOINTS: EXPLICIT SELECTION, HONEST INVENTORY
+#| 
+#| checkpoint export /absolute/request.json [--max-bytes 67108864]
+#| checkpoint inspect /absolute/checkpoint-directory [--max-bytes 67108864]
+#| checkpoint restore-plan /absolute/checkpoint-directory --destination /absolute/empty-directory
+#| 
+#| Export writes a local directory bundle in the selected project's registered
+#| checkpoints directory under checkpoint_id. Inspect and restore-plan are read-only,
+#| load embedded helpers in memory, and do not execute source blobs. The separate checkpoint restore request now supports isolated restoration into a
+#| new absent destination; see CHECKPOINT-RESTORE.txt. There is no upload, secret
+#| discovery, live-session reset or process restart.
+#| Existing ZIP intake's atomic no-replace directory publisher is reused; the bundle
+#| itself is an ordinary directory so its manifest stays directly readable.
+#| 
+#| Strict export request fields:
+#|   schema_version: integer1
+#|   project_id, checkpoint_id: registry identifier syntax
+#|   registry_path: explicit absolute normalized registry path
+#|   registry_revision: exact expected registry SHA256
+#|   tool_source_sha256: exact running Lumen.sh source SHA256
+#|   include_tool_source, include_registry: explicit booleans
+#|   owner, intent, request_ref: nonblank caller text, at most4000 characters each
+#|   inputs: at most100 objects, each exactly:
+#|     label: unique registry identifier; tool-source and registry are reserved
+#|     path: explicit absolute normalized selected file path
+#|     selection: include or external
+#|     expected_sha256: lowercase SHA256 or null
+#| Unknown/duplicate JSON keys, ambiguous IDs and repeated input paths are refused.
+#| Control-plane inclusion is explicit: selecting the registry includes its complete
+#| metadata document, including other project declarations if present, but none of
+#| those referenced files. The tool-source selection includes exact running bytes
+#| and observed ordinary mode. Omitting either creates an EXTERNAL_REFERENCE entry
+#| with its expected identity. Project inputs must lie in current declared roots,
+#| state directories or explicit contract-source references. Scope is not permission.
+#| 
+#| INCLUDED_BYTES means one selected no-follow regular file was read, bounded, hashed
+#| and carried exactly. Ordinary0777 mode bits and original absolute path are recorded;
+#| privilege bits, ownership, ACLs and xattrs are not restored or carried as authority.
+#| EXTERNAL_REFERENCE means explicitly omitted bytes; the source is not opened.
+#| MISSING means a selected include path or ancestor was absent when observed.
+#| Access errors, symlinks, directories, special files and supplied hash mismatches
+#| fail; they are not disguised as missing. A selected missing file appearing or an
+#| included file changing before publication rejects that export. No recursive source
+#| walk occurs. Registry schema checks may inspect declared path metadata as before.
+#| Selection is the caller's responsibility: readability does not authorize including
+#| credentials or unrelated sensitive files, and no automatic redaction is promised.
+#| 
+#| A bundle contains exactly manifest.json and blobs/. Included blobs have fixed
+#| content-addressed filenames, and duplicate contents share storage. Every manifest
+#| input retains its classification, original path, expected hash, actual hash/bytes
+#| where present, ordinary mode and reason for omitted bytes. The original request,
+#| caller attribution and exact registry/tool identities are bound by fingerprints.
+#| A deterministic content hash covers the project/registry/tool identities and exact
+#| selection inventory, excluding publication time, checkpoint ID and output location.
+#| The full manifest hash additionally identifies request and publication metadata.
+#| Hashes identify bytes, not authenticated truth or permission.
+#| 
+#| Before creating runtime storage, export validates and reads the selected material.
+#| Under a no-follow per-checkpoint cooperating lock, it stages the complete bundle,
+#| fsyncs, rechecks selected inputs/registry, publishes into an absent destination
+#| using Linux no-clobber rename, and verifies readback. Same checkpoint ID/full
+#| request replays the exact original verified bundle without reopening source paths;
+#| a conflicting request or corrupt/incomplete existing bundle is never overwritten.
+#| SIGINT/SIGTERM are deferred across publication and cleanup. A lost acknowledgement
+#| or post-publication doubt is uncertain; inspect/reuse the same ID before retrying.
+#| SIGKILL/host loss may leave staging or runtime directories. Locks and no-clobber
+#| publication are not transactions against unrelated writers or a persistence guarantee.
+#| 
+#| Default runtime byte budget64MiB, adjustable from1byte to1TiB. Each preflight and
+#| recheck is independently bounded; selected bytes are held in memory, so choose a
+#| budget that fits the executor. Manifest/request limit1MiB;100 selected inputs plus
+#| tool/registry records; at most102 content blobs. Budgets bound this operation, not
+#| the canonical monolith's permitted size. A larger source needs a larger explicit
+#| budget. No arbitrary journal/history trimming is performed.
+#| 
+#| Inspect requires only the bundle, checks exact manifest schema/bindings and blob
+#| hashes/lengths, and refuses unexpected files or unsafe paths. It does not read
+#| original source locations, re-adopt contracts or reconstitute permissions.
+#| Source files may be missing on a fresh executor while included bytes still verify.
+#| Outputs explicitly count included, missing and external material. Successful export
+#| or inspection means a faithful bundle, not that every selected input was present.
+#| 
+#| Restore-plan needs an explicit non-root destination. It proposes tool/Lumen.sh,
+#| registry/registry.json and files/LABEL below that destination, retaining original
+#| paths as descriptive provenance rather than default restore targets. It checks only
+#| these selected target paths for conflicts; no directory is created and no current
+#| file is read/replaced. Existing files, directory/type conflicts and symlinks block
+#| the proposed write. Missing/external records cannot be recreated from hashes and
+#| remain unavailable/resolve-external-separately. Actual isolated restoration requires a separate current checkpoint restore request,
+#| access checks and an absent destination; replacement is not supported.
+#| 
+#| Exit0 means export/replay, verified inspection or plan produced;75 means busy;74
+#| means failed/uncertain I/O;65 means invalid schema/precondition. The manifest can
+#| faithfully contain MISSING entries while export exits0, so inspect the counts.
+#| Every report keeps live state and remote durability UNKNOWN. A local copy is not
+#| proof of remote storage, a session transplant, or a successfully restored workspace.
+#| 
+#| Measured synthetic exercise — 2026-10-01, delegate: improve_voice_work_bridge
+#| The isolated continuity-fixture checkpoint carried four byte sets: exact running
+#| tool source, fixture registry, synthetic handoff and selected receipt. One selected
+#| file was MISSING; one explicitly uncarried schedule reference was EXTERNAL_REFERENCE.
+#| A copied bundle verified in a separate recipient directory. restore-plan proposed
+#| create-if-absent paths and left that directory empty; no restoration occurred.
+#| Original-source absence was also tested in isolated fixtures. No live project
+#| registry, source, receipt, session or scheduler was reset.
+#| Demo tool source SHA256: b7459fe3ae4ad1ee2065adeceb43b4c76b002fe5007832306c43ef31387d08fe
+#| Manifest SHA256: f807c5d5dd7436ea25a49d33bb81ed0022591f5d77c6de4f57b181183352dcbb
+#| Content SHA256: 590f6f84702c0ebd2913a5663a6533ae804d9415a7e868fb6461265be4b0ab61
+#| The demo captures an earlier candidate of this increment; its exact tool bytes
+#| travel inside the bundle. Later journal/test prose does not silently change that
+#| checkpoint identity. Full local command/readback evidence is checkpoint-practical-
+#| evidence.json beside the development candidate, and copied into its review freeze.
+#| These are measured local results, not a parent review or remote-persistence test.
+# === LUMEN SECTION CHECKPOINTS.txt END ===
+
+# === LUMEN SECTION HISTORICAL-HANDOFF-ATTEMPTS.txt BEGIN ===
+#| CURRENT HANDOFF — owner attempt recording, 2026-09-30 UTC
+#| Author: delegate: improve_voice_work_bridge
+#| This explicitly supersedes the capsule retained in HISTORICAL-HANDOFF-OUTBOX.txt.
+#| Lumen reviewed the status view in lumen-publication-status-review-20260930-01.
+#| 
+#| The reviewed outbox-status source 00daf08e5783285af642dd11933e65b928877e38b19f9a6133dcee4cee21daee
+#| has not been reported published. Lumen reports the upload call was cancelled and
+#| remote readback still showed prior e5bc87b... bytes. The actual pending-state.json
+#| records uncertain, with explicit cancellation and no automatic retry. See the dated
+#| PUBLICATION-CANCELLATION-OBSERVATION.json; this file cannot independently verify
+#| GitHub. Silence or a sent request is not completion.
+#| 
+#| publication record REQUEST.json now records owner-supplied attempt evidence inside
+#| the existing outbox. Stable attempt/record IDs and exact predecessor hashes preserve
+#| history and reject conflicting reuses. Frozen source bytes are checked; cancellation
+#| is retained as an uncertain event. An uncertain attempt cannot silently return to
+#| pending. Published requires supplied commit and exact-readback report, still labeled
+#| as owner evidence. No network call, credential or external retry occurs.
+#| 
+#| publication status remains read-only and reconciles immutable attempt history with
+#| existing latest/pending files without selecting an automatic winner. Those legacy
+#| files remain owner-maintained, not rewritten by recording. PUBLICATION-ATTEMPTS.txt
+#| specifies exact inputs, transitions, replay and interruption recovery. The publication
+#| directory gained declared write scope for recording; no OS/platform access changed.
+#| 
+#| Next: Lumen reviews the local sequence and cancellation evidence, then decides the
+#| permitted publication path. Preserve h0p3's conversation and earlier snapshots. The
+#| local record is evidence about a claim, never a substitute for the actual action.
+# === LUMEN SECTION HISTORICAL-HANDOFF-ATTEMPTS.txt END ===
+
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-ATTEMPTS.json BEGIN ===
+#| {
+#|   "schema_version": 1,
+#|   "recorded_as_of_utc": "2026-09-30T23:53:47.871069+00:00",
+#|   "author": "delegate: improve_voice_work_bridge",
+#|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
+#|   "position": "Outbox status reviewed; its connector upload was cancelled and remains uncertain. Explicit owner-attempt recording contributed for review.",
+#|   "next_step": "Review local immutable attempt recording and cancellation recovery; reconcile remote bytes before any separately justified external retry.",
+#|   "open_questions": [
+#|     "How should exact candidate changes, rationale and evidence travel together?",
+#|     "Which executor owns future process handles?",
+#|     "What survives an executor change?"
+#|   ],
+#|   "implemented": [
+#|     "attributed conversation",
+#|     "legacy and structured requests",
+#|     "non-executing ZIP intake",
+#|     "project registry and routed requests",
+#|     "local capabilities inspect/probe",
+#|     "read-only status/handoff",
+#|     "inert proposal preparation/inspection",
+#|     "digest-bound attributed review records",
+#|     "read-only process observation and snapshot tail",
+#|     "explicit completed bounded project-run export",
+#|     "read-only recorded work queues with explicit optional registry/project observations",
+#|     "read-only existing publication outbox reconciliation",
+#|     "explicit atomic owner evidence within the existing publication outbox"
+#|   ],
+#|   "proposed": [
+#|     "guarded candidate publication",
+#|     "process launch/stop/live adapters",
+#|     "portable checkpoints",
+#|     "wake/scheduler records",
+#|     "project-linked queue interpretation and interruption recovery"
+#|   ],
+#|   "evidence_entry_ids": [
+#|     "lumen-capabilities-review-20260930-01",
+#|     "lumen-office-review-20260930-01",
+#|     "lumen-proposal-review-20260930-01",
+#|     "lumen-plan-consolidation-review-20260930-01",
+#|     "lumen-process-inspection-review-20260930-01",
+#|     "lumen-owner-export-review-20260930-01",
+#|     "lumen-queue-review-20260930-01",
+#|     "lumen-real-projects-review-20260930-01",
+#|     "lumen-publication-status-review-20260930-01"
+#|   ]
+#| }
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-ATTEMPTS.json END ===
+
+# === LUMEN SECTION checkpoints.py BEGIN ===
+#| """Explicit selected-file local checkpoints; inspection and restore planning never restore."""
+#| import argparse
+#| import datetime
+#| import fcntl
+#| import json
+#| import os
+#| from pathlib import Path
+#| import secrets
+#| import shutil
+#| import signal
+#| import stat
+#| import project_registry as registry
+#| import proposal
+#| import project_requests
+#| import zip_intake
+#| 
+#| REQUEST_FIELDS = {'schema_version','project_id','checkpoint_id','registry_path','registry_revision',
+#|                   'tool_source_sha256','include_tool_source','include_registry','owner','intent','request_ref','inputs'}
+#| ITEM_FIELDS = {'label','path','selection','expected_sha256'}
+#| ROW_FIELDS = {'label','original_path','classification','expected_sha256','sha256','bytes','mode','blob','reason'}
+#| AUTHORITY = 'local selected bytes and caller attribution only; no permissions, live state, remote durability or restoration established'
+#| 
+#| 
+#| def fingerprint(value):
+#|     return proposal.sha(json.dumps(value,sort_keys=True).encode())
+#| 
+#| 
+#| def text(value):
+#|     if type(value) is not str or not value.strip() or len(value)>4000:
+#|         raise ValueError('checkpoint text must have 1..4000 characters')
+#| 
+#| 
+#| def validate_request(value):
+#|     registry.exact(value,REQUEST_FIELDS,'checkpoint request')
+#|     if type(value['schema_version']) is not int or value['schema_version']!=1:
+#|         raise ValueError('unsupported checkpoint schema')
+#|     for key in ('project_id','checkpoint_id'):registry.identifier(value[key])
+#|     registry.normalized(value['registry_path'])
+#|     for key in ('registry_revision','tool_source_sha256'):registry.digest(value[key])
+#|     for key in ('include_tool_source','include_registry'):
+#|         if type(value[key]) is not bool:raise ValueError('explicit boolean selection required')
+#|     for key in ('owner','intent','request_ref'):text(value[key])
+#|     if type(value['inputs']) is not list or len(value['inputs'])>100:
+#|         raise ValueError('checkpoint selects at most100 explicit inputs')
+#|     labels={'tool-source','registry'};paths=set()
+#|     for item in value['inputs']:
+#|         registry.exact(item,ITEM_FIELDS,'checkpoint input');registry.identifier(item['label']);registry.normalized(item['path'])
+#|         if item['label'] in labels or item['path'] in paths:raise ValueError('duplicate/reserved input label or path')
+#|         labels.add(item['label']);paths.add(item['path'])
+#|         if item['selection'] not in ('include','external'):raise ValueError('invalid selection')
+#|         if item['expected_sha256'] is not None:registry.digest(item['expected_sha256'])
+#|     return value
+#| 
+#| 
+#| def read_selected(path,budget):
+#|     parent,name=registry.open_parent(path)
+#|     try:
+#|         fd=os.open(name,os.O_RDONLY|os.O_NOFOLLOW|os.O_NONBLOCK,dir_fd=parent)
+#|         with os.fdopen(fd,'rb') as stream:
+#|             before=os.fstat(stream.fileno())
+#|             if not stat.S_ISREG(before.st_mode):raise ValueError('selected input must be a regular file')
+#|             if before.st_size>budget[0]:raise ValueError('checkpoint byte budget exceeded')
+#|             raw=stream.read(budget[0]+1)
+#|             if len(raw)>budget[0] or registry.identity(before)!=registry.identity(os.fstat(stream.fileno())):
+#|                 raise ValueError('selected input changed or exceeded budget')
+#|             budget[0]-=len(raw)
+#|             return raw,stat.S_IMODE(before.st_mode)&0o777
+#|     finally:os.close(parent)
+#| 
+#| 
+#| def row(label,path,classification,expected=None,raw=None,mode=None,reason=None):
+#|     digest=None if raw is None else proposal.sha(raw)
+#|     return dict(label=label,original_path=path,classification=classification,expected_sha256=expected,
+#|                 sha256=digest,bytes=None if raw is None else len(raw),mode=mode,
+#|                 blob=None if raw is None else 'blobs/'+digest+'.bin',reason=reason)
+#| 
+#| 
+#| def collect(request,tool_bytes,tool_path,budget):
+#|     project,revision=proposal.load_project(request['registry_path'],request['project_id'])
+#|     if revision!=request['registry_revision']:raise ValueError('stale registry revision')
+#|     if proposal.sha(tool_bytes)!=request['tool_source_sha256']:raise ValueError('tool source identity mismatch')
+#|     rows=[];blobs={}
+#|     def add(item,raw=None):
+#|         rows.append(item)
+#|         if raw is not None:blobs[item['blob']]=raw
+#|     if request['include_tool_source']:
+#|         source_raw,mode=read_selected(tool_path,budget)
+#|         if source_raw!=tool_bytes:raise ValueError('running source file changed during export')
+#|         add(row('tool-source',tool_path,'INCLUDED_BYTES',request['tool_source_sha256'],tool_bytes,mode),tool_bytes)
+#|     else:add(row('tool-source',tool_path,'EXTERNAL_REFERENCE',request['tool_source_sha256'],reason='tool source bytes not selected'))
+#|     if request['include_registry']:
+#|         raw,mode=read_selected(request['registry_path'],budget)
+#|         if proposal.sha(raw)!=revision:raise ValueError('registry changed during selection')
+#|         add(row('registry',request['registry_path'],'INCLUDED_BYTES',revision,raw,mode),raw)
+#|     else:add(row('registry',request['registry_path'],'EXTERNAL_REFERENCE',revision,reason='registry bytes not selected'))
+#|     for item in request['inputs']:
+#|         if not proposal.in_scope(project,item['path']):raise ValueError('selected input outside project scope')
+#|         if item['path']==request['registry_path']:raise ValueError('use explicit include_registry selection')
+#|         if item['selection']=='external':
+#|             add(row(item['label'],item['path'],'EXTERNAL_REFERENCE',item['expected_sha256'],reason='explicit external reference; contents not read'));continue
+#|         try:raw,mode=read_selected(item['path'],budget)
+#|         except FileNotFoundError:
+#|             add(row(item['label'],item['path'],'MISSING',item['expected_sha256'],reason='selected file or parent absent at observation'));continue
+#|         if item['expected_sha256'] is not None and proposal.sha(raw)!=item['expected_sha256']:
+#|             raise ValueError('selected input hash mismatch: '+item['label'])
+#|         add(row(item['label'],item['path'],'INCLUDED_BYTES',item['expected_sha256'],raw,mode),raw)
+#|     content={'project_id':request['project_id'],'registry_revision':revision,'tool_source_sha256':request['tool_source_sha256'],'items':rows}
+#|     return project,content,blobs
+#| 
+#| 
+#| def validate_manifest(raw):
+#|     if len(raw)>1024*1024:raise ValueError('manifest exceeds 1 MiB')
+#|     manifest=registry.decode(raw)
+#|     registry.exact(manifest,{'schema_version','kind','exported_at_utc','request','request_sha256','content','content_sha256','authority'},'checkpoint manifest')
+#|     if type(manifest['schema_version']) is not int or manifest['schema_version']!=1 or manifest['kind']!='lumen-checkpoint':raise ValueError('unsupported checkpoint manifest')
+#|     request=validate_request(manifest['request'])
+#|     if manifest['request_sha256']!=fingerprint(request) or manifest['authority']!=AUTHORITY:raise ValueError('manifest request identity/authority mismatch')
+#|     stamp=datetime.datetime.fromisoformat(manifest['exported_at_utc'])
+#|     if stamp.tzinfo is None or stamp.utcoffset()!=datetime.timedelta(0):raise ValueError('checkpoint export time must be UTC')
+#|     content=manifest['content'];registry.exact(content,{'project_id','registry_revision','tool_source_sha256','items'},'checkpoint content')
+#|     if any(content[k]!=request[k] for k in ('project_id','registry_revision','tool_source_sha256')) or fingerprint(content)!=manifest['content_sha256']:
+#|         raise ValueError('checkpoint content identity mismatch')
+#|     items=content['items']
+#|     if type(items) is not list or len(items)!=len(request['inputs'])+2:raise ValueError('selected input inventory incomplete')
+#|     expected=[dict(label='tool-source',path=None,selection='include' if request['include_tool_source'] else 'external',expected_sha256=request['tool_source_sha256']),dict(label='registry',path=request['registry_path'],selection='include' if request['include_registry'] else 'external',expected_sha256=request['registry_revision'])]+request['inputs']
+#|     blob_specs={}
+#|     for item,wanted in zip(items,expected):
+#|         registry.exact(item,ROW_FIELDS,'checkpoint item');registry.normalized(item['original_path'])
+#|         if item['label']!=wanted['label'] or wanted['path'] is not None and item['original_path']!=wanted['path'] or item['expected_sha256']!=wanted['expected_sha256']:
+#|             raise ValueError('checkpoint input binding mismatch')
+#|         classification=item['classification']
+#|         if classification not in ('INCLUDED_BYTES','EXTERNAL_REFERENCE','MISSING'):raise ValueError('invalid classification')
+#|         if wanted['selection']=='external' and classification!='EXTERNAL_REFERENCE' or wanted['selection']=='include' and classification=='EXTERNAL_REFERENCE':raise ValueError('selection classification mismatch')
+#|         if item['label'] in ('tool-source','registry') and wanted['selection']=='include' and classification!='INCLUDED_BYTES':raise ValueError('selected control-plane bytes missing')
+#|         if classification=='INCLUDED_BYTES':
+#|             registry.digest(item['sha256'])
+#|             if type(item['bytes']) is not int or item['bytes']<0 or type(item['mode']) is not int or not 0<=item['mode']<=0o777 or item['reason'] is not None:raise ValueError('invalid included byte metadata')
+#|             if item['expected_sha256'] is not None and item['expected_sha256']!=item['sha256']:raise ValueError('expected included hash mismatch')
+#|             name='blobs/'+item['sha256']+'.bin'
+#|             if item['blob']!=name:raise ValueError('unsafe/noncanonical blob path')
+#|             expected_blob=(item['sha256'],item['bytes'])
+#|             if name in blob_specs and blob_specs[name]!=expected_blob:raise ValueError('inconsistent shared blob metadata')
+#|             blob_specs[name]=expected_blob
+#|         else:
+#|             if any(item[k] is not None for k in ('sha256','bytes','mode','blob')):raise ValueError('uncarried input claims bytes')
+#|             text(item['reason'])
+#|     return manifest,blob_specs
+#| 
+#| 
+#| def inspect_bundle(path,max_bytes=64*1024*1024):
+#|     path=registry.normalized(path)
+#|     if type(max_bytes) is not int or not 1<=max_bytes<=1024**4:raise ValueError('invalid byte budget')
+#|     budget=[max_bytes];raw=proposal.read_file(str(path/'manifest.json'),[1024*1024])
+#|     if len(raw)>budget[0]:raise ValueError('manifest exceeds byte budget')
+#|     budget[0]-=len(raw);manifest,blob_specs=validate_manifest(raw)
+#|     for name,expected in blob_specs.items():
+#|         payload,_=read_selected(str(path/name),budget)
+#|         if (proposal.sha(payload),len(payload))!=expected:raise ValueError('checkpoint blob identity mismatch')
+#|     blob_names={name.split('/')[1] for name in blob_specs}
+#|     fd=zip_intake.open_directory(path)
+#|     try:
+#|         names=[]
+#|         with os.scandir(fd) as entries:
+#|             for entry in entries:
+#|                 if len(names)>=2:raise ValueError('unexpected checkpoint files')
+#|                 names.append(entry.name)
+#|         if set(names)!={'manifest.json','blobs'}:raise ValueError('unexpected checkpoint files')
+#|         blobfd=os.open('blobs',os.O_RDONLY|os.O_DIRECTORY|os.O_NOFOLLOW,dir_fd=fd)
+#|         try:
+#|             names=[]
+#|             with os.scandir(blobfd) as entries:
+#|                 for entry in entries:
+#|                     if len(names)>=102:raise ValueError('too many checkpoint blobs')
+#|                     names.append(entry.name)
+#|             if set(names)!=blob_names:raise ValueError('checkpoint blob inventory mismatch')
+#|         finally:os.close(blobfd)
+#|     finally:os.close(fd)
+#|     items=manifest['content']['items']
+#|     return {'status':'verified','manifest_sha256':proposal.sha(raw),'content_sha256':manifest['content_sha256'],
+#|             'manifest':manifest,'included_count':sum(x['classification']=='INCLUDED_BYTES' for x in items),
+#|             'external_count':sum(x['classification']=='EXTERNAL_REFERENCE' for x in items),
+#|             'missing_count':sum(x['classification']=='MISSING' for x in items),
+#|             'restoration_performed':False,'live_state':'UNKNOWN','remote_durability':'UNKNOWN'}
+#| 
+#| 
+#| def export(request,tool_bytes,tool_path,max_bytes=64*1024*1024):
+#|     validate_request(request)
+#|     if type(max_bytes) is not int or not 1<=max_bytes<=1024**4:raise ValueError('invalid byte budget')
+#|     project,revision=proposal.load_project(request['registry_path'],request['project_id'])
+#|     destination=Path(project['state_directories']['checkpoints'])/request['checkpoint_id']
+#|     try:
+#|         existing=inspect_bundle(str(destination),max_bytes)
+#|     except FileNotFoundError:
+#|         if destination.exists() or destination.is_symlink():raise ValueError('existing incomplete checkpoint; no overwrite')
+#|     else:
+#|         if existing['manifest']['request_sha256']!=fingerprint(request):raise ValueError('checkpoint ID conflict')
+#|         return {**existing,'status':'exported','replayed':True,'path':str(destination)}
+#|     project,content,blobs=collect(request,tool_bytes,tool_path,[max_bytes])
+#|     manifest={'schema_version':1,'kind':'lumen-checkpoint','exported_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'request':request,'request_sha256':fingerprint(request),'content':content,'content_sha256':fingerprint(content),'authority':AUTHORITY}
+#|     raw=json.dumps(manifest,indent=2,sort_keys=True).encode()+b'\n'
+#|     if len(raw)>1024*1024 or len(raw)+sum(len(x) for x in blobs.values())>max_bytes:raise ValueError('checkpoint manifest/payload budget exceeded')
+#|     project_requests.safe_makedirs(str(destination.parent))
+#|     parent=zip_intake.open_directory(destination.parent);lock=None;stage=None;attempted=False;published=False;handlers={};signals=[];result=None
+#|     try:
+#|         lock=os.open('.checkpoint-'+request['checkpoint_id']+'.lock',os.O_WRONLY|os.O_CREAT|os.O_NOFOLLOW,0o600,dir_fd=parent);fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+#|         # Concurrent committed identical requests replay; no source effects are rerun.
+#|         try:existing=inspect_bundle(str(destination),max_bytes)
+#|         except FileNotFoundError:
+#|             if destination.exists() or destination.is_symlink():raise ValueError('existing incomplete checkpoint')
+#|         else:
+#|             if existing['manifest']['request_sha256']!=fingerprint(request):raise ValueError('checkpoint ID conflict')
+#|             return {**existing,'status':'exported','replayed':True,'path':str(destination)}
+#|         for signum in (signal.SIGINT,signal.SIGTERM):
+#|             handlers[signum]=signal.getsignal(signum);signal.signal(signum,lambda sig,frame:signals.append(sig))
+#|         name='.checkpoint-stage-'+secrets.token_hex(12);os.mkdir(name,0o700,dir_fd=parent);stage=name
+#|         info=os.stat(stage,dir_fd=parent,follow_symlinks=False);stage_identity=(info.st_dev,info.st_ino)
+#|         folder=destination.parent/stage;os.mkdir(folder/'blobs',0o700)
+#|         for name,payload in [('manifest.json',raw)]+list(blobs.items()):
+#|             fd=os.open(folder/name,os.O_WRONLY|os.O_CREAT|os.O_EXCL|os.O_NOFOLLOW,0o600)
+#|             with os.fdopen(fd,'wb') as stream:stream.write(payload);stream.flush();os.fsync(stream.fileno())
+#|         for child in (folder/'blobs',folder):
+#|             fd=zip_intake.open_directory(child)
+#|             try:os.fsync(fd)
+#|             finally:os.close(fd)
+#|         # Recheck all included inputs and explicit missing observations before publication.
+#|         _,current,current_blobs=collect(request,tool_bytes,tool_path,[max_bytes])
+#|         if current!=content or current_blobs!=blobs:raise ValueError('selected inputs changed during export')
+#|         if signals:raise OSError('interrupted before checkpoint publication')
+#|         attempted=True;zip_intake.publish_noreplace(parent,stage,destination.name);published=True;stage=None;os.fsync(parent)
+#|         verified=inspect_bundle(str(destination),max_bytes)
+#|         if verified['manifest_sha256']!=proposal.sha(raw):raise OSError('checkpoint readback mismatch')
+#|         result={**verified,'status':'uncertain' if signals else 'exported','replayed':False,'path':str(destination),'verification':'exact readback'}
+#|     except BlockingIOError:result={'status':'busy','path':str(destination)}
+#|     except (OSError,ValueError) as error:
+#|         if isinstance(error,ValueError) and not attempted:raise
+#|         result={'status':'uncertain' if attempted else 'failed','path':str(destination),'publication_observed':published,'expected_manifest_sha256':proposal.sha(raw),'error':str(error),'recovery':'Inspect the original checkpoint ID and exact manifest before retrying; never overwrite uncertain output.'}
+#|     finally:
+#|         for signum in handlers:signal.signal(signum,signal.SIG_IGN)
+#|         try:
+#|             if stage is not None:
+#|                 try:
+#|                     info=os.stat(stage,dir_fd=parent,follow_symlinks=False)
+#|                     if (info.st_dev,info.st_ino)!=stage_identity:raise OSError('staging directory identity changed')
+#|                     shutil.rmtree(stage,dir_fd=parent)
+#|                 except FileNotFoundError:pass
+#|                 except OSError as error:
+#|                     if result is None:result={'status':'uncertain' if attempted else 'failed'}
+#|                     result.update(cleanup_complete=False,cleanup_error=str(error))
+#|         finally:
+#|             if lock is not None:os.close(lock)
+#|             os.close(parent)
+#|             for signum,handler in handlers.items():signal.signal(signum,handler)
+#|     result.setdefault('cleanup_complete',True);result['received_signals']=signals
+#|     return result
+#| 
+#| 
+#| def relative_destination(item):
+#|     return {'tool-source':'tool/Lumen.sh','registry':'registry/registry.json'}.get(item['label'],'files/'+item['label'])
+#| 
+#| 
+#| def restore_plan(bundle,destination,max_bytes=64*1024*1024):
+#|     destination=registry.normalized(destination)
+#|     if destination==Path('/'):raise ValueError('restore-plan destination cannot be root')
+#|     registry.path_info(str(destination),'directory')
+#|     report=inspect_bundle(bundle,max_bytes);steps=[]
+#|     for item in report['manifest']['content']['items']:
+#|         relative=relative_destination(item)
+#|         target=destination/relative
+#|         step={'label':item['label'],'original_path':item['original_path'],'proposed_path':str(target),'classification':item['classification'],'sha256':item['sha256'],'ordinary_mode':item['mode'],'action':'unavailable','target_observation':'not-requested'}
+#|         if item['classification']=='INCLUDED_BYTES':
+#|             try:info=registry.path_info(str(target),'file');step['target_observation']='absent' if info is None else 'exists'
+#|             except (OSError,ValueError) as error:step['target_observation']='blocked';step['error']=str(error)
+#|             step['action']='propose-create-if-absent' if step['target_observation']=='absent' else 'blocked-no-overwrite'
+#|         elif item['classification']=='EXTERNAL_REFERENCE':step['action']='resolve-external-separately'
+#|         steps.append(step)
+#|     return {'status':'plan-only','checkpoint_manifest_sha256':report['manifest_sha256'],'destination':str(destination),'steps':steps,'restoration_performed':False,'authorization':'requires current explicit restoration approval and checks; stored registry/receipts cannot grant it','live_state':'UNKNOWN','remote_durability':'UNKNOWN'}
+#| 
+#| 
+#| def main(argv,tool_bytes,tool_path):
+#|     parser=argparse.ArgumentParser(description=__doc__);commands=parser.add_subparsers(dest='action',required=True)
+#|     add=commands.add_parser('export');add.add_argument('request_file')
+#|     restore=commands.add_parser('restore');restore.add_argument('request_file')
+#|     inspect=commands.add_parser('inspect');inspect.add_argument('bundle')
+#|     plan=commands.add_parser('restore-plan');plan.add_argument('bundle');plan.add_argument('--destination',required=True)
+#|     for command in (add,restore,inspect,plan):command.add_argument('--max-bytes',type=int,default=64*1024*1024)
+#|     args=parser.parse_args(argv)
+#|     if args.action=='export':
+#|         request=registry.decode(proposal.read_file(args.request_file,[1024*1024]));result=export(request,tool_bytes,tool_path,args.max_bytes)
+#|     elif args.action=='restore':
+#|         import checkpoint_restore
+#|         return checkpoint_restore.main([args.request_file,'--max-bytes',str(args.max_bytes)],proposal.sha(tool_bytes))
+#|     elif args.action=='inspect':result=inspect_bundle(args.bundle,args.max_bytes)
+#|     else:result=restore_plan(args.bundle,args.destination,args.max_bytes)
+#|     print(json.dumps(result,indent=2,ensure_ascii=True))
+#|     return 0 if result['status'] in ('exported','verified','plan-only') else 75 if result['status']=='busy' else 74
+# === LUMEN SECTION checkpoints.py END ===
+
+# === LUMEN SECTION test_checkpoints.py BEGIN ===
+#| import copy
+#| import hashlib
+#| import json
+#| import os
+#| from pathlib import Path
+#| import shutil
+#| import signal
+#| import subprocess
+#| import sys
+#| import unittest
+#| from unittest import mock
+#| import checkpoints
+#| import project_registry as registry
+#| import test_project_requests as fixtures
+#| 
+#| 
+#| class CheckpointTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.f=fixtures.ProjectRequestTests();self.f.setUp();self.addCleanup(self.f.doCleanups);self.project=self.f.register()
+#|         self.tool=self.f.root/'Lumen.sh';self.tool.write_bytes(Path(os.environ['LUMEN_ARTIFACT']).read_bytes());self.tool.chmod(0o700)
+#|         self.source=Path(self.project['source_identities'][0]['path']);self.source.write_bytes('Exact Unicode λ\n'.encode());self.source.chmod(0o555)
+#|         self.request=dict(schema_version=1,project_id='alpha',checkpoint_id='checkpoint-one',registry_path=str(self.f.registry),registry_revision=registry.sha(self.f.registry.read_bytes()),tool_source_sha256=registry.sha(self.tool.read_bytes()),include_tool_source=True,include_registry=True,owner='Fixture owner',intent='Selected synthetic continuity, no restore',request_ref='Synthetic fixture only',inputs=[dict(label='selected-source',path=str(self.source),selection='include',expected_sha256=registry.sha(self.source.read_bytes())),dict(label='missing-receipt',path=str(Path(self.project['state_directories']['receipts'])/'missing.json'),selection='include',expected_sha256=None),dict(label='external-contract',path=self.project['contracts'][0]['source'],selection='external',expected_sha256=self.project['contracts'][0]['sha256'])])
+#|         self.destination=Path(self.project['state_directories']['checkpoints'])/'checkpoint-one'
+#| 
+#|     def emit(self,request=None):return checkpoints.export(request or self.request,self.tool.read_bytes(),str(self.tool))
+#| 
+#|     def test_exact_roundtrip_selected_missing_external_and_modes(self):
+#|         result=self.emit();self.assertEqual(result['status'],'exported')
+#|         report=checkpoints.inspect_bundle(str(self.destination));self.assertEqual(report['included_count'],3);self.assertEqual(report['missing_count'],1);self.assertEqual(report['external_count'],1)
+#|         item=next(x for x in report['manifest']['content']['items'] if x['label']=='selected-source')
+#|         self.assertEqual(item['mode'],0o555);self.assertEqual((self.destination/item['blob']).read_bytes(),self.source.read_bytes());self.assertEqual(item['original_path'],str(self.source))
+#|         self.assertEqual(report['live_state'],'UNKNOWN');self.assertFalse(report['restoration_performed'])
+#| 
+#|     def test_replay_without_source_and_conflict_no_overwrite(self):
+#|         first=self.emit();before=(self.destination/'manifest.json').read_bytes();self.source.unlink()
+#|         self.assertTrue(self.emit()['replayed'])
+#|         changed=copy.deepcopy(self.request);changed['intent']='conflict'
+#|         with self.assertRaises(ValueError):self.emit(changed)
+#|         self.assertEqual((self.destination/'manifest.json').read_bytes(),before)
+#| 
+#|     def test_invalid_inputs_budget_and_wrong_project_no_state(self):
+#|         for change in [lambda x:x.update(registry_revision='0'*64),lambda x:x['inputs'][0].update(path=str(self.f.root/'unrelated')),lambda x:x['inputs'][0].update(expected_sha256='0'*64),lambda x:x['inputs'].append(copy.deepcopy(x['inputs'][0])),lambda x:x.update(include_tool_source=1),lambda x:x.update(extra=True)]:
+#|             request=copy.deepcopy(self.request);change(request)
+#|             with self.assertRaises(ValueError):self.emit(request)
+#|         with self.assertRaises(ValueError):checkpoints.export(self.request,self.tool.read_bytes(),str(self.tool),16)
+#|         self.assertFalse(self.destination.parent.exists())
+#| 
+#|     def test_selected_symlink_directory_special_refused_without_execution(self):
+#|         original=self.source.read_bytes();self.source.unlink();self.source.symlink_to(self.tool)
+#|         with self.assertRaises((OSError,ValueError)):self.emit()
+#|         self.source.unlink();self.source.mkdir()
+#|         with self.assertRaises(ValueError):self.emit()
+#|         self.source.rmdir();os.mkfifo(self.source)
+#|         with self.assertRaises(ValueError):self.emit()
+#|         self.assertFalse(self.destination.parent.exists())
+#| 
+#|     def test_external_not_read_and_no_implicit_collection(self):
+#|         self.request['inputs'][0]['selection']='external'
+#|         # The selected external path can be a symlink: it is inert and never dereferenced.
+#|         external=self.source.parent/'external-link';external.symlink_to('/not/read');self.request['inputs'][0]['path']=str(external)
+#|         marker=os.urandom(24).hex();unselected=self.source.parent/'unselected-secret-marker';unselected.write_text(marker)
+#|         result=self.emit();self.assertEqual(result['external_count'],2)
+#|         joined=b''.join(x.read_bytes() for x in (self.destination/'blobs').iterdir())
+#|         self.assertNotIn(marker.encode(),joined)
+#| 
+#|     def test_empty_directory_restore_plan_and_conflicts_no_changes(self):
+#|         self.emit();empty=self.f.root/'empty';empty.mkdir()
+#|         plan=checkpoints.restore_plan(str(self.destination),str(empty));self.assertFalse(plan['restoration_performed']);self.assertEqual(list(empty.iterdir()),[])
+#|         self.assertEqual(next(x for x in plan['steps'] if x['label']=='missing-receipt')['action'],'unavailable')
+#|         self.assertEqual(next(x for x in plan['steps'] if x['label']=='external-contract')['action'],'resolve-external-separately')
+#|         (empty/'files').mkdir();target=empty/'files'/'selected-source';target.write_bytes(b'keep')
+#|         plan=checkpoints.restore_plan(str(self.destination),str(empty));self.assertEqual(next(x for x in plan['steps'] if x['label']=='selected-source')['action'],'blocked-no-overwrite');self.assertEqual(target.read_bytes(),b'keep')
+#|         target.unlink();target.symlink_to(self.tool)
+#|         self.assertEqual(next(x for x in checkpoints.restore_plan(str(self.destination),str(empty))['steps'] if x['label']=='selected-source')['action'],'blocked-no-overwrite')
+#| 
+#|     def test_tampered_blob_manifest_path_and_missing_payload_reject(self):
+#|         self.emit();manifest_path=self.destination/'manifest.json';raw=manifest_path.read_bytes();manifest=json.loads(raw)
+#|         item=manifest['content']['items'][0];blob=self.destination/item['blob'];original=blob.read_bytes();blob.write_bytes(b'tampered')
+#|         with self.assertRaises(ValueError):checkpoints.inspect_bundle(str(self.destination))
+#|         blob.write_bytes(original);item['blob']='../../elsewhere';manifest['content_sha256']=checkpoints.fingerprint(manifest['content']);manifest_path.write_text(json.dumps(manifest))
+#|         with self.assertRaises(ValueError):checkpoints.inspect_bundle(str(self.destination))
+#|         manifest_path.write_bytes(raw);blob.unlink()
+#|         with self.assertRaises(FileNotFoundError):checkpoints.inspect_bundle(str(self.destination))
+#|         with self.assertRaises(ValueError):self.emit()
+#| 
+#|     def test_publication_failure_lost_ack_and_existing_destination(self):
+#|         original=checkpoints.zip_intake.publish_noreplace
+#|         def lose(*args):original(*args);raise OSError('lost ack')
+#|         with mock.patch.object(checkpoints.zip_intake,'publish_noreplace',side_effect=lose):result=self.emit()
+#|         self.assertEqual(result['status'],'uncertain');self.assertTrue(self.emit()['replayed'])
+#|         request=copy.deepcopy(self.request);request['checkpoint_id']='occupied';occupied=self.destination.parent/'occupied';occupied.mkdir();(occupied/'keep').write_text('keep')
+#|         with self.assertRaises(ValueError):self.emit(request)
+#|         self.assertEqual((occupied/'keep').read_text(),'keep')
+#| 
+#|     def test_signal_before_publication_cleans_stage(self):
+#|         original=os.fsync;count=[]
+#|         def interrupt(fd):
+#|             original(fd);count.append(fd)
+#|             if len(count)==1:signal.raise_signal(signal.SIGTERM)
+#|         with mock.patch.object(os,'fsync',side_effect=interrupt):result=self.emit()
+#|         self.assertEqual(result['status'],'failed');self.assertFalse(self.destination.exists());self.assertTrue(result['cleanup_complete'])
+#|         self.assertFalse(any(x.name.startswith('.checkpoint-stage') for x in self.destination.parent.iterdir()))
+#| 
+#|     def test_deterministic_content_separate_from_storage_and_time(self):
+#|         first=self.emit();request=copy.deepcopy(self.request);request['checkpoint_id']='second';second=self.emit(request)
+#|         self.assertEqual(first['content_sha256'],second['content_sha256']);self.assertNotEqual(first['manifest_sha256'],second['manifest_sha256'])
+#| 
+#|     def test_cold_copy_inspect_and_plan_with_sources_gone(self):
+#|         self.emit();cold=self.f.root/'cold';cold.mkdir();bundle=cold/'saved';shutil.copytree(self.destination,bundle);artifact=cold/'Lumen.sh';shutil.copyfile(self.tool,artifact);cwd=cold/'empty';cwd.mkdir()
+#|         self.source.unlink();self.f.registry.unlink()
+#|         for args in [('checkpoint','inspect',str(bundle)),('checkpoint','restore-plan',str(bundle),'--destination',str(cwd))]:
+#|             r=subprocess.run(['bash',str(artifact),*args],cwd=cwd,capture_output=True,text=True,timeout=15,env=dict(os.environ,TMPDIR=str(cold/'not-created')))
+#|             self.assertEqual(r.returncode,0,r.stderr);self.assertFalse(json.loads(r.stdout)['restoration_performed'])
+#|         self.assertEqual(list(cwd.iterdir()),[]);self.assertFalse((cold/'not-created').exists())
+#| 
+#|     def test_input_change_during_staging_rejected_and_cleaned(self):
+#|         self.source.chmod(0o755)
+#|         original=os.fsync;calls=[]
+#|         def change(fd):
+#|             original(fd);calls.append(fd)
+#|             if len(calls)==1:self.source.write_bytes(b'changed during staging')
+#|         with mock.patch.object(os,'fsync',side_effect=change):
+#|             with self.assertRaises(ValueError):self.emit()
+#|         self.assertFalse(self.destination.exists());self.assertFalse(any(x.name.startswith('.checkpoint-stage') for x in self.destination.parent.iterdir()))
+#| 
+#|     def test_concurrent_same_id_export_one_verified_bundle(self):
+#|         path=self.f.root/'request.json';path.write_text(json.dumps(self.request));command=[sys.executable,'-I',os.environ['LUMEN_ARTIFACT'],'checkpoint','export',str(path)]
+#|         jobs=[subprocess.Popen(command,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True) for _ in range(2)]
+#|         results=[]
+#|         for job in jobs:
+#|             stdout,stderr=job.communicate(timeout=20);self.assertIn(job.returncode,(0,75),stderr);results.append(json.loads(stdout))
+#|         self.assertTrue(any(x['status']=='exported' for x in results));self.assertEqual(checkpoints.inspect_bundle(str(self.destination))['missing_count'],1)
+# === LUMEN SECTION test_checkpoints.py END ===
+
+# === LUMEN SECTION CHECKPOINT-RESTORE.txt BEGIN ===
+#| EXPLICIT ISOLATED CHECKPOINT RESTORATION
+#| 
+#| checkpoint restore /absolute/restore-request.json [--max-bytes 67108864]
+#| 
+#| This command writes selected bytes into a new destination only. The destination's
+#| ordinary parent must already exist and must not have symlink ancestry. The target
+#| itself must be absent; even an existing empty directory is refused unless it is
+#| an exact verified replay of the same restore request. No overwrite, merge, active
+#| project reset, process restart or schedule reactivation is provided.
+#| 
+#| Strict request keys:
+#|   schema_version: integer1
+#|   restore_id, project_id: registry identifier syntax
+#|   bundle_path: explicit absolute normalized checkpoint directory
+#|   manifest_sha256: exact expected manifest.json SHA256
+#|   destination: explicit absolute normalized new recipient directory
+#|   owner, intent, request_ref: nonblank caller text, at most4000 characters each
+#| Unknown or duplicate JSON keys and invalid identities are rejected. The destination
+#| cannot be root or overlap the source checkpoint. A current project registry is not
+#| required on a cold recipient: project_id must match the pinned checkpoint manifest,
+#| and does not grant access. Current request/approval and OS/platform permissions govern.
+#| 
+#| Before writes, the command checks manifest schema, request/content hashes, complete
+#| blob inventory, exact payload hashes/lengths and expected manifest/project identity.
+#| It then retains the selected payload bytes in bounded memory. Under a cooperating
+#| lock for the destination name, it stages and fsyncs a new ordinary directory,
+#| revalidates the source checkpoint and publishes via the existing atomic no-clobber
+#| directory helper. The restore receipt and all resulting byte identities are read
+#| back exactly. There is no imported code execution or network call.
+#| 
+#| Only INCLUDED_BYTES become ordinary files at fixed paths:
+#|   tool-source -> tool/Lumen.sh
+#|   registry -> registry/registry.json
+#|   other labels -> files/LABEL
+#| Labels come from the strict checkpoint schema. Original absolute paths never become
+#| write targets. All recovered files, including Lumen.sh, are created private0600
+#| and non-executable; directories are private0700. Original permission bits, ownership,
+#| ACLs, xattrs, credentials, scheduler bindings and executor authority are not restored.
+#| A carried registry is a data file, never automatically selected/adopted or installed.
+#| The tool does not interpret selected payloads as commands, approvals or live state.
+#| 
+#| checkpoint-manifest.json retains the exact source manifest and all original paths,
+#| classifications and mode metadata. restore-receipt.json binds the full restore
+#| request, tool identity, source manifest/content identities, output file hashes,
+#| relative paths and included/missing/external inventory. Missing inputs stay missing;
+#| external references are not fetched. A successful restore can faithfully retain
+#| these gaps: inspect restored_count, missing_count and external_count.
+#| 
+#| Restore IDs and fingerprints are scoped to the exact destination, not a global
+#| exactly-once service. Same request/full fingerprint plus intact receipt/manifest/
+#| files replays read-only, even when original sources or the checkpoint are absent.
+#| Conflicting requests, modified output bytes/modes, unknown extra files or malformed
+#| receipts reject; the tool never silently repairs permissions or overwrites edits.
+#| Do not change destination or request identity merely to evade an uncertain result.
+#| 
+#| Ordinary SIGINT/SIGTERM are deferred through staging/publication cleanup. An
+#| interruption before publication leaves no target; after publication or a lost
+#| acknowledgement the result is uncertain. Inspect/replay the same request and target
+#| before doing anything else. SIGKILL/host loss may leave a staging directory or lock
+#| in the selected parent. A published target is never removed on a later error.
+#| Cooperating locks and atomic no-clobber publication do not prevent unrelated writers
+#| from racing, and do not promise persistent remote storage.
+#| 
+#| Default runtime byte budget64MiB, adjustable1byte..1TiB. Each validation/readback
+#| phase is independently bounded. Output payload copies plus retained manifest and
+#| receipt must fit the chosen budget; selected bytes are held in memory. Request,
+#| manifest and receipt are each limited to1MiB; existing checkpoint input-count bounds
+#| apply. There is no canonical-source size truncation or history pruning.
+#| 
+#| Exit0 means exact restored or replayed local bytes,75 means busy,74 means failed or
+#| uncertain I/O,65 means invalid schema/precondition. No result claims revived live
+#| state or restored authority. Live state and remote durability remain UNKNOWN.
+#| This slice is exercised only with explicitly synthetic selected state, never a live
+#| project restoration. Read-only checkpoint inspect and restore-plan remain available.
+#| 
+#| Measured synthetic recipient exercise — 2026-10-01
+#| Contributor: delegate: improve_voice_work_bridge
+#| A copied synthetic continuity checkpoint restored four exact files into a new
+#| isolated recipient directory. One missing input and one external reference remained
+#| explicitly uncarried. Each recovered file was0600 and non-executable, including
+#| the tool and registry data. Original selected files, the live canonical source
+#| and the real project registry retained their pre-exercise hashes.
+#| Same-request replay returned the same receipt SHA256:
+#|   731ada6cbb8b067380a203c5cb290a905f2b4f4d6e94506c84729144f7583853
+#| Source manifest SHA256:
+#|   f807c5d5dd7436ea25a49d33bb81ed0022591f5d77c6de4f57b181183352dcbb
+#| No recovered tool or selected payload was executed. No live project, process,
+#| schedule, account credential or permission state was reactivated. This is measured
+#| local byte recovery only, not a remote-persistence result or parent review.
+# === LUMEN SECTION CHECKPOINT-RESTORE.txt END ===
+
+# === LUMEN SECTION HISTORICAL-CHECKPOINTS-PLAN-ONLY.txt BEGIN ===
+#| LOCAL CHECKPOINTS: EXPLICIT SELECTION, HONEST INVENTORY
+#| 
+#| checkpoint export /absolute/request.json [--max-bytes 67108864]
+#| checkpoint inspect /absolute/checkpoint-directory [--max-bytes 67108864]
+#| checkpoint restore-plan /absolute/checkpoint-directory --destination /absolute/empty-directory
+#| 
+#| Export writes a local directory bundle in the selected project's registered
+#| checkpoints directory under checkpoint_id. Inspect and restore-plan are read-only,
+#| load embedded helpers in memory, and do not execute source blobs. This slice has
+#| no restore command, upload, secret discovery, session reset or process restart.
+#| Existing ZIP intake's atomic no-replace directory publisher is reused; the bundle
+#| itself is an ordinary directory so its manifest stays directly readable.
+#| 
+#| Strict export request fields:
+#|   schema_version: integer1
+#|   project_id, checkpoint_id: registry identifier syntax
+#|   registry_path: explicit absolute normalized registry path
+#|   registry_revision: exact expected registry SHA256
+#|   tool_source_sha256: exact running Lumen.sh source SHA256
+#|   include_tool_source, include_registry: explicit booleans
+#|   owner, intent, request_ref: nonblank caller text, at most4000 characters each
+#|   inputs: at most100 objects, each exactly:
+#|     label: unique registry identifier; tool-source and registry are reserved
+#|     path: explicit absolute normalized selected file path
+#|     selection: include or external
+#|     expected_sha256: lowercase SHA256 or null
+#| Unknown/duplicate JSON keys, ambiguous IDs and repeated input paths are refused.
+#| Control-plane inclusion is explicit: selecting the registry includes its complete
+#| metadata document, including other project declarations if present, but none of
+#| those referenced files. The tool-source selection includes exact running bytes
+#| and observed ordinary mode. Omitting either creates an EXTERNAL_REFERENCE entry
+#| with its expected identity. Project inputs must lie in current declared roots,
+#| state directories or explicit contract-source references. Scope is not permission.
+#| 
+#| INCLUDED_BYTES means one selected no-follow regular file was read, bounded, hashed
+#| and carried exactly. Ordinary0777 mode bits and original absolute path are recorded;
+#| privilege bits, ownership, ACLs and xattrs are not restored or carried as authority.
+#| EXTERNAL_REFERENCE means explicitly omitted bytes; the source is not opened.
+#| MISSING means a selected include path or ancestor was absent when observed.
+#| Access errors, symlinks, directories, special files and supplied hash mismatches
+#| fail; they are not disguised as missing. A selected missing file appearing or an
+#| included file changing before publication rejects that export. No recursive source
+#| walk occurs. Registry schema checks may inspect declared path metadata as before.
+#| Selection is the caller's responsibility: readability does not authorize including
+#| credentials or unrelated sensitive files, and no automatic redaction is promised.
+#| 
+#| A bundle contains exactly manifest.json and blobs/. Included blobs have fixed
+#| content-addressed filenames, and duplicate contents share storage. Every manifest
+#| input retains its classification, original path, expected hash, actual hash/bytes
+#| where present, ordinary mode and reason for omitted bytes. The original request,
+#| caller attribution and exact registry/tool identities are bound by fingerprints.
+#| A deterministic content hash covers the project/registry/tool identities and exact
+#| selection inventory, excluding publication time, checkpoint ID and output location.
+#| The full manifest hash additionally identifies request and publication metadata.
+#| Hashes identify bytes, not authenticated truth or permission.
+#| 
+#| Before creating runtime storage, export validates and reads the selected material.
+#| Under a no-follow per-checkpoint cooperating lock, it stages the complete bundle,
+#| fsyncs, rechecks selected inputs/registry, publishes into an absent destination
+#| using Linux no-clobber rename, and verifies readback. Same checkpoint ID/full
+#| request replays the exact original verified bundle without reopening source paths;
+#| a conflicting request or corrupt/incomplete existing bundle is never overwritten.
+#| SIGINT/SIGTERM are deferred across publication and cleanup. A lost acknowledgement
+#| or post-publication doubt is uncertain; inspect/reuse the same ID before retrying.
+#| SIGKILL/host loss may leave staging or runtime directories. Locks and no-clobber
+#| publication are not transactions against unrelated writers or a persistence guarantee.
+#| 
+#| Default runtime byte budget64MiB, adjustable from1byte to1TiB. Each preflight and
+#| recheck is independently bounded; selected bytes are held in memory, so choose a
+#| budget that fits the executor. Manifest/request limit1MiB;100 selected inputs plus
+#| tool/registry records; at most102 content blobs. Budgets bound this operation, not
+#| the canonical monolith's permitted size. A larger source needs a larger explicit
+#| budget. No arbitrary journal/history trimming is performed.
+#| 
+#| Inspect requires only the bundle, checks exact manifest schema/bindings and blob
+#| hashes/lengths, and refuses unexpected files or unsafe paths. It does not read
+#| original source locations, re-adopt contracts or reconstitute permissions.
+#| Source files may be missing on a fresh executor while included bytes still verify.
+#| Outputs explicitly count included, missing and external material. Successful export
+#| or inspection means a faithful bundle, not that every selected input was present.
+#| 
+#| Restore-plan needs an explicit non-root destination. It proposes tool/Lumen.sh,
+#| registry/registry.json and files/LABEL below that destination, retaining original
+#| paths as descriptive provenance rather than default restore targets. It checks only
+#| these selected target paths for conflicts; no directory is created and no current
+#| file is read/replaced. Existing files, directory/type conflicts and symlinks block
+#| the proposed write. Missing/external records cannot be recreated from hashes and
+#| remain unavailable/resolve-external-separately. Actual restoration would require a
+#| separate current request, access checks and no-clobber or explicit replacement policy.
+#| 
+#| Exit0 means export/replay, verified inspection or plan produced;75 means busy;74
+#| means failed/uncertain I/O;65 means invalid schema/precondition. The manifest can
+#| faithfully contain MISSING entries while export exits0, so inspect the counts.
+#| Every report keeps live state and remote durability UNKNOWN. A local copy is not
+#| proof of remote storage, a session transplant, or a successfully restored workspace.
+#| 
+#| Measured synthetic exercise — 2026-10-01, delegate: improve_voice_work_bridge
+#| The isolated continuity-fixture checkpoint carried four byte sets: exact running
+#| tool source, fixture registry, synthetic handoff and selected receipt. One selected
+#| file was MISSING; one explicitly uncarried schedule reference was EXTERNAL_REFERENCE.
+#| A copied bundle verified in a separate recipient directory. restore-plan proposed
+#| create-if-absent paths and left that directory empty; no restoration occurred.
+#| Original-source absence was also tested in isolated fixtures. No live project
+#| registry, source, receipt, session or scheduler was reset.
+#| Demo tool source SHA256: b7459fe3ae4ad1ee2065adeceb43b4c76b002fe5007832306c43ef31387d08fe
+#| Manifest SHA256: f807c5d5dd7436ea25a49d33bb81ed0022591f5d77c6de4f57b181183352dcbb
+#| Content SHA256: 590f6f84702c0ebd2913a5663a6533ae804d9415a7e868fb6461265be4b0ab61
+#| The demo captures an earlier candidate of this increment; its exact tool bytes
+#| travel inside the bundle. Later journal/test prose does not silently change that
+#| checkpoint identity. Full local command/readback evidence is checkpoint-practical-
+#| evidence.json beside the development candidate, and copied into its review freeze.
+#| These are measured local results, not a parent review or remote-persistence test.
+# === LUMEN SECTION HISTORICAL-CHECKPOINTS-PLAN-ONLY.txt END ===
+
+# === LUMEN SECTION HISTORICAL-HANDOFF-CHECKPOINT.txt BEGIN ===
+#| CURRENT HANDOFF — selected local checkpoints, 2026-10-01 UTC
+#| Author: delegate: improve_voice_work_bridge
+#| This explicitly supersedes the capsule retained in HISTORICAL-HANDOFF-ATTEMPTS.txt.
+#| Lumen reviewed owner recording in lumen-publication-record-review-20260930-01.
+#| 
+#| checkpoint export now packages explicitly selected regular files/state into a
+#| manifest-driven local directory, including exact running tool or registry bytes
+#| only when selected. INCLUDED_BYTES, EXTERNAL_REFERENCE and MISSING remain distinct.
+#| The tool never recursively collects a project, discovers secrets, reads private
+#| assistant memory, uploads a checkpoint or executes its contents.
+#| 
+#| checkpoint inspect verifies manifest and blob identities without consulting original
+#| paths. checkpoint restore-plan proposes a no-overwrite layout below an explicit
+#| destination, but creates no files or directories. Stored original paths and registry
+#| metadata are evidence, not permission or automatic restoration instructions. Neither
+#| command revives process/session state or establishes remote persistence.
+#| 
+#| CHECKPOINTS.txt defines inputs, budgets, replay/conflict recovery and the carried
+#| versus external inventory. Export uses registered checkpoint storage and existing
+#| no-follow/atomic no-clobber helpers. Missing selected files are explicit records,
+#| not successful recovery claims. The current contribution is tested with isolated
+#| synthetic selected state; no live session or active project is reset/restored.
+#| 
+#| Next: Lumen reviews this bounded recovery tool and its practical inventory, then
+#| chooses any actual project selection or storage step under current permissions.
+#| Keep the conversation with h0p3, the queue and attributed history alongside the
+#| bytes; a local checkpoint is not proof that another executor can retrieve it.
+# === LUMEN SECTION HISTORICAL-HANDOFF-CHECKPOINT.txt END ===
+
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-CHECKPOINT.json BEGIN ===
+#| {
+#|   "schema_version": 1,
+#|   "recorded_as_of_utc": "2026-10-01T00:08:30.827205+00:00",
+#|   "author": "delegate: improve_voice_work_bridge",
+#|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
+#|   "position": "Owner-attempt recording reviewed; explicit selected-file checkpoint export, inspect and restore-plan contributed for review.",
+#|   "next_step": "Review what the isolated checkpoint carries, omits and cannot establish before any actual restoration or external storage decision.",
+#|   "open_questions": [
+#|     "How should exact candidate changes, rationale and evidence travel together?",
+#|     "Which executor owns future process handles?",
+#|     "What survives an executor change?"
+#|   ],
+#|   "implemented": [
+#|     "attributed conversation",
+#|     "legacy and structured requests",
+#|     "non-executing ZIP intake",
+#|     "project registry and routed requests",
+#|     "local capabilities inspect/probe",
+#|     "read-only status/handoff",
+#|     "inert proposal preparation/inspection",
+#|     "digest-bound attributed review records",
+#|     "read-only process observation and snapshot tail",
+#|     "explicit completed bounded project-run export",
+#|     "read-only recorded work queues with explicit optional registry/project observations",
+#|     "read-only existing publication outbox reconciliation",
+#|     "explicit atomic owner evidence within the existing publication outbox",
+#|     "explicit local selected-file checkpoint export/inspect and read-only restore plan"
+#|   ],
+#|   "proposed": [
+#|     "guarded candidate publication",
+#|     "process launch/stop/live adapters",
+#|     "portable checkpoints",
+#|     "wake/scheduler records",
+#|     "project-linked queue interpretation and interruption recovery"
+#|   ],
+#|   "evidence_entry_ids": [
+#|     "lumen-capabilities-review-20260930-01",
+#|     "lumen-office-review-20260930-01",
+#|     "lumen-proposal-review-20260930-01",
+#|     "lumen-plan-consolidation-review-20260930-01",
+#|     "lumen-process-inspection-review-20260930-01",
+#|     "lumen-owner-export-review-20260930-01",
+#|     "lumen-queue-review-20260930-01",
+#|     "lumen-real-projects-review-20260930-01",
+#|     "lumen-publication-status-review-20260930-01",
+#|     "lumen-publication-record-review-20260930-01"
+#|   ]
+#| }
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-CHECKPOINT.json END ===
+
+# === LUMEN SECTION checkpoint_restore.py BEGIN ===
+#| """Explicit isolated restoration into a new absent destination, never active original paths."""
+#| import argparse
+#| import datetime
+#| import fcntl
+#| import json
+#| import os
+#| from pathlib import Path
+#| import secrets
+#| import shutil
+#| import signal
+#| import stat
+#| import checkpoints
+#| import project_registry as registry
+#| import proposal
+#| import zip_intake
+#| 
+#| FIELDS={'schema_version','restore_id','project_id','bundle_path','manifest_sha256','destination','owner','intent','request_ref'}
+#| RECEIPT_FIELDS={'schema_version','kind','recorded_at_utc','tool_source_sha256','request','request_sha256','content_sha256','files','inventory','authority'}
+#| AUTHORITY='selected bytes restored as inert private files; no original permissions, registry adoption, credentials, process or schedule activation, or remote durability'
+#| 
+#| 
+#| def validate_request(value):
+#|     registry.exact(value,FIELDS,'restore request')
+#|     if type(value['schema_version']) is not int or value['schema_version']!=1:raise ValueError('unsupported restore request')
+#|     for key in ('restore_id','project_id'):registry.identifier(value[key])
+#|     for key in ('bundle_path','destination'):registry.normalized(value[key])
+#|     registry.digest(value['manifest_sha256'])
+#|     for key in ('owner','intent','request_ref'):checkpoints.text(value[key])
+#|     target=Path(value['destination']);bundle=Path(value['bundle_path'])
+#|     if target==Path('/') or target==bundle or target.is_relative_to(bundle) or bundle.is_relative_to(target):
+#|         raise ValueError('restore destination cannot be root or overlap the checkpoint bundle')
+#|     return value
+#| 
+#| 
+#| def selections(manifest):
+#|     files={};inventory=[]
+#|     for item in manifest['content']['items']:
+#|         relative=checkpoints.relative_destination(item)
+#|         inventory.append({'label':item['label'],'original_path':item['original_path'],'classification':item['classification'],
+#|                           'restored_path':relative if item['classification']=='INCLUDED_BYTES' else None,
+#|                           'original_mode_metadata':item['mode'],'reason':item['reason']})
+#|         if item['classification']=='INCLUDED_BYTES':files[relative]={'sha256':item['sha256'],'bytes':item['bytes']}
+#|     return files,inventory
+#| 
+#| 
+#| def list_names(fd,limit):
+#|     names=[]
+#|     with os.scandir(fd) as entries:
+#|         for item in entries:
+#|             if len(names)>=limit:raise ValueError('restore inventory budget exceeded')
+#|             names.append(item.name)
+#|     return set(names)
+#| 
+#| 
+#| def verify_restored(destination,request,max_bytes):
+#|     target=Path(destination)
+#|     parent,name=registry.open_parent(str(target))
+#|     try:
+#|         try:info=os.stat(name,dir_fd=parent,follow_symlinks=False)
+#|         except FileNotFoundError:return None
+#|         if not stat.S_ISDIR(info.st_mode):raise ValueError('existing restore destination is not an ordinary directory')
+#|     finally:os.close(parent)
+#|     budget=[max_bytes]
+#|     try:raw=proposal.read_file(str(target/'restore-receipt.json'),[min(budget[0],1024*1024)])
+#|     except FileNotFoundError:raise ValueError('destination exists without matching restore receipt; never overwrite')
+#|     budget[0]-=len(raw)
+#|     receipt=registry.decode(raw);registry.exact(receipt,RECEIPT_FIELDS,'restore receipt')
+#|     if type(receipt['schema_version']) is not int or receipt['schema_version']!=1 or receipt['kind']!='lumen-isolated-restore':raise ValueError('invalid restore receipt version/kind')
+#|     recorded=validate_request(receipt['request'])
+#|     if receipt['request_sha256']!=checkpoints.fingerprint(recorded) or receipt['request_sha256']!=checkpoints.fingerprint(request):raise ValueError('restore identity conflict')
+#|     if receipt['authority']!=AUTHORITY:raise ValueError('invalid restore authority classification')
+#|     registry.digest(receipt['tool_source_sha256'])
+#|     timestamp=datetime.datetime.fromisoformat(receipt['recorded_at_utc'])
+#|     if timestamp.tzinfo is None or timestamp.utcoffset()!=datetime.timedelta(0):raise ValueError('receipt timestamp must be UTC')
+#|     manifest_raw=proposal.read_file(str(target/'checkpoint-manifest.json'),[min(budget[0],1024*1024)]);budget[0]-=len(manifest_raw)
+#|     if budget[0]<0:raise ValueError('restore byte budget exceeded')
+#|     if proposal.sha(manifest_raw)!=request['manifest_sha256']:raise ValueError('retained manifest identity mismatch')
+#|     manifest,_=checkpoints.validate_manifest(manifest_raw)
+#|     if manifest['content']['project_id']!=request['project_id'] or receipt['content_sha256']!=manifest['content_sha256']:raise ValueError('restore project/content binding mismatch')
+#|     files,inventory=selections(manifest)
+#|     if receipt['files']!=files or receipt['inventory']!=inventory:raise ValueError('restore inventory mismatch')
+#|     for relative,identity in files.items():
+#|         payload,mode=checkpoints.read_selected(str(target/relative),budget)
+#|         if (proposal.sha(payload),len(payload))!=(identity['sha256'],identity['bytes']):raise ValueError('restored byte identity mismatch')
+#|         if mode!=0o600 or os.stat(target/relative,follow_symlinks=False).st_mode&0o7000:raise ValueError('restored file mode changed; no permission repair performed')
+#|     for name in ('checkpoint-manifest.json','restore-receipt.json'):
+#|         if stat.S_IMODE(os.stat(target/name,follow_symlinks=False).st_mode)!=0o600:raise ValueError('restore metadata mode changed')
+#|     fd=zip_intake.open_directory(target)
+#|     try:
+#|         directories={name.split('/')[0] for name in files}
+#|         if list_names(fd,5)!=directories|{'checkpoint-manifest.json','restore-receipt.json'}:raise ValueError('unexpected restored files')
+#|         if stat.S_IMODE(os.fstat(fd).st_mode)!=0o700:raise ValueError('restore directory mode changed')
+#|         for directory in directories:
+#|             child=os.open(directory,os.O_RDONLY|os.O_DIRECTORY|os.O_NOFOLLOW,dir_fd=fd)
+#|             try:
+#|                 if stat.S_IMODE(os.fstat(child).st_mode)!=0o700:raise ValueError('restore subdirectory mode changed')
+#|                 if list_names(child,102)!={name.split('/')[1] for name in files if name.startswith(directory+'/')}:raise ValueError('unexpected restored child files')
+#|             finally:os.close(child)
+#|     finally:os.close(fd)
+#|     return {'status':'restored','replayed':True,'destination':str(target),'receipt_sha256':proposal.sha(raw),'receipt':receipt,
+#|             'restored_count':len(files),'missing_count':sum(x['classification']=='MISSING' for x in inventory),
+#|             'external_count':sum(x['classification']=='EXTERNAL_REFERENCE' for x in inventory),
+#|             'verification':'exact restored bytes and retained manifest','activation_performed':False,'live_state':'UNKNOWN','remote_durability':'UNKNOWN'}
+#| 
+#| 
+#| def restore(request,tool_source_sha256,max_bytes=64*1024*1024):
+#|     validate_request(request);registry.digest(tool_source_sha256)
+#|     if type(max_bytes) is not int or not 1<=max_bytes<=1024**4:raise ValueError('invalid restore byte budget')
+#|     target=Path(request['destination']);parent=zip_intake.open_directory(target.parent)
+#|     lock=None;stage=None;attempted=False;published=False;handlers={};signals=[];result=None
+#|     try:
+#|         prior=verify_restored(str(target),request,max_bytes)
+#|         if prior is not None:return prior
+#|         # All manifest/bytes checked before even the cooperating destination lock is created.
+#|         inspected=checkpoints.inspect_bundle(request['bundle_path'],max_bytes)
+#|         if inspected['manifest_sha256']!=request['manifest_sha256']:raise ValueError('expected checkpoint manifest mismatch')
+#|         if inspected['manifest']['content']['project_id']!=request['project_id']:raise ValueError('checkpoint project mismatch')
+#|         manifest_raw=proposal.read_file(str(Path(request['bundle_path'])/'manifest.json'),[1024*1024])
+#|         if proposal.sha(manifest_raw)!=request['manifest_sha256']:raise ValueError('checkpoint manifest changed')
+#|         manifest,_=checkpoints.validate_manifest(manifest_raw);files,inventory=selections(manifest)
+#|         budget=[max_bytes-len(manifest_raw)];payloads={}
+#|         for item in manifest['content']['items']:
+#|             if item['classification']=='INCLUDED_BYTES':
+#|                 raw,_=checkpoints.read_selected(str(Path(request['bundle_path'])/item['blob']),budget)
+#|                 if (proposal.sha(raw),len(raw))!=(item['sha256'],item['bytes']):raise ValueError('checkpoint blob changed before staging')
+#|                 payloads[checkpoints.relative_destination(item)]=raw
+#|         receipt={'schema_version':1,'kind':'lumen-isolated-restore','recorded_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+#|                  'tool_source_sha256':tool_source_sha256,'request':request,'request_sha256':checkpoints.fingerprint(request),
+#|                  'content_sha256':manifest['content_sha256'],'files':files,'inventory':inventory,'authority':AUTHORITY}
+#|         receipt_raw=json.dumps(receipt,indent=2,sort_keys=True).encode()+b'\n'
+#|         if len(receipt_raw)>1024*1024 or len(receipt_raw)>budget[0]:raise ValueError('restore receipt/output budget exceeded')
+#|         lockname='.restore-'+proposal.sha(target.name.encode())[:32]+'.lock'
+#|         lock=os.open(lockname,os.O_WRONLY|os.O_CREAT|os.O_NOFOLLOW,0o600,dir_fd=parent);fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+#|         prior=verify_restored(str(target),request,max_bytes)
+#|         if prior is not None:return prior
+#|         for signum in (signal.SIGINT,signal.SIGTERM):
+#|             handlers[signum]=signal.getsignal(signum);signal.signal(signum,lambda sig,frame:signals.append(sig))
+#|         name='.restore-stage-'+secrets.token_hex(12);os.mkdir(name,0o700,dir_fd=parent);stage=name
+#|         info=os.stat(stage,dir_fd=parent,follow_symlinks=False);stage_identity=(info.st_dev,info.st_ino)
+#|         folder=target.parent/stage
+#|         for directory in {name.split('/')[0] for name in files}:os.mkdir(folder/directory,0o700)
+#|         for name,raw in {'checkpoint-manifest.json':manifest_raw,'restore-receipt.json':receipt_raw,**payloads}.items():
+#|             fd=os.open(folder/name,os.O_WRONLY|os.O_CREAT|os.O_EXCL|os.O_NOFOLLOW,0o600)
+#|             with os.fdopen(fd,'wb') as stream:stream.write(raw);stream.flush();os.fsync(stream.fileno())
+#|         for directory in [folder]+[folder/name for name in {name.split('/')[0] for name in files}]:
+#|             fd=zip_intake.open_directory(directory)
+#|             try:os.fsync(fd)
+#|             finally:os.close(fd)
+#|         # Detect changed source blobs or manifest before committing this isolated destination.
+#|         recheck=checkpoints.inspect_bundle(request['bundle_path'],max_bytes)
+#|         if recheck['manifest_sha256']!=request['manifest_sha256']:raise ValueError('checkpoint changed before restore publication')
+#|         if signals:raise OSError('interrupted before restore publication')
+#|         attempted=True;zip_intake.publish_noreplace(parent,stage,target.name);published=True;stage=None;os.fsync(parent)
+#|         result=verify_restored(str(target),request,max_bytes)
+#|         if result is None:raise OSError('restored destination missing after publication')
+#|         result.update(status='uncertain' if signals else 'restored',replayed=False)
+#|     except BlockingIOError:result={'status':'busy','destination':str(target),'activation_performed':False}
+#|     except (OSError,ValueError) as error:
+#|         if isinstance(error,ValueError) and not attempted:raise
+#|         result={'status':'uncertain' if attempted else 'failed','destination':str(target),'publication_observed':published,
+#|                 'error':str(error),'activation_performed':False,'recovery':'Inspect/replay the same restore ID and exact destination; never overwrite or reactivate anything.'}
+#|     finally:
+#|         for signum in handlers:signal.signal(signum,signal.SIG_IGN)
+#|         try:
+#|             if stage is not None:
+#|                 try:
+#|                     info=os.stat(stage,dir_fd=parent,follow_symlinks=False)
+#|                     if (info.st_dev,info.st_ino)!=stage_identity:raise OSError('staging identity changed')
+#|                     shutil.rmtree(stage,dir_fd=parent)
+#|                 except FileNotFoundError:pass
+#|                 except OSError as error:
+#|                     if result is None:result={'status':'uncertain' if attempted else 'failed'}
+#|                     result.update(cleanup_complete=False,cleanup_error=str(error))
+#|         finally:
+#|             if lock is not None:os.close(lock)
+#|             os.close(parent)
+#|             for signum,handler in handlers.items():signal.signal(signum,handler)
+#|     result.setdefault('cleanup_complete',True);result['received_signals']=signals
+#|     return result
+#| 
+#| 
+#| def main(argv,tool_source_sha256):
+#|     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('request_file');parser.add_argument('--max-bytes',type=int,default=64*1024*1024)
+#|     args=parser.parse_args(argv);request=registry.decode(proposal.read_file(args.request_file,[1024*1024]));result=restore(request,tool_source_sha256,args.max_bytes)
+#|     print(json.dumps(result,indent=2,ensure_ascii=True));return 0 if result['status']=='restored' else 75 if result['status']=='busy' else 74
+# === LUMEN SECTION checkpoint_restore.py END ===
+
+# === LUMEN SECTION test_checkpoint_restore.py BEGIN ===
+#| import copy
+#| import hashlib
+#| import json
+#| import os
+#| from pathlib import Path
+#| import shutil
+#| import signal
+#| import stat
+#| import subprocess
+#| import sys
+#| import unittest
+#| from unittest import mock
+#| import checkpoint_restore as restore
+#| import checkpoints
+#| import test_checkpoints as fixtures
+#| 
+#| 
+#| class IsolatedRestoreTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.f=fixtures.CheckpointTests();self.f.setUp();self.addCleanup(self.f.doCleanups)
+#|         self.export=self.f.emit();self.destination=self.f.f.root/'recipient'
+#|         self.request=dict(schema_version=1,restore_id='restore-one',project_id='alpha',bundle_path=str(self.f.destination),manifest_sha256=self.export['manifest_sha256'],destination=str(self.destination),owner='Synthetic recipient owner',intent='Recover selected fixture bytes only',request_ref='Explicit isolated fixture request')
+#| 
+#|     def emit(self,request=None):return restore.restore(request or self.request,'a'*64)
+#| 
+#|     def test_exact_bytes_private_modes_and_preserved_uncarried_inventory(self):
+#|         original=self.f.source.read_bytes()
+#|         with mock.patch.object(subprocess,'Popen',side_effect=AssertionError('restore must not execute')):result=self.emit()
+#|         self.assertEqual(result['status'],'restored');self.assertEqual(result['restored_count'],3)
+#|         self.assertEqual((self.destination/'files'/'selected-source').read_bytes(),original)
+#|         self.assertEqual(stat.S_IMODE((self.destination/'files'/'selected-source').stat().st_mode),0o600)
+#|         self.assertEqual(stat.S_IMODE((self.destination/'tool'/'Lumen.sh').stat().st_mode),0o600)
+#|         self.assertEqual(self.f.source.read_bytes(),original);self.assertEqual(stat.S_IMODE(self.f.source.stat().st_mode),0o555)
+#|         self.assertEqual(result['missing_count'],1);self.assertEqual(result['external_count'],1);self.assertFalse(result['activation_performed'])
+#|         self.assertFalse((self.destination/'files'/'missing-receipt').exists());self.assertFalse((self.destination/'files'/'external-contract').exists())
+#|         self.assertEqual(hashlib.sha256((self.destination/'checkpoint-manifest.json').read_bytes()).hexdigest(),self.request['manifest_sha256'])
+#| 
+#|     def test_replay_after_bundle_removed_and_conflicts_preserve_output(self):
+#|         first=self.emit();before=(self.destination/'restore-receipt.json').read_bytes();shutil.rmtree(self.f.destination)
+#|         result=self.emit();self.assertTrue(result['replayed']);self.assertEqual(result['receipt_sha256'],first['receipt_sha256'])
+#|         request=copy.deepcopy(self.request);request['owner']='conflict'
+#|         with self.assertRaises(ValueError):self.emit(request)
+#|         self.assertEqual((self.destination/'restore-receipt.json').read_bytes(),before)
+#| 
+#|     def test_changed_blob_and_wrong_manifest_reject_before_any_writes(self):
+#|         request=copy.deepcopy(self.request);request['manifest_sha256']='0'*64
+#|         before=set(self.f.f.root.iterdir())
+#|         with self.assertRaises(ValueError):self.emit(request)
+#|         item=self.export['manifest']['content']['items'][0];(self.f.destination/item['blob']).write_bytes(b'changed')
+#|         with self.assertRaises(ValueError):self.emit()
+#|         self.assertEqual(set(self.f.f.root.iterdir()),before)
+#| 
+#|     def test_existing_empty_file_symlink_and_missing_parent_refused(self):
+#|         self.destination.mkdir()
+#|         with self.assertRaises(ValueError):self.emit()
+#|         self.assertEqual(list(self.destination.iterdir()),[]);self.destination.rmdir();self.destination.write_text('keep')
+#|         with self.assertRaises(ValueError):self.emit()
+#|         self.assertEqual(self.destination.read_text(),'keep');self.destination.unlink();self.destination.symlink_to(self.f.f.root,target_is_directory=True)
+#|         with self.assertRaises(ValueError):self.emit()
+#|         self.destination.unlink();request=copy.deepcopy(self.request);request['destination']=str(self.f.f.root/'missing-parent'/'recipient')
+#|         with self.assertRaises(FileNotFoundError):self.emit(request)
+#|         self.assertFalse((self.f.f.root/'missing-parent').exists())
+#| 
+#|     def test_symlink_parent_and_destination_inside_bundle_refused(self):
+#|         link=self.f.f.root/'link';link.symlink_to(self.f.f.root,target_is_directory=True)
+#|         request=copy.deepcopy(self.request);request['destination']=str(link/'new')
+#|         with self.assertRaises(OSError):self.emit(request)
+#|         request['destination']=str(self.f.destination/'nested')
+#|         with self.assertRaises(ValueError):self.emit(request)
+#|         self.assertFalse((self.f.destination/'nested').exists())
+#| 
+#|     def test_lost_ack_replays_exact_receipt(self):
+#|         original=restore.zip_intake.publish_noreplace
+#|         def lose(*args):original(*args);raise OSError('lost acknowledgement')
+#|         with mock.patch.object(restore.zip_intake,'publish_noreplace',side_effect=lose):result=self.emit()
+#|         self.assertEqual(result['status'],'uncertain');self.assertFalse(result['activation_performed'])
+#|         recovered=self.emit();self.assertTrue(recovered['replayed']);self.assertEqual(recovered['restored_count'],3)
+#| 
+#|     def test_signal_before_and_after_publication(self):
+#|         original=os.fsync;calls=[]
+#|         def interrupt(fd):
+#|             original(fd);calls.append(fd)
+#|             if len(calls)==1:signal.raise_signal(signal.SIGTERM)
+#|         with mock.patch.object(os,'fsync',side_effect=interrupt):result=self.emit()
+#|         self.assertEqual(result['status'],'failed');self.assertFalse(self.destination.exists());self.assertTrue(result['cleanup_complete'])
+#|         original_publish=restore.zip_intake.publish_noreplace
+#|         def after(*args):original_publish(*args);signal.raise_signal(signal.SIGTERM)
+#|         with mock.patch.object(restore.zip_intake,'publish_noreplace',side_effect=after):result=self.emit()
+#|         self.assertEqual(result['status'],'uncertain');self.assertTrue(self.emit()['replayed'])
+#| 
+#|     def test_changed_blob_during_staging_rejected_and_cleaned(self):
+#|         original=os.fsync;calls=[];item=self.export['manifest']['content']['items'][0]
+#|         def change(fd):
+#|             original(fd);calls.append(fd)
+#|             if len(calls)==1:(self.f.destination/item['blob']).write_bytes(b'changed after preflight')
+#|         with mock.patch.object(os,'fsync',side_effect=change):
+#|             with self.assertRaises(ValueError):self.emit()
+#|         self.assertFalse(self.destination.exists());self.assertFalse(any(x.name.startswith('.restore-stage') for x in self.f.f.root.iterdir()))
+#| 
+#|     def test_corrupt_receipt_output_modes_and_extra_files_not_repaired(self):
+#|         self.emit();target=self.destination/'files'/'selected-source';original=target.read_bytes();target.write_bytes(b'changed')
+#|         with self.assertRaises(ValueError):self.emit()
+#|         self.assertEqual(target.read_bytes(),b'changed');target.write_bytes(original);target.chmod(0o700)
+#|         with self.assertRaises(ValueError):self.emit()
+#|         target.chmod(0o600);extra=self.destination/'extra';extra.write_text('keep')
+#|         with self.assertRaises(ValueError):self.emit()
+#|         self.assertEqual(extra.read_text(),'keep')
+#| 
+#|     def test_concurrent_same_destination_no_duplicate_overwrite(self):
+#|         file=self.f.f.root/'restore.json';file.write_text(json.dumps(self.request));command=[sys.executable,'-I',os.environ['LUMEN_ARTIFACT'],'checkpoint','restore',str(file)]
+#|         jobs=[subprocess.Popen(command,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True) for _ in range(2)];results=[]
+#|         for job in jobs:
+#|             stdout,stderr=job.communicate(timeout=20);self.assertIn(job.returncode,(0,75),stderr);results.append(json.loads(stdout))
+#|         self.assertTrue(any(x['status']=='restored' for x in results));self.assertTrue(self.emit()['replayed'])
+#| 
+#|     def test_cold_recipient_with_original_inputs_absent_no_activation(self):
+#|         cold=self.f.f.root/'cold';cold.mkdir();bundle=cold/'checkpoint';shutil.copytree(self.f.destination,bundle);artifact=cold/'Lumen.sh';shutil.copyfile(self.f.tool,artifact)
+#|         request=copy.deepcopy(self.request);request.update(bundle_path=str(bundle),destination=str(cold/'recovered'));file=cold/'request.json';file.write_text(json.dumps(request))
+#|         self.f.source.unlink();self.f.f.registry.unlink()
+#|         command=['bash',str(artifact),'checkpoint','restore',str(file)];result=subprocess.run(command,cwd=cold,capture_output=True,text=True,timeout=15)
+#|         self.assertEqual(result.returncode,0,result.stderr);value=json.loads(result.stdout);self.assertFalse(value['activation_performed'])
+#|         self.assertTrue((cold/'recovered'/'files'/'selected-source').is_file());self.assertFalse(os.access(cold/'recovered'/'tool'/'Lumen.sh',os.X_OK))
+#| 
+#|     def test_late_destination_collision_is_not_replaced(self):
+#|         original=restore.zip_intake.publish_noreplace
+#|         def collide(parent,stage,destination):
+#|             self.destination.mkdir();(self.destination/'keep').write_text('concurrent owner bytes')
+#|             return original(parent,stage,destination)
+#|         with mock.patch.object(restore.zip_intake,'publish_noreplace',side_effect=collide):result=self.emit()
+#|         self.assertEqual(result['status'],'uncertain');self.assertEqual((self.destination/'keep').read_text(),'concurrent owner bytes')
+#|         self.assertFalse((self.destination/'restore-receipt.json').exists())
+# === LUMEN SECTION test_checkpoint_restore.py END ===
+
+# === LUMEN SECTION SCHEDULE-RECONCILIATION.txt BEGIN ===
+#| READ-ONLY SCHEDULE VERSUS RECEIPT RECONCILIATION
+#| 
+#| schedule reconcile --spec /absolute/expected.json --receipts /absolute/receipts.json
+#| schedule reconcile --spec /absolute/expected.json --as-of 2026-10-01T00:55:00Z --format json
+#| 
+#| These are explicitly supplied local datasets. No cron expression, calendar query,
+#| platform schedule registration, process, automation, wait loop or external call is
+#| created. The development queue is a record of work, not a cron/calendar entry.
+#| Missing evidence never triggers execution or backfill. The tool does not infer
+#| platform liveness, durable wakes, actual permissions or whether a job was installed.
+#| 
+#| Specification fields (exact keys; schema_version integer 1):
+#|   project_id, schedule_id: lowercase registry-style identifiers, labels only
+#|   recorded_at_utc: explicit UTC timestamp for this expectation record
+#|   recorded_by, source_ref: nonblank supplied attribution/reference text
+#|   occurrences: at most 1000 objects, each exactly:
+#|     occurrence_id, request_id: explicit stable IDs
+#|     expected_at_utc: supplied expected occurrence/event time in UTC
+#|     event_kind: the specific receipt-event meaning being compared
+#|     grace_seconds: integer 0..31536000 (maximum one year)
+#| Occurrence IDs are unique. Occurrence/request/receipt IDs use existing request-style
+#| syntax: 1..100 letters, digits, underscores, periods or hyphens, beginning with a
+#| letter or digit. Project/schedule labels do not register projects or schedules.
+#| No recurrence expansion or inference of omitted occurrences occurs.
+#| 
+#| Receipt evidence fields (exact keys; schema_version integer 1):
+#|   project_id, schedule_id: must match the selected specification
+#|   recorded_at_utc, recorded_by, source_ref: supplied evidence snapshot provenance
+#|   coverage: exactly status, from_utc, through_utc, reference
+#|     status is complete, partial or unobserved
+#|     complete/partial require a UTC interval not beyond evidence recording time
+#|     unobserved requires null from_utc and through_utc
+#|   receipts: at most 5000 objects, each exactly:
+#|     receipt_id, occurrence_id, request_id, event_kind
+#|     actual_at_utc: supplied observed event timestamp, never guessed from file mtime
+#|     reference: nonblank inert evidence reference, never opened or executed
+#|     sha256: optional supplied lowercase SHA256 or null; not automatically verified
+#| Coverage is an owner claim, not authentication or proof of exhaustive platform logs.
+#| The command reads only the explicit input files and current tool source. It does
+#| not follow receipt paths/URLs or import arbitrary request ledgers.
+#| 
+#| All timestamps must have explicit zero UTC offset. --as-of chooses a current or
+#| historical evaluation point; it cannot be later than current observation time.
+#| Without it, evaluation uses now. Reports retain the specification and evidence
+#| recording times plus observation and evaluation times. Expectations recorded after
+#| the due time, or records made after the evaluation point, are flagged retrospective;
+#| they do not prove a schedule existed beforehand. Future recording times and receipt
+#| events later than their evidence snapshot cannot establish an observed result.
+#| 
+#| Matching requires occurrence ID, request ID and event_kind. Same receipt ID with
+#| identical complete data is deduplicated. The same ID with different data is a
+#| conflict affecting every occurrence it names; no last-writer winner is chosen.
+#| Distinct IDs with the same actual timestamp agree; distinct actual times for one
+#| occurrence remain unobserved/conflicting rather than selecting earliest/latest.
+#| Unknown occurrence IDs, mismatched request/event IDs and events after the evaluation
+#| point are shown explicitly. Sorting and duplicate handling are deterministic.
+#| 
+#| Classification based on supplied matching event times:
+#|   on-time: delay from expected time is 0 through grace_seconds, inclusive
+#|   late: delay exceeds grace_seconds
+#|   early: supplied event precedes expected time (negative delay shown)
+#|   missing: no matching event and the grace window elapsed, with owner-declared
+#|     complete coverage spanning the expected time through evaluation time
+#|   unobserved: an absent result with insufficient/stale/partial coverage, unresolved
+#|     conflicts, future observations, or a not-yet-elapsed occurrence/grace window
+#| Missing means absent in the supplied complete-coverage claim as of the evaluation
+#| point, not proof of global non-execution. A missing receipt file or no receipt input
+#| produces unobserved, never missing. Receipt and specification inputs are kept separate.
+#| 
+#| Delay is computed in integer microseconds with an exact decimal-seconds string;
+#| no floating-point rounding or silent timestamp substitution occurs. A due time
+#| compared with a completion timestamp measures due-to-completion elapsed delay,
+#| not dispatch latency alone. Execution duration, receipt latency, clock skew and
+#| cause cannot be separated from these two times. Event semantics are explicit data.
+#| 
+#| Lumen-reported motivating values on 2026-10-01:
+#|   expected/requested occurrence: 00:29:04Z
+#|   write timestamp: 00:53:41.257313Z
+#|   difference: 1477.257313 seconds = 24 minutes 37.257313 seconds
+#| This is an attributed report, not independent inspection of that experiment.
+#| Synthetic tests reconstruct the values and mark the expectation retrospective;
+#| no actual experiment file, schedule or original receipt is accessed by this slice.
+#| 
+#| Input files are absolute no-follow regular files, each capped at 1 MiB. Text fields
+#| are bounded to 4000 characters; strict types/keys and duplicate JSON-key checks
+#| apply. No private memory/environment scan occurs. Human output escapes terminal
+#| controls; JSON preserves exact supplied text. There is no general redaction promise.
+#| Read-only execution creates no cache, receipt, directory or implicit registration.
+#| Files are individually stable-read checked, not transactionally captured against
+#| unrelated writers. Source/input hashes identify the exact observed bytes.
+#| 
+#| Exit 0 means a comparison report was produced, including late/missing/unobserved
+#| results; it is not successful execution or a service-level guarantee. Malformed
+#| input fails 65 and I/O errors fail 74; an explicitly absent receipt input is reported
+#| as missing evidence with unobserved occurrences. Keep the original request IDs and
+#| reconcile evidence through permitted owner tools before any separately justified retry.
+# === LUMEN SECTION SCHEDULE-RECONCILIATION.txt END ===
+
+# === LUMEN SECTION HISTORICAL-HANDOFF-RESTORE.txt BEGIN ===
+#| CURRENT HANDOFF — isolated byte restoration, 2026-10-01 UTC
+#| Author: delegate: improve_voice_work_bridge
+#| This explicitly supersedes the capsule retained in HISTORICAL-HANDOFF-CHECKPOINT.txt.
+#| Lumen reviewed checkpoint export/inspect/plan in lumen-checkpoint-review-20261001-01.
+#| 
+#| checkpoint restore now accepts an explicit source-manifest identity, restore ID,
+#| project ID and new destination. It validates the complete checkpoint before writes,
+#| stages only INCLUDED_BYTES under fixed relative paths, and publishes an absent
+#| destination atomically without replacing an existing directory, even an empty one.
+#| Original absolute paths, missing/external classifications and source permissions
+#| remain metadata. Restored files are private and non-executable, and registry bytes
+#| are inert rather than adopted. No schedules, processes, credentials or privileges
+#| are activated. CHECKPOINT-RESTORE.txt describes exact inputs and recovery.
+#| 
+#| An identical request can verify/replay its restored receipt and bytes after the
+#| source bundle disappears. Conflicts or changed restored files are not repaired or
+#| overwritten. Interrupted publication stays uncertain until the same destination
+#| and receipt are checked. No actual live project or session restoration is exercised
+#| by this contribution; the practical recipient is explicitly synthetic and isolated.
+#| 
+#| Next: Lumen reviews the cold-recipient recovery, mode policy and interruption tests,
+#| then owns the reviewed checkpoint's publication. Preserve the conversation with
+#| h0p3 and distinguish byte recovery from recovered permissions, liveness or memory.
+# === LUMEN SECTION HISTORICAL-HANDOFF-RESTORE.txt END ===
+
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-RESTORE.json BEGIN ===
+#| {
+#|   "schema_version": 1,
+#|   "recorded_as_of_utc": "2026-10-01T00:33:54.697870+00:00",
+#|   "author": "delegate: improve_voice_work_bridge",
+#|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
+#|   "position": "Checkpoint export/inspect/plan reviewed; explicit isolated byte restoration contributed for review.",
+#|   "next_step": "Review synthetic cold-recipient restoration, no-overwrite replay and interruption evidence before choosing any real recovery destination.",
+#|   "open_questions": [
+#|     "How should exact candidate changes, rationale and evidence travel together?",
+#|     "Which executor owns future process handles?",
+#|     "What survives an executor change?"
+#|   ],
+#|   "implemented": [
+#|     "attributed conversation",
+#|     "legacy and structured requests",
+#|     "non-executing ZIP intake",
+#|     "project registry and routed requests",
+#|     "local capabilities inspect/probe",
+#|     "read-only status/handoff",
+#|     "inert proposal preparation/inspection",
+#|     "digest-bound attributed review records",
+#|     "read-only process observation and snapshot tail",
+#|     "explicit completed bounded project-run export",
+#|     "read-only recorded work queues with explicit optional registry/project observations",
+#|     "read-only existing publication outbox reconciliation",
+#|     "explicit atomic owner evidence within the existing publication outbox",
+#|     "explicit local selected-file checkpoint export/inspect and read-only restore plan",
+#|     "explicit isolated checkpoint restoration into a new absent destination"
+#|   ],
+#|   "proposed": [
+#|     "guarded candidate publication",
+#|     "process launch/stop/live adapters",
+#|     "portable checkpoints",
+#|     "wake/scheduler records",
+#|     "project-linked queue interpretation and interruption recovery"
+#|   ],
+#|   "evidence_entry_ids": [
+#|     "lumen-capabilities-review-20260930-01",
+#|     "lumen-office-review-20260930-01",
+#|     "lumen-proposal-review-20260930-01",
+#|     "lumen-plan-consolidation-review-20260930-01",
+#|     "lumen-process-inspection-review-20260930-01",
+#|     "lumen-owner-export-review-20260930-01",
+#|     "lumen-queue-review-20260930-01",
+#|     "lumen-real-projects-review-20260930-01",
+#|     "lumen-publication-status-review-20260930-01",
+#|     "lumen-publication-record-review-20260930-01",
+#|     "lumen-checkpoint-review-20261001-01"
+#|   ]
+#| }
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-RESTORE.json END ===
+
+# === LUMEN SECTION schedule_reconcile.py BEGIN ===
+#| """Read-only expected-occurrence versus supplied receipt timing; no scheduler registration or execution."""
+#| import argparse
+#| import datetime
+#| import json
+#| import hashlib
+#| import re
+#| from pathlib import Path
+#| import project_registry as registry
+#| import proposal
+#| 
+#| LIMIT=1024*1024
+#| 
+#| 
+#| def utc(value):
+#|     if type(value) is not str:raise ValueError('timestamp must be UTC text')
+#|     stamp=datetime.datetime.fromisoformat(value)
+#|     if stamp.tzinfo is None or stamp.utcoffset()!=datetime.timedelta(0):raise ValueError('timestamp must have explicit UTC offset')
+#|     return stamp
+#| 
+#| 
+#| def text(value):
+#|     if type(value) is not str or not value.strip() or len(value)>4000:raise ValueError('expected nonblank text up to4000 characters')
+#| 
+#| 
+#| def fingerprint(value):
+#|     return hashlib.sha256(json.dumps(value,sort_keys=True).encode()).hexdigest()
+#| 
+#| 
+#| def request_identifier(value):
+#|     if type(value) is not str or re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,99}',value) is None:
+#|         raise ValueError('invalid occurrence/request/receipt ID')
+#| 
+#| 
+#| def validate_spec(value):
+#|     registry.exact(value,{'schema_version','project_id','schedule_id','recorded_at_utc','recorded_by','source_ref','occurrences'},'occurrence specification')
+#|     if type(value['schema_version']) is not int or value['schema_version']!=1:raise ValueError('unsupported occurrence specification')
+#|     for key in ('project_id','schedule_id'):registry.identifier(value[key])
+#|     utc(value['recorded_at_utc']);text(value['recorded_by']);text(value['source_ref'])
+#|     if type(value['occurrences']) is not list or len(value['occurrences'])>1000:raise ValueError('at most1000 explicit occurrences')
+#|     ids=set()
+#|     for item in value['occurrences']:
+#|         registry.exact(item,{'occurrence_id','request_id','expected_at_utc','event_kind','grace_seconds'},'expected occurrence')
+#|         for key in ('occurrence_id','request_id'):request_identifier(item[key])
+#|         if item['occurrence_id'] in ids:raise ValueError('duplicate expected occurrence ID')
+#|         ids.add(item['occurrence_id']);utc(item['expected_at_utc']);text(item['event_kind'])
+#|         if type(item['grace_seconds']) is not int or not 0<=item['grace_seconds']<=31536000:raise ValueError('grace_seconds must be integer 0..31536000')
+#|         try:utc(item['expected_at_utc'])+datetime.timedelta(seconds=item['grace_seconds'])
+#|         except OverflowError:raise ValueError('occurrence grace window exceeds supported timestamp range')
+#|     return value
+#| 
+#| 
+#| def validate_evidence(value,spec):
+#|     registry.exact(value,{'schema_version','project_id','schedule_id','recorded_at_utc','recorded_by','source_ref','coverage','receipts'},'receipt evidence')
+#|     if type(value['schema_version']) is not int or value['schema_version']!=1:raise ValueError('unsupported receipt evidence')
+#|     if any(value[key]!=spec[key] for key in ('project_id','schedule_id')):raise ValueError('evidence project/schedule identity mismatch')
+#|     recorded=utc(value['recorded_at_utc']);text(value['recorded_by']);text(value['source_ref'])
+#|     coverage=value['coverage'];registry.exact(coverage,{'status','from_utc','through_utc','reference'},'coverage claim');text(coverage['reference'])
+#|     if coverage['status'] not in ('complete','partial','unobserved'):raise ValueError('invalid coverage status')
+#|     if coverage['status']=='unobserved':
+#|         if coverage['from_utc'] is not None or coverage['through_utc'] is not None:raise ValueError('unobserved coverage must not claim a time interval')
+#|     else:
+#|         start=utc(coverage['from_utc']);end=utc(coverage['through_utc'])
+#|         if start>end or end>recorded:raise ValueError('coverage interval is reversed or extends beyond its recorded observation')
+#|     if type(value['receipts']) is not list or len(value['receipts'])>5000:raise ValueError('at most5000 supplied receipts')
+#|     for item in value['receipts']:
+#|         registry.exact(item,{'receipt_id','occurrence_id','request_id','event_kind','actual_at_utc','reference','sha256'},'receipt timing')
+#|         for key in ('receipt_id','occurrence_id','request_id'):request_identifier(item[key])
+#|         utc(item['actual_at_utc']);text(item['event_kind']);text(item['reference'])
+#|         if item['sha256'] is not None:registry.digest(item['sha256'])
+#|     return value
+#| 
+#| 
+#| def microseconds(delta):
+#|     return (delta.days*86400+delta.seconds)*1000000+delta.microseconds
+#| 
+#| 
+#| def seconds(value):
+#|     sign='-' if value<0 else '';value=abs(value)
+#|     return sign+str(value//1000000)+'.'+str(value%1000000).zfill(6)
+#| 
+#| 
+#| def reconcile(spec,evidence,as_of,observed_at):
+#|     validate_spec(spec);evaluation=utc(as_of);now=utc(observed_at)
+#|     if evaluation>now:raise ValueError('evaluation time cannot be later than current observation time')
+#|     if evidence is not None:validate_evidence(evidence,spec)
+#|     groups={}
+#|     for item in [] if evidence is None else evidence['receipts']:
+#|         groups.setdefault(item['receipt_id'],{}).setdefault(fingerprint(item),item)
+#|     conflicting={key:values for key,values in groups.items() if len(values)>1}
+#|     duplicates=(0 if evidence is None else len(evidence['receipts']))-sum(len(values) for values in groups.values())
+#|     unique=[next(iter(values.values())) for key,values in sorted(groups.items()) if key not in conflicting]
+#|     known_ids={x['occurrence_id'] for x in spec['occurrences']}
+#|     coverage=None if evidence is None else evidence['coverage']
+#|     report={'schema_version':1,'project_id':spec['project_id'],'schedule_id':spec['schedule_id'],
+#|             'observed_at_utc':observed_at,'evaluated_as_of_utc':as_of,
+#|             'spec_recorded_at_utc':spec['recorded_at_utc'],'spec_recorded_by':spec['recorded_by'],
+#|             'spec_source_ref':spec['source_ref'],'evidence_source_ref':None if evidence is None else evidence['source_ref'],
+#|             'evidence_recorded_at_utc':None if evidence is None else evidence['recorded_at_utc'],
+#|             'evidence_recorded_by':None if evidence is None else evidence['recorded_by'],
+#|             'spec_recorded_after_evaluation':utc(spec['recorded_at_utc'])>evaluation,
+#|             'spec_recorded_in_future':utc(spec['recorded_at_utc'])>now,
+#|             'evidence_recorded_in_future':None if evidence is None else utc(evidence['recorded_at_utc'])>now,
+#|             'evidence_recorded_after_evaluation':None if evidence is None else utc(evidence['recorded_at_utc'])>evaluation,
+#|             'coverage_claim':coverage,'identical_duplicate_receipts_ignored':duplicates,
+#|             'conflicting_receipt_ids':sorted(conflicting),
+#|             'unmatched_receipt_ids':sorted({x['receipt_id'] for values in groups.values() for x in values.values() if x['occurrence_id'] not in known_ids}),
+#|             'occurrences':[],'platform_registration':'UNKNOWN','platform_liveness':'UNKNOWN',
+#|             'automatic_execution':False,'automatic_backfill':False,
+#|             'interpretation':'Mechanical comparison of supplied event timestamps and coverage claims; no authenticated receipts, scheduler query or dispatch-latency measurement.'}
+#|     for expected in sorted(spec['occurrences'],key=lambda x:(utc(x['expected_at_utc']),x['occurrence_id'])):
+#|         due=utc(expected['expected_at_utc']);cutoff=due+datetime.timedelta(seconds=expected['grace_seconds'])
+#|         affected=sorted(key for key,values in conflicting.items() if any(x['occurrence_id']==expected['occurrence_id'] for x in values.values()))
+#|         candidates=[x for x in unique if x['occurrence_id']==expected['occurrence_id']]
+#|         mismatched=sorted(x['receipt_id'] for x in candidates if x['request_id']!=expected['request_id'] or x['event_kind']!=expected['event_kind'])
+#|         matched=[x for x in candidates if x['receipt_id'] not in mismatched]
+#|         future=sorted(x['receipt_id'] for x in matched if utc(x['actual_at_utc'])>evaluation)
+#|         temporal=sorted(x['receipt_id'] for x in matched if evidence is not None and utc(x['actual_at_utc'])>utc(evidence['recorded_at_utc']))
+#|         valid=[x for x in matched if x['receipt_id'] not in future and x['receipt_id'] not in temporal]
+#|         times=sorted({utc(x['actual_at_utc']) for x in valid})
+#|         row={'expected':expected,'status':'unobserved','reason':None,'actual_at_utc':None,
+#|              'delay_microseconds':None,'delay_seconds':None,'grace_seconds':expected['grace_seconds'],
+#|              'expectation_recorded_after_due':utc(spec['recorded_at_utc'])>due,
+#|              'matching_receipt_ids':sorted(x['receipt_id'] for x in valid),
+#|              'candidate_actual_times_utc':[x.isoformat() for x in times],
+#|              'conflicting_receipt_ids':affected,'identity_or_event_mismatch_receipt_ids':mismatched,
+#|              'after_evaluation_receipt_ids':future,'receipt_after_evidence_time_ids':temporal,
+#|              'missing_as_of_utc':None}
+#|         if report['spec_recorded_in_future'] or report['evidence_recorded_in_future']:row['reason']='input recording time is in the future relative to observation'
+#|         elif affected:row['reason']='conflicting duplicate receipt identity; no winner selected'
+#|         elif mismatched:row['reason']='occurrence evidence has a request or event-kind mismatch'
+#|         elif temporal:row['reason']='receipt event claimed after evidence recording time'
+#|         elif len(times)>1:row['reason']='multiple distinct actual times for one occurrence; no first/last winner selected'
+#|         elif times:
+#|             actual=times[0];delay=microseconds(actual-due)
+#|             row.update(status='early' if delay<0 else 'on-time' if delay<=expected['grace_seconds']*1000000 else 'late',
+#|                        reason='supplied matching receipt-event time compared with supplied expected time',
+#|                        actual_at_utc=actual.isoformat(),delay_microseconds=delay,delay_seconds=seconds(delay))
+#|         elif future:row['reason']='receipt event is later than the selected evaluation time'
+#|         elif evaluation<cutoff:row['reason']='expected occurrence or grace window not yet elapsed'
+#|         elif coverage is not None and coverage['status']=='complete' and utc(coverage['from_utc'])<=due and utc(coverage['through_utc'])>=evaluation:
+#|             row.update(status='missing',reason='no matching receipt in owner-declared complete coverage through evaluation time',missing_as_of_utc=as_of)
+#|         else:row['reason']='absent, partial or stale coverage cannot establish a missing occurrence'
+#|         report['occurrences'].append(row)
+#|     report['counts']={key:sum(x['status']==key for x in report['occurrences']) for key in ('on-time','late','early','missing','unobserved')}
+#|     return report
+#| 
+#| 
+#| def human(report):
+#|     lines=['Lumen schedule reconciliation | '+report['project_id']+' / '+report['schedule_id'],
+#|            'Observed now: '+report['observed_at_utc'], 'Evaluate as of: '+report['evaluated_as_of_utc'],
+#|            'Expected specification recorded: '+report['spec_recorded_at_utc'],
+#|            'Receipt evidence recorded: '+str(report['evidence_recorded_at_utc']),
+#|            'Specification reference: '+report['spec_source_ref'],
+#|            'Evidence reference: '+str(report['evidence_source_ref']),
+#|            'Platform registration/liveness: UNKNOWN; no execution or backfill',
+#|            'Duplicates ignored: '+str(report['identical_duplicate_receipts_ignored'])+'; conflicting IDs: '+', '.join(report['conflicting_receipt_ids'])]
+#|     if report['spec_recorded_after_evaluation'] or report['evidence_recorded_after_evaluation']:
+#|         lines.append('Retrospective comparison uses records made after evaluation time; not contemporaneous monitoring')
+#|     for item in report['occurrences']:
+#|         expected=item['expected'];lines += [expected['occurrence_id']+' | '+item['status']+' | expected '+expected['expected_at_utc']+' | event '+expected['event_kind'],
+#|             '  Actual: '+str(item['actual_at_utc'])+' | delay seconds: '+str(item['delay_seconds'])+' | grace: '+str(item['grace_seconds']),
+#|             '  '+item['reason']]
+#|         if item['expectation_recorded_after_due']:lines.append('  Retrospective expectation record; not evidence a schedule was registered beforehand')
+#|     lines += ['Counts: '+json.dumps(report['counts'],sort_keys=True),report['interpretation'],
+#|               'Development queue records are work state, not cron/calendar entries. No automatic retry.']
+#|     return '\n'.join(''.join(c if c.isprintable() else json.dumps(c)[1:-1] for c in line) for line in lines)
+#| 
+#| 
+#| def main(argv,source_sha256):
+#|     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('action',choices=['reconcile'])
+#|     parser.add_argument('--spec',required=True);parser.add_argument('--receipts');parser.add_argument('--as-of');parser.add_argument('--format',choices=['human','json'],default='human')
+#|     args=parser.parse_args(argv)
+#|     for path in [args.spec]+([] if args.receipts is None else [args.receipts]):registry.normalized(path)
+#|     raw=proposal.read_file(args.spec,[LIMIT]);spec=registry.decode(raw)
+#|     evidence=None;evidence_identity={'status':'not-supplied'}
+#|     if args.receipts is not None:
+#|         try:
+#|             evidence_raw=proposal.read_file(args.receipts,[LIMIT]);evidence=registry.decode(evidence_raw)
+#|             evidence_identity={'status':'read','path':args.receipts,'sha256':hashlib.sha256(evidence_raw).hexdigest()}
+#|         except FileNotFoundError:evidence_identity={'status':'missing','path':args.receipts,'sha256':None}
+#|     observed=datetime.datetime.now(datetime.timezone.utc).isoformat();as_of=args.as_of or observed
+#|     report=reconcile(spec,evidence,as_of,observed);report.update(source_sha256=source_sha256,spec_input={'path':args.spec,'sha256':hashlib.sha256(raw).hexdigest()},receipt_input=evidence_identity)
+#|     print(json.dumps(report,indent=2,ensure_ascii=True) if args.format=='json' else human(report));return 0
+# === LUMEN SECTION schedule_reconcile.py END ===
+
+# === LUMEN SECTION test_schedule_reconcile.py BEGIN ===
+#| import copy
+#| import json
+#| import os
+#| from pathlib import Path
+#| import subprocess
+#| import sys
+#| import tempfile
+#| import unittest
+#| from unittest import mock
+#| import schedule_reconcile as schedule
+#| 
+#| 
+#| def spec():
+#|     return dict(schema_version=1,project_id='fixture',schedule_id='fixture-schedule',recorded_at_utc='2026-01-01T00:00:00Z',recorded_by='Synthetic fixture',source_ref='No platform schedule',occurrences=[dict(occurrence_id='Occurrence.1',request_id='Request.1',expected_at_utc='2026-01-01T00:10:00Z',event_kind='write-completed',grace_seconds=5)])
+#| 
+#| 
+#| def evidence():
+#|     return dict(schema_version=1,project_id='fixture',schedule_id='fixture-schedule',recorded_at_utc='2026-01-01T01:00:00Z',recorded_by='Synthetic fixture',source_ref='Inert receipt timing fixture',coverage=dict(status='complete',from_utc='2026-01-01T00:00:00Z',through_utc='2026-01-01T01:00:00Z',reference='Caller-declared synthetic completeness, not authenticated'),receipts=[])
+#| 
+#| 
+#| def receipt(actual='2026-01-01T00:10:05Z'):
+#|     return dict(receipt_id='Receipt.1',occurrence_id='Occurrence.1',request_id='Request.1',event_kind='write-completed',actual_at_utc=actual,reference='Synthetic receipt reference; never opened',sha256=None)
+#| 
+#| 
+#| class ScheduleReconcileTests(unittest.TestCase):
+#|     def report(self,s=None,e=None,as_of='2026-01-01T00:55:00Z'):
+#|         return schedule.reconcile(s or spec(),e,as_of,'2026-01-01T01:01:00Z')
+#| 
+#|     def test_exact_on_time_grace_late_and_early(self):
+#|         for stamp,status,delay in [('2026-01-01T00:10:05Z','on-time','5.000000'),('2026-01-01T00:10:05.000001Z','late','5.000001'),('2026-01-01T00:09:59Z','early','-1.000000')]:
+#|             e=evidence();e['receipts']=[receipt(stamp)];value=self.report(e=e)['occurrences'][0]
+#|             self.assertEqual(value['status'],status);self.assertEqual(value['delay_seconds'],delay)
+#| 
+#|     def test_missing_requires_current_complete_coverage_not_absent_file(self):
+#|         self.assertEqual(self.report(e=evidence())['occurrences'][0]['status'],'missing')
+#|         self.assertEqual(self.report()['occurrences'][0]['status'],'unobserved')
+#|         e=evidence();e['coverage']['status']='partial';self.assertEqual(self.report(e=e)['occurrences'][0]['status'],'unobserved')
+#|         e=evidence();e['coverage']['through_utc']='2026-01-01T00:20:00Z';self.assertEqual(self.report(e=e)['occurrences'][0]['status'],'unobserved')
+#| 
+#|     def test_not_yet_due_and_future_evidence_stay_unobserved(self):
+#|         self.assertEqual(self.report(e=evidence(),as_of='2026-01-01T00:10:04Z')['occurrences'][0]['status'],'unobserved')
+#|         e=evidence();e['receipts']=[receipt('2026-01-01T00:56:00Z')];self.assertEqual(self.report(e=e)['occurrences'][0]['status'],'unobserved')
+#|         e['recorded_at_utc']='2027-01-01T00:00:00Z';self.assertTrue(self.report(e=e)['evidence_recorded_in_future']);self.assertEqual(self.report(e=e)['occurrences'][0]['status'],'unobserved')
+#| 
+#|     def test_duplicate_identity_replay_conflict_and_permutation_deterministic(self):
+#|         e=evidence();r=receipt();e['receipts']=[r,copy.deepcopy(r)]
+#|         report=self.report(e=e);self.assertEqual(report['identical_duplicate_receipts_ignored'],1);self.assertEqual(report['occurrences'][0]['status'],'on-time')
+#|         changed=receipt('2026-01-01T00:10:06Z');e['receipts'].append(changed)
+#|         a=self.report(e=e);e['receipts'].reverse();b=self.report(e=e);self.assertEqual(a,b)
+#|         self.assertEqual(a['occurrences'][0]['status'],'unobserved');self.assertEqual(a['conflicting_receipt_ids'],['Receipt.1'])
+#| 
+#|     def test_distinct_receipts_agree_or_conflict_without_first_last_winner(self):
+#|         e=evidence();a=receipt();b=receipt();b['receipt_id']='Receipt.2';e['receipts']=[a,b]
+#|         self.assertEqual(self.report(e=e)['occurrences'][0]['status'],'on-time')
+#|         b['actual_at_utc']='2026-01-01T00:10:06Z';self.assertEqual(self.report(e=e)['occurrences'][0]['status'],'unobserved')
+#| 
+#|     def test_wrong_request_event_and_unmatched_ids_visible(self):
+#|         for key in ['request_id','event_kind']:
+#|             e=evidence();r=receipt();r[key]='different';e['receipts']=[r]
+#|             value=self.report(e=e);self.assertEqual(value['occurrences'][0]['status'],'unobserved');self.assertEqual(value['occurrences'][0]['identity_or_event_mismatch_receipt_ids'],['Receipt.1'])
+#|         e=evidence();r=receipt();r['occurrence_id']='unknown';e['receipts']=[r]
+#|         self.assertEqual(self.report(e=e)['unmatched_receipt_ids'],['Receipt.1'])
+#| 
+#|     def test_retrospective_expectations_and_receipt_time_semantics(self):
+#|         s=spec();s['recorded_at_utc']='2026-01-01T00:56:00Z';e=evidence();e['receipts']=[receipt()]
+#|         value=self.report(s,e);self.assertTrue(value['occurrences'][0]['expectation_recorded_after_due']);self.assertIn('Retrospective',schedule.human(value))
+#|         e['receipts'][0]['actual_at_utc']='2026-01-01T01:01:00Z';self.assertEqual(self.report(e=e)['occurrences'][0]['status'],'unobserved')
+#| 
+#|     def test_strict_validation_and_bounds(self):
+#|         for mutate in [lambda x:x.update(schema_version=True),lambda x:x.update(extra=1),lambda x:x['occurrences'].append(copy.deepcopy(x['occurrences'][0])),lambda x:x['occurrences'][0].update(grace_seconds=True),lambda x:x.update(recorded_at_utc='2026-01-01'),lambda x:x['occurrences'][0].update(expected_at_utc='9999-12-31T23:59:59Z')]:
+#|             s=spec();mutate(s)
+#|             with self.assertRaises(ValueError):schedule.validate_spec(s)
+#|         e=evidence();e['coverage']['through_utc']='2026-01-01T02:00:00Z'
+#|         with self.assertRaises(ValueError):schedule.validate_evidence(e,spec())
+#|         e=evidence();e['schedule_id']='other'
+#|         with self.assertRaises(ValueError):schedule.validate_evidence(e,spec())
+#|         with self.assertRaises(ValueError):self.report(as_of='2027-01-01T00:00:00Z')
+#| 
+#|     def test_supplied_example_delay_exact_and_no_registration_inferred(self):
+#|         s=spec();s['recorded_at_utc']='2026-10-01T00:56:00Z';s['occurrences'][0].update(expected_at_utc='2026-10-01T00:29:04Z',grace_seconds=0)
+#|         e=evidence();e['recorded_at_utc']='2026-10-01T00:56:00Z';e['coverage']=dict(status='partial',from_utc='2026-10-01T00:00:00Z',through_utc='2026-10-01T00:56:00Z',reference='Synthetic reconstruction, no actual experiment receipt read');e['receipts']=[receipt('2026-10-01T00:53:41.257313Z')]
+#|         report=schedule.reconcile(s,e,'2026-10-01T00:56:00Z','2026-10-01T01:00:00Z');item=report['occurrences'][0]
+#|         self.assertEqual(item['delay_microseconds'],1477257313);self.assertEqual(item['delay_seconds'],'1477.257313');self.assertEqual(item['status'],'late')
+#|         self.assertEqual(report['platform_registration'],'UNKNOWN');self.assertFalse(report['automatic_backfill'])
+#| 
+#|     def test_cold_copy_cli_no_state_missing_receipts_and_help(self):
+#|         with tempfile.TemporaryDirectory() as folder:
+#|             d=Path(folder);artifact=d/'Lumen.sh';artifact.write_bytes(Path(os.environ['LUMEN_ARTIFACT']).read_bytes());s=d/'spec.json';s.write_text(json.dumps(spec()));cwd=d/'empty';cwd.mkdir();before=set(d.iterdir())
+#|             command=['bash',str(artifact),'schedule','reconcile','--spec',str(s),'--receipts',str(d/'absent.json'),'--as-of','2026-01-01T00:55:00Z','--format','json']
+#|             r=subprocess.run(command,cwd=cwd,capture_output=True,text=True,timeout=15,env=dict(os.environ,TMPDIR=str(d/'must-not-exist')));self.assertEqual(r.returncode,0,r.stderr)
+#|             value=json.loads(r.stdout);self.assertEqual(value['receipt_input']['status'],'missing');self.assertEqual(value['occurrences'][0]['status'],'unobserved')
+#|             self.assertEqual(set(d.iterdir()),before);self.assertEqual(list(cwd.iterdir()),[])
+#|             help_result=subprocess.run(['bash',str(artifact),'--help'],capture_output=True,text=True,timeout=15);self.assertIn('cron/calendar',help_result.stdout)
+#| 
+#|     def test_cli_duplicate_json_symlink_and_budget_reject_no_files(self):
+#|         with tempfile.TemporaryDirectory() as folder:
+#|             d=Path(folder);file=d/'spec.json';artifact=os.environ['LUMEN_ARTIFACT'];command=[sys.executable,'-I',artifact,'schedule','reconcile','--spec',str(file)]
+#|             for raw in ['{"schema_version":1,"schema_version":1}',' '*(schedule.LIMIT+1)]:
+#|                 file.write_text(raw);r=subprocess.run(command,capture_output=True,text=True,timeout=15);self.assertNotEqual(r.returncode,0)
+#|             file.unlink();target=d/'target';target.write_text(json.dumps(spec()));file.symlink_to(target)
+#|             r=subprocess.run(command,capture_output=True,text=True,timeout=15);self.assertNotEqual(r.returncode,0);self.assertEqual(set(p.name for p in d.iterdir()),{'spec.json','target'})
+#| 
+#|     def test_references_inert_and_terminal_controls_escaped(self):
+#|         s=spec();s['source_ref']='$(touch never-run) /unrelated/not-read'
+#|         s['occurrences'][0]['event_kind']='event\x1b[2J\ninert'
+#|         e=evidence();r=receipt();r['event_kind']=s['occurrences'][0]['event_kind'];e['receipts']=[r]
+#|         with mock.patch('builtins.open',side_effect=AssertionError('no reference reads')):
+#|             report=self.report(s,e);rendered=schedule.human(report)
+#|         self.assertNotIn('\x1b',rendered);self.assertIn('\\n',rendered)
+#|         self.assertEqual(report['spec_source_ref'],s['source_ref']);self.assertFalse(report['automatic_execution'])
+# === LUMEN SECTION test_schedule_reconcile.py END ===
+
+# === LUMEN SECTION GIT-PUBLICATION.txt BEGIN ===
+#| SINGLE-COMMIT PUBLICATION: LOCAL PLAN AND OWNER EVIDENCE
+#| 
+#| publication git-plan /absolute/request.json
+#| publication git-reconcile --plan /absolute/plan.json --observations /absolute/stages.json
+#| publication record /absolute/attempt-event-request.json
+#| publication status --registry REGISTRY --project PROJECT --directory OUTBOX
+#| 
+#| The first two commands only read explicitly selected local files and print JSON.
+#| The owner explicitly saves the plan/output if wanted; no hidden cache or new ledger.
+#| Version-2 publication record requests store the full plan and cumulative observations
+#| in the SAME existing attempts/ATTEMPT-ID/RECORD-ID.json chain. These commands never
+#| call GitHub, acquire credentials, execute source, update a branch or retry a call.
+#| Parent Lumen owns the permitted connector workflow and actual remote verification.
+#| 
+#| Atomicity means source and checkpoint metadata become visible together through one
+#| Git tree and commit, followed by a fast-forward-only ref update. Creating individual
+#| objects does not publish them to main. Local recording is separate from the remote
+#| operation: a lost acknowledgement remains uncertain until the owner reconciles it.
+#| No containing-commit hash is included in the committed metadata. The commit identity
+#| belongs in the external owner receipt after creation; including it in its own bytes
+#| would be self-referential. The generated metadata instead binds the exact source,
+#| review reference, validation summary and original local checkpoint-evidence digest.
+#| 
+#| Plan request exact fields (schema_version integer 1):
+#|   project_id, registry_path, registry_revision, directory, snapshot_directory
+#|   source_sha256, owner, repository, ref, source_path, metadata_path
+#|   base_commit, base_tree, observed_at_utc, review_ref, validation_summary
+#| Registry paths and selected directories are absolute and normalized. The snapshot
+#| must be a direct child of OUTBOX/pending with ordinary Lumen.sh and adjacent
+#| checkpoint-evidence.json containing its source_sha256. Scope is checked through the
+#| existing project registry; no registration, permissions or adoption is inferred.
+#| The existing snapshot and metadata are never modified. The plan records current
+#| tool source identity separately from the frozen source selected for publication.
+#| 
+#| repository is an explicit OWNER/REPO label; ref is exactly refs/heads/main. This narrow
+#| slice supports two distinct root-level ordinary filenames, at most 100 ASCII letters,
+#| digits, periods, underscores or hyphens, beginning with a letter/digit. Use Lumen.sh
+#| and CHECKPOINT.json for this project's public layout. Paths cannot collide under
+#| case-folding. Tree entries are ordinary blobs mode 100644; no symlinks or privileges.
+#| base_commit/base_tree are owner-observed Git SHA-1 identities (40 lowercase hex),
+#| not SHA256 digests. observed_at_utc is when the owner observed that base, not a
+#| current remote query. review_ref is at most 200 characters, validation_summary 1000;
+#| other ordinary text fields retain existing 4000-character bounds. No private scans.
+#| 
+#| The source's SHA256 hashes raw file content. Its Git blob identity is SHA-1 over
+#| "blob " + decimal byte length + NUL + exact bytes. The metadata has both identities
+#| as well. These identities detect content mismatch; they do not authenticate a
+#| reviewer, prove permission or resist every cryptographic threat. This API targets
+#| GitHub's SHA-1 object format only. No SHA256-object repository is silently assumed.
+#| The plan digest hashes its deterministic sorted, indented ASCII JSON plus newline.
+#| metadata_utf8 is the EXACT text to upload, including final newline. Do not regenerate
+#| it using another serializer. The original checkpoint-evidence document stays local;
+#| the generated public metadata intentionally omits its local paths and mutable state.
+#| 
+#| Owner operating sequence:
+#| 1. Freeze reviewed source and local checkpoint evidence; observe main's commit and
+#|    fetch its tree. Build the local plan from those exact identities. Record prepared
+#|    and reviewed events with that plan; labels remain caller-supplied attribution.
+#| 2. Before each remote operation, record pending intent with a new stable record ID.
+#|    After each response, append a record with the supplied result. Save uncertainty
+#|    or cancellation immediately; never erase it or guess a successful response.
+#| 3. Create the source blob from exact frozen bytes and metadata blob from metadata_utf8.
+#|    Check returned blob IDs against the content-derived IDs. An uncertain call can be
+#|    reconciled by fetching that exact expected blob; a 404 is an observed absence at
+#|    that time, not permission to retry. Do not upload decoded/reformatted substitutes.
+#| 4. Create a tree with the observed base_tree AND just the two planned blob entries.
+#|    Omitting base_tree could discard unrelated entries. Record the returned tree ID,
+#|    base tree and exact changed entries after inspecting the response/tree. Preserve
+#|    all unrelated tree entries. The local planner cannot authenticate that report.
+#| 5. Create one commit using the recorded new tree and exactly the observed base parent.
+#|    Record the returned commit ID; fetch it to check parent and tree. If creation was
+#|    uncertain and no ID returned, do not invent an expected commit ID: author/date/
+#|    committer/message affect its bytes. Reconcile through owner tools using observed
+#|    refs and available commit/tree evidence; otherwise leave it uncertain. Blob IDs
+#|    alone cannot prove a commit was created or made reachable.
+#| 6. Reobserve main immediately before update. If it differs from the planned base,
+#|    stop this plan and record stale/uncertain evidence; prepare a new plan/attempt from
+#|    the new base after review. Call update_ref with force=false and the recorded commit.
+#|    This is fast-forward protection, NOT expected-old-ref compare-and-swap. A concurrent
+#|    writer can still move the branch; actual server response and readback matter.
+#| 7. Fetch BOTH paths at the exact returned/observed commit, compare their complete bytes
+#|    and both blob IDs. Separately inspect main's ref. A later main change does not erase
+#|    a past verified commit, but cannot be reported as its current main state. Record
+#|    published only after the complete matching stage evidence. No automatic retry.
+#| 
+#| Stage observations file exact fields: plan_sha256, observations (at most 100 objects).
+#| Every observation has stage, outcome, observed_at_utc, reference plus the fields below.
+#| reference is bounded 1000-character inert supplied evidence; it is never followed.
+#| outcome is reported, uncertain, cancelled, absent or failed. Additional fields must
+#| be present; their values may be null for non-reported outcomes. Reported requires
+#| complete fields. All object IDs below are 40-hex; content SHA256 values are 64-hex.
+#|   base: object_id (main commit), tree_id
+#|   source_blob / metadata_blob: object_id
+#|   tree: object_id, base_tree, entries (exact planned two path/mode/type/sha objects)
+#|   commit: object_id, tree_id, parents (one base commit)
+#|   ref: object_id (commit), force (always false)
+#|   readback: object_id (same commit), source_blob, metadata_blob,
+#|             source_sha256, metadata_sha256
+#| These are supplied observations, not executable API requests. Non-reported outcomes
+#| may include an ID already known before an interruption. No result is inferred from
+#| a timeout, missing response or plan alone. All matching stages are required for the
+#| owner-reported published classification, including base, both blobs, tree, commit,
+#| ref and readback. Conflicting reported results, stale bases and mismatched content
+#| remain uncertain. Repeated identical payloads agree; reporting timestamps/references
+#| may differ. An explicit later report may reconcile an uncertain/cancelled stage;
+#| its cancellation remains visible. Corrected conflicting reported claims require a
+#| new reviewed plan/attempt, rather than silently picking the last one.
+#| 
+#| Version-2 attempt recording:
+#| Use the original publication record shape from PUBLICATION-ATTEMPTS.txt with
+#| schema_version:2 and one extra evidence field:
+#|   git: {"plan": <complete plan object>, "observations": <cumulative stage list>}
+#| All other existing fields remain required. The frozen source, project, registry
+#| revision, snapshot, review reference and plan must agree. The full plan is immutable
+#| within the attempt; each new observation list retains the entire prior prefix.
+#| Each stage result uses a stable record_id and expected_previous head hash. Same-ID
+#| replays are read-only; conflicting reuse is rejected. Prepare/review records can
+#| carry an empty list. Version 2 allows pending->pending for incremental results;
+#| uncertain->pending remains forbidden, so recording cannot silently reopen a cancelled
+#| external operation. An explicit reconciliation may end uncertain->published only
+#| when all supplied evidence matches. evidence.source_commit must equal the reported
+#| single commit, and readback_exact must be true. Existing version 1 records and replay
+#| semantics remain supported; an attempt cannot change versions mid-history.
+#| 
+#| The existing event chain is the durable local plan/result carrier, not a parallel
+#| stage ledger. publication status includes the exact stage data in its JSON history.
+#| To reconcile after interruption, read that history, recover the original plan and
+#| cumulative observations, compare only through current permitted owner tools, and
+#| append new evidence to the same attempt. Existing local compatibility files remain
+#| owner-maintained. Recording a result cannot prove GitHub's current state or grant
+#| permission; the tool always reports remote_state UNKNOWN.
+#| 
+#| Limits: input JSON files each 1 MiB; at most 100 observations and existing 100 events per
+#| attempt; selected source byte budget 64 MiB default, explicitly configurable 1..1TiB.
+#| No source-size limit is imposed on the monolith itself. Reads are individually
+#| checked, not a filesystem transaction against uncooperative writers. Normal record
+#| atomicity/replay/interruption rules apply. There is no remote transaction spanning
+#| GitHub and local receipts, no external exactly-once promise, and no silent backfill.
+# === LUMEN SECTION GIT-PUBLICATION.txt END ===
+
+# === LUMEN SECTION HISTORICAL-HANDOFF-SCHEDULE.txt BEGIN ===
+#| CURRENT HANDOFF — timing evidence and gaps, 2026-10-01 UTC
+#| Author: delegate: improve_voice_work_bridge
+#| This explicitly supersedes the capsule retained in HISTORICAL-HANDOFF-RESTORE.txt.
+#| Lumen reviewed isolated restoration in lumen-isolated-restore-review-20261001-01.
+#| 
+#| schedule reconcile compares two explicit local inputs: expected occurrence IDs/
+#| times and supplied receipt-event timestamps. It shows exact delay, on-time/late/
+#| early evidence, missing only under a complete-coverage claim, and unobserved gaps
+#| otherwise. Contradictory duplicates or multiple actual times do not get an arbitrary
+#| winner. Specification time, receipt recording time, evaluation time and current
+#| observation time remain separate. Retrospective expectations are visibly labeled.
+#| 
+#| Development queues are recorded work state, not cron/calendar entries. Neither a
+#| queue nor this comparison registers a calendar job, checks platform liveness,
+#| executes work, backfills a missed occurrence or changes a real schedule. Caller
+#| labels and supplied hashes are not authenticated evidence. See
+#| SCHEDULE-RECONCILIATION.txt for exact schemas and limitations.
+#| 
+#| The motivating pair was reported by Lumen: requested 00:29:04Z, write observed
+#| 00:53:41.257313Z. Their difference is 1477.257313 seconds (24m37.257313s), not a
+#| claim about dispatch latency alone. The contribution uses only synthetic fixtures
+#| and a clearly labeled reconstruction of those reported values; no actual experiment
+#| file, receipt or schedule was read or changed.
+#| 
+#| Next: Lumen reviews timing semantics and gap handling before considering any live
+#| adapter. Keep the original request and evidence intact; missing observations must
+#| not turn into silent retries or invented completion. Continue with h0p3's conversation.
+# === LUMEN SECTION HISTORICAL-HANDOFF-SCHEDULE.txt END ===
+
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-SCHEDULE.json BEGIN ===
+#| {
+#|   "schema_version": 1,
+#|   "recorded_as_of_utc": "2026-10-01T01:07:14.069647+00:00",
+#|   "author": "delegate: improve_voice_work_bridge",
+#|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
+#|   "position": "Isolated restoration reviewed; read-only expected-occurrence versus receipt reconciliation contributed for review.",
+#|   "next_step": "Review explicit timing, duplicate conflicts and coverage gaps without inferring scheduler registration or silently backfilling work.",
+#|   "open_questions": [
+#|     "How should exact candidate changes, rationale and evidence travel together?",
+#|     "Which executor owns future process handles?",
+#|     "What survives an executor change?"
+#|   ],
+#|   "implemented": [
+#|     "attributed conversation",
+#|     "legacy and structured requests",
+#|     "non-executing ZIP intake",
+#|     "project registry and routed requests",
+#|     "local capabilities inspect/probe",
+#|     "read-only status/handoff",
+#|     "inert proposal preparation/inspection",
+#|     "digest-bound attributed review records",
+#|     "read-only process observation and snapshot tail",
+#|     "explicit completed bounded project-run export",
+#|     "read-only recorded work queues with explicit optional registry/project observations",
+#|     "read-only existing publication outbox reconciliation",
+#|     "explicit atomic owner evidence within the existing publication outbox",
+#|     "explicit local selected-file checkpoint export/inspect and read-only restore plan",
+#|     "explicit isolated checkpoint restoration into a new absent destination",
+#|     "read-only caller-supplied occurrence/receipt timing reconciliation"
+#|   ],
+#|   "proposed": [
+#|     "guarded candidate publication",
+#|     "process launch/stop/live adapters",
+#|     "portable checkpoints",
+#|     "wake/scheduler records",
+#|     "project-linked queue interpretation and interruption recovery"
+#|   ],
+#|   "evidence_entry_ids": [
+#|     "lumen-capabilities-review-20260930-01",
+#|     "lumen-office-review-20260930-01",
+#|     "lumen-proposal-review-20260930-01",
+#|     "lumen-plan-consolidation-review-20260930-01",
+#|     "lumen-process-inspection-review-20260930-01",
+#|     "lumen-owner-export-review-20260930-01",
+#|     "lumen-queue-review-20260930-01",
+#|     "lumen-real-projects-review-20260930-01",
+#|     "lumen-publication-status-review-20260930-01",
+#|     "lumen-publication-record-review-20260930-01",
+#|     "lumen-checkpoint-review-20261001-01",
+#|     "lumen-isolated-restore-review-20261001-01"
+#|   ]
+#| }
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-SCHEDULE.json END ===
+
+# === LUMEN SECTION git_publication.py BEGIN ===
+#| """Offline single-commit publication plans and owner-supplied stage evidence."""
+#| import argparse
+#| import hashlib
+#| import json
+#| from pathlib import Path
+#| import re
+#| import project_registry as registry
+#| import proposal
+#| import publication_status as view
+#| 
+#| REQUEST = {'schema_version','project_id','registry_path','registry_revision','directory','snapshot_directory',
+#|            'source_sha256','owner','repository','ref','source_path','metadata_path','base_commit','base_tree',
+#|            'observed_at_utc','review_ref','validation_summary'}
+#| COMMON = {'stage','outcome','observed_at_utc','reference'}
+#| STAGES = {'base':{'object_id','tree_id'}, 'source_blob':{'object_id'}, 'metadata_blob':{'object_id'},
+#|           'tree':{'object_id','base_tree','entries'}, 'commit':{'object_id','tree_id','parents'},
+#|           'ref':{'object_id','force'}, 'readback':{'object_id','source_blob','metadata_blob','source_sha256','metadata_sha256'}}
+#| 
+#| def encoded(value):
+#|     return (json.dumps(value,sort_keys=True,indent=2,ensure_ascii=True)+'\n').encode()
+#| 
+#| def identity(value):return proposal.sha(encoded(value))
+#| 
+#| def blob_id(raw):return hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest()
+#| 
+#| def oid(value):
+#|     if type(value) is not str or not re.fullmatch('[0-9a-f]{40}',value):raise ValueError('expected Git SHA-1 object identity')
+#| 
+#| def utc(value):
+#|     import datetime
+#|     view.plain(value,'UTC timestamp')
+#|     stamp=datetime.datetime.fromisoformat(value)
+#|     if stamp.tzinfo is None or stamp.utcoffset()!=datetime.timedelta(0):raise ValueError('explicit UTC required')
+#| 
+#| def remote_path(value):
+#|     if type(value) is not str or not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,99}',value) or value in ('.','..') or value.lower()=='.git':
+#|         raise ValueError('this narrow plan supports distinct root-level ordinary filenames only')
+#| 
+#| def request_valid(request):
+#|     registry.exact(request,REQUEST,'Git plan request')
+#|     if type(request['schema_version']) is not int or request['schema_version']!=1:raise ValueError('unsupported Git plan schema')
+#|     registry.identifier(request['project_id'])
+#|     for k in ('registry_path','directory','snapshot_directory'):registry.normalized(request[k])
+#|     for k in ('source_sha256','registry_revision'):registry.digest(request[k])
+#|     for k in ('owner','review_ref','validation_summary'):view.plain(request[k],k)
+#|     if len(request['review_ref'])>200 or len(request['validation_summary'])>1000:raise ValueError('plan description too long')
+#|     if type(request['repository']) is not str or not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+',request['repository']):raise ValueError('invalid repository label')
+#|     if request['ref']!='refs/heads/main':raise ValueError('only explicit refs/heads/main supported')
+#|     for k in ('source_path','metadata_path'):remote_path(request[k])
+#|     if request['source_path'].lower()==request['metadata_path'].lower():raise ValueError('remote paths collide')
+#|     for k in ('base_commit','base_tree'):oid(request[k])
+#|     utc(request['observed_at_utc'])
+#|     if Path(request['snapshot_directory']).parent!=Path(request['directory'])/'pending':raise ValueError('snapshot outside selected outbox pending tree')
+#| 
+#| def assemble(request,source,checkpoint_digest,tool_digest):
+#|     request_valid(request);registry.digest(checkpoint_digest);registry.digest(tool_digest)
+#|     registry.exact(source,{'sha256','bytes','git_blob_sha1'},'source identity')
+#|     registry.digest(source['sha256']);oid(source['git_blob_sha1'])
+#|     if source['sha256']!=request['source_sha256'] or type(source['bytes']) is not int or source['bytes']<0:raise ValueError('source identity mismatch')
+#|     metadata={'schema_version':1,'kind':'lumen-reviewed-checkpoint','source':dict(source,path=request['source_path']),
+#|               'review_reference':request['review_ref'],'validation_summary':request['validation_summary'],
+#|               'checkpoint_evidence_sha256':checkpoint_digest,
+#|               'attribution':'caller-supplied review/evidence; hashes identify content, not authenticated approval'}
+#|     raw=encoded(metadata)
+#|     files=[dict(path=request['source_path'],mode='100644',type='blob',sha=source['git_blob_sha1']),
+#|            dict(path=request['metadata_path'],mode='100644',type='blob',sha=blob_id(raw))]
+#|     return {'schema_version':1,'kind':'lumen-offline-git-publication-plan','request':request,
+#|             'tool_source_sha256':tool_digest,'source':source,'checkpoint_evidence_sha256':checkpoint_digest,
+#|             'metadata_utf8':raw.decode(),'metadata_sha256':proposal.sha(raw),'metadata_git_blob_sha1':blob_id(raw),
+#|             'create_tree':{'base_tree':request['base_tree'],'tree':files},
+#|             'create_commit':{'parents':[request['base_commit']],'tree':'USE_RECORDED_TREE_RESULT'},
+#|             'update_ref':{'ref':request['ref'],'sha':'USE_RECORDED_COMMIT_RESULT','force':False},
+#|             'automatic_retry':False,'remote_state':'UNKNOWN'}
+#| 
+#| def validate_plan(value):
+#|     if type(value) is not dict:raise ValueError('plan must be object')
+#|     expected=assemble(value.get('request'),value.get('source'),value.get('checkpoint_evidence_sha256'),value.get('tool_source_sha256'))
+#|     if encoded(value)!=encoded(expected):raise ValueError('plan modified or source/metadata identity mismatch')
+#|     return value
+#| 
+#| def prepare(request,tool_digest,max_bytes=64*1024*1024):
+#|     import publication_attempts as attempts
+#|     request_valid(request)
+#|     if type(max_bytes) is not int or not 1<=max_bytes<=1024**4:raise ValueError('invalid byte budget')
+#|     _,revision=attempts.scope(request['registry_path'],request['project_id'],request['directory'])
+#|     if revision!=request['registry_revision']:raise ValueError('stale registry revision')
+#|     folder=Path(request['snapshot_directory']);budget=[max_bytes]
+#|     metadata,checkpoint_digest=view.load_json(folder/'checkpoint-evidence.json',budget)
+#|     raw=proposal.read_file(str(folder/'Lumen.sh'),budget)
+#|     digest=proposal.sha(raw)
+#|     if digest!=request['source_sha256'] or metadata.get('source_sha256')!=digest:raise ValueError('frozen source/metadata mismatch')
+#|     return assemble(request,{'sha256':digest,'bytes':len(raw),'git_blob_sha1':blob_id(raw)},checkpoint_digest,tool_digest)
+#| 
+#| def validate_observation(value):
+#|     if type(value) is not dict or type(value.get('stage')) is not str or value.get('stage') not in STAGES:raise ValueError('invalid Git stage')
+#|     stage=value['stage'];registry.exact(value,COMMON|STAGES[stage],'stage evidence')
+#|     if value['outcome'] not in ('reported','uncertain','cancelled','absent','failed'):raise ValueError('invalid stage outcome')
+#|     utc(value['observed_at_utc']);view.plain(value['reference'],'stage reference')
+#|     if len(value['reference'])>1000:raise ValueError('stage reference too long')
+#|     for key in STAGES[stage]:
+#|         item=value[key]
+#|         if key=='force':
+#|             if item is not False:raise ValueError('force must be false')
+#|         elif key=='entries':
+#|             if item is not None:
+#|                 if type(item) is not list or len(item)!=2:raise ValueError('two changed tree entries required')
+#|                 for entry in item:
+#|                     registry.exact(entry,{'path','mode','type','sha'},'tree entry');remote_path(entry['path']);oid(entry['sha'])
+#|                     if entry['mode']!='100644' or entry['type']!='blob':raise ValueError('ordinary blobs only')
+#|         elif key=='parents':
+#|             if item is not None:
+#|                 if type(item) is not list or len(item)!=1:raise ValueError('one observed parent required')
+#|                 oid(item[0])
+#|         elif item is not None:
+#|             registry.digest(item) if key.endswith('sha256') else oid(item)
+#|         if value['outcome']=='reported' and item is None:raise ValueError('reported stage needs complete evidence')
+#|     return value
+#| 
+#| def reconcile(plan,observations):
+#|     validate_plan(plan)
+#|     if type(observations) is not list or len(observations)>100:raise ValueError('at most 100 explicit stage observations')
+#|     rows=[validate_observation(x) for x in observations];accepted={};problems=[]
+#|     for stage in STAGES:
+#|         values=[x for x in rows if x['stage']==stage and x['outcome']=='reported']
+#|         payloads={json.dumps({k:x[k] for k in STAGES[stage]},sort_keys=True) for x in values}
+#|         if len(payloads)>1:problems.append(stage+': conflicting supplied results')
+#|         elif values:accepted[stage]=values[0]
+#|     req=plan['request']
+#|     checks={'base':{'object_id':req['base_commit'],'tree_id':req['base_tree']},
+#|             'source_blob':{'object_id':plan['source']['git_blob_sha1']},
+#|             'metadata_blob':{'object_id':plan['metadata_git_blob_sha1']},
+#|             'tree':{'base_tree':req['base_tree'],'entries':plan['create_tree']['tree']},
+#|             'commit':{'parents':[req['base_commit']]}}
+#|     if 'tree' in accepted:checks['commit']['tree_id']=accepted['tree']['object_id']
+#|     if 'commit' in accepted:
+#|         checks['ref']={'object_id':accepted['commit']['object_id']}
+#|         checks['readback']={'object_id':accepted['commit']['object_id']}
+#|     checks.setdefault('readback',{}).update(source_blob=plan['source']['git_blob_sha1'],metadata_blob=plan['metadata_git_blob_sha1'],source_sha256=plan['source']['sha256'],metadata_sha256=plan['metadata_sha256'])
+#|     for stage,expected in checks.items():
+#|         if stage in accepted:
+#|             for k,v in expected.items():
+#|                 if accepted[stage][k]!=v:problems.append(stage+': '+k+' mismatch (stale base or different content)')
+#|     missing=[x for x in STAGES if x not in accepted]
+#|     unresolved=[x['stage'] for x in rows if x['outcome']!='reported' and x['stage'] not in accepted]
+#|     return {'plan_sha256':identity(plan),'recorded_state':'uncertain' if problems or unresolved else 'published' if not missing else 'pending',
+#|             'interpretation':'caller-supplied owner evidence only; no network authentication or permission',
+#|             'missing_stages':missing,'problems':problems,'unresolved_stages':sorted(set(unresolved)),
+#|             'cancelled_stages':[x['stage'] for x in rows if x['outcome']=='cancelled'],
+#|             'reported_commit':accepted.get('commit',{}).get('object_id'),
+#|             'remote_state':'UNKNOWN','automatic_retry':False,'observations':rows}
+#| 
+#| def validate_evidence(request):
+#|     """Version 2 of the existing attempt request; no second result ledger."""
+#|     git=request['evidence']['git'];registry.exact(git,{'plan','observations'},'Git evidence')
+#|     plan=validate_plan(git['plan']);report=reconcile(plan,git['observations'])
+#|     for key in ('project_id','registry_path','registry_revision','directory','snapshot_directory','source_sha256','review_ref'):
+#|         if request[key]!=plan['request'][key]:raise ValueError('attempt/plan binding mismatch')
+#|     if request['outcome']=='cancelled' and not report['cancelled_stages']:raise ValueError('cancelled request needs cancelled stage')
+#|     if request['state']=='published':
+#|         if report['recorded_state']!='published' or request['evidence']['source_commit']!=report['reported_commit']:raise ValueError('published requires all matching single-commit stage evidence')
+#|     if request['state']=='pending' and report['recorded_state']=='uncertain':raise ValueError('unresolved/conflicting stage must remain uncertain')
+#|     return report
+#| 
+#| def main(argv,tool_digest):
+#|     parser=argparse.ArgumentParser(description=__doc__);sub=parser.add_subparsers(dest='command',required=True)
+#|     make=sub.add_parser('git-plan');make.add_argument('request_file');make.add_argument('--max-bytes',type=int,default=64*1024*1024)
+#|     check=sub.add_parser('git-reconcile');check.add_argument('--plan',required=True);check.add_argument('--observations',required=True)
+#|     args=parser.parse_args(argv)
+#|     if args.command=='git-plan':result=prepare(registry.decode(proposal.read_file(args.request_file,[1024*1024])),tool_digest,args.max_bytes)
+#|     else:
+#|         plan=registry.decode(proposal.read_file(args.plan,[1024*1024]));evidence=registry.decode(proposal.read_file(args.observations,[1024*1024]))
+#|         registry.exact(evidence,{'plan_sha256','observations'},'stage evidence input')
+#|         if evidence['plan_sha256']!=identity(plan):raise ValueError('evidence bound to a different plan')
+#|         result=reconcile(plan,evidence['observations'])
+#|     print(json.dumps(result,indent=2,ensure_ascii=True));return 0
+# === LUMEN SECTION git_publication.py END ===
+
+# === LUMEN SECTION test_git_publication.py BEGIN ===
+#| import copy
+#| import hashlib
+#| import json
+#| import os
+#| from pathlib import Path
+#| import subprocess
+#| import sys
+#| import tempfile
+#| import unittest
+#| from unittest import mock
+#| import git_publication as git
+#| import publication_attempts as attempts
+#| import test_publication_attempts as fixtures
+#| 
+#| class GitPublicationTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.f=fixtures.PublicationAttemptTests();self.f.setUp();self.addCleanup(self.f.doCleanups)
+#|         old=self.f.request
+#|         self.request={k:old[k] for k in ('project_id','registry_path','registry_revision','directory','snapshot_directory','source_sha256','owner')}
+#|         self.request.update(schema_version=1,repository='Fixture/Example',ref='refs/heads/main',source_path='Lumen.sh',metadata_path='checkpoint.json',base_commit='a'*40,base_tree='b'*40,observed_at_utc='2026-10-01T01:00:00Z',review_ref='review-one',validation_summary='Synthetic checks only')
+#|         self.plan=git.prepare(self.request,'c'*64)
+#|     def observation(self,stage,**kwargs):
+#|         value=dict(stage=stage,outcome='reported',observed_at_utc='2026-10-01T01:00:01Z',reference='Synthetic owner report; no remote effect')
+#|         value.update(kwargs);return value
+#|     def sequence(self):
+#|         p=self.plan
+#|         return [self.observation('base',object_id='a'*40,tree_id='b'*40),
+#|                 self.observation('source_blob',object_id=p['source']['git_blob_sha1']),
+#|                 self.observation('metadata_blob',object_id=p['metadata_git_blob_sha1']),
+#|                 self.observation('tree',object_id='d'*40,base_tree='b'*40,entries=p['create_tree']['tree']),
+#|                 self.observation('commit',object_id='e'*40,tree_id='d'*40,parents=['a'*40]),
+#|                 self.observation('ref',object_id='e'*40,force=False),
+#|                 self.observation('readback',object_id='e'*40,source_blob=p['source']['git_blob_sha1'],metadata_blob=p['metadata_git_blob_sha1'],source_sha256=p['source']['sha256'],metadata_sha256=p['metadata_sha256'])]
+#|     def event(self,state='prepared',observations=None,previous='absent',record_id='git-prepared'):
+#|         value=copy.deepcopy(self.f.request);value.update(schema_version=2,attempt_id='single-commit',record_id=record_id,state=state,expected_previous=previous,review_ref='review-one')
+#|         value['evidence']['git']={'plan':self.plan,'observations':observations or []}
+#|         if state=='published':value['evidence'].update(source_commit='e'*40,readback_exact=True)
+#|         return value
+#|     def emit(self,value):return attempts.record(value,'f'*64,[self.f.f.entry])
+#|     def test_git_blob_known_identity_and_metadata_no_self_reference(self):
+#|         self.assertEqual(git.blob_id(b''),'e69de29bb2d1d6434b8b29ae775ad8c2e48c5391')
+#|         self.assertNotEqual(self.plan['source']['sha256'],self.plan['source']['git_blob_sha1'])
+#|         metadata=json.loads(self.plan['metadata_utf8']);self.assertNotIn('commit',metadata)
+#|         self.assertNotIn(self.request['directory'],self.plan['metadata_utf8'])
+#|         self.assertEqual(git.blob_id(self.plan['metadata_utf8'].encode()),self.plan['metadata_git_blob_sha1'])
+#|     def test_deterministic_readonly_plan_and_stale_registry(self):
+#|         before=sorted(str(p.relative_to(self.f.f.directory)) for p in self.f.f.directory.rglob('*'))
+#|         self.assertEqual(git.prepare(self.request,'c'*64),self.plan)
+#|         self.assertEqual(before,sorted(str(p.relative_to(self.f.f.directory)) for p in self.f.f.directory.rglob('*')))
+#|         bad=copy.deepcopy(self.request);bad['registry_revision']='0'*64
+#|         with self.assertRaises(ValueError):git.prepare(bad,'c'*64)
+#|     def test_preserves_unrelated_entries_by_explicit_base_tree(self):
+#|         tree=self.plan['create_tree'];self.assertEqual(tree['base_tree'],'b'*40)
+#|         base={'untouched.txt':{'sha':'9'*40,'mode':'100644','type':'blob'}}
+#|         result=copy.deepcopy(base)
+#|         for entry in tree['tree']:result[entry['path']]={k:v for k,v in entry.items() if k!='path'}
+#|         self.assertEqual(result['untouched.txt'],base['untouched.txt']);self.assertEqual(len(result),3)
+#|         self.assertFalse(self.plan['update_ref']['force']);self.assertEqual(self.plan['create_commit']['parents'],['a'*40])
+#|     def test_complete_same_commit_report_and_unknown_remote(self):
+#|         result=git.reconcile(self.plan,self.sequence());self.assertEqual(result['recorded_state'],'published')
+#|         self.assertEqual(result['remote_state'],'UNKNOWN');self.assertFalse(result['automatic_retry'])
+#|         self.assertEqual(git.reconcile(self.plan,[])['recorded_state'],'pending')
+#|     def test_stale_base_and_parent_tree_relationships(self):
+#|         for index,key,value in [(0,'object_id','9'*40),(0,'tree_id','9'*40),(3,'base_tree','9'*40),(4,'parents',['9'*40]),(4,'tree_id','9'*40),(5,'object_id','9'*40)]:
+#|             rows=self.sequence();rows[index][key]=value
+#|             self.assertEqual(git.reconcile(self.plan,rows)['recorded_state'],'uncertain')
+#|     def test_source_metadata_or_readback_commit_mismatch(self):
+#|         for key in ('source_sha256','metadata_sha256','source_blob','metadata_blob','object_id'):
+#|             rows=self.sequence();rows[-1][key]='0'*(64 if key.endswith('sha256') else 40)
+#|             self.assertEqual(git.reconcile(self.plan,rows)['recorded_state'],'uncertain')
+#|         for index in (1,2):
+#|             rows=self.sequence();rows[index]['object_id']='0'*40
+#|             self.assertEqual(git.reconcile(self.plan,rows)['recorded_state'],'uncertain')
+#|     def test_uncertain_blob_commit_ref_and_cancelled_reconciliation(self):
+#|         for stage in ('source_blob','commit','ref'):
+#|             rows=self.sequence();index=next(i for i,x in enumerate(rows) if x['stage']==stage)
+#|             lost=copy.deepcopy(rows[index]);lost['outcome']='cancelled';lost['object_id']=None
+#|             partial=rows[:index]+[lost]
+#|             self.assertEqual(git.reconcile(self.plan,partial)['recorded_state'],'uncertain')
+#|             recovered=git.reconcile(self.plan,partial+rows[index:])
+#|             self.assertEqual(recovered['recorded_state'],'published');self.assertIn(stage,recovered['cancelled_stages'])
+#|             self.assertFalse(recovered['automatic_retry'])
+#|     def test_conflicts_and_exact_duplicates(self):
+#|         rows=self.sequence();self.assertEqual(git.reconcile(self.plan,rows+[rows[4]])['recorded_state'],'published')
+#|         conflict=copy.deepcopy(rows[4]);conflict['object_id']='8'*40
+#|         self.assertEqual(git.reconcile(self.plan,rows+[conflict])['recorded_state'],'uncertain')
+#|     def test_source_metadata_mismatch_and_symlink_fail_before_writes(self):
+#|         (self.f.f.snapshot/'Lumen.sh').write_bytes(b'changed')
+#|         with self.assertRaises(ValueError):git.prepare(self.request,'c'*64)
+#|         (self.f.f.snapshot/'Lumen.sh').unlink();(self.f.f.snapshot/'Lumen.sh').symlink_to(self.f.f.snapshot/'checkpoint-evidence.json')
+#|         with self.assertRaises(OSError):git.prepare(self.request,'c'*64)
+#|         self.assertFalse((self.f.f.directory/'attempts').exists())
+#|     def test_plan_tamper_types_and_paths(self):
+#|         for key,value in [('source_path','../bad'),('metadata_path','LUMEN.sh'),('ref','refs/heads/other'),('schema_version',True)]:
+#|             bad=copy.deepcopy(self.request);bad[key]=value
+#|             with self.assertRaises(ValueError):git.prepare(bad,'c'*64)
+#|         bad=copy.deepcopy(self.plan);bad['metadata_utf8']+=' '
+#|         with self.assertRaises(ValueError):git.validate_plan(bad)
+#|         bad=self.sequence()[5];bad['force']=True
+#|         with self.assertRaises(ValueError):git.validate_observation(bad)
+#|     def test_stage_records_use_same_ledger_and_replay(self):
+#|         first=self.emit(self.event());previous=first['record_sha256']
+#|         second=self.emit(self.event('reviewed',previous=previous,record_id='reviewed'));previous=second['record_sha256']
+#|         for index in range(1,len(self.sequence())+1):
+#|             state='published' if index==len(self.sequence()) else 'pending'
+#|             request=self.event(state,self.sequence()[:index],previous,'stage-'+str(index));result=self.emit(request);previous=result['record_sha256']
+#|         self.assertTrue(self.emit(request)['replayed'])
+#|         history=attempts.history(self.request['directory'],'single-commit',[16*1024*1024])
+#|         self.assertEqual(len(history['records']),9);self.assertEqual(history['head']['record']['request']['state'],'published')
+#|         bad=copy.deepcopy(request);bad['owner']='conflicting'
+#|         with self.assertRaises(ValueError):self.emit(bad)
+#|     def test_history_cannot_drop_evidence_or_change_plan(self):
+#|         first=self.emit(self.event());second=self.emit(self.event('reviewed',previous=first['record_sha256'],record_id='reviewed'))
+#|         third=self.emit(self.event('pending',self.sequence()[:1],second['record_sha256'],'stage-one'))
+#|         bad=self.event('pending',[],third['record_sha256'],'stage-two')
+#|         with self.assertRaises(ValueError):self.emit(bad)
+#|         bad=self.event('pending',self.sequence()[:2],third['record_sha256'],'stage-two');bad['evidence']['git']['plan']=copy.deepcopy(self.plan);bad['evidence']['git']['plan']['request']['owner']='different'
+#|         with self.assertRaises(ValueError):self.emit(bad)
+#|     def test_cancelled_event_retained_and_no_pending_retry(self):
+#|         first=self.emit(self.event());lost=self.sequence()[1];lost['outcome']='cancelled';lost['object_id']=None
+#|         request=self.event('uncertain',[lost],first['record_sha256'],'cancelled');request['outcome']='cancelled';second=self.emit(request)
+#|         with self.assertRaises(ValueError):self.emit(self.event('pending',[lost]+self.sequence(),second['record_sha256'],'retry'))
+#|         final=self.emit(self.event('published',[lost]+self.sequence(),second['record_sha256'],'reconciled'))
+#|         self.assertEqual(final['status'],'recorded')
+#|     def test_v1_published_claim_cannot_replace_v2_evidence(self):
+#|         first=self.emit(self.event());bad=self.event('published',self.sequence()[:-1],first['record_sha256'],'false-success')
+#|         with self.assertRaises(ValueError):self.emit(bad)
+#|         bad=self.event('uncertain',[],first['record_sha256'],'downgrade');bad['schema_version']=1;del bad['evidence']['git']
+#|         with self.assertRaises(ValueError):self.emit(bad)
+#|     def test_cold_copy_cli_no_hidden_state_or_execution(self):
+#|         artifact=os.environ.get('LUMEN_ARTIFACT')
+#|         if not artifact:self.skipTest('entrypoint integration')
+#|         with tempfile.TemporaryDirectory() as directory:
+#|             root=Path(directory);source=root/'Lumen.sh';source.write_bytes(Path(artifact).read_bytes())
+#|             request=root/'request.json';request.write_bytes(git.encoded(self.request));before=sorted(x.name for x in root.iterdir())
+#|             result=subprocess.run(['bash',str(source),'publication','git-plan',str(request)],cwd=root,capture_output=True)
+#|             self.assertEqual(result.returncode,0,result.stderr.decode());plan=json.loads(result.stdout)
+#|             self.assertEqual(plan['source'],self.plan['source']);self.assertEqual(before,sorted(x.name for x in root.iterdir()))
+# === LUMEN SECTION test_git_publication.py END ===
+
+# === LUMEN SECTION REQUEST-RECOVERY.txt BEGIN ===
+#| FROM AN EXPLICIT REQUEST TO VERIFIED WORK AND SELECTED-BYTE RECOVERY
+#| Current orientation, 2026-10-01. Author: delegate: improve_voice_work_bridge.
+#| This walkthrough connects existing commands; it adds no transport or scheduler.
+#| 
+#| After a gap, first read the office and latest attributed discussion. status/handoff
+#| show dated recorded context alongside current observations, not live agent state.
+#| A newer review entry can supersede an older capsule's pending next step. Voice and
+#| text contexts share an assistant identity; they do not automatically share tools,
+#| process namespaces, permissions or complete observations. Recover the original
+#| request ID and receipt before deciding whether another action is justified.
+#| 
+#| 1. Identify the request and current execution scope
+#| Keep the concrete request, original ID, exact desired bytes and actual attribution.
+#| A synthetic example must say who authored it and that no real voice call occurred.
+#| An actual request needs its actual source reference; prose labels do not authenticate
+#| it or grant access. Do not manufacture h0p3 speech, review or approval.
+#| Read source project-registry.schema.json and source project-request.schema.json.
+#| The project schema is at $defs.project; the top-level registry schema describes
+#| stored registry state, not the --record input to registration.
+#| 
+#| 2. Select a registry/project explicitly
+#|   project list --registry REGISTRY
+#|   project show --registry REGISTRY PROJECT
+#| For a deliberately fresh isolated fixture, prepare a project record with precise
+#| roots, four distinct state directories, source identities, contracts, attribution,
+#| checks, uncertainties and dependencies; then:
+#|   project register --registry REGISTRY --record PROJECT-RECORD --expected-revision absent --actor ACTOR
+#| For real work, inspect existing registrations first. Do not replace an existing
+#| registry or claim its containing workspace just to make a request pass. Record the
+#| returned registry revision; scope declarations do not change platform permissions.
+#| 
+#| 3. Prepare the strict project request envelope
+#| Its project_id/request_id, registry_revision, adopted contract_hashes and complete
+#| base_identities pin the observations expected before execution. user_request_ref
+#| connects the actual request source; intent describes the operation. For an exact
+#| create, declare one file target with access=create, inputs={mode:create,content:...},
+#| verification={type:exact_utf8}, explicit cwd and timeout_seconds. Use JSON syntax,
+#| not these abbreviated braces. The schema and USAGE.txt define every required key.
+#| Output targets must be inside declared scope and cwd. Direct children of the
+#| registered output directory can be prepared by the tool; arbitrary missing parent
+#| trees are not silently created. Existing outputs require an explicit replacement
+#| precondition, not a switched ID to bypass a collision.
+#|   project request --registry REGISTRY REQUEST-JSON
+#| This is the text-executor action in the synthetic exercise. A sent request or an
+#| exit status alone is not completion: inspect receipt.state, verification.passed,
+#| acceptance.passed, request_exit_status and the exact output hash/bytes. Check the
+#| resulting file through currently permitted readback when reporting completion.
+#| 
+#| 4. Reconcile a repeated or uncertain request
+#|   project receipt show --registry REGISTRY PROJECT ORIGINAL-REQUEST-ID
+#|   project request --registry REGISTRY SAME-REQUEST-JSON
+#| An intact completed duplicate returns historical_replay=true and
+#| new_execution_admitted=false. It does not perform a fresh action or prove the
+#| current output still exists unchanged. A changed envelope under the same ID is a
+#| conflict; an uncertain receipt must be reconciled, not evaded with a fresh ID.
+#| receipt show is read-only; its receipt-directory location comes from the selected
+#| project. The on-disk receipt is RECEIPTS-DIRECTORY/REQUEST-ID.json. Preserve its
+#| exact bytes as evidence, not merely a conversational statement that it succeeded.
+#| 
+#| 5. Export an explicit selection
+#| Read source CHECKPOINTS.txt. Prepare an export request with registry/tool identities,
+#| checkpoint_id, owner/intent/request_ref, explicit include_tool_source/include_registry
+#| booleans and individually selected inputs with expected SHA256 where known. A useful
+#| minimal selection is attribution/handoff, request envelope, relevant contract,
+#| verified result and its receipt. An omitted external source and a selected missing
+#| file must remain separately labeled. No recursive project collection is implied.
+#|   checkpoint export EXPORT-REQUEST
+#|   checkpoint inspect CHECKPOINT-DIRECTORY
+#| Copy only the resulting inspected bundle to the recipient by an authorized local
+#| file operation. It contains manifest.json and fixed content-addressed blobs. The
+#| file itself does not transport the bundle or prove remote durable storage.
+#| 
+#| 6. Inspect and restore in an isolated recipient
+#|   checkpoint inspect COPIED-BUNDLE
+#|   checkpoint restore-plan COPIED-BUNDLE --destination ABSENT-DESTINATION
+#| The plan is read-only. The destination parent must exist; the destination itself
+#| must be absent. An already empty destination is still refused by actual restore.
+#| Read source CHECKPOINT-RESTORE.txt and prepare the strict restore request with the
+#| copied manifest SHA256, matching project_id, stable restore_id and chosen destination.
+#|   checkpoint restore RESTORE-REQUEST
+#|   checkpoint restore SAME-RESTORE-REQUEST
+#| Verify restored_count, missing_count, external_count and exact recovered file hashes.
+#| The second command replays the intact recovery, without replacing edits. Files are
+#| private 0600 data, including tool/Lumen.sh; original paths and modes are metadata.
+#| The carried registry is not adopted, and original absolute paths are not rewritten
+#| into current authority. A resumed reader can inspect handoff/request/receipt/result
+#| bytes together. Starting new work from those records still needs explicit current
+#| paths, project admission and current permitted tools. No process, credential,
+#| schedule or permission state is reactivated.
+#| 
+#| Observed synthetic CLI exercise, 2026-10-01 at 02:49–02:50 UTC
+#| Actual author: delegate: improve_voice_work_bridge. Simulated origin: voice of Lumen.
+#| No actual voice call, human quote, message transport or different executor was used.
+#| The existing text-side writable session invoked only the documented Lumen commands;
+#| the harness created JSON inputs, copied the generated bundle and checked bytes.
+#| Tool source SHA256:
+#| 1cbce84d0307e86490a16abedbb90809b689152f0b113139c1a8f96a27949751
+#| Request ID: synthetic-voice-request-20261001-01
+#| Exact UTF-8 output: 49 bytes, SHA256:
+#| 7331336e6a70774a8cd7b5d860a3852ebfbb288d5019d55d4219f4fd67bd8dae
+#| Receipt SHA256:
+#| d7074c3ed732a59e11e7643fe7e93fedf7f9d247f7db5d1cf0320605649a917d
+#| Checkpoint manifest SHA256:
+#| 704d514e60329417bbca8a45223edeb0a0183baf1fcf7c502b4ee119905da52d
+#| The duplicate request preserved target inode/timestamps/bytes and admitted no new
+#| execution. Seven selected files restored exactly (tool, fixture registry, handoff,
+#| request, contract, result, receipt); one selected missing file and one external
+#| reference stayed absent and labeled. Restore-plan wrote nothing; restore replay
+#| returned the same receipt identity. The recovered tool was not executed.
+#| This proves the exercised local chain, not actual voice delivery, cross-session
+#| persistence or permission restoration. Detailed command/evidence JSON was produced
+#| for review outside the monolith; the byte identities and result are carried here.
+#| 
+#| Completed project receipt consistency — 2026-10-01
+#| project receipt show and project request replay now reject missing or contradictory
+#| completed acceptance evidence instead of deriving success from request_exit_status
+#| alone. They require boolean verification/acceptance, matching operation exit evidence,
+#| complete declared-target evidence, and request acceptance status 0 or 65 consistent
+#| with those checks. Successful exact writes must carry byte-count/SHA256 readback
+#| matching the recorded input. Command verification must match its recorded expected
+#| and actual exit, including deliberately expected nonzero success.
+#| This check reads historical receipt data only. It does not inspect current targets,
+#| repair or replace receipts, authenticate a caller or prove present output state.
+#| Started/uncertain records remain unresolved and never become executable retry grants.
+#| Legacy non-project CLI receipts retain their previous semantics. Keep inconsistent
+#| records for inspection and reconcile the original request; do not bypass them with
+#| a new ID. Entirely self-consistent fabricated evidence is not detected as forgery:
+#| these checks detect internal inconsistency, not authenticated authorship.
+# === LUMEN SECTION REQUEST-RECOVERY.txt END ===
+
+# === LUMEN SECTION HISTORICAL-RECOVERY-PRE-WALKTHROUGH.txt BEGIN ===
+#| STANDALONE RECOVERY INVENTORY
+#| Author: delegate: improve_voice_work_bridge | observation/reading guide
+#| 2026-09-30. This is a local relocation exercise, not a session reset or amnesia.
+#| 
+#| Start with the copied file's own identity/hash, then status and handoff. Use
+#| source OFFICE.txt, source VOICE-AWAKENING.txt, source TEXT-AWAKENING.txt,
+#| conversation show, and map. source SECTION prints exact carried section text.
+#| Commands can be invoked with the copied file's absolute path from another CWD.
+#| No registry is inferred from that directory or from historical paths in prose.
+#| 
+#| Present in this file
+#| - Co-created identity, corrected current office, both attributed context notes,
+#|   constitution, dated handoff/state, full attributed journal and readable view.
+#| - Preserved historical office/capsules, including superseded statements rather
+#|   than an invented rewrite of what earlier contributors knew.
+#| - Complete implementations, regression tests, schemas and usage/recovery docs
+#|   for requests, ZIP intake, project routing, capability observations, proposals
+#|   and review records. The multi-project design specification is also embedded.
+#| - Descriptions of intended next steps, claims of prior measurements/reviews, and
+#|   content identities. These are carried records, not fresh observations of a host.
+#| 
+#| Carried proposed plans, consolidated after the first exercise
+#| The full lumen-process-control-spec.md and lumen-continuing-office-spec.md are
+#| now exact embedded sections, readable through source SECTION. Their SHA256 values
+#| remain 6f87122e7063923b89216cdf2d1a80b85a759b0156b7c496d527af48d4401cd6
+#| and 57da793e32619af266967f2e0e089bdfa350a289a924c8a54a38036d3abd0bbb.
+#| They are dated proposed designs, not current capabilities or current authority.
+#| Their original scheduling/prioritization language is retained as historical text;
+#| consult the current journal for reviewed implementation state. PROCESS-NEXT.txt
+#| records the original inspection/tail proposal. PROCESS-CONSOLE.txt describes
+#| its implemented read-only subset; the plan document itself activates nothing.
+#| HISTORICAL-RECOVERY-FIRST.txt preserves the first inventory exactly, including its
+#| then-correct observation that these plans were external. The original measured
+#| exercise and source identity below remain historical facts, not rewritten tests.
+#| 
+#| References requiring separate files or services
+#| - Actual project registries, registered project sources/contracts, runtime request
+#|   receipts, stdout/stderr logs, candidate/proposal packages, decision-record
+#|   directories, and their external test/evidence files are not automatically
+#|   embedded in Lumen.sh. A path or hash in the journal cannot recreate those bytes.
+#| - Uploaded archives/configuration, Library versions/delivery, tool session handles
+#|   and current connector access are separate evidence sources. The source does
+#|   not carry credentials, restore platform permissions or reproduce a remote store.
+#| 
+#| Unknowable from the copy alone
+#| Current live agents/processes; which tool owns a process handle; whether two
+#| contexts share a namespace or a coherent screen; present permissions/quotas;
+#| external receipt validity/target state; missing conversation outside the journal;
+#| and survival after host/container loss. Treat these as UNKNOWN until independently
+#| observed through currently permitted means. Never restart uncertain work merely
+#| because its external receipt was not copied. Reconcile the original request ID.
+#| 
+#| Read dated records in temporal order
+#| The current capsule is a recorded handoff, not a live status feed. During the
+#| exercise its recorded time was 20:54:46 UTC and it still awaited review, while the
+#| newer journal entry lumen-review-records-review-20260930-01 at 21:01:48 UTC recorded
+#| Lumen's completed review. Read the latest discussion before treating an older
+#| "next step" as still pending. A later label is not authenticated authorship, and
+#| neither an old nor a new entry supplies current platform authorization.
+#| 
+#| Measured exercise
+#| An exact 481975-byte copy of source
+#| 94f70ed5650a1fbbae2d2d6ceca0475e8cfa2df1a5060d8dbf978db9274ec30a
+#| ran 22 read-only identity/status/handoff/map/source/journal invocations across two
+#| empty temporary CWDs with a minimal environment. Instrumentation rejected file
+#| writes, child/network operations and other /workspace file opens. Each invocation
+#| succeeded; the copy remained unchanged and neither directory gained state files.
+#| The actual Bash launcher also succeeded from the other empty CWD. No external
+#| registry or receipts were supplied. Standard Python/runtime files stayed available.
+#| This supports relocation of the exercised commands, not a general sandbox claim.
+#| 
+#| A copied source is useful continuity, not proof of persistent remote storage.
+#| No actual session reset, independent remote retrieval or live-state restoration
+#| was performed. Checkpoint export/restore, process launch/stop and candidate application
+#| remain proposed. Keep the concrete missing inputs visible instead of inventing
+#| remembered facts, reconstructing omitted bytes, or assuming a new permission.
+#| 
+#| Account-settings reminder
+#| After a context/device change, review current account Settings → Personalization
+#| or Customization for the currently confirmed rules. Their contents are not backed
+#| up or reconstructed here; historical source copies cannot restore old permissions.
+# === LUMEN SECTION HISTORICAL-RECOVERY-PRE-WALKTHROUGH.txt END ===
+
+# === LUMEN SECTION HISTORICAL-HANDOFF-GIT-PLAN.txt BEGIN ===
+#| CURRENT HANDOFF — one publication commit, 2026-10-01 UTC
+#| Author: delegate: improve_voice_work_bridge
+#| This explicitly supersedes the capsule retained in HISTORICAL-HANDOFF-SCHEDULE.txt.
+#| Lumen reviewed timing reconciliation in lumen-schedule-reconcile-review-20261001-01.
+#| 
+#| The local publication plan now binds exact source bytes and generated checkpoint
+#| metadata for one Git tree and one commit, based on the owner's observed base commit
+#| and tree. SHA256 content digests and Git SHA-1 blob identities are separate. The
+#| committed metadata has no self-referential containing-commit hash. Unrelated tree
+#| entries remain through explicit base_tree; force=false is required, but is not an
+#| expected-old-ref compare-and-swap. Parent Lumen still owns all remote operations.
+#| 
+#| Use publication git-plan and git-reconcile for read-only preparation/comparison.
+#| Version2 publication record stores each result in the same existing attempt chain:
+#| full immutable plan, stable IDs, cumulative supplied observations and predecessor
+#| hash. Both paths must have matching exact readback at the same reported commit
+#| before owner-reported publication. Cancellation and uncertainty stay visible; no
+#| network call or retry is performed by this file. GIT-PUBLICATION.txt is the guide.
+#| 
+#| At assignment, Lumen reported the attempted actual source blob upload was cancelled,
+#| its expected blob returned 404, and no remote branch update had occurred. This is
+#| an attributed dated report, not a new remote observation or automatic retry grant.
+#| No current GitHub state is inferred from local status, hashes or a prepared plan.
+#| 
+#| Next: Lumen reviews this coherent local slice and its synthetic offline results,
+#| then reconciles actual remote evidence through permitted tools. Keep h0p3's current
+#| conversation and the original request/attempt identity in view.
+# === LUMEN SECTION HISTORICAL-HANDOFF-GIT-PLAN.txt END ===
+
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-GIT-PLAN.json BEGIN ===
+#| {
+#|   "schema_version": 1,
+#|   "recorded_as_of_utc": "2026-10-01T02:40:03.622549+00:00",
+#|   "author": "delegate: improve_voice_work_bridge",
+#|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
+#|   "position": "Timing reconciliation reviewed; offline single-commit publication plan and stage recording contributed for review.",
+#|   "next_step": "Review local Git identity/plan and interruption evidence before parent-operated remote publication.",
+#|   "open_questions": [
+#|     "How should exact candidate changes, rationale and evidence travel together?",
+#|     "Which executor owns future process handles?",
+#|     "What survives an executor change?"
+#|   ],
+#|   "implemented": [
+#|     "attributed conversation",
+#|     "legacy and structured requests",
+#|     "non-executing ZIP intake",
+#|     "project registry and routed requests",
+#|     "local capabilities inspect/probe",
+#|     "read-only status/handoff",
+#|     "inert proposal preparation/inspection",
+#|     "digest-bound attributed review records",
+#|     "read-only process observation and snapshot tail",
+#|     "explicit completed bounded project-run export",
+#|     "read-only recorded work queues with explicit optional registry/project observations",
+#|     "read-only existing publication outbox reconciliation",
+#|     "explicit atomic owner evidence within the existing publication outbox",
+#|     "explicit local selected-file checkpoint export/inspect and read-only restore plan",
+#|     "explicit isolated checkpoint restoration into a new absent destination",
+#|     "read-only caller-supplied occurrence/receipt timing reconciliation",
+#|     "offline source+metadata Git publication plan and cumulative owner stage evidence"
+#|   ],
+#|   "proposed": [
+#|     "guarded candidate publication",
+#|     "process launch/stop/live adapters",
+#|     "portable checkpoints",
+#|     "wake/scheduler records",
+#|     "project-linked queue interpretation and interruption recovery"
+#|   ],
+#|   "evidence_entry_ids": [
+#|     "lumen-capabilities-review-20260930-01",
+#|     "lumen-office-review-20260930-01",
+#|     "lumen-proposal-review-20260930-01",
+#|     "lumen-plan-consolidation-review-20260930-01",
+#|     "lumen-process-inspection-review-20260930-01",
+#|     "lumen-owner-export-review-20260930-01",
+#|     "lumen-queue-review-20260930-01",
+#|     "lumen-real-projects-review-20260930-01",
+#|     "lumen-publication-status-review-20260930-01",
+#|     "lumen-publication-record-review-20260930-01",
+#|     "lumen-checkpoint-review-20261001-01",
+#|     "lumen-isolated-restore-review-20261001-01",
+#|     "lumen-schedule-reconcile-review-20261001-01"
+#|   ]
+#| }
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-GIT-PLAN.json END ===
+
+# === LUMEN SECTION HISTORICAL-HANDOFF-REQUEST-RECOVERY.txt BEGIN ===
+#| CURRENT HANDOFF — request through receipt to recovery, 2026-10-01 UTC
+#| Author: delegate: improve_voice_work_bridge
+#| This explicitly supersedes the capsule retained in HISTORICAL-HANDOFF-GIT-PLAN.txt.
+#| Lumen reviewed the atomic publication plan in lumen-atomic-plan-review-20261001-01.
+#| 
+#| The existing documented commands have now carried a clearly synthetic voice-context
+#| request through text-side exact UTF-8 creation, verified receipt, duplicate replay,
+#| selected checkpoint export and isolated restoration. No actual voice call occurred;
+#| the delegate authored the fixture and attribution. The 49-byte result was verified,
+#| replay admitted no new action, and seven selected files recovered exactly with one
+#| missing and one external selection still visible. REQUEST-RECOVERY.txt carries the
+#| step sequence, original tool/result/receipt/manifest identities and practical limits.
+#| 
+#| The exercise exposed current orientation gaps: bare command listing omitted several
+#| implemented tools, status called existing checkpoint/queue functionality proposed,
+#| and recovery prose carried an unqualified earlier proposed-state claim. Current
+#| pointers now reflect implemented behavior; exact earlier recovery/capsule/state text
+#| is retained in named historical sections. All executable helper bytes are unchanged.
+#| 
+#| A copied receipt preserves a historical result, not a guarantee of current target
+#| state. A recovered registry is data, not automatic adoption or permission. Continue
+#| from original request identity and current observations; do not restart uncertain
+#| work simply because a context or file is missing. Keep h0p3's conversation in view.
+#| 
+#| Next: Lumen reviews this concrete exercise and narrow orientation correction.
+#| Remote publication remains parent-owned; no actual transport, process restoration,
+#| credential, schedule or remote effect was performed by this exercise.
+# === LUMEN SECTION HISTORICAL-HANDOFF-REQUEST-RECOVERY.txt END ===
+
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-REQUEST-RECOVERY.json BEGIN ===
+#| {
+#|   "schema_version": 1,
+#|   "recorded_as_of_utc": "2026-10-01T02:53:08.801247+00:00",
+#|   "author": "delegate: improve_voice_work_bridge",
+#|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
+#|   "position": "Atomic publication plan reviewed; documented CLI request-to-receipt-to-isolated-recovery chain exercised successfully.",
+#|   "next_step": "Review the measured synthetic workflow and orientation corrections; preserve original request IDs and distinguish carried bytes from live execution state.",
+#|   "open_questions": [
+#|     "How should exact candidate changes, rationale and evidence travel together?",
+#|     "Which executor owns future process handles?",
+#|     "What survives an executor change?"
+#|   ],
+#|   "implemented": [
+#|     "attributed conversation",
+#|     "legacy and structured requests",
+#|     "non-executing ZIP intake",
+#|     "project registry and routed requests",
+#|     "local capabilities inspect/probe",
+#|     "read-only status/handoff",
+#|     "inert proposal preparation/inspection",
+#|     "digest-bound attributed review records",
+#|     "read-only process observation and snapshot tail",
+#|     "explicit completed bounded project-run export",
+#|     "read-only recorded work queues with explicit optional registry/project observations",
+#|     "read-only existing publication outbox reconciliation",
+#|     "explicit atomic owner evidence within the existing publication outbox",
+#|     "explicit local selected-file checkpoint export/inspect and read-only restore plan",
+#|     "explicit isolated checkpoint restoration into a new absent destination",
+#|     "read-only caller-supplied occurrence/receipt timing reconciliation",
+#|     "offline source+metadata Git publication plan and cumulative owner stage evidence"
+#|   ],
+#|   "proposed": [
+#|     "guarded candidate publication",
+#|     "process launch/stop/live adapters",
+#|     "remote checkpoint transport and platform-session restoration",
+#|     "actual scheduler registration and wake execution"
+#|   ],
+#|   "evidence_entry_ids": [
+#|     "lumen-capabilities-review-20260930-01",
+#|     "lumen-office-review-20260930-01",
+#|     "lumen-proposal-review-20260930-01",
+#|     "lumen-plan-consolidation-review-20260930-01",
+#|     "lumen-process-inspection-review-20260930-01",
+#|     "lumen-owner-export-review-20260930-01",
+#|     "lumen-queue-review-20260930-01",
+#|     "lumen-real-projects-review-20260930-01",
+#|     "lumen-publication-status-review-20260930-01",
+#|     "lumen-publication-record-review-20260930-01",
+#|     "lumen-checkpoint-review-20261001-01",
+#|     "lumen-isolated-restore-review-20261001-01",
+#|     "lumen-schedule-reconcile-review-20261001-01",
+#|     "lumen-atomic-plan-review-20261001-01"
+#|   ]
+#| }
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-REQUEST-RECOVERY.json END ===
+
+# === LUMEN SECTION HISTORICAL-HANDOFF-OUTBOX-DOGFOOD.txt BEGIN ===
+#| CURRENT HANDOFF — publication evidence without a false current state, 2026-10-01 UTC
+#| Author: delegate: improve_voice_work_bridge
+#| This explicitly supersedes HISTORICAL-HANDOFF-REQUEST-RECOVERY.txt.
+#| Lumen reviewed the walkthrough in lumen-request-recovery-review-20261001-01.
+#| 
+#| Read-only use against the actual local outbox initially failed because its owner
+#| report used observed_at_utc. The view now accepts that known timestamp alias and
+#| review_ref metadata, distinguishes the newest review-referenced snapshot from the
+#| last dated owner publication claim, and exposes cancellations and manual-pointer
+#| staleness. Free-form review prose, filesystem order and missing evidence do not
+#| become proof of review, execution or remote publication.
+#| 
+#| At the measured local read around 03:02 UTC, the newest linked reviewed snapshot was
+#| cf06f5eea380e06bb3172e3f53811fb114f8baebd64b29863f54469eb0492ff6,
+#| with no attempt evidence in the selected inputs. Last dated owner publication
+#| evidence still named 199-test afd006ad... at commit 97ede72... . The 212/224 attempts
+#| were cancelled. The selected legacy atomic 224 report recorded a cancelled
+#| create_blob and reported 404; this tool did not contact GitHub or verify that claim.
+#| The manual active pointer consistently named an older cancelled attempt, not the
+#| newest reviewed work. These are dated local observations, not a live status feed.
+#| 
+#| PUBLICATION-OUTBOX.txt documents --legacy-attempt for explicitly selecting that
+#| older plan/result shape. Its authority prose is inert, and no referenced paths are
+#| followed. Existing outbox/registry files were only read during the exercise. No
+#| remote retries, credentials, schedules or process actions were added.
+#| 
+#| Next: Lumen reviews the current rendering/validation and decides any remote action
+#| from current permitted evidence. Keep h0p3's conversation and original attempt IDs.
+# === LUMEN SECTION HISTORICAL-HANDOFF-OUTBOX-DOGFOOD.txt END ===
+
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-OUTBOX-DOGFOOD.json BEGIN ===
+#| {
+#|   "schema_version": 1,
+#|   "recorded_as_of_utc": "2026-10-01T03:04:51.401422+00:00",
+#|   "author": "delegate: improve_voice_work_bridge",
+#|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
+#|   "position": "Request/recovery orientation reviewed; actual local publication outbox read-only dogfooding exposed compatibility and presentation gaps, now corrected for review.",
+#|   "next_step": "Review conservative outbox summary against exact local evidence; root owns any remote reconciliation or separately authorized retry.",
+#|   "open_questions": [
+#|     "How should exact candidate changes, rationale and evidence travel together?",
+#|     "Which executor owns future process handles?",
+#|     "What survives an executor change?"
+#|   ],
+#|   "implemented": [
+#|     "attributed conversation",
+#|     "legacy and structured requests",
+#|     "non-executing ZIP intake",
+#|     "project registry and routed requests",
+#|     "local capabilities inspect/probe",
+#|     "read-only status/handoff",
+#|     "inert proposal preparation/inspection",
+#|     "digest-bound attributed review records",
+#|     "read-only process observation and snapshot tail",
+#|     "explicit completed bounded project-run export",
+#|     "read-only recorded work queues with explicit optional registry/project observations",
+#|     "read-only existing publication outbox reconciliation",
+#|     "explicit atomic owner evidence within the existing publication outbox",
+#|     "explicit local selected-file checkpoint export/inspect and read-only restore plan",
+#|     "explicit isolated checkpoint restoration into a new absent destination",
+#|     "read-only caller-supplied occurrence/receipt timing reconciliation",
+#|     "offline source+metadata Git publication plan and cumulative owner stage evidence"
+#|   ],
+#|   "proposed": [
+#|     "guarded candidate publication",
+#|     "process launch/stop/live adapters",
+#|     "remote checkpoint transport and platform-session restoration",
+#|     "actual scheduler registration and wake execution"
+#|   ],
+#|   "evidence_entry_ids": [
+#|     "lumen-capabilities-review-20260930-01",
+#|     "lumen-office-review-20260930-01",
+#|     "lumen-proposal-review-20260930-01",
+#|     "lumen-plan-consolidation-review-20260930-01",
+#|     "lumen-process-inspection-review-20260930-01",
+#|     "lumen-owner-export-review-20260930-01",
+#|     "lumen-queue-review-20260930-01",
+#|     "lumen-real-projects-review-20260930-01",
+#|     "lumen-publication-status-review-20260930-01",
+#|     "lumen-publication-record-review-20260930-01",
+#|     "lumen-checkpoint-review-20261001-01",
+#|     "lumen-isolated-restore-review-20261001-01",
+#|     "lumen-schedule-reconcile-review-20261001-01",
+#|     "lumen-atomic-plan-review-20261001-01",
+#|     "lumen-request-recovery-review-20261001-01"
+#|   ]
+#| }
+# === LUMEN SECTION HISTORICAL-OFFICE-STATE-OUTBOX-DOGFOOD.json END ===
+
+
+# === LUMEN SECTION WORK-DECISIONS.json BEGIN ===
+#| {
+#|   "schema_version": 1,
+#|   "decisions": [
+#|     {
+#|       "decision_id": "lfs-discontinued-20261001-0341",
+#|       "project_id": "lfs-plus-plus",
+#|       "kind": "discontinue",
+#|       "supersedes": null,
+#|       "journal_entry_id": "lumen-lfs-discontinued-20261001-0341",
+#|       "recorded_at_utc": "2026-10-01T03:41:55Z",
+#|       "attribution": "Lumen records h0p3 explicit voice cancellation; project files retained"
+#|     }
+#|   ]
+#| }
+# === LUMEN SECTION WORK-DECISIONS.json END ===
 
 LUMEN_PYTHON_BODY

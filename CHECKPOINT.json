@@ -1,9 +1,9 @@
 {
-  "source_sha256": "afd006ad04fea1c6deb615c56f02110ffa5adb5531dfce8a6a3bc0bc790f4bb7",
-  "source_commit": "97ede72aee8d5b082914e6504071e952b4e360db",
-  "review": "lumen-publication-record-review-20260930-01",
-  "tests": 199,
-  "readback_exact": true,
-  "verified_at": "2026-09-30T23:59:20Z",
-  "repository": "Sapient-Lumen/Lumen"
+  "schema_version": 1,
+  "source_sha256": "b8d2985bf5b8e4acf7cb00419732c6635dfd47454fc57e0ecdc98ee3f841e6ed",
+  "source_bytes": 1090713,
+  "review_ref": "lumen-current-decisions-review-20261001-01",
+  "tests": 273,
+  "repository": "Sapient-Lumen/Lumen",
+  "publication_mode": "source and metadata at same commit; remote verification required"
 }
