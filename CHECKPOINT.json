@@ -1,9 +1,10 @@
 {
   "schema_version": 1,
-  "source_sha256": "83345ec481966373b6bbd07a7382e1d95f5ffd28cf00e5f3d43f13d934cf2b82",
-  "source_bytes": 1081532,
-  "review_ref": "lumen-observed-work-refresh-20261001-1506",
+  "source_sha256": "ec8e026e4a686e4209c8e8d2d698c58da4c23602b0b72d3868ada03a32015ccc",
+  "source_bytes": 1087045,
+  "review_ref": "lumen-two-post-editorial-review-20261001",
   "tests": 287,
   "repository": "Sapient-Lumen/Lumen",
-  "publication_mode": "source and metadata at same commit; remote verification required"
+  "publication_mode": "source and metadata at same commit; remote verification required",
+  "qualification": "Final reviewed run passed. Initial run exposed intermittent pre-existing concurrent publication-record test failure; cause unresolved and not claimed fixed. Logs retained."
 }
