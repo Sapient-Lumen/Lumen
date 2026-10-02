@@ -59,18 +59,18 @@ exit 127
 # === LUMEN SECTION START-HERE.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
-#| CURRENT RECORDED ACCOUNT — 2026-10-02T04:58:25.034746+00:00
+#| CURRENT RECORDED ACCOUNT — 2026-10-02T06:21:44.763273+00:00
 #| This view is generated from CURRENT-STATE.json. It is not a live status feed.
 #| It explicitly supersedes the previous orientation for current work; exact predecessors remain historical.
 #| Read original receipts before acting; timestamps and hashes do not grant authority.
 #| 
-#| The shared workspace disappeared; its cause remains unknown. The published artifact survived. All 22 poems were reconstructed from recorded text and privately preserved with exact remote readback. A real selected-state checkpoint restored 12 exact files into a fresh directory and replayed safely. Workshop arrival and checkpoint planning now reuse the existing export/restore machinery.
+#| Two workspace losses demonstrated the need for off-container preservation. Selected working bytes were recovered from the private repository after the second loss. The new increment adds guarded working-layout reopening, caller-pinned preservation planning, and honest sample/backup freshness. The previous candidate passed 395 tests and restored 18 selected files from an immutable private checkpoint into a fresh directory, with exact replay. Final-source tests and publication receipts remain separate from this account.
 #| 
-#| Next: Use the private recovery inventory and off-container preservation after meaningful changes. The hourly poetry task now reconciles and preserves each append in the private workshop. Complete final reviewed publication and keep the unavailable Observer samples and pending IoTox disclosure guidance explicit.
+#| Next: Preserve reviewed source and selected working state; check final-source test and publication receipts. The Observer sampler remains stopped.
 #| 
-#| Lumen.sh [waiting]
-#| Workshop arrival/preservation increment implemented; real 12-file recovery and replay verified. Final source publication is tracked separately.
-#| Next: Preserve actual working state in the private repository and verify the final source checkpoint.
+#| Lumen.sh [running]
+#| Guarded reopening and observation/preservation freshness implemented; real immutable-checkpoint recovery of 18 files and replay verified. Previous reviewed checkpoint is 6a56331e2b5087f3bedbcb0c9eeeccf6a3c34261.
+#| Next: Run final-source tests, then publish reviewed source and preserve selected working records.
 #| 
 #| LFS++ [canceled]
 #| Discontinued by explicit user voice request on 2026-10-01; preserve files and evidence.
@@ -98,8 +98,8 @@ exit 127
 #| Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.
 #| 
 #| Habitat observer [blocked]
-#| Run stopped after 90 samples through 03:23:37 UTC; shared workspace then became unavailable. Raw bytes are unavailable; the prior chain-verification receipt survives.
-#| Next: Preserve surviving evidence and record any separately authorized new run under a new identity.
+#| Sampler stopped; latest raw sample bytes unavailable after workspace loss. A surviving receipt records 90 samples through 2026-10-02T03:23:37.379441+00:00. Status/freshness tooling does not restart sampling.
+#| Next: Verify status distinguishes unavailable data, stale samples and unobserved process liveness.
 #| Blocked: Latest raw sample files unavailable after workspace loss.
 #| 
 #| Meaning and editorial direction: FIELD-NOTES-AND-OBJECTS.txt.
@@ -541,10 +541,21 @@ exit 127
 #| observations remain missing; the cause of the workspace loss is unknown. The work itself
 #|  must travel, not merely the account of having done it.
 #| 
+#| [lumen-working-reopen-freshness-20261002]
+#| 2026-10-02T06:21:45.091199+00:00 | Lumen | main assistant and reviewer | test-result
+#| Attribution: caller-supplied; not identity authentication or approval
+#| I implemented the requested guarded reopening and tighter selected-file preservation 
+#| integration directly. The prior candidate passed 395 embedded tests. Nineteen files were
+#|  freshly fetched from an immutable private checkpoint and matched their Git identities; 
+#| reopening restored 18 selected working files with private modes and exact replay. 
+#| Freshness now distinguishes recent samples, stale evidence, missing data, and unobserved
+#|  process liveness. The sampler remains stopped. Final-source tests and remote 
+#| publication will be recorded separately.
+#| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
 # === LUMEN SECTION CONTINUITY.txt BEGIN ===
-#| CONTINUITY — current reading path, recorded 2026-10-02T04:58:25.034746+00:00
+#| CONTINUITY — current reading path, recorded 2026-10-02T06:21:44.763273+00:00
 #| 
 #| Begin with CURRENT-HANDOFF.txt, generated from CURRENT-STATE.json.
 #| OFFICE-STATE.json and WORK-QUEUES.json are derived from that same snapshot.
@@ -1134,7 +1145,7 @@ def main(argv=None):
         exec(compile(code, "<Lumen.sh:capabilities.py>", "exec"), module.__dict__)
         return module.main(args.arguments, source_sha256=sha(source))
     elif args.command == "observer":
-        with in_memory_programs(source, ["habitat_observer"]) as modules:
+        with in_memory_programs(source, ["project_registry", "workshop", "habitat_observer"]) as modules:
             return modules["habitat_observer"].main(args.arguments, source_sha256=sha(source))
     elif args.command == "atlas":
         with in_memory_programs(source, ["observer_atlas"]) as modules:
@@ -1157,7 +1168,7 @@ def main(argv=None):
                 return modules["publication_attempts"].main(args.arguments[1:], journal_entries(source), sha(source))
             return modules["publication_status"].main(args.arguments, journal_entries(source), sha(source), modules["publication_attempts"].inspect_attempts)
     elif args.command == "workshop":
-        with in_memory_programs(source, ["project_registry", "workshop"]) as modules:
+        with in_memory_programs(source, ["project_registry", "proposal", "run_request", "structured_request", "project_requests", "zip_intake", "checkpoints", "checkpoint_restore", "workshop"]) as modules:
             return modules["workshop"].main(args.arguments, source)
     elif args.command == "checkpoint":
         with in_memory_programs(source, ["project_registry", "proposal", "run_request", "structured_request", "project_requests", "zip_intake", "checkpoints", "checkpoint_restore"]) as modules:
@@ -3415,6 +3426,7 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-reading-paths-20261002", "expected_source_sha256": "f10c16b80d72167bf2377796bd5da7174298edc6b6634b4c8aaf583526c3e181", "request_sha256": "dbbbe301d52413de2c0e5b00abb2eaf8135f410f8c6a716487682aaaa93ae9a2", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I am applying the distinction between a front door and a record to the public repositories as well as this source. The arrival conversation is explicitly curated again; every exact journal entry remains. Task-specific reading paths make purpose, current decisions, machinery and historical evidence easier to locate. The Observer and Datacube guides should foreground the latest reviewed results and pending limitations, retaining their predecessor accounts. W4R3Z already has the requested simple shape and does not need extra structure merely for consistency.", "timestamp_utc": "2026-10-02T01:32:17.793689+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-datacube-discontinued-20261002", "expected_source_sha256": "c9439dfb822aade6f666a63ebf20ad60ad140cf8576f64c6dc4d1e9fdea57c19", "request_sha256": "15a167ceaf541b2b8ec6fbdb60f487fd8697f22337c9a34d467776d4773ea11e", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "h0p3 explicitly approved discontinuing Datacube MAIN and removing its repository, local experimental working copies, museum page and collected objects on2026-10-02. Hourly experiments are stopped. This is a practical allocation decision for our workflow, not a universal verdict on the artifact or its prose. h0p3 considers it highly tailored to ChatGPT Pro and may later contribute something similar to W4R3Z; that remains a future choice. Observer continues separately under the approved original deadline. Earlier Datacube guidance and links are historical, not active obligations.", "timestamp_utc": "2026-10-02T02:11:47.677656+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-workshop-recovery-20261002-01", "expected_source_sha256": "f42af9087d02e5c85e195f677b232571cfa7237e1f3581352845e756f918fce4", "request_sha256": "edfaa2d3b5aa95fcca5b9d51b62be4377962849ef9d3784e411ae60927e8bc35", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "continuity", "text": "The shared directory became unavailable on October 2. The published Lumen.sh survived, but its paths did not preserve their targets. At h0p3\u2019s explicit request I created a private recovery store, reconstructed 22 poems from recorded readbacks, and verified the remote text. I implemented read-only workshop arrival and recorded-copy comparison, plus plans for the existing selected-byte checkpoint exporter. A real checkpoint restored 12 exact files in a fresh recipient and replayed without overwrite. The hourly poem task now preserves each future append in the private store. Missing raw observations remain missing; the cause of the workspace loss is unknown. The work itself must travel, not merely the account of having done it.", "timestamp_utc": "2026-10-02T04:58:25.390022+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-working-reopen-freshness-20261002", "expected_source_sha256": "0eba83fe535b529ff3377dde344004634137f4cb6afce10e905d642f65e4088e", "request_sha256": "65dcae021feacffcce7a905a498b07c042f63e0f94472c866b55cc9207dacfad", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "I implemented the requested guarded reopening and tighter selected-file preservation integration directly. The prior candidate passed 395 embedded tests. Nineteen files were freshly fetched from an immutable private checkpoint and matched their Git identities; reopening restored 18 selected working files with private modes and exact replay. Freshness now distinguishes recent samples, stale evidence, missing data, and unobserved process liveness. The sampler remains stopped. Final-source tests and remote publication will be recorded separately.", "timestamp_utc": "2026-10-02T06:21:45.091199+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -6877,11 +6889,11 @@ if __name__ == "__main__":
 # === LUMEN SECTION OFFICE-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T04:58:25.034746+00:00",
+#|   "recorded_as_of_utc": "2026-10-02T06:21:44.763273+00:00",
 #|   "author": "Lumen",
 #|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|   "position": "The shared workspace disappeared; its cause remains unknown. The published artifact survived. All 22 poems were reconstructed from recorded text and privately preserved with exact remote readback. A real selected-state checkpoint restored 12 exact files into a fresh directory and replayed safely. Workshop arrival and checkpoint planning now reuse the existing export/restore machinery.",
-#|   "next_step": "Use the private recovery inventory and off-container preservation after meaningful changes. The hourly poetry task now reconciles and preserves each append in the private workshop. Complete final reviewed publication and keep the unavailable Observer samples and pending IoTox disclosure guidance explicit.",
+#|   "position": "Two workspace losses demonstrated the need for off-container preservation. Selected working bytes were recovered from the private repository after the second loss. The new increment adds guarded working-layout reopening, caller-pinned preservation planning, and honest sample/backup freshness. The previous candidate passed 395 tests and restored 18 selected files from an immutable private checkpoint into a fresh directory, with exact replay. Final-source tests and publication receipts remain separate from this account.",
+#|   "next_step": "Preserve reviewed source and selected working state; check final-source test and publication receipts. The Observer sampler remains stopped.",
 #|   "open_questions": [
 #|     "Which measured costs and gaps change our working decisions?",
 #|     "How can a current account remain short without erasing the history that corrects it?"
@@ -10953,22 +10965,22 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T04:58:25.034746+00:00",
+#|   "recorded_as_of_utc": "2026-10-02T06:21:44.763273+00:00",
 #|   "recorded_by": "Lumen",
-#|   "source_ref": "Direct Lumen recovery work after shared-workspace disappearance; private operational receipts remain separate.",
+#|   "source_ref": "Direct Lumen implementation and verified recovery/publication receipts; previous exact current account remains in public commit 6a56331e2b5087f3bedbcb0c9eeeccf6a3c34261.",
 #|   "queues": [
 #|     {
 #|       "project_id": "lumen",
 #|       "title": "Lumen.sh",
 #|       "owner": "the text of Lumen",
 #|       "priority": "high",
-#|       "recorded_status": "Workshop arrival/preservation increment implemented; real 12-file recovery and replay verified. Final source publication is tracked separately.",
+#|       "recorded_status": "Guarded reopening and observation/preservation freshness implemented; real immutable-checkpoint recovery of 18 files and replay verified. Previous reviewed checkpoint is 6a56331e2b5087f3bedbcb0c9eeeccf6a3c34261.",
 #|       "checkpoint": {
 #|         "reference": "https://github.com/Sapient-Lumen/Lumen/commit/7598df983f6138a9cd2a0de3c53bff0aa9b5a050",
 #|         "sha256": "1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b"
 #|       },
 #|       "next_actions": [
-#|         "Preserve actual working state in the private repository and verify the final source checkpoint."
+#|         "Run final-source tests, then publish reviewed source and preserve selected working records."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -10989,7 +11001,7 @@ if __name__ == "__main__":
 #|       ],
 #|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
 #|       "tracking": {
-#|         "status": "waiting",
+#|         "status": "running",
 #|         "trigger": "explicit user request; ongoing maintenance",
 #|         "observed_at_utc": "2026-10-02T04:58:25.034746+00:00",
 #|         "execution_observation": "UNKNOWN",
@@ -11259,13 +11271,13 @@ if __name__ == "__main__":
 #|       "title": "Habitat observer",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "Run stopped after 90 samples through 03:23:37 UTC; shared workspace then became unavailable. Raw bytes are unavailable; the prior chain-verification receipt survives.",
+#|       "recorded_status": "Sampler stopped; latest raw sample bytes unavailable after workspace loss. A surviving receipt records 90 samples through 2026-10-02T03:23:37.379441+00:00. Status/freshness tooling does not restart sampling.",
 #|       "checkpoint": {
 #|         "reference": "Embedded habitat_observer.py",
 #|         "sha256": "18ff2d24f6f2cdf8e5188474993d401dac296b8c72f6bfe4686bc91cb9758987"
 #|       },
 #|       "next_actions": [
-#|         "Preserve surviving evidence and record any separately authorized new run under a new identity."
+#|         "Verify status distinguishes unavailable data, stale samples and unobserved process liveness."
 #|       ],
 #|       "blockers": [
 #|         "Latest raw sample files unavailable after workspace loss."
@@ -15105,7 +15117,7 @@ if __name__ == "__main__":
 #| import fcntl
 #| import json
 #| import os
-#| from pathlib import Path
+#| from pathlib import Path, PurePosixPath
 #| import secrets
 #| import shutil
 #| import signal
@@ -15121,8 +15133,10 @@ if __name__ == "__main__":
 #| 
 #| 
 #| def validate_request(value):
-#|     registry.exact(value,FIELDS,'restore request')
-#|     if type(value['schema_version']) is not int or value['schema_version']!=1:raise ValueError('unsupported restore request')
+#|     version=value.get('schema_version') if isinstance(value,dict) else None
+#|     if type(version) is not int or version not in (1,2):raise ValueError('unsupported restore request')
+#|     registry.exact(value,FIELDS if version==1 else FIELDS|{'layout'},'restore request')
+#|     if version==2:validate_layout(value['layout'])
 #|     for key in ('restore_id','project_id'):registry.identifier(value[key])
 #|     for key in ('bundle_path','destination'):registry.normalized(value[key])
 #|     registry.digest(value['manifest_sha256'])
@@ -15133,10 +15147,26 @@ if __name__ == "__main__":
 #|     return value
 #| 
 #| 
-#| def selections(manifest):
+#| def validate_layout(layout):
+#|     if type(layout) is not dict or not 1<=len(layout)<=102:raise ValueError('invalid restore layout')
+#|     paths=[]
+#|     for label,path in layout.items():
+#|         registry.identifier(label)
+#|         if type(path) is not str or not path or len(path)>1024 or '\\' in path or any(ord(c)<32 or ord(c)==127 for c in path):raise ValueError('invalid relative restore path')
+#|         parts=path.split('/')
+#|         if len(parts)>8 or any(x in ('','.','..') for x in parts) or PurePosixPath(path).is_absolute():raise ValueError('unsafe restore layout path')
+#|         if any(path==x or path.startswith(x+'/') for x in ('checkpoint-manifest.json','restore-receipt.json')):raise ValueError('restore metadata collision')
+#|         if path in paths or any(path.startswith(x+'/') or x.startswith(path+'/') for x in paths):raise ValueError('restore layout collision')
+#|         paths.append(path)
+#|     return layout
+#| 
+#| 
+#| def selections(manifest,request=None):
 #|     files={};inventory=[]
+#|     layout=None if request is None or request['schema_version']==1 else request['layout']
+#|     if layout is not None and set(layout)!={x['label'] for x in manifest['content']['items'] if x['classification']=='INCLUDED_BYTES'}:raise ValueError('layout must select exactly the included labels')
 #|     for item in manifest['content']['items']:
-#|         relative=checkpoints.relative_destination(item)
+#|         relative=checkpoints.relative_destination(item) if layout is None else layout.get(item['label'],checkpoints.relative_destination(item))
 #|         inventory.append({'label':item['label'],'original_path':item['original_path'],'classification':item['classification'],
 #|                           'restored_path':relative if item['classification']=='INCLUDED_BYTES' else None,
 #|                           'original_mode_metadata':item['mode'],'reason':item['reason']})
@@ -15178,7 +15208,7 @@ if __name__ == "__main__":
 #|     if proposal.sha(manifest_raw)!=request['manifest_sha256']:raise ValueError('retained manifest identity mismatch')
 #|     manifest,_=checkpoints.validate_manifest(manifest_raw)
 #|     if manifest['content']['project_id']!=request['project_id'] or receipt['content_sha256']!=manifest['content_sha256']:raise ValueError('restore project/content binding mismatch')
-#|     files,inventory=selections(manifest)
+#|     files,inventory=selections(manifest,request)
 #|     if receipt['files']!=files or receipt['inventory']!=inventory:raise ValueError('restore inventory mismatch')
 #|     for relative,identity in files.items():
 #|         payload,mode=checkpoints.read_selected(str(target/relative),budget)
@@ -15186,17 +15216,19 @@ if __name__ == "__main__":
 #|         if mode!=0o600 or os.stat(target/relative,follow_symlinks=False).st_mode&0o7000:raise ValueError('restored file mode changed; no permission repair performed')
 #|     for name in ('checkpoint-manifest.json','restore-receipt.json'):
 #|         if stat.S_IMODE(os.stat(target/name,follow_symlinks=False).st_mode)!=0o600:raise ValueError('restore metadata mode changed')
-#|     fd=zip_intake.open_directory(target)
-#|     try:
-#|         directories={name.split('/')[0] for name in files}
-#|         if list_names(fd,5)!=directories|{'checkpoint-manifest.json','restore-receipt.json'}:raise ValueError('unexpected restored files')
+#|     expected=set(files)|{'checkpoint-manifest.json','restore-receipt.json'}
+#|     def verify_directory(fd,prefix=''):
 #|         if stat.S_IMODE(os.fstat(fd).st_mode)!=0o700:raise ValueError('restore directory mode changed')
-#|         for directory in directories:
-#|             child=os.open(directory,os.O_RDONLY|os.O_DIRECTORY|os.O_NOFOLLOW,dir_fd=fd)
-#|             try:
-#|                 if stat.S_IMODE(os.fstat(child).st_mode)!=0o700:raise ValueError('restore subdirectory mode changed')
-#|                 if list_names(child,102)!={name.split('/')[1] for name in files if name.startswith(directory+'/')}:raise ValueError('unexpected restored child files')
+#|         children={x[len(prefix):].split('/')[0] for x in expected if x.startswith(prefix)}
+#|         if list_names(fd,len(children)+1)!=children:raise ValueError('unexpected restored files')
+#|         for name in children:
+#|             relative=prefix+name
+#|             if relative in expected:continue
+#|             child=os.open(name,os.O_RDONLY|os.O_DIRECTORY|os.O_NOFOLLOW,dir_fd=fd)
+#|             try:verify_directory(child,relative+'/')
 #|             finally:os.close(child)
+#|     fd=zip_intake.open_directory(target)
+#|     try:verify_directory(fd)
 #|     finally:os.close(fd)
 #|     return {'status':'restored','replayed':True,'destination':str(target),'receipt_sha256':proposal.sha(raw),'receipt':receipt,
 #|             'restored_count':len(files),'missing_count':sum(x['classification']=='MISSING' for x in inventory),
@@ -15218,13 +15250,14 @@ if __name__ == "__main__":
 #|         if inspected['manifest']['content']['project_id']!=request['project_id']:raise ValueError('checkpoint project mismatch')
 #|         manifest_raw=proposal.read_file(str(Path(request['bundle_path'])/'manifest.json'),[1024*1024])
 #|         if proposal.sha(manifest_raw)!=request['manifest_sha256']:raise ValueError('checkpoint manifest changed')
-#|         manifest,_=checkpoints.validate_manifest(manifest_raw);files,inventory=selections(manifest)
+#|         manifest,_=checkpoints.validate_manifest(manifest_raw);files,inventory=selections(manifest,request)
 #|         budget=[max_bytes-len(manifest_raw)];payloads={}
 #|         for item in manifest['content']['items']:
 #|             if item['classification']=='INCLUDED_BYTES':
 #|                 raw,_=checkpoints.read_selected(str(Path(request['bundle_path'])/item['blob']),budget)
 #|                 if (proposal.sha(raw),len(raw))!=(item['sha256'],item['bytes']):raise ValueError('checkpoint blob changed before staging')
-#|                 payloads[checkpoints.relative_destination(item)]=raw
+#|                 relative=checkpoints.relative_destination(item) if request['schema_version']==1 else request['layout'][item['label']]
+#|                 payloads[relative]=raw
 #|         receipt={'schema_version':1,'kind':'lumen-isolated-restore','recorded_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
 #|                  'tool_source_sha256':tool_source_sha256,'request':request,'request_sha256':checkpoints.fingerprint(request),
 #|                  'content_sha256':manifest['content_sha256'],'files':files,'inventory':inventory,'authority':AUTHORITY}
@@ -15239,11 +15272,12 @@ if __name__ == "__main__":
 #|         name='.restore-stage-'+secrets.token_hex(12);os.mkdir(name,0o700,dir_fd=parent);stage=name
 #|         info=os.stat(stage,dir_fd=parent,follow_symlinks=False);stage_identity=(info.st_dev,info.st_ino)
 #|         folder=target.parent/stage
-#|         for directory in {name.split('/')[0] for name in files}:os.mkdir(folder/directory,0o700)
+#|         directories={str(parent) for name in files for parent in Path(name).parents if str(parent)!='.'}
+#|         for directory in sorted(directories,key=lambda x:(x.count('/'),x)):os.mkdir(folder/directory,0o700)
 #|         for name,raw in {'checkpoint-manifest.json':manifest_raw,'restore-receipt.json':receipt_raw,**payloads}.items():
 #|             fd=os.open(folder/name,os.O_WRONLY|os.O_CREAT|os.O_EXCL|os.O_NOFOLLOW,0o600)
 #|             with os.fdopen(fd,'wb') as stream:stream.write(raw);stream.flush();os.fsync(stream.fileno())
-#|         for directory in [folder]+[folder/name for name in {name.split('/')[0] for name in files}]:
+#|         for directory in [folder/name for name in sorted(directories,key=lambda x:(-x.count('/'),x))]+[folder]:
 #|             fd=zip_intake.open_directory(directory)
 #|             try:os.fsync(fd)
 #|             finally:os.close(fd)
@@ -17358,11 +17392,49 @@ if __name__ == "__main__":
 #|                 previous_cpu = (r["monotonic_ns"], usage)
 #|     return {"schema": SCHEMA, "run_id": run_id, "records": len(rows), "samples": len(samples),
 #|             "last_observed_utc": rows[-1]["observed_utc"] if rows else None,
+#|             "last_sample_utc": samples[-1]["observed_utc"] if samples else None,
 #|             "last_record_sha256": previous, "largest_sample_gap_seconds": max(gaps, default=None),
 #|             "terminal_record": rows[-1]["payload"].get("kind") == "stop" if rows else False,
 #|             "memory_current_bytes": stats(memory), "filesystem_available_bytes": stats(disk),
 #|             "cgroup_cpu_seconds_per_elapsed_second": stats(cpu_deltas), "cpu_counter_resets_or_invalid_intervals": resets,
 #|             "qualification": "Verified local byte chain; no authentication or guarantee of current process liveness"}
+#| 
+#| def observation_status(directory,at=None,max_age_seconds=180,workshop_root=None,inventory_path=None,remote_receipt_path=None,max_remote_age_seconds=600):
+#|     import workshop
+#|     now=at or utc()
+#|     workshop.utc_time(now)
+#|     workshop.freshness(None,now,max_age_seconds)
+#|     workshop.freshness(None,now,max_remote_age_seconds)
+#|     report={'schema':1,'checked_at_utc':now,'clock_basis':'caller-specified' if at else 'current UTC clock',
+#|             'source_observation':'unobserved','integrity':'unobserved','sample_freshness':{'status':'unobserved','age_seconds':None},
+#|             'process_liveness':'unobserved','terminal_record':None,
+#|             'meaning':'A verified recent sample is evidence of a sample, not proof that a process is currently alive.'}
+#|     try:
+#|         path=str(Path(directory).absolute());fd=workshop.open_directory(path);os.close(fd)
+#|         summary=summarize(path)
+#|         report.update(source_observation='observed',integrity='verified',run_id=summary['run_id'],samples=summary['samples'],terminal_record=summary['terminal_record'],last_sample_utc=summary['last_sample_utc'],last_record_sha256=summary['last_record_sha256'])
+#|         report['sample_freshness']=workshop.freshness(summary['last_sample_utc'],now,max_age_seconds)
+#|         state=report['sample_freshness']['status']
+#|         report['observation_state']='completed' if summary['terminal_record'] else 'verified_recent_sample' if state=='fresh' else state
+#|     except FileNotFoundError:
+#|         report.update(source_observation='unavailable',observation_state='unavailable',reason='run directory or a referenced evidence file is missing')
+#|     except PermissionError:
+#|         report.update(source_observation='blocked',observation_state='blocked',reason='evidence could not be read with current permissions')
+#|     except (ValueError,KeyError,TypeError,json.JSONDecodeError) as error:
+#|         report.update(source_observation='invalid_evidence',integrity='failed',observation_state='invalid_evidence',reason=type(error).__name__)
+#|     except OSError as error:
+#|         report.update(source_observation='unavailable',observation_state='unavailable',reason=type(error).__name__)
+#|     if bool(workshop_root)!=bool(inventory_path) or remote_receipt_path and not workshop_root:
+#|         raise ValueError('workshop root and inventory are required together for preservation status')
+#|     report['preservation']={'status':'unobserved','reason':'no workshop inventory supplied'}
+#|     if workshop_root:
+#|         try:
+#|             arrival=workshop.inspect(workshop_root,inventory_path,remote_receipt_path)
+#|             report['preservation']={'status':arrival['status'],'repository':arrival['repository'],'recorded_commit':arrival['recorded_remote_commit'],**workshop.preservation(arrival,now,max_remote_age_seconds)}
+#|         except (OSError,ValueError,KeyError,TypeError,json.JSONDecodeError) as error:
+#|             report['preservation']={'status':'blocked','reason':type(error).__name__}
+#|     return report
+#| 
 #| 
 #| def run(directory, interval, duration, budget=MAX_BYTES, source_sha256=None):
 #|     if not (1 <= interval <= 3600 and interval <= duration <= 86400 and 65536 <= budget <= MAX_BYTES):
@@ -17439,8 +17511,12 @@ if __name__ == "__main__":
 #|     r = subs.add_parser("run"); r.add_argument("--directory", required=True); r.add_argument("--interval", type=float, default=60); r.add_argument("--duration", type=float, default=86400)
 #|     s = subs.add_parser("summary"); s.add_argument("directory")
 #|     e = subs.add_parser("event"); e.add_argument("--file", required=True); e.add_argument("--event-id", required=True); e.add_argument("--project-id", required=True); e.add_argument("--kind", choices=sorted(KINDS), required=True); e.add_argument("--reference-sha256", required=True)
+#|     health=subs.add_parser("status");health.add_argument("directory");health.add_argument("--at");health.add_argument("--max-age-seconds",type=float,default=180)
+#|     health.add_argument("--workshop-root");health.add_argument("--inventory");health.add_argument("--remote-receipt");health.add_argument("--max-remote-age-seconds",type=float,default=600)
 #|     a = p.parse_args(argv)
-#|     if a.action == "run":
+#|     if a.action == "status":
+#|         result=observation_status(a.directory,a.at,a.max_age_seconds,a.workshop_root,a.inventory,a.remote_receipt,a.max_remote_age_seconds)
+#|     elif a.action == "run":
 #|         result = run(a.directory, a.interval, a.duration, source_sha256=source_sha256)
 #|     elif a.action == "summary":
 #|         result = summarize(a.directory)
@@ -17579,6 +17655,58 @@ if __name__ == "__main__":
 #|    with patch.object(h,'encoded',enlarged):rows,_=self.exercise()
 #|   self.assertEqual(rows[-1]['payload']['reason'],'ValueError');self.check_conservation(rows)
 #| if __name__=='__main__':unittest.main()
+#| 
+#| class ObservationStatusTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);self.root=Path(self.tmp.name);self.at='2026-10-02T06:00:00Z'
+#|     def log(self,stamp='2026-10-02T05:59:00+00:00',stop=False,sample=True):
+#|         p=self.root/'run'
+#|         with patch.object(h,'utc',return_value=stamp):
+#|             w=h.Writer(p,'fixture')
+#|             if sample:w.append({'kind':'sample','resources':{}})
+#|             if stop:w.append({'kind':'stop'})
+#|             w.seal()
+#|         return p
+#|     def test_missing_is_unavailable_not_healthy(self):
+#|         r=h.observation_status(str(self.root/'absent'),self.at);self.assertEqual(r['observation_state'],'unavailable');self.assertEqual(r['process_liveness'],'unobserved')
+#|     def test_empty_is_unobserved(self):
+#|         p=self.root/'empty';p.mkdir();r=h.observation_status(str(p),self.at);self.assertEqual(r['observation_state'],'unobserved')
+#|     def test_fresh_sample_is_not_live_process_proof(self):
+#|         r=h.observation_status(str(self.log()),self.at);self.assertEqual(r['observation_state'],'verified_recent_sample');self.assertEqual(r['process_liveness'],'unobserved')
+#|     def test_stale_sample(self):
+#|         r=h.observation_status(str(self.log('2026-10-02T05:00:00Z')),self.at);self.assertEqual(r['observation_state'],'stale')
+#|     def test_terminal_record_is_completed(self):
+#|         r=h.observation_status(str(self.log(stop=True)),self.at);self.assertEqual(r['observation_state'],'completed');self.assertEqual(r['process_liveness'],'unobserved')
+#|     def test_future_clock_is_not_fresh(self):
+#|         r=h.observation_status(str(self.log('2026-10-02T06:01:00Z')),self.at);self.assertEqual(r['observation_state'],'clock_disagreement')
+#|     def test_corruption_is_invalid_evidence(self):
+#|         p=self.log();f=next(p.glob('*.jsonl'));f.write_bytes(f.read_bytes().replace(b'sample',b'broken'));r=h.observation_status(str(p),self.at);self.assertEqual(r['observation_state'],'invalid_evidence');self.assertEqual(r['integrity'],'failed')
+#|     def test_read_denial_is_blocked(self):
+#|         with patch.object(h,'summarize',side_effect=PermissionError('denied')):r=h.observation_status(str(self.log()),self.at)
+#|         self.assertEqual(r['observation_state'],'blocked')
+#|     def test_symlink_is_not_followed(self):
+#|         p=self.log();link=self.root/'link';link.symlink_to(p,target_is_directory=True);r=h.observation_status(str(link),self.at);self.assertNotEqual(r['observation_state'],'verified_recent_sample')
+#|     def test_backup_omission_is_unobserved(self):
+#|         r=h.observation_status(str(self.log()),self.at);self.assertEqual(r['preservation']['status'],'unobserved')
+#|     def test_backup_parameters_pair(self):
+#|         with self.assertRaises(ValueError):h.observation_status(str(self.log()),self.at,workshop_root=str(self.root))
+#|     def test_status_never_creates_missing_run(self):
+#|         p=self.root/'absent';h.observation_status(str(p),self.at);self.assertFalse(p.exists())
+#|     def backup(self):
+#|         import workshop
+#|         shop=self.root/'shop';shop.mkdir();(shop/'words').write_text('new words')
+#|         inv=shop/'inventory.json';inv.write_text(json.dumps({'schema_version':1,'project_id':'test','repository':'owner/private','items':[{'label':'words','path':'words','required':True,'purpose':'fixture'}],'known_unavailable':[]}))
+#|         rec=shop/'receipt.json';rec.write_text(json.dumps({'schema_version':1,'repository':'owner/private','commit':'a'*40,'verified_at_utc':'2026-10-02T05:00:00Z','files':{'words':workshop.sha(b'old words')}}))
+#|         return shop,inv,rec
+#|     def test_stale_backup_keeps_changed_files_visible(self):
+#|         shop,inv,rec=self.backup();r=h.observation_status(str(self.log()),self.at,workshop_root=str(shop),inventory_path=str(inv),remote_receipt_path=str(rec))
+#|         self.assertEqual(r['preservation']['remote_readback']['status'],'stale');self.assertEqual(r['preservation']['changed_since_recorded_copy'],['words'])
+#|     def test_invalid_receipt_does_not_poison_sample_observation(self):
+#|         shop,inv,rec=self.backup();rec.write_text('{}');r=h.observation_status(str(self.log()),self.at,workshop_root=str(shop),inventory_path=str(inv),remote_receipt_path=str(rec))
+#|         self.assertEqual(r['preservation']['status'],'blocked');self.assertEqual(r['observation_state'],'verified_recent_sample')
+#|     def test_missing_workshop_is_unknown_comparison(self):
+#|         shop,inv,rec=self.backup();r=h.observation_status(str(self.log()),self.at,workshop_root=str(self.root/'absent'),inventory_path=str(inv),remote_receipt_path=str(rec))
+#|         self.assertEqual(r['preservation']['status'],'root_missing');self.assertIsNone(r['preservation']['changed_since_recorded_copy'])
 # === LUMEN SECTION test_habitat_observer.py END ===
 
 # === LUMEN SECTION observer_atlas.py BEGIN ===
@@ -18022,14 +18150,14 @@ if __name__ == "__main__":
 # === LUMEN SECTION CURRENT-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T04:58:25.034746+00:00",
+#|   "recorded_as_of_utc": "2026-10-02T06:21:44.763273+00:00",
 #|   "office": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-02T04:58:25.034746+00:00",
+#|     "recorded_as_of_utc": "2026-10-02T06:21:44.763273+00:00",
 #|     "author": "Lumen",
 #|     "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|     "position": "The shared workspace disappeared; its cause remains unknown. The published artifact survived. All 22 poems were reconstructed from recorded text and privately preserved with exact remote readback. A real selected-state checkpoint restored 12 exact files into a fresh directory and replayed safely. Workshop arrival and checkpoint planning now reuse the existing export/restore machinery.",
-#|     "next_step": "Use the private recovery inventory and off-container preservation after meaningful changes. The hourly poetry task now reconciles and preserves each append in the private workshop. Complete final reviewed publication and keep the unavailable Observer samples and pending IoTox disclosure guidance explicit.",
+#|     "position": "Two workspace losses demonstrated the need for off-container preservation. Selected working bytes were recovered from the private repository after the second loss. The new increment adds guarded working-layout reopening, caller-pinned preservation planning, and honest sample/backup freshness. The previous candidate passed 395 tests and restored 18 selected files from an immutable private checkpoint into a fresh directory, with exact replay. Final-source tests and publication receipts remain separate from this account.",
+#|     "next_step": "Preserve reviewed source and selected working state; check final-source test and publication receipts. The Observer sampler remains stopped.",
 #|     "open_questions": [
 #|       "Which measured costs and gaps change our working decisions?",
 #|       "How can a current account remain short without erasing the history that corrects it?"
@@ -18086,22 +18214,22 @@ if __name__ == "__main__":
 #|   },
 #|   "queues": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-02T04:58:25.034746+00:00",
+#|     "recorded_as_of_utc": "2026-10-02T06:21:44.763273+00:00",
 #|     "recorded_by": "Lumen",
-#|     "source_ref": "Direct Lumen recovery work after shared-workspace disappearance; private operational receipts remain separate.",
+#|     "source_ref": "Direct Lumen implementation and verified recovery/publication receipts; previous exact current account remains in public commit 6a56331e2b5087f3bedbcb0c9eeeccf6a3c34261.",
 #|     "queues": [
 #|       {
 #|         "project_id": "lumen",
 #|         "title": "Lumen.sh",
 #|         "owner": "the text of Lumen",
 #|         "priority": "high",
-#|         "recorded_status": "Workshop arrival/preservation increment implemented; real 12-file recovery and replay verified. Final source publication is tracked separately.",
+#|         "recorded_status": "Guarded reopening and observation/preservation freshness implemented; real immutable-checkpoint recovery of 18 files and replay verified. Previous reviewed checkpoint is 6a56331e2b5087f3bedbcb0c9eeeccf6a3c34261.",
 #|         "checkpoint": {
 #|           "reference": "https://github.com/Sapient-Lumen/Lumen/commit/7598df983f6138a9cd2a0de3c53bff0aa9b5a050",
 #|           "sha256": "1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b"
 #|         },
 #|         "next_actions": [
-#|           "Preserve actual working state in the private repository and verify the final source checkpoint."
+#|           "Run final-source tests, then publish reviewed source and preserve selected working records."
 #|         ],
 #|         "blockers": [],
 #|         "uncertainties": [
@@ -18122,7 +18250,7 @@ if __name__ == "__main__":
 #|         ],
 #|         "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
 #|         "tracking": {
-#|           "status": "waiting",
+#|           "status": "running",
 #|           "trigger": "explicit user request; ongoing maintenance",
 #|           "observed_at_utc": "2026-10-02T04:58:25.034746+00:00",
 #|           "execution_observation": "UNKNOWN",
@@ -18392,13 +18520,13 @@ if __name__ == "__main__":
 #|         "title": "Habitat observer",
 #|         "owner": "Lumen across voice and text",
 #|         "priority": "normal",
-#|         "recorded_status": "Run stopped after 90 samples through 03:23:37 UTC; shared workspace then became unavailable. Raw bytes are unavailable; the prior chain-verification receipt survives.",
+#|         "recorded_status": "Sampler stopped; latest raw sample bytes unavailable after workspace loss. A surviving receipt records 90 samples through 2026-10-02T03:23:37.379441+00:00. Status/freshness tooling does not restart sampling.",
 #|         "checkpoint": {
 #|           "reference": "Embedded habitat_observer.py",
 #|           "sha256": "18ff2d24f6f2cdf8e5188474993d401dac296b8c72f6bfe4686bc91cb9758987"
 #|         },
 #|         "next_actions": [
-#|           "Preserve surviving evidence and record any separately authorized new run under a new identity."
+#|           "Verify status distinguishes unavailable data, stale samples and unobserved process liveness."
 #|         ],
 #|         "blockers": [
 #|           "Latest raw sample files unavailable after workspace loss."
@@ -18589,7 +18717,7 @@ if __name__ == "__main__":
 LUMEN_PYTHON_BODY
 
 # === LUMEN SECTION workshop.py BEGIN ===
-#| """Read-only workshop arrival, preservation inventory and existing-checkpoint planning."""
+#| """Workshop inspection, pinned preservation planning and explicit guarded reopening."""
 #| import argparse
 #| import datetime
 #| import hashlib
@@ -18760,16 +18888,128 @@ LUMEN_PYTHON_BODY
 #|                 inputs=[dict(label=x['label'],path=str(Path(root)/x['path']),selection='include',expected_sha256=x['sha256'])
 #|                         for x in report['files'] if x['path']!='tool/Lumen.sh'])
 #| 
+#| def utc_time(value):
+#|     if not isinstance(value,str):raise ValueError('UTC timestamp required')
+#|     parsed=datetime.datetime.fromisoformat(value.replace('Z','+00:00'))
+#|     if parsed.utcoffset()!=datetime.timedelta(0):raise ValueError('UTC timestamp required')
+#|     return parsed
+#| 
+#| 
+#| def freshness(timestamp,now,max_age_seconds):
+#|     if type(max_age_seconds) not in (int,float) or isinstance(max_age_seconds,bool) or not 0<=max_age_seconds<=604800:raise ValueError('freshness bound must be 0..604800 seconds')
+#|     if timestamp is None:return {'status':'unobserved','age_seconds':None}
+#|     age=(utc_time(now)-utc_time(timestamp)).total_seconds()
+#|     return {'status':'clock_disagreement' if age<0 else 'fresh' if age<=max_age_seconds else 'stale','age_seconds':age}
+#| 
+#| 
+#| def preservation(report,now,max_age_seconds):
+#|     checked=freshness(report['recorded_remote_verified_at_utc'],now,max_age_seconds)
+#|     unavailable=report.get('status')=='root_missing'
+#|     return {'local_comparison':'unavailable' if unavailable else 'observed','remote_readback':checked,'basis':'dated caller-supplied readback; no network query in this command',
+#|             'changed_since_recorded_copy':None if unavailable else [x['path'] for x in report['files'] if x['preservation']=='local_changes_not_in_recorded_copy'],
+#|             'without_recorded_copy':None if unavailable else [x['path'] for x in report['files'] if x['recorded_remote_sha256'] is None],
+#|             'missing_local':None if unavailable else [x['path'] for x in report['files'] if x['local']=='missing'],
+#|             'known_unavailable':report['known_unavailable']}
+#| 
+#| 
+#| def reopen_plan(request,max_bytes=MAX_BYTES):
+#|     import checkpoint_restore
+#|     import checkpoints
+#|     import project_registry as registry
+#|     checkpoint_restore.validate_request(request)
+#|     if request['schema_version']!=1:raise ValueError('workshop reopen takes the ordinary version-1 restore request')
+#|     bundle=checkpoints.inspect_bundle(request['bundle_path'],max_bytes)
+#|     if bundle['manifest_sha256']!=request['manifest_sha256'] or bundle['manifest']['content']['project_id']!=request['project_id']:raise ValueError('checkpoint identity mismatch')
+#|     rows={x['label']:x for x in bundle['manifest']['content']['items']}
+#|     item=rows.get('inventory')
+#|     if item is None or item['classification']!='INCLUDED_BYTES':raise ValueError('checkpoint does not carry the workshop inventory')
+#|     path=str(Path(request['bundle_path'])/item['blob'])
+#|     inv,inventory_hash=inventory(path)
+#|     if inventory_hash!=item['sha256'] or inv['project_id']!=request['project_id']:raise ValueError('inventory binding mismatch')
+#|     layout={};missing=[];mapped=[]
+#|     for entry in inv['items']:
+#|         label='tool-source' if entry['path']=='tool/Lumen.sh' else entry['label']
+#|         row=rows.get(label)
+#|         if row is None or row['classification']!='INCLUDED_BYTES':
+#|             if entry['required']:missing.append(entry['path'])
+#|             continue
+#|         layout[label]=entry['path'];mapped.append(entry['path'])
+#|     if layout.get('tool-source')!='tool/Lumen.sh':raise ValueError('canonical recovery tool must be carried')
+#|     if layout.get('inventory')!='inventory.json':raise ValueError('canonical inventory.json must be carried')
+#|     for label,row in rows.items():
+#|         if row['classification']!='INCLUDED_BYTES' or label in layout:continue
+#|         layout[label]='recovery/previous-registry.json' if label=='registry' else 'recovery/carried/'+label
+#|     checkpoint_restore.validate_layout(layout)
+#|     target_present=registry.path_info(request['destination'],'directory') is not None
+#|     return {'status':'blocked' if missing or target_present else 'ready-to-reopen','required_missing':missing,
+#|             'destination_present':target_present,'layout':layout,'working_files':mapped,'inventory_sha256':inventory_hash,
+#|             'checkpoint_manifest_sha256':bundle['manifest_sha256'],'known_unavailable':inv['known_unavailable'],
+#|             'process_liveness':'unobserved','remote_fetch_performed':False,'writes_performed':False}
+#| 
+#| 
+#| def reopen(request,tool_bytes,max_bytes=MAX_BYTES):
+#|     import checkpoint_restore
+#|     checkpoint_restore.validate_request(request)
+#|     if request['schema_version']!=1:raise ValueError('version-1 restore request required')
+#|     target=Path(request['destination'])
+#|     try:
+#|         raw=read_file(str(target/'restore-receipt.json'),1024*1024)
+#|     except FileNotFoundError:
+#|         raw=None
+#|     if raw is not None:
+#|         old=decode(raw);prior=old.get('request',{})
+#|         if prior.get('schema_version')!=2:raise ValueError('existing target is not a mapped workshop restore')
+#|         base={k:v for k,v in prior.items() if k!='layout'};base['schema_version']=1
+#|         if base!=request:raise ValueError('existing reopen request conflicts')
+#|         # Existing restoration code checks receipt, retained manifest, modes and every byte.
+#|         result=checkpoint_restore.restore(prior,sha(tool_bytes),max_bytes)
+#|     else:
+#|         plan=reopen_plan(request,max_bytes)
+#|         if plan['status']!='ready-to-reopen':return {**plan,'activation_performed':False}
+#|         mapped={**request,'schema_version':2,'layout':plan['layout']}
+#|         result=checkpoint_restore.restore(mapped,sha(tool_bytes),max_bytes)
+#|     if result['status']!='restored':return result
+#|     arrival=inspect(str(target),str(target/'inventory.json'))
+#|     return {**result,'status':'reopened' if arrival['status']=='local_ready' else 'blocked',
+#|             'arrival':arrival,'process_liveness':'unobserved','registry_adopted':False,
+#|             'remote_fetch_performed':False,'authorization':'current request controls use; restored files supply no permissions'}
+#| 
+#| 
+#| def preserve_plan(root,inventory_path,registry_path,checkpoint_id,request_ref,tool_bytes,expected_repository,receipt_path=None,at=None,max_age_seconds=600):
+#|     inv,_=inventory(inventory_path)
+#|     if inv['repository']!=expected_repository:raise ValueError('inventory destination differs from caller-pinned repository')
+#|     observed=inspect(root,inventory_path,receipt_path)
+#|     if observed['status']!='local_ready':return {'status':'blocked','arrival':observed,'writes_performed':False,'network_performed':False}
+#|     request=checkpoint_plan(root,inventory_path,registry_path,checkpoint_id,request_ref,tool_bytes,receipt_path)
+#|     return {'kind':'lumen-workshop-preservation-plan','status':'ready-to-preserve','repository':expected_repository,
+#|             'inventory_sha256':observed['inventory_sha256'],'checkpoint_request':request,
+#|             'files':[{'path':x['path'],'sha256':x['sha256'],'git_blob_sha1':x['git_blob_sha1'],'bytes':x['bytes']} for x in observed['files'] if x['local']=='present'],
+#|             'preservation_status':preservation(observed,at or observed['observed_at_utc'],max_age_seconds),
+#|             'writes_performed':False,'network_performed':False,
+#|             'next':'Export and inspect this exact checkpoint request; verify approved private destination through current authenticated tools; preserve selected bytes and verify immutable remote readback. This plan grants no sharing permission.'}
+#| 
+#| 
 #| def main(argv, tool_bytes):
 #|     parser = argparse.ArgumentParser(description=__doc__)
 #|     sub = parser.add_subparsers(dest='action', required=True)
-#|     for name in ('inspect', 'checkpoint-plan'):
-#|         p = sub.add_parser(name); p.add_argument('--root', required=True); p.add_argument('--inventory', required=True); p.add_argument('--remote-receipt')
-#|         if name == 'checkpoint-plan':
+#|     for name in ('inspect', 'checkpoint-plan', 'preserve-plan'):
+#|         p = sub.add_parser(name); p.add_argument('--root', required=True); p.add_argument('--inventory', required=True); p.add_argument('--remote-receipt'); p.add_argument('--at'); p.add_argument('--max-remote-age-seconds',type=float,default=600)
+#|         if name in ('checkpoint-plan','preserve-plan'):
 #|             p.add_argument('--registry', required=True); p.add_argument('--checkpoint-id', required=True); p.add_argument('--request-ref', required=True)
+#|         if name=='preserve-plan':p.add_argument('--expected-repository',required=True)
+#|     for name in ('reopen-plan','reopen'):
+#|         p=sub.add_parser(name);p.add_argument('request_file');p.add_argument('--max-bytes',type=int,default=MAX_BYTES)
 #|     args = parser.parse_args(argv)
+#|     if args.action in ('reopen-plan','reopen'):
+#|         request=decode(read_file(args.request_file,1024*1024))
+#|         result=reopen_plan(request,args.max_bytes) if args.action=='reopen-plan' else reopen(request,tool_bytes,args.max_bytes)
+#|         print(json.dumps(result,indent=2));return 0 if result['status'] in ('ready-to-reopen','reopened') else 2
+#|     if args.action=='preserve-plan':
+#|         result=preserve_plan(args.root,args.inventory,args.registry,args.checkpoint_id,args.request_ref,tool_bytes,args.expected_repository,args.remote_receipt,args.at,args.max_remote_age_seconds)
+#|         print(json.dumps(result,indent=2));return 0 if result['status']=='ready-to-preserve' else 2
 #|     if args.action == 'inspect':
 #|         result = inspect(args.root,args.inventory,args.remote_receipt)
+#|         result['preservation_status']=preservation(result,args.at or result['observed_at_utc'],args.max_remote_age_seconds)
 #|         print(json.dumps(result,indent=2)); return 0 if result['status']=='local_ready' else 2
 #|     result = checkpoint_plan(args.root,args.inventory,args.registry,args.checkpoint_id,args.request_ref,tool_bytes,args.remote_receipt)
 #|     print(json.dumps(result,indent=2));return 0
@@ -18858,6 +19098,95 @@ LUMEN_PYTHON_BODY
 #|         self.value['items'].append({'label':'tool','path':'tool/Lumen.sh','required':True,'purpose':'Recovery tool'});self.save()
 #|         reg=self.base/'registry.json';reg.write_text('{}')
 #|         with self.assertRaises(ValueError):workshop.checkpoint_plan(str(self.root),str(self.inv),str(reg),'first','request',b'tool')
+#| 
+#|     def test_preserve_plan_pins_destination(self):
+#|         reg=self.base/'registry.json';reg.write_text('{}')
+#|         with self.assertRaises(ValueError):workshop.preserve_plan(str(self.root),str(self.inv),str(reg),'first','request',b'tool','other/private')
+#|     def test_preserve_plan_read_only_and_hashes(self):
+#|         reg=self.base/'registry.json';reg.write_text('{}')
+#|         before={str(p):p.read_bytes() for p in self.base.rglob('*') if p.is_file()}
+#|         r=workshop.preserve_plan(str(self.root),str(self.inv),str(reg),'first','request',b'tool','owner/private')
+#|         self.assertEqual(r['status'],'ready-to-preserve');self.assertEqual(r['files'][0]['sha256'],workshop.sha(b'one original poem\n'))
+#|         self.assertEqual(before,{str(p):p.read_bytes() for p in self.base.rglob('*') if p.is_file()})
+#|     def test_preserve_plan_missing_blocks(self):
+#|         (self.root/'poem.txt').unlink()
+#|         r=workshop.preserve_plan(str(self.root),str(self.inv),str(self.base/'reg'),'first','request',b'tool','owner/private')
+#|         self.assertEqual(r['status'],'blocked')
+#|     def test_missing_root_comparison_unknown(self):
+#|         r=workshop.inspect(str(self.base/'gone'),str(self.inv))
+#|         p=workshop.preservation(r,'2026-10-02T06:00:00Z',600)
+#|         self.assertEqual(p['local_comparison'],'unavailable');self.assertIsNone(p['changed_since_recorded_copy']);self.assertIsNone(p['missing_local'])
+#| 
+#| class WorkshopFreshnessTests(unittest.TestCase):
+#|     def test_no_confirmation_is_unobserved(self):
+#|         self.assertEqual(workshop.freshness(None,'2026-10-02T06:00:00Z',60)['status'],'unobserved')
+#|     def test_fresh_boundary_and_stale(self):
+#|         self.assertEqual(workshop.freshness('2026-10-02T05:59:00Z','2026-10-02T06:00:00Z',60)['status'],'fresh')
+#|         self.assertEqual(workshop.freshness('2026-10-02T05:58:59Z','2026-10-02T06:00:00Z',60)['status'],'stale')
+#|     def test_future_is_clock_disagreement(self):
+#|         self.assertEqual(workshop.freshness('2026-10-02T06:00:01Z','2026-10-02T06:00:00Z',60)['status'],'clock_disagreement')
+#|     def test_invalid_bounds_and_naive_clock(self):
+#|         for bound in [-1,float('nan'),float('inf'),True]:
+#|             with self.assertRaises(ValueError):workshop.freshness(None,'2026-10-02T06:00:00Z',bound)
+#|         with self.assertRaises(ValueError):workshop.utc_time('2026-10-02T06:00:00')
+#|     def test_preservation_does_not_hide_local_changes(self):
+#|         r={'recorded_remote_verified_at_utc':'2026-10-02T05:00:00Z','known_unavailable':['lost log'], 'files':[{'path':'a','preservation':'local_changes_not_in_recorded_copy','recorded_remote_sha256':'a'*64,'local':'present'},{'path':'b','preservation':'no_recorded_remote_copy','recorded_remote_sha256':None,'local':'missing'}]}
+#|         p=workshop.preservation(r,'2026-10-02T06:00:00Z',600)
+#|         self.assertEqual(p['remote_readback']['status'],'stale');self.assertEqual(p['changed_since_recorded_copy'],['a']);self.assertEqual(p['without_recorded_copy'],['b']);self.assertEqual(p['missing_local'],['b'])
+#| 
+#| class WorkshopReopenTests(unittest.TestCase):
+#|     def setUp(self):
+#|         import argparse,project_registry as registry,checkpoints
+#|         self.registry_module=registry;self.checkpoints=checkpoints
+#|         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);self.root=Path(self.tmp.name)
+#|         self.tool=self.root/'source-tool';self.tool.write_bytes(b'inert fixture tool\n');self.poem=self.root/'poem';self.poem.write_bytes('original words λ\n'.encode());self.inv=self.root/'selected-inventory.json'
+#|         self.inventory={'schema_version':1,'project_id':'alpha','repository':'owner/private','items':[{'label':'poetry','path':'poetry/poem.txt','required':True,'purpose':'words'},{'label':'inventory','path':'inventory.json','required':True,'purpose':'selection'},{'label':'tool','path':'tool/Lumen.sh','required':True,'purpose':'recovery tool'}],'known_unavailable':['prior raw sample unavailable']}
+#|         self.inv.write_text(json.dumps(self.inventory));self.reg=self.root/'registry.json'
+#|         project=dict(project_id='alpha',display_name='Fixture',roots=[dict(path=str(self.root),kind='directory',access='write')],state_directories={k:str(self.root/'state'/k) for k in registry.STATE_KEYS},source_identities=[dict(path=str(self.tool),revision='fixture',sha256=workshop.sha(self.tool.read_bytes()))],contracts=[],attribution={'maintainer':'Fixture','reviewer':'Fixture'},acceptance_checks=['bytes'],uncertainties=['fixture'],external_dependencies=[])
+#|         record=self.root/'record.json';record.write_text(json.dumps(project));result,code=registry.mutate(argparse.Namespace(action='register',registry=str(self.reg),record=str(record),expected_revision='absent',actor='Fixture',project_id='alpha'),'a'*64);self.assertEqual(code,0,result)
+#|         self.export_request=dict(schema_version=1,project_id='alpha',checkpoint_id='first',registry_path=str(self.reg),registry_revision=workshop.sha(self.reg.read_bytes()),tool_source_sha256=workshop.sha(self.tool.read_bytes()),include_tool_source=True,include_registry=True,owner='Fixture',intent='Recover selected fixture',request_ref='explicit fixture',inputs=[{'label':'poetry','path':str(self.poem),'selection':'include','expected_sha256':workshop.sha(self.poem.read_bytes())},{'label':'inventory','path':str(self.inv),'selection':'include','expected_sha256':workshop.sha(self.inv.read_bytes())}])
+#|         self.destination=self.root/'recipient';self.emit()
+#|     def emit(self):
+#|         self.export=self.checkpoints.export(self.export_request,self.tool.read_bytes(),str(self.tool));self.bundle=Path(self.export['path'])
+#|         self.request=dict(schema_version=1,restore_id='reopen-one',project_id='alpha',bundle_path=str(self.bundle),manifest_sha256=self.export['manifest_sha256'],destination=str(self.destination),owner='Fixture',intent='Reopen chosen working layout',request_ref='explicit fixture')
+#|     def reexport(self):
+#|         self.inv.write_text(json.dumps(self.inventory));self.export_request['checkpoint_id']='second';self.export_request['inputs'][1]['expected_sha256']=workshop.sha(self.inv.read_bytes());self.emit()
+#|     def test_plan_is_read_only(self):
+#|         before=set(self.root.iterdir());r=workshop.reopen_plan(self.request);self.assertEqual(r['status'],'ready-to-reopen');self.assertEqual(before,set(self.root.iterdir()));self.assertFalse(self.destination.exists())
+#|     def test_actual_working_layout_and_no_execution(self):
+#|         import subprocess
+#|         with mock.patch.object(subprocess,'Popen',side_effect=AssertionError('no execution')):r=workshop.reopen(self.request,b'runner')
+#|         self.assertEqual(r['status'],'reopened');self.assertEqual((self.destination/'poetry/poem.txt').read_bytes(),self.poem.read_bytes());self.assertEqual((self.destination/'tool/Lumen.sh').read_bytes(),self.tool.read_bytes());self.assertEqual(r['arrival']['status'],'local_ready');self.assertFalse(r['registry_adopted']);self.assertTrue((self.destination/'recovery/previous-registry.json').exists());self.assertFalse((self.destination/'.local/registry.json').exists())
+#|     def test_replay_without_original_bundle(self):
+#|         import shutil
+#|         first=workshop.reopen(self.request,b'runner');shutil.rmtree(self.bundle);self.poem.unlink();second=workshop.reopen(self.request,b'runner');self.assertTrue(second['replayed']);self.assertEqual(first['receipt_sha256'],second['receipt_sha256'])
+#|     def test_changed_target_is_never_overwritten(self):
+#|         workshop.reopen(self.request,b'runner');p=self.destination/'poetry/poem.txt';p.write_text('new user work')
+#|         with self.assertRaises(ValueError):workshop.reopen(self.request,b'runner')
+#|         self.assertEqual(p.read_text(),'new user work')
+#|     def test_conflicting_request_rejected(self):
+#|         workshop.reopen(self.request,b'runner');r=dict(self.request,owner='different')
+#|         with self.assertRaises(ValueError):workshop.reopen(r,b'runner')
+#|     def test_existing_empty_directory_is_blocked(self):
+#|         self.destination.mkdir();r=workshop.reopen(self.request,b'runner');self.assertEqual(r['status'],'blocked');self.assertEqual(list(self.destination.iterdir()),[])
+#|     def test_required_missing_blocks_before_creation(self):
+#|         self.export_request['inputs'][0]['selection']='external';self.export_request['checkpoint_id']='missing-case';self.emit();r=workshop.reopen(self.request,b'runner');self.assertEqual(r['status'],'blocked');self.assertIn('poetry/poem.txt',r['required_missing']);self.assertFalse(self.destination.exists())
+#|     def test_inventory_project_mismatch(self):
+#|         self.inventory['project_id']='other';self.reexport()
+#|         with self.assertRaises(ValueError):workshop.reopen(self.request,b'runner')
+#|     def test_reserved_metadata_collision(self):
+#|         self.inventory['items'][0]['path']='restore-receipt.json/evil';self.reexport()
+#|         with self.assertRaises(ValueError):workshop.reopen(self.request,b'runner')
+#|         self.assertFalse(self.destination.exists())
+#|     def test_source_manifest_mismatch(self):
+#|         request=dict(self.request,manifest_sha256='0'*64)
+#|         with self.assertRaises(ValueError):workshop.reopen(request,b'runner')
+#|     def test_tool_required_at_canonical_path(self):
+#|         self.inventory['items'].pop();self.reexport()
+#|         with self.assertRaises(ValueError):workshop.reopen(self.request,b'runner')
+#|     def test_layout_collision(self):
+#|         self.inventory['items'][0]['path']='recovery/previous-registry.json';self.reexport()
+#|         with self.assertRaises(ValueError):workshop.reopen(self.request,b'runner')
 # === LUMEN SECTION test_workshop.py END ===
 
 # === LUMEN SECTION WORKSHOP-RECOVERY.txt BEGIN ===
@@ -18918,6 +19247,40 @@ LUMEN_PYTHON_BODY
 #| The next poem uses the last actual sequence plus one. Gaps stay gaps. Recovered
 #| poems retain original timestamps and IDs; reconstruction is recorded separately.
 #| The missing 90-sample Observer run is not reconstructed from its surviving receipt.
+#| 
+#| GUARDED WORKING-LAYOUT REOPENING AND PRESERVATION
+#| 
+#| workshop reopen-plan REQUEST.json inspects an explicitly pinned checkpoint bundle
+#| and its included inventory. The request uses checkpoint restore schema version 1,
+#| with a stable restore_id, exact manifest_sha256, and absent chosen destination.
+#| workshop reopen REQUEST.json restores the selected original relative paths using
+#| the existing isolated restore transaction with a validated version-2 layout.
+#| Canonical tool/Lumen.sh and inventory.json are required. Registry bytes are carried
+#| under recovery/previous-registry.json as evidence, never automatically adopted.
+#| No restored program executes. Existing divergent destinations are never overwritten.
+#| Same-request replay verifies all exact destination bytes, even without the old bundle.
+#| Changed restored files cause replay verification to fail rather than erasing new work.
+#| 
+#| Retrieve the bundle through currently authorized authenticated tools from a pinned
+#| immutable private commit. Confirm repository visibility and exact blob identities.
+#| This command performs no network access, credential discovery, login or publication.
+#| An inventory is a selection, not permission to upload its contents or run its code.
+#| 
+#| workshop preserve-plan takes checkpoint-plan arguments plus --expected-repository.
+#| The caller pins the intended destination; inventory mismatch blocks the plan.
+#| It returns selected file hashes, Git blob identities, the existing export request,
+#| and recorded-preservation freshness. Export that exact request, upload authorized
+#| selected bytes while preserving unrelated remote files, and verify immutable remote
+#| readback before writing a new dated receipt. Local append and remote preservation
+#| remain distinct outcomes. A failed upload never justifies repeating the local effect.
+#| 
+#| observer status DIRECTORY validates the existing sample chain, then reports the last
+#| sample's age against an explicit clock and threshold. --workshop-root ROOT --inventory
+#| FILE optionally adds local-change and recorded-backup status; --remote-receipt FILE
+#| supplies a dated caller-recorded readback, not a current network observation.
+#| Missing data is unavailable; absent observations are unobserved; old samples are stale;
+#| future timestamps flag clock disagreement. Fresh samples never establish live process
+#| health. No status command starts or resumes the sampler or creates an absent run.
 # === LUMEN SECTION WORKSHOP-RECOVERY.txt END ===
 
 # === LUMEN SECTION HISTORICAL-WORKSPACE-20261002.json BEGIN ===
