@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "source_sha256": "1b1d06d086fc53bb109eb1712da4750f83febebb91d9f462d3adc76a3be02838",
-  "source_bytes": 1186911,
-  "review_ref": "lumen-observer-fixed-grid-reviewed-20261001",
-  "tests": 330,
+  "source_sha256": "1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b",
+  "source_bytes": 1254934,
+  "review_ref": "lumen-current-account-reviewed-20261002",
+  "tests": 342,
   "repository": "Sapient-Lumen/Lumen",
   "publication_mode": "source and metadata at same commit; remote verification required",
-  "qualification": "Fixed-grid slot accounting, terminal record reserve and lagged collect-through-readback costs; six added synthetic tests plus separate four-sample bounded integration trial. Existing long-running collector remains an earlier version. Prior prose/journal preserved."
+  "qualification": "One canonical recorded current account with checked derived views; exact prior orientation and journal preserved. Version-aware atlas verifies v2 slots and completed cost links; eight new atlas and four new orientation tests. Root reviewed real legacy and v2 snapshots. Observer restart is still pending."
 }
