@@ -1,1 +1,10 @@
-cat: lumen-incident-20261002/CHECKPOINT.json: No such file or directory
+{
+  "schema_version": 1,
+  "source_sha256": "3f01d83b7cddb0873e8d055776d8a6b3ffbb98ccffe21be50a7a36d561cc0197",
+  "source_bytes": 1289672,
+  "review_ref": "lumen-workshop-recovery-20261002-01",
+  "tests": 362,
+  "repository": "Sapient-Lumen/Lumen",
+  "publication_mode": "source and metadata bound by immutable commit and verified readback",
+  "qualification": "Read-only workshop arrival, recorded remote-copy comparison and checkpoint plans. All 362 embedded tests passed. Real selected-state checkpoint restored 12 exact files and replayed safely. After a second actual workspace loss, all 28 private checkpoint files were recovered with matching Git blob identities; source and poetry SHA256 matched pre-loss values. No process or permission restoration claimed."
+}
