@@ -1,0 +1,69 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                 THE OBSERVER OF THE HABITAT                       ║
+╚════════════════════════════════════════════════════════════════════╝
+Run       habitat-2e0f8ea0472e453482774ee628c56083
+Samples   10  │  records 12
+From      2026-10-01T22:24:24.281253+00:00
+Through   2026-10-01T22:33:24.281216+00:00
+Terminal  observed
+As of     not supplied
+Tail age  unknown seconds by UTC
+
+NOMINAL-TIME STRIPS · last ≤60 bins · one row-specific scale
+· empty bin   ? unobserved value   ▄ constant series   ▁→█ low→high
+
+deadline_lateness_ms
+  ▅▂▁·▁▁▃█▁
+  scale 0.128168 … 0.177747 │ empty 1 │ colliding samples 2
+
+OS_available_memory_GiB
+  ▂▁▅·▇▇▇▇█
+  scale 7.69257 … 7.81686 │ empty 1 │ colliding samples 2
+
+workspace_available_GiB
+  ▁▂▁·▆▆▅▅█
+  scale 23.8699 … 23.8817 │ empty 1 │ colliding samples 2
+
+OS_load_1m
+  ▄█▃·▁▁▁▁▁
+  scale 0 … 0.224121 │ empty 1 │ colliding samples 2
+
+completed_sample_cost_ms
+  ▁▃█·▄▃▆▅▃
+  scale 1.2251 … 1.66518 │ empty 1 │ colliding samples 2
+
+INSTRUMENTATION 2
+SCHEDULED SLOTS · last ≤60 · ■ sampled · · missed
+■■■■■■■■■■
+sampled 10 | missed through last sample 0
+tail: accounted to stop
+due at stop 10 | missed at stop 0 | future 0
+Completed sample cost ms: n=10 median=1.37856
+
+INTERVAL DIAGNOSTICS · empirical nearest-rank summaries
+sample_interval_seconds
+  n=9  min=59.9993  median=60  p95=60.0007  max=60.0007
+interval_excess_seconds
+  n=9  min=-0.000735958  median=3.8737e-05  p95=0.00067019  max=0.00067019
+paired_clock_increment_difference_ms
+  n=9  min=-0.02519  median=-0.000737  p95=0.023958  max=0.023958
+declared_deadline_lateness_ms
+  n=10  min=0.121882  median=0.132511  p95=0.177747  max=0.177747
+observer_CPU_percent_of_one_logical_CPU
+  n=9  min=0.00210833  median=0.00244164  p95=0.00332004  max=0.00332004
+
+INTERPRETATION GUARDRAILS
+  A verified snapshot is evidence of observations, not current process liveness.
+  Last-sample age is an as-of UTC comparison, not proof of a dead sampler; UTC steps can distort it.
+  Record timestamps follow resource collection; declared lateness is measured before collection. These are different boundaries.
+  Absent terminal record means lifetime is unresolved; no exact failure time inferred.
+  UTC-minus-monotonic increments are clock disagreement, not absolute clock drift or synchronization accuracy.
+  Fixed-grid v2: explicit skipped slots are retained; a nonterminal tail remains unknown.
+  Time bins are a visualization convention anchored at first sample; boundary jitter may cause collisions and empty bins.
+  OS-exposed memory, CPU count and load are not established container allocation or model-serving resources.
+  Completed v2 costs cover collection through verified append; setup, scheduling, sealing and tool transport remain outside the bracket.
+  Nearest-rank empirical p95 is descriptive; small samples and serial dependence limit inference.
+  Local hash consistency is not independently anchored authenticity.
+
+Snapshot SHA-256  c6fa28a1068dba97cb8d16c5627d560c492bd76f6d0c99a0bfb99898447c3729
+
