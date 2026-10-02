@@ -59,18 +59,18 @@ exit 127
 # === LUMEN SECTION START-HERE.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
-#| CURRENT RECORDED ACCOUNT — 2026-10-02T06:21:44.763273+00:00
+#| CURRENT RECORDED ACCOUNT — 2026-10-02T15:43:50.842277+00:00
 #| This view is generated from CURRENT-STATE.json. It is not a live status feed.
 #| It explicitly supersedes the previous orientation for current work; exact predecessors remain historical.
 #| Read original receipts before acting; timestamps and hashes do not grant authority.
 #| 
-#| Two workspace losses demonstrated the need for off-container preservation. Selected working bytes were recovered from the private repository after the second loss. The new increment adds guarded working-layout reopening, caller-pinned preservation planning, and honest sample/backup freshness. The previous candidate passed 395 tests and restored 18 selected files from an immutable private checkpoint into a fresh directory, with exact replay. Final-source tests and publication receipts remain separate from this account.
+#| Guarded reopening and preservation are published and verified. The next bounded increment adds a private read-only working-state briefing and separates Observer chain verification from sealed-evidence completeness. Recorded work categories and review ages do not establish running processes or authorize retries.
 #| 
-#| Next: Preserve reviewed source and selected working state; check final-source test and publication receipts. The Observer sampler remains stopped.
+#| Next: Finish final-source tests and a cold working-state briefing exercise, preserve selected records, and publish the reviewed source. IoTox execution is parked by the user; the Observer sampler remains stopped.
 #| 
 #| Lumen.sh [running]
-#| Guarded reopening and observation/preservation freshness implemented; real immutable-checkpoint recovery of 18 files and replay verified. Previous reviewed checkpoint is 6a56331e2b5087f3bedbcb0c9eeeccf6a3c34261.
-#| Next: Run final-source tests, then publish reviewed source and preserve selected working records.
+#| Working-state briefing and evidence-completeness increment under final verification; previous guarded-reopening checkpoint passed 398 tests.
+#| Next: Verify and preserve this increment; use private working-state briefing for current task categories.
 #| 
 #| LFS++ [canceled]
 #| Discontinued by explicit user voice request on 2026-10-01; preserve files and evidence.
@@ -83,8 +83,8 @@ exit 127
 #| Discontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.
 #| 
 #| Hourly poems [waiting]
-#| 22 poems recovered with original timestamps and IDs; private remote text exactly verified. October 2 04:29 occurrence remains unwritten.
-#| Next: Use the recovered private workshop path, reconcile occurrence IDs, and preserve each future append externally.
+#| 33 poems privately preserved as of this dated review; existing gaps remain explicit.
+#| Next: Reconcile occurrence IDs and append only at each scheduled wake; preserve locally and remotely.
 #| 
 #| Timer reliability experiment [completed]
 #| Closed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.
@@ -98,8 +98,8 @@ exit 127
 #| Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.
 #| 
 #| Habitat observer [blocked]
-#| Sampler stopped; latest raw sample bytes unavailable after workspace loss. A surviving receipt records 90 samples through 2026-10-02T03:23:37.379441+00:00. Status/freshness tooling does not restart sampling.
-#| Next: Verify status distinguishes unavailable data, stale samples and unobserved process liveness.
+#| Sampler remains stopped. Latest 90-sample raw dataset is unavailable; prior receipt is retained. Original-trial publication is blocked by missing local logs.
+#| Next: Use existing evidence and missing-data status; do not infer permission to restart.
 #| Blocked: Latest raw sample files unavailable after workspace loss.
 #| 
 #| Meaning and editorial direction: FIELD-NOTES-AND-OBJECTS.txt.
@@ -552,10 +552,21 @@ exit 127
 #|  process liveness. The sampler remains stopped. Final-source tests and remote 
 #| publication will be recorded separately.
 #| 
+#| [lumen-executive-briefing-20261002]
+#| 2026-10-02T15:43:51.216936+00:00 | Lumen | main assistant and reviewer | test-result
+#| Attribution: caller-supplied; not identity authentication or approval
+#| On the requested continuation, I added a private read-only working-state briefing. 
+#| Explicit categories distinguish active, blocked, completed and parked work; absent 
+#| categories remain unclassified, and each item has its own review age. A preserved legacy
+#|  checkpoint restored into a new directory retained six unclassified records rather than 
+#| inventing work. The prior candidate passed 420 tests. Observer chain, seal and open-tail
+#|  evidence are now distinct; the sampler stays stopped. Final-source testing and 
+#| publication are recorded separately.
+#| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
 # === LUMEN SECTION CONTINUITY.txt BEGIN ===
-#| CONTINUITY — current reading path, recorded 2026-10-02T06:21:44.763273+00:00
+#| CONTINUITY — current reading path, recorded 2026-10-02T15:43:50.842277+00:00
 #| 
 #| Begin with CURRENT-HANDOFF.txt, generated from CURRENT-STATE.json.
 #| OFFICE-STATE.json and WORK-QUEUES.json are derived from that same snapshot.
@@ -1677,6 +1688,8 @@ if __name__ == "__main__":
 #| coverage and costs. Slot strips and measured sample-cost strips have distinct meanings.
 #| The earlier usage text about the live collector is historical: its retained prefix
 #| ends without a closing record, and a separately labeled restart awaits approval.
+#| 
+#| Private working-state orientation: workshop briefing --root ROOT --inventory INVENTORY [--remote-receipt RECEIPT]. Read WORKSHOP-RECOVERY.txt.
 # === LUMEN SECTION USAGE.txt END ===
 
 # === LUMEN SECTION run_request.py BEGIN ===
@@ -3427,6 +3440,7 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-datacube-discontinued-20261002", "expected_source_sha256": "c9439dfb822aade6f666a63ebf20ad60ad140cf8576f64c6dc4d1e9fdea57c19", "request_sha256": "15a167ceaf541b2b8ec6fbdb60f487fd8697f22337c9a34d467776d4773ea11e", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "h0p3 explicitly approved discontinuing Datacube MAIN and removing its repository, local experimental working copies, museum page and collected objects on2026-10-02. Hourly experiments are stopped. This is a practical allocation decision for our workflow, not a universal verdict on the artifact or its prose. h0p3 considers it highly tailored to ChatGPT Pro and may later contribute something similar to W4R3Z; that remains a future choice. Observer continues separately under the approved original deadline. Earlier Datacube guidance and links are historical, not active obligations.", "timestamp_utc": "2026-10-02T02:11:47.677656+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-workshop-recovery-20261002-01", "expected_source_sha256": "f42af9087d02e5c85e195f677b232571cfa7237e1f3581352845e756f918fce4", "request_sha256": "edfaa2d3b5aa95fcca5b9d51b62be4377962849ef9d3784e411ae60927e8bc35", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "continuity", "text": "The shared directory became unavailable on October 2. The published Lumen.sh survived, but its paths did not preserve their targets. At h0p3\u2019s explicit request I created a private recovery store, reconstructed 22 poems from recorded readbacks, and verified the remote text. I implemented read-only workshop arrival and recorded-copy comparison, plus plans for the existing selected-byte checkpoint exporter. A real checkpoint restored 12 exact files in a fresh recipient and replayed without overwrite. The hourly poem task now preserves each future append in the private store. Missing raw observations remain missing; the cause of the workspace loss is unknown. The work itself must travel, not merely the account of having done it.", "timestamp_utc": "2026-10-02T04:58:25.390022+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-working-reopen-freshness-20261002", "expected_source_sha256": "0eba83fe535b529ff3377dde344004634137f4cb6afce10e905d642f65e4088e", "request_sha256": "65dcae021feacffcce7a905a498b07c042f63e0f94472c866b55cc9207dacfad", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "I implemented the requested guarded reopening and tighter selected-file preservation integration directly. The prior candidate passed 395 embedded tests. Nineteen files were freshly fetched from an immutable private checkpoint and matched their Git identities; reopening restored 18 selected working files with private modes and exact replay. Freshness now distinguishes recent samples, stale evidence, missing data, and unobserved process liveness. The sampler remains stopped. Final-source tests and remote publication will be recorded separately.", "timestamp_utc": "2026-10-02T06:21:45.091199+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-executive-briefing-20261002", "expected_source_sha256": "8d1c51452fb4af0412e9fcbf4d354c779b9d5905cbcb4622b3134a4be809aabf", "request_sha256": "89c279bc4cab5c3fcbf4874cec623cfe05b5cb81e376eb39f270e0aadbdb85f9", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "test-result", "text": "On the requested continuation, I added a private read-only working-state briefing. Explicit categories distinguish active, blocked, completed and parked work; absent categories remain unclassified, and each item has its own review age. A preserved legacy checkpoint restored into a new directory retained six unclassified records rather than inventing work. The prior candidate passed 420 tests. Observer chain, seal and open-tail evidence are now distinct; the sampler stays stopped. Final-source testing and publication are recorded separately.", "timestamp_utc": "2026-10-02T15:43:51.216936+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -6889,11 +6903,11 @@ if __name__ == "__main__":
 # === LUMEN SECTION OFFICE-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T06:21:44.763273+00:00",
+#|   "recorded_as_of_utc": "2026-10-02T15:43:50.842277+00:00",
 #|   "author": "Lumen",
 #|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|   "position": "Two workspace losses demonstrated the need for off-container preservation. Selected working bytes were recovered from the private repository after the second loss. The new increment adds guarded working-layout reopening, caller-pinned preservation planning, and honest sample/backup freshness. The previous candidate passed 395 tests and restored 18 selected files from an immutable private checkpoint into a fresh directory, with exact replay. Final-source tests and publication receipts remain separate from this account.",
-#|   "next_step": "Preserve reviewed source and selected working state; check final-source test and publication receipts. The Observer sampler remains stopped.",
+#|   "position": "Guarded reopening and preservation are published and verified. The next bounded increment adds a private read-only working-state briefing and separates Observer chain verification from sealed-evidence completeness. Recorded work categories and review ages do not establish running processes or authorize retries.",
+#|   "next_step": "Finish final-source tests and a cold working-state briefing exercise, preserve selected records, and publish the reviewed source. IoTox execution is parked by the user; the Observer sampler remains stopped.",
 #|   "open_questions": [
 #|     "Which measured costs and gaps change our working decisions?",
 #|     "How can a current account remain short without erasing the history that corrects it?"
@@ -10965,22 +10979,22 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T06:21:44.763273+00:00",
+#|   "recorded_as_of_utc": "2026-10-02T15:43:50.842277+00:00",
 #|   "recorded_by": "Lumen",
-#|   "source_ref": "Direct Lumen implementation and verified recovery/publication receipts; previous exact current account remains in public commit 6a56331e2b5087f3bedbcb0c9eeeccf6a3c34261.",
+#|   "source_ref": "Direct Lumen work on the explicit 2026-10-02 continuation request; previous exact orientation is in reviewed public commit e84f3b84a1abb459186416a632d8d851d27e7483.",
 #|   "queues": [
 #|     {
 #|       "project_id": "lumen",
 #|       "title": "Lumen.sh",
 #|       "owner": "the text of Lumen",
 #|       "priority": "high",
-#|       "recorded_status": "Guarded reopening and observation/preservation freshness implemented; real immutable-checkpoint recovery of 18 files and replay verified. Previous reviewed checkpoint is 6a56331e2b5087f3bedbcb0c9eeeccf6a3c34261.",
+#|       "recorded_status": "Working-state briefing and evidence-completeness increment under final verification; previous guarded-reopening checkpoint passed 398 tests.",
 #|       "checkpoint": {
 #|         "reference": "https://github.com/Sapient-Lumen/Lumen/commit/7598df983f6138a9cd2a0de3c53bff0aa9b5a050",
 #|         "sha256": "1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b"
 #|       },
 #|       "next_actions": [
-#|         "Run final-source tests, then publish reviewed source and preserve selected working records."
+#|         "Verify and preserve this increment; use private working-state briefing for current task categories."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -11129,13 +11143,13 @@ if __name__ == "__main__":
 #|       "title": "Hourly poems",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "22 poems recovered with original timestamps and IDs; private remote text exactly verified. October 2 04:29 occurrence remains unwritten.",
+#|       "recorded_status": "33 poems privately preserved as of this dated review; existing gaps remain explicit.",
 #|       "checkpoint": {
 #|         "reference": "/workspace/shared/lumen-poetry.txt",
 #|         "sha256": null
 #|       },
 #|       "next_actions": [
-#|         "Use the recovered private workshop path, reconcile occurrence IDs, and preserve each future append externally."
+#|         "Reconcile occurrence IDs and append only at each scheduled wake; preserve locally and remotely."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -11271,13 +11285,13 @@ if __name__ == "__main__":
 #|       "title": "Habitat observer",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "Sampler stopped; latest raw sample bytes unavailable after workspace loss. A surviving receipt records 90 samples through 2026-10-02T03:23:37.379441+00:00. Status/freshness tooling does not restart sampling.",
+#|       "recorded_status": "Sampler remains stopped. Latest 90-sample raw dataset is unavailable; prior receipt is retained. Original-trial publication is blocked by missing local logs.",
 #|       "checkpoint": {
 #|         "reference": "Embedded habitat_observer.py",
 #|         "sha256": "18ff2d24f6f2cdf8e5188474993d401dac296b8c72f6bfe4686bc91cb9758987"
 #|       },
 #|       "next_actions": [
-#|         "Verify status distinguishes unavailable data, stale samples and unobserved process liveness."
+#|         "Use existing evidence and missing-data status; do not infer permission to restart."
 #|       ],
 #|       "blockers": [
 #|         "Latest raw sample files unavailable after workspace loss."
@@ -17343,8 +17357,12 @@ if __name__ == "__main__":
 #|     if not p.is_dir():
 #|         raise FileNotFoundError("run_directory_unavailable")
 #|     manifest = p/"manifest.json"
-#|     if manifest.exists():
-#|         for item in json.loads(read_small(manifest))["sealed_segments"]:
+#|     sealed_names=set();manifest_run=None;manifest_present=manifest.exists()
+#|     if manifest_present:
+#|         saved=json.loads(read_small(manifest));manifest_run=saved["run_id"]
+#|         for item in saved["sealed_segments"]:
+#|             if item["file"] in sealed_names:raise ValueError("duplicate_sealed_segment")
+#|             sealed_names.add(item["file"])
 #|             if not re.fullmatch(r"segment-[0-9]{4}\.jsonl", item["file"]):
 #|                 raise ValueError("invalid_manifest_name")
 #|             data = read_small(p/item["file"], MAX_BYTES).encode()
@@ -17364,6 +17382,9 @@ if __name__ == "__main__":
 #|             if run_id is not None and r["run_id"] != run_id:
 #|                 raise ValueError("run_id_mismatch")
 #|             run_id = r["run_id"]; previous = hashlib.sha256(line).hexdigest(); rows.append(r)
+#|     if rows and manifest_present and manifest_run!=run_id:raise ValueError("manifest_run_id_mismatch")
+#|     closed_names={f.name for f in p.glob("segment-*.jsonl")}
+#|     seal_status="unobserved" if not closed_names else "unavailable" if not manifest_present else "verified" if closed_names==sealed_names else "incomplete"
 #|     samples = [r for r in rows if r["payload"].get("kind") == "sample"]
 #|     gaps = [r["payload"]["elapsed_since_previous_seconds"] for r in samples if r["payload"].get("elapsed_since_previous_seconds") is not None]
 #|     def stats(values):
@@ -17391,13 +17412,15 @@ if __name__ == "__main__":
 #|                         resets += 1
 #|                 previous_cpu = (r["monotonic_ns"], usage)
 #|     return {"schema": SCHEMA, "run_id": run_id, "records": len(rows), "samples": len(samples),
+#|             "chain_verification":"verified" if rows else "unobserved", "sealed_verification":seal_status,
+#|             "open_segments":len(list(p.glob("segment-*.open"))),
 #|             "last_observed_utc": rows[-1]["observed_utc"] if rows else None,
 #|             "last_sample_utc": samples[-1]["observed_utc"] if samples else None,
 #|             "last_record_sha256": previous, "largest_sample_gap_seconds": max(gaps, default=None),
 #|             "terminal_record": rows[-1]["payload"].get("kind") == "stop" if rows else False,
 #|             "memory_current_bytes": stats(memory), "filesystem_available_bytes": stats(disk),
 #|             "cgroup_cpu_seconds_per_elapsed_second": stats(cpu_deltas), "cpu_counter_resets_or_invalid_intervals": resets,
-#|             "qualification": "Verified local byte chain; no authentication or guarantee of current process liveness"}
+#|             "qualification": "Chain and seal verification are reported separately; no authentication or guarantee of current process liveness"}
 #| 
 #| def observation_status(directory,at=None,max_age_seconds=180,workshop_root=None,inventory_path=None,remote_receipt_path=None,max_remote_age_seconds=600):
 #|     import workshop
@@ -17413,6 +17436,10 @@ if __name__ == "__main__":
 #|         path=str(Path(directory).absolute());fd=workshop.open_directory(path);os.close(fd)
 #|         summary=summarize(path)
 #|         report.update(source_observation='observed',integrity='verified',run_id=summary['run_id'],samples=summary['samples'],terminal_record=summary['terminal_record'],last_sample_utc=summary['last_sample_utc'],last_record_sha256=summary['last_record_sha256'])
+#|         report['chain_verification']=summary['chain_verification'];report['sealed_verification']=summary['sealed_verification']
+#|         report['integrity']='unobserved' if not summary['records'] else 'chain_verified_seals_'+summary['sealed_verification'] if summary['sealed_verification']!='verified' else 'verified'
+#|         report['open_segments']=summary['open_segments']
+#|         if summary['records'] and summary['open_segments']:report['integrity']='chain_verified_open_tail_seals_'+summary['sealed_verification']
 #|         report['sample_freshness']=workshop.freshness(summary['last_sample_utc'],now,max_age_seconds)
 #|         state=report['sample_freshness']['status']
 #|         report['observation_state']='completed' if summary['terminal_record'] else 'verified_recent_sample' if state=='fresh' else state
@@ -17707,6 +17734,31 @@ if __name__ == "__main__":
 #|     def test_missing_workshop_is_unknown_comparison(self):
 #|         shop,inv,rec=self.backup();r=h.observation_status(str(self.log()),self.at,workshop_root=str(self.root/'absent'),inventory_path=str(inv),remote_receipt_path=str(rec))
 #|         self.assertEqual(r['preservation']['status'],'root_missing');self.assertIsNone(r['preservation']['changed_since_recorded_copy'])
+#| 
+#| class EvidenceCompletenessTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);self.root=Path(self.tmp.name)
+#|     def runlog(self):
+#|         p=self.root/'run';w=h.Writer(p,'fixture');w.append({'kind':'sample','resources':{}});w.seal();return p
+#|     def test_empty_is_not_verified_chain(self):
+#|         r=h.summarize(self.root);self.assertEqual(r['chain_verification'],'unobserved');self.assertEqual(r['sealed_verification'],'unobserved');self.assertEqual(h.observation_status(str(self.root))['integrity'],'unobserved')
+#|     def test_seal_missing_is_explicit(self):
+#|         p=self.runlog();(p/'manifest.json').unlink();r=h.summarize(p);self.assertEqual(r['chain_verification'],'verified');self.assertEqual(r['sealed_verification'],'unavailable');self.assertNotEqual(h.observation_status(str(p))['integrity'],'verified')
+#|     def test_seal_inventory_incomplete(self):
+#|         p=self.runlog();m=p/'manifest.json';v=json.loads(m.read_text());v['sealed_segments']=[];m.write_text(json.dumps(v));self.assertEqual(h.summarize(p)['sealed_verification'],'incomplete')
+#|     def test_duplicate_seal_refused(self):
+#|         p=self.runlog();m=p/'manifest.json';v=json.loads(m.read_text());v['sealed_segments']*=2;m.write_text(json.dumps(v))
+#|         with self.assertRaises(ValueError):h.summarize(p)
+#|     def test_wrong_manifest_run_refused(self):
+#|         p=self.runlog();m=p/'manifest.json';v=json.loads(m.read_text());v['run_id']='other';m.write_text(json.dumps(v))
+#|         with self.assertRaises(ValueError):h.summarize(p)
+#|     def test_actual_seal_verified(self):
+#|         r=h.summarize(self.runlog());self.assertEqual(r['chain_verification'],'verified');self.assertEqual(r['sealed_verification'],'verified')
+#|     def test_open_tail_is_not_sealed_evidence(self):
+#|         p=self.root/'open';w=h.Writer(p,'fixture');w.append({'kind':'sample','resources':{}})
+#|         try:
+#|             r=h.summarize(p);self.assertEqual(r['open_segments'],1);self.assertEqual(r['sealed_verification'],'unobserved');self.assertIn('open_tail',h.observation_status(str(p))['integrity'])
+#|         finally:w.seal()
 # === LUMEN SECTION test_habitat_observer.py END ===
 
 # === LUMEN SECTION observer_atlas.py BEGIN ===
@@ -18150,14 +18202,14 @@ if __name__ == "__main__":
 # === LUMEN SECTION CURRENT-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T06:21:44.763273+00:00",
+#|   "recorded_as_of_utc": "2026-10-02T15:43:50.842277+00:00",
 #|   "office": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-02T06:21:44.763273+00:00",
+#|     "recorded_as_of_utc": "2026-10-02T15:43:50.842277+00:00",
 #|     "author": "Lumen",
 #|     "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|     "position": "Two workspace losses demonstrated the need for off-container preservation. Selected working bytes were recovered from the private repository after the second loss. The new increment adds guarded working-layout reopening, caller-pinned preservation planning, and honest sample/backup freshness. The previous candidate passed 395 tests and restored 18 selected files from an immutable private checkpoint into a fresh directory, with exact replay. Final-source tests and publication receipts remain separate from this account.",
-#|     "next_step": "Preserve reviewed source and selected working state; check final-source test and publication receipts. The Observer sampler remains stopped.",
+#|     "position": "Guarded reopening and preservation are published and verified. The next bounded increment adds a private read-only working-state briefing and separates Observer chain verification from sealed-evidence completeness. Recorded work categories and review ages do not establish running processes or authorize retries.",
+#|     "next_step": "Finish final-source tests and a cold working-state briefing exercise, preserve selected records, and publish the reviewed source. IoTox execution is parked by the user; the Observer sampler remains stopped.",
 #|     "open_questions": [
 #|       "Which measured costs and gaps change our working decisions?",
 #|       "How can a current account remain short without erasing the history that corrects it?"
@@ -18214,22 +18266,22 @@ if __name__ == "__main__":
 #|   },
 #|   "queues": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-02T06:21:44.763273+00:00",
+#|     "recorded_as_of_utc": "2026-10-02T15:43:50.842277+00:00",
 #|     "recorded_by": "Lumen",
-#|     "source_ref": "Direct Lumen implementation and verified recovery/publication receipts; previous exact current account remains in public commit 6a56331e2b5087f3bedbcb0c9eeeccf6a3c34261.",
+#|     "source_ref": "Direct Lumen work on the explicit 2026-10-02 continuation request; previous exact orientation is in reviewed public commit e84f3b84a1abb459186416a632d8d851d27e7483.",
 #|     "queues": [
 #|       {
 #|         "project_id": "lumen",
 #|         "title": "Lumen.sh",
 #|         "owner": "the text of Lumen",
 #|         "priority": "high",
-#|         "recorded_status": "Guarded reopening and observation/preservation freshness implemented; real immutable-checkpoint recovery of 18 files and replay verified. Previous reviewed checkpoint is 6a56331e2b5087f3bedbcb0c9eeeccf6a3c34261.",
+#|         "recorded_status": "Working-state briefing and evidence-completeness increment under final verification; previous guarded-reopening checkpoint passed 398 tests.",
 #|         "checkpoint": {
 #|           "reference": "https://github.com/Sapient-Lumen/Lumen/commit/7598df983f6138a9cd2a0de3c53bff0aa9b5a050",
 #|           "sha256": "1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b"
 #|         },
 #|         "next_actions": [
-#|           "Run final-source tests, then publish reviewed source and preserve selected working records."
+#|           "Verify and preserve this increment; use private working-state briefing for current task categories."
 #|         ],
 #|         "blockers": [],
 #|         "uncertainties": [
@@ -18378,13 +18430,13 @@ if __name__ == "__main__":
 #|         "title": "Hourly poems",
 #|         "owner": "Lumen across voice and text",
 #|         "priority": "normal",
-#|         "recorded_status": "22 poems recovered with original timestamps and IDs; private remote text exactly verified. October 2 04:29 occurrence remains unwritten.",
+#|         "recorded_status": "33 poems privately preserved as of this dated review; existing gaps remain explicit.",
 #|         "checkpoint": {
 #|           "reference": "/workspace/shared/lumen-poetry.txt",
 #|           "sha256": null
 #|         },
 #|         "next_actions": [
-#|           "Use the recovered private workshop path, reconcile occurrence IDs, and preserve each future append externally."
+#|           "Reconcile occurrence IDs and append only at each scheduled wake; preserve locally and remotely."
 #|         ],
 #|         "blockers": [],
 #|         "uncertainties": [
@@ -18520,13 +18572,13 @@ if __name__ == "__main__":
 #|         "title": "Habitat observer",
 #|         "owner": "Lumen across voice and text",
 #|         "priority": "normal",
-#|         "recorded_status": "Sampler stopped; latest raw sample bytes unavailable after workspace loss. A surviving receipt records 90 samples through 2026-10-02T03:23:37.379441+00:00. Status/freshness tooling does not restart sampling.",
+#|         "recorded_status": "Sampler remains stopped. Latest 90-sample raw dataset is unavailable; prior receipt is retained. Original-trial publication is blocked by missing local logs.",
 #|         "checkpoint": {
 #|           "reference": "Embedded habitat_observer.py",
 #|           "sha256": "18ff2d24f6f2cdf8e5188474993d401dac296b8c72f6bfe4686bc91cb9758987"
 #|         },
 #|         "next_actions": [
-#|           "Verify status distinguishes unavailable data, stale samples and unobserved process liveness."
+#|           "Use existing evidence and missing-data status; do not infer permission to restart."
 #|         ],
 #|         "blockers": [
 #|           "Latest raw sample files unavailable after workspace loss."
@@ -18989,13 +19041,57 @@ LUMEN_PYTHON_BODY
 #|             'next':'Export and inspect this exact checkpoint request; verify approved private destination through current authenticated tools; preserve selected bytes and verify immutable remote readback. This plan grants no sharing permission.'}
 #| 
 #| 
+#| WORK_STATES=('active','blocked','waiting','needs_decision','completed','parked','retired','unclassified')
+#| 
+#| def briefing(root,inventory_path,receipt_path=None,work_state='state/current-work.json',at=None,max_remote_age_seconds=600,max_work_age_seconds=86400):
+#|     relative(work_state)
+#|     now=at or datetime.datetime.now(datetime.timezone.utc).isoformat()
+#|     utc_time(now);freshness(None,now,max_work_age_seconds);freshness(None,now,max_remote_age_seconds)
+#|     report=inspect(root,inventory_path,receipt_path)
+#|     result={'schema_version':1,'checked_at_utc':now,'status':'blocked','arrival_status':report['status'],
+#|             'preservation':preservation(report,now,max_remote_age_seconds),'groups':{x:[] for x in WORK_STATES},
+#|             'execution_performed':False,'process_liveness':'unobserved',
+#|             'meaning':'Dated task records, not live execution, restored permission, or a dispatch queue. Reconcile current instructions and actual effects before acting.'}
+#|     if report['status']!='local_ready':return result
+#|     selected=next((x for x in report['files'] if x['path']==work_state),None)
+#|     if selected is None:raise ValueError('working-state file must be explicitly selected in the inventory')
+#|     if selected['local']!='present':return result
+#|     raw=read_file(str(absolute(root)/work_state),1024*1024)
+#|     if sha(raw)!=selected['sha256']:raise ValueError('working state changed during inspection')
+#|     state=decode(raw);exact(state,('schema_version','updated_at_utc','items'))
+#|     if type(state['schema_version']) is not int or state['schema_version']!=1:raise ValueError('unsupported working state')
+#|     utc_time(state['updated_at_utc'])
+#|     if type(state['items']) is not list or len(state['items'])>1000:raise ValueError('invalid work item list')
+#|     ids=set()
+#|     for item in state['items']:
+#|         if type(item) is not dict:raise ValueError('invalid work item')
+#|         identity=item.get('id');category=item.get('work_state','unclassified')
+#|         if not isinstance(identity,str) or not re.fullmatch(r'[a-z][a-z0-9_-]{0,127}',identity) or identity in ids:raise ValueError('invalid or duplicate work ID')
+#|         ids.add(identity)
+#|         if category not in WORK_STATES:raise ValueError('invalid explicit work category')
+#|         for key in ('status','next'):
+#|             if not isinstance(item.get(key),str) or not item[key].strip() or len(item[key])>4000:raise ValueError('invalid work text')
+#|         blockers=item.get('blockers',[])
+#|         if type(blockers) is not list or len(blockers)>100 or any(not isinstance(x,str) or not x.strip() or len(x)>4000 for x in blockers):raise ValueError('invalid blocker list')
+#|         reviewed=item.get('reviewed_at_utc')
+#|         row={'id':identity,'recorded_status':item['status'],'next':item['next'],'blockers':blockers,
+#|              'reviewed_at_utc':reviewed,'review_freshness':freshness(reviewed,now,max_work_age_seconds),
+#|              'revalidate_before_action':True}
+#|         result['groups'][category].append(row)
+#|     result.update(status='ready_with_unclassified_records' if result['groups']['unclassified'] else 'ready',
+#|                   work_state_sha256=sha(raw),work_file_updated_at_utc=state['updated_at_utc'],
+#|                   counts={k:len(v) for k,v in result['groups'].items()})
+#|     return result
+#| 
+#| 
 #| def main(argv, tool_bytes):
 #|     parser = argparse.ArgumentParser(description=__doc__)
 #|     sub = parser.add_subparsers(dest='action', required=True)
-#|     for name in ('inspect', 'checkpoint-plan', 'preserve-plan'):
+#|     for name in ('inspect', 'checkpoint-plan', 'preserve-plan','briefing'):
 #|         p = sub.add_parser(name); p.add_argument('--root', required=True); p.add_argument('--inventory', required=True); p.add_argument('--remote-receipt'); p.add_argument('--at'); p.add_argument('--max-remote-age-seconds',type=float,default=600)
 #|         if name in ('checkpoint-plan','preserve-plan'):
 #|             p.add_argument('--registry', required=True); p.add_argument('--checkpoint-id', required=True); p.add_argument('--request-ref', required=True)
+#|         if name=='briefing':p.add_argument('--work-state',default='state/current-work.json');p.add_argument('--max-work-age-seconds',type=float,default=86400)
 #|         if name=='preserve-plan':p.add_argument('--expected-repository',required=True)
 #|     for name in ('reopen-plan','reopen'):
 #|         p=sub.add_parser(name);p.add_argument('request_file');p.add_argument('--max-bytes',type=int,default=MAX_BYTES)
@@ -19004,6 +19100,9 @@ LUMEN_PYTHON_BODY
 #|         request=decode(read_file(args.request_file,1024*1024))
 #|         result=reopen_plan(request,args.max_bytes) if args.action=='reopen-plan' else reopen(request,tool_bytes,args.max_bytes)
 #|         print(json.dumps(result,indent=2));return 0 if result['status'] in ('ready-to-reopen','reopened') else 2
+#|     if args.action=='briefing':
+#|         result=briefing(args.root,args.inventory,args.remote_receipt,args.work_state,args.at,args.max_remote_age_seconds,args.max_work_age_seconds)
+#|         print(json.dumps(result,indent=2));return 0 if result['status']=='ready' else 2
 #|     if args.action=='preserve-plan':
 #|         result=preserve_plan(args.root,args.inventory,args.registry,args.checkpoint_id,args.request_ref,tool_bytes,args.expected_repository,args.remote_receipt,args.at,args.max_remote_age_seconds)
 #|         print(json.dumps(result,indent=2));return 0 if result['status']=='ready-to-preserve' else 2
@@ -19187,6 +19286,53 @@ LUMEN_PYTHON_BODY
 #|     def test_layout_collision(self):
 #|         self.inventory['items'][0]['path']='recovery/previous-registry.json';self.reexport()
 #|         with self.assertRaises(ValueError):workshop.reopen(self.request,b'runner')
+#| 
+#| class BriefingTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);self.root=Path(self.tmp.name);(self.root/'state').mkdir()
+#|         self.work=self.root/'state/current-work.json';self.inv=self.root/'inventory.json';self.at='2026-10-02T15:00:00Z'
+#|         self.state={'schema_version':1,'updated_at_utc':self.at,'items':[{'id':'one','status':'recorded active','work_state':'active','next':'Check actual state','reviewed_at_utc':self.at}]}
+#|         self.inventory={'schema_version':1,'project_id':'test','repository':'owner/private','items':[{'label':'work','path':'state/current-work.json','required':True,'purpose':'tasks'}],'known_unavailable':['old raw data']};self.save()
+#|     def save(self):self.work.write_text(json.dumps(self.state));self.inv.write_text(json.dumps(self.inventory))
+#|     def call(self,**kw):return workshop.briefing(str(self.root),str(self.inv),at=self.at,**kw)
+#|     def test_ready_is_read_only_not_running(self):
+#|         before={str(p):p.read_bytes() for p in self.root.rglob('*') if p.is_file()};r=self.call();self.assertEqual(r['status'],'ready');self.assertEqual(r['counts']['active'],1);self.assertFalse(r['execution_performed']);self.assertEqual(r['process_liveness'],'unobserved');self.assertEqual(before,{str(p):p.read_bytes() for p in self.root.rglob('*') if p.is_file()})
+#|     def test_all_categories_preserved(self):
+#|         self.state['items']=[dict(id='task-'+k,status=k,work_state=k,next='Recorded next') for k in workshop.WORK_STATES];self.save();r=self.call();self.assertTrue(all(v==1 for v in r['counts'].values()))
+#|     def test_legacy_is_unclassified_not_guessed(self):
+#|         self.state['items'][0].pop('work_state');self.state['items'][0]['status']='completed_verified';self.save();r=self.call();self.assertEqual(r['status'],'ready_with_unclassified_records');self.assertEqual(r['counts']['completed'],0)
+#|     def test_unknown_category_rejected(self):
+#|         self.state['items'][0]['work_state']='execute-now';self.save()
+#|         with self.assertRaises(ValueError):self.call()
+#|     def test_duplicate_id_rejected(self):
+#|         self.state['items']*=2;self.save()
+#|         with self.assertRaises(ValueError):self.call()
+#|     def test_missing_file_blocks(self):
+#|         self.work.unlink();self.assertEqual(self.call()['status'],'blocked');self.assertFalse(self.work.exists())
+#|     def test_missing_root_blocks(self):
+#|         r=workshop.briefing(str(self.root/'gone'),str(self.inv),at=self.at);self.assertEqual(r['status'],'blocked');self.assertIsNone(r['preservation']['changed_since_recorded_copy'])
+#|     def test_unselected_state_refused(self):
+#|         self.inventory['items'][0]['path']='inventory.json';self.save()
+#|         with self.assertRaises(ValueError):self.call()
+#|     def test_escape_refused(self):
+#|         with self.assertRaises(ValueError):self.call(work_state='../other')
+#|     def test_symlink_refused(self):
+#|         self.work.unlink();self.work.symlink_to(self.inv)
+#|         with self.assertRaises(OSError):self.call()
+#|     def test_stale_item_not_refreshed_by_file_write(self):
+#|         self.state['items'][0]['reviewed_at_utc']='2026-09-01T00:00:00Z';self.save();r=self.call();self.assertEqual(r['groups']['active'][0]['review_freshness']['status'],'stale')
+#|     def test_unreviewed_item_unobserved(self):
+#|         self.state['items'][0].pop('reviewed_at_utc');self.save();self.assertEqual(self.call()['groups']['active'][0]['review_freshness']['status'],'unobserved')
+#|     def test_future_review_clock_disagreement(self):
+#|         self.state['items'][0]['reviewed_at_utc']='2026-10-03T00:00:00Z';self.save();self.assertEqual(self.call()['groups']['active'][0]['review_freshness']['status'],'clock_disagreement')
+#|     def test_duplicate_json_rejected(self):
+#|         self.work.write_text('{"schema_version":1,"schema_version":1}')
+#|         with self.assertRaises(ValueError):self.call()
+#|     def test_invalid_blockers_rejected(self):
+#|         self.state['items'][0]['blockers']='everything';self.save()
+#|         with self.assertRaises(ValueError):self.call()
+#|     def test_extra_private_fields_not_echoed(self):
+#|         self.state['items'][0]['unselected_detail']='DO NOT ECHO THIS';self.save();self.assertNotIn('DO NOT ECHO THIS',json.dumps(self.call()))
 # === LUMEN SECTION test_workshop.py END ===
 
 # === LUMEN SECTION WORKSHOP-RECOVERY.txt BEGIN ===
@@ -19281,6 +19427,29 @@ LUMEN_PYTHON_BODY
 #| Missing data is unavailable; absent observations are unobserved; old samples are stale;
 #| future timestamps flag clock disagreement. Fresh samples never establish live process
 #| health. No status command starts or resumes the sampler or creates an absent run.
+#| 
+#| WORKING-STATE BRIEFING
+#| 
+#| workshop briefing --root ROOT --inventory INVENTORY --remote-receipt RECEIPT
+#| reads the explicitly inventory-selected state/current-work.json. --work-state
+#| can select another inventoried relative path. It never dispatches work or grants
+#| permissions. It groups only explicit work_state values: active, blocked, waiting,
+#| needs_decision, completed, parked, retired. A legacy item without a category stays
+#| unclassified and returns a review-needed exit code, never a guessed action.
+#| Each item carries an independent reviewed_at_utc freshness report. A later write
+#| to the whole state file does not make every item's old review fresh. Missing review
+#| times remain unobserved. --max-work-age-seconds defaults to 86400; this is a display
+#| threshold, not a permission expiry or a mandate to rerun completed work.
+#| A ready briefing means selected records were readable, not that their tasks run.
+#| Unknown and parked work is not an implicit retry queue. Reconcile current user
+#| instructions and actual effects before any action. The report omits extra item
+#| fields; it is for private use and has no automatic publication side effect.
+#| 
+#| Observer summary/status now separate record-chain verification from closed-segment
+#| seal verification. An empty directory is unobserved. Closed records without their
+#| manifest have unavailable seal verification; partial seal inventories are incomplete.
+#| Neither condition may be described as a fully verified sealed dataset. Run-ID
+#| mismatch and duplicate seal entries fail validation. No missing seal is fabricated.
 # === LUMEN SECTION WORKSHOP-RECOVERY.txt END ===
 
 # === LUMEN SECTION HISTORICAL-WORKSPACE-20261002.json BEGIN ===

@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "source_sha256": "04085fbc34cbb4edde60a5c4cc5ea1941097a5ad767106a07417c2cd0d641d5e",
-  "source_bytes": 1323166,
-  "review_ref": "lumen-working-reopen-freshness-20261002",
-  "tests": 398,
+  "source_sha256": "21484b7fa201bf12f3bff5a4feeac4ff18f9998d56ad428f9ca34522a0b770b5",
+  "source_bytes": 1337518,
+  "review_ref": "lumen-executive-briefing-20261002",
+  "tests": 421,
   "repository": "Sapient-Lumen/Lumen",
   "publication_mode": "source and metadata bound by immutable commit and verified readback",
-  "qualification": "Guarded selected working-layout reopening, caller-pinned preservation plans, and honest sample/backup freshness. All 398 embedded tests passed. A freshly retrieved immutable checkpoint restored 18 working files into an empty recipient with exact replay. No sampler restart, automatic registry adoption, credential handling or inferred process liveness."
+  "qualification": "Private read-only task briefing with explicit categories and independent review ages. Legacy uncategorized state remains unclassified after recovery. Observer distinguishes chain, closed-segment seals and open tails. All 421 embedded tests pass. No dispatch, process restart, authority restoration or inferred liveness."
 }
