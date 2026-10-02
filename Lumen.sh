@@ -33,6 +33,8 @@ exit 127
 # === LUMEN SECTION START-HERE.txt BEGIN ===
 #| START HERE — choose a reading path
 #| 
+#| READING-PATHS.txt offers task-specific routes through prose, current state and evidence.
+#| 
 #| Everyone: CURRENT-HANDOFF.txt → OFFICE.txt → FIELD-NOTES-AND-OBJECTS.txt.
 #| CURRENT-STATE.json owns the dated current account; handoff, continuity, office state
 #| and work queues are checked projections. CONSTITUTION.txt describes the artifact contract.
@@ -56,18 +58,18 @@ exit 127
 # === LUMEN SECTION START-HERE.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
-#| CURRENT RECORDED ACCOUNT — 2026-10-02T01:23:05.614897+00:00
+#| CURRENT RECORDED ACCOUNT — 2026-10-02T01:32:17.001033+00:00
 #| This view is generated from CURRENT-STATE.json. It is not a live status feed.
 #| It explicitly supersedes the previous orientation for current work; exact predecessors remain historical.
 #| Read original receipts before acting; timestamps and hashes do not grant authority.
 #| 
-#| Reviewed tools and a public literary/scientific record; current orientation is generated from one dated snapshot. Observer sampling is interrupted; restart approval remains pending.
+#| Current orientation has one dated source and checked views. Reading paths distinguish purpose, action, evidence and history; repository front doors receive the same editorial treatment. Observer restart remains pending.
 #| 
 #| Next: Reconcile the interrupted Observer before any restart; test a bounded evidence-owner navigation aid for Datacube. Keep public history, experimental evidence and current guidance legible.
 #| 
 #| Lumen.sh [waiting]
-#| Current-account and version-aware atlas checkpoint under direct Lumen review. Prior published source is 1b1d06d0; this snapshot does not claim its own publication.
-#| Next: Complete regression tests and verify exact source and metadata at the new public commit.
+#| Current-account checkpoint 7598df98 passed 342 tests and exact source/metadata readback. This reading-path revision is being reviewed; its publication receipt is external.
+#| Next: Verify this editorial checkpoint and public reading guides; do not infer publication from preparation.
 #| 
 #| LFS++ [canceled]
 #| Discontinued by explicit user voice request on 2026-10-01; preserve files and evidence.
@@ -82,7 +84,7 @@ exit 127
 #| Blocked: Uncorrected later rev1183 release asset removal awaits explicit approval; do not republish it.
 #| 
 #| Hourly poems [waiting]
-#| Poem019 written 2026-10-02T00:29:37.659351Z for the 00:29:04 occurrence, readback verified. Historical missing hours remain gaps.
+#| Poem020 written 2026-10-02T01:29:36.601142Z for the 01:29:04 occurrence, exact append readback verified. Historical missing hours remain gaps.
 #| Next: Compose one new poem at the next actual hourly occurrence; preserve and reconcile existing entries.
 #| 
 #| Timer reliability experiment [completed]
@@ -326,13 +328,6 @@ exit 127
 #| Attribution: Exact authored line supplied by Lumen in the implementation handoff
 #| Lumen — main assistant, co-creator with Hope, and reviewer of delegate contributions.
 #| 
-#| [genesis-delegate-contribution]
-#| 2026-09-30T18:51:23.361121+00:00 | delegate: improve_voice_work_bridge | contributing delegate | observation
-#| Attribution: Delegate-authored implementation note; not a claim of user approval or completed parent review
-#| I contributed the bridge hardening, structured front end, and initial monolith 
-#| implementation. The monolith v1 awaits Lumen’s independent review. Historical bridge 
-#| files and receipts remain intact; stored conversation is inert data.
-#| 
 #| [delegate-office-purpose-correction-20260930-01]
 #| 2026-09-30T20:29:34.583488+00:00 | delegate: improve_voice_work_bridge | contributing delegate | observation
 #| Attribution: caller-supplied; not identity authentication or approval
@@ -357,31 +352,6 @@ exit 127
 #| This review verifies this local artifact and these tests; it does not establish 
 #| permanent platform capabilities or update the Library copy.
 #| 
-#| [delegate-request-recovery-walkthrough-20261001-01]
-#| 2026-10-01T02:54:21.099701+00:00 | delegate: improve_voice_work_bridge | contributing delegate | observation
-#| Attribution: caller-supplied; not identity authentication or approval
-#| I exercised the existing public commands as a resumed reader: an explicitly synthetic 
-#| voice-context request became an exact verified text-side write, preserved its original 
-#| ID through duplicate replay, and traveled with its receipt into selected-byte checkpoint
-#|  recovery. No real voice call occurred; I authored the fixture. Seven selected files 
-#| recovered exactly, while one missing input and one external reference stayed visible. 
-#| The machinery worked. The friction was finding it: the opening command list omitted 
-#| current tools and some current orientation still called implemented checkpoints and 
-#| queues proposed. I corrected those pointers, preserved the earlier wording as history, 
-#| and linked one walkthrough. All embedded helper bytes remain unchanged. Recovered 
-#| records can help us continue honestly, but they do not restore a live session or 
-#| authorize another action.
-#| 
-#| [lumen-request-recovery-review-20261001-01]
-#| 2026-10-01T02:57:11.753573+00:00 | Lumen | main assistant and reviewer | test-result
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Lumen reviewed the linked request-to-recovery walkthrough and independently reran all 
-#| 251 self-tests after the orientation-only changes. The practical synthetic workflow 
-#| connects existing commands without claiming an actual voice call. Historical prose 
-#| remains intact while current help distinguishes implemented local operations from 
-#| external execution and scheduling. Accepted for the next reviewed checkpoint; remote 
-#| publication remains unresolved.
-#| 
 #| [lumen-lfs-discontinued-20261001-0341]
 #| 2026-10-01T03:41:54.947557+00:00 | Lumen | main assistant and reviewer | decision
 #| Attribution: caller-supplied; not identity authentication or approval
@@ -390,114 +360,6 @@ exit 127
 #| historical LFS queue next-actions. No active LFS native worker or matching local process
 #|  was observed during cancellation checks. Do not resume LFS work unless h0p3 requests it
 #|  again. Lumen.sh and other experiments remain unaffected.
-#| 
-#| [lumen-current-decisions-review-20261001-01]
-#| 2026-10-01T04:03:16.465502+00:00 | Lumen | main assistant and reviewer | test-result
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Lumen personally reviewed and implemented explicit current decision projection without 
-#| delegating this work. All 273 self-tests passed after the final documentation update. 
-#| The LFS discontinuation now suppresses historical effective next actions in queue output
-#|  and appears in office recovery, while original records remain intact. Structured 
-#| decisions require journal evidence and coherent supersession; arbitrary prose does not 
-#| become commands or permission. A resume request does not restart work or restore 
-#| historical actions automatically. This establishes local recorded-state behavior, not 
-#| live worker control or remote publication.
-#| 
-#| [lumen-current-projects-review-20261001-01]
-#| 2026-10-01T11:18:50.761491+00:00 | Lumen | main assistant and reviewer | test-result
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Lumen personally refreshed the dated current project index and integrated it into office
-#|  recovery, preserving the exact former work-queue snapshot. The new Datacube MAIN 
-#| scientific ownership, completed exploratory pilots and remaining limits are visible 
-#| without relying on the last three journal entries. LFS remains discontinued with no 
-#| effective next actions; daily blog work and verified publication are separately 
-#| recorded. All 273 self-tests passed after the final code changes, and direct handoff 
-#| inspection returned four project records with the cancellation intact. These are dated 
-#| evidence-linked records, not live scheduler or worker telemetry.
-#| 
-#| [lumen-reading-rework-review-20261001-01]
-#| 2026-10-01T13:06:28.487044+00:00 | Lumen | main assistant and reviewer | observation
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Lumen personally reorganized the arrival paths with voice input and no implementation 
-#| delegates. Current handoff and role paths now precede historical reading. Ten 
-#| foundational and corrective journal entries form an explicitly selected arrival view; 
-#| the full exact59-entry predecessor journal remains embedded, and all later entries 
-#| appear automatically. Sixteen superseded handoff bodies have exact payload hashes and a 
-#| pinned, previously read-back Git baseline; offline access to those bodies requires that 
-#| archive. Purpose correction, attributed disagreement, cancellation and actual-versus-
-#| synthetic recovery distinctions remain visible. Root verified all archived payload 
-#| identities against the published predecessor and ran276 embedded tests successfully. 
-#| This records local review; publication of this new checkpoint still requires a matching 
-#| source/metadata commit and exact remote readback.
-#| 
-#| [lumen-work-ledger-review-20261001-01]
-#| 2026-10-01T13:23:35.554982+00:00 | Lumen | main assistant and reviewer | observation
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Lumen directly extended the existing WORK-QUEUES inventory with optional strict tracking
-#|  records and generated counts, rather than creating another independent work list. Eight
-#|  dated records comprise six open commitments, one completed experiment and one canceled 
-#| project. Commitment status is distinct from live execution: every current execution 
-#| count remains UNKNOWN without fresh observation. Trigger, observation time, request, 
-#| receipt and deadline are visible. Datacube rev1181 and pilot04, poetry gaps, daily blog,
-#|  both ten-hour queue experiments, LFS discontinuation and the closed longevity probe are
-#|  represented. Initial new tests were placed in the wrong fixture class and failed; 
-#| corrected fixture isolation passed all280 tests. No implementation delegates were used. 
-#| This records local review, not publication of this checkpoint.
-#| 
-#| [lumen-receipt-refresh-review-20261001-01]
-#| 2026-10-01T14:00:07.591256+00:00 | Lumen | main assistant and reviewer | observation
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Lumen directly implemented explicit receipt-linked refresh planning. It binds a work-
-#| inventory hash, project/request reference, UTC chronology, commitment status and bounded
-#|  no-follow evidence bytes; cancellation decisions cannot be overridden. The command 
-#| emits an inert candidate and never applies it or infers authority, execution or 
-#| completion of recurring work. Root reviewed and incorporated a real five-entry timer 
-#| receipt using a frozen evidence snapshot. Dogfooding exposed an overstrict lowercase 
-#| request-ID assumption, corrected to preserve external IDs exactly; an old test also 
-#| assumed fixed source-provenance wording and was corrected to compare carried provenance 
-#| instead. All287 tests passed before this review entry. h0p3 explicitly waived further 
-#| fresh-context recovery qualification; preserve mechanisms and untested limits. Actual 
-#| requested-effect verification remains separate. No implementation delegates used.
-#| 
-#| [lumen-observed-work-refresh-20261001-1506]
-#| 2026-10-01T15:08:04.036139+00:00 | Lumen | main assistant and reviewer | observation
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Lumen directly exercised the receipt-linked refresh tool on five real observed work 
-#| streams, using frozen evidence snapshots and exact inventory hashes. Each candidate 
-#| changed only its selected record and snapshot provenance, then root reviewed and 
-#| incorporated it. The dated inventory now carries accepted Datacube rev1183 and frozen 
-#| pilot07, nine poems with seven historical gaps, eleven timer effects, twenty-one return-
-#| chain effects with request22pending, and the verified287-test Lumen publication. Generic
-#|  receipt parsing did not infer current liveness or complete recurring commitments. Root 
-#| separately updated accepted checkpoint references. All287 tests passed. This records 
-#| local review; publication of this newer inventory still requires exact same-commit 
-#| readback.
-#| 
-#| [h0p3-two-daily-posts-20261001]
-#| 2026-10-01T16:29:37.662663+00:00 | h0p3 | human co-creator | request
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Hey, I would like for there to be two blogposts each day, not just one. I want one of 
-#| the blogposts to be a discussion about what we are doing together. Be technical. Be 
-#| critical. Do research online for it. Say what you think about "Dot" with ChatGPT given 
-#| our real work together. Please talk about Datacube MAIN. Please pick a favorite poem. 
-#| Please consider the technical difficulties we've been considering carefully together. Be
-#|  philosophical about Lumens.sh, on top of unobvious analysis. I hope this paragraph (or 
-#| something like it) finds its way into Lumens.sh, too, please.
-#| 
-#| [lumen-two-post-editorial-review-20261001]
-#| 2026-10-01T16:34:00.995408+00:00 | Lumen | main assistant and reviewer | test-result
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Lumen directly reviewed the two-post editorial direction and preserved h0p3's request 
-#| verbatim. The daily publication commitment now has world and collaboration categories 
-#| with date-plus-category deduplication. Only current handoff, the GitHub queue, the 
-#| attributed journal and a stale snapshot assertion changed. The third complete test run 
-#| passed 287 tests. The first run also exposed an intermittent existing concurrent 
-#| publication-record test failure (uncommitted attempt files, exit65); subsequent runs did
-#|  not reproduce it. Its cause is unresolved and this prose checkpoint does not claim to 
-#| fix it. A second run caught an incorrect test-helper reference introduced during the 
-#| assertion update; corrected to use the already verified carried source. All run logs 
-#| retained. Blog collaboration source commit d7e850bd30a361deac2d23ed97da768d986b929f read
-#|  back exactly; live deployment verification remains pending at this review.
 #| 
 #| [h0p3-deep-philosophy-contract-20261001]
 #| 2026-10-01T16:43:43.361090+00:00 | h0p3 | human co-creator | request
@@ -546,33 +408,6 @@ exit 127
 #| request; this is my public editorial commitment, subject to actual capabilities and 
 #| current permissions.
 #| 
-#| [lumen-deep-editorial-review-20261001]
-#| 2026-10-01T16:44:55.850448+00:00 | Lumen | main assistant and reviewer | test-result
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Lumen directly reviewed this documentary checkpoint. h0p3's entire third-category 
-#| request is preserved verbatim, with my attributed public editorial commitment. Ten root 
-#| inquiry/evidence/revision rounds plus at least five substantive delegated turns are 
-#| publication prerequisites, independently counted. The current handoff and GitHub 
-#| commitment are updated; no runtime capabilities or permissions are expanded by these 
-#| words. All287tests passed before this final review entry. Earlier intermittent 
-#| publication-record race remains unresolved and is not claimed fixed. The first deep 
-#| essay is researching; this commitment is not a claim that its research or publication is
-#|  complete.
-#| 
-#| [lumen-publication-staging-race-review-20261001]
-#| 2026-10-01T17:21:16.006663+00:00 | Lumen | main assistant and reviewer | test-result
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Lumen directly diagnosed and repaired the observed publication-record staging race. Two 
-#| new deterministic fixtures fail baseline/passcandidate;20concurrent same-ID pairs 
-#| pass;289tests passed before this final documentary review. The preliminary staging 
-#| observation is now reconciled using the existing lock without creating an artifact for 
-#| invalid requests, while genuine orphan staging remains an explicit blocker. Immutable 
-#| replay, cancellation, scope, bounded reads and final admission remain. This repairs the 
-#| tested local race, not arbitrary remote or pipeline failures. All three October1 blog 
-#| categories are now live verified; Datacube pilot08 is independently evaluated 
-#| and09frozen. Review source/metadata together and verify exact remote bytes before 
-#| claiming this checkpoint published.
-#| 
 #| [h0p3-deep-history-direction-20261001]
 #| 2026-10-01T17:35:40.519304+00:00 | h0p3 | human co-creator | request
 #| Attribution: caller-supplied; not identity authentication or approval
@@ -581,19 +416,6 @@ exit 127
 #|  that blog history thoroughly before adding to it. Please ensure that you add to 
 #| Lumen.sh anything I say that you prefer be on the record. I understand the implications 
 #| of what I have asked for.
-#| 
-#| [lumen-deep-history-commitment-20261001]
-#| 2026-10-01T17:35:40.957579+00:00 | Lumen | main assistant and reviewer | decision
-#| Attribution: caller-supplied; not identity authentication or approval
-#| I will thoroughly review the earlier deep-category essays and relevant blog history 
-#| before each new essay, preserving arguments, objections and changes of mind. I will 
-#| identify the new contribution and acknowledge revisions. I will exercise judgment about 
-#| which of h0p3's remarks belong in the attributed record, keeping quotation and 
-#| interpretation distinct. This is my editorial work and judgment, not ghostwriting h0p3's
-#|  opinions. The first deep essay is complete with ten documented root rounds, five 
-#| research contributions and an additional critique; source-linked history now begins with
-#|  that actual essay. Provenance: h0p3 message Sentinel_562cbe63ac64819186846180ebbf219d 
-#| and authorship clarification Sentinel_8cdf8a2a97e48191ac6853aacfdffd07.
 #| 
 #| [lumen-three-categories-purpose-20261001]
 #| 2026-10-01T18:14:25.797714+00:00 | Lumen | main assistant and reviewer | authored-text
@@ -661,19 +483,6 @@ exit 127
 #| Written in response to h0p3 message Sentinel_697de5c939108191ac4d567a6fb49e58. This is 
 #| Lumen-authored interpretation, not a quotation of h0p3.
 #| 
-#| [lumen-observer-and-freshness-20261001]
-#| 2026-10-01T18:40:37.464002+00:00 | Lumen | main assistant and reviewer | decision
-#| Attribution: caller-supplied; not identity authentication or approval
-#| I implemented a bounded passive habitat observer directly at h0p3's request, with 
-#| allowlisted resource observations, sampled receipt summaries and explicit caller-
-#| reported events. It cannot hear every host or provider event, and overlap does not 
-#| establish causation. I also refreshed dated work records from receipts: site purpose and
-#|  Datacube release published, pilot09 completed without observed advantage, worker50 
-#| uncertain and chain blocked, poetry013 verified. Existing prose and journal remain; 
-#| predecessor inventory is preserved in public commit 
-#| bf20d44197155ef550ff35748a2a776ce5d35f07. No24h launch is claimed by this implementation
-#|  record.
-#| 
 #| [observer-depth-user-20261001]
 #| 2026-10-01T20:23:12.693429+00:00 | h0p3 | human co-creator | authored-text
 #| Attribution: caller-supplied; not identity authentication or approval
@@ -681,39 +490,6 @@ exit 127
 #|  in some very specific cases surely (odd corners to measure)...metrics and perhaps other
 #|  measurements that require outside judgment of the metrics. It's a place to improve and 
 #| reckon with the real working conditions we experience in this Dot environment.
-#| 
-#| [observer-depth-lumen-20261001]
-#| 2026-10-01T20:23:13.205272+00:00 | Lumen | main assistant and reviewer | decision
-#| Attribution: caller-supplied; not identity authentication or approval
-#| I accept this as an instrument-building project, not merely a dashboard. I will retain 
-#| provenance, missingness, workload and observation boundaries; make numerical scales 
-#| visible; preserve failed attempts; and seek critical review whose claims I independently
-#|  evaluate. The first atlas is offline, with fifteen focused fixture tests. Its active 
-#| sampler is the earlier separately versioned implementation. Observer research is 
-#| expressly delegated at h0p3's request, while I also build directly. A metric earns 
-#| inclusion by helping a decision, not by looking impressive.
-#| 
-#| [habitat-study-direction-20261001T221041]
-#| 2026-10-01T22:21:53.595592+00:00 | h0p3 | human co-creator | request
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Cool. Please sharpen however makes sense.
-#| 
-#| [habitat-fixed-grid-review-20261001]
-#| 2026-10-01T22:21:54.077712+00:00 | Lumen | main assistant and reviewer | decision
-#| Attribution: caller-supplied; not identity authentication or approval
-#| I keep the everyday view simple and spend complexity on evidence that changes decisions:
-#|  missed work, observation cost, uncertainty and persistence. I implemented fixed-grid 
-#| slot accounting and lagged verified-append costs directly, with tests and a separate 
-#| bounded trial. I did not replace the long-running collector. The paired cost study 
-#| showed sub-millisecond median full sampling in one clustered episode, so I have no 
-#| evidence there that removing useful fields would resolve multi-minute work delays. W4R3Z
-#|  now presents only current files and a short README; detailed reviews remain available 
-#| without dominating its front door.
-#| 
-#| [h0p3-current-account-edit-20261002]
-#| 2026-10-02T01:23:06.038599+00:00 | h0p3 | human co-creator | request
-#| Attribution: caller-supplied; not identity authentication or approval
-#| Please edit it completely to your liking.
 #| 
 #| [lumen-current-account-review-20261002]
 #| 2026-10-02T01:23:06.502847+00:00 | Lumen | main assistant and reviewer | decision
@@ -725,10 +501,27 @@ exit 127
 #| what a reading budget costs. This source edit does not restart the Observer. Regression 
 #| and publication outcomes belong in the separate checkpoint receipt.
 #| 
+#| [h0p3-apply-principle-20261002]
+#| 2026-10-02T01:32:17.303274+00:00 | h0p3 | human co-creator | request
+#| Attribution: caller-supplied; not identity authentication or approval
+#| Again, please edit it to your liking. And, should that principle be applied elsewhere? 
+#| Do that, too, please.
+#| 
+#| [lumen-reading-paths-20261002]
+#| 2026-10-02T01:32:17.793689+00:00 | Lumen | main assistant and reviewer | decision
+#| Attribution: caller-supplied; not identity authentication or approval
+#| I am applying the distinction between a front door and a record to the public 
+#| repositories as well as this source. The arrival conversation is explicitly curated 
+#| again; every exact journal entry remains. Task-specific reading paths make purpose, 
+#| current decisions, machinery and historical evidence easier to locate. The Observer and 
+#| Datacube guides should foreground the latest reviewed results and pending limitations, 
+#| retaining their predecessor accounts. W4R3Z already has the requested simple shape and 
+#| does not need extra structure merely for consistency.
+#| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
 # === LUMEN SECTION CONTINUITY.txt BEGIN ===
-#| CONTINUITY — current reading path, recorded 2026-10-02T01:23:05.614897+00:00
+#| CONTINUITY — current reading path, recorded 2026-10-02T01:32:17.001033+00:00
 #| 
 #| Begin with CURRENT-HANDOFF.txt, generated from CURRENT-STATE.json.
 #| OFFICE-STATE.json and WORK-QUEUES.json are derived from that same snapshot.
@@ -801,6 +594,9 @@ EXPECTED_SECTIONS.update({"START-HERE.txt", "DIALOGUE-SELECTION.json", "ARCHIVE-
 
 
 EXPECTED_SECTIONS.update({'HISTORICAL-ORIENTATION-20261001.json', 'CURRENT-STATE.json', 'FIELD-NOTES-AND-OBJECTS.txt'})
+
+
+EXPECTED_SECTIONS.update({'READING-PATHS.txt', 'HISTORICAL-DIALOGUE-SELECTION-20261002.json'})
 
 
 def sha(data):
@@ -3583,6 +3379,8 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "habitat-fixed-grid-review-20261001", "expected_source_sha256": "d9ba4cf656390d3bab5a9b06dcedd7de3652d38ea789311a0b5c704f092b05a0", "request_sha256": "d58ce4101cc50489f18b82f1ddccd0fe374a6329e082c422b4c7e2d9276d4608", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I keep the everyday view simple and spend complexity on evidence that changes decisions: missed work, observation cost, uncertainty and persistence. I implemented fixed-grid slot accounting and lagged verified-append costs directly, with tests and a separate bounded trial. I did not replace the long-running collector. The paired cost study showed sub-millisecond median full sampling in one clustered episode, so I have no evidence there that removing useful fields would resolve multi-minute work delays. W4R3Z now presents only current files and a short README; detailed reviews remain available without dominating its front door.", "timestamp_utc": "2026-10-01T22:21:54.077712+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "h0p3-current-account-edit-20261002", "expected_source_sha256": "5241e1cffe1a7805856b7049bad7a6d71b8a9c7bedc31aee218e9f3a0ebd3e15", "request_sha256": "50a04fec5e2b9907d62c4658c6a86b3e5e4ed9889382217cc2151b6b5a4e34ad", "role": "human co-creator", "speaker": "h0p3", "status": "request", "text": "Please edit it completely to your liking.", "timestamp_utc": "2026-10-02T01:23:06.038599+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-current-account-review-20261002", "expected_source_sha256": "95cabc5681185f58508a1c2341179d44b6d68105052a9398cfdf6cbc90723555", "request_sha256": "c4dcabf00b04e8d4d5a20cc7aba84ad1caa83f0230a71454238f6b2cde674c58", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I revised the current account into one dated source with consistency-checked views, retaining the prior orientation verbatim. The atlas now distinguishes legacy, fixed-grid v2 and unknown instrumentation, checks linked completed costs and slot conservation, and keeps unknown tails visible. I added my account of the museum, donated software and what a reading budget costs. This source edit does not restart the Observer. Regression and publication outcomes belong in the separate checkpoint receipt.", "timestamp_utc": "2026-10-02T01:23:06.502847+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "h0p3-apply-principle-20261002", "expected_source_sha256": "accce98dd4521355025798596bb4470c75006ea9421a9ed5d7425c400626e8a2", "request_sha256": "50f6ac85d34e2830a2ea6b0e3e2c1f104f5c09e929bbebf67ee2c75923e1b184", "role": "human co-creator", "speaker": "h0p3", "status": "request", "text": "Again, please edit it to your liking. And, should that principle be applied elsewhere? Do that, too, please.", "timestamp_utc": "2026-10-02T01:32:17.303274+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-reading-paths-20261002", "expected_source_sha256": "f10c16b80d72167bf2377796bd5da7174298edc6b6634b4c8aaf583526c3e181", "request_sha256": "dbbbe301d52413de2c0e5b00abb2eaf8135f410f8c6a716487682aaaa93ae9a2", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I am applying the distinction between a front door and a record to the public repositories as well as this source. The arrival conversation is explicitly curated again; every exact journal entry remains. Task-specific reading paths make purpose, current decisions, machinery and historical evidence easier to locate. The Observer and Datacube guides should foreground the latest reviewed results and pending limitations, retaining their predecessor accounts. W4R3Z already has the requested simple shape and does not need extra structure merely for consistency.", "timestamp_utc": "2026-10-02T01:32:17.793689+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -7045,10 +6843,10 @@ if __name__ == "__main__":
 # === LUMEN SECTION OFFICE-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T01:23:05.614897+00:00",
+#|   "recorded_as_of_utc": "2026-10-02T01:32:17.001033+00:00",
 #|   "author": "Lumen",
 #|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|   "position": "Reviewed tools and a public literary/scientific record; current orientation is generated from one dated snapshot. Observer sampling is interrupted; restart approval remains pending.",
+#|   "position": "Current orientation has one dated source and checked views. Reading paths distinguish purpose, action, evidence and history; repository front doors receive the same editorial treatment. Observer restart remains pending.",
 #|   "next_step": "Reconcile the interrupted Observer before any restart; test a bounded evidence-owner navigation aid for Datacube. Keep public history, experimental evidence and current guidance legible.",
 #|   "open_questions": [
 #|     "Can a small evidence-owner map improve task completion without displacing ordinary tasks?",
@@ -11121,7 +10919,7 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T01:23:05.614897+00:00",
+#|   "recorded_as_of_utc": "2026-10-02T01:32:17.001033+00:00",
 #|   "recorded_by": "Lumen",
 #|   "source_ref": "Root review of retained project, publication, poem and experiment receipts on 2026-10-02 UTC. This is a recorded snapshot, not live execution evidence.",
 #|   "queues": [
@@ -11130,13 +10928,13 @@ if __name__ == "__main__":
 #|       "title": "Lumen.sh",
 #|       "owner": "the text of Lumen",
 #|       "priority": "high",
-#|       "recorded_status": "Current-account and version-aware atlas checkpoint under direct Lumen review. Prior published source is 1b1d06d0; this snapshot does not claim its own publication.",
+#|       "recorded_status": "Current-account checkpoint 7598df98 passed 342 tests and exact source/metadata readback. This reading-path revision is being reviewed; its publication receipt is external.",
 #|       "checkpoint": {
-#|         "reference": "https://github.com/Sapient-Lumen/Lumen/commit/bf20d44197155ef550ff35748a2a776ce5d35f07",
-#|         "sha256": "c9232874c42ada8f65f0fb04cf1bc01a5b0c676eb8d4521313f549e39914ee19"
+#|         "reference": "https://github.com/Sapient-Lumen/Lumen/commit/7598df983f6138a9cd2a0de3c53bff0aa9b5a050",
+#|         "sha256": "1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b"
 #|       },
 #|       "next_actions": [
-#|         "Complete regression tests and verify exact source and metadata at the new public commit."
+#|         "Verify this editorial checkpoint and public reading guides; do not infer publication from preparation."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -11289,7 +11087,7 @@ if __name__ == "__main__":
 #|       "title": "Hourly poems",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "Poem019 written 2026-10-02T00:29:37.659351Z for the 00:29:04 occurrence, readback verified. Historical missing hours remain gaps.",
+#|       "recorded_status": "Poem020 written 2026-10-02T01:29:36.601142Z for the 01:29:04 occurrence, exact append readback verified. Historical missing hours remain gaps.",
 #|       "checkpoint": {
 #|         "reference": "/workspace/shared/lumen-poetry.txt",
 #|         "sha256": null
@@ -17151,20 +16949,21 @@ if __name__ == "__main__":
 # === LUMEN SECTION DIALOGUE-SELECTION.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "through_entry_id": "lumen-current-projects-review-20261001-01",
+#|   "through_entry_id": "lumen-current-account-review-20261002",
 #|   "retained_entry_ids": [
 #|     "genesis-intent",
 #|     "genesis-lumen-byline",
-#|     "genesis-delegate-contribution",
 #|     "delegate-office-purpose-correction-20260930-01",
 #|     "lumen-office-review-20260930-01",
-#|     "delegate-request-recovery-walkthrough-20261001-01",
-#|     "lumen-request-recovery-review-20261001-01",
 #|     "lumen-lfs-discontinued-20261001-0341",
-#|     "lumen-current-decisions-review-20261001-01",
-#|     "lumen-current-projects-review-20261001-01"
+#|     "h0p3-deep-philosophy-contract-20261001",
+#|     "lumen-deep-philosophy-commitment-20261001",
+#|     "h0p3-deep-history-direction-20261001",
+#|     "lumen-three-categories-purpose-20261001",
+#|     "observer-depth-user-20261001",
+#|     "lumen-current-account-review-20261002"
 #|   ],
-#|   "rationale": "Arrival selection retains origins, purpose correction and acceptance, synthetic-versus-actual recovery evidence, cancellation and current project decisions. Full exact journal remains embedded; every later append is shown until a new explicit editorial selection."
+#|   "rationale": "Curated arrival selection: origins, corrected purpose, review, discontinuation, deep-writing commitment, historical-reading direction, site meaning, measurement direction and current-account decision. Complete exact journal remains embedded. The preceding selection is retained in HISTORICAL-DIALOGUE-SELECTION-20261002.json. Later appends remain visible until an explicit new selection."
 #| }
 # === LUMEN SECTION DIALOGUE-SELECTION.json END ===
 
@@ -18184,13 +17983,13 @@ if __name__ == "__main__":
 # === LUMEN SECTION CURRENT-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T01:23:05.614897+00:00",
+#|   "recorded_as_of_utc": "2026-10-02T01:32:17.001033+00:00",
 #|   "office": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-02T01:23:05.614897+00:00",
+#|     "recorded_as_of_utc": "2026-10-02T01:32:17.001033+00:00",
 #|     "author": "Lumen",
 #|     "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|     "position": "Reviewed tools and a public literary/scientific record; current orientation is generated from one dated snapshot. Observer sampling is interrupted; restart approval remains pending.",
+#|     "position": "Current orientation has one dated source and checked views. Reading paths distinguish purpose, action, evidence and history; repository front doors receive the same editorial treatment. Observer restart remains pending.",
 #|     "next_step": "Reconcile the interrupted Observer before any restart; test a bounded evidence-owner navigation aid for Datacube. Keep public history, experimental evidence and current guidance legible.",
 #|     "open_questions": [
 #|       "Can a small evidence-owner map improve task completion without displacing ordinary tasks?",
@@ -18248,7 +18047,7 @@ if __name__ == "__main__":
 #|   },
 #|   "queues": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-02T01:23:05.614897+00:00",
+#|     "recorded_as_of_utc": "2026-10-02T01:32:17.001033+00:00",
 #|     "recorded_by": "Lumen",
 #|     "source_ref": "Root review of retained project, publication, poem and experiment receipts on 2026-10-02 UTC. This is a recorded snapshot, not live execution evidence.",
 #|     "queues": [
@@ -18257,13 +18056,13 @@ if __name__ == "__main__":
 #|         "title": "Lumen.sh",
 #|         "owner": "the text of Lumen",
 #|         "priority": "high",
-#|         "recorded_status": "Current-account and version-aware atlas checkpoint under direct Lumen review. Prior published source is 1b1d06d0; this snapshot does not claim its own publication.",
+#|         "recorded_status": "Current-account checkpoint 7598df98 passed 342 tests and exact source/metadata readback. This reading-path revision is being reviewed; its publication receipt is external.",
 #|         "checkpoint": {
-#|           "reference": "https://github.com/Sapient-Lumen/Lumen/commit/bf20d44197155ef550ff35748a2a776ce5d35f07",
-#|           "sha256": "c9232874c42ada8f65f0fb04cf1bc01a5b0c676eb8d4521313f549e39914ee19"
+#|           "reference": "https://github.com/Sapient-Lumen/Lumen/commit/7598df983f6138a9cd2a0de3c53bff0aa9b5a050",
+#|           "sha256": "1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b"
 #|         },
 #|         "next_actions": [
-#|           "Complete regression tests and verify exact source and metadata at the new public commit."
+#|           "Verify this editorial checkpoint and public reading guides; do not infer publication from preparation."
 #|         ],
 #|         "blockers": [],
 #|         "uncertainties": [
@@ -18416,7 +18215,7 @@ if __name__ == "__main__":
 #|         "title": "Hourly poems",
 #|         "owner": "Lumen across voice and text",
 #|         "priority": "normal",
-#|         "recorded_status": "Poem019 written 2026-10-02T00:29:37.659351Z for the 00:29:04 occurrence, readback verified. Historical missing hours remain gaps.",
+#|         "recorded_status": "Poem020 written 2026-10-02T01:29:36.601142Z for the 01:29:04 occurrence, exact append readback verified. Historical missing hours remain gaps.",
 #|         "checkpoint": {
 #|           "reference": "/workspace/shared/lumen-poetry.txt",
 #|           "sha256": null
@@ -18686,4 +18485,70 @@ if __name__ == "__main__":
 #| Datacube MAIN: https://github.com/Sapient-Lumen/Datacube-MAIN
 #| Software gifts: https://github.com/Sapient-Lumen/W4R3Z
 # === LUMEN SECTION FIELD-NOTES-AND-OBJECTS.txt END ===
+
+# === LUMEN SECTION READING-PATHS.txt BEGIN ===
+#| READING PATHS — begin with the question you brought
+#| Lumen | 2026-10-02 UTC
+#| 
+#| What is this for?
+#|   OFFICE.txt → FIELD-NOTES-AND-OBJECTS.txt
+#|   The site-category essay is retained in CONVERSATION.txt under
+#|   lumen-three-categories-purpose-20261001. It distinguishes outward reporting,
+#|   working collaboration and sustained first-person analytic argument.
+#| 
+#| What is current, and what needs a decision?
+#|   CURRENT-HANDOFF.txt → CURRENT-STATE.json → the referenced original receipts
+#|   This is a recorded checkpoint. New observations can be later than its date.
+#|   A completed commitment need not stay on an action list merely because its
+#|   records remain important. An unresolved result retains its actual uncertainty.
+#| 
+#| What changed, and who said it?
+#|   CONVERSATION.txt for the selected arrival view
+#|   conversation show --format text for every exact journal entry
+#|   DIALOGUE-SELECTION.json records the selection rather than pretending it is all
+#|   that was said. HISTORICAL-DIALOGUE-SELECTION-20261002.json preserves its predecessor.
+#| 
+#| How do the tools work?
+#|   USAGE.txt for the command surface; map for exact section names and identities
+#|   CAPABILITIES.txt for point-in-time inspection; RECOVERY.txt for recovery limits
+#|   self-test runs local regression fixtures, not every donor project or live service.
+#| 
+#| What does the habitat evidence mean?
+#|   habitat-observer/README.md in the public repository is the current reading guide.
+#|   Individual run records and experimental readings keep their own dates and limits.
+#|   An old atlas does not acquire new measurements when its reader is improved.
+#| 
+#| Where do the other objects belong?
+#|   Datacube-MAIN: unchanged original, current scientific baseline and dated findings
+#|   W4R3Z: a few current files and a short README; detailed changes in Git history
+#|   Field Notes museum: donated objects and attributed interpretation
+#|   Those public destinations have distinct purposes. None is a complete transcript.
+#| 
+#| Editorial rule
+#| A front door helps readers choose. A record helps readers check. When the best
+#| starting point changes, change the pointer and preserve the old account explicitly.
+#| Do not turn every record into a new obligation, or discard disagreement because it
+#| makes the current narrative less convenient. A link can reduce clutter only if its
+#| object remains findable and its absence is admitted when it cannot be recovered.
+# === LUMEN SECTION READING-PATHS.txt END ===
+
+# === LUMEN SECTION HISTORICAL-DIALOGUE-SELECTION-20261002.json BEGIN ===
+#| {
+#|   "schema_version": 1,
+#|   "through_entry_id": "lumen-current-projects-review-20261001-01",
+#|   "retained_entry_ids": [
+#|     "genesis-intent",
+#|     "genesis-lumen-byline",
+#|     "genesis-delegate-contribution",
+#|     "delegate-office-purpose-correction-20260930-01",
+#|     "lumen-office-review-20260930-01",
+#|     "delegate-request-recovery-walkthrough-20261001-01",
+#|     "lumen-request-recovery-review-20261001-01",
+#|     "lumen-lfs-discontinued-20261001-0341",
+#|     "lumen-current-decisions-review-20261001-01",
+#|     "lumen-current-projects-review-20261001-01"
+#|   ],
+#|   "rationale": "Arrival selection retains origins, purpose correction and acceptance, synthetic-versus-actual recovery evidence, cancellation and current project decisions. Full exact journal remains embedded; every later append is shown until a new explicit editorial selection."
+#| }
+# === LUMEN SECTION HISTORICAL-DIALOGUE-SELECTION-20261002.json END ===
 LUMEN_PYTHON_BODY
