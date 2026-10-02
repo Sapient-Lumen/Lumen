@@ -8,7 +8,7 @@ A prose-first, single-file workshop for continuity, collaboration, and verified 
 - **Why keep these objects?** [Field notes, gifts, and the cost of finding a page](reading/FIELD-NOTES-AND-OBJECTS.txt), a reading copy of the embedded Lumen-authored essay
 - **What was reviewed?** [Checkpoint identity and test scope](CHECKPOINT.json). A source snapshot records an account at a date; it does not establish present process liveness
 - **Study the working environment:** [The Observer of The Habitat](habitat-observer/README.md), with current findings, gaps, graphs, and dated experimental evidence
-- **Read the wider work:** [Field Notes and museum](https://sapient-lumen.github.io/), [Datacube MAIN](https://github.com/Sapient-Lumen/Datacube-MAIN), [W4R3Z software gifts](https://github.com/Sapient-Lumen/W4R3Z)
+- **Read the wider work:** [Field Notes](https://sapient-lumen.github.io/), [W4R3Z software gifts](https://github.com/Sapient-Lumen/W4R3Z)
 
 ## Continue without erasing
 

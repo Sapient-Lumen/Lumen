@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "source_sha256": "41dc820a0b959f8f1c8aad95278d0194b749e78aa58e9ac9f59b2843932f6371",
-  "source_bytes": 1245184,
-  "review_ref": "lumen-reading-paths-reviewed-20261002",
+  "source_sha256": "89e59b8f769145159454ff9553b4ec1c0a29114ca118cb5e0b360137042e824a",
+  "source_bytes": 1245282,
+  "review_ref": "lumen-datacube-retirement-reviewed-20261002",
   "tests": 342,
   "repository": "Sapient-Lumen/Lumen",
   "publication_mode": "source and metadata at same commit; remote verification required",
-  "qualification": "Editorial reading paths and explicit arrival reselection; complete exact prior journal and selection retained. Current views remain consistency-checked. Embedded programs unchanged from the prior 342-test checkpoint. Observer restart remains pending."
+  "qualification": "Datacube retirement and separate Observer restart reflected in current views and explicit discontinuation. Historical journal retained. Embedded programs unchanged. Collector remains on its pinned launch source."
 }

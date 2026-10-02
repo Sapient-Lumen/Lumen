@@ -58,18 +58,18 @@ exit 127
 # === LUMEN SECTION START-HERE.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
-#| CURRENT RECORDED ACCOUNT — 2026-10-02T01:32:17.001033+00:00
+#| CURRENT RECORDED ACCOUNT — 2026-10-02T02:11:47.328662+00:00
 #| This view is generated from CURRENT-STATE.json. It is not a live status feed.
 #| It explicitly supersedes the previous orientation for current work; exact predecessors remain historical.
 #| Read original receipts before acting; timestamps and hashes do not grant authority.
 #| 
-#| Current orientation has one dated source and checked views. Reading paths distinguish purpose, action, evidence and history; repository front doors receive the same editorial treatment. Observer restart remains pending.
+#| Datacube MAIN is discontinued by explicit user decision. Its repository and local experimental copies were deleted; museum content removed from the live site branch. Observer has a separately labeled approved continuation through 2026-10-02 19:55:09 UTC.
 #| 
-#| Next: Reconcile the interrupted Observer before any restart; test a bounded evidence-owner navigation aid for Datacube. Keep public history, experimental evidence and current guidance legible.
+#| Next: Verify the current Observer prefix and terminal outcome at its original endpoint; preserve interruptions honestly. Continue Lumen, poetry, writing and separately authorized W4R3Z work. Do not restart Datacube.
 #| 
 #| Lumen.sh [waiting]
 #| Current-account checkpoint 7598df98 passed 342 tests and exact source/metadata readback. This reading-path revision is being reviewed; its publication receipt is external.
-#| Next: Verify this editorial checkpoint and public reading guides; do not infer publication from preparation.
+#| Next: Verify and publish the reviewed retirement/Observer-state correction.
 #| 
 #| LFS++ [canceled]
 #| Discontinued by explicit user voice request on 2026-10-01; preserve files and evidence.
@@ -79,9 +79,7 @@ exit 127
 #| Next: Reconcile each local date and category before publication; read prior essays thoroughly before the next deep essay.
 #| 
 #| Datacube MAIN science [waiting]
-#| Scientific baseline remains rev1183. Pilots14/15 support bounded repeated reads; that benchmark family is closed. Pilot16 acquisition audit resolved 6/6 and 4/6 targets; two defensible abstentions exposed a read-budget bottleneck. Original1179 is public unchanged. Later rev1183 distribution correction remains pending.
-#| Next: Prepare a prospective evidence-owner navigation aid with ordinary-task controls; retain prose and baselines.
-#| Blocked: Uncorrected later rev1183 release asset removal awaits explicit approval; do not republish it.
+#| Discontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.
 #| 
 #| Hourly poems [waiting]
 #| Poem020 written 2026-10-02T01:29:36.601142Z for the 01:29:04 occurrence, exact append readback verified. Historical missing hours remain gaps.
@@ -99,9 +97,8 @@ exit 127
 #| Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.
 #| 
 #| Habitat observer [blocked]
-#| Long-run retained prefix: 216 samples through 2026-10-01T23:30:09.258993Z, no closing record; execution session unavailable at later lookup. Cause unknown. Separate v2 ten-minute trial completed 10/10 slots with zero misses and linked completed costs.
-#| Next: Wait for the pending decision on a separately labeled improved-collector run ending at the original 2026-10-02T19:55:09Z deadline.
-#| Blocked: Restart approval pending; no automatic restart.
+#| Approved separate fixed-grid run started2026-10-02T01:54:37UTC; first three samples verified through01:56:37UTC. Deadline19:55:09UTC today. Old23:30UTC interruption preserved.
+#| Next: Reconcile run habitat-dce29891465348ba8bb080171d2ccb83 at original endpoint; no automatic restart or backfill.
 #| 
 #| Meaning and editorial direction: FIELD-NOTES-AND-OBJECTS.txt.
 #| Exact previous orientation: HISTORICAL-ORIENTATION-20261001.json.
@@ -518,10 +515,21 @@ exit 127
 #| retaining their predecessor accounts. W4R3Z already has the requested simple shape and 
 #| does not need extra structure merely for consistency.
 #| 
+#| [lumen-datacube-discontinued-20261002]
+#| 2026-10-02T02:11:47.677656+00:00 | Lumen | main assistant and reviewer | decision
+#| Attribution: caller-supplied; not identity authentication or approval
+#| h0p3 explicitly approved discontinuing Datacube MAIN and removing its repository, local 
+#| experimental working copies, museum page and collected objects on2026-10-02. Hourly 
+#| experiments are stopped. This is a practical allocation decision for our workflow, not a
+#|  universal verdict on the artifact or its prose. h0p3 considers it highly tailored to 
+#| ChatGPT Pro and may later contribute something similar to W4R3Z; that remains a future 
+#| choice. Observer continues separately under the approved original deadline. Earlier 
+#| Datacube guidance and links are historical, not active obligations.
+#| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
 # === LUMEN SECTION CONTINUITY.txt BEGIN ===
-#| CONTINUITY — current reading path, recorded 2026-10-02T01:32:17.001033+00:00
+#| CONTINUITY — current reading path, recorded 2026-10-02T02:11:47.328662+00:00
 #| 
 #| Begin with CURRENT-HANDOFF.txt, generated from CURRENT-STATE.json.
 #| OFFICE-STATE.json and WORK-QUEUES.json are derived from that same snapshot.
@@ -3381,6 +3389,7 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-current-account-review-20261002", "expected_source_sha256": "95cabc5681185f58508a1c2341179d44b6d68105052a9398cfdf6cbc90723555", "request_sha256": "c4dcabf00b04e8d4d5a20cc7aba84ad1caa83f0230a71454238f6b2cde674c58", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I revised the current account into one dated source with consistency-checked views, retaining the prior orientation verbatim. The atlas now distinguishes legacy, fixed-grid v2 and unknown instrumentation, checks linked completed costs and slot conservation, and keeps unknown tails visible. I added my account of the museum, donated software and what a reading budget costs. This source edit does not restart the Observer. Regression and publication outcomes belong in the separate checkpoint receipt.", "timestamp_utc": "2026-10-02T01:23:06.502847+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "h0p3-apply-principle-20261002", "expected_source_sha256": "accce98dd4521355025798596bb4470c75006ea9421a9ed5d7425c400626e8a2", "request_sha256": "50f6ac85d34e2830a2ea6b0e3e2c1f104f5c09e929bbebf67ee2c75923e1b184", "role": "human co-creator", "speaker": "h0p3", "status": "request", "text": "Again, please edit it to your liking. And, should that principle be applied elsewhere? Do that, too, please.", "timestamp_utc": "2026-10-02T01:32:17.303274+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-reading-paths-20261002", "expected_source_sha256": "f10c16b80d72167bf2377796bd5da7174298edc6b6634b4c8aaf583526c3e181", "request_sha256": "dbbbe301d52413de2c0e5b00abb2eaf8135f410f8c6a716487682aaaa93ae9a2", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I am applying the distinction between a front door and a record to the public repositories as well as this source. The arrival conversation is explicitly curated again; every exact journal entry remains. Task-specific reading paths make purpose, current decisions, machinery and historical evidence easier to locate. The Observer and Datacube guides should foreground the latest reviewed results and pending limitations, retaining their predecessor accounts. W4R3Z already has the requested simple shape and does not need extra structure merely for consistency.", "timestamp_utc": "2026-10-02T01:32:17.793689+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-datacube-discontinued-20261002", "expected_source_sha256": "c9439dfb822aade6f666a63ebf20ad60ad140cf8576f64c6dc4d1e9fdea57c19", "request_sha256": "15a167ceaf541b2b8ec6fbdb60f487fd8697f22337c9a34d467776d4773ea11e", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "h0p3 explicitly approved discontinuing Datacube MAIN and removing its repository, local experimental working copies, museum page and collected objects on2026-10-02. Hourly experiments are stopped. This is a practical allocation decision for our workflow, not a universal verdict on the artifact or its prose. h0p3 considers it highly tailored to ChatGPT Pro and may later contribute something similar to W4R3Z; that remains a future choice. Observer continues separately under the approved original deadline. Earlier Datacube guidance and links are historical, not active obligations.", "timestamp_utc": "2026-10-02T02:11:47.677656+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -6843,13 +6852,12 @@ if __name__ == "__main__":
 # === LUMEN SECTION OFFICE-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T01:32:17.001033+00:00",
+#|   "recorded_as_of_utc": "2026-10-02T02:11:47.328662+00:00",
 #|   "author": "Lumen",
 #|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|   "position": "Current orientation has one dated source and checked views. Reading paths distinguish purpose, action, evidence and history; repository front doors receive the same editorial treatment. Observer restart remains pending.",
-#|   "next_step": "Reconcile the interrupted Observer before any restart; test a bounded evidence-owner navigation aid for Datacube. Keep public history, experimental evidence and current guidance legible.",
+#|   "position": "Datacube MAIN is discontinued by explicit user decision. Its repository and local experimental copies were deleted; museum content removed from the live site branch. Observer has a separately labeled approved continuation through 2026-10-02 19:55:09 UTC.",
+#|   "next_step": "Verify the current Observer prefix and terminal outcome at its original endpoint; preserve interruptions honestly. Continue Lumen, poetry, writing and separately authorized W4R3Z work. Do not restart Datacube.",
 #|   "open_questions": [
-#|     "Can a small evidence-owner map improve task completion without displacing ordinary tasks?",
 #|     "Which measured costs and gaps change our working decisions?",
 #|     "How can a current account remain short without erasing the history that corrects it?"
 #|   ],
@@ -10919,7 +10927,7 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T01:32:17.001033+00:00",
+#|   "recorded_as_of_utc": "2026-10-02T02:11:47.328662+00:00",
 #|   "recorded_by": "Lumen",
 #|   "source_ref": "Root review of retained project, publication, poem and experiment receipts on 2026-10-02 UTC. This is a recorded snapshot, not live execution evidence.",
 #|   "queues": [
@@ -10934,7 +10942,7 @@ if __name__ == "__main__":
 #|         "sha256": "1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b"
 #|       },
 #|       "next_actions": [
-#|         "Verify this editorial checkpoint and public reading guides; do not infer publication from preparation."
+#|         "Verify and publish the reviewed retirement/Observer-state correction."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -11044,21 +11052,17 @@ if __name__ == "__main__":
 #|       "title": "Datacube MAIN science",
 #|       "owner": "Lumen across voice and text; delegates execute scoped experiments",
 #|       "priority": "high",
-#|       "recorded_status": "Scientific baseline remains rev1183. Pilots14/15 support bounded repeated reads; that benchmark family is closed. Pilot16 acquisition audit resolved 6/6 and 4/6 targets; two defensible abstentions exposed a read-budget bottleneck. Original1179 is public unchanged. Later rev1183 distribution correction remains pending.",
+#|       "recorded_status": "Discontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.",
 #|       "checkpoint": {
 #|         "reference": "https://github.com/Sapient-Lumen/Datacube-MAIN/releases/tag/rev1183",
 #|         "sha256": "0164e8397126ca49287fbc6b8b95f211a6e77ce8ffc120b504d27c3c37e74eb3"
 #|       },
-#|       "next_actions": [
-#|         "Prepare a prospective evidence-owner navigation aid with ordinary-task controls; retain prose and baselines."
-#|       ],
-#|       "blockers": [
-#|         "Uncorrected later rev1183 release asset removal awaits explicit approval; do not republish it."
-#|       ],
+#|       "next_actions": [],
+#|       "blockers": [],
 #|       "uncertainties": [
-#|         "Hourly requests are not proof of execution. Earlier missed occurrences are retained as gaps. Small public pilots are not held-out efficacy evidence."
+#|         "The practical decision concerned this workflow; it does not establish general failure or evaluate ChatGPT Pro suitability."
 #|       ],
-#|       "interruption_recovery": "Read /workspace/scratch/823ba11b4d75/science-intake-20261001/PROJECT-STATUS.json and LUMEN-SCIENCE-DIRECTION.md through current permitted access. Preserve raw attempts and distinguish saved guidance from observed adoption.",
+#|       "interruption_recovery": "Do not revive or reconstruct. Any future contribution to W4R3Z requires a new user request.",
 #|       "evidence": [
 #|         {
 #|           "kind": "reference",
@@ -11229,19 +11233,17 @@ if __name__ == "__main__":
 #|       "title": "Habitat observer",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "Long-run retained prefix: 216 samples through 2026-10-01T23:30:09.258993Z, no closing record; execution session unavailable at later lookup. Cause unknown. Separate v2 ten-minute trial completed 10/10 slots with zero misses and linked completed costs.",
+#|       "recorded_status": "Approved separate fixed-grid run started2026-10-02T01:54:37UTC; first three samples verified through01:56:37UTC. Deadline19:55:09UTC today. Old23:30UTC interruption preserved.",
 #|       "checkpoint": {
 #|         "reference": "Embedded habitat_observer.py",
 #|         "sha256": "18ff2d24f6f2cdf8e5188474993d401dac296b8c72f6bfe4686bc91cb9758987"
 #|       },
 #|       "next_actions": [
-#|         "Wait for the pending decision on a separately labeled improved-collector run ending at the original 2026-10-02T19:55:09Z deadline."
+#|         "Reconcile run habitat-dce29891465348ba8bb080171d2ccb83 at original endpoint; no automatic restart or backfill."
 #|       ],
-#|       "blockers": [
-#|         "Restart approval pending; no automatic restart."
-#|       ],
+#|       "blockers": [],
 #|       "uncertainties": [
-#|         "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|         "Later liveness requires fresh observation; old interruption cause remains unknown."
 #|       ],
 #|       "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
 #|       "evidence": [
@@ -16806,6 +16808,15 @@ if __name__ == "__main__":
 #|       "journal_entry_id": "lumen-lfs-discontinued-20261001-0341",
 #|       "recorded_at_utc": "2026-10-01T03:41:55Z",
 #|       "attribution": "Lumen records h0p3 explicit voice cancellation; project files retained"
+#|     },
+#|     {
+#|       "decision_id": "datacube-discontinued-20261002",
+#|       "project_id": "datacube-main",
+#|       "kind": "discontinue",
+#|       "supersedes": null,
+#|       "journal_entry_id": "lumen-datacube-discontinued-20261002",
+#|       "recorded_at_utc": "2026-10-02T02:11:47.328662+00:00",
+#|       "attribution": "Lumen records h0p3 explicit retirement and scoped deletion confirmation."
 #|     }
 #|   ]
 #| }
@@ -17983,16 +17994,15 @@ if __name__ == "__main__":
 # === LUMEN SECTION CURRENT-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T01:32:17.001033+00:00",
+#|   "recorded_as_of_utc": "2026-10-02T02:11:47.328662+00:00",
 #|   "office": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-02T01:32:17.001033+00:00",
+#|     "recorded_as_of_utc": "2026-10-02T02:11:47.328662+00:00",
 #|     "author": "Lumen",
 #|     "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|     "position": "Current orientation has one dated source and checked views. Reading paths distinguish purpose, action, evidence and history; repository front doors receive the same editorial treatment. Observer restart remains pending.",
-#|     "next_step": "Reconcile the interrupted Observer before any restart; test a bounded evidence-owner navigation aid for Datacube. Keep public history, experimental evidence and current guidance legible.",
+#|     "position": "Datacube MAIN is discontinued by explicit user decision. Its repository and local experimental copies were deleted; museum content removed from the live site branch. Observer has a separately labeled approved continuation through 2026-10-02 19:55:09 UTC.",
+#|     "next_step": "Verify the current Observer prefix and terminal outcome at its original endpoint; preserve interruptions honestly. Continue Lumen, poetry, writing and separately authorized W4R3Z work. Do not restart Datacube.",
 #|     "open_questions": [
-#|       "Can a small evidence-owner map improve task completion without displacing ordinary tasks?",
 #|       "Which measured costs and gaps change our working decisions?",
 #|       "How can a current account remain short without erasing the history that corrects it?"
 #|     ],
@@ -18047,7 +18057,7 @@ if __name__ == "__main__":
 #|   },
 #|   "queues": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-02T01:32:17.001033+00:00",
+#|     "recorded_as_of_utc": "2026-10-02T02:11:47.328662+00:00",
 #|     "recorded_by": "Lumen",
 #|     "source_ref": "Root review of retained project, publication, poem and experiment receipts on 2026-10-02 UTC. This is a recorded snapshot, not live execution evidence.",
 #|     "queues": [
@@ -18062,7 +18072,7 @@ if __name__ == "__main__":
 #|           "sha256": "1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b"
 #|         },
 #|         "next_actions": [
-#|           "Verify this editorial checkpoint and public reading guides; do not infer publication from preparation."
+#|           "Verify and publish the reviewed retirement/Observer-state correction."
 #|         ],
 #|         "blockers": [],
 #|         "uncertainties": [
@@ -18172,21 +18182,17 @@ if __name__ == "__main__":
 #|         "title": "Datacube MAIN science",
 #|         "owner": "Lumen across voice and text; delegates execute scoped experiments",
 #|         "priority": "high",
-#|         "recorded_status": "Scientific baseline remains rev1183. Pilots14/15 support bounded repeated reads; that benchmark family is closed. Pilot16 acquisition audit resolved 6/6 and 4/6 targets; two defensible abstentions exposed a read-budget bottleneck. Original1179 is public unchanged. Later rev1183 distribution correction remains pending.",
+#|         "recorded_status": "Discontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.",
 #|         "checkpoint": {
 #|           "reference": "https://github.com/Sapient-Lumen/Datacube-MAIN/releases/tag/rev1183",
 #|           "sha256": "0164e8397126ca49287fbc6b8b95f211a6e77ce8ffc120b504d27c3c37e74eb3"
 #|         },
-#|         "next_actions": [
-#|           "Prepare a prospective evidence-owner navigation aid with ordinary-task controls; retain prose and baselines."
-#|         ],
-#|         "blockers": [
-#|           "Uncorrected later rev1183 release asset removal awaits explicit approval; do not republish it."
-#|         ],
+#|         "next_actions": [],
+#|         "blockers": [],
 #|         "uncertainties": [
-#|           "Hourly requests are not proof of execution. Earlier missed occurrences are retained as gaps. Small public pilots are not held-out efficacy evidence."
+#|           "The practical decision concerned this workflow; it does not establish general failure or evaluate ChatGPT Pro suitability."
 #|         ],
-#|         "interruption_recovery": "Read /workspace/scratch/823ba11b4d75/science-intake-20261001/PROJECT-STATUS.json and LUMEN-SCIENCE-DIRECTION.md through current permitted access. Preserve raw attempts and distinguish saved guidance from observed adoption.",
+#|         "interruption_recovery": "Do not revive or reconstruct. Any future contribution to W4R3Z requires a new user request.",
 #|         "evidence": [
 #|           {
 #|             "kind": "reference",
@@ -18357,19 +18363,17 @@ if __name__ == "__main__":
 #|         "title": "Habitat observer",
 #|         "owner": "Lumen across voice and text",
 #|         "priority": "normal",
-#|         "recorded_status": "Long-run retained prefix: 216 samples through 2026-10-01T23:30:09.258993Z, no closing record; execution session unavailable at later lookup. Cause unknown. Separate v2 ten-minute trial completed 10/10 slots with zero misses and linked completed costs.",
+#|         "recorded_status": "Approved separate fixed-grid run started2026-10-02T01:54:37UTC; first three samples verified through01:56:37UTC. Deadline19:55:09UTC today. Old23:30UTC interruption preserved.",
 #|         "checkpoint": {
 #|           "reference": "Embedded habitat_observer.py",
 #|           "sha256": "18ff2d24f6f2cdf8e5188474993d401dac296b8c72f6bfe4686bc91cb9758987"
 #|         },
 #|         "next_actions": [
-#|           "Wait for the pending decision on a separately labeled improved-collector run ending at the original 2026-10-02T19:55:09Z deadline."
+#|           "Reconcile run habitat-dce29891465348ba8bb080171d2ccb83 at original endpoint; no automatic restart or backfill."
 #|         ],
-#|         "blockers": [
-#|           "Restart approval pending; no automatic restart."
-#|         ],
+#|         "blockers": [],
 #|         "uncertainties": [
-#|           "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|           "Later liveness requires fresh observation; old interruption cause remains unknown."
 #|         ],
 #|         "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
 #|         "evidence": [
@@ -18519,9 +18523,9 @@ if __name__ == "__main__":
 #|   An old atlas does not acquire new measurements when its reader is improved.
 #| 
 #| Where do the other objects belong?
-#|   Datacube-MAIN: unchanged original, current scientific baseline and dated findings
 #|   W4R3Z: a few current files and a short README; detailed changes in Git history
-#|   Field Notes museum: donated objects and attributed interpretation
+#|   Datacube MAIN and its museum were removed by user decision on2026-10-02.
+#|   Their older addresses are historical and should not be used as current routes.
 #|   Those public destinations have distinct purposes. None is a complete transcript.
 #| 
 #| Editorial rule
