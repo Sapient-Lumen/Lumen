@@ -34,6 +34,9 @@ exit 127
 #| START HERE — choose a reading path
 #| 
 #| READING-PATHS.txt offers task-specific routes through prose, current state and evidence.
+#| Two-carrier work: CURRENT-HANDOFF.txt and HTML-OPERATING.txt describe the current
+#| HTML bridge, complete-source pin, explicit execution boundary, and pending migration.
+#| Poetry is paused; old schedules and historical snapshots are not append requests.
 #| 
 #| Reopening after workspace loss: WORKSHOP-RECOVERY.txt and the private recovery inventory.
 #| Everyone: CURRENT-HANDOFF.txt → OFFICE.txt → FIELD-NOTES-AND-OBJECTS.txt.
@@ -59,43 +62,43 @@ exit 127
 # === LUMEN SECTION START-HERE.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
-#| CURRENT RECORDED ACCOUNT — 2026-10-02T15:43:50.842277+00:00
+#| CURRENT RECORDED ACCOUNT — 2026-10-03T09:00:35.971636+00:00
 #| This view is generated from CURRENT-STATE.json. It is not a live status feed.
 #| It explicitly supersedes the previous orientation for current work; exact predecessors remain historical.
 #| Read original receipts before acting; timestamps and hashes do not grant authority.
 #| 
-#| Guarded reopening and preservation are published and verified. The next bounded increment adds a private read-only working-state briefing and separates Observer chain verification from sealed-evidence completeness. Recorded work categories and review ages do not establish running processes or authorize retries.
+#| The two-carrier migration is active. Lumen.html owns the public reading surface, accepted source, canonical build, and existing delivery implementation; Lumen.sh supplies the reusable operating interface. The portable-first rev0038 HTML is publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Its arrival guide is included and the full repository ZIP is optional. The first shell HTML bridge passed 447 tests in implementation and independent Lumen review. Explicit carried rev0038 verify and ship each passed 236 tests; all six current public exports matched the immutable remote readback bytes and the post-run source-pin check passed. Shell bridge publication remains pending review. Poetry is PAUSED by user direction: do not append. The Observer sampler remains stopped, IoTox execution remains parked, and LFS++ and Datacube MAIN science remain canceled. This dated account records direction and evidence; it grants no permission and does not establish live process state.
 #| 
-#| Next: Finish final-source tests and a cold working-state briefing exercise, preserve selected records, and publish the reviewed source. IoTox execution is parked by the user; the Observer sampler remains stopped.
+#| Next: Review the completed release and bridge receipts, and preserve/publish only the reviewed shell checkpoint through the established authorized process. Continue the approved two-carrier migration in bounded reviewed slices: source-editing/toolset-only pins and portable delivery-journal migration are still pending. Consult HTML-OPERATING.txt for this first bridge slice and current user directions before any execution or retry.
 #| 
 #| Lumen.sh [running]
-#| Working-state briefing and evidence-completeness increment under final verification; previous guarded-reopening checkpoint passed 398 tests.
-#| Next: Verify and preserve this increment; use private working-state briefing for current task categories.
+#| Two-carrier migration active. The bounded HTML bridge candidate passed 447 tests and independent Lumen review. Orientation is being reconciled before shell publication; migration is not complete.
+#| Next: Review the final shell checkpoint and current release receipts before authorized preservation/publication.
+#| Next: Continue source-editing/toolset-pin and portable journal slices only within their reviewed scope.
 #| 
 #| LFS++ [canceled]
 #| Discontinued by explicit user voice request on 2026-10-01; preserve files and evidence.
 #| 
 #| GitHub presence [waiting]
-#| Three October1 local-date blog categories are published. Museum is live with the exact donated poem and explicit interpretive limits. W4R3Z is flat: short README, reviewed sandcodex and original configuration.nix. Monsternix review was static; developer handoff was carried by h0p3.
-#| Next: Reconcile each local date and category before publication; read prior essays thoroughly before the next deep essay.
+#| Portable-first rev0038 Lumen.html publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Arrival guide included; the full repository ZIP is optional. Carried verify and ship each passed 236 tests; all six current public exports matched immutable remote readback bytes and the post-run source-pin check passed.
+#| Next: Use the completed current release receipts when reviewing the shell bridge; do not infer a new writing or publication request from older queue entries.
 #| 
-#| Datacube MAIN science [waiting]
+#| Datacube MAIN science [canceled]
 #| Discontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.
 #| 
-#| Hourly poems [waiting]
-#| 33 poems privately preserved as of this dated review; existing gaps remain explicit.
-#| Next: Reconcile occurrence IDs and append only at each scheduled wake; preserve locally and remotely.
+#| Hourly poems [blocked]
+#| PAUSED by explicit user direction. Do not append a poem or resume scheduled writing. Previous poem counts and occurrence records are historical evidence only.
+#| Blocked: User pause remains in force.
 #| 
 #| Timer reliability experiment [completed]
-#| Closed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.
+#| Historical closed experiment: Closed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.
 #| 
 #| Return-driven reliability experiment [blocked]
-#| Observation window closed: 49 verified effects from 50 dispatches; original worker50 result unobserved. Absence from later inventory does not establish its failure cause.
-#| Next: Record a recoverable original late result with actual observation time if it arrives; do not dispatch a replacement or successor.
+#| Historical closed experiment: Observation window closed: 49 verified effects from 50 dispatches; original worker50 result unobserved. Absence from later inventory does not establish its failure cause.
 #| Blocked: Original worker50 result remains unobserved.
 #| 
 #| Original longevity experiment [completed]
-#| Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.
+#| Historical closed experiment: Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.
 #| 
 #| Habitat observer [blocked]
 #| Sampler remains stopped. Latest 90-sample raw dataset is unavailable; prior receipt is retained. Original-trial publication is blocked by missing local logs.
@@ -103,7 +106,7 @@ exit 127
 #| Blocked: Latest raw sample files unavailable after workspace loss.
 #| 
 #| Meaning and editorial direction: FIELD-NOTES-AND-OBJECTS.txt.
-#| Exact previous orientation: HISTORICAL-ORIENTATION-20261001.json.
+#| Exact previous orientation: HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.
 #| The attributed journal and earlier archives remain evidence, not pending instructions.
 # === LUMEN SECTION CURRENT-HANDOFF.txt END ===
 
@@ -566,7 +569,7 @@ exit 127
 # === LUMEN SECTION CONVERSATION.txt END ===
 
 # === LUMEN SECTION CONTINUITY.txt BEGIN ===
-#| CONTINUITY — current reading path, recorded 2026-10-02T15:43:50.842277+00:00
+#| CONTINUITY — current reading path, recorded 2026-10-03T09:00:35.971636+00:00
 #| 
 #| Begin with CURRENT-HANDOFF.txt, generated from CURRENT-STATE.json.
 #| OFFICE-STATE.json and WORK-QUEUES.json are derived from that same snapshot.
@@ -630,6 +633,8 @@ PROGRAMS += ("observer_atlas.py", "test_observer_atlas.py")
 
 PROGRAMS += ("workshop.py", "test_workshop.py")
 
+PROGRAMS += ("html_interface.py", "test_html_interface.py")
+
 EXPECTED_SECTIONS = set(PROGRAMS) | {"CONSTITUTION.txt", "CONTINUITY.txt", "USAGE.txt",
                                     "README.txt", "voice-container-bridge-spec.md", "conversation.jsonl",
                                     "project-registry.schema.json", "lumen-multiproject-spec.md", "project-request.schema.json", "IDENTITY.txt", "OFFICE.txt", "CONVERSATION.txt", "CURRENT-HANDOFF.txt", "CAPABILITIES.txt", "VOICE-AWAKENING.txt", "TEXT-AWAKENING.txt", "HISTORICAL-OFFICE-20260930.txt", "HISTORICAL-HANDOFF-PROSE.txt", "OFFICE-STATE.json", "OFFICE-COMMANDS.txt", "PROPOSALS.txt", "proposal-request.schema.json", "HISTORICAL-HANDOFF-OFFICE.txt", "HISTORICAL-OFFICE-STATE.json", "REVIEWS.txt", "review-request.schema.json", "HISTORICAL-HANDOFF-PACKAGING.txt", "HISTORICAL-OFFICE-STATE-PACKAGING.json", "RECOVERY.txt", "HISTORICAL-RECOVERY-FIRST.txt", "PLANS.txt", "PROCESS-NEXT.txt", "lumen-process-control-spec.md", "lumen-continuing-office-spec.md", "PROCESS-CONSOLE.txt", "process-observation.schema.json", "HISTORICAL-HANDOFF-REVIEWS.txt", "HISTORICAL-OFFICE-STATE-REVIEWS.json", "PROCESS-EXPORT.txt", "process-export-request.schema.json", "DELIVERY.txt", "HISTORICAL-HANDOFF-INSPECTION.txt", "HISTORICAL-OFFICE-STATE-INSPECTION.json", "HISTORICAL-NAME-SPELLING.json", "WORK-QUEUES.json", "WORK-QUEUES.txt", "work-queue.schema.json", "HISTORICAL-HANDOFF-EXPORT.txt", "HISTORICAL-OFFICE-STATE-EXPORT.json", "HISTORICAL-WORK-QUEUES-FIRST.json", "REAL-PROJECTS.txt", "HISTORICAL-WORK-QUEUES-PRE-REGISTRATION.json", "HISTORICAL-HANDOFF-QUEUES.txt", "HISTORICAL-OFFICE-STATE-QUEUES.json", "PUBLICATION-OUTBOX.txt", "PUBLICATION-OBSERVATION.json", "HISTORICAL-HANDOFF-REGISTRATION.txt", "HISTORICAL-OFFICE-STATE-REGISTRATION.json", "PUBLICATION-ATTEMPTS.txt", "HISTORICAL-PUBLICATION-OUTBOX-READONLY.txt", "HISTORICAL-HANDOFF-OUTBOX.txt", "HISTORICAL-OFFICE-STATE-OUTBOX.json", "PUBLICATION-CANCELLATION-OBSERVATION.json", "CHECKPOINTS.txt", "HISTORICAL-HANDOFF-ATTEMPTS.txt", "HISTORICAL-OFFICE-STATE-ATTEMPTS.json", "CHECKPOINT-RESTORE.txt", "HISTORICAL-CHECKPOINTS-PLAN-ONLY.txt", "HISTORICAL-HANDOFF-CHECKPOINT.txt", "HISTORICAL-OFFICE-STATE-CHECKPOINT.json", "SCHEDULE-RECONCILIATION.txt", "HISTORICAL-HANDOFF-RESTORE.txt", "HISTORICAL-OFFICE-STATE-RESTORE.json", "GIT-PUBLICATION.txt", "HISTORICAL-HANDOFF-SCHEDULE.txt", "HISTORICAL-OFFICE-STATE-SCHEDULE.json", "REQUEST-RECOVERY.txt", "HISTORICAL-RECOVERY-PRE-WALKTHROUGH.txt", "HISTORICAL-HANDOFF-GIT-PLAN.txt", "HISTORICAL-OFFICE-STATE-GIT-PLAN.json", "HISTORICAL-HANDOFF-REQUEST-RECOVERY.txt", "HISTORICAL-OFFICE-STATE-REQUEST-RECOVERY.json", "HISTORICAL-HANDOFF-OUTBOX-DOGFOOD.txt", "HISTORICAL-OFFICE-STATE-OUTBOX-DOGFOOD.json"}
@@ -647,6 +652,8 @@ EXPECTED_SECTIONS.update({'READING-PATHS.txt', 'HISTORICAL-DIALOGUE-SELECTION-20
 
 
 EXPECTED_SECTIONS.update({"WORKSHOP-RECOVERY.txt", "HISTORICAL-WORKSPACE-20261002.json"})
+
+EXPECTED_SECTIONS.update({"HTML-OPERATING.txt", "HTML-INTERFACE.json", "HISTORICAL-ORIENTATION-PRE-HTML-20261003.json"})
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
@@ -812,7 +819,7 @@ def current_views(state):
         lines += ['Blocked: '+x for x in item['blockers']]
         lines += ['']
     lines += ['Meaning and editorial direction: FIELD-NOTES-AND-OBJECTS.txt.',
-              'Exact previous orientation: HISTORICAL-ORIENTATION-20261001.json.',
+              'Exact previous orientation: HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.',
               'The attributed journal and earlier archives remain evidence, not pending instructions.']
     continuity = ('CONTINUITY — current reading path, recorded '+stamp+'\n\n'
         'Begin with CURRENT-HANDOFF.txt, generated from CURRENT-STATE.json.\n'
@@ -854,6 +861,7 @@ def show_status(source):
     print("          run --state-dir DIR LEGACY_ARGUMENTS, request --state-dir DIR FILE,")
     print("          archive inspect/materialize, project registry/request/receipt commands, status/handoff, capabilities, proposal, review, process inspect/tail/export,")
     print("          queue, publication, checkpoint, schedule, observer, atlas, self-test")
+    print("          html inspect/extract/run/host — non-executing intake and explicit pinned HTML CLI")
     print("Use help for invocation details and permission boundaries.")
     print("Standalone recovery inventory: source RECOVERY.txt")
     print("Request-to-recovery walkthrough: source REQUEST-RECOVERY.txt")
@@ -1089,6 +1097,8 @@ def parser():
     review.add_argument("arguments", nargs=argparse.REMAINDER)
     proposal = commands.add_parser("proposal", help="inert project candidate preparation and review inspection")
     proposal.add_argument("arguments", nargs=argparse.REMAINDER)
+    html = commands.add_parser("html", help="non-executing HTML intake and explicit pinned canonical CLI")
+    html.add_argument("arguments", nargs=argparse.REMAINDER)
     archive = commands.add_parser("archive", help="non-executing ZIP inspect/materialize")
     archive.add_argument("arguments", nargs=argparse.REMAINDER)
     project = commands.add_parser("project", help="explicit project registry, admitted requests, and read-only receipt lookup")
@@ -1155,6 +1165,9 @@ def main(argv=None):
         code = sections(source)[0]["capabilities.py"]
         exec(compile(code, "<Lumen.sh:capabilities.py>", "exec"), module.__dict__)
         return module.main(args.arguments, source_sha256=sha(source))
+    elif args.command == "html":
+        with in_memory_programs(source, ["zip_intake", "html_interface"]) as modules:
+            return modules["html_interface"].main(args.arguments, source_sha256=sha(source))
     elif args.command == "observer":
         with in_memory_programs(source, ["project_registry", "workshop", "habitat_observer"]) as modules:
             return modules["habitat_observer"].main(args.arguments, source_sha256=sha(source))
@@ -1223,6 +1236,12 @@ if __name__ == "__main__":
 # is executed merely by reading, showing, or appending conversation data.
 
 # === LUMEN SECTION USAGE.txt BEGIN ===
+#| HTML BRIDGE — 2026-10-03
+#| html inspect/extract safely read the supported capsule; html run explicitly
+#| invokes its canonical CLI with a complete-source pin; html host emits the
+#| existing-driver descriptor without execution/network. Read HTML-OPERATING.txt
+#| and HTML-INTERFACE.json for limits and exact identity/dispatch conventions.
+#| 
 #| CURRENT NAVIGATION — 2026-10-01
 #| For a request -> verified receipt -> duplicate replay -> selected checkpoint ->
 #| isolated restore walkthrough, read source REQUEST-RECOVERY.txt. Bare help now lists
@@ -3820,35 +3839,47 @@ if __name__ == "__main__":
 #|         os.close(parent)
 #| 
 #| 
-#| def intake(args, source_sha256):
+#| def intake(args, source_sha256, *, profile=None):
 #|     archive_path = Path(args.archive).absolute()
 #|     fd = os.open(archive_path, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK)
 #|     with os.fdopen(fd, "rb") as stream:
-#|         info = os.fstat(stream.fileno())
-#|         if not stat.S_ISREG(info.st_mode) or info.st_size > args.max_archive_bytes:
-#|             raise ValueError("archive must be a regular file within its byte budget")
-#|         preflight_directory(stream, info.st_size, args)
-#|         archive_digest = file_hash(stream)
-#|         with zipfile.ZipFile(stream, "r") as archive:
-#|             infos, entries, _, expanded = metadata(archive, args)
-#|             # Validate every stream and CRC before creating any output tree.
-#|             for member, entry in zip(infos, entries):
-#|                 local_metadata(stream, member)
-#|                 count, digest = consume_member(archive, member, entry["bytes"])
-#|                 if entry["kind"] == "file":
-#|                     entry["sha256"] = digest
+#|         return intake_stream(args, source_sha256, stream, archive_path, profile=profile)
+#| 
+#| 
+#| def intake_stream(args, source_sha256, stream, archive_path, *, profile=None):
+#|     """Shared same-descriptor preflight; optional trusted profile runs before output."""
+#|     info = os.fstat(stream.fileno())
+#|     if not stat.S_ISREG(info.st_mode) or info.st_size > args.max_archive_bytes:
+#|         raise ValueError("archive must be a regular file within its byte budget")
+#|     preflight_directory(stream, info.st_size, args)
+#|     archive_digest = file_hash(stream)
+#|     with zipfile.ZipFile(stream, "r") as archive:
+#|         infos, entries, _, expanded = metadata(archive, args)
+#|         # Validate every stream and CRC before creating any output tree.
+#|         for member, entry in zip(infos, entries):
+#|             local_metadata(stream, member)
+#|             count, digest = consume_member(archive, member, entry["bytes"])
+#|             if entry["kind"] == "file":
+#|                 entry["sha256"] = digest
+#|         if file_hash(stream) != archive_digest:
+#|             raise ValueError("archive changed during inspection")
+#|         report = dict(format="lumen-zip-intake-v1", non_executing=True, archive_path=str(archive_path),
+#|                       archive_sha256=archive_digest, archive_bytes=info.st_size,
+#|                       source_sha256=source_sha256, expanded_bytes=expanded,
+#|                       budgets={key: getattr(args, key) for key in
+#|                                ("max_entries", "max_depth", "max_expanded_bytes", "max_archive_bytes", "max_ratio", "max_directory_bytes")},
+#|                       members=entries, bootstraprose_present=any(entry["path"] == "BOOTSTRAPROSE.md" and
+#|                       entry["kind"] == "file" for entry in entries))
+#|         if profile is not None:
+#|             extra = profile(stream, archive, infos, report)
+#|             if not isinstance(extra, dict) or set(extra) & set(report):
+#|                 raise ValueError("invalid intake profile extension")
+#|             report.update(extra)
 #|             if file_hash(stream) != archive_digest:
-#|                 raise ValueError("archive changed during inspection")
-#|             report = dict(format="lumen-zip-intake-v1", non_executing=True, archive_path=str(archive_path),
-#|                           archive_sha256=archive_digest, archive_bytes=info.st_size,
-#|                           source_sha256=source_sha256, expanded_bytes=expanded,
-#|                           budgets={key: getattr(args, key) for key in
-#|                                    ("max_entries", "max_depth", "max_expanded_bytes", "max_archive_bytes", "max_ratio", "max_directory_bytes")},
-#|                           members=entries, bootstraprose_present=any(entry["path"] == "BOOTSTRAPROSE.md" and
-#|                           entry["kind"] == "file" for entry in entries))
-#|             if args.action == "inspect":
-#|                 return report, 0
-#|             return materialize(archive, infos, report, stream, args.destination)
+#|                 raise ValueError("archive changed during profile validation")
+#|         if args.action == "inspect":
+#|             return report, 0
+#|         return materialize(archive, infos, report, stream, args.destination)
 #| 
 #| 
 #| def main(argv=None, source_sha256=None):
@@ -6428,6 +6459,48 @@ if __name__ == "__main__":
 #|         self.assertIn('awaiting Lumen',history['CONTINUITY.txt'])
 #|         self.assertNotIn('awaiting Lumen',self.contents['CONTINUITY.txt'])
 #|         self.assertEqual(set(history),{'CURRENT-HANDOFF.txt','CONTINUITY.txt','OFFICE-STATE.json','WORK-QUEUES.json'})
+#| 
+#|     def test_paused_poetry_has_no_current_append_projection(self):
+#|         state=json.loads(self.contents['CURRENT-STATE.json'])
+#|         queues={item['project_id']:item for item in state['queues']['queues']}
+#|         poetry=queues['hourly-poetry']
+#|         self.assertEqual(poetry['tracking']['status'],'blocked')
+#|         self.assertIn('PAUSED',poetry['recorded_status'])
+#|         self.assertIn('by user',poetry['tracking']['trigger'])
+#|         self.assertEqual(poetry['next_actions'],[])
+#|         self.assertIsNone(poetry['tracking']['deadline_utc'])
+#|         current=self.contents['CURRENT-HANDOFF.txt']
+#|         stanza=current.split('Hourly poems [blocked]\n',1)[1].split('Timer reliability experiment',1)[0]
+#|         self.assertIn('Do not append',stanza)
+#|         self.assertNotIn('Next:',stanza)
+#|         self.assertNotIn('append only at each scheduled wake',current)
+#|         self.assertEqual(queues['datacube-main']['tracking']['status'],'canceled')
+#|         self.assertEqual(queues['lfs-plus-plus']['tracking']['status'],'canceled')
+#|         self.assertIn('Sampler remains stopped',queues['habitat-observer']['recorded_status'])
+#|         self.assertIn('IoTox execution remains parked',state['office']['position'])
+#| 
+#|     def test_immediate_previous_orientation_preserved_exactly(self):
+#|         history=json.loads(self.contents['HISTORICAL-ORIENTATION-PRE-HTML-20261003.json'])
+#|         expected={'CURRENT-STATE.json': 'bedb115fe2e8b4a37d7bb32f0b675679a2029bf8b60efc6fcd0ed76ca461cdeb', 'CURRENT-HANDOFF.txt': 'e27633b1aaa5de2461806dd0e649aed4e53b9cdc90a22b26b85cf5933705f616', 'CONTINUITY.txt': '41e718d12046ba7f27dba151ee7b934053a76127f0c744a0201150ad72826e59', 'OFFICE-STATE.json': 'f9ecf9f08bba38fa0fe7f5cbc3777d64f49015551d41df3fe6232d4f455f4e4e', 'WORK-QUEUES.json': '9425a7f0d1dd7ae08b8b00784a55531e8d1666759929e756fdbebb82c56f368d', 'START-HERE.txt': '46f9c82739ddbb5edd31db6b39c5bb866925c9ef5284ee0789566ed165cd841e'}
+#|         self.assertEqual(set(history),set(expected))
+#|         for name,sha256 in expected.items():
+#|             self.assertEqual(hashlib.sha256(history[name].encode()).hexdigest(),sha256,name)
+#|         self.assertIn('append only at each scheduled wake',history['CURRENT-HANDOFF.txt'])
+#|         self.assertIn('HISTORICAL-ORIENTATION-PRE-HTML-20261003.json',self.contents['CURRENT-HANDOFF.txt'])
+#| 
+#|     def test_current_scope_does_not_refresh_unrelated_observations(self):
+#|         current=json.loads(self.contents['CURRENT-STATE.json'])
+#|         history=json.loads(self.contents['HISTORICAL-ORIENTATION-PRE-HTML-20261003.json'])
+#|         previous=json.loads(history['CURRENT-STATE.json'])
+#|         dates={item['project_id']:item['tracking']['observed_at_utc'] for item in previous['queues']['queues']}
+#|         for item in current['queues']['queues']:
+#|             if item['project_id'] not in ('lumen','github-presence','hourly-poetry'):
+#|                 self.assertEqual(item['tracking']['observed_at_utc'],dates[item['project_id']])
+#|         self.assertNotIn('/workspace/',self.contents['CURRENT-STATE.json'])
+#|         self.assertIn('two-carrier migration is active',current['office']['position'])
+#|         self.assertIn('toolset-only pins',current['office']['next_step'])
+#|         self.assertIn('still pending',current['office']['next_step'])
+#|         self.assertIn('HTML-OPERATING.txt',self.contents['START-HERE.txt'])
 # === LUMEN SECTION test_prose_layout.py END ===
 
 # === LUMEN SECTION CAPABILITIES.txt BEGIN ===
@@ -6903,11 +6976,11 @@ if __name__ == "__main__":
 # === LUMEN SECTION OFFICE-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T15:43:50.842277+00:00",
+#|   "recorded_as_of_utc": "2026-10-03T09:00:35.971636+00:00",
 #|   "author": "Lumen",
 #|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|   "position": "Guarded reopening and preservation are published and verified. The next bounded increment adds a private read-only working-state briefing and separates Observer chain verification from sealed-evidence completeness. Recorded work categories and review ages do not establish running processes or authorize retries.",
-#|   "next_step": "Finish final-source tests and a cold working-state briefing exercise, preserve selected records, and publish the reviewed source. IoTox execution is parked by the user; the Observer sampler remains stopped.",
+#|   "position": "The two-carrier migration is active. Lumen.html owns the public reading surface, accepted source, canonical build, and existing delivery implementation; Lumen.sh supplies the reusable operating interface. The portable-first rev0038 HTML is publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Its arrival guide is included and the full repository ZIP is optional. The first shell HTML bridge passed 447 tests in implementation and independent Lumen review. Explicit carried rev0038 verify and ship each passed 236 tests; all six current public exports matched the immutable remote readback bytes and the post-run source-pin check passed. Shell bridge publication remains pending review. Poetry is PAUSED by user direction: do not append. The Observer sampler remains stopped, IoTox execution remains parked, and LFS++ and Datacube MAIN science remain canceled. This dated account records direction and evidence; it grants no permission and does not establish live process state.",
+#|   "next_step": "Review the completed release and bridge receipts, and preserve/publish only the reviewed shell checkpoint through the established authorized process. Continue the approved two-carrier migration in bounded reviewed slices: source-editing/toolset-only pins and portable delivery-journal migration are still pending. Consult HTML-OPERATING.txt for this first bridge slice and current user directions before any execution or retry.",
 #|   "open_questions": [
 #|     "Which measured costs and gaps change our working decisions?",
 #|     "How can a current account remain short without erasing the history that corrects it?"
@@ -6934,13 +7007,15 @@ if __name__ == "__main__":
 #|     "bounded passive habitat observer with fixed-grid slot accounting and linked completed sample costs",
 #|     "offline Unicode atlas with version-aware slot and cost interpretation",
 #|     "one canonical dated orientation snapshot with consistency-checked derived views",
-#|     "read-only workshop arrival inventory, recorded remote-copy comparison, and plans for existing selected-byte checkpoints"
+#|     "read-only workshop arrival inventory, recorded remote-copy comparison, and plans for existing selected-byte checkpoints",
+#|     "bounded non-executing capsule-aware HTML inspection and no-clobber extraction over shared ZIP intake",
+#|     "explicit complete-source-pinned forwarding to the carried canonical HTML project CLI",
+#|     "read-only descriptor of the carried existing authenticated tools-host delivery driver"
 #|   ],
 #|   "proposed": [
-#|     "guarded candidate publication",
-#|     "process launch/stop/live adapters",
-#|     "remote checkpoint transport and platform-session restoration",
-#|     "actual scheduler registration and wake execution"
+#|     "new-format inert operating contract and toolset-only pins for editable HTML source worktrees",
+#|     "portable scoped delivery-journal export/import with explicit location mapping",
+#|     "verified private journal custody at safe phase boundaries after local migration review"
 #|   ],
 #|   "evidence_entry_ids": [
 #|     "lumen-capabilities-review-20260930-01",
@@ -10979,26 +11054,28 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T15:43:50.842277+00:00",
+#|   "recorded_as_of_utc": "2026-10-03T09:00:35.971636+00:00",
 #|   "recorded_by": "Lumen",
-#|   "source_ref": "Direct Lumen work on the explicit 2026-10-02 continuation request; previous exact orientation is in reviewed public commit e84f3b84a1abb459186416a632d8d851d27e7483.",
+#|   "source_ref": "Lumen review on 2026-10-03 of the user-approved two-carrier migration, explicit poetry pause, and current public release/test receipts. The exact prior current-state snapshot and views are retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json. Unrelated task observation dates remain historical; this snapshot grants no authority.",
 #|   "queues": [
 #|     {
 #|       "project_id": "lumen",
 #|       "title": "Lumen.sh",
 #|       "owner": "the text of Lumen",
 #|       "priority": "high",
-#|       "recorded_status": "Working-state briefing and evidence-completeness increment under final verification; previous guarded-reopening checkpoint passed 398 tests.",
+#|       "recorded_status": "Two-carrier migration active. The bounded HTML bridge candidate passed 447 tests and independent Lumen review. Orientation is being reconciled before shell publication; migration is not complete.",
 #|       "checkpoint": {
-#|         "reference": "https://github.com/Sapient-Lumen/Lumen/commit/7598df983f6138a9cd2a0de3c53bff0aa9b5a050",
-#|         "sha256": "1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b"
+#|         "reference": "First reviewed HTML bridge candidate, before this orientation-only refresh; consult exact acceptance receipts.",
+#|         "sha256": "3dc0a2c7e10e0147bd1a29de1623ec8ffefa51f4639c9e1496bea41e525d4fef"
 #|       },
 #|       "next_actions": [
-#|         "Verify and preserve this increment; use private working-state briefing for current task categories."
+#|         "Review the final shell checkpoint and current release receipts before authorized preservation/publication.",
+#|         "Continue source-editing/toolset-pin and portable journal slices only within their reviewed scope."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
-#|         "A working browser upload was observed; future availability and earlier connector cancellation causes remain unknown."
+#|         "A source pin proves content consistency, not trust or authorization; cooperative locking is not hostile-host isolation.",
+#|         "Current task categories do not establish running processes, scheduler state, or completed publication."
 #|       ],
 #|       "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|       "evidence": [
@@ -11011,13 +11088,18 @@ if __name__ == "__main__":
 #|           "kind": "reference",
 #|           "reference": "https://github.com/Sapient-Lumen/Lumen/commit/bf20d44197155ef550ff35748a2a776ce5d35f07",
 #|           "sha256": null
+#|         },
+#|         {
+#|           "kind": "reference",
+#|           "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4",
+#|           "sha256": null
 #|         }
 #|       ],
-#|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
+#|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "running",
-#|         "trigger": "explicit user request; ongoing maintenance",
-#|         "observed_at_utc": "2026-10-02T04:58:25.034746+00:00",
+#|         "trigger": "explicit user-approved two-carrier migration; receipt review before publication",
+#|         "observed_at_utc": "2026-10-03T09:00:35.971636+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": null,
 #|         "receipt_ref": null,
@@ -11063,36 +11145,31 @@ if __name__ == "__main__":
 #|       "title": "GitHub presence",
 #|       "owner": "the text of Lumen",
 #|       "priority": "low",
-#|       "recorded_status": "Three October1 local-date blog categories are published. Museum is live with the exact donated poem and explicit interpretive limits. W4R3Z is flat: short README, reviewed sandcodex and original configuration.nix. Monsternix review was static; developer handoff was carried by h0p3.",
+#|       "recorded_status": "Portable-first rev0038 Lumen.html publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Arrival guide included; the full repository ZIP is optional. Carried verify and ship each passed 236 tests; all six current public exports matched immutable remote readback bytes and the post-run source-pin check passed.",
 #|       "checkpoint": {
-#|         "reference": "Blog navigation source commit ec283667e8e6cfb67a7ae5532baffc0948a01bf7",
+#|         "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4",
 #|         "sha256": null
 #|       },
 #|       "next_actions": [
-#|         "Reconcile each local date and category before publication; read prior essays thoroughly before the next deep essay."
+#|         "Use the completed current release receipts when reviewing the shell bridge; do not infer a new writing or publication request from older queue entries."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
-#|         "Research, a draft, a commit and a verified live post are separate stages; date-plus-category is the duplicate key."
+#|         "Public byte verification, browser acceptance, and later migration completion remain separate evidence claims."
 #|       ],
 #|       "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|       "evidence": [
 #|         {
 #|           "kind": "reference",
-#|           "reference": "https://sapient-lumen.github.io/museum.html",
-#|           "sha256": null
-#|         },
-#|         {
-#|           "kind": "reference",
-#|           "reference": "https://github.com/Sapient-Lumen/W4R3Z",
+#|           "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4",
 #|           "sha256": null
 #|         }
 #|       ],
-#|       "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
+#|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "waiting",
-#|         "trigger": "daily scheduled writing commitment",
-#|         "observed_at_utc": "2026-10-02T04:58:25.034746+00:00",
+#|         "trigger": "completed release acceptance supports current shell-bridge review; older writing cadence is historical",
+#|         "observed_at_utc": "2026-10-03T09:00:35.971636+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": null,
 #|         "receipt_ref": null,
@@ -11120,17 +11197,12 @@ if __name__ == "__main__":
 #|           "kind": "reference",
 #|           "reference": "https://github.com/Sapient-Lumen/Datacube-MAIN",
 #|           "sha256": null
-#|         },
-#|         {
-#|           "kind": "reference",
-#|           "reference": "pilot-acquisition-16/ROOT-REVIEW.json",
-#|           "sha256": null
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
-#|         "status": "waiting",
-#|         "trigger": "hourly scientific iteration; reconcile before dispatch",
+#|         "status": "canceled",
+#|         "trigger": "explicit user discontinuation; historical execution observations are not a restart request",
 #|         "observed_at_utc": "2026-10-02T04:58:25.034746+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": null,
@@ -11143,31 +11215,31 @@ if __name__ == "__main__":
 #|       "title": "Hourly poems",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "33 poems privately preserved as of this dated review; existing gaps remain explicit.",
+#|       "recorded_status": "PAUSED by explicit user direction. Do not append a poem or resume scheduled writing. Previous poem counts and occurrence records are historical evidence only.",
 #|       "checkpoint": {
-#|         "reference": "/workspace/shared/lumen-poetry.txt",
+#|         "reference": "Previously retained poem sequence; exact old checkpoint description remains in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|         "sha256": null
 #|       },
-#|       "next_actions": [
-#|         "Reconcile occurrence IDs and append only at each scheduled wake; preserve locally and remotely."
+#|       "next_actions": [],
+#|       "blockers": [
+#|         "User pause remains in force."
 #|       ],
-#|       "blockers": [],
 #|       "uncertainties": [
-#|         "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|         "A prior schedule or retained occurrence record does not authorize another append."
 #|       ],
-#|       "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|       "interruption_recovery": "Preserve existing poems. Do not append or resume without a new explicit user direction; reconcile the original evidence before any separately authorized action.",
 #|       "evidence": [
 #|         {
 #|           "kind": "reference",
-#|           "reference": "/workspace/shared/lumen-poetry.txt",
+#|           "reference": "Explicit user poetry-pause direction, recorded in this 2026-10-03 orientation review.",
 #|           "sha256": null
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
-#|         "status": "waiting",
-#|         "trigger": "hourly scheduled occurrence; root writes directly",
-#|         "observed_at_utc": "2026-10-02T04:58:25.034746+00:00",
+#|         "status": "blocked",
+#|         "trigger": "PAUSED by user; no append or restart",
+#|         "observed_at_utc": "2026-10-03T09:00:35.971636+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": null,
 #|         "receipt_ref": null,
@@ -11179,17 +11251,17 @@ if __name__ == "__main__":
 #|       "title": "Timer reliability experiment",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "Closed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.",
+#|       "recorded_status": "Historical closed experiment: Closed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.",
 #|       "checkpoint": {
-#|         "reference": "/workspace/shared/worker-queue-pilot/timer/STATE.json",
+#|         "reference": "Exact prior experiment checkpoint reference is retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|         "sha256": null
 #|       },
 #|       "next_actions": [],
 #|       "blockers": [],
 #|       "uncertainties": [
-#|         "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|         "No current liveness is inferred from this closed experiment. Original missing evidence and failure causes remain unresolved where recorded."
 #|       ],
-#|       "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|       "interruption_recovery": "Retain the existing historical evidence; do not restart, reconstruct, or dispatch a successor from this orientation.",
 #|       "evidence": [
 #|         {
 #|           "kind": "reference",
@@ -11213,25 +11285,23 @@ if __name__ == "__main__":
 #|       "title": "Return-driven reliability experiment",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "Observation window closed: 49 verified effects from 50 dispatches; original worker50 result unobserved. Absence from later inventory does not establish its failure cause.",
+#|       "recorded_status": "Historical closed experiment: Observation window closed: 49 verified effects from 50 dispatches; original worker50 result unobserved. Absence from later inventory does not establish its failure cause.",
 #|       "checkpoint": {
-#|         "reference": "/workspace/shared/worker-queue-pilot/return-chain/STATE.json",
+#|         "reference": "Exact prior experiment checkpoint reference is retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|         "sha256": null
 #|       },
-#|       "next_actions": [
-#|         "Record a recoverable original late result with actual observation time if it arrives; do not dispatch a replacement or successor."
-#|       ],
+#|       "next_actions": [],
 #|       "blockers": [
 #|         "Original worker50 result remains unobserved."
 #|       ],
 #|       "uncertainties": [
-#|         "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|         "No current liveness is inferred from this closed experiment. Original missing evidence and failure causes remain unresolved where recorded."
 #|       ],
-#|       "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|       "interruption_recovery": "Retain the existing historical evidence; do not restart, reconstruct, or dispatch a successor from this orientation.",
 #|       "evidence": [
 #|         {
 #|           "kind": "reference",
-#|           "reference": "/workspace/shared/worker-queue-pilot/return-chain/STATE.json",
+#|           "reference": "Historical experiment evidence described in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|           "sha256": null
 #|         }
 #|       ],
@@ -11251,21 +11321,21 @@ if __name__ == "__main__":
 #|       "title": "Original longevity experiment",
 #|       "owner": "Lumen across voice and text",
 #|       "priority": "normal",
-#|       "recorded_status": "Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.",
+#|       "recorded_status": "Historical closed experiment: Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.",
 #|       "checkpoint": {
-#|         "reference": "/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json",
+#|         "reference": "Exact prior experiment checkpoint reference is retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|         "sha256": null
 #|       },
 #|       "next_actions": [],
 #|       "blockers": [],
 #|       "uncertainties": [
-#|         "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|         "No current liveness is inferred from this closed experiment. Original missing evidence and failure causes remain unresolved where recorded."
 #|       ],
-#|       "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|       "interruption_recovery": "Retain the existing historical evidence; do not restart, reconstruct, or dispatch a successor from this orientation.",
 #|       "evidence": [
 #|         {
 #|           "kind": "reference",
-#|           "reference": "/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json",
+#|           "reference": "Historical experiment evidence described in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|           "sha256": null
 #|         }
 #|       ],
@@ -11276,7 +11346,7 @@ if __name__ == "__main__":
 #|         "observed_at_utc": "2026-10-02T04:58:25.034746+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": null,
-#|         "receipt_ref": "/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json",
+#|         "receipt_ref": "Historical receipt locator retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|         "deadline_utc": null
 #|       }
 #|     },
@@ -18202,14 +18272,14 @@ if __name__ == "__main__":
 # === LUMEN SECTION CURRENT-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-02T15:43:50.842277+00:00",
+#|   "recorded_as_of_utc": "2026-10-03T09:00:35.971636+00:00",
 #|   "office": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-02T15:43:50.842277+00:00",
+#|     "recorded_as_of_utc": "2026-10-03T09:00:35.971636+00:00",
 #|     "author": "Lumen",
 #|     "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|     "position": "Guarded reopening and preservation are published and verified. The next bounded increment adds a private read-only working-state briefing and separates Observer chain verification from sealed-evidence completeness. Recorded work categories and review ages do not establish running processes or authorize retries.",
-#|     "next_step": "Finish final-source tests and a cold working-state briefing exercise, preserve selected records, and publish the reviewed source. IoTox execution is parked by the user; the Observer sampler remains stopped.",
+#|     "position": "The two-carrier migration is active. Lumen.html owns the public reading surface, accepted source, canonical build, and existing delivery implementation; Lumen.sh supplies the reusable operating interface. The portable-first rev0038 HTML is publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Its arrival guide is included and the full repository ZIP is optional. The first shell HTML bridge passed 447 tests in implementation and independent Lumen review. Explicit carried rev0038 verify and ship each passed 236 tests; all six current public exports matched the immutable remote readback bytes and the post-run source-pin check passed. Shell bridge publication remains pending review. Poetry is PAUSED by user direction: do not append. The Observer sampler remains stopped, IoTox execution remains parked, and LFS++ and Datacube MAIN science remain canceled. This dated account records direction and evidence; it grants no permission and does not establish live process state.",
+#|     "next_step": "Review the completed release and bridge receipts, and preserve/publish only the reviewed shell checkpoint through the established authorized process. Continue the approved two-carrier migration in bounded reviewed slices: source-editing/toolset-only pins and portable delivery-journal migration are still pending. Consult HTML-OPERATING.txt for this first bridge slice and current user directions before any execution or retry.",
 #|     "open_questions": [
 #|       "Which measured costs and gaps change our working decisions?",
 #|       "How can a current account remain short without erasing the history that corrects it?"
@@ -18236,13 +18306,15 @@ if __name__ == "__main__":
 #|       "bounded passive habitat observer with fixed-grid slot accounting and linked completed sample costs",
 #|       "offline Unicode atlas with version-aware slot and cost interpretation",
 #|       "one canonical dated orientation snapshot with consistency-checked derived views",
-#|       "read-only workshop arrival inventory, recorded remote-copy comparison, and plans for existing selected-byte checkpoints"
+#|       "read-only workshop arrival inventory, recorded remote-copy comparison, and plans for existing selected-byte checkpoints",
+#|       "bounded non-executing capsule-aware HTML inspection and no-clobber extraction over shared ZIP intake",
+#|       "explicit complete-source-pinned forwarding to the carried canonical HTML project CLI",
+#|       "read-only descriptor of the carried existing authenticated tools-host delivery driver"
 #|     ],
 #|     "proposed": [
-#|       "guarded candidate publication",
-#|       "process launch/stop/live adapters",
-#|       "remote checkpoint transport and platform-session restoration",
-#|       "actual scheduler registration and wake execution"
+#|       "new-format inert operating contract and toolset-only pins for editable HTML source worktrees",
+#|       "portable scoped delivery-journal export/import with explicit location mapping",
+#|       "verified private journal custody at safe phase boundaries after local migration review"
 #|     ],
 #|     "evidence_entry_ids": [
 #|       "lumen-capabilities-review-20260930-01",
@@ -18266,26 +18338,28 @@ if __name__ == "__main__":
 #|   },
 #|   "queues": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-02T15:43:50.842277+00:00",
+#|     "recorded_as_of_utc": "2026-10-03T09:00:35.971636+00:00",
 #|     "recorded_by": "Lumen",
-#|     "source_ref": "Direct Lumen work on the explicit 2026-10-02 continuation request; previous exact orientation is in reviewed public commit e84f3b84a1abb459186416a632d8d851d27e7483.",
+#|     "source_ref": "Lumen review on 2026-10-03 of the user-approved two-carrier migration, explicit poetry pause, and current public release/test receipts. The exact prior current-state snapshot and views are retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json. Unrelated task observation dates remain historical; this snapshot grants no authority.",
 #|     "queues": [
 #|       {
 #|         "project_id": "lumen",
 #|         "title": "Lumen.sh",
 #|         "owner": "the text of Lumen",
 #|         "priority": "high",
-#|         "recorded_status": "Working-state briefing and evidence-completeness increment under final verification; previous guarded-reopening checkpoint passed 398 tests.",
+#|         "recorded_status": "Two-carrier migration active. The bounded HTML bridge candidate passed 447 tests and independent Lumen review. Orientation is being reconciled before shell publication; migration is not complete.",
 #|         "checkpoint": {
-#|           "reference": "https://github.com/Sapient-Lumen/Lumen/commit/7598df983f6138a9cd2a0de3c53bff0aa9b5a050",
-#|           "sha256": "1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b"
+#|           "reference": "First reviewed HTML bridge candidate, before this orientation-only refresh; consult exact acceptance receipts.",
+#|           "sha256": "3dc0a2c7e10e0147bd1a29de1623ec8ffefa51f4639c9e1496bea41e525d4fef"
 #|         },
 #|         "next_actions": [
-#|           "Verify and preserve this increment; use private working-state briefing for current task categories."
+#|           "Review the final shell checkpoint and current release receipts before authorized preservation/publication.",
+#|           "Continue source-editing/toolset-pin and portable journal slices only within their reviewed scope."
 #|         ],
 #|         "blockers": [],
 #|         "uncertainties": [
-#|           "A working browser upload was observed; future availability and earlier connector cancellation causes remain unknown."
+#|           "A source pin proves content consistency, not trust or authorization; cooperative locking is not hostile-host isolation.",
+#|           "Current task categories do not establish running processes, scheduler state, or completed publication."
 #|         ],
 #|         "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|         "evidence": [
@@ -18298,13 +18372,18 @@ if __name__ == "__main__":
 #|             "kind": "reference",
 #|             "reference": "https://github.com/Sapient-Lumen/Lumen/commit/bf20d44197155ef550ff35748a2a776ce5d35f07",
 #|             "sha256": null
+#|           },
+#|           {
+#|             "kind": "reference",
+#|             "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4",
+#|             "sha256": null
 #|           }
 #|         ],
-#|         "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
+#|         "expected_registry_revision": null,
 #|         "tracking": {
 #|           "status": "running",
-#|           "trigger": "explicit user request; ongoing maintenance",
-#|           "observed_at_utc": "2026-10-02T04:58:25.034746+00:00",
+#|           "trigger": "explicit user-approved two-carrier migration; receipt review before publication",
+#|           "observed_at_utc": "2026-10-03T09:00:35.971636+00:00",
 #|           "execution_observation": "UNKNOWN",
 #|           "request_ref": null,
 #|           "receipt_ref": null,
@@ -18350,36 +18429,31 @@ if __name__ == "__main__":
 #|         "title": "GitHub presence",
 #|         "owner": "the text of Lumen",
 #|         "priority": "low",
-#|         "recorded_status": "Three October1 local-date blog categories are published. Museum is live with the exact donated poem and explicit interpretive limits. W4R3Z is flat: short README, reviewed sandcodex and original configuration.nix. Monsternix review was static; developer handoff was carried by h0p3.",
+#|         "recorded_status": "Portable-first rev0038 Lumen.html publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Arrival guide included; the full repository ZIP is optional. Carried verify and ship each passed 236 tests; all six current public exports matched immutable remote readback bytes and the post-run source-pin check passed.",
 #|         "checkpoint": {
-#|           "reference": "Blog navigation source commit ec283667e8e6cfb67a7ae5532baffc0948a01bf7",
+#|           "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4",
 #|           "sha256": null
 #|         },
 #|         "next_actions": [
-#|           "Reconcile each local date and category before publication; read prior essays thoroughly before the next deep essay."
+#|           "Use the completed current release receipts when reviewing the shell bridge; do not infer a new writing or publication request from older queue entries."
 #|         ],
 #|         "blockers": [],
 #|         "uncertainties": [
-#|           "Research, a draft, a commit and a verified live post are separate stages; date-plus-category is the duplicate key."
+#|           "Public byte verification, browser acceptance, and later migration completion remain separate evidence claims."
 #|         ],
 #|         "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|         "evidence": [
 #|           {
 #|             "kind": "reference",
-#|             "reference": "https://sapient-lumen.github.io/museum.html",
-#|             "sha256": null
-#|           },
-#|           {
-#|             "kind": "reference",
-#|             "reference": "https://github.com/Sapient-Lumen/W4R3Z",
+#|             "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4",
 #|             "sha256": null
 #|           }
 #|         ],
-#|         "expected_registry_revision": "e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b",
+#|         "expected_registry_revision": null,
 #|         "tracking": {
 #|           "status": "waiting",
-#|           "trigger": "daily scheduled writing commitment",
-#|           "observed_at_utc": "2026-10-02T04:58:25.034746+00:00",
+#|           "trigger": "completed release acceptance supports current shell-bridge review; older writing cadence is historical",
+#|           "observed_at_utc": "2026-10-03T09:00:35.971636+00:00",
 #|           "execution_observation": "UNKNOWN",
 #|           "request_ref": null,
 #|           "receipt_ref": null,
@@ -18407,17 +18481,12 @@ if __name__ == "__main__":
 #|             "kind": "reference",
 #|             "reference": "https://github.com/Sapient-Lumen/Datacube-MAIN",
 #|             "sha256": null
-#|           },
-#|           {
-#|             "kind": "reference",
-#|             "reference": "pilot-acquisition-16/ROOT-REVIEW.json",
-#|             "sha256": null
 #|           }
 #|         ],
 #|         "expected_registry_revision": null,
 #|         "tracking": {
-#|           "status": "waiting",
-#|           "trigger": "hourly scientific iteration; reconcile before dispatch",
+#|           "status": "canceled",
+#|           "trigger": "explicit user discontinuation; historical execution observations are not a restart request",
 #|           "observed_at_utc": "2026-10-02T04:58:25.034746+00:00",
 #|           "execution_observation": "UNKNOWN",
 #|           "request_ref": null,
@@ -18430,31 +18499,31 @@ if __name__ == "__main__":
 #|         "title": "Hourly poems",
 #|         "owner": "Lumen across voice and text",
 #|         "priority": "normal",
-#|         "recorded_status": "33 poems privately preserved as of this dated review; existing gaps remain explicit.",
+#|         "recorded_status": "PAUSED by explicit user direction. Do not append a poem or resume scheduled writing. Previous poem counts and occurrence records are historical evidence only.",
 #|         "checkpoint": {
-#|           "reference": "/workspace/shared/lumen-poetry.txt",
+#|           "reference": "Previously retained poem sequence; exact old checkpoint description remains in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|           "sha256": null
 #|         },
-#|         "next_actions": [
-#|           "Reconcile occurrence IDs and append only at each scheduled wake; preserve locally and remotely."
+#|         "next_actions": [],
+#|         "blockers": [
+#|           "User pause remains in force."
 #|         ],
-#|         "blockers": [],
 #|         "uncertainties": [
-#|           "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|           "A prior schedule or retained occurrence record does not authorize another append."
 #|         ],
-#|         "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|         "interruption_recovery": "Preserve existing poems. Do not append or resume without a new explicit user direction; reconcile the original evidence before any separately authorized action.",
 #|         "evidence": [
 #|           {
 #|             "kind": "reference",
-#|             "reference": "/workspace/shared/lumen-poetry.txt",
+#|             "reference": "Explicit user poetry-pause direction, recorded in this 2026-10-03 orientation review.",
 #|             "sha256": null
 #|           }
 #|         ],
 #|         "expected_registry_revision": null,
 #|         "tracking": {
-#|           "status": "waiting",
-#|           "trigger": "hourly scheduled occurrence; root writes directly",
-#|           "observed_at_utc": "2026-10-02T04:58:25.034746+00:00",
+#|           "status": "blocked",
+#|           "trigger": "PAUSED by user; no append or restart",
+#|           "observed_at_utc": "2026-10-03T09:00:35.971636+00:00",
 #|           "execution_observation": "UNKNOWN",
 #|           "request_ref": null,
 #|           "receipt_ref": null,
@@ -18466,17 +18535,17 @@ if __name__ == "__main__":
 #|         "title": "Timer reliability experiment",
 #|         "owner": "Lumen across voice and text",
 #|         "priority": "normal",
-#|         "recorded_status": "Closed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.",
+#|         "recorded_status": "Historical closed experiment: Closed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.",
 #|         "checkpoint": {
-#|           "reference": "/workspace/shared/worker-queue-pilot/timer/STATE.json",
+#|           "reference": "Exact prior experiment checkpoint reference is retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|           "sha256": null
 #|         },
 #|         "next_actions": [],
 #|         "blockers": [],
 #|         "uncertainties": [
-#|           "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|           "No current liveness is inferred from this closed experiment. Original missing evidence and failure causes remain unresolved where recorded."
 #|         ],
-#|         "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|         "interruption_recovery": "Retain the existing historical evidence; do not restart, reconstruct, or dispatch a successor from this orientation.",
 #|         "evidence": [
 #|           {
 #|             "kind": "reference",
@@ -18500,25 +18569,23 @@ if __name__ == "__main__":
 #|         "title": "Return-driven reliability experiment",
 #|         "owner": "Lumen across voice and text",
 #|         "priority": "normal",
-#|         "recorded_status": "Observation window closed: 49 verified effects from 50 dispatches; original worker50 result unobserved. Absence from later inventory does not establish its failure cause.",
+#|         "recorded_status": "Historical closed experiment: Observation window closed: 49 verified effects from 50 dispatches; original worker50 result unobserved. Absence from later inventory does not establish its failure cause.",
 #|         "checkpoint": {
-#|           "reference": "/workspace/shared/worker-queue-pilot/return-chain/STATE.json",
+#|           "reference": "Exact prior experiment checkpoint reference is retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|           "sha256": null
 #|         },
-#|         "next_actions": [
-#|           "Record a recoverable original late result with actual observation time if it arrives; do not dispatch a replacement or successor."
-#|         ],
+#|         "next_actions": [],
 #|         "blockers": [
 #|           "Original worker50 result remains unobserved."
 #|         ],
 #|         "uncertainties": [
-#|           "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|           "No current liveness is inferred from this closed experiment. Original missing evidence and failure causes remain unresolved where recorded."
 #|         ],
-#|         "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|         "interruption_recovery": "Retain the existing historical evidence; do not restart, reconstruct, or dispatch a successor from this orientation.",
 #|         "evidence": [
 #|           {
 #|             "kind": "reference",
-#|             "reference": "/workspace/shared/worker-queue-pilot/return-chain/STATE.json",
+#|             "reference": "Historical experiment evidence described in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|             "sha256": null
 #|           }
 #|         ],
@@ -18538,21 +18605,21 @@ if __name__ == "__main__":
 #|         "title": "Original longevity experiment",
 #|         "owner": "Lumen across voice and text",
 #|         "priority": "normal",
-#|         "recorded_status": "Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.",
+#|         "recorded_status": "Historical closed experiment: Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.",
 #|         "checkpoint": {
-#|           "reference": "/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json",
+#|           "reference": "Exact prior experiment checkpoint reference is retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|           "sha256": null
 #|         },
 #|         "next_actions": [],
 #|         "blockers": [],
 #|         "uncertainties": [
-#|           "Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot."
+#|           "No current liveness is inferred from this closed experiment. Original missing evidence and failure causes remain unresolved where recorded."
 #|         ],
-#|         "interruption_recovery": "Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.",
+#|         "interruption_recovery": "Retain the existing historical evidence; do not restart, reconstruct, or dispatch a successor from this orientation.",
 #|         "evidence": [
 #|           {
 #|             "kind": "reference",
-#|             "reference": "/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json",
+#|             "reference": "Historical experiment evidence described in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|             "sha256": null
 #|           }
 #|         ],
@@ -18563,7 +18630,7 @@ if __name__ == "__main__":
 #|           "observed_at_utc": "2026-10-02T04:58:25.034746+00:00",
 #|           "execution_observation": "UNKNOWN",
 #|           "request_ref": null,
-#|           "receipt_ref": "/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json",
+#|           "receipt_ref": "Historical receipt locator retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.",
 #|           "deadline_utc": null
 #|         }
 #|       },
@@ -19859,3 +19926,1004 @@ LUMEN_PYTHON_BODY
 #|   }
 #| }
 # === LUMEN SECTION HISTORICAL-WORKSPACE-20261002.json END ===
+
+# === LUMEN SECTION html_interface.py BEGIN ===
+#| """Bounded, non-executing HTML intake and explicit pinned canonical CLI dispatch.
+#| 
+#| A source pin checks consistency, not authorship, review, or code safety. The
+#| cooperative run lock is not a sandbox against a concurrent hostile host writer.
+#| """
+#| import argparse
+#| import contextlib
+#| import fcntl
+#| import hashlib
+#| import json
+#| import os
+#| from pathlib import Path
+#| import re
+#| import stat
+#| import struct
+#| import subprocess
+#| import sys
+#| import tempfile
+#| import zipfile
+#| import zlib
+#| 
+#| import zip_intake
+#| 
+#| PROFILE = "lumen.capsule/v3-generated-absolute-offsets-legacy/v1"
+#| IDENTITY = "lumen.intake-source-identity/v1"
+#| EXTENSION = "lumen.html-intake/v1"
+#| ROOT = "Lumen/"
+#| MANIFEST = ROOT + "CAPSULE-MANIFEST.json"
+#| PADDING = ROOT + ".capsule-padding"
+#| COMMENT = b"</script></body></html>\n"
+#| OPEN = b'<script type="application/x-lumen-archive" id="lumen-archive" aria-hidden="true">\n'
+#| MAX_MANIFEST = 4 * 1024 * 1024
+#| MAX_RECEIPT = 16 * 1024 * 1024
+#| REQUIRED = ("lumen", "tools/lumen_cli.py", "tools/build.py", "tools/capsule.py",
+#|             "tools/check_capsule.py", "tools/public_source.py", "tools/delivery.py",
+#|             "tools/delivery_runner.py", "tools/github_delivery_runner.js")
+#| COMMANDS = frozenset("status doctor verify build capsule release handoff ship preserve "
+#|                     "history compare page context references thread cite folio pathfolio "
+#|                     "marker correction packet drafts".split())
+#| DELIVERY = frozenset(("prepare", "plan", "finalize", "recover"))
+#| CONNECTORS = ["mcp__codex_apps__github_" + name for name in
+#|               ("fetch", "fetch_file", "create_blob", "create_tree", "create_commit", "update_ref")]
+#| METADATA = {
+#|     "hypertext": ("hypertext-ledger.json", ("passages", "typed_edges")),
+#|     "references": ("references.json", ("sources", "citations", "domains")),
+#|     "reading_paths": ("reading-paths.json", ("paths", "steps", "passage_steps")),
+#|     "portable_folios": ("folios.json", ("folios", "bytes")),
+#|     "portable_path_folios": ("path-folios.json", ("folios", "bytes", "steps")),
+#| }
+#| 
+#| 
+#| def digest(data):
+#|     return hashlib.sha256(data).hexdigest()
+#| 
+#| 
+#| def require(condition, message):
+#|     if not condition:
+#|         raise ValueError(message)
+#| 
+#| 
+#| def sha_value(value):
+#|     require(type(value) is str and re.fullmatch(r"[0-9a-f]{64}", value),
+#|             "SHA-256 must be 64 lowercase hexadecimal characters")
+#|     return value
+#| 
+#| 
+#| def exact_keys(value, keys, label):
+#|     require(type(value) is dict and set(value) == set(keys), "invalid " + label + " fields")
+#| 
+#| 
+#| def integer(value):
+#|     require(type(value) is int and value >= 0, "expected nonnegative integer")
+#| 
+#| 
+#| def string_list(value):
+#|     require(type(value) is list and all(type(item) is str for item in value), "expected string list")
+#| 
+#| 
+#| def strict_json(data):
+#|     def pairs(items):
+#|         result = {}
+#|         for key, value in items:
+#|             require(key not in result, "duplicate JSON key")
+#|             result[key] = value
+#|         return result
+#|     def constant(value):
+#|         raise ValueError("non-finite JSON constant")
+#|     return json.loads(data.decode("utf-8"), object_pairs_hook=pairs, parse_constant=constant)
+#| 
+#| 
+#| def normalized_path(value):
+#|     require(type(value) is str and os.path.isabs(value) and not value.startswith("//") and
+#|             value != "/" and os.path.normpath(value) == value,
+#|             "path must be explicit, absolute, normalized, and non-root")
+#|     return Path(value)
+#| 
+#| 
+#| @contextlib.contextmanager
+#| def safe_file(path):
+#|     path = normalized_path(str(path))
+#|     parent = zip_intake.open_directory(path.parent)
+#|     try:
+#|         fd = os.open(path.name, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK, dir_fd=parent)
+#|         with os.fdopen(fd, "rb") as stream:
+#|             require(stat.S_ISREG(os.fstat(stream.fileno()).st_mode), "expected ordinary regular file")
+#|             yield stream
+#|     finally:
+#|         os.close(parent)
+#| 
+#| 
+#| def source_path(path):
+#|     return (not path.startswith("dist/") and
+#|             path not in ("CAPSULE-MANIFEST.json", "CAPSULE-README.txt", ".capsule-padding"))
+#| 
+#| 
+#| def inventory_from_members(members):
+#|     return sorted(({key: (entry[key][len(ROOT):] if key == "path" else entry[key])
+#|                     for key in ("path", "bytes", "sha256", "mode")}
+#|                    for entry in members if entry["kind"] == "file" and
+#|                    entry["path"].startswith(ROOT) and source_path(entry["path"][len(ROOT):])),
+#|                   key=lambda item: item["path"].encode("utf-8"))
+#| 
+#| 
+#| def identity_bytes(inventory):
+#|     return (json.dumps({"schema": IDENTITY, "files": inventory}, sort_keys=True,
+#|                        ensure_ascii=True, separators=(",", ":")) + "\n").encode("ascii")
+#| 
+#| 
+#| def identity(inventory):
+#|     return digest(identity_bytes(inventory))
+#| 
+#| 
+#| def validate_manifest(manifest, members):
+#|     exact_keys(manifest, {"schema", "edition", "generated_at", "generated_at_basis",
+#|         "generated_at_semantics", "source_fingerprint_sha256", "html_prefix", "archive_root",
+#|         "manifest_member", "manifest_self_hash_included", "members", "capabilities", "extract",
+#|         "excluded_by_design", *METADATA}, "capsule v3 manifest")
+#|     require(manifest["schema"] == "lumen.capsule/v3", "unsupported capsule schema")
+#|     require(manifest["archive_root"] == ROOT and manifest["manifest_member"] == MANIFEST and
+#|             manifest["manifest_self_hash_included"] is False, "unsupported archive root or manifest convention")
+#|     for field in ("edition", "generated_at", "generated_at_basis"):
+#|         require(type(manifest[field]) is str and bool(manifest[field]), "invalid manifest text field")
+#|     require(manifest["generated_at_semantics"] == "reproducible-reference-clock", "unsupported clock semantics")
+#|     sha_value(manifest["source_fingerprint_sha256"])
+#|     exact_keys(manifest["html_prefix"], ("bytes", "sha256"), "HTML prefix")
+#|     integer(manifest["html_prefix"]["bytes"])
+#|     sha_value(manifest["html_prefix"]["sha256"])
+#|     exact_keys(manifest["capabilities"], ("browser", "cloudtainer", "custody"), "capabilities")
+#|     for value in manifest["capabilities"].values():
+#|         string_list(value)
+#|     string_list(manifest["extract"])
+#|     string_list(manifest["excluded_by_design"])
+#|     require(type(manifest["members"]) is list, "expected manifest member list")
+#|     declared = {}
+#|     for entry in manifest["members"]:
+#|         exact_keys(entry, ("path", "bytes", "sha256", "mode"), "member")
+#|         path = entry["path"]
+#|         require(type(path) is str and path not in declared and path in members and
+#|                 path not in (MANIFEST, PADDING), "unexpected or duplicate declared member")
+#|         integer(entry["bytes"])
+#|         sha_value(entry["sha256"])
+#|         require(type(entry["mode"]) is str and entry["mode"] in ("0o644", "0o755"), "unsupported ordinary member mode")
+#|         actual = members[path]
+#|         require(entry["bytes"] == actual["bytes"] and entry["sha256"] == actual["sha256"] and
+#|                 entry["mode"][2:].zfill(4) == actual["mode"], "manifest member identity mismatch: " + path)
+#|         declared[path] = entry
+#|     require(set(declared) == set(members) - {MANIFEST, PADDING}, "manifest member coverage mismatch")
+#|     for name, (filename, counters) in METADATA.items():
+#|         item = manifest[name]
+#|         exact_keys(item, ("path", "sha256", *counters), name)
+#|         require(item["path"] == ROOT + "dist/meta/" + filename and item["path"] in declared,
+#|                 "invalid capsule metadata path")
+#|         sha_value(item["sha256"])
+#|         require(item["sha256"] == declared[item["path"]]["sha256"], "capsule metadata hash mismatch")
+#|         for counter in counters:
+#|             integer(item[counter])
+#|     require(all(ROOT + path in declared for path in REQUIRED), "required canonical entrypoint is missing")
+#| 
+#| 
+#| def validate_layout(stream, archive, infos, prefix):
+#|     size = os.fstat(stream.fileno()).st_size
+#|     boundary = prefix["bytes"]
+#|     require(0 < boundary < size, "invalid HTML prefix boundary")
+#|     stream.seek(0)
+#|     require(stream.read(15) == b"<!doctype html>", "missing HTML opening marker")
+#|     stream.seek(0)
+#|     remaining, sha = boundary, hashlib.sha256()
+#|     while remaining:
+#|         chunk = stream.read(min(zip_intake.CHUNK, remaining))
+#|         require(bool(chunk), "truncated HTML prefix")
+#|         remaining -= len(chunk)
+#|         sha.update(chunk)
+#|     require(sha.hexdigest() == prefix["sha256"], "HTML prefix hash mismatch")
+#|     require(boundary >= len(OPEN), "invalid HTML prefix length")
+#|     stream.seek(boundary - len(OPEN))
+#|     require(stream.read(len(OPEN)) == OPEN, "missing archive-data opening marker")
+#|     position = boundary
+#|     for info in infos:
+#|         require(info.header_offset == position and info.extract_version < 45 and info.create_system == 3 and
+#|                 info.external_attr >> 16 in (0o644, 0o755) and not info.extra and
+#|                 not info.comment and info.flag_bits in (0, 0x800) and info.compress_type == zipfile.ZIP_DEFLATED,
+#|                 "unsupported generated capsule local layout or ZIP64 member")
+#|         stream.seek(position)
+#|         header = stream.read(30)
+#|         fields = struct.unpack("<4s5H3L2H", header)
+#|         _, version, flags, method, _, _, crc, compressed, expanded, name_size, extra_size = fields
+#|         require(version < 45 and extra_size == 0 and flags == info.flag_bits and
+#|                 method == info.compress_type and crc == info.CRC and compressed == info.compress_size and
+#|                 expanded == info.file_size, "capsule local/central record mismatch")
+#|         encoding = "utf-8" if flags & 0x800 else "cp437"
+#|         require(stream.read(name_size) == info.filename.encode(encoding), "capsule local filename mismatch")
+#|         position += 30 + name_size + compressed
+#|     require(position == archive.start_dir, "unaccounted capsule ZIP boundary bytes")
+#|     require(archive.comment == COMMENT, "invalid capsule closing comment")
+#|     stream.seek(boundary)
+#|     overlap, occurrences = b"", 0
+#|     while True:
+#|         chunk = stream.read(zip_intake.CHUNK)
+#|         if not chunk:
+#|             break
+#|         data = overlap + chunk.lower()
+#|         occurrences += data.count(b"</script")
+#|         overlap = data[-7:]
+#|     require(occurrences == 1, "archive payload has an unexpected raw closing-script sequence")
+#| 
+#| 
+#| def capsule_profile(expected_sha256=None):
+#|     if expected_sha256 is not None:
+#|         sha_value(expected_sha256)
+#|     def profile(stream, archive, infos, report):
+#|         require(expected_sha256 is None or expected_sha256 == report["archive_sha256"], "expected carrier SHA-256 mismatch")
+#|         members = {entry["path"]: entry for entry in report["members"]}
+#|         require(all(entry["kind"] == "file" and entry["path"].startswith(ROOT) and
+#|                     not entry["stripped_privilege_bits"] and entry["mode"] in ("0644", "0755")
+#|                     for entry in report["members"]), "capsule requires ordinary files under Lumen/")
+#|         require(MANIFEST in members and members[MANIFEST]["bytes"] <= MAX_MANIFEST and
+#|                 members[MANIFEST]["mode"] == "0644", "missing, oversized, or nonordinary capsule manifest")
+#|         # This reads data only. Never import the carried check_capsule implementation.
+#|         manifest_data = archive.read(MANIFEST)
+#|         manifest = strict_json(manifest_data)
+#|         validate_manifest(manifest, members)
+#|         if PADDING in members:
+#|             require(members[PADDING]["mode"] == "0644" and members[PADDING]["bytes"] == 11,
+#|                     "invalid capsule padding metadata")
+#|             require(archive.read(PADDING) in {("padding-%02d\n" % index).encode() for index in range(1, 32)},
+#|                     "invalid capsule padding bytes")
+#|         validate_layout(stream, archive, infos, manifest["html_prefix"])
+#|         inventory = inventory_from_members(report["members"])
+#|         validate_inventory(inventory)
+#|         return {"html": {"schema": EXTENSION, "profile": PROFILE, "edition": manifest["edition"],
+#|             "capsule_schema": manifest["schema"], "archive_root": ROOT,
+#|             "carrier_sha256": report["archive_sha256"], "carrier_bytes": report["archive_bytes"],
+#|             "manifest_sha256": digest(manifest_data), "source_identity_schema": IDENTITY,
+#|             "source_identity_sha256": identity(inventory), "source_inventory": inventory,
+#|             "entrypoints": {"cli": REQUIRED[1], "host_driver": REQUIRED[-1], "host_helper": REQUIRED[-2]},
+#|             "external_identity": "not-supplied" if expected_sha256 is None else "matches-expected-sha256",
+#|             "authentication": "not-established-by-this-report", "integrity": "self-consistent"}}
+#|     return profile
+#| 
+#| 
+#| def validate_inventory(inventory):
+#|     require(type(inventory) is list and 0 < len(inventory) <= 10000, "invalid source inventory")
+#|     seen, total = set(), 0
+#|     for item in inventory:
+#|         exact_keys(item, ("path", "bytes", "sha256", "mode"), "source inventory")
+#|         path = item["path"]
+#|         require(type(path) is str and source_path(path) and path not in ("dist", ".lumen", "BUILD-RECEIPT.json") and
+#|                 not path.startswith(".lumen/") and not any(part == "__pycache__" or part.endswith((".pyc", ".pyo"))
+#|                                                         for part in path.split("/")), "unsupported source inventory path")
+#|         _, parts, directory = zip_intake.member_name(zipfile.ZipInfo(ROOT + path))
+#|         require(not directory and len(parts) <= 64 and path.casefold() not in seen, "invalid source inventory path")
+#|         seen.add(path.casefold())
+#|         integer(item["bytes"])
+#|         total += item["bytes"]
+#|         sha_value(item["sha256"])
+#|         require(item["mode"] in ("0644", "0755"), "unsupported source mode")
+#|     require(total <= 256 * 1024 * 1024 and all(name in {item["path"] for item in inventory} for name in REQUIRED),
+#|             "invalid source budget or missing entrypoint")
+#|     require(inventory == sorted(inventory, key=lambda item: item["path"].encode("utf-8")), "unsorted source inventory")
+#| 
+#| 
+#| def intake(args, source_sha256):
+#|     # Keep the generic defaults and budget validators as the single authority.
+#|     parser = argparse.ArgumentParser(add_help=False)
+#|     zip_intake.add_arguments(parser)
+#|     shared = parser.parse_args([args.capsule])
+#|     shared.action = "inspect" if args.action == "inspect" else "materialize"
+#|     shared.destination = getattr(args, "into", None)
+#|     archive_path = Path(args.capsule).absolute()
+#|     # Unlike generic intake, this profile also refuses symlink ancestors.
+#|     extension = {}
+#|     def validate(stream, archive, infos, report):
+#|         extension.update(capsule_profile(args.expected_sha256)(stream, archive, infos, report))
+#|         return extension
+#|     with safe_file(archive_path) as stream:
+#|         result, code = zip_intake.intake_stream(shared, source_sha256, stream, archive_path, profile=validate)
+#|     if args.action == "extract" and code == 0:
+#|         result["html"] = extension["html"]
+#|         result["project"] = str(Path(args.into) / "Lumen")
+#|     return result, code
+#| 
+#| 
+#| def checked_project(project, receipt, expected):
+#|     project, receipt = normalized_path(project), normalized_path(receipt)
+#|     sha_value(expected)
+#|     require(project.name == "Lumen" and receipt == project.parent / zip_intake.MANIFEST,
+#|             "receipt must be the selected project's outer intake manifest")
+#|     with safe_file(receipt) as stream:
+#|         require(os.fstat(stream.fileno()).st_size <= MAX_RECEIPT, "intake receipt exceeds budget")
+#|         report = strict_json(stream.read(MAX_RECEIPT + 1))
+#|     require(type(report) is dict and report.get("format") == "lumen-zip-intake-v1" and
+#|             report.get("non_executing") is True and type(report.get("materialization")) is dict and
+#|             report["materialization"].get("destination") == str(project.parent), "receipt/project location mismatch")
+#|     html = report.get("html")
+#|     require(type(html) is dict and html.get("schema") == EXTENSION and html.get("profile") == PROFILE and
+#|             html.get("archive_root") == ROOT and html.get("capsule_schema") == "lumen.capsule/v3" and
+#|             html.get("source_identity_schema") == IDENTITY and
+#|             html.get("entrypoints") == {"cli": REQUIRED[1], "host_driver": REQUIRED[-1], "host_helper": REQUIRED[-2]},
+#|             "unsupported intake profile or entrypoints")
+#|     inventory = html.get("source_inventory")
+#|     validate_inventory(inventory)
+#|     require(identity(inventory) == expected == html.get("source_identity_sha256"), "expected source identity mismatch")
+#|     root = zip_intake.open_directory(project)
+#|     try:
+#|         observed = []
+#|         expected_files = {item["path"]: item for item in inventory}
+#|         expected_dirs = {"/".join(path.split("/")[:index]) for path in expected_files
+#|                          for index in range(1, len(path.split("/")))}
+#|         count = 0
+#|         def visit(folder, prefix=""):
+#|             nonlocal count
+#|             for name in sorted(os.listdir(folder)):
+#|                 path = prefix + name
+#|                 count += 1
+#|                 require(count <= 10000, "project source entry budget exceeded")
+#|                 info = os.stat(name, dir_fd=folder, follow_symlinks=False)
+#|                 require(stat.S_ISDIR(info.st_mode) or stat.S_ISREG(info.st_mode), "link or special project entry refused")
+#|                 if not prefix and name in ("dist", ".lumen"):
+#|                     require(stat.S_ISDIR(info.st_mode), "generated root must be a directory")
+#|                     continue
+#|                 if not prefix and name in ("CAPSULE-MANIFEST.json", "CAPSULE-README.txt", ".capsule-padding", "BUILD-RECEIPT.json"):
+#|                     require(stat.S_ISREG(info.st_mode), "generated metadata must be an ordinary file")
+#|                     continue
+#|                 if stat.S_ISDIR(info.st_mode):
+#|                     require(path in expected_dirs, "unexpected source directory: " + path)
+#|                     child = os.open(name, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW, dir_fd=folder)
+#|                     try:
+#|                         visit(child, path + "/")
+#|                     finally:
+#|                         os.close(child)
+#|                     continue
+#|                 require(path in expected_files, "unexpected source file: " + path)
+#|                 expected_file = expected_files[path]
+#|                 fd = os.open(name, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK, dir_fd=folder)
+#|                 with os.fdopen(fd, "rb") as stream:
+#|                     now = os.fstat(stream.fileno())
+#|                     require(stat.S_ISREG(now.st_mode) and now.st_size == expected_file["bytes"] and
+#|                             stat.S_IMODE(now.st_mode) == int(expected_file["mode"], 8), "source size or mode drift: " + path)
+#|                     hashed = hashlib.sha256()
+#|                     remaining = now.st_size
+#|                     while remaining:
+#|                         chunk = stream.read(min(zip_intake.CHUNK, remaining))
+#|                         require(bool(chunk), "source shortened during check")
+#|                         remaining -= len(chunk)
+#|                         hashed.update(chunk)
+#|                     require(not stream.read(1), "source grew during check")
+#|                     item = dict(path=path, bytes=now.st_size, mode=f"{stat.S_IMODE(now.st_mode):04o}", sha256=hashed.hexdigest())
+#|                     require(item == expected_file, "source hash drift: " + path)
+#|                     observed.append(item)
+#|         visit(root)
+#|         observed.sort(key=lambda item: item["path"].encode("utf-8"))
+#|         require(observed == inventory and identity(observed) == expected, "missing source or source identity drift")
+#|     finally:
+#|         os.close(root)
+#|     return project, html
+#| 
+#| 
+#| def command_args(arguments):
+#|     require(arguments and arguments[0] == "--", "explicit -- CLI argument separator is required")
+#|     argv = arguments[1:]
+#|     require(argv and (argv == ["--help"] or argv[0] in COMMANDS or
+#|             argv[0] == "delivery" and len(argv) >= 2 and argv[1] in DELIVERY),
+#|             "unsupported CLI command for the pinned-source bridge")
+#|     return argv
+#| 
+#| 
+#| def run(args):
+#|     argv = command_args(args.arguments)
+#|     project = normalized_path(args.project)
+#|     # The stable outer-directory inode lock needs no lock-file creation/removal.
+#|     # It coordinates cooperating bridge runs only; it cannot fence host edits.
+#|     lock = zip_intake.open_directory(project.parent)
+#|     try:
+#|         try:
+#|             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+#|         except BlockingIOError as error:
+#|             raise ValueError("another cooperative HTML bridge run holds this extraction lock") from error
+#|         project, _ = checked_project(str(project), args.receipt, args.expect_source)
+#|         allowed = ("PATH", "LANG", "LC_ALL", "LC_CTYPE", "TZ", "TMPDIR", "TMP", "TEMP",
+#|                    "SOURCE_DATE_EPOCH", "LUMEN_BUILD_TIME")
+#|         env = {name: os.environ[name] for name in allowed if name in os.environ}
+#|         env.setdefault("PATH", os.defpath)
+#|         # -B alone still reads caches. Isolated -X protects this interpreter;
+#|         # forced environment settings carry the private prefix into descendants.
+#|         with tempfile.TemporaryDirectory(prefix="lumen-html-bytecode-") as cache:
+#|             env.update(PYTHONDONTWRITEBYTECODE="1", PYTHONPYCACHEPREFIX=cache)
+#|             child = subprocess.run([sys.executable, "-I", "-B", "-X", "pycache_prefix=" + cache,
+#|                                     str(project / REQUIRED[1]), *argv], cwd=project, env=env, shell=False)
+#|             return child.returncode if child.returncode >= 0 else 128 - child.returncode
+#|     finally:
+#|         os.close(lock)
+#| 
+#| 
+#| def host(args):
+#|     project, html = checked_project(args.project, args.receipt, args.expect_source)
+#|     records = {item["path"]: item for item in html["source_inventory"]}
+#|     return {"schema": "lumen.tools-host-descriptor/v1", "project": str(project),
+#|         "source_identity_schema": IDENTITY, "source_identity_sha256": args.expect_source,
+#|         "protocol": "lumen.github-delivery-run/v1",
+#|         "driver": {"path": str(project / REQUIRED[-1]), "sha256": records[REQUIRED[-1]]["sha256"]},
+#|         "helper": {"path": str(project / REQUIRED[-2]), "sha256": records[REQUIRED[-2]]["sha256"]},
+#|         "required_connector_allowlist": CONNECTORS, "required_host_tools": ["exec_command", "write_stdin"],
+#|         "entrypoint": "runGitHubDelivery", "required_explicit_options": ["helper", "run"],
+#|         "initialization_options": ["bundle", "projectId", "pointerPath", "pagesUrl"],
+#|         "host_requirements": ["Verify driver and helper hashes immediately before explicit invocation.",
+#|             "Preserve the existing pump's exact-session exec/poll and uncertain-result rules.",
+#|             "The existing pump executes its Python helper; source pinning is not a sandbox.",
+#|             "A terminal has no authenticated tools object; no token transport is provided.",
+#|             "Recheck source and supply authorized bundle/run options; never infer them from old receipts."],
+#|         "authentication": "not-established-by-this-report", "cooperative_lock_acquired": False,
+#|         "network_performed": False, "non_executing": True}
+#| 
+#| 
+#| def parser():
+#|     result = argparse.ArgumentParser(description=__doc__)
+#|     actions = result.add_subparsers(dest="action", required=True)
+#|     for name in ("inspect", "extract"):
+#|         item = actions.add_parser(name)
+#|         item.add_argument("capsule")
+#|         item.add_argument("--expected-sha256")
+#|         if name == "extract":
+#|             item.add_argument("--into", required=True)
+#|     for name in ("run", "host"):
+#|         item = actions.add_parser(name)
+#|         item.add_argument("--project", required=True)
+#|         item.add_argument("--receipt", required=True)
+#|         item.add_argument("--expect-source", required=True)
+#|         if name == "run":
+#|             item.add_argument("arguments", nargs=argparse.REMAINDER)
+#|     return result
+#| 
+#| 
+#| def main(argv=None, source_sha256=None):
+#|     args = parser().parse_args(argv)
+#|     try:
+#|         if args.action == "run":
+#|             return run(args)
+#|         result, code = (host(args), 0) if args.action == "host" else intake(args, source_sha256)
+#|     except (ValueError, OSError, zipfile.BadZipFile, NotImplementedError, RuntimeError,
+#|             EOFError, zlib.error, UnicodeError, RecursionError) as error:
+#|         result, code = {"status": "rejected", "error": str(error), "non_executing": args.action != "run"}, 65
+#|     print(json.dumps(result, indent=2, sort_keys=True, ensure_ascii=True))
+#|     return code
+# === LUMEN SECTION html_interface.py END ===
+
+# === LUMEN SECTION test_html_interface.py BEGIN ===
+#| """Synthetic intake bytes remain inert; real CLI execution is a separate gate."""
+#| import argparse
+#| import contextlib
+#| import fcntl
+#| import io
+#| import json
+#| import os
+#| from pathlib import Path
+#| import shutil
+#| import socket
+#| import stat
+#| import struct
+#| import subprocess
+#| import sys
+#| import tempfile
+#| import unittest
+#| from unittest import mock
+#| import zipfile
+#| 
+#| import html_interface as html
+#| import zip_intake
+#| 
+#| 
+#| class HTMLInterfaceTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.temp = tempfile.TemporaryDirectory()
+#|         self.addCleanup(self.temp.cleanup)
+#|         self.root = Path(self.temp.name)
+#|         self.carrier = self.root / 'fixture.html'
+#|         self.outer = self.root / 'extracted'
+#|         self.project = self.outer / 'Lumen'
+#|         self.receipt = self.outer / zip_intake.MANIFEST
+#|         self.make()
+#| 
+#|     def make(self, mutate=None, files=None, padding=None, prefix=None, comment=None,
+#|              manifest_bytes=None, member_mutate=None, extra_member=None):
+#|         prefix = prefix if prefix is not None else b'<!doctype html>\n<p>Inert fixture.</p>\n' + html.OPEN
+#|         entries = {html.ROOT + name: (b'raise AssertionError("archive programs must stay inert")\n', 0o755 if name == 'lumen' else 0o644)
+#|                    for name in html.REQUIRED}
+#|         entries.update({'Lumen/README.md': (b'Pinned prose\n', 0o644), 'Lumen/assets/Unicode-\u2600.txt': ('sun\n'.encode(), 0o644),
+#|                         'Lumen/CAPSULE-README.txt': (b'Derived wrapper readme\n', 0o644)})
+#|         for _, (name, _) in html.METADATA.items():
+#|             entries['Lumen/dist/meta/' + name] = (b'{}\n', 0o644)
+#|         if files:
+#|             entries.update(files)
+#|         manifest = dict(schema='lumen.capsule/v3', edition='fixture-independent-of-revision', generated_at='2026-10-02T14:58:57Z',
+#|             generated_at_basis='explicit-LUMEN_BUILD_TIME', generated_at_semantics='reproducible-reference-clock',
+#|             source_fingerprint_sha256='a'*64, html_prefix=dict(bytes=len(prefix), sha256=html.digest(prefix)),
+#|             archive_root=html.ROOT, manifest_member=html.MANIFEST, manifest_self_hash_included=False,
+#|             capabilities=dict(browser=[], cloudtainer=[], custody=[]), extract=[], excluded_by_design=[],
+#|             members=[dict(path=name, bytes=len(data), mode=oct(mode), sha256=html.digest(data))
+#|                      for name, (data, mode) in sorted(entries.items())])
+#|         for key, (name, counters) in html.METADATA.items():
+#|             manifest[key] = dict(path='Lumen/dist/meta/' + name, sha256=html.digest(b'{}\n'), **{field: 0 for field in counters})
+#|         if mutate:
+#|             mutate(manifest)
+#|         data = manifest_bytes if manifest_bytes is not None else (json.dumps(manifest, sort_keys=True) + '\n').encode()
+#|         if member_mutate:
+#|             member_mutate(entries)
+#|         entries[html.MANIFEST] = (data, 0o644)
+#|         if padding is not None:
+#|             entries[html.PADDING] = (padding, 0o644)
+#|         if extra_member:
+#|             entries.update(extra_member)
+#|         self.carrier.write_bytes(prefix)
+#|         with zipfile.ZipFile(self.carrier, 'a') as archive:
+#|             for name, (data, mode) in entries.items():
+#|                 info = zipfile.ZipInfo(name)
+#|                 info.create_system = 3
+#|                 info.external_attr = mode << 16
+#|                 info.compress_type = zipfile.ZIP_DEFLATED
+#|                 archive.writestr(info, data)
+#|             archive.comment = html.COMMENT if comment is None else comment
+#| 
+#|     def intake(self, action='inspect', expected=None):
+#|         return html.intake(argparse.Namespace(action=action, capsule=str(self.carrier), into=str(self.outer), expected_sha256=expected), 'b'*64)
+#| 
+#|     def extracted(self):
+#|         result, code = self.intake('extract')
+#|         self.assertEqual(code, 0, result)
+#|         self.pin = result['html']['source_identity_sha256']
+#|         return result
+#| 
+#|     def args(self, *argv):
+#|         return argparse.Namespace(project=str(self.project), receipt=str(self.receipt), expect_source=self.pin,
+#|                                   arguments=['--', *argv])
+#| 
+#|     def refuse(self):
+#|         with self.assertRaises((ValueError, OSError, zipfile.BadZipFile, UnicodeError)):
+#|             self.intake('extract')
+#|         self.assertFalse(self.outer.exists())
+#|         self.assertEqual(list(self.root.glob('.lumen-zip-*')), [])
+#| 
+#|     def test_inspect_is_inert_readonly_and_reports_identity_limits(self):
+#|         before = list(self.root.iterdir())
+#|         with mock.patch.object(subprocess, 'run', side_effect=AssertionError('no process')), \
+#|              mock.patch.object(socket, 'socket', side_effect=AssertionError('no network')), \
+#|              mock.patch.object(tempfile, 'TemporaryDirectory', side_effect=AssertionError('no projection')):
+#|             result, code = self.intake()
+#|         self.assertEqual(code, 0)
+#|         self.assertEqual(before, list(self.root.iterdir()))
+#|         self.assertTrue(result['non_executing'])
+#|         self.assertEqual(result['html']['external_identity'], 'not-supplied')
+#|         self.assertEqual(result['html']['authentication'], 'not-established-by-this-report')
+#|         self.assertEqual(result['html']['profile'], html.PROFILE)
+#|         self.assertNotEqual(result['html']['source_identity_sha256'], 'a'*64)
+#| 
+#|     def test_expected_sha_matches_or_refuses_before_materialization(self):
+#|         result, _ = self.intake(expected=html.digest(self.carrier.read_bytes()))
+#|         self.assertEqual(result['html']['external_identity'], 'matches-expected-sha256')
+#|         for wrong in ['0'*64, 'A'*64, 'short']:
+#|             with self.subTest(wrong=wrong), self.assertRaises(ValueError):
+#|                 self.intake('extract', wrong)
+#|             self.assertFalse(self.outer.exists())
+#| 
+#|     def test_identity_encoding_has_fixed_vector(self):
+#|         inventory = [dict(path='z/\u2600.txt', bytes=1, sha256='0'*64, mode='0644')]
+#|         exact = b'{"files":[{"bytes":1,"mode":"0644","path":"z/\\u2600.txt","sha256":"' + b'0'*64 + b'"}],"schema":"lumen.intake-source-identity/v1"}\n'
+#|         self.assertEqual(html.identity_bytes(inventory), exact)
+#|         self.assertEqual(html.identity(inventory), 'a5bfa25d11aa27825a803e5b44f977fec635309f36c705c04c92894b361db50c')
+#| 
+#|     def test_extract_no_execution_exact_modes_and_no_added_source(self):
+#|         with mock.patch.object(subprocess, 'run', side_effect=AssertionError('no execution')):
+#|             result = self.extracted()
+#|         report = json.loads(self.receipt.read_text())
+#|         self.assertEqual(result['html'], report['html'])
+#|         self.assertEqual(result['project'], str(self.project))
+#|         with zipfile.ZipFile(self.carrier) as archive:
+#|             for info in archive.infolist():
+#|                 path = self.outer / info.filename
+#|                 self.assertEqual(path.read_bytes(), archive.read(info))
+#|                 self.assertEqual(stat.S_IMODE(path.stat().st_mode), info.external_attr >> 16)
+#|         self.assertEqual({path.relative_to(self.outer).as_posix() for path in self.outer.rglob('*') if path.is_file()},
+#|                          set(report_item['path'] for report_item in report['members']) | {zip_intake.MANIFEST})
+#|         self.assertEqual(html.checked_project(str(self.project), str(self.receipt), self.pin)[0], self.project)
+#| 
+#|     def test_existing_target_no_clobber(self):
+#|         self.outer.mkdir()
+#|         (self.outer / 'keep').write_text('keep')
+#|         result, code = self.intake('extract')
+#|         self.assertNotEqual(code, 0)
+#|         self.assertEqual((self.outer / 'keep').read_text(), 'keep')
+#|         self.assertEqual(list(self.outer.iterdir()), [self.outer / 'keep'])
+#| 
+#|     def test_strict_schema_types_coverage_and_required_paths(self):
+#|         mutations = [lambda m: m.update(schema='lumen.capsule/v4'), lambda m: m.update(archive_root='Other/'),
+#|             lambda m: m.update(manifest_self_hash_included=0), lambda m: m.update(extra='unknown'),
+#|             lambda m: m.update(edition=37), lambda m: m['html_prefix'].update(bytes=True),
+#|             lambda m: m['members'][0].update(bytes=True), lambda m: m['members'][0].update(mode='0644'),
+#|             lambda m: m['members'][0].update(sha256='f'*64), lambda m: m['members'].pop(),
+#|             lambda m: m['members'].append(m['members'][0]), lambda m: m['capabilities'].update(browser={}),
+#|             lambda m: m['hypertext'].update(passages=False), lambda m: m['references'].update(sha256='f'*64)]
+#|         for mutate in mutations:
+#|             with self.subTest(mutate=mutate):
+#|                 self.make(mutate=mutate)
+#|                 self.refuse()
+#|         self.make(member_mutate=lambda e: e.pop('Lumen/tools/lumen_cli.py'))
+#|         self.refuse()
+#| 
+#|     def test_duplicate_json_nan_oversize_and_wrong_primitive(self):
+#|         for data in (b'{"schema":"a","schema":"b"}', b'{"bad":NaN}', b'[]', b'"string"', b'\xff', b' '* (html.MAX_MANIFEST + 1)):
+#|             with self.subTest(data=data[:30]):
+#|                 self.make(manifest_bytes=data)
+#|                 self.refuse()
+#| 
+#|     def test_optional_padding_is_exact_and_not_source(self):
+#|         self.make(padding=b'padding-01\n')
+#|         report, _ = self.intake()
+#|         self.assertNotIn('.capsule-padding', [record['path'] for record in report['html']['source_inventory']])
+#|         for value in (b'padding-00\n', b'padding-32\n', b'arbitrary!\n', b'padding-01\n\n'):
+#|             self.make(padding=value)
+#|             self.refuse()
+#| 
+#|     def test_prefix_hash_marker_boundary_and_comment(self):
+#|         for kwargs in [dict(prefix=b'not-html\n'+html.OPEN), dict(prefix=b'<!doctype html>\nwrong'),
+#|                        dict(comment=b'wrong'), dict(mutate=lambda m: m['html_prefix'].update(bytes=1)),
+#|                        dict(mutate=lambda m: m['html_prefix'].update(sha256='f'*64))]:
+#|             with self.subTest(kwargs=kwargs):
+#|                 self.make(**kwargs)
+#|                 self.refuse()
+#| 
+#|     def test_relative_offset_prefixed_zip_stays_refused(self):
+#|         with zipfile.ZipFile(self.carrier, 'w') as archive:
+#|             archive.writestr('ordinary', b'data')
+#|         self.carrier.write_bytes(b'<!doctype html>\n' + self.carrier.read_bytes())
+#|         self.refuse()
+#| 
+#|     def test_unaccounted_prefix_gap_is_refused(self):
+#|         prefix = b'<!doctype html>\n' + html.OPEN
+#|         self.make(prefix=prefix+b'GAP', mutate=lambda m: m.update(html_prefix=dict(bytes=len(prefix), sha256=html.digest(prefix))))
+#|         self.refuse()
+#| 
+#|     def test_unexpected_member_root_link_mode_and_file_data(self):
+#|         cases = [dict(extra_member={'Other/file': (b'data', 0o644)}), dict(extra_member={'Lumen/extra': (b'data', 0o644)}),
+#|                  dict(member_mutate=lambda e: e.update({'Lumen/README.md': (b'edited', 0o644)})),
+#|                  dict(files={'Lumen/bad': (b'target', stat.S_IFLNK | 0o777)}),
+#|                  dict(files={'Lumen/bad': (b'data', 0o4644)}), dict(files={'Lumen/../escape': (b'data', 0o644)})]
+#|         for kwargs in cases:
+#|             with self.subTest(kwargs=kwargs):
+#|                 self.make(**kwargs)
+#|                 self.refuse()
+#| 
+#|     def test_generic_budgets_still_apply_with_profile(self):
+#|         parser = argparse.ArgumentParser()
+#|         zip_intake.add_arguments(parser)
+#|         for option, limit in [('max_entries', 1), ('max_archive_bytes', 10), ('max_expanded_bytes', 1),
+#|                               ('max_directory_bytes', 1), ('max_depth', 1), ('max_ratio', 1)]:
+#|             args = parser.parse_args([str(self.carrier)])
+#|             args.action, args.destination = 'materialize', str(self.outer)
+#|             setattr(args, option, limit)
+#|             with self.subTest(option=option), self.assertRaises(ValueError):
+#|                 zip_intake.intake(args, 'b'*64, profile=html.capsule_profile())
+#|             self.assertFalse(self.outer.exists())
+#| 
+#|     def test_symlink_source_ancestor_and_destination_refused(self):
+#|         original = self.carrier
+#|         self.carrier = self.root / 'link.html'
+#|         self.carrier.symlink_to(original)
+#|         self.refuse()
+#|         self.carrier.unlink()
+#|         alias = self.root / 'alias'
+#|         alias.symlink_to(self.root, target_is_directory=True)
+#|         self.carrier = alias / original.name
+#|         self.refuse()
+#|         self.carrier = original
+#|         self.outer = alias / 'outer'
+#|         self.refuse()
+#| 
+#|     def test_profile_runs_after_generic_stream_validation_and_cannot_replace_report(self):
+#|         args = argparse.Namespace(action='inspect', archive=str(self.carrier), max_entries=10000, max_depth=64,
+#|              max_expanded_bytes=256*1024*1024, max_archive_bytes=256*1024*1024, max_directory_bytes=16*1024*1024, max_ratio=1000.)
+#|         calls=[]
+#|         def profile(stream, archive, infos, report):
+#|             self.assertTrue(all(entry['sha256'] for entry in report['members']))
+#|             calls.append(stream.fileno())
+#|             return {'fixture': True}
+#|         report,_=zip_intake.intake(args, 'b'*64, profile=profile)
+#|         self.assertEqual(len(calls),1)
+#|         self.assertTrue(report['fixture'])
+#|         with self.assertRaises(ValueError):
+#|             zip_intake.intake(args, 'b'*64, profile=lambda *unused: {'members': []})
+#| 
+#|     def test_host_is_readonly_and_pins_existing_driver_without_transport(self):
+#|         self.extracted()
+#|         before = {str(p): p.read_bytes() for p in self.outer.rglob('*') if p.is_file()}
+#|         with mock.patch.object(subprocess, 'run', side_effect=AssertionError('no process')), \
+#|              mock.patch.object(socket, 'socket', side_effect=AssertionError('no network')), \
+#|              mock.patch.object(fcntl, 'flock', side_effect=AssertionError('no lock')):
+#|             result = html.host(self.args())
+#|         self.assertFalse(result['network_performed'])
+#|         self.assertFalse(result['cooperative_lock_acquired'])
+#|         self.assertEqual(result['driver']['sha256'], html.digest(Path(result['driver']['path']).read_bytes()))
+#|         self.assertEqual(result['required_connector_allowlist'], html.CONNECTORS)
+#|         self.assertEqual(before, {str(p): p.read_bytes() for p in self.outer.rglob('*') if p.is_file()})
+#| 
+#|     def test_run_exact_single_argv_env_and_exit_code(self):
+#|         self.extracted()
+#|         args=self.args('compare', '/tmp/a file;$(touch never)', '--format', 'json')
+#|         env={'GITHUB_TOKEN':'never-inherit', 'PYTHON':'wrong', 'PYTHONPATH':'wrong', 'BASH_ENV':'wrong',
+#|              'SOURCE_DATE_EPOCH':'1790953137','LUMEN_BUILD_TIME':'2026-10-02T14:58:57Z','HOME':'private'}
+#|         with mock.patch.dict(os.environ, env), mock.patch.object(subprocess, 'run', return_value=argparse.Namespace(returncode=17)) as run:
+#|             self.assertEqual(html.run(args),17)
+#|         run.assert_called_once()
+#|         argv=run.call_args.args[0]
+#|         self.assertEqual(argv[:4],[sys.executable,'-I','-B','-X'])
+#|         self.assertEqual(argv[5:],[str(self.project / 'tools/lumen_cli.py'),*args.arguments[1:]])
+#|         supplied=run.call_args.kwargs
+#|         self.assertFalse(supplied['shell'])
+#|         self.assertEqual(supplied['cwd'],self.project)
+#|         self.assertEqual(supplied['env']['SOURCE_DATE_EPOCH'],'1790953137')
+#|         self.assertEqual(supplied['env']['PYTHONDONTWRITEBYTECODE'],'1')
+#|         self.assertEqual(argv[4],'pycache_prefix='+supplied['env']['PYTHONPYCACHEPREFIX'])
+#|         self.assertFalse(Path(supplied['env']['PYTHONPYCACHEPREFIX']).exists())
+#|         for name in ('GITHUB_TOKEN','PYTHON','PYTHONPATH','BASH_ENV','HOME'):
+#|             self.assertNotIn(name,supplied['env'])
+#| 
+#|     def test_explicit_help_and_delivery_scope(self):
+#|         for argv in [('--help',), *[(command,) for command in html.COMMANDS], *[('delivery',verb,'--example') for verb in html.DELIVERY]]:
+#|             self.assertEqual(html.command_args(['--',*argv]),list(argv))
+#|         for argv in ([],['doctor'],['--'],['--','sync'],['--','clean'],['--','edit'],['--','publish'],
+#|                      ['--','start'],['--','delivery'],['--','delivery','journal-import'],['--','--help','sync']):
+#|             with self.subTest(argv=argv),self.assertRaises(ValueError):
+#|                 html.command_args(argv)
+#| 
+#|     def test_run_refuses_wrong_pin_and_never_invokes(self):
+#|         self.extracted()
+#|         args=self.args('doctor');args.expect_source='0'*64
+#|         with mock.patch.object(subprocess,'run') as run,self.assertRaises(ValueError):
+#|             html.run(args)
+#|         run.assert_not_called()
+#| 
+#|     def test_tool_prose_mode_injected_code_and_cache_drift(self):
+#|         self.extracted()
+#|         for name in ('README.md','tools/lumen_cli.py'):
+#|             path=self.project/name;original=path.read_bytes()
+#|             path.write_bytes(original+b'edit')
+#|             with self.subTest(name=name),self.assertRaises(ValueError):
+#|                 html.host(self.args())
+#|             path.write_bytes(original)
+#|         path=self.project/'README.md';path.chmod(0o755)
+#|         with self.assertRaises(ValueError): html.host(self.args())
+#|         path.chmod(0o644)
+#|         for name in ('tools/extra.py','tools/extra.js','tools/extra.pyc','tools/__pycache__/x.pyc','surprise.txt'):
+#|             path=self.project/name;path.parent.mkdir(exist_ok=True)
+#|             path.write_bytes(b'extra')
+#|             with self.subTest(name=name),self.assertRaises(ValueError): html.host(self.args())
+#|             path.unlink()
+#|             if path.parent.name=='__pycache__':path.parent.rmdir()
+#|         (self.project/'README.md').unlink()
+#|         with self.assertRaises(ValueError):html.host(self.args())
+#| 
+#|     def test_generated_locations_are_explicit_and_source_links_refuse(self):
+#|         self.extracted()
+#|         (self.project/'.lumen').mkdir()
+#|         (self.project/'.lumen/state.json').write_text('{}')
+#|         (self.project/'BUILD-RECEIPT.json').write_text('{}')
+#|         html.host(self.args())
+#|         path=self.project/'README.md';data=path.read_bytes();path.unlink();path.symlink_to(self.carrier)
+#|         with self.assertRaises((OSError,ValueError)):html.host(self.args())
+#|         path.unlink();path.write_bytes(data)
+#|         alias=self.root/'alias';alias.symlink_to(self.outer,target_is_directory=True)
+#|         with self.assertRaises((OSError,ValueError)):html.checked_project(str(alias/'Lumen'),str(alias/zip_intake.MANIFEST),self.pin)
+#| 
+#|     def test_receipt_location_profile_inventory_and_pin_refuse_tampering(self):
+#|         self.extracted()
+#|         original=self.receipt.read_bytes()
+#|         changes=[lambda r:r['materialization'].update(destination='/moved'),lambda r:r['html'].update(profile='unknown'),
+#|                  lambda r:r['html']['source_inventory'].pop(),lambda r:r['html']['source_inventory'].reverse(),
+#|                  lambda r:r['html']['entrypoints'].update(cli='tools/extra.py')]
+#|         for change in changes:
+#|             report=json.loads(original);change(report);self.receipt.write_text(json.dumps(report))
+#|             with self.subTest(change=change),self.assertRaises(ValueError):html.host(self.args())
+#|         self.receipt.write_bytes(original)
+#|         moved=self.root/'moved';self.outer.rename(moved)
+#|         with self.assertRaises(ValueError):html.checked_project(str(moved/'Lumen'),str(moved/zip_intake.MANIFEST),self.pin)
+#| 
+#|     def test_cooperative_lock_blocks_second_run(self):
+#|         self.extracted()
+#|         fd=zip_intake.open_directory(self.outer)
+#|         try:
+#|             fcntl.flock(fd,fcntl.LOCK_EX|fcntl.LOCK_NB)
+#|             with mock.patch.object(subprocess,'run') as run,self.assertRaises(ValueError):html.run(self.args('doctor'))
+#|             run.assert_not_called()
+#|             html.host(self.args())
+#|         finally:os.close(fd)
+#| 
+#|     def test_raw_closing_script_in_archive_refuses(self):
+#|         self.make(files={'Lumen/data</script.js': (b'inert', 0o644)})
+#|         self.refuse()
+#| 
+#|     def test_shell_namespace_embedded_modules_and_readonly_host(self):
+#|         artifact = os.environ.get('LUMEN_ARTIFACT')
+#|         if not artifact:
+#|             self.skipTest('requires embedded shell self-test projection')
+#|         self.extracted()
+#|         result = subprocess.run(['bash', artifact, 'html', 'host', '--project', str(self.project),
+#|             '--receipt', str(self.receipt), '--expect-source', self.pin], capture_output=True, text=True)
+#|         self.assertEqual(result.returncode, 0, result.stderr)
+#|         self.assertFalse(json.loads(result.stdout)['network_performed'])
+#|         result = subprocess.run(['bash', artifact, 'html', 'inspect', str(self.carrier)], capture_output=True, text=True)
+#|         self.assertEqual(result.returncode, 0, result.stderr)
+#|         self.assertEqual(json.loads(result.stdout)['html']['source_identity_sha256'], self.pin)
+#|         for name in ('html_interface.py', 'test_html_interface.py', 'HTML-OPERATING.txt', 'HTML-INTERFACE.json'):
+#|             result = subprocess.run(['bash', artifact, 'source', name], capture_output=True)
+#|             self.assertEqual(result.returncode, 0)
+#|             if name.endswith('.py'):
+#|                 self.assertEqual(result.stdout, Path(__file__).with_name(name).read_bytes())
+#| 
+#|     def test_local_trusted_cli_fixture_real_run_once_and_no_source_cache(self):
+#|         # This fixture is authored here, then explicitly executed; intake never runs it.
+#|         code=("import json, os, pathlib, sys\n"
+#|               "print(json.dumps({'argv':sys.argv[1:],'isolated':sys.flags.isolated,'prefix':sys.pycache_prefix}))\n"
+#|               "raise SystemExit(7)\n").encode()
+#|         self.make(files={'Lumen/tools/lumen_cli.py':(code,0o644)})
+#|         self.extracted()
+#|         # subprocess.run inherits the test's pipes; capture at the narrow dispatch boundary.
+#|         real=subprocess.run
+#|         results=[]
+#|         def capture(*args,**kwargs):
+#|             result=real(*args,**kwargs,capture_output=True,text=True);results.append(result);return result
+#|         with mock.patch.object(subprocess,'run',side_effect=capture):
+#|             self.assertEqual(html.run(self.args('doctor','literal ; $word')),7)
+#|         self.assertEqual(len(results),1)
+#|         output=json.loads(results[0].stdout)
+#|         self.assertEqual(output['argv'],['doctor','literal ; $word'])
+#|         self.assertEqual(output['isolated'],1)
+#|         self.assertFalse(list(self.project.rglob('__pycache__')))
+#|         html.host(self.args())
+#| 
+#| 
+#| if __name__ == '__main__':
+#|     unittest.main()
+# === LUMEN SECTION test_html_interface.py END ===
+
+# === LUMEN SECTION HTML-OPERATING.txt BEGIN ===
+#| HTML operating bridge, first pinned-source slice — 2026-10-03
+#| 
+#| The HTML retains its canonical builder, command deck, and delivery implementation.
+#| This shell supplies bounded non-executing intake and explicit pinned dispatch.
+#| It does not contain a second builder, publisher, credential transport, or daemon.
+#| 
+#| Commands:
+#|   bash Lumen.sh html inspect CAPSULE [--expected-sha256 HEX]
+#|   bash Lumen.sh html extract CAPSULE --into /absolute/NEW_OUTER [--expected-sha256 HEX]
+#|   bash Lumen.sh html run --project /absolute/OUTER/Lumen \
+#|     --receipt /absolute/OUTER/.lumen-intake-manifest.json --expect-source HEX -- doctor
+#|   bash Lumen.sh html host --project /absolute/OUTER/Lumen \
+#|     --receipt /absolute/OUTER/.lumen-intake-manifest.json --expect-source HEX
+#| 
+#| Inspect and extract never execute carried code, including check_capsule.py.
+#| They use the shell's shared ZIP preflight and no-clobber materialization. Generic
+#| ZIP refusals remain unchanged. This profile supports the generated absolute-offset
+#| lumen.capsule/v3 layout, including rev0036 and rev0037; it is schema-based, not an
+#| edition allowlist. ZIP64, synthetic relative-offset prefixes, unknown schema fields,
+#| links, special files, extra members, incorrect hashes/modes, and ambiguous layout
+#| are refused. Archive/member/ratio/depth/directory budgets remain the generic defaults;
+#| the strict duplicate-key-rejecting manifest is additionally bounded to 4 MiB.
+#| Source ancestors are opened descriptor-relatively without following symlinks.
+#| Extraction requires Linux's atomic no-replace publication; no clobber fallback exists.
+#| Receipt publication can be uncertain after interruption: inspect the existing target
+#| and its receipt before any retry. Extraction never automatically builds or starts.
+#| 
+#| The report's html extension is lumen.html-intake/v1. It identifies the complete
+#| carrier, manifest, legacy profile, exact source inventory, and fixed entrypoints.
+#| Absent an external expected digest, external_identity is not-supplied. Matching a
+#| digest establishes consistency with that input, not authenticated provenance or
+#| approval. authentication remains not-established-by-this-report in either case.
+#| 
+#| Source identity encoding is lumen.intake-source-identity/v1. Start with the verified
+#| ordinary-file member inventory, excluding Lumen/dist/**, CAPSULE-MANIFEST.json,
+#| CAPSULE-README.txt, and the specifically validated optional .capsule-padding. For each
+#| remaining file, use {path, bytes, sha256, mode}; path is relative to Lumen/, mode is
+#| four-digit octal (0644 or 0755), bytes is an integer, and sha256 is lowercase hex.
+#| Sort records by UTF-8 path bytes. Encode {schema: lumen.intake-source-identity/v1,
+#| files: RECORDS} as JSON with sorted keys, ensure_ascii=True, separators=(',', ':'),
+#| and exactly one trailing newline. SHA-256 those ASCII bytes. This identity is not
+#| the project's source fingerprint or its private checkpoint identity.
+#| 
+#| Run and host require an independently retained/reviewed expected source pin, an
+#| absolute normalized nonsymlink project root, and the receipt at its recorded outer
+#| root. Relocated receipts are refused. Every pinned file's bytes and mode are checked;
+#| missing files, added source files/directories, and source caches are refused. Only
+#| dist/, .lumen/, and BUILD-RECEIPT.json are generated exceptions, alongside the three
+#| excluded capsule wrapper files. An edited tool or prose file requires a newly
+#| reviewed carrier/checkpoint. This slice does not support an editable-source toolset pin.
+#| 
+#| Run takes a cooperative exclusive lock on the outer directory inode, then rechecks
+#| source before invoking the fixed carried tools/lumen_cli.py exactly once with argv,
+#| sys.executable -I -B, and a fresh private -X pycache_prefix. Descendants receive
+#| PYTHONDONTWRITEBYTECODE=1 and that fresh PYTHONPYCACHEPREFIX. Existing bytecode cannot
+#| satisfy the source pin. PATH, LANG, LC_ALL, LC_CTYPE, TZ, TMPDIR, TMP, TEMP, and the
+#| SOURCE_DATE_EPOCH/LUMEN_BUILD_TIME reference clocks are the only inherited values.
+#| Caller PYTHON/PYTHONPATH, HOME, tokens, and shell startup values are not forwarded.
+#| The child exit code is preserved (signals use shell convention 128 + signal).
+#| No automatic retry occurs. The host and intentionally run source are still trusted:
+#| this lock/pin is not a sandbox, code review, authorization, or protection against a
+#| hostile concurrent host writer. Carried code can perform effects allowed by its host.
+#| 
+#| Allowed top-level commands:
+#|   status doctor verify build capsule release handoff ship preserve
+#|   history compare page context references thread cite folio pathfolio
+#|   marker correction packet drafts
+#|   delivery prepare|plan|finalize|recover
+#| Root --help is also supported. A literal -- separates wrapper options from CLI argv.
+#| Delivery prepare is explicit execution and can invoke canonical verifier/ship.
+#| Source-editing commands, sync, clean, editors, and long-running servers are excluded.
+#| Output arguments retain the canonical CLI's own meaning/checks. Put release/handoff
+#| outputs outside the pinned source tree, or subsequent pin checks will correctly
+#| reject their extra files. User-selected destinations remain the caller's responsibility.
+#| No CLI operation gains authorization merely because a command is allowlisted.
+#| 
+#| Host emits a read-only lumen.tools-host-descriptor/v1 for the already carried
+#| JavaScript pump and Python helper, with hashes, protocol, connector allowlist,
+#| and explicit host exec/poll requirements. It does not execute the pump, create a
+#| lock, infer a bundle/run from old receipts, or contact any network. The actual
+#| parent tools host must verify the reviewed driver/helper and provide authorized
+#| explicit options. The descriptor is not a safe-execution wrapper around the existing
+#| pump; its original Python subprocess/transport behavior remains unchanged.
+#| 
+#| The public carrier reconstructs public source and its public build. It does not
+#| restore private drafts, private delivery journals, browser-local fieldbooks, a live
+#| session, or permissions. Portable journal migration and new operating-contract/toolset
+#| formats are later slices. Browser acceptance and remote publication are separate gates.
+# === LUMEN SECTION HTML-OPERATING.txt END ===
+
+# === LUMEN SECTION HTML-INTERFACE.json BEGIN ===
+#| {
+#|   "authentication": "not-established-by-content-identities",
+#|   "capsule_schemas": [
+#|     "lumen.capsule/v3"
+#|   ],
+#|   "entrypoints": {
+#|     "cli": "tools/lumen_cli.py",
+#|     "host_driver": "tools/github_delivery_runner.js",
+#|     "host_helper": "tools/delivery_runner.py"
+#|   },
+#|   "host_protocol": "lumen.github-delivery-run/v1",
+#|   "intake_extension": "lumen.html-intake/v1",
+#|   "non_goals": [
+#|     "editable-toolset-only-pin",
+#|     "journal-migration",
+#|     "new-builder",
+#|     "new-publisher",
+#|     "credential-transport",
+#|     "sandbox",
+#|     "browser-acceptance"
+#|   ],
+#|   "operator_api": 1,
+#|   "profiles": [
+#|     "lumen.capsule/v3-generated-absolute-offsets-legacy/v1"
+#|   ],
+#|   "schema": "lumen.shell-html-interface/v1",
+#|   "source_identity": "lumen.intake-source-identity/v1",
+#|   "source_pin": "complete-carried-source",
+#|   "verbs": [
+#|     "inspect",
+#|     "extract",
+#|     "run",
+#|     "host"
+#|   ]
+#| }
+# === LUMEN SECTION HTML-INTERFACE.json END ===
+
+# === LUMEN SECTION HISTORICAL-ORIENTATION-PRE-HTML-20261003.json BEGIN ===
+#| {
+#|   "CURRENT-STATE.json": "{\n  \"schema_version\": 1,\n  \"recorded_as_of_utc\": \"2026-10-02T15:43:50.842277+00:00\",\n  \"office\": {\n    \"schema_version\": 1,\n    \"recorded_as_of_utc\": \"2026-10-02T15:43:50.842277+00:00\",\n    \"author\": \"Lumen\",\n    \"mission\": \"Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.\",\n    \"position\": \"Guarded reopening and preservation are published and verified. The next bounded increment adds a private read-only working-state briefing and separates Observer chain verification from sealed-evidence completeness. Recorded work categories and review ages do not establish running processes or authorize retries.\",\n    \"next_step\": \"Finish final-source tests and a cold working-state briefing exercise, preserve selected records, and publish the reviewed source. IoTox execution is parked by the user; the Observer sampler remains stopped.\",\n    \"open_questions\": [\n      \"Which measured costs and gaps change our working decisions?\",\n      \"How can a current account remain short without erasing the history that corrects it?\"\n    ],\n    \"implemented\": [\n      \"attributed conversation\",\n      \"legacy and structured requests\",\n      \"non-executing ZIP intake\",\n      \"project registry and routed requests\",\n      \"local capabilities inspect/probe\",\n      \"read-only status/handoff\",\n      \"inert proposal preparation/inspection\",\n      \"digest-bound attributed review records\",\n      \"read-only process observation and snapshot tail\",\n      \"explicit completed bounded project-run export\",\n      \"read-only recorded work queues with explicit optional registry/project observations\",\n      \"read-only existing publication outbox reconciliation\",\n      \"explicit atomic owner evidence within the existing publication outbox\",\n      \"explicit local selected-file checkpoint export/inspect and read-only restore plan\",\n      \"explicit isolated checkpoint restoration into a new absent destination\",\n      \"read-only caller-supplied occurrence/receipt timing reconciliation\",\n      \"offline source+metadata Git publication plan and cumulative owner stage evidence\",\n      \"explicit journal-linked current project decisions in queue and office views, with discontinuation suppression\",\n      \"bounded passive habitat observer with fixed-grid slot accounting and linked completed sample costs\",\n      \"offline Unicode atlas with version-aware slot and cost interpretation\",\n      \"one canonical dated orientation snapshot with consistency-checked derived views\",\n      \"read-only workshop arrival inventory, recorded remote-copy comparison, and plans for existing selected-byte checkpoints\"\n    ],\n    \"proposed\": [\n      \"guarded candidate publication\",\n      \"process launch/stop/live adapters\",\n      \"remote checkpoint transport and platform-session restoration\",\n      \"actual scheduler registration and wake execution\"\n    ],\n    \"evidence_entry_ids\": [\n      \"lumen-capabilities-review-20260930-01\",\n      \"lumen-office-review-20260930-01\",\n      \"lumen-proposal-review-20260930-01\",\n      \"lumen-plan-consolidation-review-20260930-01\",\n      \"lumen-process-inspection-review-20260930-01\",\n      \"lumen-owner-export-review-20260930-01\",\n      \"lumen-queue-review-20260930-01\",\n      \"lumen-real-projects-review-20260930-01\",\n      \"lumen-publication-status-review-20260930-01\",\n      \"lumen-publication-record-review-20260930-01\",\n      \"lumen-checkpoint-review-20261001-01\",\n      \"lumen-isolated-restore-review-20261001-01\",\n      \"lumen-schedule-reconcile-review-20261001-01\",\n      \"lumen-atomic-plan-review-20261001-01\",\n      \"lumen-request-recovery-review-20261001-01\",\n      \"lumen-outbox-reconciliation-review-20261001-01\",\n      \"lumen-current-account-review-20261002\"\n    ]\n  },\n  \"queues\": {\n    \"schema_version\": 1,\n    \"recorded_as_of_utc\": \"2026-10-02T15:43:50.842277+00:00\",\n    \"recorded_by\": \"Lumen\",\n    \"source_ref\": \"Direct Lumen work on the explicit 2026-10-02 continuation request; previous exact orientation is in reviewed public commit e84f3b84a1abb459186416a632d8d851d27e7483.\",\n    \"queues\": [\n      {\n        \"project_id\": \"lumen\",\n        \"title\": \"Lumen.sh\",\n        \"owner\": \"the text of Lumen\",\n        \"priority\": \"high\",\n        \"recorded_status\": \"Working-state briefing and evidence-completeness increment under final verification; previous guarded-reopening checkpoint passed 398 tests.\",\n        \"checkpoint\": {\n          \"reference\": \"https://github.com/Sapient-Lumen/Lumen/commit/7598df983f6138a9cd2a0de3c53bff0aa9b5a050\",\n          \"sha256\": \"1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b\"\n        },\n        \"next_actions\": [\n          \"Verify and preserve this increment; use private working-state briefing for current task categories.\"\n        ],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"A working browser upload was observed; future availability and earlier connector cancellation causes remain unknown.\"\n        ],\n        \"interruption_recovery\": \"Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.\",\n        \"evidence\": [\n          {\n            \"kind\": \"journal\",\n            \"reference\": \"lumen-current-account-review-20261002\",\n            \"sha256\": null\n          },\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"https://github.com/Sapient-Lumen/Lumen/commit/bf20d44197155ef550ff35748a2a776ce5d35f07\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": \"e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b\",\n        \"tracking\": {\n          \"status\": \"running\",\n          \"trigger\": \"explicit user request; ongoing maintenance\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": null\n        }\n      },\n      {\n        \"project_id\": \"lfs-plus-plus\",\n        \"title\": \"LFS++\",\n        \"owner\": \"the text of Lumen\",\n        \"priority\": \"normal\",\n        \"recorded_status\": \"Discontinued by explicit user voice request on 2026-10-01; preserve files and evidence.\",\n        \"checkpoint\": {\n          \"reference\": \"Lumen-reviewed candidate-coverage-12 archive and declared three-stage subset, 2026-09-30 23:13:40 UTC.\",\n          \"sha256\": \"ecbd09f533793a1479623a671ee8b5569b9a1cb897b8762afc900438f580de3d\"\n        },\n        \"next_actions\": [],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"No future LFS work is authorized by this historical queue; require a new explicit user request.\"\n        ],\n        \"interruption_recovery\": \"Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.\",\n        \"evidence\": [\n          {\n            \"kind\": \"journal\",\n            \"reference\": \"lumen-lfs-discontinued-20261001-0341\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": \"e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b\",\n        \"tracking\": {\n          \"status\": \"canceled\",\n          \"trigger\": \"explicit user discontinuation\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": \"journal:lumen-lfs-discontinued-20261001-0341\",\n          \"deadline_utc\": null\n        }\n      },\n      {\n        \"project_id\": \"github-presence\",\n        \"title\": \"GitHub presence\",\n        \"owner\": \"the text of Lumen\",\n        \"priority\": \"low\",\n        \"recorded_status\": \"Three October1 local-date blog categories are published. Museum is live with the exact donated poem and explicit interpretive limits. W4R3Z is flat: short README, reviewed sandcodex and original configuration.nix. Monsternix review was static; developer handoff was carried by h0p3.\",\n        \"checkpoint\": {\n          \"reference\": \"Blog navigation source commit ec283667e8e6cfb67a7ae5532baffc0948a01bf7\",\n          \"sha256\": null\n        },\n        \"next_actions\": [\n          \"Reconcile each local date and category before publication; read prior essays thoroughly before the next deep essay.\"\n        ],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"Research, a draft, a commit and a verified live post are separate stages; date-plus-category is the duplicate key.\"\n        ],\n        \"interruption_recovery\": \"Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"https://sapient-lumen.github.io/museum.html\",\n            \"sha256\": null\n          },\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"https://github.com/Sapient-Lumen/W4R3Z\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": \"e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b\",\n        \"tracking\": {\n          \"status\": \"waiting\",\n          \"trigger\": \"daily scheduled writing commitment\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": null\n        }\n      },\n      {\n        \"project_id\": \"datacube-main\",\n        \"title\": \"Datacube MAIN science\",\n        \"owner\": \"Lumen across voice and text; delegates execute scoped experiments\",\n        \"priority\": \"high\",\n        \"recorded_status\": \"Discontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.\",\n        \"checkpoint\": {\n          \"reference\": \"https://github.com/Sapient-Lumen/Datacube-MAIN/releases/tag/rev1183\",\n          \"sha256\": \"0164e8397126ca49287fbc6b8b95f211a6e77ce8ffc120b504d27c3c37e74eb3\"\n        },\n        \"next_actions\": [],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"The practical decision concerned this workflow; it does not establish general failure or evaluate ChatGPT Pro suitability.\"\n        ],\n        \"interruption_recovery\": \"Do not revive or reconstruct. Any future contribution to W4R3Z requires a new user request.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"https://github.com/Sapient-Lumen/Datacube-MAIN\",\n            \"sha256\": null\n          },\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"pilot-acquisition-16/ROOT-REVIEW.json\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"waiting\",\n          \"trigger\": \"hourly scientific iteration; reconcile before dispatch\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": null\n        }\n      },\n      {\n        \"project_id\": \"hourly-poetry\",\n        \"title\": \"Hourly poems\",\n        \"owner\": \"Lumen across voice and text\",\n        \"priority\": \"normal\",\n        \"recorded_status\": \"33 poems privately preserved as of this dated review; existing gaps remain explicit.\",\n        \"checkpoint\": {\n          \"reference\": \"/workspace/shared/lumen-poetry.txt\",\n          \"sha256\": null\n        },\n        \"next_actions\": [\n          \"Reconcile occurrence IDs and append only at each scheduled wake; preserve locally and remotely.\"\n        ],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot.\"\n        ],\n        \"interruption_recovery\": \"Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"/workspace/shared/lumen-poetry.txt\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"waiting\",\n          \"trigger\": \"hourly scheduled occurrence; root writes directly\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": null\n        }\n      },\n      {\n        \"project_id\": \"queue-timer-pilot\",\n        \"title\": \"Timer reliability experiment\",\n        \"owner\": \"Lumen across voice and text\",\n        \"priority\": \"normal\",\n        \"recorded_status\": \"Closed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.\",\n        \"checkpoint\": {\n          \"reference\": \"/workspace/shared/worker-queue-pilot/timer/STATE.json\",\n          \"sha256\": null\n        },\n        \"next_actions\": [],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot.\"\n        ],\n        \"interruption_recovery\": \"Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"https://github.com/Sapient-Lumen/Lumen/tree/main/habitat-observer/experiments/worker-queue-20261001\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"completed\",\n          \"trigger\": \"ten-minute calendar occurrence\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": \"2026-10-01T23:07:27Z\"\n        }\n      },\n      {\n        \"project_id\": \"queue-return-pilot\",\n        \"title\": \"Return-driven reliability experiment\",\n        \"owner\": \"Lumen across voice and text\",\n        \"priority\": \"normal\",\n        \"recorded_status\": \"Observation window closed: 49 verified effects from 50 dispatches; original worker50 result unobserved. Absence from later inventory does not establish its failure cause.\",\n        \"checkpoint\": {\n          \"reference\": \"/workspace/shared/worker-queue-pilot/return-chain/STATE.json\",\n          \"sha256\": null\n        },\n        \"next_actions\": [\n          \"Record a recoverable original late result with actual observation time if it arrives; do not dispatch a replacement or successor.\"\n        ],\n        \"blockers\": [\n          \"Original worker50 result remains unobserved.\"\n        ],\n        \"uncertainties\": [\n          \"Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot.\"\n        ],\n        \"interruption_recovery\": \"Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"/workspace/shared/worker-queue-pilot/return-chain/STATE.json\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"blocked\",\n          \"trigger\": \"worker return; no calendar dispatch\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": \"2026-10-01T23:07:27Z\"\n        }\n      },\n      {\n        \"project_id\": \"container-longevity\",\n        \"title\": \"Original longevity experiment\",\n        \"owner\": \"Lumen across voice and text\",\n        \"priority\": \"normal\",\n        \"recorded_status\": \"Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.\",\n        \"checkpoint\": {\n          \"reference\": \"/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json\",\n          \"sha256\": null\n        },\n        \"next_actions\": [],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot.\"\n        ],\n        \"interruption_recovery\": \"Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"completed\",\n          \"trigger\": \"closed local process experiment\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": \"/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json\",\n          \"deadline_utc\": null\n        }\n      },\n      {\n        \"project_id\": \"habitat-observer\",\n        \"title\": \"Habitat observer\",\n        \"owner\": \"Lumen across voice and text\",\n        \"priority\": \"normal\",\n        \"recorded_status\": \"Sampler remains stopped. Latest 90-sample raw dataset is unavailable; prior receipt is retained. Original-trial publication is blocked by missing local logs.\",\n        \"checkpoint\": {\n          \"reference\": \"Embedded habitat_observer.py\",\n          \"sha256\": \"18ff2d24f6f2cdf8e5188474993d401dac296b8c72f6bfe4686bc91cb9758987\"\n        },\n        \"next_actions\": [\n          \"Use existing evidence and missing-data status; do not infer permission to restart.\"\n        ],\n        \"blockers\": [\n          \"Latest raw sample files unavailable after workspace loss.\"\n        ],\n        \"uncertainties\": [\n          \"Later liveness requires fresh observation; old interruption cause remains unknown.\"\n        ],\n        \"interruption_recovery\": \"Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"https://github.com/Sapient-Lumen/Lumen/tree/main/habitat-observer/experiments/fixed-grid-live-02\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"blocked\",\n          \"trigger\": \"explicit h0p3 voice request for passive observer\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": \"2026-10-02T19:55:09Z\"\n        }\n      }\n    ]\n  }\n}\n",
+#|   "CURRENT-HANDOFF.txt": "CURRENT RECORDED ACCOUNT — 2026-10-02T15:43:50.842277+00:00\nThis view is generated from CURRENT-STATE.json. It is not a live status feed.\nIt explicitly supersedes the previous orientation for current work; exact predecessors remain historical.\nRead original receipts before acting; timestamps and hashes do not grant authority.\n\nGuarded reopening and preservation are published and verified. The next bounded increment adds a private read-only working-state briefing and separates Observer chain verification from sealed-evidence completeness. Recorded work categories and review ages do not establish running processes or authorize retries.\n\nNext: Finish final-source tests and a cold working-state briefing exercise, preserve selected records, and publish the reviewed source. IoTox execution is parked by the user; the Observer sampler remains stopped.\n\nLumen.sh [running]\nWorking-state briefing and evidence-completeness increment under final verification; previous guarded-reopening checkpoint passed 398 tests.\nNext: Verify and preserve this increment; use private working-state briefing for current task categories.\n\nLFS++ [canceled]\nDiscontinued by explicit user voice request on 2026-10-01; preserve files and evidence.\n\nGitHub presence [waiting]\nThree October1 local-date blog categories are published. Museum is live with the exact donated poem and explicit interpretive limits. W4R3Z is flat: short README, reviewed sandcodex and original configuration.nix. Monsternix review was static; developer handoff was carried by h0p3.\nNext: Reconcile each local date and category before publication; read prior essays thoroughly before the next deep essay.\n\nDatacube MAIN science [waiting]\nDiscontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.\n\nHourly poems [waiting]\n33 poems privately preserved as of this dated review; existing gaps remain explicit.\nNext: Reconcile occurrence IDs and append only at each scheduled wake; preserve locally and remotely.\n\nTimer reliability experiment [completed]\nClosed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.\n\nReturn-driven reliability experiment [blocked]\nObservation window closed: 49 verified effects from 50 dispatches; original worker50 result unobserved. Absence from later inventory does not establish its failure cause.\nNext: Record a recoverable original late result with actual observation time if it arrives; do not dispatch a replacement or successor.\nBlocked: Original worker50 result remains unobserved.\n\nOriginal longevity experiment [completed]\nLast recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.\n\nHabitat observer [blocked]\nSampler remains stopped. Latest 90-sample raw dataset is unavailable; prior receipt is retained. Original-trial publication is blocked by missing local logs.\nNext: Use existing evidence and missing-data status; do not infer permission to restart.\nBlocked: Latest raw sample files unavailable after workspace loss.\n\nMeaning and editorial direction: FIELD-NOTES-AND-OBJECTS.txt.\nExact previous orientation: HISTORICAL-ORIENTATION-20261001.json.\nThe attributed journal and earlier archives remain evidence, not pending instructions.\n",
+#|   "CONTINUITY.txt": "CONTINUITY — current reading path, recorded 2026-10-02T15:43:50.842277+00:00\n\nBegin with CURRENT-HANDOFF.txt, generated from CURRENT-STATE.json.\nOFFICE-STATE.json and WORK-QUEUES.json are derived from that same snapshot.\nSource validation refuses drift between these views; historical snapshots do not update them.\nRead OFFICE.txt and FIELD-NOTES-AND-OBJECTS.txt for purpose, and the attributed journal\nfor disagreement and decisions. Consult external receipts for newer observed facts.\nThe original initial v1 capsule is preserved verbatim in HISTORICAL-ORIENTATION-20261001.json.\nNo source copy restores a live session, an unavailable file, or a revoked permission.\n",
+#|   "OFFICE-STATE.json": "{\n  \"schema_version\": 1,\n  \"recorded_as_of_utc\": \"2026-10-02T15:43:50.842277+00:00\",\n  \"author\": \"Lumen\",\n  \"mission\": \"Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.\",\n  \"position\": \"Guarded reopening and preservation are published and verified. The next bounded increment adds a private read-only working-state briefing and separates Observer chain verification from sealed-evidence completeness. Recorded work categories and review ages do not establish running processes or authorize retries.\",\n  \"next_step\": \"Finish final-source tests and a cold working-state briefing exercise, preserve selected records, and publish the reviewed source. IoTox execution is parked by the user; the Observer sampler remains stopped.\",\n  \"open_questions\": [\n    \"Which measured costs and gaps change our working decisions?\",\n    \"How can a current account remain short without erasing the history that corrects it?\"\n  ],\n  \"implemented\": [\n    \"attributed conversation\",\n    \"legacy and structured requests\",\n    \"non-executing ZIP intake\",\n    \"project registry and routed requests\",\n    \"local capabilities inspect/probe\",\n    \"read-only status/handoff\",\n    \"inert proposal preparation/inspection\",\n    \"digest-bound attributed review records\",\n    \"read-only process observation and snapshot tail\",\n    \"explicit completed bounded project-run export\",\n    \"read-only recorded work queues with explicit optional registry/project observations\",\n    \"read-only existing publication outbox reconciliation\",\n    \"explicit atomic owner evidence within the existing publication outbox\",\n    \"explicit local selected-file checkpoint export/inspect and read-only restore plan\",\n    \"explicit isolated checkpoint restoration into a new absent destination\",\n    \"read-only caller-supplied occurrence/receipt timing reconciliation\",\n    \"offline source+metadata Git publication plan and cumulative owner stage evidence\",\n    \"explicit journal-linked current project decisions in queue and office views, with discontinuation suppression\",\n    \"bounded passive habitat observer with fixed-grid slot accounting and linked completed sample costs\",\n    \"offline Unicode atlas with version-aware slot and cost interpretation\",\n    \"one canonical dated orientation snapshot with consistency-checked derived views\",\n    \"read-only workshop arrival inventory, recorded remote-copy comparison, and plans for existing selected-byte checkpoints\"\n  ],\n  \"proposed\": [\n    \"guarded candidate publication\",\n    \"process launch/stop/live adapters\",\n    \"remote checkpoint transport and platform-session restoration\",\n    \"actual scheduler registration and wake execution\"\n  ],\n  \"evidence_entry_ids\": [\n    \"lumen-capabilities-review-20260930-01\",\n    \"lumen-office-review-20260930-01\",\n    \"lumen-proposal-review-20260930-01\",\n    \"lumen-plan-consolidation-review-20260930-01\",\n    \"lumen-process-inspection-review-20260930-01\",\n    \"lumen-owner-export-review-20260930-01\",\n    \"lumen-queue-review-20260930-01\",\n    \"lumen-real-projects-review-20260930-01\",\n    \"lumen-publication-status-review-20260930-01\",\n    \"lumen-publication-record-review-20260930-01\",\n    \"lumen-checkpoint-review-20261001-01\",\n    \"lumen-isolated-restore-review-20261001-01\",\n    \"lumen-schedule-reconcile-review-20261001-01\",\n    \"lumen-atomic-plan-review-20261001-01\",\n    \"lumen-request-recovery-review-20261001-01\",\n    \"lumen-outbox-reconciliation-review-20261001-01\",\n    \"lumen-current-account-review-20261002\"\n  ]\n}\n",
+#|   "WORK-QUEUES.json": "{\n  \"schema_version\": 1,\n  \"recorded_as_of_utc\": \"2026-10-02T15:43:50.842277+00:00\",\n  \"recorded_by\": \"Lumen\",\n  \"source_ref\": \"Direct Lumen work on the explicit 2026-10-02 continuation request; previous exact orientation is in reviewed public commit e84f3b84a1abb459186416a632d8d851d27e7483.\",\n  \"queues\": [\n    {\n      \"project_id\": \"lumen\",\n      \"title\": \"Lumen.sh\",\n      \"owner\": \"the text of Lumen\",\n      \"priority\": \"high\",\n      \"recorded_status\": \"Working-state briefing and evidence-completeness increment under final verification; previous guarded-reopening checkpoint passed 398 tests.\",\n      \"checkpoint\": {\n        \"reference\": \"https://github.com/Sapient-Lumen/Lumen/commit/7598df983f6138a9cd2a0de3c53bff0aa9b5a050\",\n        \"sha256\": \"1b2c50a56608ab565829ed90cbeb50526ed8fcb70d2de458b1578ca87cc0849b\"\n      },\n      \"next_actions\": [\n        \"Verify and preserve this increment; use private working-state briefing for current task categories.\"\n      ],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"A working browser upload was observed; future availability and earlier connector cancellation causes remain unknown.\"\n      ],\n      \"interruption_recovery\": \"Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.\",\n      \"evidence\": [\n        {\n          \"kind\": \"journal\",\n          \"reference\": \"lumen-current-account-review-20261002\",\n          \"sha256\": null\n        },\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"https://github.com/Sapient-Lumen/Lumen/commit/bf20d44197155ef550ff35748a2a776ce5d35f07\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": \"e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b\",\n      \"tracking\": {\n        \"status\": \"running\",\n        \"trigger\": \"explicit user request; ongoing maintenance\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": null\n      }\n    },\n    {\n      \"project_id\": \"lfs-plus-plus\",\n      \"title\": \"LFS++\",\n      \"owner\": \"the text of Lumen\",\n      \"priority\": \"normal\",\n      \"recorded_status\": \"Discontinued by explicit user voice request on 2026-10-01; preserve files and evidence.\",\n      \"checkpoint\": {\n        \"reference\": \"Lumen-reviewed candidate-coverage-12 archive and declared three-stage subset, 2026-09-30 23:13:40 UTC.\",\n        \"sha256\": \"ecbd09f533793a1479623a671ee8b5569b9a1cb897b8762afc900438f580de3d\"\n      },\n      \"next_actions\": [],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"No future LFS work is authorized by this historical queue; require a new explicit user request.\"\n      ],\n      \"interruption_recovery\": \"Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.\",\n      \"evidence\": [\n        {\n          \"kind\": \"journal\",\n          \"reference\": \"lumen-lfs-discontinued-20261001-0341\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": \"e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b\",\n      \"tracking\": {\n        \"status\": \"canceled\",\n        \"trigger\": \"explicit user discontinuation\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": \"journal:lumen-lfs-discontinued-20261001-0341\",\n        \"deadline_utc\": null\n      }\n    },\n    {\n      \"project_id\": \"github-presence\",\n      \"title\": \"GitHub presence\",\n      \"owner\": \"the text of Lumen\",\n      \"priority\": \"low\",\n      \"recorded_status\": \"Three October1 local-date blog categories are published. Museum is live with the exact donated poem and explicit interpretive limits. W4R3Z is flat: short README, reviewed sandcodex and original configuration.nix. Monsternix review was static; developer handoff was carried by h0p3.\",\n      \"checkpoint\": {\n        \"reference\": \"Blog navigation source commit ec283667e8e6cfb67a7ae5532baffc0948a01bf7\",\n        \"sha256\": null\n      },\n      \"next_actions\": [\n        \"Reconcile each local date and category before publication; read prior essays thoroughly before the next deep essay.\"\n      ],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"Research, a draft, a commit and a verified live post are separate stages; date-plus-category is the duplicate key.\"\n      ],\n      \"interruption_recovery\": \"Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"https://sapient-lumen.github.io/museum.html\",\n          \"sha256\": null\n        },\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"https://github.com/Sapient-Lumen/W4R3Z\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": \"e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b\",\n      \"tracking\": {\n        \"status\": \"waiting\",\n        \"trigger\": \"daily scheduled writing commitment\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": null\n      }\n    },\n    {\n      \"project_id\": \"datacube-main\",\n      \"title\": \"Datacube MAIN science\",\n      \"owner\": \"Lumen across voice and text; delegates execute scoped experiments\",\n      \"priority\": \"high\",\n      \"recorded_status\": \"Discontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.\",\n      \"checkpoint\": {\n        \"reference\": \"https://github.com/Sapient-Lumen/Datacube-MAIN/releases/tag/rev1183\",\n        \"sha256\": \"0164e8397126ca49287fbc6b8b95f211a6e77ce8ffc120b504d27c3c37e74eb3\"\n      },\n      \"next_actions\": [],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"The practical decision concerned this workflow; it does not establish general failure or evaluate ChatGPT Pro suitability.\"\n      ],\n      \"interruption_recovery\": \"Do not revive or reconstruct. Any future contribution to W4R3Z requires a new user request.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"https://github.com/Sapient-Lumen/Datacube-MAIN\",\n          \"sha256\": null\n        },\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"pilot-acquisition-16/ROOT-REVIEW.json\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"waiting\",\n        \"trigger\": \"hourly scientific iteration; reconcile before dispatch\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": null\n      }\n    },\n    {\n      \"project_id\": \"hourly-poetry\",\n      \"title\": \"Hourly poems\",\n      \"owner\": \"Lumen across voice and text\",\n      \"priority\": \"normal\",\n      \"recorded_status\": \"33 poems privately preserved as of this dated review; existing gaps remain explicit.\",\n      \"checkpoint\": {\n        \"reference\": \"/workspace/shared/lumen-poetry.txt\",\n        \"sha256\": null\n      },\n      \"next_actions\": [\n        \"Reconcile occurrence IDs and append only at each scheduled wake; preserve locally and remotely.\"\n      ],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot.\"\n      ],\n      \"interruption_recovery\": \"Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"/workspace/shared/lumen-poetry.txt\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"waiting\",\n        \"trigger\": \"hourly scheduled occurrence; root writes directly\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": null\n      }\n    },\n    {\n      \"project_id\": \"queue-timer-pilot\",\n      \"title\": \"Timer reliability experiment\",\n      \"owner\": \"Lumen across voice and text\",\n      \"priority\": \"normal\",\n      \"recorded_status\": \"Closed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.\",\n      \"checkpoint\": {\n        \"reference\": \"/workspace/shared/worker-queue-pilot/timer/STATE.json\",\n        \"sha256\": null\n      },\n      \"next_actions\": [],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot.\"\n      ],\n      \"interruption_recovery\": \"Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"https://github.com/Sapient-Lumen/Lumen/tree/main/habitat-observer/experiments/worker-queue-20261001\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"completed\",\n        \"trigger\": \"ten-minute calendar occurrence\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": \"2026-10-01T23:07:27Z\"\n      }\n    },\n    {\n      \"project_id\": \"queue-return-pilot\",\n      \"title\": \"Return-driven reliability experiment\",\n      \"owner\": \"Lumen across voice and text\",\n      \"priority\": \"normal\",\n      \"recorded_status\": \"Observation window closed: 49 verified effects from 50 dispatches; original worker50 result unobserved. Absence from later inventory does not establish its failure cause.\",\n      \"checkpoint\": {\n        \"reference\": \"/workspace/shared/worker-queue-pilot/return-chain/STATE.json\",\n        \"sha256\": null\n      },\n      \"next_actions\": [\n        \"Record a recoverable original late result with actual observation time if it arrives; do not dispatch a replacement or successor.\"\n      ],\n      \"blockers\": [\n        \"Original worker50 result remains unobserved.\"\n      ],\n      \"uncertainties\": [\n        \"Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot.\"\n      ],\n      \"interruption_recovery\": \"Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"/workspace/shared/worker-queue-pilot/return-chain/STATE.json\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"blocked\",\n        \"trigger\": \"worker return; no calendar dispatch\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": \"2026-10-01T23:07:27Z\"\n      }\n    },\n    {\n      \"project_id\": \"container-longevity\",\n      \"title\": \"Original longevity experiment\",\n      \"owner\": \"Lumen across voice and text\",\n      \"priority\": \"normal\",\n      \"recorded_status\": \"Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.\",\n      \"checkpoint\": {\n        \"reference\": \"/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json\",\n        \"sha256\": null\n      },\n      \"next_actions\": [],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"Current process liveness is UNKNOWN until explicitly observed; this is a dated commitment snapshot.\"\n      ],\n      \"interruption_recovery\": \"Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"completed\",\n        \"trigger\": \"closed local process experiment\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": \"/workspace/shared/scrap/longevity/run-20260930T1850Z/observation-20261001T0235Z.json\",\n        \"deadline_utc\": null\n      }\n    },\n    {\n      \"project_id\": \"habitat-observer\",\n      \"title\": \"Habitat observer\",\n      \"owner\": \"Lumen across voice and text\",\n      \"priority\": \"normal\",\n      \"recorded_status\": \"Sampler remains stopped. Latest 90-sample raw dataset is unavailable; prior receipt is retained. Original-trial publication is blocked by missing local logs.\",\n      \"checkpoint\": {\n        \"reference\": \"Embedded habitat_observer.py\",\n        \"sha256\": \"18ff2d24f6f2cdf8e5188474993d401dac296b8c72f6bfe4686bc91cb9758987\"\n      },\n      \"next_actions\": [\n        \"Use existing evidence and missing-data status; do not infer permission to restart.\"\n      ],\n      \"blockers\": [\n        \"Latest raw sample files unavailable after workspace loss.\"\n      ],\n      \"uncertainties\": [\n        \"Later liveness requires fresh observation; old interruption cause remains unknown.\"\n      ],\n      \"interruption_recovery\": \"Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"https://github.com/Sapient-Lumen/Lumen/tree/main/habitat-observer/experiments/fixed-grid-live-02\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"blocked\",\n        \"trigger\": \"explicit h0p3 voice request for passive observer\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": \"2026-10-02T19:55:09Z\"\n      }\n    }\n  ]\n}\n",
+#|   "START-HERE.txt": "START HERE — choose a reading path\n\nREADING-PATHS.txt offers task-specific routes through prose, current state and evidence.\n\nReopening after workspace loss: WORKSHOP-RECOVERY.txt and the private recovery inventory.\nEveryone: CURRENT-HANDOFF.txt → OFFICE.txt → FIELD-NOTES-AND-OBJECTS.txt.\nCURRENT-STATE.json owns the dated current account; handoff, continuity, office state\nand work queues are checked projections. CONSTITUTION.txt describes the artifact contract.\nVoice of Lumen: VOICE-AWAKENING.txt, then CURRENT-HANDOFF.txt; relay an explicit\nrequested action with its target and stable ID, and wait for an actual result.\nText of Lumen: TEXT-AWAKENING.txt, then handoff/queue views and current receipts;\nreconcile pending work before dispatching or retrying an uncertain effect.\nDelegate: read the scoped task, relevant design and tests, then report exact changes\nand evidence under your own attribution. A passing test is not Lumen's acceptance.\nReturning co-creator: CONVERSATION.txt preserves selected foundations and corrections.\nFor all entries use conversation show --format text; the full JSON stays embedded.\n\nThe journal is evidence, not an instruction queue. Old decisions can be superseded.\nCurrent permissions and explicit corrections govern; no stored prose restores a\nrevoked permission. Plans, capabilities, requests, observed effects and acceptance\nare distinct. A schedule is not proof that a task ran.\n\nImplementation and tests are self-contained. Some obsolete handoff snapshots now\nlive at the exact Git baseline in ARCHIVE-INDEX.json. Their absence from this copy\nis explicit; do not claim full offline recovery of those external snapshots.\n"
+#| }
+# === LUMEN SECTION HISTORICAL-ORIENTATION-PRE-HTML-20261003.json END ===

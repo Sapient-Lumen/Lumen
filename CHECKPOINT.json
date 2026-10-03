@@ -1,10 +1,18 @@
 {
   "schema_version": 1,
-  "source_sha256": "21484b7fa201bf12f3bff5a4feeac4ff18f9998d56ad428f9ca34522a0b770b5",
-  "source_bytes": 1337518,
-  "review_ref": "lumen-executive-briefing-20261002",
-  "tests": 421,
+  "source_sha256": "591ce0527cd6958e617a9446db374a65633454ec1b5f9de0340f9a7d719da5a2",
+  "source_bytes": 1451754,
+  "review_ref": "lumen-html-bridge-20261003",
+  "tests": 450,
   "repository": "Sapient-Lumen/Lumen",
   "publication_mode": "source and metadata bound by immutable commit and verified readback",
-  "qualification": "Private read-only task briefing with explicit categories and independent review ages. Legacy uncategorized state remains unclassified after recovery. Observer distinguishes chain, closed-segment seals and open tails. All 421 embedded tests pass. No dispatch, process restart, authority restoration or inferred liveness."
+  "qualification": "Capsule-aware nonexecuting inspect/extract and explicit pinned-source CLI dispatch; no duplicate builder or publisher. Parent450tests; fresh rev0038 carried236tests and all six carrier-only exports reproduced exactly. Source pins are consistency, not authorization or a sandbox. Linux no-clobber extraction; installed Python and Node verification runtime. Editable toolset pins and publication-journal migration remain pending. Current orientation explicitly pauses poetry and preserves stopped/canceled project boundaries.",
+  "html_acceptance": {
+    "edition": "rev0038",
+    "public_commit": "3135d395ab23351eb9de98bd3e101d6edfa537f4",
+    "sha256": "e836ac5c01a45c52fee342b4bcca009e7373f777183bfa694a3a103a244978f7",
+    "carried_tests": 236,
+    "exports_reproduced": 6
+  },
+  "reviewed_at_utc": "2026-10-03T09:13:56.370562+00:00"
 }
