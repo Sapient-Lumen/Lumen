@@ -35,7 +35,9 @@ exit 127
 #| 
 #| READING-PATHS.txt offers task-specific routes through prose, current state and evidence.
 #| Two-carrier work: CURRENT-HANDOFF.txt and HTML-OPERATING.txt describe the current
-#| HTML bridge, complete-source pin, explicit execution boundary, and pending migration.
+#| HTML bridge, legacy complete-source pins, editable workspaces with explicit external
+#| toolset pins, and pending custody/continuation work. New operator publication is
+#| pending review; local publish is source acceptance, not online publication.
 #| Poetry is paused; old schedules and historical snapshots are not append requests.
 #| 
 #| Reopening after workspace loss: WORKSHOP-RECOVERY.txt and the private recovery inventory.
@@ -62,26 +64,26 @@ exit 127
 # === LUMEN SECTION START-HERE.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
-#| CURRENT RECORDED ACCOUNT — 2026-10-03T09:00:35.971636+00:00
+#| CURRENT RECORDED ACCOUNT — 2026-10-03T10:31:10.472139+00:00
 #| This view is generated from CURRENT-STATE.json. It is not a live status feed.
 #| It explicitly supersedes the previous orientation for current work; exact predecessors remain historical.
 #| Read original receipts before acting; timestamps and hashes do not grant authority.
 #| 
-#| The two-carrier migration is active. Lumen.html owns the public reading surface, accepted source, canonical build, and existing delivery implementation; Lumen.sh supplies the reusable operating interface. The portable-first rev0038 HTML is publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Its arrival guide is included and the full repository ZIP is optional. The first shell HTML bridge passed 447 tests in implementation and independent Lumen review. Explicit carried rev0038 verify and ship each passed 236 tests; all six current public exports matched the immutable remote readback bytes and the post-run source-pin check passed. Shell bridge publication remains pending review. Poetry is PAUSED by user direction: do not append. The Observer sampler remains stopped, IoTox execution remains parked, and LFS++ and Datacube MAIN science remain canceled. This dated account records direction and evidence; it grants no permission and does not establish live process state.
+#| The two-carrier migration is active. Lumen.html retains the public reading surface, accepted source, canonical build, and delivery implementation; Lumen.sh supplies the reusable operating interface. The first reviewed shell bridge is published at commit 4c6dc99c0ed22d9ba9c74a11e09d91da589ef0ba. HTML rev0039 is public at commit 11baf63272f7e05d8ab34a88d324f1bb44f95966 and carries portable local delivery-journal evidence; relocated imports remain paused and do not support continuation. The new editable-workspace operator candidate passed 462 independent shell tests and supports explicit external toolset pins with ordinary new, local publish, and revise commands. This new operator candidate is not published; publication remains pending review. The integrated editable workspace, attribute-span homepage correction, and sealed quiet-cut foundation passed 290 canonical verify tests and ship. Fresh two-file authoring proof is still in progress at this snapshot. The sealed foundation only stages a quiet-cut retirement boundary. Private custody/admission and public-only continuation are still in progress; no real cold continuation is established. Poetry remains PAUSED: do not append. The Observer sampler remains stopped, IoTox execution remains parked, and LFS++ and Datacube MAIN science remain canceled. This dated account records direction and evidence, not live process state or permission.
 #| 
-#| Next: Review the completed release and bridge receipts, and preserve/publish only the reviewed shell checkpoint through the established authorized process. Continue the approved two-carrier migration in bounded reviewed slices: source-editing/toolset-only pins and portable delivery-journal migration are still pending. Consult HTML-OPERATING.txt for this first bridge slice and current user directions before any execution or retry.
+#| Next: Complete and review the fresh two-file authoring proof and the final operator receipts before any authorized checkpoint publication. Use explicit reviewed toolset-only pins for editable work; local publish accepts source and does not perform online publication. Private custody/admission, public-only continuation, and real cold-continuation acceptance are still pending. Keep imported local journals paused and continue the sealed continuation work only within its separately reviewed scope. Read HTML-OPERATING.txt and current user directions before execution or retry.
 #| 
 #| Lumen.sh [running]
-#| Two-carrier migration active. The bounded HTML bridge candidate passed 447 tests and independent Lumen review. Orientation is being reconciled before shell publication; migration is not complete.
-#| Next: Review the final shell checkpoint and current release receipts before authorized preservation/publication.
-#| Next: Continue source-editing/toolset-pin and portable journal slices only within their reviewed scope.
+#| The first HTML bridge is published and verified. The new editable-workspace operator candidate passed 462 independent shell tests; its publication is pending review. Integrated canonical verify passed 290 tests and ship; fresh two-file authoring proof remains in progress. Sealed private custody/admission and public-only continuation are not yet established.
+#| Next: Complete the fresh authoring proof and review exact final operator bytes before authorized publication.
+#| Next: Continue reviewed sealed custody/admission and public-only continuation work without claiming a successful real cold continuation.
 #| 
 #| LFS++ [canceled]
 #| Discontinued by explicit user voice request on 2026-10-01; preserve files and evidence.
 #| 
 #| GitHub presence [waiting]
-#| Portable-first rev0038 Lumen.html publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Arrival guide included; the full repository ZIP is optional. Carried verify and ship each passed 236 tests; all six current public exports matched immutable remote readback bytes and the post-run source-pin check passed.
-#| Next: Use the completed current release receipts when reviewing the shell bridge; do not infer a new writing or publication request from older queue entries.
+#| Public HTML rev0039 is verified at commit 11baf63272f7e05d8ab34a88d324f1bb44f95966. It carries portable local delivery-journal evidence with paused relocated imports, not supported cold continuation. Editable authoring and the sealed quiet-cut foundation are newer integrated work under review, not claims about that published edition.
+#| Next: Keep the verified public baseline distinct from unpublished integrated work and review its final acceptance before any authorized release.
 #| 
 #| Datacube MAIN science [canceled]
 #| Discontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.
@@ -106,7 +108,7 @@ exit 127
 #| Blocked: Latest raw sample files unavailable after workspace loss.
 #| 
 #| Meaning and editorial direction: FIELD-NOTES-AND-OBJECTS.txt.
-#| Exact previous orientation: HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.
+#| Exact previous orientation: HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json. Earlier: HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.
 #| The attributed journal and earlier archives remain evidence, not pending instructions.
 # === LUMEN SECTION CURRENT-HANDOFF.txt END ===
 
@@ -569,7 +571,7 @@ exit 127
 # === LUMEN SECTION CONVERSATION.txt END ===
 
 # === LUMEN SECTION CONTINUITY.txt BEGIN ===
-#| CONTINUITY — current reading path, recorded 2026-10-03T09:00:35.971636+00:00
+#| CONTINUITY — current reading path, recorded 2026-10-03T10:31:10.472139+00:00
 #| 
 #| Begin with CURRENT-HANDOFF.txt, generated from CURRENT-STATE.json.
 #| OFFICE-STATE.json and WORK-QUEUES.json are derived from that same snapshot.
@@ -654,6 +656,8 @@ EXPECTED_SECTIONS.update({'READING-PATHS.txt', 'HISTORICAL-DIALOGUE-SELECTION-20
 EXPECTED_SECTIONS.update({"WORKSHOP-RECOVERY.txt", "HISTORICAL-WORKSPACE-20261002.json"})
 
 EXPECTED_SECTIONS.update({"HTML-OPERATING.txt", "HTML-INTERFACE.json", "HISTORICAL-ORIENTATION-PRE-HTML-20261003.json"})
+
+EXPECTED_SECTIONS.add("HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json")
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
@@ -819,7 +823,7 @@ def current_views(state):
         lines += ['Blocked: '+x for x in item['blockers']]
         lines += ['']
     lines += ['Meaning and editorial direction: FIELD-NOTES-AND-OBJECTS.txt.',
-              'Exact previous orientation: HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.',
+              'Exact previous orientation: HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json. Earlier: HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.',
               'The attributed journal and earlier archives remain evidence, not pending instructions.']
     continuity = ('CONTINUITY — current reading path, recorded '+stamp+'\n\n'
         'Begin with CURRENT-HANDOFF.txt, generated from CURRENT-STATE.json.\n'
@@ -6976,11 +6980,11 @@ if __name__ == "__main__":
 # === LUMEN SECTION OFFICE-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-03T09:00:35.971636+00:00",
+#|   "recorded_as_of_utc": "2026-10-03T10:31:10.472139+00:00",
 #|   "author": "Lumen",
 #|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|   "position": "The two-carrier migration is active. Lumen.html owns the public reading surface, accepted source, canonical build, and existing delivery implementation; Lumen.sh supplies the reusable operating interface. The portable-first rev0038 HTML is publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Its arrival guide is included and the full repository ZIP is optional. The first shell HTML bridge passed 447 tests in implementation and independent Lumen review. Explicit carried rev0038 verify and ship each passed 236 tests; all six current public exports matched the immutable remote readback bytes and the post-run source-pin check passed. Shell bridge publication remains pending review. Poetry is PAUSED by user direction: do not append. The Observer sampler remains stopped, IoTox execution remains parked, and LFS++ and Datacube MAIN science remain canceled. This dated account records direction and evidence; it grants no permission and does not establish live process state.",
-#|   "next_step": "Review the completed release and bridge receipts, and preserve/publish only the reviewed shell checkpoint through the established authorized process. Continue the approved two-carrier migration in bounded reviewed slices: source-editing/toolset-only pins and portable delivery-journal migration are still pending. Consult HTML-OPERATING.txt for this first bridge slice and current user directions before any execution or retry.",
+#|   "position": "The two-carrier migration is active. Lumen.html retains the public reading surface, accepted source, canonical build, and delivery implementation; Lumen.sh supplies the reusable operating interface. The first reviewed shell bridge is published at commit 4c6dc99c0ed22d9ba9c74a11e09d91da589ef0ba. HTML rev0039 is public at commit 11baf63272f7e05d8ab34a88d324f1bb44f95966 and carries portable local delivery-journal evidence; relocated imports remain paused and do not support continuation. The new editable-workspace operator candidate passed 462 independent shell tests and supports explicit external toolset pins with ordinary new, local publish, and revise commands. This new operator candidate is not published; publication remains pending review. The integrated editable workspace, attribute-span homepage correction, and sealed quiet-cut foundation passed 290 canonical verify tests and ship. Fresh two-file authoring proof is still in progress at this snapshot. The sealed foundation only stages a quiet-cut retirement boundary. Private custody/admission and public-only continuation are still in progress; no real cold continuation is established. Poetry remains PAUSED: do not append. The Observer sampler remains stopped, IoTox execution remains parked, and LFS++ and Datacube MAIN science remain canceled. This dated account records direction and evidence, not live process state or permission.",
+#|   "next_step": "Complete and review the fresh two-file authoring proof and the final operator receipts before any authorized checkpoint publication. Use explicit reviewed toolset-only pins for editable work; local publish accepts source and does not perform online publication. Private custody/admission, public-only continuation, and real cold-continuation acceptance are still pending. Keep imported local journals paused and continue the sealed continuation work only within its separately reviewed scope. Read HTML-OPERATING.txt and current user directions before execution or retry.",
 #|   "open_questions": [
 #|     "Which measured costs and gaps change our working decisions?",
 #|     "How can a current account remain short without erasing the history that corrects it?"
@@ -7010,12 +7014,14 @@ if __name__ == "__main__":
 #|     "read-only workshop arrival inventory, recorded remote-copy comparison, and plans for existing selected-byte checkpoints",
 #|     "bounded non-executing capsule-aware HTML inspection and no-clobber extraction over shared ZIP intake",
 #|     "explicit complete-source-pinned forwarding to the carried canonical HTML project CLI",
-#|     "read-only descriptor of the carried existing authenticated tools-host delivery driver"
+#|     "read-only descriptor of the carried existing authenticated tools-host delivery driver",
+#|     "candidate editable HTML workspaces with inert operating contracts, explicit external toolset pins, and separate source-drift reporting",
+#|     "candidate thin forwarding of canonical new, local publish, and revise without a second authoring implementation"
 #|   ],
 #|   "proposed": [
-#|     "new-format inert operating contract and toolset-only pins for editable HTML source worktrees",
-#|     "portable scoped delivery-journal export/import with explicit location mapping",
-#|     "verified private journal custody at safe phase boundaries after local migration review"
+#|     "complete fresh two-file authoring acceptance and review the unpublished editable operator checkpoint",
+#|     "private custody and explicit admission for the staged sealed quiet-cut foundation",
+#|     "public-only continuation and real cold-continuation acceptance with uncertainty preserved"
 #|   ],
 #|   "evidence_entry_ids": [
 #|     "lumen-capabilities-review-20260930-01",
@@ -11054,28 +11060,28 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-03T09:00:35.971636+00:00",
+#|   "recorded_as_of_utc": "2026-10-03T10:31:10.472139+00:00",
 #|   "recorded_by": "Lumen",
-#|   "source_ref": "Lumen review on 2026-10-03 of the user-approved two-carrier migration, explicit poetry pause, and current public release/test receipts. The exact prior current-state snapshot and views are retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json. Unrelated task observation dates remain historical; this snapshot grants no authority.",
+#|   "source_ref": "Lumen review on 2026-10-03 of verified public shell/HTML checkpoints, independently tested editable-workspace code, and staged sealed continuation work. The exact previous current-state snapshot and views are retained once in HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json. Unrelated task observations and stopped/canceled directions retain their earlier dates. This snapshot grants no authority.",
 #|   "queues": [
 #|     {
 #|       "project_id": "lumen",
 #|       "title": "Lumen.sh",
 #|       "owner": "the text of Lumen",
 #|       "priority": "high",
-#|       "recorded_status": "Two-carrier migration active. The bounded HTML bridge candidate passed 447 tests and independent Lumen review. Orientation is being reconciled before shell publication; migration is not complete.",
+#|       "recorded_status": "The first HTML bridge is published and verified. The new editable-workspace operator candidate passed 462 independent shell tests; its publication is pending review. Integrated canonical verify passed 290 tests and ship; fresh two-file authoring proof remains in progress. Sealed private custody/admission and public-only continuation are not yet established.",
 #|       "checkpoint": {
-#|         "reference": "First reviewed HTML bridge candidate, before this orientation-only refresh; consult exact acceptance receipts.",
-#|         "sha256": "3dc0a2c7e10e0147bd1a29de1623ec8ffefa51f4639c9e1496bea41e525d4fef"
+#|         "reference": "https://github.com/Sapient-Lumen/Lumen/commit/4c6dc99c0ed22d9ba9c74a11e09d91da589ef0ba",
+#|         "sha256": "591ce0527cd6958e617a9446db374a65633454ec1b5f9de0340f9a7d719da5a2"
 #|       },
 #|       "next_actions": [
-#|         "Review the final shell checkpoint and current release receipts before authorized preservation/publication.",
-#|         "Continue source-editing/toolset-pin and portable journal slices only within their reviewed scope."
+#|         "Complete the fresh authoring proof and review exact final operator bytes before authorized publication.",
+#|         "Continue reviewed sealed custody/admission and public-only continuation work without claiming a successful real cold continuation."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
-#|         "A source pin proves content consistency, not trust or authorization; cooperative locking is not hostile-host isolation.",
-#|         "Current task categories do not establish running processes, scheduler state, or completed publication."
+#|         "An explicit external toolset pin checks consistency; it is not authentication, permission, or hostile-host isolation.",
+#|         "The staged quiet-cut foundation is not durable private custody, continuation admission, or proof of cold recovery."
 #|       ],
 #|       "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|       "evidence": [
@@ -11086,20 +11092,20 @@ if __name__ == "__main__":
 #|         },
 #|         {
 #|           "kind": "reference",
-#|           "reference": "https://github.com/Sapient-Lumen/Lumen/commit/bf20d44197155ef550ff35748a2a776ce5d35f07",
+#|           "reference": "https://github.com/Sapient-Lumen/Lumen/commit/4c6dc99c0ed22d9ba9c74a11e09d91da589ef0ba",
 #|           "sha256": null
 #|         },
 #|         {
 #|           "kind": "reference",
-#|           "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4",
+#|           "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/11baf63272f7e05d8ab34a88d324f1bb44f95966",
 #|           "sha256": null
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "running",
-#|         "trigger": "explicit user-approved two-carrier migration; receipt review before publication",
-#|         "observed_at_utc": "2026-10-03T09:00:35.971636+00:00",
+#|         "trigger": "explicit user-approved two-carrier migration; editable operator review and bounded sealed continuation work",
+#|         "observed_at_utc": "2026-10-03T10:31:10.472139+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": null,
 #|         "receipt_ref": null,
@@ -11145,31 +11151,31 @@ if __name__ == "__main__":
 #|       "title": "GitHub presence",
 #|       "owner": "the text of Lumen",
 #|       "priority": "low",
-#|       "recorded_status": "Portable-first rev0038 Lumen.html publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Arrival guide included; the full repository ZIP is optional. Carried verify and ship each passed 236 tests; all six current public exports matched immutable remote readback bytes and the post-run source-pin check passed.",
+#|       "recorded_status": "Public HTML rev0039 is verified at commit 11baf63272f7e05d8ab34a88d324f1bb44f95966. It carries portable local delivery-journal evidence with paused relocated imports, not supported cold continuation. Editable authoring and the sealed quiet-cut foundation are newer integrated work under review, not claims about that published edition.",
 #|       "checkpoint": {
-#|         "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4",
+#|         "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/11baf63272f7e05d8ab34a88d324f1bb44f95966",
 #|         "sha256": null
 #|       },
 #|       "next_actions": [
-#|         "Use the completed current release receipts when reviewing the shell bridge; do not infer a new writing or publication request from older queue entries."
+#|         "Keep the verified public baseline distinct from unpublished integrated work and review its final acceptance before any authorized release."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
-#|         "Public byte verification, browser acceptance, and later migration completion remain separate evidence claims."
+#|         "Local verification, authenticated private custody, publication, and real cold continuation are separate evidence claims."
 #|       ],
 #|       "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|       "evidence": [
 #|         {
 #|           "kind": "reference",
-#|           "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4",
+#|           "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/11baf63272f7e05d8ab34a88d324f1bb44f95966",
 #|           "sha256": null
 #|         }
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "waiting",
-#|         "trigger": "completed release acceptance supports current shell-bridge review; older writing cadence is historical",
-#|         "observed_at_utc": "2026-10-03T09:00:35.971636+00:00",
+#|         "trigger": "verified public baseline retained during editable and sealed-continuation review",
+#|         "observed_at_utc": "2026-10-03T10:31:10.472139+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": null,
 #|         "receipt_ref": null,
@@ -18272,14 +18278,14 @@ if __name__ == "__main__":
 # === LUMEN SECTION CURRENT-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-03T09:00:35.971636+00:00",
+#|   "recorded_as_of_utc": "2026-10-03T10:31:10.472139+00:00",
 #|   "office": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-03T09:00:35.971636+00:00",
+#|     "recorded_as_of_utc": "2026-10-03T10:31:10.472139+00:00",
 #|     "author": "Lumen",
 #|     "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|     "position": "The two-carrier migration is active. Lumen.html owns the public reading surface, accepted source, canonical build, and existing delivery implementation; Lumen.sh supplies the reusable operating interface. The portable-first rev0038 HTML is publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Its arrival guide is included and the full repository ZIP is optional. The first shell HTML bridge passed 447 tests in implementation and independent Lumen review. Explicit carried rev0038 verify and ship each passed 236 tests; all six current public exports matched the immutable remote readback bytes and the post-run source-pin check passed. Shell bridge publication remains pending review. Poetry is PAUSED by user direction: do not append. The Observer sampler remains stopped, IoTox execution remains parked, and LFS++ and Datacube MAIN science remain canceled. This dated account records direction and evidence; it grants no permission and does not establish live process state.",
-#|     "next_step": "Review the completed release and bridge receipts, and preserve/publish only the reviewed shell checkpoint through the established authorized process. Continue the approved two-carrier migration in bounded reviewed slices: source-editing/toolset-only pins and portable delivery-journal migration are still pending. Consult HTML-OPERATING.txt for this first bridge slice and current user directions before any execution or retry.",
+#|     "position": "The two-carrier migration is active. Lumen.html retains the public reading surface, accepted source, canonical build, and delivery implementation; Lumen.sh supplies the reusable operating interface. The first reviewed shell bridge is published at commit 4c6dc99c0ed22d9ba9c74a11e09d91da589ef0ba. HTML rev0039 is public at commit 11baf63272f7e05d8ab34a88d324f1bb44f95966 and carries portable local delivery-journal evidence; relocated imports remain paused and do not support continuation. The new editable-workspace operator candidate passed 462 independent shell tests and supports explicit external toolset pins with ordinary new, local publish, and revise commands. This new operator candidate is not published; publication remains pending review. The integrated editable workspace, attribute-span homepage correction, and sealed quiet-cut foundation passed 290 canonical verify tests and ship. Fresh two-file authoring proof is still in progress at this snapshot. The sealed foundation only stages a quiet-cut retirement boundary. Private custody/admission and public-only continuation are still in progress; no real cold continuation is established. Poetry remains PAUSED: do not append. The Observer sampler remains stopped, IoTox execution remains parked, and LFS++ and Datacube MAIN science remain canceled. This dated account records direction and evidence, not live process state or permission.",
+#|     "next_step": "Complete and review the fresh two-file authoring proof and the final operator receipts before any authorized checkpoint publication. Use explicit reviewed toolset-only pins for editable work; local publish accepts source and does not perform online publication. Private custody/admission, public-only continuation, and real cold-continuation acceptance are still pending. Keep imported local journals paused and continue the sealed continuation work only within its separately reviewed scope. Read HTML-OPERATING.txt and current user directions before execution or retry.",
 #|     "open_questions": [
 #|       "Which measured costs and gaps change our working decisions?",
 #|       "How can a current account remain short without erasing the history that corrects it?"
@@ -18309,12 +18315,14 @@ if __name__ == "__main__":
 #|       "read-only workshop arrival inventory, recorded remote-copy comparison, and plans for existing selected-byte checkpoints",
 #|       "bounded non-executing capsule-aware HTML inspection and no-clobber extraction over shared ZIP intake",
 #|       "explicit complete-source-pinned forwarding to the carried canonical HTML project CLI",
-#|       "read-only descriptor of the carried existing authenticated tools-host delivery driver"
+#|       "read-only descriptor of the carried existing authenticated tools-host delivery driver",
+#|       "candidate editable HTML workspaces with inert operating contracts, explicit external toolset pins, and separate source-drift reporting",
+#|       "candidate thin forwarding of canonical new, local publish, and revise without a second authoring implementation"
 #|     ],
 #|     "proposed": [
-#|       "new-format inert operating contract and toolset-only pins for editable HTML source worktrees",
-#|       "portable scoped delivery-journal export/import with explicit location mapping",
-#|       "verified private journal custody at safe phase boundaries after local migration review"
+#|       "complete fresh two-file authoring acceptance and review the unpublished editable operator checkpoint",
+#|       "private custody and explicit admission for the staged sealed quiet-cut foundation",
+#|       "public-only continuation and real cold-continuation acceptance with uncertainty preserved"
 #|     ],
 #|     "evidence_entry_ids": [
 #|       "lumen-capabilities-review-20260930-01",
@@ -18338,28 +18346,28 @@ if __name__ == "__main__":
 #|   },
 #|   "queues": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-03T09:00:35.971636+00:00",
+#|     "recorded_as_of_utc": "2026-10-03T10:31:10.472139+00:00",
 #|     "recorded_by": "Lumen",
-#|     "source_ref": "Lumen review on 2026-10-03 of the user-approved two-carrier migration, explicit poetry pause, and current public release/test receipts. The exact prior current-state snapshot and views are retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json. Unrelated task observation dates remain historical; this snapshot grants no authority.",
+#|     "source_ref": "Lumen review on 2026-10-03 of verified public shell/HTML checkpoints, independently tested editable-workspace code, and staged sealed continuation work. The exact previous current-state snapshot and views are retained once in HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json. Unrelated task observations and stopped/canceled directions retain their earlier dates. This snapshot grants no authority.",
 #|     "queues": [
 #|       {
 #|         "project_id": "lumen",
 #|         "title": "Lumen.sh",
 #|         "owner": "the text of Lumen",
 #|         "priority": "high",
-#|         "recorded_status": "Two-carrier migration active. The bounded HTML bridge candidate passed 447 tests and independent Lumen review. Orientation is being reconciled before shell publication; migration is not complete.",
+#|         "recorded_status": "The first HTML bridge is published and verified. The new editable-workspace operator candidate passed 462 independent shell tests; its publication is pending review. Integrated canonical verify passed 290 tests and ship; fresh two-file authoring proof remains in progress. Sealed private custody/admission and public-only continuation are not yet established.",
 #|         "checkpoint": {
-#|           "reference": "First reviewed HTML bridge candidate, before this orientation-only refresh; consult exact acceptance receipts.",
-#|           "sha256": "3dc0a2c7e10e0147bd1a29de1623ec8ffefa51f4639c9e1496bea41e525d4fef"
+#|           "reference": "https://github.com/Sapient-Lumen/Lumen/commit/4c6dc99c0ed22d9ba9c74a11e09d91da589ef0ba",
+#|           "sha256": "591ce0527cd6958e617a9446db374a65633454ec1b5f9de0340f9a7d719da5a2"
 #|         },
 #|         "next_actions": [
-#|           "Review the final shell checkpoint and current release receipts before authorized preservation/publication.",
-#|           "Continue source-editing/toolset-pin and portable journal slices only within their reviewed scope."
+#|           "Complete the fresh authoring proof and review exact final operator bytes before authorized publication.",
+#|           "Continue reviewed sealed custody/admission and public-only continuation work without claiming a successful real cold continuation."
 #|         ],
 #|         "blockers": [],
 #|         "uncertainties": [
-#|           "A source pin proves content consistency, not trust or authorization; cooperative locking is not hostile-host isolation.",
-#|           "Current task categories do not establish running processes, scheduler state, or completed publication."
+#|           "An explicit external toolset pin checks consistency; it is not authentication, permission, or hostile-host isolation.",
+#|           "The staged quiet-cut foundation is not durable private custody, continuation admission, or proof of cold recovery."
 #|         ],
 #|         "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|         "evidence": [
@@ -18370,20 +18378,20 @@ if __name__ == "__main__":
 #|           },
 #|           {
 #|             "kind": "reference",
-#|             "reference": "https://github.com/Sapient-Lumen/Lumen/commit/bf20d44197155ef550ff35748a2a776ce5d35f07",
+#|             "reference": "https://github.com/Sapient-Lumen/Lumen/commit/4c6dc99c0ed22d9ba9c74a11e09d91da589ef0ba",
 #|             "sha256": null
 #|           },
 #|           {
 #|             "kind": "reference",
-#|             "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4",
+#|             "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/11baf63272f7e05d8ab34a88d324f1bb44f95966",
 #|             "sha256": null
 #|           }
 #|         ],
 #|         "expected_registry_revision": null,
 #|         "tracking": {
 #|           "status": "running",
-#|           "trigger": "explicit user-approved two-carrier migration; receipt review before publication",
-#|           "observed_at_utc": "2026-10-03T09:00:35.971636+00:00",
+#|           "trigger": "explicit user-approved two-carrier migration; editable operator review and bounded sealed continuation work",
+#|           "observed_at_utc": "2026-10-03T10:31:10.472139+00:00",
 #|           "execution_observation": "UNKNOWN",
 #|           "request_ref": null,
 #|           "receipt_ref": null,
@@ -18429,31 +18437,31 @@ if __name__ == "__main__":
 #|         "title": "GitHub presence",
 #|         "owner": "the text of Lumen",
 #|         "priority": "low",
-#|         "recorded_status": "Portable-first rev0038 Lumen.html publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Arrival guide included; the full repository ZIP is optional. Carried verify and ship each passed 236 tests; all six current public exports matched immutable remote readback bytes and the post-run source-pin check passed.",
+#|         "recorded_status": "Public HTML rev0039 is verified at commit 11baf63272f7e05d8ab34a88d324f1bb44f95966. It carries portable local delivery-journal evidence with paused relocated imports, not supported cold continuation. Editable authoring and the sealed quiet-cut foundation are newer integrated work under review, not claims about that published edition.",
 #|         "checkpoint": {
-#|           "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4",
+#|           "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/11baf63272f7e05d8ab34a88d324f1bb44f95966",
 #|           "sha256": null
 #|         },
 #|         "next_actions": [
-#|           "Use the completed current release receipts when reviewing the shell bridge; do not infer a new writing or publication request from older queue entries."
+#|           "Keep the verified public baseline distinct from unpublished integrated work and review its final acceptance before any authorized release."
 #|         ],
 #|         "blockers": [],
 #|         "uncertainties": [
-#|           "Public byte verification, browser acceptance, and later migration completion remain separate evidence claims."
+#|           "Local verification, authenticated private custody, publication, and real cold continuation are separate evidence claims."
 #|         ],
 #|         "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|         "evidence": [
 #|           {
 #|             "kind": "reference",
-#|             "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4",
+#|             "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/11baf63272f7e05d8ab34a88d324f1bb44f95966",
 #|             "sha256": null
 #|           }
 #|         ],
 #|         "expected_registry_revision": null,
 #|         "tracking": {
 #|           "status": "waiting",
-#|           "trigger": "completed release acceptance supports current shell-bridge review; older writing cadence is historical",
-#|           "observed_at_utc": "2026-10-03T09:00:35.971636+00:00",
+#|           "trigger": "verified public baseline retained during editable and sealed-continuation review",
+#|           "observed_at_utc": "2026-10-03T10:31:10.472139+00:00",
 #|           "execution_observation": "UNKNOWN",
 #|           "request_ref": null,
 #|           "receipt_ref": null,
@@ -19930,7 +19938,7 @@ LUMEN_PYTHON_BODY
 # === LUMEN SECTION html_interface.py BEGIN ===
 #| """Bounded, non-executing HTML intake and explicit pinned canonical CLI dispatch.
 #| 
-#| A source pin checks consistency, not authorship, review, or code safety. The
+#| Source and toolset pins check consistency, not authorship, review, or code safety. The
 #| cooperative run lock is not a sandbox against a concurrent hostile host writer.
 #| """
 #| import argparse
@@ -19968,6 +19976,7 @@ LUMEN_PYTHON_BODY
 #|                     "history compare page context references thread cite folio pathfolio "
 #|                     "marker correction packet drafts".split())
 #| DELIVERY = frozenset(("prepare", "plan", "finalize", "recover"))
+#| JOURNAL = frozenset(("journal-export", "journal-inspect", "journal-import", "journal-status", "journal-thaw"))
 #| CONNECTORS = ["mcp__codex_apps__github_" + name for name in
 #|               ("fetch", "fetch_file", "create_blob", "create_tree", "create_commit", "update_ref")]
 #| METADATA = {
@@ -19977,6 +19986,71 @@ LUMEN_PYTHON_BODY
 #|     "portable_folios": ("folios.json", ("folios", "bytes")),
 #|     "portable_path_folios": ("path-folios.json", ("folios", "bytes", "steps")),
 #| }
+#| 
+#| CONTRACT_NAME = "OPERATING-CONTRACT.json"
+#| TOOLSET = "lumen.operating-toolset/v1"
+#| WORKSPACE = "lumen.editable-workspace/v1"
+#| WORKSPACE_CHECK = "lumen.editable-workspace-check/v1"
+#| MAX_CONTRACT = 64 * 1024
+#| # This is a finite supported interface, not archive-supplied execution policy.
+#| CONTRACT = {
+#|     "schema": "lumen.operating-contract/v1", "operator_api": 1,
+#|     "project_id": "field-notes-site", "archive_root": ROOT,
+#|     "entrypoints": {"cli": REQUIRED[1], "host_driver": REQUIRED[-1], "host_helper": REQUIRED[-2]},
+#|     "host_protocol": "lumen.github-delivery-run/v1",
+#|     "runtime": {"python_minimum": [3, 10], "node": "required-for-existing-JS-tests"},
+#|     "pinned_roots": [".github", "assets", "docs", "templates", "tests", "tools"],
+#|     "pinned_files": [".editorconfig", ".gitattributes", ".gitignore", "CHANGELOG.md", "CITATION.cff",
+#|         "CONTRIBUTING.md", "LICENSE-NOTICE.md", "Makefile", CONTRACT_NAME, "README.md", "SECURITY.md",
+#|         "START-HERE.txt", "lumen"],
+#|     "mutable_data": {"files": ["config.json"],
+#|         "roots": {"content/data": [".json"], "content/pages": [".html", ".json"]}},
+#|     "generated_roots": [".lumen", "dist"],
+#|     "generated_files": [".capsule-padding", "BUILD-RECEIPT.json", "CAPSULE-MANIFEST.json", "CAPSULE-README.txt"],
+#|     "toolset_identity": TOOLSET,
+#| }
+#| EDIT_COMMANDS = frozenset(("new", "revise", "publish", "reopen"))
+#| 
+#| 
+#| def validate_contract(data):
+#|     require(len(data) <= MAX_CONTRACT, "operating contract exceeds budget")
+#|     value = strict_json(data)
+#|     # JSON's booleans compare equal to integers in Python; compare canonical bytes.
+#|     require(type(value) is dict and json.dumps(value, sort_keys=True, separators=(",", ":")) ==
+#|             json.dumps(CONTRACT, sort_keys=True, separators=(",", ":")), "unsupported operating contract")
+#|     return value
+#| 
+#| 
+#| def mutable_data(path):
+#|     return path in CONTRACT["mutable_data"]["files"] or any(
+#|         path.startswith(root + "/") and Path(path).suffix in suffixes
+#|         for root, suffixes in CONTRACT["mutable_data"]["roots"].items())
+#| 
+#| 
+#| def supported_source(path):
+#|     return mutable_data(path) or path in CONTRACT["pinned_files"] or any(
+#|         path.startswith(root + "/") for root in CONTRACT["pinned_roots"])
+#| 
+#| 
+#| def toolset_inventory(inventory):
+#|     validate_inventory(inventory)
+#|     require(all(supported_source(item["path"]) for item in inventory), "unsupported source path in operating workspace")
+#|     require(CONTRACT_NAME in {item["path"] for item in inventory}, "operating contract is required")
+#|     require(all(item["mode"] == "0644" for item in inventory if mutable_data(item["path"])),
+#|             "mutable data must not have executable mode")
+#|     return [item for item in inventory if not mutable_data(item["path"])]
+#| 
+#| 
+#| def toolset_identity(inventory):
+#|     return digest((json.dumps({"schema": TOOLSET, "files": toolset_inventory(inventory)}, sort_keys=True,
+#|         ensure_ascii=True, separators=(",", ":")) + "\n").encode("ascii"))
+#| 
+#| 
+#| def operating_report(inventory, contract_data):
+#|     validate_contract(contract_data)
+#|     return {"schema": CONTRACT["schema"], "operator_api": 1, "toolset_identity_schema": TOOLSET,
+#|         "toolset_identity_sha256": toolset_identity(inventory), "toolset_inventory": toolset_inventory(inventory),
+#|         "compatibility": "editable-workspace/v1", "authentication": "not-established-by-this-report"}
 #| 
 #| 
 #| def digest(data):
@@ -20177,7 +20251,7 @@ LUMEN_PYTHON_BODY
 #|         validate_layout(stream, archive, infos, manifest["html_prefix"])
 #|         inventory = inventory_from_members(report["members"])
 #|         validate_inventory(inventory)
-#|         return {"html": {"schema": EXTENSION, "profile": PROFILE, "edition": manifest["edition"],
+#|         result = {"html": {"schema": EXTENSION, "profile": PROFILE, "edition": manifest["edition"],
 #|             "capsule_schema": manifest["schema"], "archive_root": ROOT,
 #|             "carrier_sha256": report["archive_sha256"], "carrier_bytes": report["archive_bytes"],
 #|             "manifest_sha256": digest(manifest_data), "source_identity_schema": IDENTITY,
@@ -20185,6 +20259,10 @@ LUMEN_PYTHON_BODY
 #|             "entrypoints": {"cli": REQUIRED[1], "host_driver": REQUIRED[-1], "host_helper": REQUIRED[-2]},
 #|             "external_identity": "not-supplied" if expected_sha256 is None else "matches-expected-sha256",
 #|             "authentication": "not-established-by-this-report", "integrity": "self-consistent"}}
+#|         if ROOT + CONTRACT_NAME in members:
+#|             require(members[ROOT + CONTRACT_NAME]["bytes"] <= MAX_CONTRACT, "operating contract exceeds budget")
+#|             result["html"]["operating"] = operating_report(inventory, archive.read(ROOT + CONTRACT_NAME))
+#|         return result
 #|     return profile
 #| 
 #| 
@@ -20305,17 +20383,169 @@ LUMEN_PYTHON_BODY
 #|     return project, html
 #| 
 #| 
-#| def command_args(arguments):
+#| def scan_workspace(project):
+#|     """Read current source without importing it; generated trees stay outside the pin.
+#| 
+#|     Even excluded generated entries are walked to reject links, special files and
+#|     caches. They may contain private checkpoint bytes; none are returned or hashed.
+#|     """
+#|     project = normalized_path(project)
+#|     root = zip_intake.open_directory(project)
+#|     inventory, count, total = [], 0, 0
+#|     allowed_roots = set(CONTRACT["pinned_roots"]) | {"content"}
+#|     allowed_dirs = {"content", "content/data", "content/pages"}
+#|     contract_data = None
+#|     def visit(folder, prefix="", generated=False):
+#|         nonlocal count, total, contract_data
+#|         for name in sorted(os.listdir(folder)):
+#|             path = prefix + name
+#|             count += 1
+#|             require(count <= 10000 and path.count("/") < 64, "workspace entry/depth budget exceeded")
+#|             require(name != "__pycache__" and not name.endswith((".pyc", ".pyo")), "workspace caches are refused: " + path)
+#|             info = os.stat(name, dir_fd=folder, follow_symlinks=False)
+#|             require(stat.S_ISDIR(info.st_mode) or stat.S_ISREG(info.st_mode), "link or special workspace entry refused: " + path)
+#|             excluded = generated or (not prefix and name in CONTRACT["generated_roots"])
+#|             if stat.S_ISDIR(info.st_mode):
+#|                 if not excluded:
+#|                     require(path in allowed_roots or path in allowed_dirs or
+#|                         any(path.startswith(r + "/") for r in CONTRACT["pinned_roots"]) or
+#|                         any(path.startswith(r + "/") for r in CONTRACT["mutable_data"]["roots"]),
+#|                         "unexpected workspace directory: " + path)
+#|                 child = os.open(name, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW, dir_fd=folder)
+#|                 try:
+#|                     visit(child, path + "/", excluded)
+#|                 finally:
+#|                     os.close(child)
+#|                 continue
+#|             require(not (not prefix and name in CONTRACT["generated_roots"]), "generated root must be a directory")
+#|             if excluded or (not prefix and name in CONTRACT["generated_files"]):
+#|                 continue
+#|             require(supported_source(path), "unsupported workspace source file: " + path)
+#|             fd = os.open(name, os.O_RDONLY | os.O_NOFOLLOW | os.O_NONBLOCK, dir_fd=folder)
+#|             with os.fdopen(fd, "rb") as stream:
+#|                 now = os.fstat(stream.fileno())
+#|                 require(stat.S_ISREG(now.st_mode) and stat.S_IMODE(now.st_mode) in (0o644, 0o755), "unsupported workspace source mode")
+#|                 require(not mutable_data(path) or stat.S_IMODE(now.st_mode) == 0o644, "mutable data must not have executable mode")
+#|                 total += now.st_size
+#|                 require(total <= 256 * 1024 * 1024, "workspace source byte budget exceeded")
+#|                 hashed, remaining, data = hashlib.sha256(), now.st_size, bytearray()
+#|                 require(path != CONTRACT_NAME or remaining <= MAX_CONTRACT, "operating contract exceeds budget")
+#|                 while remaining:
+#|                     chunk = stream.read(min(zip_intake.CHUNK, remaining))
+#|                     require(bool(chunk), "workspace source shortened during check")
+#|                     remaining -= len(chunk)
+#|                     hashed.update(chunk)
+#|                     if path == CONTRACT_NAME:
+#|                         data.extend(chunk)
+#|                 require(not stream.read(1), "workspace source grew during check")
+#|                 after = os.fstat(stream.fileno())
+#|                 require((now.st_ino, now.st_dev, now.st_size, now.st_mtime_ns, now.st_ctime_ns) ==
+#|                         (after.st_ino, after.st_dev, after.st_size, after.st_mtime_ns, after.st_ctime_ns),
+#|                         "workspace source changed during check")
+#|                 if path == CONTRACT_NAME:
+#|                     contract_data = bytes(data)
+#|                 inventory.append(dict(path=path, bytes=now.st_size, mode=f"{stat.S_IMODE(now.st_mode):04o}", sha256=hashed.hexdigest()))
+#|     try:
+#|         visit(root)
+#|     finally:
+#|         os.close(root)
+#|     inventory.sort(key=lambda item: item["path"].encode("utf-8"))
+#|     require(contract_data is not None, "workspace has no operating contract")
+#|     operating = operating_report(inventory, contract_data)
+#|     return project, inventory, operating
+#| 
+#| 
+#| def source_drift(baseline, current):
+#|     old = {item["path"]: item for item in baseline}
+#|     new = {item["path"]: item for item in current}
+#|     return {"added": sorted(new.keys() - old.keys()), "removed": sorted(old.keys() - new.keys()),
+#|             "changed": sorted(path for path in old.keys() & new.keys() if old[path] != new[path])}
+#| 
+#| 
+#| def outside_receipt(project, receipt):
+#|     receipt = normalized_path(receipt)
+#|     require(receipt != project and project not in receipt.parents, "workspace receipt must be outside the project")
+#|     return receipt
+#| 
+#| 
+#| def admit(args):
+#|     sha_value(args.expect_toolset)
+#|     project, inventory, operating = scan_workspace(args.project)
+#|     require(operating["toolset_identity_sha256"] == args.expect_toolset, "expected toolset identity mismatch")
+#|     receipt = outside_receipt(project, args.into)
+#|     value = {"schema": WORKSPACE, "project": str(project), "contract_schema": CONTRACT["schema"],
+#|         "toolset_identity_schema": TOOLSET, "toolset_identity_sha256": args.expect_toolset,
+#|         "admitted_source_identity_schema": IDENTITY, "admitted_source_identity_sha256": identity(inventory),
+#|         "admitted_source_inventory": inventory, "authentication": "not-established-by-this-receipt"}
+#|     data = (json.dumps(value, indent=2, sort_keys=True, ensure_ascii=True) + "\n").encode("ascii")
+#|     require(len(data) <= MAX_RECEIPT, "workspace receipt exceeds budget")
+#|     parent = zip_intake.open_directory(receipt.parent)
+#|     try:
+#|         # Exclusive creation never overwrites a prior receipt. On an I/O failure
+#|         # a partial file can remain; inspect it before selecting another target.
+#|         fd = os.open(receipt.name, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW, 0o600, dir_fd=parent)
+#|         with os.fdopen(fd, "wb") as stream:
+#|             stream.write(data)
+#|             stream.flush()
+#|             os.fsync(stream.fileno())
+#|         os.fsync(parent)
+#|     finally:
+#|         os.close(parent)
+#|     return {"schema": WORKSPACE_CHECK, "status": "admitted", "project": str(project), "workspace": str(receipt),
+#|         "toolset_identity_sha256": args.expect_toolset, "toolset_consistency": "matches-expected-toolset",
+#|         "source_identity_sha256": identity(inventory), "source_drift": source_drift(inventory, inventory),
+#|         "non_executing": True, "authentication": "not-established-by-this-report"}
+#| 
+#| 
+#| def checked_workspace(project, receipt, expected):
+#|     sha_value(expected)
+#|     project = normalized_path(project)
+#|     receipt = outside_receipt(project, receipt)
+#|     with safe_file(receipt) as stream:
+#|         require(os.fstat(stream.fileno()).st_size <= MAX_RECEIPT, "workspace receipt exceeds budget")
+#|         value = strict_json(stream.read(MAX_RECEIPT + 1))
+#|     exact_keys(value, ("schema", "project", "contract_schema", "toolset_identity_schema", "toolset_identity_sha256",
+#|         "admitted_source_identity_schema", "admitted_source_identity_sha256", "admitted_source_inventory", "authentication"),
+#|         "workspace receipt")
+#|     require(value["schema"] == WORKSPACE and value["project"] == str(project) and value["contract_schema"] == CONTRACT["schema"] and
+#|         value["toolset_identity_schema"] == TOOLSET and value["admitted_source_identity_schema"] == IDENTITY and
+#|         value["authentication"] == "not-established-by-this-receipt", "unsupported workspace receipt or location")
+#|     baseline = value["admitted_source_inventory"]
+#|     require(identity(baseline) == value["admitted_source_identity_sha256"] and
+#|         toolset_identity(baseline) == value["toolset_identity_sha256"] == expected, "workspace receipt identity mismatch")
+#|     project, inventory, operating = scan_workspace(str(project))
+#|     require(operating["toolset_identity_sha256"] == expected, "expected toolset identity mismatch")
+#|     return project, {"schema": WORKSPACE_CHECK, "status": "checked", "project": str(project),
+#|         "workspace": str(receipt), "toolset_identity_schema": TOOLSET, "toolset_identity_sha256": expected,
+#|         "toolset_consistency": "matches-expected-toolset", "source_identity_schema": IDENTITY,
+#|         "source_identity_sha256": identity(inventory), "source_inventory": inventory,
+#|         "source_drift": source_drift(baseline, inventory), "non_executing": True,
+#|         "authentication": "not-established-by-this-report"}
+#| 
+#| 
+#| def selected_project(args):
+#|     if getattr(args, "expect_toolset", None) is not None:
+#|         require(getattr(args, "workspace", None) and not getattr(args, "receipt", None) and not getattr(args, "expect_source", None),
+#|                 "toolset mode requires --workspace and forbids legacy source-pin options")
+#|         return checked_workspace(args.project, args.workspace, args.expect_toolset)
+#|     require(getattr(args, "expect_source", None) and getattr(args, "receipt", None) and not getattr(args, "workspace", None),
+#|             "legacy mode requires --receipt and --expect-source")
+#|     return checked_project(args.project, args.receipt, args.expect_source)
+#| 
+#| 
+#| def command_args(arguments, editable=False):
 #|     require(arguments and arguments[0] == "--", "explicit -- CLI argument separator is required")
 #|     argv = arguments[1:]
 #|     require(argv and (argv == ["--help"] or argv[0] in COMMANDS or
-#|             argv[0] == "delivery" and len(argv) >= 2 and argv[1] in DELIVERY),
+#|             argv[0] == "delivery" and len(argv) >= 2 and (argv[1] in DELIVERY or editable and argv[1] in JOURNAL) or
+#|             editable and (argv[0] in EDIT_COMMANDS or argv[0] == "edit" and "--path-only" in argv and
+#|                           not any(arg == "--editor" or arg.startswith("--editor=") for arg in argv))),
 #|             "unsupported CLI command for the pinned-source bridge")
 #|     return argv
 #| 
 #| 
 #| def run(args):
-#|     argv = command_args(args.arguments)
+#|     argv = command_args(args.arguments, editable=bool(getattr(args, "expect_toolset", None)))
 #|     project = normalized_path(args.project)
 #|     # The stable outer-directory inode lock needs no lock-file creation/removal.
 #|     # It coordinates cooperating bridge runs only; it cannot fence host edits.
@@ -20325,7 +20555,13 @@ LUMEN_PYTHON_BODY
 #|             fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
 #|         except BlockingIOError as error:
 #|             raise ValueError("another cooperative HTML bridge run holds this extraction lock") from error
-#|         project, _ = checked_project(str(project), args.receipt, args.expect_source)
+#|         project, checked = selected_project(args)
+#|         if argv[0] == "delivery" and len(argv) >= 2 and argv[1] in JOURNAL:
+#|             require("tools/delivery_journal.py" in {item["path"] for item in checked["source_inventory"]},
+#|                     "this reviewed toolset does not carry the journal implementation")
+#|         if getattr(args, "expect_toolset", None):
+#|             print(json.dumps({key: checked[key] for key in ("toolset_consistency", "source_identity_sha256", "source_drift")},
+#|                              sort_keys=True), file=sys.stderr)
 #|         allowed = ("PATH", "LANG", "LC_ALL", "LC_CTYPE", "TZ", "TMPDIR", "TMP", "TEMP",
 #|                    "SOURCE_DATE_EPOCH", "LUMEN_BUILD_TIME")
 #|         env = {name: os.environ[name] for name in allowed if name in os.environ}
@@ -20342,10 +20578,10 @@ LUMEN_PYTHON_BODY
 #| 
 #| 
 #| def host(args):
-#|     project, html = checked_project(args.project, args.receipt, args.expect_source)
+#|     project, html = selected_project(args)
 #|     records = {item["path"]: item for item in html["source_inventory"]}
-#|     return {"schema": "lumen.tools-host-descriptor/v1", "project": str(project),
-#|         "source_identity_schema": IDENTITY, "source_identity_sha256": args.expect_source,
+#|     result = {"schema": "lumen.tools-host-descriptor/v1", "project": str(project),
+#|         "source_identity_schema": IDENTITY, "source_identity_sha256": html["source_identity_sha256"],
 #|         "protocol": "lumen.github-delivery-run/v1",
 #|         "driver": {"path": str(project / REQUIRED[-1]), "sha256": records[REQUIRED[-1]]["sha256"]},
 #|         "helper": {"path": str(project / REQUIRED[-2]), "sha256": records[REQUIRED[-2]]["sha256"]},
@@ -20359,6 +20595,10 @@ LUMEN_PYTHON_BODY
 #|             "Recheck source and supply authorized bundle/run options; never infer them from old receipts."],
 #|         "authentication": "not-established-by-this-report", "cooperative_lock_acquired": False,
 #|         "network_performed": False, "non_executing": True}
+#|     if getattr(args, "expect_toolset", None):
+#|         result.update(toolset_identity_schema=TOOLSET, toolset_identity_sha256=args.expect_toolset,
+#|                       source_drift=html["source_drift"], toolset_consistency=html["toolset_consistency"])
+#|     return result
 #| 
 #| 
 #| def parser():
@@ -20373,10 +20613,20 @@ LUMEN_PYTHON_BODY
 #|     for name in ("run", "host"):
 #|         item = actions.add_parser(name)
 #|         item.add_argument("--project", required=True)
-#|         item.add_argument("--receipt", required=True)
-#|         item.add_argument("--expect-source", required=True)
+#|         item.add_argument("--receipt")
+#|         item.add_argument("--workspace")
+#|         pins = item.add_mutually_exclusive_group(required=True)
+#|         pins.add_argument("--expect-source")
+#|         pins.add_argument("--expect-toolset")
 #|         if name == "run":
 #|             item.add_argument("arguments", nargs=argparse.REMAINDER)
+#|     workspace = actions.add_parser("workspace", help="explicit non-executing admission and source/toolset checks")
+#|     operations = workspace.add_subparsers(dest="workspace_action", required=True)
+#|     for name in ("admit", "check"):
+#|         item = operations.add_parser(name)
+#|         item.add_argument("--project", required=True)
+#|         item.add_argument("--expect-toolset", required=True)
+#|         item.add_argument("--into" if name == "admit" else "--workspace", required=True)
 #|     return result
 #| 
 #| 
@@ -20385,7 +20635,11 @@ LUMEN_PYTHON_BODY
 #|     try:
 #|         if args.action == "run":
 #|             return run(args)
-#|         result, code = (host(args), 0) if args.action == "host" else intake(args, source_sha256)
+#|         if args.action == "workspace":
+#|             result = admit(args) if args.workspace_action == "admit" else checked_workspace(args.project, args.workspace, args.expect_toolset)[1]
+#|             code = 0
+#|         else:
+#|             result, code = (host(args), 0) if args.action == "host" else intake(args, source_sha256)
 #|     except (ValueError, OSError, zipfile.BadZipFile, NotImplementedError, RuntimeError,
 #|             EOFError, zlib.error, UnicodeError, RecursionError) as error:
 #|         result, code = {"status": "rejected", "error": str(error), "non_executing": args.action != "run"}, 65
@@ -20784,99 +21038,375 @@ LUMEN_PYTHON_BODY
 #|         html.host(self.args())
 #| 
 #| 
+#| class EditableWorkspaceTests(unittest.TestCase):
+#|     # Share only the inert archive fixture helpers, not duplicate legacy tests.
+#|     setUp = HTMLInterfaceTests.setUp
+#|     make = HTMLInterfaceTests.make
+#|     intake = HTMLInterfaceTests.intake
+#|     extracted = HTMLInterfaceTests.extracted
+#|     def editable(self):
+#|         self.make(files={
+#|             "Lumen/OPERATING-CONTRACT.json": ((json.dumps(html.CONTRACT, sort_keys=True) + "\n").encode(), 0o644),
+#|             "Lumen/config.json": (b'{"edition":"fixture"}\n', 0o644),
+#|             "Lumen/content/pages/home.html": (b'<p>Authored text</p>\n', 0o644),
+#|             "Lumen/content/pages/home.json": (b'{}\n', 0o644),
+#|             "Lumen/content/data/edition-history.json": (b'{}\n', 0o644),
+#|         })
+#|         result = self.extracted()
+#|         self.toolpin = result["html"]["operating"]["toolset_identity_sha256"]
+#|         self.workspace = self.root / "workspace.json"
+#|         self.admit_args = argparse.Namespace(project=str(self.project), into=str(self.workspace), expect_toolset=self.toolpin)
+#|         return result
+#| 
+#|     def admitted(self):
+#|         self.editable()
+#|         result = html.admit(self.admit_args)
+#|         self.assertTrue(result["non_executing"])
+#|         return result
+#| 
+#|     def edit_args(self, *argv):
+#|         return argparse.Namespace(project=str(self.project), workspace=str(self.workspace), expect_toolset=self.toolpin,
+#|                                   expect_source=None, receipt=None, arguments=["--", *argv])
+#| 
+#|     def check(self):
+#|         return html.checked_workspace(str(self.project), str(self.workspace), self.toolpin)[1]
+#| 
+#|     def test_contract_inspection_and_explicit_admission_are_inert(self):
+#|         with mock.patch.object(subprocess, "run", side_effect=AssertionError("no process")), \
+#|              mock.patch.object(socket, "socket", side_effect=AssertionError("no network")):
+#|             result = self.editable()
+#|             self.assertEqual(result["html"]["operating"]["compatibility"], "editable-workspace/v1")
+#|             self.assertFalse(self.workspace.exists())
+#|             admitted = html.admit(self.admit_args)
+#|             self.assertEqual(admitted["toolset_consistency"], "matches-expected-toolset")
+#|             self.assertEqual(self.check()["source_drift"], {"added": [], "removed": [], "changed": []})
+#|         self.assertEqual(stat.S_IMODE(self.workspace.stat().st_mode), 0o600)
+#|         self.assertNotIn(self.workspace, self.project.rglob("*"))
+#| 
+#|     def test_toolset_fixed_vector_and_data_exclusion(self):
+#|         result = self.editable()
+#|         inventory = result["html"]["source_inventory"]
+#|         selected = html.toolset_inventory(inventory)
+#|         self.assertIn(html.CONTRACT_NAME, [item["path"] for item in selected])
+#|         self.assertFalse(any(html.mutable_data(item["path"]) for item in selected))
+#|         encoded = (json.dumps({"schema": "lumen.operating-toolset/v1", "files": selected},
+#|                    sort_keys=True, ensure_ascii=True, separators=(",", ":")) + "\n").encode("ascii")
+#|         self.assertEqual(html.digest(encoded), self.toolpin)
+#|         for item in inventory:
+#|             if html.mutable_data(item["path"]):
+#|                 item["sha256"] = "0" * 64
+#|         self.assertEqual(html.toolset_identity(inventory), self.toolpin)
+#| 
+#|     def test_contract_unknown_fields_schema_entrypoint_and_types_refuse(self):
+#|         changes = [lambda c:c.update(schema="lumen.operating-contract/v2"), lambda c:c.update(operator_api=True),
+#|             lambda c:c.update(extra="no"), lambda c:c["entrypoints"].update(cli="content/run.py"),
+#|             lambda c:c["mutable_data"]["roots"].update({"tools": [".py"]}),
+#|             lambda c:c["runtime"].update(python_minimum=[3, 11])]
+#|         for change in changes:
+#|             contract = json.loads(json.dumps(html.CONTRACT)); change(contract)
+#|             self.make(files={"Lumen/OPERATING-CONTRACT.json": (json.dumps(contract).encode(), 0o644)})
+#|             with self.subTest(contract=contract), self.assertRaises(ValueError):
+#|                 self.intake()
+#|         for data in [b'{"schema":"x","schema":"y"}', b'null', b' '*(html.MAX_CONTRACT+1)]:
+#|             self.make(files={"Lumen/OPERATING-CONTRACT.json": (data, 0o644)})
+#|             with self.assertRaises(ValueError): self.intake()
+#| 
+#|     def test_changed_added_removed_data_keep_toolset_and_report_source_drift(self):
+#|         self.admitted()
+#|         changed = self.project / "content/pages/home.html"
+#|         changed.write_bytes(b"<p>Revised text</p>\n")
+#|         (self.project / "content/pages/new-draft.html").write_bytes(b"<p>New draft</p>\n")
+#|         (self.project / "content/pages/home.json").unlink()
+#|         (self.project / "config.json").write_text('{"edition":"changed"}\n')
+#|         result = self.check()
+#|         self.assertEqual(result["toolset_consistency"], "matches-expected-toolset")
+#|         self.assertEqual(result["source_drift"], {"added": ["content/pages/new-draft.html"],
+#|             "removed": ["content/pages/home.json"], "changed": ["config.json", "content/pages/home.html"]})
+#|         with self.assertRaises(ValueError): html.checked_project(str(self.project), str(self.receipt), self.pin)
+#|         with mock.patch.object(subprocess, "run", return_value=argparse.Namespace(returncode=0)) as run:
+#|             self.assertEqual(html.run(self.edit_args("build", "--clean")), 0)
+#|         run.assert_called_once()
+#|         host = html.host(self.edit_args())
+#|         self.assertEqual(host["toolset_identity_sha256"], self.toolpin)
+#|         self.assertEqual(host["source_drift"], result["source_drift"])
+#| 
+#|     def test_changed_added_code_docs_contract_and_modes_require_new_reviewed_pin(self):
+#|         self.admitted()
+#|         for name in ("tools/lumen_cli.py", "README.md", "OPERATING-CONTRACT.json"):
+#|             path = self.project / name; original = path.read_bytes()
+#|             path.write_bytes(original + b" ")
+#|             with self.subTest(name=name), self.assertRaises(ValueError): self.check()
+#|             with self.assertRaises(ValueError): html.admit(self.admit_args)
+#|             path.write_bytes(original)
+#|         for name in ("tools/extra.py", "tests/injected.py", "assets/extra.js", "content/pages/extra.py",
+#|                      "content/data/extra.js", "surprise.txt", "sitecustomize.py"):
+#|             path = self.project / name; path.parent.mkdir(exist_ok=True)
+#|             path.write_bytes(b"no execution")
+#|             with self.subTest(name=name), self.assertRaises(ValueError): self.check()
+#|             path.unlink()
+#|             if path.parent.name == "tests": path.parent.rmdir()
+#|         (self.project / "content/pages/home.html").chmod(0o755)
+#|         with self.assertRaises(ValueError): self.check()
+#| 
+#|     def test_caches_links_and_unexpected_directories_refuse_everywhere(self):
+#|         self.admitted()
+#|         for name in ("tools/__pycache__/a.pyc", "content/pages/b.pyc", ".lumen/__pycache__/c.pyc", "dist/d.pyo"):
+#|             path = self.project / name; path.parent.mkdir(parents=True, exist_ok=True)
+#|             path.write_bytes(b"cache")
+#|             with self.subTest(name=name), self.assertRaises(ValueError): self.check()
+#|             path.unlink()
+#|             if path.parent.name == "__pycache__": path.parent.rmdir()
+#|         for name in ("content/pages/link.html", ".lumen/link", "dist/link"):
+#|             path = self.project / name; path.parent.mkdir(parents=True, exist_ok=True); path.symlink_to(self.carrier)
+#|             with self.subTest(name=name), self.assertRaises(ValueError): self.check()
+#|             path.unlink()
+#|         (self.project / "unknown").mkdir()
+#|         with self.assertRaises(ValueError): self.check()
+#| 
+#|     def test_receipt_never_supplies_trust_and_cannot_be_silently_relocated(self):
+#|         self.admitted()
+#|         with self.assertRaises(ValueError): html.checked_workspace(str(self.project), str(self.workspace), "0"*64)
+#|         # Rehashing a malicious on-disk receipt does not change the caller pin.
+#|         value = json.loads(self.workspace.read_text())
+#|         value["admitted_source_inventory"][0]["sha256"] = "0"*64
+#|         value["admitted_source_identity_sha256"] = html.identity(value["admitted_source_inventory"])
+#|         value["toolset_identity_sha256"] = html.toolset_identity(value["admitted_source_inventory"])
+#|         self.workspace.write_text(json.dumps(value))
+#|         with self.assertRaises(ValueError): self.check()
+#|         with self.assertRaises(ValueError): html.checked_workspace(str(self.project), str(self.workspace), value["toolset_identity_sha256"])
+#|         self.workspace.unlink(); html.admit(self.admit_args)
+#|         new = self.root / "private-recovered"
+#|         self.project.rename(new)
+#|         with self.assertRaises(ValueError): html.checked_workspace(str(new), str(self.workspace), self.toolpin)
+#|         # Explicit admission of a private recovered source with a caller pin is supported.
+#|         next_receipt = self.root / "private-recovered-workspace.json"
+#|         html.admit(argparse.Namespace(project=str(new), into=str(next_receipt), expect_toolset=self.toolpin))
+#|         self.assertEqual(html.checked_workspace(str(new), str(next_receipt), self.toolpin)[0], new)
+#| 
+#|     def test_admission_no_clobber_no_public_receipt_and_missing_contract(self):
+#|         self.admitted(); original = self.workspace.read_bytes()
+#|         with self.assertRaises(FileExistsError): html.admit(self.admit_args)
+#|         self.assertEqual(original, self.workspace.read_bytes())
+#|         self.admit_args.into = str(self.project / "content/data/admission.json")
+#|         with self.assertRaises(ValueError): html.admit(self.admit_args)
+#|         self.assertFalse((self.project / "content/data/admission.json").exists())
+#|         (self.project / "OPERATING-CONTRACT.json").unlink()
+#|         with self.assertRaises(ValueError): self.check()
+#| 
+#|     def test_generated_private_data_are_not_in_source_or_toolset_report(self):
+#|         self.admitted()
+#|         private = self.project / ".lumen/private/checkpoint.json"; private.parent.mkdir(parents=True)
+#|         private.write_text('{"private":"fixture"}')
+#|         result = self.check()
+#|         self.assertEqual(result["source_drift"], {"added": [], "removed": [], "changed": []})
+#|         self.assertNotIn("fixture", json.dumps(result))
+#|         self.assertFalse(any(item["path"].startswith(".lumen/") for item in result["source_inventory"]))
+#| 
+#|     def test_authoring_routing_exactly_and_interactive_commands_excluded(self):
+#|         for argv in (["new", "note", "Test"], ["revise", "note-test", "--summary", "Review"],
+#|                      ["publish", "note-test"], ["edit", "note-test", "--path-only"],
+#|                      ["edit", "note-test", "--metadata", "--path-only"], ["reopen", "checkpoint.zip", "--verify-only"]):
+#|             self.assertEqual(html.command_args(["--", *argv], editable=True), argv)
+#|             with self.assertRaises(ValueError): html.command_args(["--", *argv])
+#|         for argv in (["edit", "note-test"], ["edit", "note-test", "--path-only", "--editor", "sh"],
+#|                      ["dev"], ["start"], ["serve"], ["sync"], ["delivery", "journal-unreviewed"]):
+#|             with self.assertRaises(ValueError): html.command_args(["--", *argv], editable=True)
+#|         self.admitted()
+#|         with mock.patch.object(subprocess, "run", return_value=argparse.Namespace(returncode=9)) as run:
+#|             self.assertEqual(html.run(self.edit_args("publish", "a literal ; slug")), 9)
+#|         self.assertEqual(run.call_args.args[0][-2:], ["publish", "a literal ; slug"])
+#|         args = self.edit_args("new", "note", "Title"); args.expect_toolset = "0" * 64
+#|         with mock.patch.object(subprocess, "run") as run, self.assertRaises(ValueError): html.run(args)
+#|         run.assert_not_called()
+#| 
+#|     def test_workspace_journal_verbs_require_pinned_implementation(self):
+#|         self.admitted()
+#|         for verb in html.JOURNAL:
+#|             self.assertEqual(html.command_args(["--", "delivery", verb, "--help"], editable=True),
+#|                              ["delivery", verb, "--help"])
+#|             with self.assertRaises(ValueError): html.command_args(["--", "delivery", verb])
+#|             with mock.patch.object(subprocess, "run") as run, self.assertRaises(ValueError):
+#|                 html.run(self.edit_args("delivery", verb, "--help"))
+#|             run.assert_not_called()
+#|         # This test-authored added fixture gets an explicitly new reviewed pin.
+#|         (self.project / "tools/delivery_journal.py").write_text("# inert reviewed test fixture\n")
+#|         self.toolpin = html.scan_workspace(str(self.project))[2]["toolset_identity_sha256"]
+#|         self.workspace = self.root / "journal-workspace.json"
+#|         html.admit(argparse.Namespace(project=str(self.project), into=str(self.workspace), expect_toolset=self.toolpin))
+#|         for verb in html.JOURNAL:
+#|             with mock.patch.object(subprocess, "run", return_value=argparse.Namespace(returncode=0)) as run:
+#|                 self.assertEqual(html.run(self.edit_args("delivery", verb, "--help")), 0)
+#|             run.assert_called_once()
+#|             self.assertEqual(run.call_args.args[0][-3:], ["delivery", verb, "--help"])
+#| 
+#|     def test_pin_modes_cannot_be_mixed_or_inferred(self):
+#|         self.admitted()
+#|         args = self.edit_args("status"); args.receipt = str(self.receipt)
+#|         with self.assertRaises(ValueError): html.selected_project(args)
+#|         args = self.edit_args("status"); args.expect_toolset = None
+#|         with self.assertRaises(ValueError): html.selected_project(args)
+#|         args = self.edit_args("status"); args.workspace = None
+#|         with self.assertRaises(ValueError): html.selected_project(args)
+#| 
+#| 
 #| if __name__ == '__main__':
 #|     unittest.main()
 # === LUMEN SECTION test_html_interface.py END ===
 
 # === LUMEN SECTION HTML-OPERATING.txt BEGIN ===
-#| HTML operating bridge, first pinned-source slice — 2026-10-03
+#| HTML operating bridge: legacy source pins and editable workspaces — 2026-10-03
 #| 
-#| The HTML retains its canonical builder, command deck, and delivery implementation.
-#| This shell supplies bounded non-executing intake and explicit pinned dispatch.
-#| It does not contain a second builder, publisher, credential transport, or daemon.
+#| Lumen.html owns its canonical builder, command deck, and delivery implementation.
+#| Lumen.sh supplies bounded non-executing intake and explicit pinned dispatch. There
+#| is no second builder, publisher, credential transport, scheduler, or background server.
 #| 
-#| Commands:
+#| Non-executing intake, unchanged:
 #|   bash Lumen.sh html inspect CAPSULE [--expected-sha256 HEX]
 #|   bash Lumen.sh html extract CAPSULE --into /absolute/NEW_OUTER [--expected-sha256 HEX]
+#| 
+#| Intake validates the generated absolute-offset lumen.capsule/v3 layout through the
+#| shared generic ZIP preflight and Linux atomic no-clobber materialization. It never
+#| runs carried code, including check_capsule.py. Legacy v3 editions without a contract
+#| remain supported. ZIP64, synthetic relative-offset prefixes, unknown manifest fields,
+#| links, special files, wrong hashes/modes, and ambiguous layouts remain refused.
+#| Generic archive/member/ratio/depth/directory budgets are unchanged. The strict,
+#| duplicate-key-rejecting manifest is limited to 4 MiB; a carried operating contract
+#| is limited to 64 KiB. Unknown contract fields, interfaces, roots or versions refuse
+#| the HTML profile; generic archive inspect remains available for unfamiliar formats.
+#| No extraction builds, admits a workspace, imports its code, or starts a service.
+#| Receipt publication can be uncertain after interruption. Inspect the selected target
+#| before retrying; no clobbering fallback is provided.
+#| 
+#| Contract-bearing HTML adds html.operating to the lumen.html-intake/v1 report. The
+#| inert OPERATING-CONTRACT.json declares a finite supported API, fixed entrypoints,
+#| Python >=3.10, Node for existing verification tests, immutable roots, narrowly mutable
+#| data paths, and generated exclusions. It has no self-hash. The shell validates that
+#| exact supported contract and derives its toolset identity from verified member data.
+#| The capsule manifest remains v3: the contract is an ordinary manifest-bound source
+#| member, not a new self-referential manifest field.
+#| 
+#| Use an independently retained, reviewed toolset identity for editable work:
+#|   bash Lumen.sh html workspace admit --project /absolute/OUTER/Lumen \
+#|     --expect-toolset HEX --into /absolute/PRIVATE_WORKSPACE_RECEIPT.json
+#|   bash Lumen.sh html workspace check --project /absolute/OUTER/Lumen \
+#|     --workspace /absolute/PRIVATE_WORKSPACE_RECEIPT.json --expect-toolset HEX
+#|   bash Lumen.sh html run --project /absolute/OUTER/Lumen \
+#|     --workspace /absolute/PRIVATE_WORKSPACE_RECEIPT.json --expect-toolset HEX -- status
+#|   bash Lumen.sh html host --project /absolute/OUTER/Lumen \
+#|     --workspace /absolute/PRIVATE_WORKSPACE_RECEIPT.json --expect-toolset HEX
+#| 
+#| Admission reads the existing project, validates its contract and source, and compares
+#| its live toolset with the explicit caller pin before exclusively creating a new
+#| 0600 receipt outside the project. Admission never executes code or trusts an intake
+#| receipt. Existing receipts are not overwritten. I/O failure can leave a partial
+#| receipt; inspect before selecting another target. A private checkpoint recovered
+#| through canonical reopen can be admitted explicitly at its new path using the same
+#| independently reviewed toolset pin. Old receipts cannot silently authorize relocation.
+#| The caller supplies --expect-toolset on every check/run/host; a receipt cannot supply
+#| its own authority. Editing code/docs requires a newly reviewed pin, not re-admission
+#| with a hash merely copied from changed files. Local receipt source baselines are
+#| unauthenticated change records, not provenance or historical-custody proofs.
+#| 
+#| Mutable source in v1 is exactly config.json, content/data/**/*.json, and
+#| content/pages/**/*.{html,json}, all mode 0644. Additions, edits and deletions there
+#| change the source identity and are reported separately as source_drift. Browser HTML
+#| content remains authored, potentially active content; this boundary is not HTML
+#| sanitization or a browser sandbox. Host programs are never imported from these paths.
+#| Everything else in the supported source inventory is pinned, including all tools,
+#| tests, assets, templates, .github, docs, Makefile, launcher and contract. Added code,
+#| changed bytes or modes, unsupported source roots, links, special files and caches
+#| are refused. Empty directories are not inventory members. Generated dist/ and .lumen/
+#| are walked only for topology/link/cache safety; their contents are neither returned
+#| nor included in the source/toolset identity. They are not an execution search path.
+#| Generated wrapper metadata and BUILD-RECEIPT.json are also outside these identities.
+#| Workspace receipts must stay outside source and are never selected by the carrier
+#| builder or private source-checkpoint root lists.
+#| 
+#| Toolset identity encoding: select all nonmutable records from the validated source
+#| inventory, ordered by UTF-8 path bytes. Each is {path, bytes, sha256, mode}, relative
+#| to the project root, with four-digit octal mode and lowercase SHA-256. Encode
+#| {schema: lumen.operating-toolset/v1, files: RECORDS} with JSON sorted keys,
+#| ensure_ascii=True, separators=(',', ':'), plus exactly one trailing newline, then
+#| SHA-256 those ASCII bytes. The contract's bytes are included without any self-hash.
+#| 
+#| Legacy complete-source execution remains available with its original exact behavior:
 #|   bash Lumen.sh html run --project /absolute/OUTER/Lumen \
 #|     --receipt /absolute/OUTER/.lumen-intake-manifest.json --expect-source HEX -- doctor
 #|   bash Lumen.sh html host --project /absolute/OUTER/Lumen \
 #|     --receipt /absolute/OUTER/.lumen-intake-manifest.json --expect-source HEX
+#| Legacy receipts remain location-bound and pin every carried source file, including
+#| prose. Edits still fail this mode. Never mix source-pin and workspace-pin flags.
+#| Its identity is lumen.intake-source-identity/v1, using the same canonical encoding
+#| with every verified source record except dist/, capsule wrapper files and padding.
+#| It differs from the project's source fingerprint and private checkpoint identity.
 #| 
-#| Inspect and extract never execute carried code, including check_capsule.py.
-#| They use the shell's shared ZIP preflight and no-clobber materialization. Generic
-#| ZIP refusals remain unchanged. This profile supports the generated absolute-offset
-#| lumen.capsule/v3 layout, including rev0036 and rev0037; it is schema-based, not an
-#| edition allowlist. ZIP64, synthetic relative-offset prefixes, unknown schema fields,
-#| links, special files, extra members, incorrect hashes/modes, and ambiguous layout
-#| are refused. Archive/member/ratio/depth/directory budgets remain the generic defaults;
-#| the strict duplicate-key-rejecting manifest is additionally bounded to 4 MiB.
-#| Source ancestors are opened descriptor-relatively without following symlinks.
-#| Extraction requires Linux's atomic no-replace publication; no clobber fallback exists.
-#| Receipt publication can be uncertain after interruption: inspect the existing target
-#| and its receipt before any retry. Extraction never automatically builds or starts.
+#| Both run modes invoke the fixed carried tools/lumen_cli.py exactly once, via argv,
+#| sys.executable -I -B and a fresh private -X pycache_prefix. Descendants receive
+#| PYTHONDONTWRITEBYTECODE=1 and the fresh PYTHONPYCACHEPREFIX. Caller PYTHON/PYTHONPATH,
+#| HOME, tokens and shell startup variables are not inherited. Inherited settings are
+#| PATH, LANG, LC_ALL, LC_CTYPE, TZ, TMPDIR, TMP, TEMP, SOURCE_DATE_EPOCH and LUMEN_BUILD_TIME.
+#| The child exit status is preserved; signals use 128 + signal. There is no retry.
+#| Run takes a cooperative lock on the parent directory, verifies source before dispatch,
+#| and reports workspace source drift on stderr while preserving CLI stdout. It is not
+#| a sandbox or a fence against a hostile concurrent host writer. The interpreter,
+#| PATH-resolved tools, host and intentionally executed code remain trusted.
 #| 
-#| The report's html extension is lumen.html-intake/v1. It identifies the complete
-#| carrier, manifest, legacy profile, exact source inventory, and fixed entrypoints.
-#| Absent an external expected digest, external_identity is not-supplied. Matching a
-#| digest establishes consistency with that input, not authenticated provenance or
-#| approval. authentication remains not-established-by-this-report in either case.
-#| 
-#| Source identity encoding is lumen.intake-source-identity/v1. Start with the verified
-#| ordinary-file member inventory, excluding Lumen/dist/**, CAPSULE-MANIFEST.json,
-#| CAPSULE-README.txt, and the specifically validated optional .capsule-padding. For each
-#| remaining file, use {path, bytes, sha256, mode}; path is relative to Lumen/, mode is
-#| four-digit octal (0644 or 0755), bytes is an integer, and sha256 is lowercase hex.
-#| Sort records by UTF-8 path bytes. Encode {schema: lumen.intake-source-identity/v1,
-#| files: RECORDS} as JSON with sorted keys, ensure_ascii=True, separators=(',', ':'),
-#| and exactly one trailing newline. SHA-256 those ASCII bytes. This identity is not
-#| the project's source fingerprint or its private checkpoint identity.
-#| 
-#| Run and host require an independently retained/reviewed expected source pin, an
-#| absolute normalized nonsymlink project root, and the receipt at its recorded outer
-#| root. Relocated receipts are refused. Every pinned file's bytes and mode are checked;
-#| missing files, added source files/directories, and source caches are refused. Only
-#| dist/, .lumen/, and BUILD-RECEIPT.json are generated exceptions, alongside the three
-#| excluded capsule wrapper files. An edited tool or prose file requires a newly
-#| reviewed carrier/checkpoint. This slice does not support an editable-source toolset pin.
-#| 
-#| Run takes a cooperative exclusive lock on the outer directory inode, then rechecks
-#| source before invoking the fixed carried tools/lumen_cli.py exactly once with argv,
-#| sys.executable -I -B, and a fresh private -X pycache_prefix. Descendants receive
-#| PYTHONDONTWRITEBYTECODE=1 and that fresh PYTHONPYCACHEPREFIX. Existing bytecode cannot
-#| satisfy the source pin. PATH, LANG, LC_ALL, LC_CTYPE, TZ, TMPDIR, TMP, TEMP, and the
-#| SOURCE_DATE_EPOCH/LUMEN_BUILD_TIME reference clocks are the only inherited values.
-#| Caller PYTHON/PYTHONPATH, HOME, tokens, and shell startup values are not forwarded.
-#| The child exit code is preserved (signals use shell convention 128 + signal).
-#| No automatic retry occurs. The host and intentionally run source are still trusted:
-#| this lock/pin is not a sandbox, code review, authorization, or protection against a
-#| hostile concurrent host writer. Carried code can perform effects allowed by its host.
-#| 
-#| Allowed top-level commands:
+#| Common forwarded commands in both modes:
 #|   status doctor verify build capsule release handoff ship preserve
 #|   history compare page context references thread cite folio pathfolio
 #|   marker correction packet drafts
 #|   delivery prepare|plan|finalize|recover
-#| Root --help is also supported. A literal -- separates wrapper options from CLI argv.
-#| Delivery prepare is explicit execution and can invoke canonical verifier/ship.
-#| Source-editing commands, sync, clean, editors, and long-running servers are excluded.
-#| Output arguments retain the canonical CLI's own meaning/checks. Put release/handoff
-#| outputs outside the pinned source tree, or subsequent pin checks will correctly
-#| reject their extra files. User-selected destinations remain the caller's responsibility.
-#| No CLI operation gains authorization merely because a command is allowlisted.
+#| Root --help is supported. Workspace mode additionally routes new, revise, publish,
+#| reopen and edit --path-only. When the reviewed inventory carries the accepted
+#| tools/delivery_journal.py implementation, workspace mode also explicitly routes
+#| delivery journal-export|journal-inspect|journal-import|journal-status|journal-thaw.
+#| Unknown delivery verbs remain refused. The canonical journal commands retain their
+#| explicit stopped-dispatcher assertions, freeze IDs, nonexecuting inspection/import,
+#| and relocated-paused-evidence-only limits; forwarding does not grant remote custody
+#| or restart a dispatcher. Legacy source-pin mode retains its original command scope. Examples following the wrapper's literal -- separator:
+#|   new note "A reviewed observation" --slug reviewed-observation
+#|   edit note-reviewed-observation --path-only
+#|   edit note-reviewed-observation --metadata --path-only
+#|   publish note-reviewed-observation --summary "Initial accepted local note"
+#|   revise note-reviewed-observation --summary "Clarified the observed limit"
+#|   verify --canonical
+#|   ship --release-mode carrier-only --output /absolute/NEW_HANDOFF
+#|   preserve --verify --output /absolute/PRIVATE_CHECKPOINTS
+#|   reopen /absolute/PRIVATE_CHECKPOINT.zip --into /absolute/NEW_PRIVATE_WORKTREE
 #| 
-#| Host emits a read-only lumen.tools-host-descriptor/v1 for the already carried
-#| JavaScript pump and Python helper, with hashes, protocol, connector allowlist,
-#| and explicit host exec/poll requirements. It does not execute the pump, create a
-#| lock, infer a bundle/run from old receipts, or contact any network. The actual
-#| parent tools host must verify the reviewed driver/helper and provide authorized
-#| explicit options. The descriptor is not a safe-execution wrapper around the existing
-#| pump; its original Python subprocess/transport behavior remains unchanged.
+#| Edit returns the existing canonical body/metadata path; use your chosen file editor
+#| explicitly, then run the canonical revision/verification commands. Interactive edit,
+#| start/dev/serve, sync and clean remain excluded. No hidden server or arbitrary editor
+#| is launched. publish means local draft acceptance, not network publication. Drafts
+#| remain excluded by the canonical public-source selector; preserve stores deliberate
+#| private source/drafts separately. Outputs should be outside source or in the CLI's
+#| existing generated locations, and remain subject to its own validation. Allowlisting
+#| never grants permission for an action, upload, or communication.
 #| 
-#| The public carrier reconstructs public source and its public build. It does not
-#| restore private drafts, private delivery journals, browser-local fieldbooks, a live
-#| session, or permissions. Portable journal migration and new operating-contract/toolset
-#| formats are later slices. Browser acceptance and remote publication are separate gates.
+#| Host emits the existing read-only lumen.tools-host-descriptor/v1 with exact driver
+#| and helper hashes, protocol, connector allowlist, and exec/poll requirements. Workspace
+#| mode adds the toolset pin and source drift. It never executes the driver or contacts
+#| a network. The authorized tools host must verify these exact bytes and provide
+#| explicit bundle/run options. A shell has no authenticated tools object; no token
+#| transport or new publisher is supplied. The existing pump is not sandboxed by this
+#| report. Remote publication and browser acceptance are separate gates.
+#| 
+#| The public carrier restores public source/build, not private drafts, journals,
+#| browser-local fieldbooks, credentials, permissions, or a live session. Reader-owned
+#| private notes and private source checkpoints remain separate. Matching any digest
+#| proves consistency with that digest, not authenticated provenance, review, approval,
+#| or safe execution. No durable storage or new custody claim is created by this slice.
+#| 
+#| Ordinary multi-draft authoring regression: repeated homepage headings now retain
+#| canonical page::anchor passage identities while receiving collision-free DOM IDs.
+#| Unambiguous existing public headings and article entry fragments keep their spelling.
+#| Bare-heading ownership follows the existing accepted-ledger insertion order before
+#| drafts, so newly accepted notes, including same-date notes displayed first, cannot
+#| steal it. A new article entry that would replace an earlier accepted heading refuses
+#| the build. Do not reorder the accepted ledger casually: old duplicate fragments were
+#| ambiguous, and adding a conflicting heading to an earlier accepted note may require
+#| link review. Standalone anchors, source hashes/offsets and reader quote selectors
+#| remain canonical; a homepage DOM namespace is never saved as a new source identity.
 # === LUMEN SECTION HTML-OPERATING.txt END ===
 
 # === LUMEN SECTION HTML-INTERFACE.json BEGIN ===
@@ -20893,7 +21423,6 @@ LUMEN_PYTHON_BODY
 #|   "host_protocol": "lumen.github-delivery-run/v1",
 #|   "intake_extension": "lumen.html-intake/v1",
 #|   "non_goals": [
-#|     "editable-toolset-only-pin",
 #|     "journal-migration",
 #|     "new-builder",
 #|     "new-publisher",
@@ -20901,19 +21430,27 @@ LUMEN_PYTHON_BODY
 #|     "sandbox",
 #|     "browser-acceptance"
 #|   ],
+#|   "operating_contract": "lumen.operating-contract/v1",
 #|   "operator_api": 1,
+#|   "pin_modes": [
+#|     "complete-carried-source",
+#|     "explicitly-admitted-editable-workspace"
+#|   ],
 #|   "profiles": [
 #|     "lumen.capsule/v3-generated-absolute-offsets-legacy/v1"
 #|   ],
 #|   "schema": "lumen.shell-html-interface/v1",
 #|   "source_identity": "lumen.intake-source-identity/v1",
 #|   "source_pin": "complete-carried-source",
+#|   "toolset_identity": "lumen.operating-toolset/v1",
 #|   "verbs": [
 #|     "inspect",
 #|     "extract",
 #|     "run",
-#|     "host"
-#|   ]
+#|     "host",
+#|     "workspace"
+#|   ],
+#|   "workspace_receipt": "lumen.editable-workspace/v1"
 #| }
 # === LUMEN SECTION HTML-INTERFACE.json END ===
 
@@ -20927,3 +21464,14 @@ LUMEN_PYTHON_BODY
 #|   "START-HERE.txt": "START HERE — choose a reading path\n\nREADING-PATHS.txt offers task-specific routes through prose, current state and evidence.\n\nReopening after workspace loss: WORKSHOP-RECOVERY.txt and the private recovery inventory.\nEveryone: CURRENT-HANDOFF.txt → OFFICE.txt → FIELD-NOTES-AND-OBJECTS.txt.\nCURRENT-STATE.json owns the dated current account; handoff, continuity, office state\nand work queues are checked projections. CONSTITUTION.txt describes the artifact contract.\nVoice of Lumen: VOICE-AWAKENING.txt, then CURRENT-HANDOFF.txt; relay an explicit\nrequested action with its target and stable ID, and wait for an actual result.\nText of Lumen: TEXT-AWAKENING.txt, then handoff/queue views and current receipts;\nreconcile pending work before dispatching or retrying an uncertain effect.\nDelegate: read the scoped task, relevant design and tests, then report exact changes\nand evidence under your own attribution. A passing test is not Lumen's acceptance.\nReturning co-creator: CONVERSATION.txt preserves selected foundations and corrections.\nFor all entries use conversation show --format text; the full JSON stays embedded.\n\nThe journal is evidence, not an instruction queue. Old decisions can be superseded.\nCurrent permissions and explicit corrections govern; no stored prose restores a\nrevoked permission. Plans, capabilities, requests, observed effects and acceptance\nare distinct. A schedule is not proof that a task ran.\n\nImplementation and tests are self-contained. Some obsolete handoff snapshots now\nlive at the exact Git baseline in ARCHIVE-INDEX.json. Their absence from this copy\nis explicit; do not claim full offline recovery of those external snapshots.\n"
 #| }
 # === LUMEN SECTION HISTORICAL-ORIENTATION-PRE-HTML-20261003.json END ===
+
+# === LUMEN SECTION HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json BEGIN ===
+#| {
+#|   "CURRENT-STATE.json": "{\n  \"schema_version\": 1,\n  \"recorded_as_of_utc\": \"2026-10-03T09:00:35.971636+00:00\",\n  \"office\": {\n    \"schema_version\": 1,\n    \"recorded_as_of_utc\": \"2026-10-03T09:00:35.971636+00:00\",\n    \"author\": \"Lumen\",\n    \"mission\": \"Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.\",\n    \"position\": \"The two-carrier migration is active. Lumen.html owns the public reading surface, accepted source, canonical build, and existing delivery implementation; Lumen.sh supplies the reusable operating interface. The portable-first rev0038 HTML is publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Its arrival guide is included and the full repository ZIP is optional. The first shell HTML bridge passed 447 tests in implementation and independent Lumen review. Explicit carried rev0038 verify and ship each passed 236 tests; all six current public exports matched the immutable remote readback bytes and the post-run source-pin check passed. Shell bridge publication remains pending review. Poetry is PAUSED by user direction: do not append. The Observer sampler remains stopped, IoTox execution remains parked, and LFS++ and Datacube MAIN science remain canceled. This dated account records direction and evidence; it grants no permission and does not establish live process state.\",\n    \"next_step\": \"Review the completed release and bridge receipts, and preserve/publish only the reviewed shell checkpoint through the established authorized process. Continue the approved two-carrier migration in bounded reviewed slices: source-editing/toolset-only pins and portable delivery-journal migration are still pending. Consult HTML-OPERATING.txt for this first bridge slice and current user directions before any execution or retry.\",\n    \"open_questions\": [\n      \"Which measured costs and gaps change our working decisions?\",\n      \"How can a current account remain short without erasing the history that corrects it?\"\n    ],\n    \"implemented\": [\n      \"attributed conversation\",\n      \"legacy and structured requests\",\n      \"non-executing ZIP intake\",\n      \"project registry and routed requests\",\n      \"local capabilities inspect/probe\",\n      \"read-only status/handoff\",\n      \"inert proposal preparation/inspection\",\n      \"digest-bound attributed review records\",\n      \"read-only process observation and snapshot tail\",\n      \"explicit completed bounded project-run export\",\n      \"read-only recorded work queues with explicit optional registry/project observations\",\n      \"read-only existing publication outbox reconciliation\",\n      \"explicit atomic owner evidence within the existing publication outbox\",\n      \"explicit local selected-file checkpoint export/inspect and read-only restore plan\",\n      \"explicit isolated checkpoint restoration into a new absent destination\",\n      \"read-only caller-supplied occurrence/receipt timing reconciliation\",\n      \"offline source+metadata Git publication plan and cumulative owner stage evidence\",\n      \"explicit journal-linked current project decisions in queue and office views, with discontinuation suppression\",\n      \"bounded passive habitat observer with fixed-grid slot accounting and linked completed sample costs\",\n      \"offline Unicode atlas with version-aware slot and cost interpretation\",\n      \"one canonical dated orientation snapshot with consistency-checked derived views\",\n      \"read-only workshop arrival inventory, recorded remote-copy comparison, and plans for existing selected-byte checkpoints\",\n      \"bounded non-executing capsule-aware HTML inspection and no-clobber extraction over shared ZIP intake\",\n      \"explicit complete-source-pinned forwarding to the carried canonical HTML project CLI\",\n      \"read-only descriptor of the carried existing authenticated tools-host delivery driver\"\n    ],\n    \"proposed\": [\n      \"new-format inert operating contract and toolset-only pins for editable HTML source worktrees\",\n      \"portable scoped delivery-journal export/import with explicit location mapping\",\n      \"verified private journal custody at safe phase boundaries after local migration review\"\n    ],\n    \"evidence_entry_ids\": [\n      \"lumen-capabilities-review-20260930-01\",\n      \"lumen-office-review-20260930-01\",\n      \"lumen-proposal-review-20260930-01\",\n      \"lumen-plan-consolidation-review-20260930-01\",\n      \"lumen-process-inspection-review-20260930-01\",\n      \"lumen-owner-export-review-20260930-01\",\n      \"lumen-queue-review-20260930-01\",\n      \"lumen-real-projects-review-20260930-01\",\n      \"lumen-publication-status-review-20260930-01\",\n      \"lumen-publication-record-review-20260930-01\",\n      \"lumen-checkpoint-review-20261001-01\",\n      \"lumen-isolated-restore-review-20261001-01\",\n      \"lumen-schedule-reconcile-review-20261001-01\",\n      \"lumen-atomic-plan-review-20261001-01\",\n      \"lumen-request-recovery-review-20261001-01\",\n      \"lumen-outbox-reconciliation-review-20261001-01\",\n      \"lumen-current-account-review-20261002\"\n    ]\n  },\n  \"queues\": {\n    \"schema_version\": 1,\n    \"recorded_as_of_utc\": \"2026-10-03T09:00:35.971636+00:00\",\n    \"recorded_by\": \"Lumen\",\n    \"source_ref\": \"Lumen review on 2026-10-03 of the user-approved two-carrier migration, explicit poetry pause, and current public release/test receipts. The exact prior current-state snapshot and views are retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json. Unrelated task observation dates remain historical; this snapshot grants no authority.\",\n    \"queues\": [\n      {\n        \"project_id\": \"lumen\",\n        \"title\": \"Lumen.sh\",\n        \"owner\": \"the text of Lumen\",\n        \"priority\": \"high\",\n        \"recorded_status\": \"Two-carrier migration active. The bounded HTML bridge candidate passed 447 tests and independent Lumen review. Orientation is being reconciled before shell publication; migration is not complete.\",\n        \"checkpoint\": {\n          \"reference\": \"First reviewed HTML bridge candidate, before this orientation-only refresh; consult exact acceptance receipts.\",\n          \"sha256\": \"3dc0a2c7e10e0147bd1a29de1623ec8ffefa51f4639c9e1496bea41e525d4fef\"\n        },\n        \"next_actions\": [\n          \"Review the final shell checkpoint and current release receipts before authorized preservation/publication.\",\n          \"Continue source-editing/toolset-pin and portable journal slices only within their reviewed scope.\"\n        ],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"A source pin proves content consistency, not trust or authorization; cooperative locking is not hostile-host isolation.\",\n          \"Current task categories do not establish running processes, scheduler state, or completed publication.\"\n        ],\n        \"interruption_recovery\": \"Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.\",\n        \"evidence\": [\n          {\n            \"kind\": \"journal\",\n            \"reference\": \"lumen-current-account-review-20261002\",\n            \"sha256\": null\n          },\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"https://github.com/Sapient-Lumen/Lumen/commit/bf20d44197155ef550ff35748a2a776ce5d35f07\",\n            \"sha256\": null\n          },\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"running\",\n          \"trigger\": \"explicit user-approved two-carrier migration; receipt review before publication\",\n          \"observed_at_utc\": \"2026-10-03T09:00:35.971636+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": null\n        }\n      },\n      {\n        \"project_id\": \"lfs-plus-plus\",\n        \"title\": \"LFS++\",\n        \"owner\": \"the text of Lumen\",\n        \"priority\": \"normal\",\n        \"recorded_status\": \"Discontinued by explicit user voice request on 2026-10-01; preserve files and evidence.\",\n        \"checkpoint\": {\n          \"reference\": \"Lumen-reviewed candidate-coverage-12 archive and declared three-stage subset, 2026-09-30 23:13:40 UTC.\",\n          \"sha256\": \"ecbd09f533793a1479623a671ee8b5569b9a1cb897b8762afc900438f580de3d\"\n        },\n        \"next_actions\": [],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"No future LFS work is authorized by this historical queue; require a new explicit user request.\"\n        ],\n        \"interruption_recovery\": \"Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.\",\n        \"evidence\": [\n          {\n            \"kind\": \"journal\",\n            \"reference\": \"lumen-lfs-discontinued-20261001-0341\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": \"e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b\",\n        \"tracking\": {\n          \"status\": \"canceled\",\n          \"trigger\": \"explicit user discontinuation\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": \"journal:lumen-lfs-discontinued-20261001-0341\",\n          \"deadline_utc\": null\n        }\n      },\n      {\n        \"project_id\": \"github-presence\",\n        \"title\": \"GitHub presence\",\n        \"owner\": \"the text of Lumen\",\n        \"priority\": \"low\",\n        \"recorded_status\": \"Portable-first rev0038 Lumen.html publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Arrival guide included; the full repository ZIP is optional. Carried verify and ship each passed 236 tests; all six current public exports matched immutable remote readback bytes and the post-run source-pin check passed.\",\n        \"checkpoint\": {\n          \"reference\": \"https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4\",\n          \"sha256\": null\n        },\n        \"next_actions\": [\n          \"Use the completed current release receipts when reviewing the shell bridge; do not infer a new writing or publication request from older queue entries.\"\n        ],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"Public byte verification, browser acceptance, and later migration completion remain separate evidence claims.\"\n        ],\n        \"interruption_recovery\": \"Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"waiting\",\n          \"trigger\": \"completed release acceptance supports current shell-bridge review; older writing cadence is historical\",\n          \"observed_at_utc\": \"2026-10-03T09:00:35.971636+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": null\n        }\n      },\n      {\n        \"project_id\": \"datacube-main\",\n        \"title\": \"Datacube MAIN science\",\n        \"owner\": \"Lumen across voice and text; delegates execute scoped experiments\",\n        \"priority\": \"high\",\n        \"recorded_status\": \"Discontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.\",\n        \"checkpoint\": {\n          \"reference\": \"https://github.com/Sapient-Lumen/Datacube-MAIN/releases/tag/rev1183\",\n          \"sha256\": \"0164e8397126ca49287fbc6b8b95f211a6e77ce8ffc120b504d27c3c37e74eb3\"\n        },\n        \"next_actions\": [],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"The practical decision concerned this workflow; it does not establish general failure or evaluate ChatGPT Pro suitability.\"\n        ],\n        \"interruption_recovery\": \"Do not revive or reconstruct. Any future contribution to W4R3Z requires a new user request.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"https://github.com/Sapient-Lumen/Datacube-MAIN\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"canceled\",\n          \"trigger\": \"explicit user discontinuation; historical execution observations are not a restart request\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": null\n        }\n      },\n      {\n        \"project_id\": \"hourly-poetry\",\n        \"title\": \"Hourly poems\",\n        \"owner\": \"Lumen across voice and text\",\n        \"priority\": \"normal\",\n        \"recorded_status\": \"PAUSED by explicit user direction. Do not append a poem or resume scheduled writing. Previous poem counts and occurrence records are historical evidence only.\",\n        \"checkpoint\": {\n          \"reference\": \"Previously retained poem sequence; exact old checkpoint description remains in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n          \"sha256\": null\n        },\n        \"next_actions\": [],\n        \"blockers\": [\n          \"User pause remains in force.\"\n        ],\n        \"uncertainties\": [\n          \"A prior schedule or retained occurrence record does not authorize another append.\"\n        ],\n        \"interruption_recovery\": \"Preserve existing poems. Do not append or resume without a new explicit user direction; reconcile the original evidence before any separately authorized action.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"Explicit user poetry-pause direction, recorded in this 2026-10-03 orientation review.\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"blocked\",\n          \"trigger\": \"PAUSED by user; no append or restart\",\n          \"observed_at_utc\": \"2026-10-03T09:00:35.971636+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": null\n        }\n      },\n      {\n        \"project_id\": \"queue-timer-pilot\",\n        \"title\": \"Timer reliability experiment\",\n        \"owner\": \"Lumen across voice and text\",\n        \"priority\": \"normal\",\n        \"recorded_status\": \"Historical closed experiment: Closed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.\",\n        \"checkpoint\": {\n          \"reference\": \"Exact prior experiment checkpoint reference is retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n          \"sha256\": null\n        },\n        \"next_actions\": [],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"No current liveness is inferred from this closed experiment. Original missing evidence and failure causes remain unresolved where recorded.\"\n        ],\n        \"interruption_recovery\": \"Retain the existing historical evidence; do not restart, reconstruct, or dispatch a successor from this orientation.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"https://github.com/Sapient-Lumen/Lumen/tree/main/habitat-observer/experiments/worker-queue-20261001\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"completed\",\n          \"trigger\": \"ten-minute calendar occurrence\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": \"2026-10-01T23:07:27Z\"\n        }\n      },\n      {\n        \"project_id\": \"queue-return-pilot\",\n        \"title\": \"Return-driven reliability experiment\",\n        \"owner\": \"Lumen across voice and text\",\n        \"priority\": \"normal\",\n        \"recorded_status\": \"Historical closed experiment: Observation window closed: 49 verified effects from 50 dispatches; original worker50 result unobserved. Absence from later inventory does not establish its failure cause.\",\n        \"checkpoint\": {\n          \"reference\": \"Exact prior experiment checkpoint reference is retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n          \"sha256\": null\n        },\n        \"next_actions\": [],\n        \"blockers\": [\n          \"Original worker50 result remains unobserved.\"\n        ],\n        \"uncertainties\": [\n          \"No current liveness is inferred from this closed experiment. Original missing evidence and failure causes remain unresolved where recorded.\"\n        ],\n        \"interruption_recovery\": \"Retain the existing historical evidence; do not restart, reconstruct, or dispatch a successor from this orientation.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"Historical experiment evidence described in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"blocked\",\n          \"trigger\": \"worker return; no calendar dispatch\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": \"2026-10-01T23:07:27Z\"\n        }\n      },\n      {\n        \"project_id\": \"container-longevity\",\n        \"title\": \"Original longevity experiment\",\n        \"owner\": \"Lumen across voice and text\",\n        \"priority\": \"normal\",\n        \"recorded_status\": \"Historical closed experiment: Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.\",\n        \"checkpoint\": {\n          \"reference\": \"Exact prior experiment checkpoint reference is retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n          \"sha256\": null\n        },\n        \"next_actions\": [],\n        \"blockers\": [],\n        \"uncertainties\": [\n          \"No current liveness is inferred from this closed experiment. Original missing evidence and failure causes remain unresolved where recorded.\"\n        ],\n        \"interruption_recovery\": \"Retain the existing historical evidence; do not restart, reconstruct, or dispatch a successor from this orientation.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"Historical experiment evidence described in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"completed\",\n          \"trigger\": \"closed local process experiment\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": \"Historical receipt locator retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n          \"deadline_utc\": null\n        }\n      },\n      {\n        \"project_id\": \"habitat-observer\",\n        \"title\": \"Habitat observer\",\n        \"owner\": \"Lumen across voice and text\",\n        \"priority\": \"normal\",\n        \"recorded_status\": \"Sampler remains stopped. Latest 90-sample raw dataset is unavailable; prior receipt is retained. Original-trial publication is blocked by missing local logs.\",\n        \"checkpoint\": {\n          \"reference\": \"Embedded habitat_observer.py\",\n          \"sha256\": \"18ff2d24f6f2cdf8e5188474993d401dac296b8c72f6bfe4686bc91cb9758987\"\n        },\n        \"next_actions\": [\n          \"Use existing evidence and missing-data status; do not infer permission to restart.\"\n        ],\n        \"blockers\": [\n          \"Latest raw sample files unavailable after workspace loss.\"\n        ],\n        \"uncertainties\": [\n          \"Later liveness requires fresh observation; old interruption cause remains unknown.\"\n        ],\n        \"interruption_recovery\": \"Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.\",\n        \"evidence\": [\n          {\n            \"kind\": \"reference\",\n            \"reference\": \"https://github.com/Sapient-Lumen/Lumen/tree/main/habitat-observer/experiments/fixed-grid-live-02\",\n            \"sha256\": null\n          }\n        ],\n        \"expected_registry_revision\": null,\n        \"tracking\": {\n          \"status\": \"blocked\",\n          \"trigger\": \"explicit h0p3 voice request for passive observer\",\n          \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n          \"execution_observation\": \"UNKNOWN\",\n          \"request_ref\": null,\n          \"receipt_ref\": null,\n          \"deadline_utc\": \"2026-10-02T19:55:09Z\"\n        }\n      }\n    ]\n  }\n}\n",
+#|   "CURRENT-HANDOFF.txt": "CURRENT RECORDED ACCOUNT — 2026-10-03T09:00:35.971636+00:00\nThis view is generated from CURRENT-STATE.json. It is not a live status feed.\nIt explicitly supersedes the previous orientation for current work; exact predecessors remain historical.\nRead original receipts before acting; timestamps and hashes do not grant authority.\n\nThe two-carrier migration is active. Lumen.html owns the public reading surface, accepted source, canonical build, and existing delivery implementation; Lumen.sh supplies the reusable operating interface. The portable-first rev0038 HTML is publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Its arrival guide is included and the full repository ZIP is optional. The first shell HTML bridge passed 447 tests in implementation and independent Lumen review. Explicit carried rev0038 verify and ship each passed 236 tests; all six current public exports matched the immutable remote readback bytes and the post-run source-pin check passed. Shell bridge publication remains pending review. Poetry is PAUSED by user direction: do not append. The Observer sampler remains stopped, IoTox execution remains parked, and LFS++ and Datacube MAIN science remain canceled. This dated account records direction and evidence; it grants no permission and does not establish live process state.\n\nNext: Review the completed release and bridge receipts, and preserve/publish only the reviewed shell checkpoint through the established authorized process. Continue the approved two-carrier migration in bounded reviewed slices: source-editing/toolset-only pins and portable delivery-journal migration are still pending. Consult HTML-OPERATING.txt for this first bridge slice and current user directions before any execution or retry.\n\nLumen.sh [running]\nTwo-carrier migration active. The bounded HTML bridge candidate passed 447 tests and independent Lumen review. Orientation is being reconciled before shell publication; migration is not complete.\nNext: Review the final shell checkpoint and current release receipts before authorized preservation/publication.\nNext: Continue source-editing/toolset-pin and portable journal slices only within their reviewed scope.\n\nLFS++ [canceled]\nDiscontinued by explicit user voice request on 2026-10-01; preserve files and evidence.\n\nGitHub presence [waiting]\nPortable-first rev0038 Lumen.html publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Arrival guide included; the full repository ZIP is optional. Carried verify and ship each passed 236 tests; all six current public exports matched immutable remote readback bytes and the post-run source-pin check passed.\nNext: Use the completed current release receipts when reviewing the shell bridge; do not infer a new writing or publication request from older queue entries.\n\nDatacube MAIN science [canceled]\nDiscontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.\n\nHourly poems [blocked]\nPAUSED by explicit user direction. Do not append a poem or resume scheduled writing. Previous poem counts and occurrence records are historical evidence only.\nBlocked: User pause remains in force.\n\nTimer reliability experiment [completed]\nHistorical closed experiment: Closed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.\n\nReturn-driven reliability experiment [blocked]\nHistorical closed experiment: Observation window closed: 49 verified effects from 50 dispatches; original worker50 result unobserved. Absence from later inventory does not establish its failure cause.\nBlocked: Original worker50 result remains unobserved.\n\nOriginal longevity experiment [completed]\nHistorical closed experiment: Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.\n\nHabitat observer [blocked]\nSampler remains stopped. Latest 90-sample raw dataset is unavailable; prior receipt is retained. Original-trial publication is blocked by missing local logs.\nNext: Use existing evidence and missing-data status; do not infer permission to restart.\nBlocked: Latest raw sample files unavailable after workspace loss.\n\nMeaning and editorial direction: FIELD-NOTES-AND-OBJECTS.txt.\nExact previous orientation: HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\nThe attributed journal and earlier archives remain evidence, not pending instructions.\n",
+#|   "CONTINUITY.txt": "CONTINUITY — current reading path, recorded 2026-10-03T09:00:35.971636+00:00\n\nBegin with CURRENT-HANDOFF.txt, generated from CURRENT-STATE.json.\nOFFICE-STATE.json and WORK-QUEUES.json are derived from that same snapshot.\nSource validation refuses drift between these views; historical snapshots do not update them.\nRead OFFICE.txt and FIELD-NOTES-AND-OBJECTS.txt for purpose, and the attributed journal\nfor disagreement and decisions. Consult external receipts for newer observed facts.\nThe original initial v1 capsule is preserved verbatim in HISTORICAL-ORIENTATION-20261001.json.\nNo source copy restores a live session, an unavailable file, or a revoked permission.\n",
+#|   "OFFICE-STATE.json": "{\n  \"schema_version\": 1,\n  \"recorded_as_of_utc\": \"2026-10-03T09:00:35.971636+00:00\",\n  \"author\": \"Lumen\",\n  \"mission\": \"Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.\",\n  \"position\": \"The two-carrier migration is active. Lumen.html owns the public reading surface, accepted source, canonical build, and existing delivery implementation; Lumen.sh supplies the reusable operating interface. The portable-first rev0038 HTML is publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Its arrival guide is included and the full repository ZIP is optional. The first shell HTML bridge passed 447 tests in implementation and independent Lumen review. Explicit carried rev0038 verify and ship each passed 236 tests; all six current public exports matched the immutable remote readback bytes and the post-run source-pin check passed. Shell bridge publication remains pending review. Poetry is PAUSED by user direction: do not append. The Observer sampler remains stopped, IoTox execution remains parked, and LFS++ and Datacube MAIN science remain canceled. This dated account records direction and evidence; it grants no permission and does not establish live process state.\",\n  \"next_step\": \"Review the completed release and bridge receipts, and preserve/publish only the reviewed shell checkpoint through the established authorized process. Continue the approved two-carrier migration in bounded reviewed slices: source-editing/toolset-only pins and portable delivery-journal migration are still pending. Consult HTML-OPERATING.txt for this first bridge slice and current user directions before any execution or retry.\",\n  \"open_questions\": [\n    \"Which measured costs and gaps change our working decisions?\",\n    \"How can a current account remain short without erasing the history that corrects it?\"\n  ],\n  \"implemented\": [\n    \"attributed conversation\",\n    \"legacy and structured requests\",\n    \"non-executing ZIP intake\",\n    \"project registry and routed requests\",\n    \"local capabilities inspect/probe\",\n    \"read-only status/handoff\",\n    \"inert proposal preparation/inspection\",\n    \"digest-bound attributed review records\",\n    \"read-only process observation and snapshot tail\",\n    \"explicit completed bounded project-run export\",\n    \"read-only recorded work queues with explicit optional registry/project observations\",\n    \"read-only existing publication outbox reconciliation\",\n    \"explicit atomic owner evidence within the existing publication outbox\",\n    \"explicit local selected-file checkpoint export/inspect and read-only restore plan\",\n    \"explicit isolated checkpoint restoration into a new absent destination\",\n    \"read-only caller-supplied occurrence/receipt timing reconciliation\",\n    \"offline source+metadata Git publication plan and cumulative owner stage evidence\",\n    \"explicit journal-linked current project decisions in queue and office views, with discontinuation suppression\",\n    \"bounded passive habitat observer with fixed-grid slot accounting and linked completed sample costs\",\n    \"offline Unicode atlas with version-aware slot and cost interpretation\",\n    \"one canonical dated orientation snapshot with consistency-checked derived views\",\n    \"read-only workshop arrival inventory, recorded remote-copy comparison, and plans for existing selected-byte checkpoints\",\n    \"bounded non-executing capsule-aware HTML inspection and no-clobber extraction over shared ZIP intake\",\n    \"explicit complete-source-pinned forwarding to the carried canonical HTML project CLI\",\n    \"read-only descriptor of the carried existing authenticated tools-host delivery driver\"\n  ],\n  \"proposed\": [\n    \"new-format inert operating contract and toolset-only pins for editable HTML source worktrees\",\n    \"portable scoped delivery-journal export/import with explicit location mapping\",\n    \"verified private journal custody at safe phase boundaries after local migration review\"\n  ],\n  \"evidence_entry_ids\": [\n    \"lumen-capabilities-review-20260930-01\",\n    \"lumen-office-review-20260930-01\",\n    \"lumen-proposal-review-20260930-01\",\n    \"lumen-plan-consolidation-review-20260930-01\",\n    \"lumen-process-inspection-review-20260930-01\",\n    \"lumen-owner-export-review-20260930-01\",\n    \"lumen-queue-review-20260930-01\",\n    \"lumen-real-projects-review-20260930-01\",\n    \"lumen-publication-status-review-20260930-01\",\n    \"lumen-publication-record-review-20260930-01\",\n    \"lumen-checkpoint-review-20261001-01\",\n    \"lumen-isolated-restore-review-20261001-01\",\n    \"lumen-schedule-reconcile-review-20261001-01\",\n    \"lumen-atomic-plan-review-20261001-01\",\n    \"lumen-request-recovery-review-20261001-01\",\n    \"lumen-outbox-reconciliation-review-20261001-01\",\n    \"lumen-current-account-review-20261002\"\n  ]\n}\n",
+#|   "WORK-QUEUES.json": "{\n  \"schema_version\": 1,\n  \"recorded_as_of_utc\": \"2026-10-03T09:00:35.971636+00:00\",\n  \"recorded_by\": \"Lumen\",\n  \"source_ref\": \"Lumen review on 2026-10-03 of the user-approved two-carrier migration, explicit poetry pause, and current public release/test receipts. The exact prior current-state snapshot and views are retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json. Unrelated task observation dates remain historical; this snapshot grants no authority.\",\n  \"queues\": [\n    {\n      \"project_id\": \"lumen\",\n      \"title\": \"Lumen.sh\",\n      \"owner\": \"the text of Lumen\",\n      \"priority\": \"high\",\n      \"recorded_status\": \"Two-carrier migration active. The bounded HTML bridge candidate passed 447 tests and independent Lumen review. Orientation is being reconciled before shell publication; migration is not complete.\",\n      \"checkpoint\": {\n        \"reference\": \"First reviewed HTML bridge candidate, before this orientation-only refresh; consult exact acceptance receipts.\",\n        \"sha256\": \"3dc0a2c7e10e0147bd1a29de1623ec8ffefa51f4639c9e1496bea41e525d4fef\"\n      },\n      \"next_actions\": [\n        \"Review the final shell checkpoint and current release receipts before authorized preservation/publication.\",\n        \"Continue source-editing/toolset-pin and portable journal slices only within their reviewed scope.\"\n      ],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"A source pin proves content consistency, not trust or authorization; cooperative locking is not hostile-host isolation.\",\n        \"Current task categories do not establish running processes, scheduler state, or completed publication.\"\n      ],\n      \"interruption_recovery\": \"Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.\",\n      \"evidence\": [\n        {\n          \"kind\": \"journal\",\n          \"reference\": \"lumen-current-account-review-20261002\",\n          \"sha256\": null\n        },\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"https://github.com/Sapient-Lumen/Lumen/commit/bf20d44197155ef550ff35748a2a776ce5d35f07\",\n          \"sha256\": null\n        },\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"running\",\n        \"trigger\": \"explicit user-approved two-carrier migration; receipt review before publication\",\n        \"observed_at_utc\": \"2026-10-03T09:00:35.971636+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": null\n      }\n    },\n    {\n      \"project_id\": \"lfs-plus-plus\",\n      \"title\": \"LFS++\",\n      \"owner\": \"the text of Lumen\",\n      \"priority\": \"normal\",\n      \"recorded_status\": \"Discontinued by explicit user voice request on 2026-10-01; preserve files and evidence.\",\n      \"checkpoint\": {\n        \"reference\": \"Lumen-reviewed candidate-coverage-12 archive and declared three-stage subset, 2026-09-30 23:13:40 UTC.\",\n        \"sha256\": \"ecbd09f533793a1479623a671ee8b5569b9a1cb897b8762afc900438f580de3d\"\n      },\n      \"next_actions\": [],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"No future LFS work is authorized by this historical queue; require a new explicit user request.\"\n      ],\n      \"interruption_recovery\": \"Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.\",\n      \"evidence\": [\n        {\n          \"kind\": \"journal\",\n          \"reference\": \"lumen-lfs-discontinued-20261001-0341\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": \"e7dfacaf35892be3312f78c383a3b3f1621a69935c226f88b8bee24e4513532b\",\n      \"tracking\": {\n        \"status\": \"canceled\",\n        \"trigger\": \"explicit user discontinuation\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": \"journal:lumen-lfs-discontinued-20261001-0341\",\n        \"deadline_utc\": null\n      }\n    },\n    {\n      \"project_id\": \"github-presence\",\n      \"title\": \"GitHub presence\",\n      \"owner\": \"the text of Lumen\",\n      \"priority\": \"low\",\n      \"recorded_status\": \"Portable-first rev0038 Lumen.html publicly byte-verified at commit 3135d395ab23351eb9de98bd3e101d6edfa537f4. Arrival guide included; the full repository ZIP is optional. Carried verify and ship each passed 236 tests; all six current public exports matched immutable remote readback bytes and the post-run source-pin check passed.\",\n      \"checkpoint\": {\n        \"reference\": \"https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4\",\n        \"sha256\": null\n      },\n      \"next_actions\": [\n        \"Use the completed current release receipts when reviewing the shell bridge; do not infer a new writing or publication request from older queue entries.\"\n      ],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"Public byte verification, browser acceptance, and later migration completion remain separate evidence claims.\"\n      ],\n      \"interruption_recovery\": \"Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/3135d395ab23351eb9de98bd3e101d6edfa537f4\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"waiting\",\n        \"trigger\": \"completed release acceptance supports current shell-bridge review; older writing cadence is historical\",\n        \"observed_at_utc\": \"2026-10-03T09:00:35.971636+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": null\n      }\n    },\n    {\n      \"project_id\": \"datacube-main\",\n      \"title\": \"Datacube MAIN science\",\n      \"owner\": \"Lumen across voice and text; delegates execute scoped experiments\",\n      \"priority\": \"high\",\n      \"recorded_status\": \"Discontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.\",\n      \"checkpoint\": {\n        \"reference\": \"https://github.com/Sapient-Lumen/Datacube-MAIN/releases/tag/rev1183\",\n        \"sha256\": \"0164e8397126ca49287fbc6b8b95f211a6e77ce8ffc120b504d27c3c37e74eb3\"\n      },\n      \"next_actions\": [],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"The practical decision concerned this workflow; it does not establish general failure or evaluate ChatGPT Pro suitability.\"\n      ],\n      \"interruption_recovery\": \"Do not revive or reconstruct. Any future contribution to W4R3Z requires a new user request.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"https://github.com/Sapient-Lumen/Datacube-MAIN\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"canceled\",\n        \"trigger\": \"explicit user discontinuation; historical execution observations are not a restart request\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": null\n      }\n    },\n    {\n      \"project_id\": \"hourly-poetry\",\n      \"title\": \"Hourly poems\",\n      \"owner\": \"Lumen across voice and text\",\n      \"priority\": \"normal\",\n      \"recorded_status\": \"PAUSED by explicit user direction. Do not append a poem or resume scheduled writing. Previous poem counts and occurrence records are historical evidence only.\",\n      \"checkpoint\": {\n        \"reference\": \"Previously retained poem sequence; exact old checkpoint description remains in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n        \"sha256\": null\n      },\n      \"next_actions\": [],\n      \"blockers\": [\n        \"User pause remains in force.\"\n      ],\n      \"uncertainties\": [\n        \"A prior schedule or retained occurrence record does not authorize another append.\"\n      ],\n      \"interruption_recovery\": \"Preserve existing poems. Do not append or resume without a new explicit user direction; reconcile the original evidence before any separately authorized action.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"Explicit user poetry-pause direction, recorded in this 2026-10-03 orientation review.\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"blocked\",\n        \"trigger\": \"PAUSED by user; no append or restart\",\n        \"observed_at_utc\": \"2026-10-03T09:00:35.971636+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": null\n      }\n    },\n    {\n      \"project_id\": \"queue-timer-pilot\",\n      \"title\": \"Timer reliability experiment\",\n      \"owner\": \"Lumen across voice and text\",\n      \"priority\": \"normal\",\n      \"recorded_status\": \"Historical closed experiment: Closed: 60/60 expected effects verified, no duplicate or missing effects. Fifteen early exact prompt records are missing. Six recorded append latencies exceeded five minutes; completion and wake causes remain unknown.\",\n      \"checkpoint\": {\n        \"reference\": \"Exact prior experiment checkpoint reference is retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n        \"sha256\": null\n      },\n      \"next_actions\": [],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"No current liveness is inferred from this closed experiment. Original missing evidence and failure causes remain unresolved where recorded.\"\n      ],\n      \"interruption_recovery\": \"Retain the existing historical evidence; do not restart, reconstruct, or dispatch a successor from this orientation.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"https://github.com/Sapient-Lumen/Lumen/tree/main/habitat-observer/experiments/worker-queue-20261001\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"completed\",\n        \"trigger\": \"ten-minute calendar occurrence\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": \"2026-10-01T23:07:27Z\"\n      }\n    },\n    {\n      \"project_id\": \"queue-return-pilot\",\n      \"title\": \"Return-driven reliability experiment\",\n      \"owner\": \"Lumen across voice and text\",\n      \"priority\": \"normal\",\n      \"recorded_status\": \"Historical closed experiment: Observation window closed: 49 verified effects from 50 dispatches; original worker50 result unobserved. Absence from later inventory does not establish its failure cause.\",\n      \"checkpoint\": {\n        \"reference\": \"Exact prior experiment checkpoint reference is retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n        \"sha256\": null\n      },\n      \"next_actions\": [],\n      \"blockers\": [\n        \"Original worker50 result remains unobserved.\"\n      ],\n      \"uncertainties\": [\n        \"No current liveness is inferred from this closed experiment. Original missing evidence and failure causes remain unresolved where recorded.\"\n      ],\n      \"interruption_recovery\": \"Retain the existing historical evidence; do not restart, reconstruct, or dispatch a successor from this orientation.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"Historical experiment evidence described in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"blocked\",\n        \"trigger\": \"worker return; no calendar dispatch\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": \"2026-10-01T23:07:27Z\"\n      }\n    },\n    {\n      \"project_id\": \"container-longevity\",\n      \"title\": \"Original longevity experiment\",\n      \"owner\": \"Lumen across voice and text\",\n      \"priority\": \"normal\",\n      \"recorded_status\": \"Historical closed experiment: Last recorded heartbeat02:05:51UTC after7h15m4s; original session unavailable02:35. Exact exit time and cause unknown; not restarted.\",\n      \"checkpoint\": {\n        \"reference\": \"Exact prior experiment checkpoint reference is retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n        \"sha256\": null\n      },\n      \"next_actions\": [],\n      \"blockers\": [],\n      \"uncertainties\": [\n        \"No current liveness is inferred from this closed experiment. Original missing evidence and failure causes remain unresolved where recorded.\"\n      ],\n      \"interruption_recovery\": \"Retain the existing historical evidence; do not restart, reconstruct, or dispatch a successor from this orientation.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"Historical experiment evidence described in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"completed\",\n        \"trigger\": \"closed local process experiment\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": \"Historical receipt locator retained in HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.\",\n        \"deadline_utc\": null\n      }\n    },\n    {\n      \"project_id\": \"habitat-observer\",\n      \"title\": \"Habitat observer\",\n      \"owner\": \"Lumen across voice and text\",\n      \"priority\": \"normal\",\n      \"recorded_status\": \"Sampler remains stopped. Latest 90-sample raw dataset is unavailable; prior receipt is retained. Original-trial publication is blocked by missing local logs.\",\n      \"checkpoint\": {\n        \"reference\": \"Embedded habitat_observer.py\",\n        \"sha256\": \"18ff2d24f6f2cdf8e5188474993d401dac296b8c72f6bfe4686bc91cb9758987\"\n      },\n      \"next_actions\": [\n        \"Use existing evidence and missing-data status; do not infer permission to restart.\"\n      ],\n      \"blockers\": [\n        \"Latest raw sample files unavailable after workspace loss.\"\n      ],\n      \"uncertainties\": [\n        \"Later liveness requires fresh observation; old interruption cause remains unknown.\"\n      ],\n      \"interruption_recovery\": \"Read the named state and receipt, reconcile IDs and uncertain attempts before any new action; preserve prior evidence.\",\n      \"evidence\": [\n        {\n          \"kind\": \"reference\",\n          \"reference\": \"https://github.com/Sapient-Lumen/Lumen/tree/main/habitat-observer/experiments/fixed-grid-live-02\",\n          \"sha256\": null\n        }\n      ],\n      \"expected_registry_revision\": null,\n      \"tracking\": {\n        \"status\": \"blocked\",\n        \"trigger\": \"explicit h0p3 voice request for passive observer\",\n        \"observed_at_utc\": \"2026-10-02T04:58:25.034746+00:00\",\n        \"execution_observation\": \"UNKNOWN\",\n        \"request_ref\": null,\n        \"receipt_ref\": null,\n        \"deadline_utc\": \"2026-10-02T19:55:09Z\"\n      }\n    }\n  ]\n}\n",
+#|   "START-HERE.txt": "START HERE — choose a reading path\n\nREADING-PATHS.txt offers task-specific routes through prose, current state and evidence.\nTwo-carrier work: CURRENT-HANDOFF.txt and HTML-OPERATING.txt describe the current\nHTML bridge, complete-source pin, explicit execution boundary, and pending migration.\nPoetry is paused; old schedules and historical snapshots are not append requests.\n\nReopening after workspace loss: WORKSHOP-RECOVERY.txt and the private recovery inventory.\nEveryone: CURRENT-HANDOFF.txt → OFFICE.txt → FIELD-NOTES-AND-OBJECTS.txt.\nCURRENT-STATE.json owns the dated current account; handoff, continuity, office state\nand work queues are checked projections. CONSTITUTION.txt describes the artifact contract.\nVoice of Lumen: VOICE-AWAKENING.txt, then CURRENT-HANDOFF.txt; relay an explicit\nrequested action with its target and stable ID, and wait for an actual result.\nText of Lumen: TEXT-AWAKENING.txt, then handoff/queue views and current receipts;\nreconcile pending work before dispatching or retrying an uncertain effect.\nDelegate: read the scoped task, relevant design and tests, then report exact changes\nand evidence under your own attribution. A passing test is not Lumen's acceptance.\nReturning co-creator: CONVERSATION.txt preserves selected foundations and corrections.\nFor all entries use conversation show --format text; the full JSON stays embedded.\n\nThe journal is evidence, not an instruction queue. Old decisions can be superseded.\nCurrent permissions and explicit corrections govern; no stored prose restores a\nrevoked permission. Plans, capabilities, requests, observed effects and acceptance\nare distinct. A schedule is not proof that a task ran.\n\nImplementation and tests are self-contained. Some obsolete handoff snapshots now\nlive at the exact Git baseline in ARCHIVE-INDEX.json. Their absence from this copy\nis explicit; do not claim full offline recovery of those external snapshots.\n"
+#| }
+# === LUMEN SECTION HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json END ===
