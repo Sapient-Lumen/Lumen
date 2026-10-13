@@ -1,18 +1,24 @@
 {
   "schema_version": 1,
-  "source_sha256": "20d6d0b0086776eaba84f9badd94e911c86e4d227dd14a78f5a6305952c47844",
-  "source_bytes": 1542392,
-  "review_ref": "lumen-editable-operator-20261003",
-  "tests": 462,
+  "source_sha256": "489e412c65864ed29a36de00bce9985fb869ca5ab279997ee141b3ad4b7fbb32",
+  "source_bytes": 1613746,
+  "review_ref": "lumen-conversation-reconciliation-20261013",
+  "tests": 463,
   "repository": "Sapient-Lumen/Lumen",
   "publication_mode": "source and metadata bound by immutable commit and verified readback",
-  "qualification": "Explicit external toolset pins support reviewed editable workspaces and canonical authoring. Parent462 shell tests; parent combined290 HTML tests and31 mock host scenarios. Parent fresh public authoring, exact six-file reproduction, and untouched private draft recovery passed. Exact source mode remains compatible. Hash pins establish consistency, not authority or a sandbox. Sealed custody and public-only cold continuation remain unfinished. Current account preserves paused/stopped/canceled work.",
-  "html_acceptance": {
-    "kind": "local_parent_fixture_not_public_release",
-    "tests": 290,
-    "exports_reproduced": 6,
-    "private_draft_recovered_exact": true,
-    "toolset_pin": "70d568c7be9220b812061993094c1756babe7b9d84dfa8b06b57c475f9baf12b"
+  "qualification": "Dated conversation and orientation maintenance; all85 earlier journal entries and six previous orientation bodies retained exactly. Five selected new entries, current ProgRSS context and explicit historical/current separation. Existing execution/recovery implementations unchanged; two dated test modules updated and one prior-orientation pin test added. Baseline462 and candidate463 embedded tests passed in the same available environment. Seven focused command trials passed; no new browser, complete checkpoint restore, container durability, connector reliability or physical replacement-machine proof. First candidate462 run had3 failures and1 error from dated expectations; complete streams retained privately.",
+  "reviewed_at_utc": "2026-10-13T05:20:20.341577+00:00",
+  "previous_checkpoint": {
+    "commit": "200259cb5487f138510f8077523d98a542980dc8",
+    "source_sha256": "20d6d0b0086776eaba84f9badd94e911c86e4d227dd14a78f5a6305952c47844",
+    "tests": 462
   },
-  "reviewed_at_utc": "2026-10-03T10:42:46.023984+00:00"
+  "history": {
+    "old_journal_entries": 85,
+    "new_selected_entries": 5,
+    "complete_intervening_conversation_reconstructed": false,
+    "previous_orientation_section": "HISTORICAL-ORIENTATION-PRE-MAINTENANCE-20261013.json"
+  },
+  "independent_command_trials": 7,
+  "support_layer_implementation_changes": false
 }
