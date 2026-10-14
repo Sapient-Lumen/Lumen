@@ -1,24 +1,14 @@
 {
   "schema_version": 1,
-  "source_sha256": "489e412c65864ed29a36de00bce9985fb869ca5ab279997ee141b3ad4b7fbb32",
-  "source_bytes": 1613746,
-  "review_ref": "lumen-conversation-reconciliation-20261013",
-  "tests": 463,
+  "source_sha256": "c67c464fb1f91cc7443859cf7b5209f5e24bb305279dc72fc0692818fe50d92f",
+  "source_bytes": 1623637,
+  "review_ref": "lumen-deep-delaybasinese-direction-20261014",
   "repository": "Sapient-Lumen/Lumen",
-  "publication_mode": "source and metadata bound by immutable commit and verified readback",
-  "qualification": "Dated conversation and orientation maintenance; all85 earlier journal entries and six previous orientation bodies retained exactly. Five selected new entries, current ProgRSS context and explicit historical/current separation. Existing execution/recovery implementations unchanged; two dated test modules updated and one prior-orientation pin test added. Baseline462 and candidate463 embedded tests passed in the same available environment. Seven focused command trials passed; no new browser, complete checkpoint restore, container durability, connector reliability or physical replacement-machine proof. First candidate462 run had3 failures and1 error from dated expectations; complete streams retained privately.",
-  "reviewed_at_utc": "2026-10-13T05:20:20.341577+00:00",
+  "qualification": "Five attributed conversation entries; all 90 predecessor entries preserved exactly. Only CONVERSATION.txt and conversation.jsonl changed. Embedded programs and tests unchanged. Five actual append commands and source/history integrity checks passed; no new full embedded suite or product acceptance claimed.",
+  "reviewed_at_utc": "2026-10-14T19:23:45.786034+00:00",
   "previous_checkpoint": {
-    "commit": "200259cb5487f138510f8077523d98a542980dc8",
-    "source_sha256": "20d6d0b0086776eaba84f9badd94e911c86e4d227dd14a78f5a6305952c47844",
-    "tests": 462
-  },
-  "history": {
-    "old_journal_entries": 85,
-    "new_selected_entries": 5,
-    "complete_intervening_conversation_reconstructed": false,
-    "previous_orientation_section": "HISTORICAL-ORIENTATION-PRE-MAINTENANCE-20261013.json"
-  },
-  "independent_command_trials": 7,
-  "support_layer_implementation_changes": false
+    "commit": "3791c0e39ce227cf6cd451170c66c1ffe14784aa",
+    "source_sha256": "489e412c65864ed29a36de00bce9985fb869ca5ab279997ee141b3ad4b7fbb32",
+    "historical_tests": 463
+  }
 }
