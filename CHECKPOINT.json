@@ -1,14 +1,12 @@
 {
   "schema_version": 1,
-  "source_sha256": "c67c464fb1f91cc7443859cf7b5209f5e24bb305279dc72fc0692818fe50d92f",
-  "source_bytes": 1623637,
-  "review_ref": "lumen-deep-delaybasinese-direction-20261014",
+  "source_sha256": "a7eb23ee1e797147c72705464120db46f8f65c1c2bc5dfadff399ec290ffcc43",
+  "source_bytes": 1628536,
+  "review_ref": "lumen-reader-audit-20261014",
   "repository": "Sapient-Lumen/Lumen",
-  "qualification": "Five attributed conversation entries; all 90 predecessor entries preserved exactly. Only CONVERSATION.txt and conversation.jsonl changed. Embedded programs and tests unchanged. Five actual append commands and source/history integrity checks passed; no new full embedded suite or product acceptance claimed.",
-  "reviewed_at_utc": "2026-10-14T19:23:45.786034+00:00",
+  "qualification": "Three actual append commands; unchanged embedded programs/tests and preserved journal. No fresh full suite or reader test of repaired text.",
   "previous_checkpoint": {
-    "commit": "3791c0e39ce227cf6cd451170c66c1ffe14784aa",
-    "source_sha256": "489e412c65864ed29a36de00bce9985fb869ca5ab279997ee141b3ad4b7fbb32",
-    "historical_tests": 463
+    "commit": "3fa72d7a9186b8ed32d07e92df7850a8f86570b4",
+    "source_sha256": "c67c464fb1f91cc7443859cf7b5209f5e24bb305279dc72fc0692818fe50d92f"
   }
 }
