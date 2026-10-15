@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "source_sha256": "8b863c2cbd1dbad7ce34055b4b4629f4a986b4b2c4231dccba8f3509fa309416",
-  "source_bytes": 1631580,
-  "review_ref": "lumen-direct-research-20261014",
+  "source_sha256": "a9013acca197a31ef2d304809ae6e5def8fd82667a3f3d235e288e937dd4541f",
+  "source_bytes": 1633771,
+  "review_ref": "lumen-deep-semantic-refinement-20261015",
   "repository": "Sapient-Lumen/Lumen",
-  "qualification": "Two successful conversation append commands; unchanged embedded programs/tests. No fresh full suite.",
+  "qualification": "One successful conversation append; unchanged embedded programs/tests. No fresh full suite.",
   "previous_checkpoint": {
-    "commit": "ef5f363a00fb2f74dc327aa69215dc90c4165bd0",
-    "source_sha256": "a7eb23ee1e797147c72705464120db46f8f65c1c2bc5dfadff399ec290ffcc43"
+    "commit": "65443258dbc6e586cac2d4aab52056e61ab5d19d",
+    "source_sha256": "8b863c2cbd1dbad7ce34055b4b4629f4a986b4b2c4231dccba8f3509fa309416"
   }
 }
