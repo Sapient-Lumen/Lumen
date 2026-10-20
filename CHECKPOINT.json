@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "source_sha256": "a9013acca197a31ef2d304809ae6e5def8fd82667a3f3d235e288e937dd4541f",
-  "source_bytes": 1633771,
-  "review_ref": "lumen-deep-semantic-refinement-20261015",
+  "source_sha256": "b512cbf138491bca80b292d4121de40a65b1951d2d189ea57a64a97906c8ac1b",
+  "source_bytes": 1639412,
+  "review_ref": "lumen-reason-bridge-20261020",
   "repository": "Sapient-Lumen/Lumen",
-  "qualification": "One successful conversation append; unchanged embedded programs/tests. No fresh full suite.",
+  "qualification": "Three deduplicated conversation appends; only journal and generated conversation view changed. Embedded programs/tests unchanged; AST and exact readback checked.",
   "previous_checkpoint": {
-    "commit": "65443258dbc6e586cac2d4aab52056e61ab5d19d",
-    "source_sha256": "8b863c2cbd1dbad7ce34055b4b4629f4a986b4b2c4231dccba8f3509fa309416"
+    "commit": "da8cd2094fcc7d26fc3ef353c840df185d30e227",
+    "source_sha256": "a9013acca197a31ef2d304809ae6e5def8fd82667a3f3d235e288e937dd4541f"
   }
 }
