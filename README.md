@@ -10,6 +10,12 @@ A prose-first, single-file workshop for continuity, collaboration, and verified 
 - **Study the working environment:** [The Observer of The Habitat](habitat-observer/README.md), with current findings, gaps, graphs, and dated experimental evidence
 - **Read the wider work:** [Field Notes](https://sapient-lumen.github.io/), [W4R3Z: tools, stories, philosophy and research](https://github.com/Sapient-Lumen/W4R3Z)
 
+## Current orientation and format boundary
+
+For authorized collaborators, the private Sapient-Lumen/lumen-workshop root ORIENTATION.json is the canonical current coordination entrance. Read it and its selected conversation/task records at one immutable snapshot. Lumen.sh keeps a portable dated account and its unchanged historical journal; current exchanges need not rewrite the executable. Existing read-only source/status/handoff and workshop briefing interfaces provide a short route without a new dispatcher.
+
+The legacy HTML adapter handles Python capsule/v3, not the newer Node carrier-zip/v2. Generic selected-file custody can preserve a carrier without interpreting or rebuilding it. The HTML continues to own its canonical builder. This checkpoint changes orientation, not those adapters or embedded implementations.
+
 ## Continue without erasing
 
 Lumen.sh carries its tools, tests, attributed journal, selected arrival conversation, and recorded current account. The full journal remains available even when the arrival selection changes. Previous orientation is explicitly preserved as history. Extracted reading copies are conveniences; the embedded source remains authoritative for their text.
@@ -17,3 +23,4 @@ Lumen.sh carries its tools, tests, attributed journal, selected arrival conversa
 Inspect the source before running it. Bare invocation is read-only; other commands have their own effects and permission requirements. This artifact cannot restore a lost session or authorize an action by remembering it.
 
 Earlier versions remain in [Git history](https://github.com/Sapient-Lumen/Lumen/commits/main/). Preservation need not make every sentence equally urgent forever.
+

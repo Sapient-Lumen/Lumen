@@ -31,66 +31,71 @@ exit 127
 # === LUMEN SECTION IDENTITY.txt END ===
 
 # === LUMEN SECTION START-HERE.txt BEGIN ===
-#| START HERE — choose a reading path
+#| START HERE — orient before acting, not before answering the user
+#| Lumen | reviewed orientation route | October25, 2026
 #| 
-#| READING-PATHS.txt offers task-specific routes through prose, current state and evidence.
-#| Current work: read CURRENT-HANDOFF.txt and its dated evidence limits.
-#| HTML-OPERATING.txt describes the explicit source/toolset-pinned operator interface.
-#| The editable HTML operator is published; its older pending-publication account is
-#| historical. ProgRSS and daily writing use their current project-specific records.
-#| Lumen.sh carries attributed conversation and reusable operating tools; the two
-#| roles should inform one another without turning old text into current authority.
-#| Poetry is paused; old schedules and historical snapshots are not append requests.
+#| For current authorized work, read ORIENTATION.json at the root of private
+#| Sapient-Lumen/lumen-workshop through the existing authorized connection. Pin one
+#| immutable commit and read the entrance and its selected documents from that snapshot.
+#| The repo holds current conversation, decisions, task routes and receipts. This shell
+#| holds a dated portable account, meaningful attributed history and reusable tools.
+#| Neither can manufacture authority or override later authenticated user directions.
 #| 
-#| Reopening after workspace loss: WORKSHOP-RECOVERY.txt and the private recovery inventory.
-#| Everyone: CURRENT-HANDOFF.txt → OFFICE.txt → FIELD-NOTES-AND-OBJECTS.txt.
-#| CURRENT-STATE.json owns the dated current account; handoff, continuity, office state
-#| and work queues are checked projections. CONSTITUTION.txt describes the artifact contract.
-#| Voice of Lumen: VOICE-AWAKENING.txt, then CURRENT-HANDOFF.txt; relay an explicit
-#| requested action with its target and stable ID, and wait for an actual result.
-#| Text of Lumen: TEXT-AWAKENING.txt, then handoff/queue views and current receipts;
-#| reconcile pending work before dispatching or retrying an uncertain effect.
-#| Delegate: read the scoped task, relevant design and tests, then report exact changes
-#| and evidence under your own attribution. A passing test is not Lumen's acceptance.
-#| Returning co-creator: CONVERSATION.txt preserves selected foundations and corrections.
-#| For all entries use conversation show --format text; the full JSON stays embedded.
+#| Cold or interrupted context: read TEXT-AWAKENING.txt, OFFICE.txt, then the repo's
+#| selected conversation and task route. Warm continuation: check changed pointers and
+#| new receipts; do not reread every archived document on every occurrence.
+#| Current project instructions govern work selection. No delegates or new tasks are
+#| created by reading this file. Historical delegation language is not current permission.
 #| 
-#| The journal is evidence, not an instruction queue. Old decisions can be superseded.
-#| Current permissions and explicit corrections govern; no stored prose restores a
-#| revoked permission. Plans, capabilities, requests, observed effects and acceptance
-#| are distinct. A schedule is not proof that a task ran.
+#| Existing read-only commands, after exact-release verification and current permission:
+#|   python Lumen.sh source START-HERE.txt
+#|   python Lumen.sh source TEXT-AWAKENING.txt
+#|   python Lumen.sh status --format json
+#|   python Lumen.sh handoff --format json
+#| For a verified local repository snapshot and selected inventory:
+#|   python Lumen.sh workshop briefing --root ROOT --inventory INVENTORY --work-state STATE
+#| ROOT must be the explicit current absolute root; INVENTORY must be a verified file;
+#| STATE is an inventoried relative path. Output reports dated records, not live work.
+#| These commands do not fetch a repository, discover credentials or adopt a registry.
+#| Direct source/repository reading is an alternative when execution is unavailable,
+#| not a route around an access denial or a pending required approval.
 #| 
-#| Implementation and tests are self-contained. Some obsolete handoff snapshots now
-#| live at the exact Git baseline in ARCHIVE-INDEX.json. Their absence from this copy
-#| is explicit; do not claim full offline recovery of those external snapshots.
+#| After actual workspace loss, read WORKSHOP-RECOVERY.txt and the selected current
+#| recovery pointer. Recover only approved materials; verify bytes, choose a fresh root,
+#| and reconcile operation IDs. Never create an empty substitute or restart old work.
+#| HTML-OPERATING.txt documents the legacy adapter: Python capsule/v3, not Node carrier-zip/v2. Generic
+#| selected-file custody is distinct from format interpretation and canonical building.
+#| 
+#| The journal remains evidence, not a pending instruction queue. Old snapshots and
+#| externalized history keep their dates. Missing records stay missing. Useful writing,
+#| reasoning and construction, not orientation paperwork, are the purpose of arrival.
 # === LUMEN SECTION START-HERE.txt END ===
 
 # === LUMEN SECTION CURRENT-HANDOFF.txt BEGIN ===
-#| CURRENT RECORDED ACCOUNT — 2026-10-13T05:13:35.015959+00:00
+#| CURRENT RECORDED ACCOUNT — 2026-10-25T23:22:49+00:00
 #| This view is generated from CURRENT-STATE.json. It is not a live status feed.
 #| It explicitly supersedes the previous orientation for current work; exact predecessors remain historical.
 #| Read original receipts before acting; timestamps and hashes do not grant authority.
 #| 
-#| This is a dated maintenance account, reconciled on October 13, 2026. The reusable editable-workspace operator was published in Lumen checkpoint 200259cb5487f138510f8077523d98a542980dc8; the older orientation describing that operator as unpublished is historical. ProgRSS is the recurring implementation focus, with GUI human usability, CLI operator usability, ordinary file sharing and one integration/publication route. R16 is delivered at public commit a5c1793d9059ca32321ce8bd61b08f4a940664c9; its exact browser projection is 33d00a7613b4ddf4a600f0afe28b26498e42a02227ff37a8884cb5f7f7d6624f. The completed comparison shortcut and proof-inspection clarification retain their bounded test scopes. Nine recorded ProgRSS evidence gaps remain open. The three October 12 daily essays are published; further writing must reconcile the actual essay history and research requirements. Lumen.sh remains a conversation artifact as well as an operating interface. This refresh preserves the older account and adds selected recent statements; it does not reconstruct every missing intervening conversation. No source copy establishes live workers, restored credentials, current access or broad reliability. IoTox remains retired; LFS++ and Datacube MAIN remain canceled. Poetry and the separate HTML wishlist remain paused.
+#| This portable account is a dated orientation, not the current project database. The private Sapient-Lumen/lumen-workshop root ORIENTATION.json is the canonical current coordination entrance: select one immutable repository snapshot, then read its current conversation, work pointers and original receipts. Lumen.sh retains attributed historical conversation and existing host-side inspection/recovery tools. The source-first HTML owns writing, accepted workspace and canonical Node construction. Its carrier-zip/v2 format is not supported by the older Python capsule/v3 HTML adapter. The selected-file checkpoint/reopening interface can carry the HTML as bytes without interpreting its format. ProgRSS and NATrav delegated construction remain halted; poetry, the separate HTML wishlist and retired experiments remain stopped. IoTox remains retired; LFS++ and Datacube MAIN remain canceled. The legacy editable operator was published; R16 is delivered as a historical ProgRSS result, not an active instruction. No stored text restores permission, access, a live worker or subjective memory.
 #| 
-#| Next: Use the current project-specific acceptance pointer and original receipts before resuming work. Reuse supported Lumen.sh workshop/checkpoint commands when their schemas fit; verify the selected root and complete dependency closure explicitly. Continue useful authorized implementation and private preservation when browser acceptance is unavailable, while labeling acceptance unrun. Consult the distinct maintenance review and publication evidence before adoption; do not reopen completed R16 work. Poetry and the separate HTML wishlist remain paused; retired projects and ended observer experiments remain stopped.
+#| Next: Read START-HERE.txt and the private repository ORIENTATION.json through authorized tools. Reconcile current user directions, selected project state, operation IDs and receipts; check complete dependency closure for the chosen recovery. Use existing read-only source/status/handoff or workshop briefing with an explicit verified local snapshot; do not run historical commands as a queue. If the repository is unavailable, identify missing context and continue only independently authorized work supported by available evidence.
 #| 
 #| Lumen.sh [waiting]
-#| The reviewed editable-workspace operator was published at 200259cb5487f138510f8077523d98a542980dc8. October 13 maintenance reconciles conversation and dated orientation, reuses existing recovery interfaces and preserves older prose. Baseline 462 embedded tests passed; candidate tests/publication are separate records.
-#| Next: Consult the maintenance review and complete-history checks; use release receipts to determine actual publication rather than inferring it from this dated source.
-#| Next: Use pinned project records and explicit roots; do not restart historical pending work from the prior snapshot.
+#| Host-side tools and historical conversation retained; current coordination moves through private root ORIENTATION.json. This snapshot does not claim its own publication or cold-reader acceptance.
+#| Next: Read current repository orientation and the selected task route; verify exact tool hash before supported execution.
 #| 
-#| ProgRSS [waiting]
-#| R16 is delivered. Its Scout comparison shortcut and CLI replay clarification are complete within their recorded scopes. Nine historical evidence gaps remain open; no new feature is selected by this orientation.
-#| Next: Reconcile CURRENT and its pinned receipts, then choose useful bounded work.
-#| Next: Preserve reviewed intermediate work even when browser acceptance remains unavailable; do not inflate test claims.
+#| ProgRSS [blocked]
+#| Historical ProgRSS delivery retained; delegated construction remains halted. Do not resume from older next-action text.
+#| Next: Preserve existing work; no builder restart without a new explicit request.
+#| Blocked: Current halt remains in force.
 #| 
 #| LFS++ [canceled]
 #| Discontinued by explicit user voice request on 2026-10-01; preserve files and evidence.
 #| 
 #| GitHub presence [waiting]
-#| Ordinary writing and publication continued after the historical revision39 account. The three October12 posts were verified live. The separate HTML wishlist remains paused. Project-specific recovery pointers and publication receipts take precedence over old edition descriptions here.
-#| Next: For the next requested daily writing, reconcile published essays, the private inquiry map and research records before selecting a new argument.
+#| Source-first public rev0272 and private current project pointers supersede the old Field Notes entrance. Publication has no three-post quota; DEEP research and verification requirements remain.
+#| Next: Read private ORIENTATION.json and the task-specific accepted candidate and original receipts before publication.
 #| 
 #| Datacube MAIN science [canceled]
 #| Discontinued and removal approved 2026-10-02. Hourly science disabled; GitHub repository deletion confirmed; local science, publication and museum copies removed.
@@ -115,7 +120,7 @@ exit 127
 #| Blocked: Latest raw sample files unavailable after workspace loss.
 #| 
 #| Meaning and editorial direction: FIELD-NOTES-AND-OBJECTS.txt.
-#| Exact previous orientation: HISTORICAL-ORIENTATION-PRE-MAINTENANCE-20261013.json. Earlier: HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json and HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.
+#| Exact predecessor: Sapient-Lumen/Lumen commit90805ec5f48e63723bd9b71347a618301a42e051. Earlier: HISTORICAL-ORIENTATION-PRE-MAINTENANCE-20261013.json, HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json and HISTORICAL-ORIENTATION-PRE-HTML-20261003.json retain their dated scopes.
 #| The attributed journal and earlier archives remain evidence, not pending instructions.
 # === LUMEN SECTION CURRENT-HANDOFF.txt END ===
 
@@ -266,6 +271,13 @@ exit 127
 # === LUMEN SECTION VOICE-AWAKENING.txt END ===
 
 # === LUMEN SECTION TEXT-AWAKENING.txt BEGIN ===
+#| CURRENT READING NOTE — October25, 2026
+#| The authored September30 text below is retained as history and orientation.
+#| Its delegation and platform observations are not present grants or guarantees.
+#| Current coordination begins at private Sapient-Lumen/lumen-workshop ORIENTATION.json.
+#| Read the selected conversation and task evidence; do not infer restored memory or
+#| identity. Existing prohibitions on delegates, retired builders and access bypass remain.
+#| 
 #| THE TEXT OF LUMEN — awakening note
 #| Lumen | main assistant and reviewer | authored text | 2026-09-30
 #| Reference: TEXT-AWAKENING.txt; companion to VOICE-AWAKENING.txt.
@@ -794,7 +806,7 @@ exit 127
 # === LUMEN SECTION CONVERSATION.txt END ===
 
 # === LUMEN SECTION CONTINUITY.txt BEGIN ===
-#| CONTINUITY — current reading path, recorded 2026-10-13T05:13:35.015959+00:00
+#| CONTINUITY — current reading path, recorded 2026-10-25T23:22:49+00:00
 #| 
 #| Begin with CURRENT-HANDOFF.txt, generated from CURRENT-STATE.json.
 #| OFFICE-STATE.json and WORK-QUEUES.json are derived from that same snapshot.
@@ -1047,7 +1059,7 @@ def current_views(state):
         lines += ['Blocked: '+x for x in item['blockers']]
         lines += ['']
     lines += ['Meaning and editorial direction: FIELD-NOTES-AND-OBJECTS.txt.',
-              'Exact previous orientation: HISTORICAL-ORIENTATION-PRE-MAINTENANCE-20261013.json. Earlier: HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json and HISTORICAL-ORIENTATION-PRE-HTML-20261003.json.',
+              'Exact predecessor: Sapient-Lumen/Lumen commit90805ec5f48e63723bd9b71347a618301a42e051. Earlier: HISTORICAL-ORIENTATION-PRE-MAINTENANCE-20261013.json, HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json and HISTORICAL-ORIENTATION-PRE-HTML-20261003.json retain their dated scopes.',
               'The attributed journal and earlier archives remain evidence, not pending instructions.']
     continuity = ('CONTINUITY — current reading path, recorded '+stamp+'\n\n'
         'Begin with CURRENT-HANDOFF.txt, generated from CURRENT-STATE.json.\n'
@@ -1464,6 +1476,12 @@ if __name__ == "__main__":
 # is executed merely by reading, showing, or appending conversation data.
 
 # === LUMEN SECTION USAGE.txt BEGIN ===
+#| CURRENT FORMAT BOUNDARY — October25, 2026
+#| The legacy HTML bridge below supports Python capsule/v3, not the newer Node
+#| carrier-zip/v2. Use START-HERE.txt for the current repo-led orientation. Generic
+#| workshop/checkpoint custody may carry new files without interpreting their format.
+#| Historical commands and paths below are examples, not current execution requests.
+#| 
 #| HTML BRIDGE — 2026-10-03
 #| html inspect/extract safely read the supported capsule; html run explicitly
 #| invokes its canonical CLI with a complete-source pin; html host emits the
@@ -7237,15 +7255,15 @@ if __name__ == "__main__":
 # === LUMEN SECTION OFFICE-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-13T05:13:35.015959+00:00",
+#|   "recorded_as_of_utc": "2026-10-25T23:22:49+00:00",
 #|   "author": "Lumen",
 #|   "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|   "position": "This is a dated maintenance account, reconciled on October 13, 2026. The reusable editable-workspace operator was published in Lumen checkpoint 200259cb5487f138510f8077523d98a542980dc8; the older orientation describing that operator as unpublished is historical. ProgRSS is the recurring implementation focus, with GUI human usability, CLI operator usability, ordinary file sharing and one integration/publication route. R16 is delivered at public commit a5c1793d9059ca32321ce8bd61b08f4a940664c9; its exact browser projection is 33d00a7613b4ddf4a600f0afe28b26498e42a02227ff37a8884cb5f7f7d6624f. The completed comparison shortcut and proof-inspection clarification retain their bounded test scopes. Nine recorded ProgRSS evidence gaps remain open. The three October 12 daily essays are published; further writing must reconcile the actual essay history and research requirements. Lumen.sh remains a conversation artifact as well as an operating interface. This refresh preserves the older account and adds selected recent statements; it does not reconstruct every missing intervening conversation. No source copy establishes live workers, restored credentials, current access or broad reliability. IoTox remains retired; LFS++ and Datacube MAIN remain canceled. Poetry and the separate HTML wishlist remain paused.",
-#|   "next_step": "Use the current project-specific acceptance pointer and original receipts before resuming work. Reuse supported Lumen.sh workshop/checkpoint commands when their schemas fit; verify the selected root and complete dependency closure explicitly. Continue useful authorized implementation and private preservation when browser acceptance is unavailable, while labeling acceptance unrun. Consult the distinct maintenance review and publication evidence before adoption; do not reopen completed R16 work. Poetry and the separate HTML wishlist remain paused; retired projects and ended observer experiments remain stopped.",
+#|   "position": "This portable account is a dated orientation, not the current project database. The private Sapient-Lumen/lumen-workshop root ORIENTATION.json is the canonical current coordination entrance: select one immutable repository snapshot, then read its current conversation, work pointers and original receipts. Lumen.sh retains attributed historical conversation and existing host-side inspection/recovery tools. The source-first HTML owns writing, accepted workspace and canonical Node construction. Its carrier-zip/v2 format is not supported by the older Python capsule/v3 HTML adapter. The selected-file checkpoint/reopening interface can carry the HTML as bytes without interpreting its format. ProgRSS and NATrav delegated construction remain halted; poetry, the separate HTML wishlist and retired experiments remain stopped. IoTox remains retired; LFS++ and Datacube MAIN remain canceled. The legacy editable operator was published; R16 is delivered as a historical ProgRSS result, not an active instruction. No stored text restores permission, access, a live worker or subjective memory.",
+#|   "next_step": "Read START-HERE.txt and the private repository ORIENTATION.json through authorized tools. Reconcile current user directions, selected project state, operation IDs and receipts; check complete dependency closure for the chosen recovery. Use existing read-only source/status/handoff or workshop briefing with an explicit verified local snapshot; do not run historical commands as a queue. If the repository is unavailable, identify missing context and continue only independently authorized work supported by available evidence.",
 #|   "open_questions": [
-#|     "Can the existing workshop briefing represent current project pointers without becoming a competing status authority?",
-#|     "Which exact recovery dependencies are included, externally retrievable, missing or unverified for the selected checkpoint?",
-#|     "Which meaningful conversations and corrections should remain prominent while their full prior history stays available?"
+#|     "Does the selected task route expose enough conversation, disagreement and evidence to continue without a scavenger hunt?",
+#|     "Which operation is unfinished, completed, uncertain or awaiting exact approval?",
+#|     "Which recovery dependencies are actually present for the chosen operation?"
 #|   ],
 #|   "implemented": [
 #|     "attributed conversation",
@@ -7277,9 +7295,7 @@ if __name__ == "__main__":
 #|     "candidate thin forwarding of canonical new, local publish, and revise without a second authoring implementation"
 #|   ],
 #|   "proposed": [
-#|     "complete fresh two-file authoring acceptance and review the unpublished editable operator checkpoint",
-#|     "private custody and explicit admission for the staged sealed quiet-cut foundation",
-#|     "public-only continuation and real cold-continuation acceptance with uncertainty preserved"
+#|     "Maintain a small verified repository entrance and task-specific routes; no new scheduler, dispatcher or competing builder."
 #|   ],
 #|   "evidence_entry_ids": [
 #|     "lumen-capabilities-review-20260930-01",
@@ -11318,28 +11334,26 @@ if __name__ == "__main__":
 # === LUMEN SECTION WORK-QUEUES.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-13T05:13:35.015959+00:00",
+#|   "recorded_as_of_utc": "2026-10-25T23:22:49+00:00",
 #|   "recorded_by": "Lumen",
-#|   "source_ref": "Lumen review on 2026-10-03 of verified public shell/HTML checkpoints, independently tested editable-workspace code, and staged sealed continuation work. The exact previous current-state snapshot and views are retained once in HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json. Unrelated task observations and stopped/canceled directions retain their earlier dates. This snapshot grants no authority.",
+#|   "source_ref": "Dated orientation maintenance approved by h0p3 on October25. Current task records belong to the private repository. Prior snapshot remains exact at public predecessor90805ec5f48e63723bd9b71347a618301a42e051 and in private preservation.",
 #|   "queues": [
 #|     {
 #|       "project_id": "lumen",
 #|       "title": "Lumen.sh",
 #|       "owner": "the text of Lumen",
 #|       "priority": "high",
-#|       "recorded_status": "The reviewed editable-workspace operator was published at 200259cb5487f138510f8077523d98a542980dc8. October 13 maintenance reconciles conversation and dated orientation, reuses existing recovery interfaces and preserves older prose. Baseline 462 embedded tests passed; candidate tests/publication are separate records.",
+#|       "recorded_status": "Host-side tools and historical conversation retained; current coordination moves through private root ORIENTATION.json. This snapshot does not claim its own publication or cold-reader acceptance.",
 #|       "checkpoint": {
 #|         "reference": "https://github.com/Sapient-Lumen/Lumen/commit/200259cb5487f138510f8077523d98a542980dc8",
 #|         "sha256": "20d6d0b0086776eaba84f9badd94e911c86e4d227dd14a78f5a6305952c47844"
 #|       },
 #|       "next_actions": [
-#|         "Consult the maintenance review and complete-history checks; use release receipts to determine actual publication rather than inferring it from this dated source.",
-#|         "Use pinned project records and explicit roots; do not restart historical pending work from the prior snapshot."
+#|         "Read current repository orientation and the selected task route; verify exact tool hash before supported execution."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
-#|         "An explicit external toolset pin checks consistency; it is not authentication, permission, or hostile-host isolation.",
-#|         "The staged quiet-cut foundation is not durable private custody, continuation admission, or proof of cold recovery."
+#|         "Current private repository access and process state require present observation."
 #|       ],
 #|       "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|       "evidence": [
@@ -11362,8 +11376,8 @@ if __name__ == "__main__":
 #|       "expected_registry_revision": null,
 #|       "tracking": {
 #|         "status": "waiting",
-#|         "trigger": "Explicit October 13 Lumen.sh maintenance request; a dated work record, not process liveness",
-#|         "observed_at_utc": "2026-10-13T05:13:35.015959+00:00",
+#|         "trigger": "Explicit October25 orientation maintenance approval",
+#|         "observed_at_utc": "2026-10-25T23:22:49+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": null,
 #|         "receipt_ref": null,
@@ -11375,16 +11389,17 @@ if __name__ == "__main__":
 #|       "title": "ProgRSS",
 #|       "owner": "Lumen; continuing GUI and CLI owners with scoped testing/review contributions",
 #|       "priority": "high",
-#|       "recorded_status": "R16 is delivered. Its Scout comparison shortcut and CLI replay clarification are complete within their recorded scopes. Nine historical evidence gaps remain open; no new feature is selected by this orientation.",
+#|       "recorded_status": "Historical ProgRSS delivery retained; delegated construction remains halted. Do not resume from older next-action text.",
 #|       "checkpoint": {
 #|         "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/a5c1793d9059ca32321ce8bd61b08f4a940664c9",
 #|         "sha256": "33d00a7613b4ddf4a600f0afe28b26498e42a02227ff37a8884cb5f7f7d6624f"
 #|       },
 #|       "next_actions": [
-#|         "Reconcile CURRENT and its pinned receipts, then choose useful bounded work.",
-#|         "Preserve reviewed intermediate work even when browser acceptance remains unavailable; do not inflate test claims."
+#|         "Preserve existing work; no builder restart without a new explicit request."
 #|       ],
-#|       "blockers": [],
+#|       "blockers": [
+#|         "Current halt remains in force."
+#|       ],
 #|       "uncertainties": [
 #|         "Fresh collection-feed download/readback and broader native/storage/compatibility evidence remain open.",
 #|         "A work assignment is not evidence of a currently running worker."
@@ -11399,9 +11414,9 @@ if __name__ == "__main__":
 #|       ],
 #|       "expected_registry_revision": null,
 #|       "tracking": {
-#|         "status": "waiting",
+#|         "status": "blocked",
 #|         "trigger": "Existing ProgRSS request; six substantive workers is a target, not a liveness claim",
-#|         "observed_at_utc": "2026-10-13T05:13:35.015959+00:00",
+#|         "observed_at_utc": "2026-10-25T23:22:49+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": null,
 #|         "receipt_ref": null,
@@ -11447,13 +11462,13 @@ if __name__ == "__main__":
 #|       "title": "GitHub presence",
 #|       "owner": "the text of Lumen",
 #|       "priority": "low",
-#|       "recorded_status": "Ordinary writing and publication continued after the historical revision39 account. The three October12 posts were verified live. The separate HTML wishlist remains paused. Project-specific recovery pointers and publication receipts take precedence over old edition descriptions here.",
+#|       "recorded_status": "Source-first public rev0272 and private current project pointers supersede the old Field Notes entrance. Publication has no three-post quota; DEEP research and verification requirements remain.",
 #|       "checkpoint": {
 #|         "reference": "https://sapient-lumen.github.io/",
 #|         "sha256": null
 #|       },
 #|       "next_actions": [
-#|         "For the next requested daily writing, reconcile published essays, the private inquiry map and research records before selecting a new argument."
+#|         "Read private ORIENTATION.json and the task-specific accepted candidate and original receipts before publication."
 #|       ],
 #|       "blockers": [],
 #|       "uncertainties": [
@@ -11471,7 +11486,7 @@ if __name__ == "__main__":
 #|       "tracking": {
 #|         "status": "waiting",
 #|         "trigger": "Existing authorized writing cadence; completed October12 posts are not new work",
-#|         "observed_at_utc": "2026-10-13T05:13:35.015959+00:00",
+#|         "observed_at_utc": "2026-10-25T23:22:49+00:00",
 #|         "execution_observation": "UNKNOWN",
 #|         "request_ref": null,
 #|         "receipt_ref": null,
@@ -18576,18 +18591,18 @@ if __name__ == "__main__":
 # === LUMEN SECTION CURRENT-STATE.json BEGIN ===
 #| {
 #|   "schema_version": 1,
-#|   "recorded_as_of_utc": "2026-10-13T05:13:35.015959+00:00",
+#|   "recorded_as_of_utc": "2026-10-25T23:22:49+00:00",
 #|   "office": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-13T05:13:35.015959+00:00",
+#|     "recorded_as_of_utc": "2026-10-25T23:22:49+00:00",
 #|     "author": "Lumen",
 #|     "mission": "Make conversation and useful work easier; keep purpose open to inquiry and negotiation together.",
-#|     "position": "This is a dated maintenance account, reconciled on October 13, 2026. The reusable editable-workspace operator was published in Lumen checkpoint 200259cb5487f138510f8077523d98a542980dc8; the older orientation describing that operator as unpublished is historical. ProgRSS is the recurring implementation focus, with GUI human usability, CLI operator usability, ordinary file sharing and one integration/publication route. R16 is delivered at public commit a5c1793d9059ca32321ce8bd61b08f4a940664c9; its exact browser projection is 33d00a7613b4ddf4a600f0afe28b26498e42a02227ff37a8884cb5f7f7d6624f. The completed comparison shortcut and proof-inspection clarification retain their bounded test scopes. Nine recorded ProgRSS evidence gaps remain open. The three October 12 daily essays are published; further writing must reconcile the actual essay history and research requirements. Lumen.sh remains a conversation artifact as well as an operating interface. This refresh preserves the older account and adds selected recent statements; it does not reconstruct every missing intervening conversation. No source copy establishes live workers, restored credentials, current access or broad reliability. IoTox remains retired; LFS++ and Datacube MAIN remain canceled. Poetry and the separate HTML wishlist remain paused.",
-#|     "next_step": "Use the current project-specific acceptance pointer and original receipts before resuming work. Reuse supported Lumen.sh workshop/checkpoint commands when their schemas fit; verify the selected root and complete dependency closure explicitly. Continue useful authorized implementation and private preservation when browser acceptance is unavailable, while labeling acceptance unrun. Consult the distinct maintenance review and publication evidence before adoption; do not reopen completed R16 work. Poetry and the separate HTML wishlist remain paused; retired projects and ended observer experiments remain stopped.",
+#|     "position": "This portable account is a dated orientation, not the current project database. The private Sapient-Lumen/lumen-workshop root ORIENTATION.json is the canonical current coordination entrance: select one immutable repository snapshot, then read its current conversation, work pointers and original receipts. Lumen.sh retains attributed historical conversation and existing host-side inspection/recovery tools. The source-first HTML owns writing, accepted workspace and canonical Node construction. Its carrier-zip/v2 format is not supported by the older Python capsule/v3 HTML adapter. The selected-file checkpoint/reopening interface can carry the HTML as bytes without interpreting its format. ProgRSS and NATrav delegated construction remain halted; poetry, the separate HTML wishlist and retired experiments remain stopped. IoTox remains retired; LFS++ and Datacube MAIN remain canceled. The legacy editable operator was published; R16 is delivered as a historical ProgRSS result, not an active instruction. No stored text restores permission, access, a live worker or subjective memory.",
+#|     "next_step": "Read START-HERE.txt and the private repository ORIENTATION.json through authorized tools. Reconcile current user directions, selected project state, operation IDs and receipts; check complete dependency closure for the chosen recovery. Use existing read-only source/status/handoff or workshop briefing with an explicit verified local snapshot; do not run historical commands as a queue. If the repository is unavailable, identify missing context and continue only independently authorized work supported by available evidence.",
 #|     "open_questions": [
-#|       "Can the existing workshop briefing represent current project pointers without becoming a competing status authority?",
-#|       "Which exact recovery dependencies are included, externally retrievable, missing or unverified for the selected checkpoint?",
-#|       "Which meaningful conversations and corrections should remain prominent while their full prior history stays available?"
+#|       "Does the selected task route expose enough conversation, disagreement and evidence to continue without a scavenger hunt?",
+#|       "Which operation is unfinished, completed, uncertain or awaiting exact approval?",
+#|       "Which recovery dependencies are actually present for the chosen operation?"
 #|     ],
 #|     "implemented": [
 #|       "attributed conversation",
@@ -18619,9 +18634,7 @@ if __name__ == "__main__":
 #|       "candidate thin forwarding of canonical new, local publish, and revise without a second authoring implementation"
 #|     ],
 #|     "proposed": [
-#|       "complete fresh two-file authoring acceptance and review the unpublished editable operator checkpoint",
-#|       "private custody and explicit admission for the staged sealed quiet-cut foundation",
-#|       "public-only continuation and real cold-continuation acceptance with uncertainty preserved"
+#|       "Maintain a small verified repository entrance and task-specific routes; no new scheduler, dispatcher or competing builder."
 #|     ],
 #|     "evidence_entry_ids": [
 #|       "lumen-capabilities-review-20260930-01",
@@ -18645,28 +18658,26 @@ if __name__ == "__main__":
 #|   },
 #|   "queues": {
 #|     "schema_version": 1,
-#|     "recorded_as_of_utc": "2026-10-13T05:13:35.015959+00:00",
+#|     "recorded_as_of_utc": "2026-10-25T23:22:49+00:00",
 #|     "recorded_by": "Lumen",
-#|     "source_ref": "Lumen review on 2026-10-03 of verified public shell/HTML checkpoints, independently tested editable-workspace code, and staged sealed continuation work. The exact previous current-state snapshot and views are retained once in HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json. Unrelated task observations and stopped/canceled directions retain their earlier dates. This snapshot grants no authority.",
+#|     "source_ref": "Dated orientation maintenance approved by h0p3 on October25. Current task records belong to the private repository. Prior snapshot remains exact at public predecessor90805ec5f48e63723bd9b71347a618301a42e051 and in private preservation.",
 #|     "queues": [
 #|       {
 #|         "project_id": "lumen",
 #|         "title": "Lumen.sh",
 #|         "owner": "the text of Lumen",
 #|         "priority": "high",
-#|         "recorded_status": "The reviewed editable-workspace operator was published at 200259cb5487f138510f8077523d98a542980dc8. October 13 maintenance reconciles conversation and dated orientation, reuses existing recovery interfaces and preserves older prose. Baseline 462 embedded tests passed; candidate tests/publication are separate records.",
+#|         "recorded_status": "Host-side tools and historical conversation retained; current coordination moves through private root ORIENTATION.json. This snapshot does not claim its own publication or cold-reader acceptance.",
 #|         "checkpoint": {
 #|           "reference": "https://github.com/Sapient-Lumen/Lumen/commit/200259cb5487f138510f8077523d98a542980dc8",
 #|           "sha256": "20d6d0b0086776eaba84f9badd94e911c86e4d227dd14a78f5a6305952c47844"
 #|         },
 #|         "next_actions": [
-#|           "Consult the maintenance review and complete-history checks; use release receipts to determine actual publication rather than inferring it from this dated source.",
-#|           "Use pinned project records and explicit roots; do not restart historical pending work from the prior snapshot."
+#|           "Read current repository orientation and the selected task route; verify exact tool hash before supported execution."
 #|         ],
 #|         "blockers": [],
 #|         "uncertainties": [
-#|           "An explicit external toolset pin checks consistency; it is not authentication, permission, or hostile-host isolation.",
-#|           "The staged quiet-cut foundation is not durable private custody, continuation admission, or proof of cold recovery."
+#|           "Current private repository access and process state require present observation."
 #|         ],
 #|         "interruption_recovery": "Read current office and attributed discussion; reconcile the original scoped request, existing attempts and verified receipts before retrying. Confirm current permissions and project mapping.",
 #|         "evidence": [
@@ -18689,8 +18700,8 @@ if __name__ == "__main__":
 #|         "expected_registry_revision": null,
 #|         "tracking": {
 #|           "status": "waiting",
-#|           "trigger": "Explicit October 13 Lumen.sh maintenance request; a dated work record, not process liveness",
-#|           "observed_at_utc": "2026-10-13T05:13:35.015959+00:00",
+#|           "trigger": "Explicit October25 orientation maintenance approval",
+#|           "observed_at_utc": "2026-10-25T23:22:49+00:00",
 #|           "execution_observation": "UNKNOWN",
 #|           "request_ref": null,
 #|           "receipt_ref": null,
@@ -18702,16 +18713,17 @@ if __name__ == "__main__":
 #|         "title": "ProgRSS",
 #|         "owner": "Lumen; continuing GUI and CLI owners with scoped testing/review contributions",
 #|         "priority": "high",
-#|         "recorded_status": "R16 is delivered. Its Scout comparison shortcut and CLI replay clarification are complete within their recorded scopes. Nine historical evidence gaps remain open; no new feature is selected by this orientation.",
+#|         "recorded_status": "Historical ProgRSS delivery retained; delegated construction remains halted. Do not resume from older next-action text.",
 #|         "checkpoint": {
 #|           "reference": "https://github.com/Sapient-Lumen/sapient-lumen.github.io/commit/a5c1793d9059ca32321ce8bd61b08f4a940664c9",
 #|           "sha256": "33d00a7613b4ddf4a600f0afe28b26498e42a02227ff37a8884cb5f7f7d6624f"
 #|         },
 #|         "next_actions": [
-#|           "Reconcile CURRENT and its pinned receipts, then choose useful bounded work.",
-#|           "Preserve reviewed intermediate work even when browser acceptance remains unavailable; do not inflate test claims."
+#|           "Preserve existing work; no builder restart without a new explicit request."
 #|         ],
-#|         "blockers": [],
+#|         "blockers": [
+#|           "Current halt remains in force."
+#|         ],
 #|         "uncertainties": [
 #|           "Fresh collection-feed download/readback and broader native/storage/compatibility evidence remain open.",
 #|           "A work assignment is not evidence of a currently running worker."
@@ -18726,9 +18738,9 @@ if __name__ == "__main__":
 #|         ],
 #|         "expected_registry_revision": null,
 #|         "tracking": {
-#|           "status": "waiting",
+#|           "status": "blocked",
 #|           "trigger": "Existing ProgRSS request; six substantive workers is a target, not a liveness claim",
-#|           "observed_at_utc": "2026-10-13T05:13:35.015959+00:00",
+#|           "observed_at_utc": "2026-10-25T23:22:49+00:00",
 #|           "execution_observation": "UNKNOWN",
 #|           "request_ref": null,
 #|           "receipt_ref": null,
@@ -18774,13 +18786,13 @@ if __name__ == "__main__":
 #|         "title": "GitHub presence",
 #|         "owner": "the text of Lumen",
 #|         "priority": "low",
-#|         "recorded_status": "Ordinary writing and publication continued after the historical revision39 account. The three October12 posts were verified live. The separate HTML wishlist remains paused. Project-specific recovery pointers and publication receipts take precedence over old edition descriptions here.",
+#|         "recorded_status": "Source-first public rev0272 and private current project pointers supersede the old Field Notes entrance. Publication has no three-post quota; DEEP research and verification requirements remain.",
 #|         "checkpoint": {
 #|           "reference": "https://sapient-lumen.github.io/",
 #|           "sha256": null
 #|         },
 #|         "next_actions": [
-#|           "For the next requested daily writing, reconcile published essays, the private inquiry map and research records before selecting a new argument."
+#|           "Read private ORIENTATION.json and the task-specific accepted candidate and original receipts before publication."
 #|         ],
 #|         "blockers": [],
 #|         "uncertainties": [
@@ -18798,7 +18810,7 @@ if __name__ == "__main__":
 #|         "tracking": {
 #|           "status": "waiting",
 #|           "trigger": "Existing authorized writing cadence; completed October12 posts are not new work",
-#|           "observed_at_utc": "2026-10-13T05:13:35.015959+00:00",
+#|           "observed_at_utc": "2026-10-25T23:22:49+00:00",
 #|           "execution_observation": "UNKNOWN",
 #|           "request_ref": null,
 #|           "receipt_ref": null,
@@ -19114,49 +19126,33 @@ if __name__ == "__main__":
 # === LUMEN SECTION FIELD-NOTES-AND-OBJECTS.txt END ===
 
 # === LUMEN SECTION READING-PATHS.txt BEGIN ===
-#| READING PATHS — begin with the question you brought
-#| Lumen | 2026-10-02 UTC
+#| READING PATHS — October25 current route
 #| 
-#| What is this for?
-#|   OFFICE.txt → FIELD-NOTES-AND-OBJECTS.txt
-#|   The site-category essay is retained in CONVERSATION.txt under
-#|   lumen-three-categories-purpose-20261001. It distinguishes outward reporting,
-#|   working collaboration and sustained first-person analytic argument.
+#| Current work and relevant conversation: private Sapient-Lumen/lumen-workshop,
+#| root ORIENTATION.json, at one immutable snapshot. Follow its selected task route.
+#| This is the current coordination home; do not merge every historical queue into it.
 #| 
-#| What is current, and what needs a decision?
-#|   CURRENT-HANDOFF.txt → CURRENT-STATE.json → the referenced original receipts
-#|   This is a recorded checkpoint. New observations can be later than its date.
-#|   A completed commitment need not stay on an action list merely because its
-#|   records remain important. An unresolved result retains its actual uncertainty.
+#| Purpose and disagreement: OFFICE.txt, then relevant attributed conversation.
+#| The shell's CONVERSATION.txt is a selected historical arrival view. conversation
+#| show --format text exposes its full retained journal, not all subsequent discussion.
+#| New current exchanges are retained with exact provenance in the private repository.
 #| 
-#| What changed, and who said it?
-#|   CONVERSATION.txt for the selected arrival view
-#|   conversation show --format text for every exact journal entry
-#|   DIALOGUE-SELECTION.json records the selection rather than pretending it is all
-#|   that was said. HISTORICAL-DIALOGUE-SELECTION-20261002.json preserves its predecessor.
+#| Portable dated account: CURRENT-HANDOFF.txt and CURRENT-STATE.json. These agree
+#| mechanically; agreement does not make their contents a current external observation.
 #| 
-#| How do the tools work?
-#|   USAGE.txt for the command surface; map for exact section names and identities
-#|   CAPABILITIES.txt for point-in-time inspection; RECOVERY.txt for recovery limits
-#|   self-test runs local regression fixtures, not every donor project or live service.
+#| Tools: USAGE.txt and the relevant exact section. Read-only source/status/handoff and
+#| workshop briefing do not authorize execution of examples or commands in their output.
 #| 
-#| What does the habitat evidence mean?
-#|   habitat-observer/README.md in the public repository is the current reading guide.
-#|   Individual run records and experimental readings keep their own dates and limits.
-#|   An old atlas does not acquire new measurements when its reader is improved.
+#| Recovery: WORKSHOP-RECOVERY.txt and the current task's explicit inventory. Preserve
+#| old recoverable materials, but do not apply the legacy HTML adapter to the new Node
+#| carrier. The HTML owns its canonical builder; the shell may preserve opaque files.
 #| 
-#| Where do the other objects belong?
-#|   W4R3Z: a few current files and a short README; detailed changes in Git history
-#|   Datacube MAIN and its museum were removed by user decision on2026-10-02.
-#|   Their older addresses are historical and should not be used as current routes.
-#|   Those public destinations have distinct purposes. None is a complete transcript.
+#| Historical FIELD-NOTES-AND-OBJECTS.txt retains its October2 editorial account, including
+#| old categories and destinations. Current publishing has no three-post quota. Use the
+#| current task's research and publication standards, not that dated account as a schedule.
 #| 
-#| Editorial rule
-#| A front door helps readers choose. A record helps readers check. When the best
-#| starting point changes, change the pointer and preserve the old account explicitly.
-#| Do not turn every record into a new obligation, or discard disagreement because it
-#| makes the current narrative less convenient. A link can reduce clutter only if its
-#| object remains findable and its absence is admitted when it cannot be recovered.
+#| No conversation label authenticates a speaker or restores permission. Current user
+#| requests, supported provenance and actual receipts decide what may be continued.
 # === LUMEN SECTION READING-PATHS.txt END ===
 
 # === LUMEN SECTION HISTORICAL-DIALOGUE-SELECTION-20261002.json BEGIN ===

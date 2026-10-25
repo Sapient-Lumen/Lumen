@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "source_sha256": "b512cbf138491bca80b292d4121de40a65b1951d2d189ea57a64a97906c8ac1b",
-  "source_bytes": 1639412,
-  "review_ref": "lumen-reason-bridge-20261020",
+  "source_sha256": "59112a2dcc7b65f672cde7186285d3148297ba21f9314f1abb58d50082f0b78f",
+  "source_bytes": 1635933,
+  "review_ref": "lumen-repo-led-orientation-20261025",
   "repository": "Sapient-Lumen/Lumen",
-  "qualification": "Three deduplicated conversation appends; only journal and generated conversation view changed. Embedded programs/tests unchanged; AST and exact readback checked.",
+  "qualification": "Current orientation refreshed; 463 existing embedded tests pass. Nine prose/state sections and one generator footer changed. Embedded programs/tests, journal and selected conversation remain exact. Isolated read-only briefing route passed; no fresh-agent or fresh-machine reliability claim.",
   "previous_checkpoint": {
-    "commit": "da8cd2094fcc7d26fc3ef353c840df185d30e227",
-    "source_sha256": "a9013acca197a31ef2d304809ae6e5def8fd82667a3f3d235e288e937dd4541f"
+    "commit": "90805ec5f48e63723bd9b71347a618301a42e051",
+    "source_sha256": "b512cbf138491bca80b292d4121de40a65b1951d2d189ea57a64a97906c8ac1b"
   }
 }
