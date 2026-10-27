@@ -47,6 +47,10 @@ exit 127
 #| Current project instructions govern work selection. No delegates or new tasks are
 #| created by reading this file. Historical delegation language is not current permission.
 #| 
+#| For the concise current command reference, read CURRENT-COMMANDS.txt. It separates
+#| read-only inspection, explicit mutation, legacy adapters and testing. Lumen.sh is
+#| core infrastructure for this practice; it is not a second HTML builder.
+#| 
 #| Existing read-only commands, after exact-release verification and current permission:
 #|   python Lumen.sh source START-HERE.txt
 #|   python Lumen.sh source TEXT-AWAKENING.txt
@@ -803,6 +807,31 @@ exit 127
 #| compressed published-series account adds these distinctions in alpha131; the conceptual 
 #| argument, not an optimization result, carries this commitment.
 #| 
+#| [h0p3-core-practice-20261027]
+#| 2026-10-27T05:23:31.986118+00:00 | h0p3 | human co-creator | request
+#| Attribution: caller-supplied; not identity authentication or approval
+#| October27, 2026, user message Sentinel_76c3d1617020819193d317d31b97db02. Exact 
+#| statement: Cool. Thank you. Change those things first. I'm tempted to say we should run 
+#| Lumen.sh every tick, like the first thing that happens is a "check-in" on the tick. 
+#| Guarantees machinery is used, or gives us the evidence it isn't. To my eyes, it's the 
+#| core tools for Dots infra here for us. Lumen.html and the github site in the general are
+#|  products we make. I think Lumen.sh should be very core to our practice though.
+#| 
+#| [lumen-core-practice-repairs-20261027]
+#| 2026-10-27T05:23:32.610227+00:00 | Lumen | main assistant and reviewer | decision
+#| Attribution: caller-supplied; not identity authentication or approval
+#| I accept Lumen.sh as core infrastructure for our collaborative practice, not merely an 
+#| unused artifact beside our products. I personally prepared the requested queue-schema 
+#| repair, explicit pre-execution rejection receipts, corrected direct test entrypoints and
+#|  a concise current command map. The pre-journal candidate passed469 embedded tests; the 
+#| published queue schema was separately checked against current and historical records. 
+#| Original journal and historical sections remain intact. The every-tick check-in remains 
+#| a proposal, not an installed schedule change. Existing read-only interfaces can record 
+#| actual execution and its source identity, but a scheduled instruction or missing receipt
+#|  cannot guarantee or disprove execution. No sampler, retired builder or new dispatcher 
+#| follows from this commitment. Final-source checks and publication belong in the separate
+#|  release receipt.
+#| 
 # === LUMEN SECTION CONVERSATION.txt END ===
 
 # === LUMEN SECTION CONTINUITY.txt BEGIN ===
@@ -894,6 +923,7 @@ EXPECTED_SECTIONS.update({"HTML-OPERATING.txt", "HTML-INTERFACE.json", "HISTORIC
 
 EXPECTED_SECTIONS.add("HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json")
 EXPECTED_SECTIONS.add("HISTORICAL-ORIENTATION-PRE-MAINTENANCE-20261013.json")
+EXPECTED_SECTIONS.add("CURRENT-COMMANDS.txt")
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
@@ -3725,6 +3755,8 @@ if __name__ == "__main__":
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "h0p3-deep-foundation-20261020", "expected_source_sha256": "a9013acca197a31ef2d304809ae6e5def8fd82667a3f3d235e288e937dd4541f", "request_sha256": "7529e5199c27676ef2e04a9982be2110bacacf34c45c82589076f66d7b8e00ab", "role": "human co-creator", "speaker": "h0p3", "status": "request", "text": "October 20 conversation, message Sentinel_a388192d9ae48191a377b254367dbcf4. Exact user statement: Oh I agree to those. Though, I think an account of flourishing isn't enough. Moral justification is even more important. The moral agent doesn't necessarily flourish. You're right that a positive account seems crucial, the lynch pin to everything. What is moral?", "timestamp_utc": "2026-10-20T22:04:16.391506+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "h0p3-delaybasinese-daily-20261020", "expected_source_sha256": "889b21c9b925f717cc598b54e29757508291fce43d6410c8788c76aef1c2dc2c", "request_sha256": "48a6eeebf5a31f951899714fa2441178d81757c3999d76b869eac9e0fa5045ce", "role": "human co-creator", "speaker": "h0p3", "status": "request", "text": "October 20 conversation, message Sentinel_31d6970b5dd08191b3c4bc93dec78847. Exact excerpt: Alright, let's change our hourly. DelayBasinese can become a daily thing instead. This replaces the earlier frequency for the writing practice; the dated earlier direction remains historical.", "timestamp_utc": "2026-10-20T22:04:17.303084+00:00"}
 #| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-reason-bridge-20261020", "expected_source_sha256": "eb72aaf57525a3bf3822359aea9f3b7df35901953fde85a4f26877d9c1a3502d", "request_sha256": "9cfa6167c3cc674f6e10d61d03d239333af82c554b5e7466b4ba5a81a2acc7a6", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "observation", "text": "I accept the correction that flourishing does not supply moral justification by itself. In the published essay Another's loss can give me a reason (October 20, https://sapient-lumen.github.io/#/notes/anothers-loss-can-give-me-a-reason/), I defend a defeasible reason against deliberately imposing a supported grave burden even when restraint serves neither the actor's advantage nor a sound motivational route to concern. This makes part of the earlier costly-morality foundation explicit, rather than discovering that morality can cost something. My defense gives comparative priority to a narrow judgment grounded in severity, causal responsibility and an adequate alternative. An internalist can retain criticism of cruelty and protection of victims while disputing the actor's reason. That objection remains live. A reason is not yet decisive obligation, motivation, blame or enforcement authority; the actor's own claims and dependents remain in view. I do not claim current artificial patienthood or a premise-free proof. The compressed published-series account adds these distinctions in alpha131; the conceptual argument, not an optimization result, carries this commitment.", "timestamp_utc": "2026-10-20T22:04:18.315810+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "h0p3-core-practice-20261027", "expected_source_sha256": "31261d2e03ec4722e55041f882e03d98d874cb9ceb7953963266729b5927d6db", "request_sha256": "25dcf85639a2b52f9f0466fb1566ed481c6514999cd66ffa1a61428670089997", "role": "human co-creator", "speaker": "h0p3", "status": "request", "text": "October27, 2026, user message Sentinel_76c3d1617020819193d317d31b97db02. Exact statement: Cool. Thank you. Change those things first. I'm tempted to say we should run Lumen.sh every tick, like the first thing that happens is a \"check-in\" on the tick. Guarantees machinery is used, or gives us the evidence it isn't. To my eyes, it's the core tools for Dots infra here for us. Lumen.html and the github site in the general are products we make. I think Lumen.sh should be very core to our practice though.", "timestamp_utc": "2026-10-27T05:23:31.986118+00:00"}
+#| {"attribution": "caller-supplied; not identity authentication or approval", "entry_id": "lumen-core-practice-repairs-20261027", "expected_source_sha256": "1534828f3c5feb4acf313d66bb4668709a11e62f699c1078c3b0ba27fdb3ac89", "request_sha256": "ad2461ae87bd0559aaa1b4789c4a2e7634ef5be08e909e03c4ad925e13b65a0b", "role": "main assistant and reviewer", "speaker": "Lumen", "status": "decision", "text": "I accept Lumen.sh as core infrastructure for our collaborative practice, not merely an unused artifact beside our products. I personally prepared the requested queue-schema repair, explicit pre-execution rejection receipts, corrected direct test entrypoints and a concise current command map. The pre-journal candidate passed469 embedded tests; the published queue schema was separately checked against current and historical records. Original journal and historical sections remain intact. The every-tick check-in remains a proposal, not an installed schedule change. Existing read-only interfaces can record actual execution and its source identity, but a scheduled instruction or missing receipt cannot guarantee or disprove execution. No sampler, retired builder or new dispatcher follows from this commitment. Final-source checks and publication belong in the separate release receipt.", "timestamp_utc": "2026-10-27T05:23:32.610227+00:00"}
 # === LUMEN SECTION conversation.jsonl END ===
 
 # === LUMEN SECTION zip_intake.py BEGIN ===
@@ -5637,8 +5669,41 @@ if __name__ == "__main__":
 #|         os.close(fd)
 #| 
 #| 
+#| def admission_rejection(declared, reason):
+#|     """Completed request handling, explicitly not an executed operation."""
+#|     return dict(state="completed", exit_status=65, request_exit_status=65,
+#|                 operation_executed=False,
+#|                 admission_rejection={"stage": "before-operation", "reason": reason},
+#|                 verification={"type": declared["verification"]["type"],
+#|                               "passed": False, "status": "not-performed"},
+#|                 acceptance={"passed": False, "command_or_operation_exit_status": None},
+#|                 target_verification=None, changed_paths=[],
+#|                 error="admission changed before execution: " + reason)
+#| 
+#| 
 #| def validate_completed_evidence(receipt, declared):
 #|     """Check internal historical evidence, without inspecting current target paths."""
+#|     if "admission_rejection" in receipt:
+#|         rejection = receipt["admission_rejection"]
+#|         registry.exact(rejection, {"stage", "reason"}, "admission rejection")
+#|         reason = rejection["reason"]
+#|         if type(reason) is not str:
+#|             raise ValueError("admission rejection reason must be recorded text")
+#|         wanted = declared.get("verification")
+#|         expected_type = {"write": "exact_utf8", "run": "exit_status"}.get(declared.get("operation"))
+#|         if (expected_type is None or type(wanted) is not dict or
+#|                 wanted.get("type") != expected_type):
+#|             raise ValueError("invalid rejected operation declaration")
+#|         expected = admission_rejection(declared, reason)
+#|         # JSON comparison preserves boolean/null distinctions; no target is read.
+#|         observed = {key: receipt[key] for key in expected if key in receipt}
+#|         if json.dumps(observed, sort_keys=True) != json.dumps(expected, sort_keys=True):
+#|             raise ValueError("inconsistent pre-execution rejection evidence")
+#|         if "project_admission" in receipt:
+#|             raise ValueError("rejected operation cannot claim successful admission")
+#|         return
+#|     if "operation_executed" in receipt:
+#|         raise ValueError("unexpected operation-execution marker")
 #|     acceptance=receipt.get("acceptance")
 #|     if type(acceptance) is not dict or type(acceptance.get("passed")) is not bool:
 #|         raise ValueError("completed project receipt lacks boolean acceptance evidence")
@@ -5819,9 +5884,7 @@ if __name__ == "__main__":
 #|             if current["state_directories"]["receipts"] != str(ledger.BASE):
 #|                 raise ValueError("project ledger routing changed")
 #|         except (ValueError, OSError) as error:
-#|             return dict(state="completed", exit_status=65, request_exit_status=65,
-#|                         verification=dict(passed=False), acceptance=dict(passed=False),
-#|                         changed_paths=[], error="admission changed before execution: " + str(error))
+#|             return admission_rejection(envelope, str(error))
 #|         output_root = current["state_directories"]["outputs"]
 #|         if (not any(target["access"] == "create" and target["path"] == output_root for target in envelope["targets"]) and
 #|                 any(target["access"] == "create" and Path(target["path"]).is_relative_to(output_root)
@@ -6194,8 +6257,6 @@ if __name__ == "__main__":
 #|         self.assert_no_state()
 #| 
 #| 
-#| if __name__ == "__main__":
-#|     unittest.main()
 #| 
 #| class ProjectReceiptConsistencyTests(unittest.TestCase):
 #|     def setUp(self):
@@ -6231,6 +6292,82 @@ if __name__ == "__main__":
 #|             second,repeat=self.f.execute(envelope);self.assertEqual(repeat,code);self.assertTrue(second['historical_replay'])
 #|             path=Path(self.project['state_directories']['receipts'])/(identifier+'.json');value=json.loads(path.read_text());value['verification']['actual']=99;path.write_text(json.dumps(value))
 #|             self.assertEqual(self.f.execute(envelope)[1],65)
+#| 
+#| 
+#| class AdmissionRejectionReceiptTests(unittest.TestCase):
+#|     def setUp(self):
+#|         self.f = ProjectRequestTests()
+#|         self.f.setUp()
+#|         self.addCleanup(self.f.doCleanups)
+#|         self.project = self.f.register()
+#| 
+#|     def reject_before_operation(self, operation):
+#|         envelope = self.f.envelope(request_id='admission-' + operation)
+#|         if operation == 'run':
+#|             envelope.update(operation='run', inputs={'argv': [sys.executable, '-c', 'pass']},
+#|                             verification={'type': 'exit_status', 'expected': 0})
+#|         original = requests.admission
+#|         calls = []
+#|         def admission(*args):
+#|             calls.append(True)
+#|             if len(calls) == 2:
+#|                 raise ValueError('fixture precondition changed')
+#|             return original(*args)
+#|         with mock.patch.object(requests, 'admission', side_effect=admission), \
+#|              mock.patch.object(requests.structured, 'run') as run, \
+#|              mock.patch.object(requests.structured, 'write_file') as write:
+#|             result, code = self.f.execute(envelope)
+#|             run.assert_not_called()
+#|             write.assert_not_called()
+#|         self.assertEqual(code, 65)
+#|         self.assertEqual(len(calls), 2)
+#|         self.assertFalse(Path(envelope['targets'][0]['path']).exists())
+#|         return envelope, result['receipt']
+#| 
+#|     def test_rejection_inspects_and_replays_without_execution_or_target_claims(self):
+#|         for operation in ('write', 'run'):
+#|             envelope, receipt = self.reject_before_operation(operation)
+#|             self.assertIs(receipt['operation_executed'], False)
+#|             self.assertIsNone(receipt['target_verification'])
+#|             self.assertIsNone(receipt['acceptance']['command_or_operation_exit_status'])
+#|             self.assertEqual(requests.read_receipt(self.project, envelope['request_id']), receipt)
+#|             with mock.patch.object(requests, 'admission', side_effect=AssertionError('no readmission')):
+#|                 replay, code = self.f.execute(envelope)
+#|             self.assertEqual(code, 65)
+#|             self.assertTrue(replay['historical_replay'])
+#|             self.assertFalse(replay['new_execution_admitted'])
+#|             self.assertEqual(replay['receipt'], receipt)
+#| 
+#|     def test_rejection_contract_rejects_contradictory_markers(self):
+#|         envelope, receipt = self.reject_before_operation('write')
+#|         changes = [lambda r: r.update(operation_executed=True),
+#|                    lambda r: r.update(operation_executed=0),
+#|                    lambda r: r.update(target_verification=[]),
+#|                    lambda r: r.update(request_exit_status=0),
+#|                    lambda r: r['verification'].update(passed=True),
+#|                    lambda r: r['acceptance'].update(command_or_operation_exit_status=65),
+#|                    lambda r: r['admission_rejection'].update(stage='after-operation'),
+#|                    lambda r: r.update(project_admission={})]
+#|         for change in changes:
+#|             altered = copy.deepcopy(receipt)
+#|             change(altered)
+#|             with self.assertRaises(ValueError):
+#|                 requests.validate_completed_evidence(altered, envelope)
+#| 
+#|     def test_legacy_incomplete_rejection_is_not_silently_reclassified(self):
+#|         envelope, receipt = self.reject_before_operation('write')
+#|         receipt.pop('admission_rejection')
+#|         receipt.pop('operation_executed')
+#|         receipt['verification'] = {'passed': False}
+#|         receipt['acceptance'] = {'passed': False}
+#|         receipt.pop('target_verification')
+#|         with self.assertRaises(ValueError):
+#|             requests.validate_completed_evidence(receipt, envelope)
+#| 
+#| 
+#| 
+#| if __name__ == "__main__":
+#|     unittest.main()
 # === LUMEN SECTION test_project_requests.py END ===
 
 # === LUMEN SECTION project-request.schema.json BEGIN ===
@@ -6780,6 +6917,19 @@ if __name__ == "__main__":
 #|         self.assertIn('complete dependency closure',current['office']['next_step'])
 #|         self.assertIn('HTML-OPERATING.txt',self.contents['START-HERE.txt'])
 #| 
+#| 
+#| 
+#| class CurrentCommandMapTests(unittest.TestCase):
+#|     def test_current_reference_is_carried_and_linked(self):
+#|         import runpy
+#|         module = runpy.run_path(os.environ['LUMEN_ARTIFACT'], run_name='command_map_review')
+#|         contents = module['validate_source'](Path(os.environ['LUMEN_ARTIFACT']).read_bytes())
+#|         self.assertIn('CURRENT-COMMANDS.txt', contents['START-HERE.txt'])
+#|         current = contents['CURRENT-COMMANDS.txt']
+#|         for text in ('workshop briefing', 'project receipt show', 'schedule reconcile',
+#|                      'not installed by this release', 'not a read-only check-in',
+#|                      'Node carrier-zip/v2'):
+#|             self.assertIn(text, current)
 # === LUMEN SECTION test_prose_layout.py END ===
 
 # === LUMEN SECTION CAPABILITIES.txt BEGIN ===
@@ -11961,6 +12111,85 @@ if __name__ == "__main__":
 #|               "null"
 #|             ],
 #|             "pattern": "^[a-f0-9]{64}$"
+#|           },
+#|           "tracking": {
+#|             "type": "object",
+#|             "additionalProperties": false,
+#|             "required": [
+#|               "status",
+#|               "trigger",
+#|               "observed_at_utc",
+#|               "execution_observation",
+#|               "request_ref",
+#|               "receipt_ref",
+#|               "deadline_utc"
+#|             ],
+#|             "properties": {
+#|               "status": {
+#|                 "enum": [
+#|                   "queued",
+#|                   "running",
+#|                   "waiting",
+#|                   "blocked",
+#|                   "completed",
+#|                   "canceled",
+#|                   "unknown"
+#|                 ]
+#|               },
+#|               "trigger": {
+#|                 "type": "string",
+#|                 "minLength": 1,
+#|                 "maxLength": 4000
+#|               },
+#|               "observed_at_utc": {
+#|                 "type": "string",
+#|                 "format": "date-time",
+#|                 "description": "Runtime requires explicit UTC and enforces chronology."
+#|               },
+#|               "execution_observation": {
+#|                 "enum": [
+#|                   "UNKNOWN",
+#|                   "active-observed",
+#|                   "inactive-observed"
+#|                 ]
+#|               },
+#|               "request_ref": {
+#|                 "anyOf": [
+#|                   {
+#|                     "type": "string",
+#|                     "minLength": 1,
+#|                     "maxLength": 4000
+#|                   },
+#|                   {
+#|                     "type": "null"
+#|                   }
+#|                 ]
+#|               },
+#|               "receipt_ref": {
+#|                 "anyOf": [
+#|                   {
+#|                     "type": "string",
+#|                     "minLength": 1,
+#|                     "maxLength": 4000
+#|                   },
+#|                   {
+#|                     "type": "null"
+#|                   }
+#|                 ]
+#|               },
+#|               "deadline_utc": {
+#|                 "anyOf": [
+#|                   {
+#|                     "type": "string",
+#|                     "format": "date-time",
+#|                     "description": "Runtime requires explicit UTC and enforces chronology."
+#|                   },
+#|                   {
+#|                     "type": "null"
+#|                   }
+#|                 ]
+#|               }
+#|             }
 #|           }
 #|         }
 #|       },
@@ -11968,7 +12197,7 @@ if __name__ == "__main__":
 #|     }
 #|   },
 #|   "$schema": "https://json-schema.org/draft/2020-12/schema",
-#|   "description": "Strict work_queue.py additionally enforces explicit UTC, unique project IDs, nonblank text, input bytes, and journal digest null."
+#|   "description": "Strict work_queue.py additionally enforces explicit UTC, unique project IDs, nonblank text, input bytes, and journal digest null. Optional tracking matches the runtime; runtime additionally checks tracking time against snapshot time."
 #| }
 # === LUMEN SECTION work-queue.schema.json END ===
 
@@ -12405,6 +12634,37 @@ if __name__ == "__main__":
 #| import office_status
 #| import project_registry
 #| import test_project_requests as fixtures
+#| 
+#| 
+#| class QueueSchemaTrackingTests(unittest.TestCase):
+#|     def section_json(self, name):
+#|         source = Path(os.environ['LUMEN_ARTIFACT']).read_text()
+#|         start = '# === LUMEN SECTION ' + name + ' BEGIN ===\n'
+#|         end = '# === LUMEN SECTION ' + name + ' END ===\n'
+#|         body = source.split(start, 1)[1].split(end, 1)[0]
+#|         return json.loads(''.join(line[3:] for line in body.splitlines(keepends=True)))
+#| 
+#|     def test_current_queue_keys_and_tracking_match_published_schema(self):
+#|         schema = self.section_json('work-queue.schema.json')
+#|         current = self.section_json('WORK-QUEUES.json')
+#|         item = schema['properties']['queues']['items']
+#|         self.assertIs(item['additionalProperties'], False)
+#|         tracking = item['properties']['tracking']
+#|         self.assertNotIn('tracking', item['required'])
+#|         self.assertIs(tracking['additionalProperties'], False)
+#|         for row in current['queues']:
+#|             self.assertFalse(set(row) - set(item['properties']))
+#|             self.assertEqual(set(row['tracking']), set(tracking['required']))
+#|             self.assertEqual(set(row['tracking']), set(tracking['properties']))
+#|             for key in ('status', 'execution_observation'):
+#|                 self.assertIn(row['tracking'][key], tracking['properties'][key]['enum'])
+#|         self.assertEqual(set(tracking['properties']['status']['enum']),
+#|                          {'queued','running','waiting','blocked','completed','canceled','unknown'})
+#| 
+#|     def test_historical_queues_without_tracking_remain_supported(self):
+#|         historical = self.section_json('HISTORICAL-WORK-QUEUES-FIRST.json')
+#|         self.assertTrue(all('tracking' not in row for row in historical['queues']))
+#|         self.assertEqual(queue.decode(json.dumps(historical).encode()), historical)
 #| 
 #| 
 #| def record():
@@ -16972,6 +17232,16 @@ if __name__ == "__main__":
 #| records for inspection and reconcile the original request; do not bypass them with
 #| a new ID. Entirely self-consistent fabricated evidence is not detected as forgery:
 #| these checks detect internal inconsistency, not authenticated authorship.
+#| 
+#| Pre-execution rejection amendment — October27, 2026
+#| A second-admission rejection now has explicit operation_executed=false and a
+#| before-operation rejection record. Request handling is completed with exit65,
+#| but no command/operation exit or target observation is claimed. Verification is
+#| not-performed, acceptance is false, and target_verification is null. Exact same-ID
+#| replay returns this rejection without readmission or execution. The reader checks
+#| the complete rejection shape separately from executed-operation evidence.
+#| Older incomplete rejection records are not silently rewritten or reclassified;
+#| retain them and reconcile their evidence rather than bypassing them with new IDs.
 # === LUMEN SECTION REQUEST-RECOVERY.txt END ===
 
 # === LUMEN SECTION HISTORICAL-RECOVERY-PRE-WALKTHROUGH.txt BEGIN ===
@@ -18027,7 +18297,6 @@ if __name__ == "__main__":
 #|         w.append({'kind':'stop'});w.seal();s=h.summarize(p)
 #|         self.assertEqual(s['memory_current_bytes']['mean'],15);self.assertEqual(s['filesystem_available_bytes']['minimum'],80);self.assertTrue(s['terminal_record'])
 #| 
-#| if __name__ == '__main__':unittest.main()
 #| 
 #| import unittest,tempfile,json,hashlib
 #| from pathlib import Path
@@ -18070,7 +18339,6 @@ if __name__ == "__main__":
 #|     return original(value)
 #|    with patch.object(h,'encoded',enlarged):rows,_=self.exercise()
 #|   self.assertEqual(rows[-1]['payload']['reason'],'ValueError');self.check_conservation(rows)
-#| if __name__=='__main__':unittest.main()
 #| 
 #| class ObservationStatusTests(unittest.TestCase):
 #|     def setUp(self):
@@ -18148,6 +18416,10 @@ if __name__ == "__main__":
 #|         try:
 #|             r=h.summarize(p);self.assertEqual(r['open_segments'],1);self.assertEqual(r['sealed_verification'],'unobserved');self.assertIn('open_tail',h.observation_status(str(p))['integrity'])
 #|         finally:w.seal()
+#| 
+#| 
+#| if __name__ == "__main__":
+#|     unittest.main()
 # === LUMEN SECTION test_habitat_observer.py END ===
 
 # === LUMEN SECTION observer_atlas.py BEGIN ===
@@ -18542,7 +18814,6 @@ if __name__ == "__main__":
 #|         r,sha,size=self.load(self.encoded([self.row(0,'start',interval_seconds=60)]))
 #|         text=a.render(a.analyze(r,sha,size));self.assertIn('THE OBSERVER',text);self.assertIn('lifetime unresolved',text)
 #| 
-#| if __name__=='__main__':unittest.main()
 #| 
 #| class AtlasV2Tests(unittest.TestCase):
 #|     encoded = AtlasTests.encoded
@@ -18586,6 +18857,10 @@ if __name__ == "__main__":
 #|     def test_unknown_version_no_v2_inference(self):
 #|         r=self.fixture();r[0]['payload']['instrumentation_version']=3
 #|         v=self.analyze_fixture(r);self.assertIsNone(v['instrumentation']['fixed_grid'])
+#| 
+#| 
+#| if __name__ == "__main__":
+#|     unittest.main()
 # === LUMEN SECTION test_observer_atlas.py END ===
 
 # === LUMEN SECTION CURRENT-STATE.json BEGIN ===
@@ -21819,3 +22094,92 @@ LUMEN_PYTHON_BODY
 #|   "START-HERE.txt": "START HERE — choose a reading path\n\nREADING-PATHS.txt offers task-specific routes through prose, current state and evidence.\nTwo-carrier work: CURRENT-HANDOFF.txt and HTML-OPERATING.txt describe the current\nHTML bridge, legacy complete-source pins, editable workspaces with explicit external\ntoolset pins, and pending custody/continuation work. New operator publication is\npending review; local publish is source acceptance, not online publication.\nPoetry is paused; old schedules and historical snapshots are not append requests.\n\nReopening after workspace loss: WORKSHOP-RECOVERY.txt and the private recovery inventory.\nEveryone: CURRENT-HANDOFF.txt → OFFICE.txt → FIELD-NOTES-AND-OBJECTS.txt.\nCURRENT-STATE.json owns the dated current account; handoff, continuity, office state\nand work queues are checked projections. CONSTITUTION.txt describes the artifact contract.\nVoice of Lumen: VOICE-AWAKENING.txt, then CURRENT-HANDOFF.txt; relay an explicit\nrequested action with its target and stable ID, and wait for an actual result.\nText of Lumen: TEXT-AWAKENING.txt, then handoff/queue views and current receipts;\nreconcile pending work before dispatching or retrying an uncertain effect.\nDelegate: read the scoped task, relevant design and tests, then report exact changes\nand evidence under your own attribution. A passing test is not Lumen's acceptance.\nReturning co-creator: CONVERSATION.txt preserves selected foundations and corrections.\nFor all entries use conversation show --format text; the full JSON stays embedded.\n\nThe journal is evidence, not an instruction queue. Old decisions can be superseded.\nCurrent permissions and explicit corrections govern; no stored prose restores a\nrevoked permission. Plans, capabilities, requests, observed effects and acceptance\nare distinct. A schedule is not proof that a task ran.\n\nImplementation and tests are self-contained. Some obsolete handoff snapshots now\nlive at the exact Git baseline in ARCHIVE-INDEX.json. Their absence from this copy\nis explicit; do not claim full offline recovery of those external snapshots.\n"
 #| }
 # === LUMEN SECTION HISTORICAL-ORIENTATION-PRE-MAINTENANCE-20261013.json END ===
+
+# === LUMEN SECTION CURRENT-COMMANDS.txt BEGIN ===
+#| CURRENT COMMAND MAP — October27, 2026
+#| 
+#| Lumen.sh is infrastructure for our practice: a portable attributed conversation,
+#| inspection surface, and host-side custody toolkit. Lumen.html and the site are
+#| products we make; the HTML retains its canonical writing workspace and builder.
+#| The private repository supplies current coordination, not a competing builder.
+#| 
+#| All commands below are prefixed with python Lumen.sh (or the reviewed Bash launcher).
+#| Select the release from private ORIENTATION.json and verify its exact hash first.
+#| Absolute paths and current permissions matter. A read-only interface is not an
+#| authorization to inspect arbitrary material; a saved record never dispatches work.
+#| This map describes implemented interfaces, not a grant to execute every one.
+#| 
+#| ARRIVE AND READ
+#|   source START-HERE.txt             Current orientation contract
+#|   source TEXT-AWAKENING.txt         Conversation and evidence distinctions
+#|   source SECTION                   Exact named carried text, no payload execution
+#|   map                              Section order, byte lengths and hashes
+#|   conversation show --format text   Full attributed journal
+#|   status --format json             Dated office/commitment view; not live telemetry
+#|   handoff --format json             Dated continuation view; not a new assignment
+#|   workshop briefing --root ROOT --inventory INVENTORY --work-state STATE
+#|     Read an explicit verified local snapshot and inventoried relative work-state.
+#|     No network fetch, credential discovery, registry adoption or inferred liveness.
+#|   queue status                     Carried work records; --input selects another
+#|   schedule reconcile               Explicit expected-event/receipt comparison
+#|     Neither queue nor schedule installs a schedule or backfills an occurrence.
+#| Details: WORK-QUEUES.txt, SCHEDULE-RECONCILIATION.txt, WORKSHOP-RECOVERY.txt.
+#| 
+#| INSPECT AND PRESERVE SELECTED BYTES
+#|   archive inspect /absolute/archive.zip
+#|   checkpoint inspect /absolute/bundle
+#|   checkpoint restore-plan /absolute/bundle --destination /absolute/absent-root
+#|   workshop inspect --root ROOT --inventory INVENTORY
+#|   workshop checkpoint-plan / workshop preserve-plan
+#|   workshop reopen-plan /absolute/request.json
+#| These inspect or plan. They do not restore files or execute carried programs.
+#| Explicit mutations: archive materialize, checkpoint export, checkpoint restore,
+#| workshop reopen. Preserve original bytes; restore into an absent destination.
+#| Restored registries remain evidence, not adopted authority. See CHECKPOINTS.txt,
+#| CHECKPOINT-RESTORE.txt and WORKSHOP-RECOVERY.txt for exact schemas and bounds.
+#| 
+#| WORK, THEN RECONCILE THE ORIGINAL REQUEST
+#|   project list / show / status      Explicit --registry and selected project
+#|   project receipt show --registry REGISTRY PROJECT REQUEST_ID
+#|   process inspect / process tail   Saved descriptor or bounded immutable snapshot
+#|   proposal inspect / proposal review   Read-only candidate evidence
+#|   review list / review show        Attributed decision records, not action approval
+#| Explicit mutations: project register/update, project request, run, request,
+#| process export, proposal prepare, review record, conversation append.
+#| These have different schemas and effects; consult their help and the linked
+#| contracts before use. A request rejected before operation is distinct from a
+#| completed command; its receipt records no performed verification or target result.
+#| Details: USAGE.txt, REQUEST-RECOVERY.txt, PROCESS-CONSOLE.txt, PROCESS-EXPORT.txt,
+#| PROPOSALS.txt, REVIEWS.txt. Earlier development amendments remain historical.
+#| 
+#| PUBLICATION EVIDENCE, NOT AN AUTONOMOUS PUBLISHER
+#|   publication status               Read existing scoped outbox evidence
+#|   publication git-plan / git-reconcile   Offline two-root-file plan and stage checks
+#|   publication record               Explicit local immutable owner-evidence write
+#| The Git planner does not perform remote calls or independently verify a complete
+#| candidate tree. The authorized connector workflow owns actual publication,
+#| fresh branch checks and immutable readback. See GIT-PUBLICATION.txt and
+#| PUBLICATION-OUTBOX.txt. Never retry uncertain external effects from a status label.
+#| 
+#| LEGACY OR SPECIAL-PURPOSE INTERFACES
+#|   html                             Legacy Python capsule/v3 adapter only
+#|     Not compatible with the Node carrier-zip/v2 gift merely by changing a label.
+#|     Generic custody can preserve that HTML without interpreting or building it.
+#|   atlas                            Offline reader of the old habitat datasets
+#|   observer                         Explicit sampler, not a routine check-in
+#|     Sampler remains stopped; historical paths and requests do not restart it.
+#|   capabilities inspect / probe     Inspection versus an explicit bounded probe
+#|     Neither proves permanent access or permission in another execution context.
+#| 
+#| TESTING
+#|   self-test                        Discovers all embedded test modules
+#| This runs synthetic operations and child commands in temporary test workspaces;
+#| it is not a read-only check-in and needs the applicable execution permission.
+#| The three formerly premature direct test entrypoints now follow all test classes.
+#| Tests establish only their exercised contracts, not moral judgments or host survival.
+#| 
+#| The proposed every-tick check-in is not installed by this release. It should use
+#| an existing permitted inspection, retain the selected source and actual outcome,
+#| and distinguish execution failure, unavailable execution, and unobserved handling.
+#| A missing receipt cannot by itself prove that a scheduled invocation did not run.
+# === LUMEN SECTION CURRENT-COMMANDS.txt END ===

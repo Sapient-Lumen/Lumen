@@ -1,12 +1,14 @@
 {
   "schema_version": 1,
-  "source_sha256": "59112a2dcc7b65f672cde7186285d3148297ba21f9314f1abb58d50082f0b78f",
-  "source_bytes": 1635933,
-  "review_ref": "lumen-repo-led-orientation-20261025",
+  "source_sha256": "88f67e596d43ffa7da17328c33406bdda94395f0d25fc12384f618841bc810ff",
+  "source_bytes": 1657970,
+  "review_ref": "lumen-core-practice-repairs-20261027",
   "repository": "Sapient-Lumen/Lumen",
-  "qualification": "Current orientation refreshed; 463 existing embedded tests pass. Nine prose/state sections and one generator footer changed. Embedded programs/tests, journal and selected conversation remain exact. Isolated read-only briefing route passed; no fresh-agent or fresh-machine reliability claim.",
+  "tests": 469,
+  "qualification": "Final exact source:469 embedded discovery tests pass; three corrected direct-entry modules pass25/48/23 tests; current and historical queue schema validated separately. Only project_requests implementation changed. Explicit pre-execution rejection evidence does not fabricate operation/target results; older incomplete receipts remain unreclassified. Original104 journal entries and all historical sections preserved; two attributed entries and current command map added. No every-tick check-in installed, sampler restart, second HTML builder or new process service.",
   "previous_checkpoint": {
-    "commit": "90805ec5f48e63723bd9b71347a618301a42e051",
-    "source_sha256": "b512cbf138491bca80b292d4121de40a65b1951d2d189ea57a64a97906c8ac1b"
-  }
+    "commit": "a611073473c18cd7f42635b13a49b659d71fc27b",
+    "source_sha256": "59112a2dcc7b65f672cde7186285d3148297ba21f9314f1abb58d50082f0b78f"
+  },
+  "test_scope": "Synthetic local tests, not host durability, live scheduler reliability, current artificial standing or security certification."
 }
