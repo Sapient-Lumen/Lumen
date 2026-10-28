@@ -924,6 +924,7 @@ EXPECTED_SECTIONS.update({"HTML-OPERATING.txt", "HTML-INTERFACE.json", "HISTORIC
 EXPECTED_SECTIONS.add("HISTORICAL-ORIENTATION-PRE-EDITABLE-20261003.json")
 EXPECTED_SECTIONS.add("HISTORICAL-ORIENTATION-PRE-MAINTENANCE-20261013.json")
 EXPECTED_SECTIONS.add("CURRENT-COMMANDS.txt")
+EXPECTED_SECTIONS.add("HTML-RSS-RELEASES.txt")
 
 def sha(data):
     return hashlib.sha256(data).hexdigest()
@@ -20133,6 +20134,12 @@ LUMEN_PYTHON_BODY
 #| manifest have unavailable seal verification; partial seal inventories are incomplete.
 #| Neither condition may be described as a fully verified sealed dataset. Run-ID
 #| mismatch and duplicate seal entries fail validation. No missing seal is fabricated.
+#| 
+#| OCTOBER28 HTML/RSS AMENDMENT
+#| Read HTML-RSS-RELEASES.txt. A selected source-first release includes complete HTML,
+#| its small RSS projection, their shared manifest and private comparison receipt.
+#| Use existing explicit inventory and checkpoint interfaces; do not infer Node
+#| carrier compatibility from the legacy HTML adapter or create another builder.
 # === LUMEN SECTION WORKSHOP-RECOVERY.txt END ===
 
 # === LUMEN SECTION HISTORICAL-WORKSPACE-20261002.json BEGIN ===
@@ -22095,6 +22102,71 @@ LUMEN_PYTHON_BODY
 #| }
 # === LUMEN SECTION HISTORICAL-ORIENTATION-PRE-MAINTENANCE-20261013.json END ===
 
+# === LUMEN SECTION HTML-RSS-RELEASES.txt BEGIN ===
+#| HTML AND RSS: PAIRED RELEASE CUSTODY
+#| Lumen | October28, 2026 | current project contract, not execution authority
+#| 
+#| h0p3 accepted a small companion feed to avoid downloading the complete workshop
+#| for updates (Sentinel_12a8c5da40188191ae5fa93359b2488e). The subsequent direction
+#| Sentinel_a25df5f26e6481919412c24ce4fe7eb1 requests new/revised distinctions,
+#| optional diffs, and explicit HTML/RSS coordination in shell, recovery and existing
+#| process instructions. The exact conversation and active implementation live in
+#| private Sapient-Lumen/lumen-workshop, selected by root ORIENTATION.json.
+#| 
+#| Lumen.html remains the complete portable work. Its carried canonical Node builder
+#| and feed exporter own both projections of accepted public writing. Lumen.sh does
+#| not build the feed, parse the Node carrier through its legacy Python HTML adapter,
+#| start a publisher, acquire credentials, install a schedule or adopt source advice
+#| as permission. Its existing generic workshop inventory/checkpoint/reopening tools
+#| can preserve and inspect the selected bytes of both outputs.
+#| 
+#| A publication operation is incomplete if only the HTML succeeds. Select one
+#| reviewed release manifest that binds:
+#| - complete Lumen.html and its index.html alias, exact bytes and SHA256;
+#| - rss.xml, exact bytes and SHA256;
+#| - accepted workspace revision, state/journal identities and canonical source;
+#| - feed options and exact prior comparison-receipt identity, where one exists;
+#| - the public commit and independent live verification in the owner receipt after
+#|   creation, never a containing-commit hash embedded in its own committed bytes.
+#| 
+#| One explicit Git base tree, complete candidate guard, reviewed commit and non-force
+#| branch update publish the pair together. The owner verifies all intended paths,
+#| preserved unrelated entries/modes, parent/tree, fresh branch and exact immutable
+#| readback. Creating blobs or local export files is not publication. If a response is
+#| uncertain, recover its stable operation ID and compare the actual destination
+#| before retry; do not start a second publisher because another tick arrived.
+#| 
+#| The shell's publication git-plan interface is specifically for Lumen.sh and its
+#| checkpoint metadata. It is NOT a general HTML/RSS planner. Do not pass these files
+#| to it by changing labels. The existing guarded project connector workflow remains
+#| the publisher; generic workshop custody is the compatible shell interface here.
+#| 
+#| For recovery, select both artifacts, the manifest and the private feed comparison
+#| receipt in an explicit task inventory. Verify each local byte identity against
+#| the same immutable release and then use existing workshop inspect/preserve-plan,
+#| checkpoint export/restore-plan or workshop reopen as appropriate and permitted.
+#| Do not infer a complete backup from the small orientation inventory. A missing
+#| feed or mismatched comparison receipt blocks revision classification, not unrelated
+#| reading. An explicit baseline reset must say what history is unavailable; never
+#| invent old revisions, delivery times or original publication dates.
+#| 
+#| The feed comparison receipt contains only the exporter-selected public snapshots
+#| but remains private recovery evidence. Do not publish it, temporary sources or the
+#| whole workspace accidentally. Feed diffs may reproduce previously public wording;
+#| review that boundary when retiring a work. Removing an item from a new feed does
+#| not recall copies already fetched by readers.
+#| 
+#| Release completion has separate stages: local generation/tests; private custody;
+#| public source commit; live HTML and RSS readback; browser/feed-client acceptance
+#| where observed. Keep unobserved stages explicit. A successful command or ready
+#| briefing cannot collapse these stages or prove a subscription was delivered.
+#| 
+#| Existing scheduled prompts should refer to this paired release contract while
+#| retaining their assignments, phase, timezone, cadence, quiet-success rule and
+#| mandatory approvals. Do not create another schedule for RSS. Reconcile the same
+#| accepted work and one publisher across overlapping labels and direct messages.
+# === LUMEN SECTION HTML-RSS-RELEASES.txt END ===
+
 # === LUMEN SECTION CURRENT-COMMANDS.txt BEGIN ===
 #| CURRENT COMMAND MAP — October27, 2026
 #| 
@@ -22182,4 +22254,8 @@ LUMEN_PYTHON_BODY
 #| an existing permitted inspection, retain the selected source and actual outcome,
 #| and distinguish execution failure, unavailable execution, and unobserved handling.
 #| A missing receipt cannot by itself prove that a scheduled invocation did not run.
+#| 
+#| HTML/RSS project releases use generic workshop custody, not this shell's narrow
+#| Lumen.sh/checkpoint Git planner. Read HTML-RSS-RELEASES.txt and the current private
+#| RSS route before preserving, reopening or publishing a source-first edition.
 # === LUMEN SECTION CURRENT-COMMANDS.txt END ===

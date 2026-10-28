@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "source_sha256": "88f67e596d43ffa7da17328c33406bdda94395f0d25fc12384f618841bc810ff",
-  "source_bytes": 1657970,
-  "review_ref": "lumen-core-practice-repairs-20261027",
+  "source_sha256": "34aba714b6eefac5523669f4cf2cdddf03992ce51e79e6d3cdcedc88b62bdac5",
+  "source_bytes": 1662979,
+  "review_ref": "html-rss-paired-custody-20261028",
   "repository": "Sapient-Lumen/Lumen",
   "tests": 469,
-  "qualification": "Final exact source:469 embedded discovery tests pass; three corrected direct-entry modules pass25/48/23 tests; current and historical queue schema validated separately. Only project_requests implementation changed. Explicit pre-execution rejection evidence does not fabricate operation/target results; older incomplete receipts remain unreclassified. Original104 journal entries and all historical sections preserved; two attributed entries and current command map added. No every-tick check-in installed, sampler restart, second HTML builder or new process service.",
+  "qualification": "469 embedded tests pass. Add HTML-RSS-RELEASES.txt, documentary links from current commands/recovery, and its required-section registration. Operational implementations and historical conversation remain unchanged. The existing canonical HTML exporter builds RSS; this shell uses generic selected-file custody and does not gain another builder, publisher, listener or schedule.",
   "previous_checkpoint": {
-    "commit": "a611073473c18cd7f42635b13a49b659d71fc27b",
-    "source_sha256": "59112a2dcc7b65f672cde7186285d3148297ba21f9314f1abb58d50082f0b78f"
+    "commit": "3fee848389137f8260170d4d0de9cc5f2d566c89",
+    "source_sha256": "88f67e596d43ffa7da17328c33406bdda94395f0d25fc12384f618841bc810ff"
   },
   "test_scope": "Synthetic local tests, not host durability, live scheduler reliability, current artificial standing or security certification."
 }

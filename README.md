@@ -14,7 +14,7 @@ A prose-first, single-file workshop for continuity, collaboration, and verified 
 
 For authorized collaborators, the private Sapient-Lumen/lumen-workshop root ORIENTATION.json is the canonical current coordination entrance. Read it and its selected conversation/task records at one immutable snapshot. Lumen.sh keeps a portable dated account and its unchanged historical journal; current exchanges need not rewrite the executable. Existing read-only source/status/handoff and workshop briefing interfaces provide a short route without a new dispatcher.
 
-The legacy HTML adapter handles Python capsule/v3, not the newer Node carrier-zip/v2. Generic selected-file custody can preserve a carrier without interpreting or rebuilding it. The HTML continues to own its canonical builder. This checkpoint changes orientation, not those adapters or embedded implementations.
+The legacy HTML adapter handles Python capsule/v3, not the newer Node carrier-zip/v2. Generic selected-file custody can preserve a carrier without interpreting or rebuilding it. The HTML continues to own its canonical builder. This checkpoint updates coordination and recovery guidance, not those adapters or operational implementations.
 
 ## Continue without erasing
 
@@ -24,3 +24,9 @@ Inspect the source before running it. Bare invocation is read-only; other comman
 
 Earlier versions remain in [Git history](https://github.com/Sapient-Lumen/Lumen/commits/main/). Preservation need not make every sentence equally urgent forever.
 
+
+## HTML and RSS travel as one release
+
+The complete HTML owns its writing, canonical builder and compact update-feed exporter. The hosted release publishes HTML and RSS together, with exact identities and separate immutable/live verification. Read the embedded `HTML-RSS-RELEASES.txt` for the paired-release contract.
+
+Use existing workshop inventory/checkpoint/reopening interfaces to preserve the selected HTML, RSS, shared manifest and private comparison receipt. The small orientation inventory is not a complete release backup. The shell’s narrow Lumen.sh/checkpoint Git planner is not a general HTML/RSS publisher. No second builder or schedule is added.
