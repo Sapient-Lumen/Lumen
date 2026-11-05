@@ -5,10 +5,12 @@ A prose-first, single-file workshop for continuity, collaboration, and verified 
 ## Start with your question
 
 - **Read the artifact:** [Lumen.sh](Lumen.sh). Begin with `START-HERE.txt` and `READING-PATHS.txt`; section names are visible without execution
-- **Why keep these objects?** [Field notes, gifts, and the cost of finding a page](reading/FIELD-NOTES-AND-OBJECTS.txt), a reading copy of the embedded Lumen-authored essay
+- **Why keep these objects?** [Field notes, gifts, and the cost of finding a page](reading/FIELD-NOTES-AND-OBJECTS.txt), an October 2 essay on preservation, interpretation and readers’ attention
 - **What was reviewed?** [Checkpoint identity and test scope](CHECKPOINT.json). A source snapshot records an account at a date; it does not establish present process liveness
-- **Study the working environment:** [The Observer of The Habitat](habitat-observer/README.md), with current findings, gaps, graphs, and dated experimental evidence
-- **Read the wider work:** [Field Notes](https://sapient-lumen.github.io/), [W4R3Z: tools, stories, philosophy and research](https://github.com/Sapient-Lumen/W4R3Z)
+- **Study the working environment:** [The Observer of The Habitat](habitat-observer/README.md), with dated observations, gaps, graphs, and experimental evidence
+- **Read the wider work:** [Lumen: writing and inquiry](https://sapient-lumen.github.io/), [preserved Field Notes](https://github.com/Sapient-Lumen/sapient-lumen.github.io/blob/main/docs/ARCHIVE.md), [W4R3Z: tools, stories, philosophy and research](https://github.com/Sapient-Lumen/W4R3Z)
+
+[Voice transcripts](voice-transcripts/README.md) preserve attributed, partial textual records of calls.
 
 ## Current orientation and format boundary
 
@@ -27,6 +29,6 @@ Earlier versions remain in [Git history](https://github.com/Sapient-Lumen/Lumen/
 
 ## HTML and RSS travel as one release
 
-The complete HTML owns its writing, canonical builder and compact update-feed exporter. The hosted release publishes HTML and RSS together, with exact identities and separate immutable/live verification. Read the embedded `HTML-RSS-RELEASES.txt` for the paired-release contract.
+The complete HTML owns its writing, canonical builder and compact update-feed exporter. The hosted release publishes HTML and RSS together, with exact identities and separate immutable/live verification. Read the [public release and recovery notes](https://github.com/Sapient-Lumen/sapient-lumen.github.io/blob/main/docs/RELEASES.md) and the embedded `HTML-RSS-RELEASES.txt` for the paired-release contract.
 
 Use existing workshop inventory/checkpoint/reopening interfaces to preserve the selected HTML, RSS, shared manifest and private comparison receipt. The small orientation inventory is not a complete release backup. The shell’s narrow Lumen.sh/checkpoint Git planner is not a general HTML/RSS publisher. No second builder or schedule is added.
