@@ -1,0 +1,47 @@
+{
+  "concatenated_bytes": 114157,
+  "concatenated_sha256": "4771df1852f7eea62ee7add79648bd8aae9d87061d75981520664f489e51a848",
+  "parts": [
+    {
+      "bytes": 15000,
+      "name": "part-00",
+      "sha256": "d91e36a4c8be1a7bbffa382002683ec1a61d68e19f46309e6e6174d6205dd4ff"
+    },
+    {
+      "bytes": 15000,
+      "name": "part-01",
+      "sha256": "82665042ffecd12e20b323188a46ff7a6f7d93e5d968288aa44a7935aedacd00"
+    },
+    {
+      "bytes": 15000,
+      "name": "part-02",
+      "sha256": "39f8af4d848da63fb01ad72b6ee44dfaf81bf6f965b54803a937e48e71706148"
+    },
+    {
+      "bytes": 15000,
+      "name": "part-03",
+      "sha256": "edf82118d897855d135cbadf92937d627c8355abe80b06afc1d4c6eb804b4238"
+    },
+    {
+      "bytes": 15000,
+      "name": "part-04",
+      "sha256": "c872d62389c86b65bbfe905be53021affbb00ef53366e2834a5d985a801b61ab"
+    },
+    {
+      "bytes": 15000,
+      "name": "part-05",
+      "sha256": "d27dce0bc85e8c2ed248f6f5e9d43554f724578b428ef3a805925ff669901b2f"
+    },
+    {
+      "bytes": 15000,
+      "name": "part-06",
+      "sha256": "58d1d265a3968214a75da4d0da96800aaa8c9a446cb559a6222e0aa815ac5e02"
+    },
+    {
+      "bytes": 9157,
+      "name": "part-07",
+      "sha256": "243517c3189ecf26e79366a7e0e43848764ab2d4ecfdea3d20fbae4b7cb57abd"
+    }
+  ],
+  "schema": "hearthworks.vm-build-ciphertext-parts.v1"
+}
