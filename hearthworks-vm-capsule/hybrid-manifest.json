@@ -1,0 +1,62 @@
+{
+  "concatenated_bytes": 114157,
+  "concatenated_sha256": "4771df1852f7eea62ee7add79648bd8aae9d87061d75981520664f489e51a848",
+  "parts": [
+    {
+      "bytes": 15000,
+      "name": "part-00",
+      "sha256": "d91e36a4c8be1a7bbffa382002683ec1a61d68e19f46309e6e6174d6205dd4ff"
+    },
+    {
+      "bytes": 15000,
+      "name": "part-01",
+      "sha256": "82665042ffecd12e20b323188a46ff7a6f7d93e5d968288aa44a7935aedacd00"
+    },
+    {
+      "bytes": 15000,
+      "name": "part-02",
+      "sha256": "39f8af4d848da63fb01ad72b6ee44dfaf81bf6f965b54803a937e48e71706148"
+    },
+    {
+      "bytes": 7500,
+      "name": "part-03-0",
+      "sha256": "dcb826b6f8344ebb2e5762a1dc36278bc0e02e115ffce85aa0913c01842de08c"
+    },
+    {
+      "bytes": 7500,
+      "name": "part-03-1",
+      "sha256": "2d2bbafbd7fe8ffdf3dc53c8c6d2f63103d0fc0ab0a606873fde2b4eee53e503"
+    },
+    {
+      "bytes": 15000,
+      "name": "part-04",
+      "sha256": "c872d62389c86b65bbfe905be53021affbb00ef53366e2834a5d985a801b61ab"
+    },
+    {
+      "bytes": 7500,
+      "name": "part-05-0",
+      "sha256": "cde4d029840c310fcb0245a58acbdcc4e3fb6d76181578d80be76862e4bd66b9"
+    },
+    {
+      "bytes": 7500,
+      "name": "part-05-1",
+      "sha256": "dcc4c1456d3a4b0d57c2ca11919f6ec54b09d3fb4fa1f8cb2be7cc21fad87ac8"
+    },
+    {
+      "bytes": 7500,
+      "name": "part-06-0",
+      "sha256": "22d7899ed194dd7e6c159552e30ec8e0da602c20c7395a5d0c56a4d01c567959"
+    },
+    {
+      "bytes": 7500,
+      "name": "part-06-1",
+      "sha256": "0c87d46c28c56930d40e1988e7778ee7278cb902aec4918aa71087eadbfa4d15"
+    },
+    {
+      "bytes": 9157,
+      "name": "part-07",
+      "sha256": "243517c3189ecf26e79366a7e0e43848764ab2d4ecfdea3d20fbae4b7cb57abd"
+    }
+  ],
+  "schema": "hearthworks.vm-build-ciphertext-hybrid.v3"
+}
