@@ -1,0 +1,14 @@
+name: Hearthworks six-VM qualification
+on:
+  push:
+    branches: [hearthworks-vm-build-20261119]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo WORKFLOW_TRANSPORT_SMOKE
