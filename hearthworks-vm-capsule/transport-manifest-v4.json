@@ -1,0 +1,77 @@
+{
+  "schema": "hearthworks.vm-build-ciphertext-transport.v4",
+  "parts": [
+    {
+      "name": "part-00",
+      "bytes": 15000,
+      "sha256": "d91e36a4c8be1a7bbffa382002683ec1a61d68e19f46309e6e6174d6205dd4ff"
+    },
+    {
+      "name": "part-01",
+      "bytes": 15000,
+      "sha256": "82665042ffecd12e20b323188a46ff7a6f7d93e5d968288aa44a7935aedacd00"
+    },
+    {
+      "name": "part-02",
+      "bytes": 15000,
+      "sha256": "39f8af4d848da63fb01ad72b6ee44dfaf81bf6f965b54803a937e48e71706148"
+    },
+    {
+      "name": "part-03-0",
+      "bytes": 7500,
+      "sha256": "dcb826b6f8344ebb2e5762a1dc36278bc0e02e115ffce85aa0913c01842de08c"
+    },
+    {
+      "name": "part-03-1",
+      "bytes": 7500,
+      "sha256": "2d2bbafbd7fe8ffdf3dc53c8c6d2f63103d0fc0ab0a606873fde2b4eee53e503"
+    },
+    {
+      "name": "part-04",
+      "bytes": 15000,
+      "sha256": "c872d62389c86b65bbfe905be53021affbb00ef53366e2834a5d985a801b61ab"
+    },
+    {
+      "name": "part-05-0",
+      "bytes": 7500,
+      "sha256": "cde4d029840c310fcb0245a58acbdcc4e3fb6d76181578d80be76862e4bd66b9"
+    },
+    {
+      "name": "part-05-1-0",
+      "bytes": 3750,
+      "sha256": "438cb7c6bb02e418753bb54d1b17f25af6d2511a22ab56feaf624b4800ceccf3"
+    },
+    {
+      "name": "part-05-1-1",
+      "bytes": 3750,
+      "sha256": "dc195479377ccc1df9dfba3629d2e505efc50f1d3850098350f14ca14cf5684e"
+    },
+    {
+      "name": "part-06-0-0",
+      "bytes": 3750,
+      "sha256": "ab194094f55ccb055d126916a646b6ae7401297117d00cf0c5646fc395e93f6a"
+    },
+    {
+      "name": "part-06-0-1",
+      "bytes": 3750,
+      "sha256": "b1acc33573292b85f276d728472e975afccdabcd21f02a04a6aef5c0f125d5fa"
+    },
+    {
+      "name": "part-06-1-0",
+      "bytes": 3750,
+      "sha256": "18824d5fdd0a447e216c372060ee44bda5ac1688ddeb4ce5451d2c122d243fff"
+    },
+    {
+      "name": "part-06-1-1",
+      "bytes": 3750,
+      "sha256": "9df50dab1610d14ddd4d7cf27a345b2cae550e0cd290791f67e843847225f4dd"
+    },
+    {
+      "name": "part-07",
+      "bytes": 9157,
+      "sha256": "243517c3189ecf26e79366a7e0e43848764ab2d4ecfdea3d20fbae4b7cb57abd"
+    }
+  ],
+  "concatenated_bytes": 114157,
+  "concatenated_sha256": "4771df1852f7eea62ee7add79648bd8aae9d87061d75981520664f489e51a848"
+}
