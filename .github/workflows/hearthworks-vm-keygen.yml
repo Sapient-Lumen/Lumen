@@ -1,0 +1,33 @@
+name: Hearthworks VM ephemeral transport key
+
+on:
+  push:
+    branches:
+      - hearthworks-vm-keygen-20261119
+
+permissions:
+  contents: read
+
+jobs:
+  keygen:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Generate one-run transport key
+        shell: bash
+        run: |
+          set -euo pipefail
+          umask 077
+          mkdir -p key
+          openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:3072 -out key/private.pem
+          openssl pkey -in key/private.pem -pubout -out key/public.pem
+          openssl pkey -in key/private.pem -pubout -outform DER | sha256sum | awk '{print $1}' > key/public-key-id.txt
+          sha256sum key/private.pem key/public.pem key/public-key-id.txt > key/SHA256SUMS
+          printf '%s\n' 'ephemeral key generated for one Hearthworks VM transport' > key/README.txt
+      - name: Upload key bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: hearthworks-vm-ephemeral-key-20261119
+          path: key/
+          if-no-files-found: error
+          retention-days: 1
