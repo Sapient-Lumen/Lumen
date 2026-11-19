@@ -1,0 +1,29 @@
+{
+  "classification": "encrypted transport of exact VM-import corpus plus derived harness; not the complete project tree",
+  "crypto": {
+    "authentication": "HMAC-SHA256 over ciphertext",
+    "ciphertext_hmac_base64": "gDTBISlcMcOlcUKh5Gan2qdlzrYyX5PGuORzZ9o7C+Q=",
+    "content_cipher": "AES-256-CBC",
+    "iv_hex": "a9b5e8f59ad7fd346c32e8863bcd1805",
+    "key_wrap": "RSA-3072-OAEP-SHA256",
+    "wrapped_keys_base64": "GoLvdJqDyeOEsymEr7801jk/+mHGfDxHDCW45JfRvEa5vsAeTj5QHTo4oNVojrq7vnaJWFqs+neyYosu/+oSW32TXo4WbFSEH4p9lMtBoJPbRRInKT0MxNxcDc3d3tvdoEmhVYNnxFGV60GIaLxqq/QWdb/GVhip+gZoEI2w8w5plFRdlKJDnSgHY6b574l28xjEn+GTHiNvR9tYtxrS6R0PnljeO7tC+jShvA613hBr25i6PMyiFNU0GCob90qHdHeYBvYB+acSUT63VdNMcGVgcQcmkfD2haMQrrdhiqfx9ebpXTXKuFuHk2VbzK8TBV1c7OETC6OHFeaiCa9ZNQt9RdeRFCwm1be1bi1qvHghfr/EGMKmRs642ID04bDd06/WjAhsMqbtzZFRo7em2/IhLBEmTj8IhXhjkcBkGqgbuB7liFC+EPLeo/imXPr6lxH1aAk9CUsv2HD+FfEdQwOm1zfTmu3bexeVrZBDbGBTi3vajAC9peo4egyhvNXp"
+  },
+  "key_artifact": {
+    "artifact_digest": "sha256:6e26d30c51072feaa9dcb36b02c84c5fd441d3faae9f95028c138e8fe4bad957",
+    "artifact_id": 14485777256,
+    "artifact_name": "hearthworks-vm-ephemeral-key-20261119",
+    "public_key_id_sha256": "e4e89ece951f47ab5526ddd2ec17face1acb9f5b0819fdbf99c01432b687d491",
+    "repository": "Sapient-Lumen/Lumen",
+    "workflow_run_id": 44429759373
+  },
+  "payload": {
+    "bytes": 85609,
+    "ciphertext_bytes": 85616,
+    "ciphertext_sha256": "cdd1eb6c1cd8bdfbd0bf26cd585f52e6b520c221c7302066731d27413fa5656d",
+    "filename": "vm-minimal.tar.zst",
+    "harness_sha256": "c4ef445efeb6828e360cacc9e90f18516ef793dab641b106cddc47da24055de9",
+    "sha256": "dbf1e21aaebbcbb1a21ab7548a39acbd40281270a45a3d7421259bbdeca4170d",
+    "source_manifest_sha256": "7c19713500aace6bbf47cacb28307c4937bf5bf3d2eff2aea07a9f7d87c846c5"
+  },
+  "schema": "hearthworks.vm-build-encrypted-capsule.v1"
+}
